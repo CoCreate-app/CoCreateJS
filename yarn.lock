@@ -838,14 +838,14 @@
   dependencies:
     "@cocreate/docs" "^1.0.3"
 
-"@cocreate/api@^1.0.0":
+"@cocreate/api@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@cocreate/api/-/api-1.0.1.tgz#db7e18ea97300ad89f87519e7ff9fefc4edd9188"
   integrity sha512-7KLvFSJ9RYWUhVhVSrVL55zIkGzcPGAXAyE0tbhWd+vS9w9TR9DapOxhAXESPO987KROcuPJvCDI4dqTcWy1+A==
   dependencies:
     "@cocreate/docs" "^1.0.3"
 
-"@cocreate/attributes@^1.1.0":
+"@cocreate/attributes@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@cocreate/attributes/-/attributes-1.0.0.tgz#6d1f80f408ded8f8de6833d50a5b1a391f21bd99"
   integrity sha512-yX37HKCsLLBet2ccBr6eNlbL9dDe98hqGPCeFzu9Z2JT/+mFaNZH6Y/4ljs7g4kyw6KZILKO/KO2B6UUThjNQA==
@@ -915,7 +915,7 @@
   dependencies:
     "@cocreate/docs" "^1.0.3"
 
-"@cocreate/dnd@^1.0.0":
+"@cocreate/dnd@^0.10.0":
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/@cocreate/dnd/-/dnd-0.10.0.tgz#d3171c8521e6be0c5437db4354ddb2f0d71dbd83"
   integrity sha512-FYeJvgXHziO26FPSmZOuh11VE9Fd7C6a2Zf56uDBb1fKhuSPOtAMNqKvV65NI3FIPqO/dWhn4ZkH+1PN8buoFQ==
