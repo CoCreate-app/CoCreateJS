@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     # needs: release
     # if: needs.release.outputs.new_release_published == 'true'
-    # env:
+    env:
       # VERSION: '${{ needs.release.outputs.new_release_version }}'
     steps:
       - name: Checkout
@@ -48,11 +48,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14.15.4
-      - run: yarn login
-      - run: frankpagan
-      - run: '${{ secrets.NPM_TOKEN }}'
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
+      - name: npm install, build, and test
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+          yarn install --frozen-lockfile
+          yarn build
+      # - run: yarn install --frozen-lockfile
+      # - run: yarn build
       - name: upload cdn
         uses: CoCreate-app/CoCreate-s3@master
         with:
