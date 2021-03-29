@@ -14,17 +14,12 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@cocreate%2funique: Not found
-      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66988:18)
-      at Request.self.callback (/usr/share/yarn/lib/cli.js:140749:22)
-      at Request.emit (events.js:315:20)
-      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141721:10)
-      at Request.emit (events.js:315:20)
-      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141643:12)
-      at Object.onceWrapper (events.js:421:28)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (internal/streams/readable.js:1327:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+  SyntaxError: /home/ubuntu/environment/public/CoCreateJS/package.json: Unexpected token / in JSON at position 3155
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
 
 npm manifest: 
   {
@@ -127,7 +122,7 @@ npm manifest:
       "@cocreate/pinterest": "^1.0.0",
       "@cocreate/plaid": "^1.0.0",
       "@cocreate/progress": "^1.0.0",
-      "@cocreate/quill": "^1.0.0",
+      // "@cocreate/quill": "^1.0.0",
       "@cocreate/progress-bar": "^1.0.0",
       "@cocreate/random-color": "^1.0.0",
       "@cocreate/render": "^1.0.0",
