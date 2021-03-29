@@ -1,0 +1,65 @@
+{
+  "name": "@cocreate/cocreatejs",
+  "version": "1.0.0",
+  "description": "A simple CoCreateJS component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API.",
+  "keywords": [
+    "CoCreateJS",
+    "cocreate",
+    "low-code-framework",
+    "no-code-framework",
+    "cocreatejs",
+    "cocreatejs-component",
+    "cocreate-framework",
+    "no-code",
+    "low-code",
+    "collaborative-framework",
+    "realtime",
+    "realtime-framework",
+    "collaboration",
+    "shared-editing",
+    "html5-framework",
+    "javascript-framework"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "npx webpack --config webpack.config.js ",
+    "build": "NODE_ENV=production npx webpack --config webpack.config.js",
+    "dev": "npx webpack --config webpack.config.js --watch",
+    "docs": "node ./node_modules/@cocreate/docs/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoCreate-app/CoCreateJS.git"
+  },
+  "author": "CoCreate LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CoCreate-app/CoCreateJS/issues"
+  },
+  "homepage": "https://cocreate.app/docs/CoCreateJS",
+  "funding": {
+    "type": "GitHub Sponsors ❤",
+    "url": "https://github.com/sponsors/CoCreate-app"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.1.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "5.1.0",
+    "webpack": "^5.24.4",
+    "webpack-bundle-analyzer": "^4.4.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-log": "^3.0.1"
+  },
+  "dependencies": {
+    "@cocreate/docs": "^1.1.0"
+  }
+}

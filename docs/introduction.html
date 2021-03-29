@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CoCreateJS Documentation</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
+        <meta name="description" content="Utility first css framework, design faster and improve on your css by using native inline styles as classes. No learning curve, use what you already know" />
+        <meta name="keywords" content="helper classes, utility classes, css framework, css library, inline style classes" />
+                <meta name="robots" content="index,follow" />
+        
+        <!-- CoCreate CSS -->
+        <link rel="stylesheet" href="https://server.cocreate.app/css/CoCreate.min.css" type="text/css" />
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous" />    
+        
+        <!-- Codemirror -->
+        <!--<link rel="stylesheet" href="https://server.cocreate.app/CoCreate-plugins/CoCreate-codemirror/src/CoCreate-codemirror.css" type="text/css" />-->
+        <link rel=stylesheet href="https://codemirror.net/lib/codemirror.css"  async defer>
+
+        <!-- Highlight.js-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+
+    <body class="padding:15px">
+        	<div id="intro">
+				<h1 class="padding:10px_0">Introduction</h1>
+				<h3 class="padding:5px_0" id="cocreatejs">CoCreateJS</h3>
+				<p> A dependancy free, vanilla javascript Realtime CRUD and Collaboration API. Easily integrates in any HTML template using HTML5 data-attributtes. Converts a regular html website into a dynamic Realtime application. If you know basic html you can easily implement and use the CoCreateJS library/framework. If you have javascript knowledege, CoCreateJS is highly extendable Object oriented collaboration framework. A CoCreate api key is required to open a real time socket channels.</p>
+				
+				<h3 class="padding:5px_0" id="cocreatecss">CoCreateCSS</h3>
+				<p>A dependancy free, CSS and vanilla javascript library. Containing a set of easy to use natraul language helper classes, and a wide range of components to assist in developing modern UI/UX. We are excited to see what you build.</p>
+				
+				<h3 class="padding:5px_0">Micro Service Archeticture</h3>
+				<p>CoCreateJS 90kb gizipped and CoCreateCSS 15kb gzipped were compiled from a large list of opensource projects. You can include and compile only the components you need, create custom components and contribute to a long list of existing componenets located on github</p>
+			</div>
+			
+			<div class="padding:10px_0" id="getting_started">
+				<h1>Getting Started</h1>
+				<p>Go to <a href="https://CoCreate.app/register">CoCreate.app/register</a>  and retrieve your script which will include the necessary api and security key. And paste it at the end before the ending body tag of any page where you would like to fetch and save data in real time.</p>
+
+<pre>
+	<code>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link src="http://cdn.cocreate.app/CoCreate.min.css"&gt;&lt;/link&gt;
+  &lt;/head&gt;
+  
+  &lt;body&gt;
+  
+	&lt;script&gt;
+	  var config = {
+   	  apiKey: 'test123456',
+	  securityKey: 'test123456',
+	  organization_Id: '5d0e4e6147fb95a3b8719f12'
+	}
+	&lt;/script&gt;
+
+    &lt;script src="http://cdn.cocreate.app/CoCreate.min.js"&gt;&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+	</code>
+</pre>
+			</div>
+		
+		<!-- SideNav Left -->
+		<div id="menuL" class="cocreate-sidenav background:whitesmoke" data-main_content="content" sidenav-default_desktop="expanded" sidenav-default_tablet="expanded" sidenav-default_phone="offcanvas" sidenav-ontoggle_desktop="offcanvas" sidenav-ontoggle_tablet="offcanvas">
+			<div class="domEditor" data-collection="components" data-document_id="603717b07de7fb350ae9fec8" name="html"></div>
+	    </div>
+	    
+        <script>
+            var config = {
+                apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+                securityKey: 'f26baf68-e3a9-45fc-effe-502e47116265',
+                organization_Id: '5de0387b12e200ea63204d6c'
+            }
+        </script>
+    
+        <!--CoCreateJS-->
+        <script src="https://cdn.cocreate.app/CoCreate.min.js"></script>
+        
+        <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-splitview/splitview.js"></script>-->
+        <!--<script src="https://cdn.cocreate.app/CoCreate.min.js"></script>-->
+    
+        <!-- CoCreate CodeMiirror -->
+        <!--<script type="text/javascript" src="https://cdn.cocreate.app/CoCreate-codemirror.js" async></script>-->
+        
+    </body>
+</html>
