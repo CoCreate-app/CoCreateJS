@@ -838,7 +838,7 @@
   dependencies:
     "@cocreate/docs" "^1.0.3"
 
-"@cocreate/api@^1.0.1":
+"@cocreate/api@^1.0.0":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@cocreate/api/-/api-1.0.1.tgz#db7e18ea97300ad89f87519e7ff9fefc4edd9188"
   integrity sha512-7KLvFSJ9RYWUhVhVSrVL55zIkGzcPGAXAyE0tbhWd+vS9w9TR9DapOxhAXESPO987KROcuPJvCDI4dqTcWy1+A==
