@@ -27,7 +27,8 @@
     "start": "npx webpack --config webpack.config.js ",
     "build": "NODE_ENV=production npx webpack --config webpack.config.js",
     "dev": "npx webpack --config webpack.config.js --watch",
-    "docs": "node ./node_modules/@cocreate/docs/src/index.js"
+    "docs": "node ./node_modules/@cocreate/docs/src/index.js",
+    "dist": "node --version"
   },
   "repository": {
     "type": "git",
@@ -43,7 +44,7 @@
     "type": "GitHub Sponsors ❤",
     "url": "https://github.com/sponsors/CoCreate-app"
   },
-  "main": "index.js",
+  "main": "src/index.js",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
@@ -70,6 +71,8 @@
     "@cocreate/codemirror": "^1.0.0",
     "@cocreate/conditional-logic": "^1.0.0",
     "@cocreate/contenteditable": "^1.0.0",
+    "@cocreate/crdt": "^1.0.0",
+    "@cocreate/crud": "^1.0.0",
     "@cocreate/croppie": "^1.0.0",
     "@cocreate/cursors": "^1.0.0",
     "@cocreate/dnd": "^0.10.0",
@@ -99,6 +102,7 @@
     "@cocreate/plaid": "^1.0.0",
     "@cocreate/progress": "^1.0.0",
     "@cocreate/progress-bar": "^1.0.0",
+    "@cocreate/quill": "^1.0.0",
     "@cocreate/random-color": "^1.0.0",
     "@cocreate/render": "^1.0.0",
     "@cocreate/render-key": "^1.0.0",
