@@ -1,5 +1,4 @@
 # ignore
 node_modules
-prod
-dist
+dist/*
 !dist/CoCreate.min.js
