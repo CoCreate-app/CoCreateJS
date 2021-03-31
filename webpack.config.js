@@ -75,20 +75,8 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/i,
-                use: [
-                    { loader: 'style-loader', options: { injectType: 'linkTag' } },
-                    {
-                        loader: 'file-loader',
-                        // ...isProduction && {
-                        //     options: {
-                        //         outputPath: version,
-                        //     }
-                        // }
-                    }
-
-                ],
-
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             },
         ]
     },
