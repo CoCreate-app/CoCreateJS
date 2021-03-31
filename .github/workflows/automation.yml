@@ -48,7 +48,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14.15.4
-      - name: 'npm install, build, and test'
+      - name: 'yarn install'
         run: >
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
           .npmrc
@@ -56,6 +56,8 @@ jobs:
           yarn install --lockfile
 
           yarn build
+      - name: 'build'
+        run:  yarn build
       - name: upload cdn
         uses: CoCreate-app/CoCreate-s3@master
         with:
