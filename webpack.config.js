@@ -20,7 +20,7 @@ module.exports = {
 
     // Path to your entry point. From this file Webpack will begin his work
     entry: {
-        'CoCreate': './index.js',
+        'CoCreate': './src/index.js',
         // 'CoCreate-floating-label': '../CoCreate-components/CoCreate-floating-label/src'
     },
 

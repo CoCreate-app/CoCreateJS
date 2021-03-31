@@ -1,4 +1,7 @@
 // ***********   define variables end ***************** /// 
+import CoCreateSocket from "@cocreate/socket"
+
+let socket = new CoCreateSocket('ws');
 
 const CoCreateCore = {
   socketInitFuncs: [],
@@ -44,29 +47,7 @@ const CoCreateCore = {
       }
     })
     
-    this.socket.listen('readDocument', function(data){
-      const metadata = data.metadata;
-      // if (metadata && metadata.type == 'crdt') {
-      //   self.initRenderCrdtData(data);
-      // } else {
-      //   // self.renderModules(data)
-      // }
-      return data;
-    })
-    
-    this.socket.listen('updateDocument', function(data) {
-      // self.renderModules(data)
-    })
-    
-    this.socket.listen('deletedDocument', function(data) {
-      console.log(data);
-    })
-    
-    this.socket.listen('sendMessage', function(data) {
-      console.log(data);
-    })
-    
-    this.listenMessage('downloadFileInfo', function(data) {
+    this.socket.listen('downloadFileInfo', function(data) {
       self.socket.saveFileName = data.file_name;
     })
     
@@ -116,9 +97,9 @@ const CoCreateCore = {
   //   return this.moduleSelectors.join(",");
   // },
 
-  listenMessage: function(message, fun) {
-    this.socket.listen(message, fun);
-  },
+  // listenMessage: function(message, fun) {
+  //   this.socket.listen(message, fun);
+  // },
  
  createSocket: function(config) {
    this.socket.create(config);
@@ -136,8 +117,9 @@ const CoCreateCore = {
  },
 }
 
-export default function core(socket) {
-  CoCreateCore.setSocket(socket);
-  return CoCreateCore;
-}
+CoCreateCore.setSocket(socket);
+CoCreateCore.init(window.config.host ? window.config.host : 'server.cocreate.app');
+
+export default CoCreateCore;
+
 
