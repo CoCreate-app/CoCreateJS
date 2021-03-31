@@ -8,7 +8,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 let isProduction = process.env.NODE_ENV === 'production';
 const getLogger = require('webpack-log');
 const log = getLogger({ name: 'webpack-batman' });
-
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 log.info(__filename);
 
@@ -27,7 +27,7 @@ module.exports = {
     // Path and filename of your result bundle.
     // Webpack will bundle all JavaScript into this file
     output: {
-    path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist'),
         filename: isProduction ? '[name].min.js' : '[name].js',
         // filename: (pathData) => {
         //     if (isProduction) {
@@ -48,6 +48,18 @@ module.exports = {
         ...(isProduction ? { /*publicPath: 'https://cdn.cocreate.app/',*/ } : {}),
 
     },
+
+    plugins: [
+        new CleanWebpackPlugin(),
+        new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
+    ],
+
+
     devServer: {
         hot: true,
     },
@@ -76,14 +88,13 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader',
+                    // "file-loader",
+                ]
             },
         ]
     },
 
-    plugins: [
-        new CleanWebpackPlugin()
-    ],
 
     optimization: {
         minimize: true,

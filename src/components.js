@@ -88,4 +88,4 @@ addLazily('pickr', '.color-pickr', ()=> import (/*webpackChunkName: "pickr-chunk
 // addLazily('uppy', '#drag-drop-area', ()=> import (/*webpackChunkName: "uppy-chunk"*/ '@cocreate/uppy'))
 
 // Test component
-// addLazily('test', '[data-test]', ()=> import (/*webpackChunkName: "test-chunk"*/ '@cocreate/test'))
+// addLazily('test', '[data-test]', ()=> import (webpackChunkName: "test-chunk" '@cocreate/test'))

@@ -5842,6 +5842,15 @@ html-minifier-terser@^5.0.1:
     relateurl "^0.2.7"
     terser "^4.6.3"
 
+html-webpack-inline-source-plugin@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/html-webpack-inline-source-plugin/-/html-webpack-inline-source-plugin-0.0.10.tgz#89bd5f761e4f16902aa76a44476eb52831c9f7f0"
+  integrity sha512-0ZNU57u7283vrXSF5a4VDnVOMWiSwypKIp1z/XfXWoVHLA1r3Xmyxx5+Lz+mnthz/UvxL1OAf41w5UIF68Jngw==
+  dependencies:
+    escape-string-regexp "^1.0.5"
+    slash "^1.0.0"
+    source-map-url "^0.4.0"
+
 html-webpack-plugin@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-5.3.1.tgz#8797327548e3de438e3494e0c6d06f181a7f20d1"
@@ -5852,6 +5861,15 @@ html-webpack-plugin@^5.3.1:
     lodash "^4.17.20"
     pretty-error "^2.1.1"
     tapable "^2.0.0"
+
+html-webpack-tags-plugin@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/html-webpack-tags-plugin/-/html-webpack-tags-plugin-3.0.0.tgz#e237c826eec147a22bbe6fcdd93d1de4490d9d9d"
+  integrity sha512-+4H3546xwpiLiznVyvf0Tk/2fKvvkW/BKbFDtbaFilEISINzSwtMeHIssC02qdPiZhNkgJPDJV14P53XvXwAsg==
+  dependencies:
+    glob "^7.1.6"
+    minimatch "^3.0.4"
+    slash "^3.0.0"
 
 htmlparser2@^3.10.1:
   version "3.10.1"
@@ -9037,6 +9055,16 @@ sirv@^1.0.7:
     "@polka/url" "^1.0.0-next.9"
     mime "^2.3.1"
     totalist "^1.0.0"
+
+slash@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
+  integrity sha1-xB8vbDn8FtHNF61LXYlhFK5HDVU=
+
+slash@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
+  integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
