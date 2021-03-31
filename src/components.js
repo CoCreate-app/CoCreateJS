@@ -1,10 +1,14 @@
 import { addLazily, addDependency } from './lazy-loader';
 
 addDependency('api', import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api') );
-addDependency('form', import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
+addDependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
+addDependency('socket', import (/*webpackChunkName: "socket-chunk"*/ '@cocreate/socket'));
+addDependency('message', import (/*webpackChunkName: "message-chunk"*/ '@cocreate/message'));
+addDependency('crud', import (/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud'));
 addDependency('crdt', import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
 addDependency('cursors', import (/*webpackChunkName: "cursors-chunk"*/ '@cocreate/cursors'));
 addDependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
+addDependency('form', import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
 
 
 

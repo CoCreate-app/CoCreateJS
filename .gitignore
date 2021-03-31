@@ -2,3 +2,4 @@
 node_modules
 prod
 dist
+!dist/CoCreate.min.js

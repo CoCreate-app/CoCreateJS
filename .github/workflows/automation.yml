@@ -55,9 +55,9 @@ jobs:
 
           yarn install --lockfile
 
-      - name: 'build'
+      - name: 'yarn build'
         run:  yarn build
-      - name: upload cdn
+      - name: upload bundle
         uses: CoCreate-app/CoCreate-s3@master
         with:
           aws-key-id: '${{ secrets.AWSACCESSKEYID }}'
