@@ -9,7 +9,7 @@ let isProduction = process.env.NODE_ENV === 'production';
 const getLogger = require('webpack-log');
 const log = getLogger({ name: 'webpack-batman' });
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 log.info(__filename);
 
 // This is main configuration object.
@@ -40,7 +40,7 @@ module.exports = {
         //     else
         //         return isProduction ? '[name].min.js' : '[name].js';
         // },
-
+        chunkFilename: isProduction ? '[name].min.js' : '[name].js',
         libraryTarget: 'umd',
         libraryExport: 'default',
         library: 'CoCreate',
@@ -54,8 +54,8 @@ module.exports = {
         new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: '[name].css',
-      chunkFilename: '[id].css',
+      filename: isProduction ? '[name].min.css' : '[name].css',
+      chunkFilename: '[name].min.css',
     }),
     ],
 
@@ -98,21 +98,22 @@ module.exports = {
 
     optimization: {
         minimize: true,
-        // minimizer: [
-        //     new TerserPlugin({
-        //         extractComments: true,
-        //         // cache: true,
-        //         parallel: true,
-        //         // sourceMap: true, // Must be set to true if using source-maps in production
-        //         terserOptions: {
-        //             // https://github.com/webpack-contrib/terser-webpack-plugin#terseroptions
-        //             // extractComments: 'all',
-        //             compress: {
-        //                 drop_console: true,
-        //             },
-        //         },
-        //     }),
-        // ],
+        minimizer: [
+            new CssMinimizerPlugin(),
+            new TerserPlugin({
+                extractComments: true,
+                // cache: true,
+                parallel: true,
+                // sourceMap: true, // Must be set to true if using source-maps in production
+                terserOptions: {
+                    // https://github.com/webpack-contrib/terser-webpack-plugin#terseroptions
+                    // extractComments: 'all',
+                    compress: {
+                        drop_console: true,
+                    },
+                },
+            }),
+        ],
         splitChunks: {
             chunks: 'all',
             minSize: 1,
