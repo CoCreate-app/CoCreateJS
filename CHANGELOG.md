@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.7...v1.0.8) (2021-04-01)
+
+
+### Bug Fixes
+
+* mime type for cdn ([83caad7](https://github.com/CoCreate-app/CoCreateJS/commit/83caad7259309322ffc961bbac2a135427699752))
+
 ## [1.0.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.6...v1.0.7) (2021-04-01)
 
 
