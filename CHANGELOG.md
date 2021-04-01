@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.4...v1.0.5) (2021-04-01)
+
+
+### Bug Fixes
+
+* ci work flow ([3164b76](https://github.com/CoCreate-app/CoCreateJS/commit/3164b762e28900273e46065e950a823f9b877174))
+
 ## [1.0.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.3...v1.0.4) (2021-04-01)
 
 
