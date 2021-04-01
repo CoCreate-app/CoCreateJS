@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.5...v1.0.6) (2021-04-01)
+
+
+### Bug Fixes
+
+* css bundle improvements ([e3d7905](https://github.com/CoCreate-app/CoCreateJS/commit/e3d7905c662ea2e47ad5ec737b88ee362915718d))
+
 ## [1.0.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.4...v1.0.5) (2021-04-01)
 
 
