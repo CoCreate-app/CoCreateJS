@@ -2,7 +2,6 @@
 import core from "./core.js"
 import observer from '@cocreate/observer';
 import css from '@cocreate/cocreatecss';
-// import css from '../../CoCreateCSS/src';
 
 (async function() {
 

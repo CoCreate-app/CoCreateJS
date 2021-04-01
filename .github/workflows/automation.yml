@@ -53,7 +53,7 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
           .npmrc
 
-          yarn install --lockfile
+          yarn install
 
       - name: 'yarn build'
         run:  yarn build
