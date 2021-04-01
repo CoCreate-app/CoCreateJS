@@ -10,7 +10,7 @@ const getLogger = require('webpack-log');
 const log = getLogger({ name: 'webpack-batman' });
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-log.info(__filename);
+// log.info(__filename);
 
 // This is main configuration object.
 // Here you write different options and tell Webpack what to do
