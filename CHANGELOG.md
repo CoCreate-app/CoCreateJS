@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.6...v1.0.7) (2021-04-01)
+
+
+### Bug Fixes
+
+* css compile ([c4df6f4](https://github.com/CoCreate-app/CoCreateJS/commit/c4df6f42fabd082af22a0d011bf95d020b1ec487))
+
 ## [1.0.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.5...v1.0.6) (2021-04-01)
 
 
