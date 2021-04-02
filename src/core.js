@@ -1,5 +1,5 @@
 // ***********   define variables end ***************** /// 
-import CoCreateSocket from "@cocreate/socket"
+import CoCreateSocket from "@cocreate/socket-client"
 
 let socket = new CoCreateSocket('ws');
 
