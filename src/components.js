@@ -2,7 +2,7 @@ import { addLazily, addDependency } from './lazy-loader';
 
 addDependency('api', import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api') );
 addDependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
-addDependency('socket', import (/*webpackChunkName: "socket-chunk"*/ '@cocreate/socket'));
+addDependency('socket', import (/*webpackChunkName: "socket-chunk"*/ '@cocreate/socket-client'));
 addDependency('message', import (/*webpackChunkName: "message-chunk"*/ '@cocreate/message'));
 addDependency('crud', import (/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud'));
 addDependency('crdt', import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));

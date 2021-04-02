@@ -120,7 +120,7 @@
     "@cocreate/shipengine": "^1.0.0",
     "@cocreate/sidenav": "^1.0.0",
     "@cocreate/social-share": "^1.0.0",
-    "@cocreate/socket": "^1.0.0",
+    "@cocreate/socket-client": "^1.0.0",
     "@cocreate/splitview": "^1.0.0",
     "@cocreate/stripe": "^1.0.0",
     "@cocreate/text": "^1.0.0",
