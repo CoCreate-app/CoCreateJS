@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.9...v1.0.10) (2021-04-02)
+
+
+### Bug Fixes
+
+* Replace @cocreate/socket with socket-client ([2ea2791](https://github.com/CoCreate-app/CoCreateJS/commit/2ea27910a49d1d582338d56dd48f0a96c5fc5b64))
+
 ## [1.0.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.8...v1.0.9) (2021-04-01)
 
 
