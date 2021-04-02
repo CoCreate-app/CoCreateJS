@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.8...v1.0.9) (2021-04-01)
+
+
+### Bug Fixes
+
+* css upload with mime type ([dbc8f8d](https://github.com/CoCreate-app/CoCreateJS/commit/dbc8f8d1dcaf378272915f3c4a08854aa9c10d01))
+
 ## [1.0.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.7...v1.0.8) (2021-04-01)
 
 
