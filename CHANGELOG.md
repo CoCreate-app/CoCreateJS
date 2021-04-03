@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.13...v1.0.14) (2021-04-03)
+
+
+### Bug Fixes
+
+* css mime ([499051b](https://github.com/CoCreate-app/CoCreateJS/commit/499051be72c9d2a4702c5a329462bb00a495de69))
+
 ## [1.0.13](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.12...v1.0.13) (2021-04-03)
 
 
