@@ -4,7 +4,7 @@ addDependency('api', import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api') 
 addDependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
 addDependency('socket', import (/*webpackChunkName: "socket-chunk"*/ '@cocreate/socket-client'));
 addDependency('message', import (/*webpackChunkName: "message-chunk"*/ '@cocreate/message'));
-addDependency('crud', import (/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud'));
+addDependency('crud', import (/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud-client'));
 addDependency('crdt', import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
 addDependency('cursors', import (/*webpackChunkName: "cursors-chunk"*/ '@cocreate/cursors'));
 addDependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
