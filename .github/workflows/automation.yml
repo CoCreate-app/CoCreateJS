@@ -14,7 +14,8 @@ jobs:
         with:
           direction: overwrite-github
           githubToken: '${{ secrets.GITHUB }}'
-    release:
+  
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
