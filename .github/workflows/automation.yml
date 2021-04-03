@@ -43,7 +43,6 @@ jobs:
     env:
       VERSION: '${{ needs.release.outputs.new_release_version }}'
     steps:
-    steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: setup nodejs
