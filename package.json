@@ -77,7 +77,7 @@
     "@cocreate/contenteditable": "^1.0.0",
     "@cocreate/crdt": "^1.0.0",
     "@cocreate/croppie": "^1.0.0",
-    "@cocreate/crud": "^1.0.0",
+    "@cocreate/crud-client": "^1.0.0",
     "@cocreate/cursors": "^1.0.0",
     "@cocreate/dnd": "^0.10.0",
     "@cocreate/docs": "^1.0.0",
