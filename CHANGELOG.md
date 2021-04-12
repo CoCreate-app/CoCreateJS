@@ -1,3 +1,11 @@
+## [1.0.15](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.14...v1.0.15) (2021-04-03)
+
+
+### Bug Fixes
+
+* ci ([193e8a6](https://github.com/CoCreate-app/CoCreateJS/commit/193e8a6528d2dc0931df7ca56998128512807e80))
+* Css mime working when deployed to cdn ([7457123](https://github.com/CoCreate-app/CoCreateJS/commit/74571233dc276ec93d8c1889e99aef24d9f02d24))
+
 ## [1.0.14](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.13...v1.0.14) (2021-04-03)
 
 
