@@ -1,3 +1,10 @@
+## [1.0.18](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.17...v1.0.18) (2021-04-12)
+
+
+### Bug Fixes
+
+* add message-client ([09662da](https://github.com/CoCreate-app/CoCreateJS/commit/09662daa8104b5502d84393cb560b8dc1c9f1582))
+
 ## [1.0.17](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.16...v1.0.17) (2021-04-12)
 
 
