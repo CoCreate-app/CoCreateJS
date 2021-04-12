@@ -87,7 +87,14 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14.15.4
-      - run: yarn install
+      - name: yarn install
+        run: >
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
+          .npmrc
+
+          yarn install
+      - name: yarn build
+        run: yarn build
       - uses: EndBug/add-and-commit@v7 
         with:
           add: './dist'
