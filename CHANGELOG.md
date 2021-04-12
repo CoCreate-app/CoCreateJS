@@ -1,3 +1,10 @@
+## [1.0.16](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.15...v1.0.16) (2021-04-12)
+
+
+### Bug Fixes
+
+* deploy latest ([d7509b6](https://github.com/CoCreate-app/CoCreateJS/commit/d7509b64e6f3d5982ead61bfe219053ff6b1da95))
+
 ## [1.0.15](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.14...v1.0.15) (2021-04-03)
 
 
