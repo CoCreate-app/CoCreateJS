@@ -1,3 +1,10 @@
+## [1.0.17](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.16...v1.0.17) (2021-04-12)
+
+
+### Bug Fixes
+
+* credintials for ci deployment ([7f7c2f6](https://github.com/CoCreate-app/CoCreateJS/commit/7f7c2f63970c291c5bb8e3ef27a7eacb151f98bf))
+
 ## [1.0.16](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.15...v1.0.16) (2021-04-12)
 
 
