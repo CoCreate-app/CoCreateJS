@@ -28,4 +28,4 @@ function removeComponent(key) {
     }
 }
 
-export default { css, observer, core, addComponent, removeComponent}
+export default { css, core, addComponent, removeComponent}

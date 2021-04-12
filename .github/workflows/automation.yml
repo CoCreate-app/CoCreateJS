@@ -57,7 +57,7 @@ jobs:
           yarn install
       - name: yarn build
         run: yarn build
-      - name: upload bundle
+      - name: upload bundle as version
         uses: CoCreate-app/CoCreate-s3@master
         with:
           aws-key-id: '${{ secrets.AWSACCESSKEYID }}'
@@ -66,3 +66,35 @@ jobs:
           source: ./dist
           destination: '/${{env.VERSION}}'
           acl: public-read
+      - name: upload bundle as latest
+        uses: CoCreate-app/CoCreate-s3@master
+        with:
+          aws-key-id: '${{ secrets.AWSACCESSKEYID }}'
+          aws-access-key: '${{ secrets.AWSSECERTACCESSKEY }}'
+          bucket: testcrudbucket
+          source: ./dist
+          destination: '/latest'
+          acl: 'public-read'
+
+  dist:      
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          token: '${{ secrets.GITHUB }}'
+      - name: setup nodejs
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.15.4
+      - run: yarn install
+      - uses: EndBug/add-and-commit@v7 
+        with:
+          add: './dist'
+          author_name: frank pagan
+          author_email: frank@cocreate.app
+          branch: master
+          message: 'add dist'
+          pull_strategy: 'NO-PULL'
+          push: false
+          signoff: true

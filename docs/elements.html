@@ -9,7 +9,7 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
 		
 		<!-- CoCreate CSS -->
-		<link rel="stylesheet" href="https://server.cocreate.app/css/CoCreate.min.css" defer type="text/css" />
+		<link rel="stylesheet" href="https://server.cocreate.app/CoCreateJS/dist/CoCreate.css" defer type="text/css" />
 		
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" defer crossorigin="anonymous" />    
@@ -97,10 +97,14 @@
 <!--</div>-->
 
 		<!-- SideNav Left -->
-		<div id="menuL" class="cocreate-sidenav background:whitesmoke" data-main_content="content" sidenav-default_desktop="expanded" sidenav-default_tablet="expanded" sidenav-default_phone="offcanvas" sidenav-ontoggle_desktop="offcanvas" sidenav-ontoggle_tablet="offcanvas">
+		<!--<div id="menuL" class="cocreate-sidenav background:whitesmoke" data-main_content="content" sidenav-default_desktop="expanded" sidenav-default_tablet="expanded" sidenav-default_phone="offcanvas" sidenav-ontoggle_desktop="offcanvas" sidenav-ontoggle_tablet="offcanvas">-->
+		<!--	<div class="domEditor" data-collection="components" data-document_id="603717b07de7fb350ae9fec8" name="html"></div>-->
+		<!--	<div class="resizeHandler"></div>-->
+	 <!--   </div>-->
+		<sidenav id="menuL" class="cocreate-sidenav background:whitesmoke" data-resize="">
 			<div class="domEditor" data-collection="components" data-document_id="603717b07de7fb350ae9fec8" name="html"></div>
 			<div class="resizeHandler"></div>
-	    </div>
+	    </sidenav>
 		
 		<!-- Modal Viewport/Boundaries -->
 		<!--<div class="position:fixed margin-top:50px" data-main_content_id="content" id="modal-viewport"></div>-->
@@ -651,10 +655,10 @@
 		</script>
 	
 		<!--CoCreateJS-->
-		<script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+		<script src="https://server.cocreate.app/CoCreateJS/dist/CoCreate.js"></script>
 		
 	    <!-- CoCreate CodeMiirror -->
-	    <script type="text/javascript" src="https://server.cocreate.app/CoCreate-plugins/CoCreate-codemirror/dist/CoCreate-codemirror.js" async></script>
+	    <!--<script type="text/javascript" src="https://server.cocreate.app/CoCreate-plugins/CoCreate-codemirror/dist/CoCreate-codemirror.js" async></script>-->
 	    
 	    <!-- Prism -->
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
