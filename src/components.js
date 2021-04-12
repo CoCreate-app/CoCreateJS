@@ -55,7 +55,7 @@ addLazily('toolbar', '[data-toolbar_target]', ()=> import (/*webpackChunkName: "
 
 
 // Modules
-addLazily('builder', '#canvas', ()=> import (/*webpackChunkName: "builder-chunk"*/ '@cocreate/builder'))
+// addLazily('builder', '#canvas', ()=> import (/*webpackChunkName: "builder-chunk"*/ '@cocreate/builder'))
 
 
 // Plugins
