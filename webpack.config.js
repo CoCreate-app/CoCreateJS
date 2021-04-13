@@ -55,7 +55,7 @@ module.exports = {
       // Options similar to the same options in webpackOptions.output
       // both options are optional
       filename: isProduction ? '[name].min.css' : '[name].css',
-      chunkFilename: '[name].min.css',
+      chunkFilename: isProduction ? '[name].min.css': '[name].css',
     }),
     ],
 

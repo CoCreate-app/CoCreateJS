@@ -31,7 +31,7 @@ addLazily('resize', '[data-resize]', ()=>import(/*webpackChunkName: "resize-chun
 addLazily('attributes', '[data-attributes]', ()=>import(/*webpackChunkName: "attributes-chunk"*/ '@cocreate/attributes'))
 addLazily('users', '[data-permissions], .loginBtn', ()=> import (/*webpackChunkName: "users-chunk"*/ '@cocreate/users'))
 addLazily('organizations', '#org_id', ()=> import (/*webpackChunkName: "organizations-chunk"*/ '@cocreate/organizations'))
-addLazily('industry', '[data-permissions], .loginBtn', ()=> import (/*webpackChunkName: "industry-chunk"*/ '@cocreate/industry'))
+addLazily('industry', '[data-permissions], .industry', ()=> import (/*webpackChunkName: "industry-chunk"*/ '@cocreate/industry'))
 addLazily('uuid', '[data-uuid], .loginBtn', ()=> import (/*webpackChunkName: "uuid-chunk"*/ '@cocreate/uuid'))
 addLazily('render-key', '[data-key]', ()=> import (/*webpackChunkName: "render-key-chunk"*/ '@cocreate/render-key'))
 
