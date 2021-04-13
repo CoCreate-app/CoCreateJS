@@ -82,7 +82,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          GITHUB_TOKEN: '${{ secrets.GITHUB }}'
       - name: setup nodejs
         uses: actions/setup-node@v2
         with:
