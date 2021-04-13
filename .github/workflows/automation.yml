@@ -47,13 +47,12 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14.15.4
-      - name: npm login
+      - name: yarn install
         run: >
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
           .npmrc
 
-      - name: yarn install
-        run: yarn install
+          yarn install
       - name: yarn build
         run: yarn build
       - name: upload bundle as version
@@ -86,7 +85,12 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14.15.4
-      - run: yarn install 
+      - name: yarn install
+        run: >
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
+          .npmrc
+
+          yarn install
       - run: yarn build
       - run: git add .
       - run: git config user.email "frank@cocreate.app"
