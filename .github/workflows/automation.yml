@@ -87,11 +87,15 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14.15.4
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
-      - run: |
-          git config user.email "frank@cocreate.app"
-          git config user.name "frank pagan"
-          git add .
-          git commit --allow-empty -m "add dist bundle"
-          git push origin master
+        run: >
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
+          .npmrc
+
+          yarn install
+        - run: yarn build
+        - run: |
+            git config user.email "frank@cocreate.app"
+            git config user.name "frank pagan"
+            git add .
+            git commit --allow-empty -m "add dist bundle"
+            git push origin master
