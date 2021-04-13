@@ -76,29 +76,29 @@ jobs:
           destination: '/latest'
           acl: 'public-read'
 
-  dist:      
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          GITHUB_TOKEN: '${{ secrets.GITHUB }}'
-      - name: setup nodejs
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14.15.4
-      - name: yarn install
-        run: >
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
-          .npmrc
+  # dist:      
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v2
+  #       with:
+  #         GITHUB_TOKEN: '${{ secrets.GITHUB }}'
+  #     - name: setup nodejs
+  #       uses: actions/setup-node@v2
+  #       with:
+  #         node-version: 14.15.4
+  #     - name: yarn install
+  #       run: >
+  #         echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
+  #         .npmrc
 
-          yarn install
-      - name: yarn build
-        run: yarn build
-      - name: git commit
-        run: |
-          git config user.email "frank@cocreate.app"
-          git config user.name "frank pagan"
-          git add .
-          git commit --allow-empty -m "add dist bundle"
-          git push origin master
+  #         yarn install
+  #     - name: yarn build
+  #       run: yarn build
+  #     - name: git commit
+  #       run: |
+  #         git config user.email "frank@cocreate.app"
+  #         git config user.name "frank pagan"
+  #         git add .
+  #         git commit --allow-empty -m "add dist bundle"
+  #         git push origin master
