@@ -93,8 +93,10 @@ jobs:
           .npmrc
 
           yarn install
-      - run: yarn build
-      - run: |
+      - name: yarn build
+        run: yarn build
+      - name: git commit
+        run: |
           git config user.email "frank@cocreate.app"
           git config user.name "frank pagan"
           git add .
