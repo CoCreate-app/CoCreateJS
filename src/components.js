@@ -55,11 +55,11 @@ addLazily('toolbar', '[data-toolbar_target]', ()=> import (/*webpackChunkName: "
 
 
 // Modules
-// addLazily('builder', '#canvas', ()=> import (/*webpackChunkName: "builder-chunk"*/ '@cocreate/builder'))
+addLazily('builder', '#canvas', ()=> import (/*webpackChunkName: "builder-chunk"*/ '@cocreate/builder'))
 
 
 // Plugins
-// addLazily('charts', '[data-charts]', ()=> import (/*webpackChunkName: "charts-chunk"*/ '@cocreate/charts'))
+addLazily('charts', '[data-charts]', ()=> import (/*webpackChunkName: "charts-chunk"*/ '@cocreate/charts'))
 // addLazily('codemirror', '.codemirror', ()=> import (/*webpackChunkName: "codemirror-chunk"*/ '@cocreate/codemirror'))
 // addLazily('croppie', '[data-croppie]', ()=> import (/*webpackChunkName: "croppie-chunk"*/ '@cocreate/croppie'))
 // addLazily('domain', '[data-domain]', ()=> import (/*webpackChunkName: "domain-chunk"*/ '@cocreate/domain'))
@@ -75,7 +75,7 @@ addLazily('pickr', '.color-pickr', ()=> import (/*webpackChunkName: "pickr-chunk
 // addLazily('pinterest', '[data-pinterest]', ()=> import (/*webpackChunkName: "pinterest-chunk"*/ '@cocreate/pinterest'))
 // addLazily('plaid', '[data-plaid]', ()=> import (/*webpackChunkName: "plaid-chunk"*/ '@cocreate/plaid'))
 // addLazily('progressbar', '[data-progressbar]', ()=> import (/*webpackChunkName: "progressbar-chunk"*/ '@cocreate/progressbar'))
-// addLazily('sendgrid', '[data-sendgrid]', ()=> import (/*webpackChunkName: "sendgrid-chunk"*/ '@cocreate/sendgrid'))
+addLazily('sendgrid', '[data-sendgrid]', ()=> import (/*webpackChunkName: "sendgrid-chunk"*/ '@cocreate/sendgrid'))
 // addLazily('shipengine', '[data-shipengine]', ()=> import (/*webpackChunkName: "shipengine-chunk"*/ '@cocreate/shipengine'))
 // addLazily('stripe', '[data-stripe]', ()=> import (/*webpackChunkName: "stripe-chunk"*/ '@cocreate/stripe'))
 // addLazily('twilio', '[data-twilio]', ()=> import (/*webpackChunkName: "twilio-chunk"*/ '@cocreate/twilio'))
