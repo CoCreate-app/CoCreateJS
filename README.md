@@ -9,7 +9,7 @@ A simple S component in vanilla javascript. Easily configured using HTML5 data-a
 
 ![CoCreate-S](https://cdn.cocreate.app/docs/CoCreate-S.gif)
 
-## [Docs & Demo](https://cocreate.app/docs/clone)
+## [Docs & Demo](https://cocreate.app/docs/S)
 
 For a complete guide and working demo refer to the [doumentation](https://cocreate.app/docs/S)
 

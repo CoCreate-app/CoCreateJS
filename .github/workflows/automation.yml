@@ -96,4 +96,6 @@ jobs:
       - run: git config user.email "frank@cocreate.app"
       - run: git config user.name "frank pagan"
       - run: git commit --allow-empty -m "add dist bundle"
+      - run: git pull origin master
+      - run: git commit --allow-empty -m "add dist bundle"
       - run: git push origin master
