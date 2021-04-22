@@ -16,17 +16,17 @@ For a complete guide and working demo refer to the [doumentation](https://cocrea
 ## CDN
 
 ```html
-<script src="https://cdn.cocreate.app/CoCreateJS/latest/CoCreateJS.min.js"></script>
+<script src="https://cdn.cocreate.app/latest/CoCreateJS.min.js"></script>
 ```
 
 ```html
-<script src="https://cdn.cocreate.app/CoCreateJS/latest/CoCreateJS.min.css"></script>
+<script src="https://cdn.cocreate.app/latest/CoCreateJS.min.css"></script>
 ```
 
 ## NPM
 
 ```shell
-$ npm install @cocreate/CoCreateJS
+$ npm install @cocreate/cocreatejs
 ```
 
 # Table of Contents
