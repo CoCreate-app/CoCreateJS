@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.20...v1.1.0) (2021-04-22)
+
+
+### Features
+
+* add prism, stripe, sendgrid plugin ([051cd87](https://github.com/CoCreate-app/CoCreateJS/commit/051cd8711023d6565714b2cee21f0a18da342af0))
+
 ## [1.0.20](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.19...v1.0.20) (2021-04-19)
 
 
