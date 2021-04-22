@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.3...v1.1.4) (2021-04-22)
+
+
+### Bug Fixes
+
+* add @cocreate/fonte-awesome package ([af30b63](https://github.com/CoCreate-app/CoCreateJS/commit/af30b630eb508ba659bfd89b0e1db496cff76407))
+
 ## [1.1.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.2...v1.1.3) (2021-04-22)
 
 
