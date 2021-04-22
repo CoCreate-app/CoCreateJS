@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.0...v1.1.1) (2021-04-22)
+
+
+### Bug Fixes
+
+* add google-auth package ([3bf00b4](https://github.com/CoCreate-app/CoCreateJS/commit/3bf00b4b66a30c217a612bb86203ba72cc355d56))
+
 # [1.1.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.20...v1.1.0) (2021-04-22)
 
 
