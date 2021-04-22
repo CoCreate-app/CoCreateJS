@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.1...v1.1.2) (2021-04-22)
+
+
+### Bug Fixes
+
+* readme and deply to cdn ([f800eff](https://github.com/CoCreate-app/CoCreateJS/commit/f800effe7f02c613e05ec50de552526e83b90bc9))
+
 ## [1.1.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.0...v1.1.1) (2021-04-22)
 
 
