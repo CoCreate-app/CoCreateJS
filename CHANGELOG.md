@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.4...v1.1.5) (2021-04-22)
+
+
+### Bug Fixes
+
+* css package parser bug resolved ([1c963b8](https://github.com/CoCreate-app/CoCreateJS/commit/1c963b8ad0b614e7124d6f0bff527e111885a3e9))
+
 ## [1.1.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.3...v1.1.4) (2021-04-22)
 
 
