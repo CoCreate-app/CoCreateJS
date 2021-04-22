@@ -12,7 +12,6 @@ addDependency('cursors', import (/*webpackChunkName: "cursors-chunk"*/ '@cocreat
 addDependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 addDependency('form', import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
 
-
 // Core Components
 addLazily('action', '[data-actions]', ()=> import (/*webpackChunkName: "action-chunk"*/ '@cocreate/action'))
 addLazily('room', '[data-room]', ()=> import (/*webpackChunkName: "room-chunk"*/ '@cocreate/room'))
@@ -53,10 +52,8 @@ addLazily('splitview', '.container.svColumn', ()=> import (/*webpackChunkName: "
 addLazily('select', 'cocreate-select, .selecte--field', ()=> import (/*webpackChunkName: "select-chunk"*/ '@cocreate/select'))
 addLazily('toolbar', '[data-toolbar_target]', ()=> import (/*webpackChunkName: "toolbar-chunk"*/ '@cocreate/toolbar'))
 
-
 // Modules
 addLazily('builder', '#canvas', ()=> import (/*webpackChunkName: "builder-chunk"*/ '@cocreate/builder'))
-
 
 // Plugins
 addLazily('charts', '.cocreate-chart', ()=> import (/*webpackChunkName: "charts-chunk"*/ '@cocreate/charts'))
@@ -65,7 +62,7 @@ addLazily('charts', '.cocreate-chart', ()=> import (/*webpackChunkName: "charts-
 addLazily('domain', '[data-domain]', ()=> import (/*webpackChunkName: "domain-chunk"*/ '@cocreate/domain'))
 addLazily('facebook', '[data-facebook]', ()=> import (/*webpackChunkName: "facebook-chunk"*/ '@cocreate/facebook'))
 addLazily('fullcalendar', '.cal-container', ()=> import (/*webpackChunkName: "fullcalendar-chunk"*/ '@cocreate/fullcalendar'))
-// addLazily('font-awesome', '.fas, .fab', ()=> import (/*webpackChunkName: "font-awesome-chunk"*/ '@cocreate/font-awesome'))
+addLazily('font-awesome', '.fa, .fas, .fab', ()=> import (/*webpackChunkName: "font-awesome-chunk"*/ '@cocreate/font-awesome'))
 // addLazily('google-auth', '[data-googleauth]', ()=> import (/*webpackChunkName: "google-auth-chunk"*/ '@cocreate/google-auth'))
 // addLazily('google-maps', '[data-google-maps]', ()=> import (/*webpackChunkName: "google-maps-chunk"*/ '@cocreate/google-maps'))
 // addLazily('instagram', '[data-instagram]', ()=> import (/*webpackChunkName: "instagram-chunk"*/ '@cocreate/instagram'))
@@ -75,7 +72,7 @@ addLazily('fullcalendar', '.cal-container', ()=> import (/*webpackChunkName: "fu
 addLazily('pickr', '.color-pickr', ()=> import (/*webpackChunkName: "pickr-chunk"*/ '@cocreate/pickr'))
 // addLazily('pinterest', '[data-pinterest]', ()=> import (/*webpackChunkName: "pinterest-chunk"*/ '@cocreate/pinterest'))
 // addLazily('plaid', '[data-plaid]', ()=> import (/*webpackChunkName: "plaid-chunk"*/ '@cocreate/plaid'))
-addLazily('prism', '.language-html', ()=> import (/*webpackChunkName: "prism-chunk"*/ '@cocreate/prism'))
+addLazily('prism', '.language-html, .language-css, .language-js, .language-shell, .language-json', ()=> import (/*webpackChunkName: "prism-chunk"*/ '@cocreate/prism'))
 // addLazily('progressbar', '[data-progressbar]', ()=> import (/*webpackChunkName: "progressbar-chunk"*/ '@cocreate/progressbar'))
 addLazily('sendgrid', '[data-sendgrid]', ()=> import (/*webpackChunkName: "sendgrid-chunk"*/ '@cocreate/sendgrid'))
 // addLazily('shipengine', '[data-shipengine]', ()=> import (/*webpackChunkName: "shipengine-chunk"*/ '@cocreate/shipengine'))
