@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/cocreatejs",
-  "version": "1.0.20",
+  "version": "1.1.6",
   "description": "A simple CoCreateJS component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API.",
   "keywords": [
     "cocreatejs",
@@ -58,7 +58,9 @@
     "html-webpack-tags-plugin": "^3.0.0",
     "mini-css-extract-plugin": "^1.4.0",
     "style-loader": "^2.0.0",
+    "svg-loader": "^0.0.2",
     "terser-webpack-plugin": "5.1.0",
+    "url-loader": "^4.1.1",
     "webpack": "^5.24.4",
     "webpack-bundle-analyzer": "^4.4.0",
     "webpack-cli": "^4.6.0",
@@ -88,6 +90,7 @@
     "@cocreate/fetch": "^1.0.0",
     "@cocreate/filter": "^1.0.0",
     "@cocreate/floating-label": "^1.0.0",
+    "@cocreate/font-awesome": "^1.0.0",
     "@cocreate/form": "^1.0.0",
     "@cocreate/fullcalendar": "^1.0.0",
     "@cocreate/fullscreen": "^1.0.0",
@@ -106,6 +109,7 @@
     "@cocreate/pickr": "^1.0.0",
     "@cocreate/pinterest": "^1.0.0",
     "@cocreate/plaid": "^1.0.0",
+    "@cocreate/prism": "^1.0.0",
     "@cocreate/progress": "^1.0.0",
     "@cocreate/progress-bar": "^1.0.0",
     "@cocreate/quill": "^1.0.0",

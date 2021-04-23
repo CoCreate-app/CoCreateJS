@@ -52,11 +52,11 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
-      filename: isProduction ? '[name].min.css' : '[name].css',
-      chunkFilename: isProduction ? '[name].min.css': '[name].css',
-    }),
+            // Options similar to the same options in webpackOptions.output
+            // both options are optional
+            filename: isProduction ? '[name].min.css' : '[name].css',
+            chunkFilename: isProduction ? '[name].min.css' : '[name].css',
+        }),
     ],
 
 
@@ -93,6 +93,16 @@ module.exports = {
                     // "file-loader",
                 ]
             },
+            {
+                test: /\.svg$/,
+                use: ['svg-loader']
+            },
+            {
+                test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+                use: ['file-loader']
+            },
+            { test: /\.(png|woff|woff2|eot|ttf|svg)$/, use: ['url-loader?limit=100000'] }
+
         ]
     },
 

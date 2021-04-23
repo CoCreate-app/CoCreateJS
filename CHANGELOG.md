@@ -1,3 +1,52 @@
+## [1.1.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.5...v1.1.6) (2021-04-22)
+
+
+### Bug Fixes
+
+* hover lazyload selector added ([982512b](https://github.com/CoCreate-app/CoCreateJS/commit/982512baadabb8b7222c2f5cd1fd1d2cc0576468))
+
+## [1.1.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.4...v1.1.5) (2021-04-22)
+
+
+### Bug Fixes
+
+* css package parser bug resolved ([1c963b8](https://github.com/CoCreate-app/CoCreateJS/commit/1c963b8ad0b614e7124d6f0bff527e111885a3e9))
+
+## [1.1.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.3...v1.1.4) (2021-04-22)
+
+
+### Bug Fixes
+
+* add @cocreate/fonte-awesome package ([af30b63](https://github.com/CoCreate-app/CoCreateJS/commit/af30b630eb508ba659bfd89b0e1db496cff76407))
+
+## [1.1.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.2...v1.1.3) (2021-04-22)
+
+
+### Bug Fixes
+
+* packge dependencies ([f375e88](https://github.com/CoCreate-app/CoCreateJS/commit/f375e883221c8533a9fcd5b5993a6c8ac10266d4))
+
+## [1.1.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.1...v1.1.2) (2021-04-22)
+
+
+### Bug Fixes
+
+* readme and deply to cdn ([f800eff](https://github.com/CoCreate-app/CoCreateJS/commit/f800effe7f02c613e05ec50de552526e83b90bc9))
+
+## [1.1.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.0...v1.1.1) (2021-04-22)
+
+
+### Bug Fixes
+
+* add google-auth package ([3bf00b4](https://github.com/CoCreate-app/CoCreateJS/commit/3bf00b4b66a30c217a612bb86203ba72cc355d56))
+
+# [1.1.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.20...v1.1.0) (2021-04-22)
+
+
+### Features
+
+* add prism, stripe, sendgrid plugin ([051cd87](https://github.com/CoCreate-app/CoCreateJS/commit/051cd8711023d6565714b2cee21f0a18da342af0))
+
 ## [1.0.20](https://github.com/CoCreate-app/CoCreateJS/compare/v1.0.19...v1.0.20) (2021-04-19)
 
 
