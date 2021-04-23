@@ -12,7 +12,7 @@
         
         <!-- CoCreate CSS -->
 
-        <link rel="stylesheet" href="https://server.cocreate.app/css/CoCreate.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css" type="text/css" />
     </head>
     <style>
     	body{overflow-x:hidden}
@@ -24,12 +24,12 @@
                 <div class="display:flex align-items:center">
                     <h2>CoCreateJS</h2>
                 </div>
-                <div class="display:flex align-items:center font-size:20px social_share" data-height="600" data-width="500" data-media="https://via.placeholder.com/300/09f/fff.png">
+                <div class="display:flex align-items:center font-size:20px" data-share_height="600" data-share_width="500" data-share_media="https://via.placeholder.com/300/09f/fff.png">
                     <a href="https://github.com/CoCreate-app/CoCreate-xxxxx" target="_blank" class="margin-right:15px"><i class="fab fa-github"></i></a>
-                    <a class="margin-right:15px share" data-network='twitter' title="Share on twitter"><i class="fab fa-twitter"></i></a>
-                    <a class="margin-right:15px share" data-network='facebook' title="Share on Facebook"><i class="fab fa-facebook"></i></a>
-                    <a class="margin-right:15px share" data-network='instagram' title="Share on instagram"><i class="fab fa-instagram"></i></a>
-                    <a class="margin-right:15px share" data-network='share' title="Share on share"><i class="fas fa-share-alt"></i></a>
+                    <a class="margin-right:15px" data-share_network='twitter' title="Share on twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="margin-right:15px" data-share_network='facebook' title="Share on Facebook"><i class="fab fa-facebook"></i></a>
+                    <a class="margin-right:15px" data-share_network='instagram' title="Share on instagram"><i class="fab fa-instagram"></i></a>
+                    <a class="margin-right:15px" data-share_network='share' title="Share on share"><i class="fas fa-share-alt"></i></a>
                 </div>
             </div>
             <p class="max-width:500px margin-bottom:20px">Learn how to convert your html into a dynamic realtime application.</p>
@@ -81,7 +81,7 @@
 	
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code>
+  <code class="language-js">
   CoCreate.createDocument({
     namespace:'',
     room:'',
@@ -136,7 +136,7 @@
 			        </div>
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code>
+  <code class="language-js">
   CoCreate.readDocument({
     collection: "module",
     document_id: "",
@@ -201,7 +201,7 @@
 	
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code>
+  <code class="language-js">
   CoCreate.updateDocument({
     namespace: '',
     room: '',
@@ -271,7 +271,7 @@
 			        </div>
 	            	<div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code>
+  <code class="language-js">
   CoCreate.deleteDocument({
     namespace: '',
     room: '',
@@ -391,7 +391,7 @@
 			        </div>
 	            	<div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code> 
+  <code class="language-js"> 
   CoCreate.readDcoumentList {
     collection: "modules",
     element: "xxxx",
@@ -434,7 +434,7 @@
     </code>
     
     Example:
-    <code>
+    <code class="language-js">
 CoCreate.readDocumentList({
   "apiKey": "c2b08663-06e3-440c-ef6f-13978b42883a",
   "securityKey": "f26baf68-e3a9-45fc-effe-502e47116265",
@@ -524,7 +524,7 @@ CoCreate.readDocumentList({
 	
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code>
+  <code class="language-js">
   inintDataCrdt({
     collection: "module",
     document_id: "",
@@ -568,7 +568,7 @@ CoCreate.readDocumentList({
 			        </div>
 	            	<div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-	<code>
+	<code class="language-js">
   CoCreate.getDataCrdt({
   	collection: 'module_activities',
   	document_id: '5e4802ce3ed96d38e71fc7e5',
@@ -614,7 +614,7 @@ CoCreate.readDocumentList({
 			        </div>
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code>
+  <code class="language-js">
   CoCreate.insertDataCrdt({
 	collection: 'module_activities',
 	document_id: '5e4802ce3ed96d38e71fc7e5',
@@ -678,7 +678,7 @@ CoCreate.readDocumentList({
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
 							
-  <code>
+  <code class="language-js">
   CoCreate.deleteDataCrdt({
   	collection: 'module_activities',
   	document_id: '5e4802ce3ed96d38e71fc7e5',
@@ -739,7 +739,7 @@ CoCreate.readDocumentList({
 			        </div>
 	            	<div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code>
+  <code class="language-js">
   replaceDataCrdt({
     collection: "module",
     document_id: "",
@@ -797,7 +797,7 @@ CoCreate.readDocumentList({
 	
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code>
+  <code class="language-js">
   CoCreate.sendPosition({
 	collection:"module_activities",
 	document_id:"5e4802ce3ed96d38e71fc7e5",
@@ -837,7 +837,7 @@ CoCreate.readDocumentList({
 			        </div>
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code>
+  <code class="language-js">
   CoCreate.getPosition(function(data))
   </code>
 						</pre>
@@ -886,7 +886,7 @@ CoCreate.readDocumentList({
 	
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code>
+  <code class="language-js">
   CoCreate.registerModule({
 	collection:"module_activities",
 	document_id:"5e4802ce3ed96d38e71fc7e5",
@@ -941,7 +941,7 @@ CoCreate.readDocumentList({
 	
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code>
+  <code class="language-js">
   CoCreateSocket.create({
     namespace: '',
     room: '',
@@ -994,7 +994,7 @@ CoCreate.readDocumentList({
 	
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code>
+  <code class="language-js">
   CoCreateSocket.send({
     namespace: '',
     room: '',
@@ -1039,7 +1039,7 @@ CoCreate.readDocumentList({
 			        </div>
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
-  <code>
+  <code class="language-js">
   CoCreateSocket.listen('sendMessage', function(data) {
 	console.log(data);
   })
@@ -1059,7 +1059,7 @@ CoCreate.readDocumentList({
         </script>
     
         <!--CoCreateJS-->
-        <script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
         
          
     </body>
