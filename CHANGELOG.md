@@ -1,3 +1,24 @@
+## [1.1.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.8...v1.1.9) (2021-04-23)
+
+
+### Bug Fixes
+
+* removed googleauth as it is breaking build ([af599a3](https://github.com/CoCreate-app/CoCreateJS/commit/af599a3b492fd996c4bca7c77159ea6816ef1083))
+
+## [1.1.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.7...v1.1.8) (2021-04-23)
+
+
+### Bug Fixes
+
+* test ci ([656b845](https://github.com/CoCreate-app/CoCreateJS/commit/656b845a938bf02386f2f8f0dbe84a8275a5362a))
+
+## [1.1.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.6...v1.1.7) (2021-04-23)
+
+
+### Bug Fixes
+
+* social share lazyload selector ([6710f13](https://github.com/CoCreate-app/CoCreateJS/commit/6710f13e2e9dcb1264fffe2216c0c7f4d75a2713))
+
 ## [1.1.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.5...v1.1.6) (2021-04-22)
 
 
