@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.9...v1.1.10) (2021-04-23)
+
+
+### Bug Fixes
+
+* readme and documentation. Removed securitykeys ([be5e7dc](https://github.com/CoCreate-app/CoCreateJS/commit/be5e7dc6dd5c137608a9a1cb8d05dfd8e9ee6959))
+
 ## [1.1.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.8...v1.1.9) (2021-04-23)
 
 
