@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.8...v1.1.9) (2021-04-23)
+
+
+### Bug Fixes
+
+* removed googleauth as it is breaking build ([af599a3](https://github.com/CoCreate-app/CoCreateJS/commit/af599a3b492fd996c4bca7c77159ea6816ef1083))
+
 ## [1.1.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.7...v1.1.8) (2021-04-23)
 
 
