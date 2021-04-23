@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="https://server.cocreate.app/CoCreate-plugins/CoCreate-codemirror/src/css/CoCreate-codemirror.css" type="text/css" />
 		
 		<!-- Prism -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css" rel="stylesheet" />
+        
 		
 	</head>
 	<style type="text/css" media="screen">
@@ -114,17 +114,17 @@
 	        <div data-collection="" data-document_id="" name="" id="cocreate-xxxxx" >
 	            
 	            <section id="xxxxx-section" class="padding:10px">
-		            <div class="display:flex flex-wrap:wrap justify-content:space-between">
+		            <div class="display:flex flex-wrap:wrap justify-content:space-between margin:10px">
 		                <div class="display:flex align-items:center">
 		                    <h2 class="padding-top:20px">CoCreateJS</h2>
 		                </div>
-		                <div class="display:flex align-items:center font-size:20px social_share transition:0.3s" data-height="600" data-width="500" data-media="https://via.placeholder.com/300/09f/fff.png" data-hover="display:block" data-hover_target=".social-networks">
+		                <div class="display:flex align-items:center font-size:20px transition:0.3s" data-share_height="600" data-share_width="500" data-share_media="https://via.placeholder.com/300/09f/fff.png" data-hover="display:block" data-hover_target=".social-networks">
 		                    <div class="display:none social-networks">
-			                    <a class="margin-right:15px share" data-network='twitter' title="Share on twitter"><i class="fab fa-twitter"></i></a>
-			                    <a class="margin-right:15px share" data-network='facebook' title="Share on Facebook"><i class="fab fa-facebook"></i></a>
-			                    <a class="margin-right:15px share" data-network='instagram' title="Share on instagram"><i class="fab fa-instagram"></i></a>
+			                    <a class="margin-right:15px" data-share_network='twitter' title="Share on twitter"><i class="fab fa-twitter"></i></a>
+			                    <a class="margin-right:15px" data-share_network='facebook' title="Share on Facebook"><i class="fab fa-facebook"></i></a>
+			                    <a class="margin-right:15px" data-share_network='instagram' title="Share on instagram"><i class="fab fa-instagram"></i></a>
 		                    </div>
-		                    <a class="margin-right:15px share" data-network='share' title="Share on share"><i class="fas fa-share-alt"></i></a>
+		                    <a class="margin-right:15px" data-share_network='share' title="Share on share"><i class="fas fa-share-alt"></i></a>
 		                </div>
 		            </div>
 		            <p class="max-width:500px margin-bottom:20px">Learn how to convert your html into a dynamic realtime application.</p>
@@ -560,7 +560,12 @@
 					    <!-- End description -->
 					    
 		                <!-- SandBox -->
-		   <!--             <h2 class="border-bottom:1px_solid_lightgrey padding:5px_0px">Demo</h2>-->
+		   <!--             <div id="boilerplate-demo" class="border-bottom:1px_solid_lightgrey">
+                        <span class="display:flex align-items:center" data-hover="display:block!important" data-hover_target='[href="#boilerplate-demo"]'>
+                            <h2 class="padding:5px_0px">Demo</h2>
+                            <a class="margin-left:10px display:none" href="#boilerplate-demo"><i class="fas fa-link"></i></a>
+                        </span>
+                    </div>-->
 					<!--    <div class="container svColumn overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-sandbox">-->
 					<!--       <div class="font-size:20px position:absolute top:10px right:10px opacity:0.6 z-index:7">-->
 					<!--        <a class="margin-right:10px" id="preview" data-show="preview" data-hide="code"><i class="far fa-eye"></i></a>-->
@@ -657,7 +662,7 @@
 		<!--CoCreateJS-->
 		<script src="https://server.cocreate.app/CoCreateJS/dist/CoCreate.js"></script>
 		
-	    <!-- CoCreate CodeMiirror -->
+	    
 	    <!--<script type="text/javascript" src="https://server.cocreate.app/CoCreate-plugins/CoCreate-codemirror/dist/CoCreate-codemirror.js" async></script>-->
 	    
 	    <!-- Prism -->

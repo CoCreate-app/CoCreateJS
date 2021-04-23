@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.5...v1.1.6) (2021-04-22)
+
+
+### Bug Fixes
+
+* hover lazyload selector added ([982512b](https://github.com/CoCreate-app/CoCreateJS/commit/982512baadabb8b7222c2f5cd1fd1d2cc0576468))
+
 ## [1.1.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.4...v1.1.5) (2021-04-22)
 
 
