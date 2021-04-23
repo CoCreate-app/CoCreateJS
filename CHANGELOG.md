@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.6...v1.1.7) (2021-04-23)
+
+
+### Bug Fixes
+
+* social share lazyload selector ([6710f13](https://github.com/CoCreate-app/CoCreateJS/commit/6710f13e2e9dcb1264fffe2216c0c7f4d75a2713))
+
 ## [1.1.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.5...v1.1.6) (2021-04-22)
 
 
