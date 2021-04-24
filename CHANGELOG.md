@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.10...v1.1.11) (2021-04-24)
+
+
+### Bug Fixes
+
+* updated docs template and added more plugins ([5772a32](https://github.com/CoCreate-app/CoCreateJS/commit/5772a3292d20fe0bec1538df4cdd823fc720beb1))
+
 ## [1.1.10](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.9...v1.1.10) (2021-04-23)
 
 
