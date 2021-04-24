@@ -10,98 +10,32 @@
 		
 		<!-- CoCreate CSS -->
 		<link rel="stylesheet" href="https://server.cocreate.app/CoCreateJS/dist/CoCreate.css" defer type="text/css" />
-		
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" defer crossorigin="anonymous" />    
-		
-		<!-- Codemirror -->
-		<link rel=stylesheet href="https://codemirror.net/lib/codemirror.css" defer>
-		<link rel="stylesheet" href="https://server.cocreate.app/CoCreate-plugins/CoCreate-codemirror/src/css/CoCreate-codemirror.css" type="text/css" />
-		
-		<!-- Prism -->
-        
-		
 	</head>
-	<style type="text/css" media="screen">
-		/*Sidenav Search Field */
-		.floating-label_field{
-			margin-top:0px;
-		}
-		.hide-nav ~ #menuL{
-			margin-top:0px;
-			max-height: -moz-available;   
-			max-height: -webkit-fill-available;  
-			max-height: fill-available;
-			will-change: transform;
-			transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-			transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
-			transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
-			transform: translateY(0);
-			-webkit-transform: translateY(0);
-		}
 
-.system-status {
-    position: absolute;
-    overflow:hidden;
-    right: 30px;
-    top: 30px;
-    /*display: flex;*/
-    height: 12px;
-    width: 12px;
-    border: 2px solid #f7f7f7;
-    border-radius: 50%;
-    background-color: yellowgreen;
-    transition:0.3s;
-    color:white;
-    word-wrap: none
-}
-
-.system-status:hover {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    height: 100%;
-    width: 100%;
-    border-radius: 0%;
-    border: 0px solid #f7f7f7;
-    padding:25px 20px;
-
-}
-.system-status.up::before {
-    content: 'System up';
-    background-color: yellowgreen;
-    padding:25px;
-}
-.system-status.down:hover {
-	background-color: #f44336;
-}
-.system-status.down::before {
-	content:'System Outage';
-	background-color: #f44336;
-	padding:25px;
-
-}
-	</style>
-	
 	<body>
   
 	    <!-- Navbar  -->
-	    <div class="domEditor" data-collection="components" data-document_id="60395ef42b3ac232657040fd" name="html" data-domEditor="replace"></div>
-
-<!--<div class="domEditor nav display:flex align-items:center background:whitesmoke padding-top:10px padding-bottom:10px" -->
-<!--			data-main_content_id="content"-->
-<!--			data-scroll="sticky-nav,hide-nav"-->
-<!--			data-scroll_up="10"-->
-<!--			data-scroll_down="10"-->
-<!--			data-collection="components" data-document_id="60395ef42b3ac232657040fd" name="html">-->
-<!--</div>-->
+	 <!--   <div class="nav display:flex align-items:center background:whitesmoke padding-top:10px padding-bottom:10px" -->
+		<!--	data-main_content_id="content"-->
+		<!--	data-scroll="sticky-nav,hide-nav"-->
+		<!--	data-scroll_up="10"-->
+		<!--	data-scroll_down="10">-->
+		<!--    <div class="domEditor" data-collection="components" data-document_id="60395ef42b3ac232657040fd" name="html" data-domEditor="replace"></div>-->
+		<!--</div>-->
+		<div class="domEditor nav display:flex align-items:center background:whitesmoke padding-top:10px padding-bottom:10px" 
+			data-main_content_id="content"
+			data-scroll="sticky-nav,hide-nav"
+			data-scroll_up="10"
+			data-scroll_down="10"
+			data-collection="components" data-document_id="60395ef42b3ac232657040fd" name="html">
+		</div>
 
 		<!-- SideNav Left -->
 		<!--<div id="menuL" class="cocreate-sidenav background:whitesmoke" data-main_content="content" sidenav-default_desktop="expanded" sidenav-default_tablet="expanded" sidenav-default_phone="offcanvas" sidenav-ontoggle_desktop="offcanvas" sidenav-ontoggle_tablet="offcanvas">-->
 		<!--	<div class="domEditor" data-collection="components" data-document_id="603717b07de7fb350ae9fec8" name="html"></div>-->
 		<!--	<div class="resizeHandler"></div>-->
 	 <!--   </div>-->
-		<sidenav id="menuL" class="cocreate-sidenav background:whitesmoke" data-resize="">
+		<sidenav id="menuL" class="cocreate-sidenav background:whitesmoke" data-main_content="content" sidenav-default_desktop="expanded" sidenav-default_tablet="offcanvas" sidenav-ontoggle_desktop="offcanvas" sidenav-ontoggle_tablet="offcanvas">
 			<div class="domEditor" data-collection="components" data-document_id="603717b07de7fb350ae9fec8" name="html"></div>
 			<div class="resizeHandler"></div>
 	    </sidenav>
@@ -118,13 +52,13 @@
 		                <div class="display:flex align-items:center">
 		                    <h2 class="padding-top:20px">CoCreateJS</h2>
 		                </div>
-		                <div class="display:flex align-items:center font-size:20px transition:0.3s" data-share_network="true" data-share_text="Enter decription here" data-share_title="testing im a title" data-share_height="600" data-share_width="700" data-share_media="https://cdn.cocreate.app/docs/boilerplate.png" data-hover="display:block" data-hover_target=".social-networks">
+		                <div class="display:flex align-items:center font-size:20px transition:0.3s" data-share_network="true" data-share_text="Enter decription here" data-share_title="testing im a title" data-share_height="600" data-share_width="700" data-share_media="https://cdn.cocreate.app/docs/boilerplate.png" data-hover="display:block!important" data-hover_target=".social-networks">
 		                    <div class="display:none social-networks">
 			                    <a class="margin-right:15px" data-share_network='twitter' title="Share on twitter"><i class="fab fa-twitter"></i></a>
 			                    <a class="margin-right:15px" data-share_network='facebook' title="Share on Facebook"><i class="fab fa-facebook"></i></a>
 			                    <a class="margin-right:15px" data-share_network='instagram' title="Share on instagram"><i class="fab fa-instagram"></i></a>
 		                    </div>
-		                    <a class="margin-right:15px" data-share_network='share' title="Share on share"><i class="fas fa-share-alt"></i></a>
+		                    <a class="margin-right:15px" title="Share on share"><i class="fas fa-share-alt"></i></a>
 		                </div>
 		            </div>
 		            <p class="max-width:500px margin-bottom:20px">Learn how to convert your html into a dynamic realtime application.</p>

@@ -1,9 +1,64 @@
-	    <div class="nav display:flex align-items:center background:whitesmoke padding-top:10px padding-bottom:10px" 
-			data-main_content_id="content"
-			data-scroll="sticky-nav,hide-nav"
-			data-scroll_up="10"
-			data-scroll_down="10">
-			
+	<style type="text/css" media="screen">
+		/*Sidenav Search Field */
+		.floating-label_field{
+			margin-top:0px;
+		}
+		.hide-nav ~ #menuL{
+			margin-top:0px;
+			max-height: -moz-available;   
+			max-height: -webkit-fill-available;  
+			max-height: fill-available;
+			will-change: transform;
+			transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+			transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+			transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+			transform: translateY(0);
+			-webkit-transform: translateY(0);
+		}
+
+.system-status {
+    position: absolute;
+    overflow:hidden;
+    right: 30px;
+    top: 30px;
+    /*display: flex;*/
+    height: 12px;
+    width: 12px;
+    border: 2px solid #f7f7f7;
+    border-radius: 50%;
+    background-color: yellowgreen;
+    transition:0.3s;
+    color:white;
+    word-wrap: none
+}
+
+.system-status:hover {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+    border: 0px solid #f7f7f7;
+    padding:25px 20px;
+
+}
+.system-status.up::before {
+    content: 'System up';
+    background-color: yellowgreen;
+    padding:25px;
+}
+.system-status.down:hover {
+	background-color: #f44336;
+}
+.system-status.down::before {
+	content:'System Outage';
+	background-color: #f44336;
+	padding:25px;
+
+}
+	</style>
+
 	    	 <!--Menu Icon Animations -->
 			<a class="menu_icon" data-toggle="active" data-toggle_sidenav="menuL">
 				<span></span>
@@ -14,7 +69,7 @@
 	    	 <!--Icon Logo -->
 	    	<span class="padding:5px_12px show-on-phone-only">
 				<a href="./index.html">	
-					<img data-collection="organizations" data-document_id="" name="logo" data-pass_id="me1234" src="images/icon.png" height="40px"alt="...">
+					<img data-collection="organizations" data-document_id="" name="logo" data-pass_id="me1234" src="https://cdn.cocreate.app/icon.png" height="40px" alt="...">
 				</a>
 			</span>
 			
@@ -77,4 +132,3 @@
 	  			  <div class="avatar-status off"></div>
 			</div>
 			
-		</div>
