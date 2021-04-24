@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add @cocreate/google-auth
+  /usr/bin/node /usr/share/yarn/bin/yarn.js install
 
 PATH: 
   /home/ubuntu/.rvm/gems/ruby-2.6.3/bin:/home/ubuntu/.rvm/gems/ruby-2.6.3@global/bin:/home/ubuntu/.rvm/rubies/ruby-2.6.3/bin:/home/ubuntu/.rvm/gems/ruby-2.6.3/bin:/home/ubuntu/.rvm/gems/ruby-2.6.3@global/bin:/home/ubuntu/.rvm/rubies/ruby-2.6.3/bin:/home/ubuntu/.rvm/gems/ruby-2.6.3/bin:/home/ubuntu/.rvm/gems/ruby-2.6.3@global/bin:/home/ubuntu/.rvm/rubies/ruby-2.6.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/usr/local/bin:/home/ubuntu/.rvm/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/usr/local/bin:/home/ubuntu/.rvm/bin:/home/ubuntu/.rvm/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/usr/local/bin:/home/ubuntu/.rvm/bin:/home/ubuntu/.rvm/bin
@@ -29,7 +29,7 @@ Trace:
 npm manifest: 
   {
     "name": "@cocreate/cocreatejs",
-    "version": "1.0.20",
+    "version": "1.1.10",
     "description": "A simple CoCreateJS component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API.",
     "keywords": [
       "cocreatejs",
@@ -87,7 +87,9 @@ npm manifest:
       "html-webpack-tags-plugin": "^3.0.0",
       "mini-css-extract-plugin": "^1.4.0",
       "style-loader": "^2.0.0",
+      "svg-loader": "^0.0.2",
       "terser-webpack-plugin": "5.1.0",
+      "url-loader": "^4.1.1",
       "webpack": "^5.24.4",
       "webpack-bundle-analyzer": "^4.4.0",
       "webpack-cli": "^4.6.0",
@@ -117,6 +119,7 @@ npm manifest:
       "@cocreate/fetch": "^1.0.0",
       "@cocreate/filter": "^1.0.0",
       "@cocreate/floating-label": "^1.0.0",
+      "@cocreate/font-awesome": "^1.0.0",
       "@cocreate/form": "^1.0.0",
       "@cocreate/fullcalendar": "^1.0.0",
       "@cocreate/fullscreen": "^1.0.0",
@@ -135,6 +138,7 @@ npm manifest:
       "@cocreate/pickr": "^1.0.0",
       "@cocreate/pinterest": "^1.0.0",
       "@cocreate/plaid": "^1.0.0",
+      "@cocreate/prism": "^1.0.0",
       "@cocreate/progress": "^1.0.0",
       "@cocreate/progress-bar": "^1.0.0",
       "@cocreate/quill": "^1.0.0",
@@ -1139,6 +1143,15 @@ Lockfile:
       "@cocreate/docs" "^1.0.3"
       "@cocreate/socket-client" "^1.0.2"
   
+  "@cocreate/crud-client@^1.0.5":
+    version "1.0.5"
+    resolved "https://registry.yarnpkg.com/@cocreate/crud-client/-/crud-client-1.0.5.tgz#66c54ae6ebd72fa6dcaf93caf2ffc866294143a0"
+    integrity sha512-6WFm6Dh+JHT+Lza5W3dQ4W0Hm35CozYhRdk/dwe/LR+zUQRpUIUxTLkqGntlGk8BmPn+jJdrJFIRRo5jGPzpPg==
+    dependencies:
+      "@cocreate/docs" "^1.0.3"
+      "@cocreate/socket-client" "^1.0.2"
+      mini-css-extract-plugin "^1.5.0"
+  
   "@cocreate/cursors@^1.0.0", "@cocreate/cursors@^1.1.5":
     version "1.1.6"
     resolved "https://registry.yarnpkg.com/@cocreate/cursors/-/cursors-1.1.6.tgz#0f6a327b91b502e5c15cff972167830b1e5e0d00"
@@ -1219,6 +1232,17 @@ Lockfile:
     integrity sha512-Q8Tz+H32VSaWmcChJg4K7cL8Mb74cZp4Y9H9TiEobWvyiXGWgLEmybhbgF+f8i5PMSS2hTSM3s5gyInxTdAdhQ==
     dependencies:
       "@cocreate/docs" "^1.0.3"
+  
+  "@cocreate/font-awesome@^1.0.0":
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/@cocreate/font-awesome/-/font-awesome-1.0.0.tgz#378f6769c07c227e85ca7d93142cd2bd45eda6c1"
+    integrity sha512-B2WiAoXk5XuCWZa50hqXCKm8LD3pc6+ODlqW2/VshwU3USNMLzgUaGcvxcx6XXI6ZdfqSDsIk3AQpPaeofVljA==
+    dependencies:
+      "@cocreate/crud-client" "^1.0.5"
+      "@cocreate/docs" "^1.0.3"
+      "@cocreate/utils" "^1.0.3"
+      "@fortawesome/fontawesome-free" "^5.15.3"
+      mini-css-extract-plugin "^1.5.0"
   
   "@cocreate/form@^1.0.0", "@cocreate/form@^1.0.5":
     version "1.0.7"
@@ -1357,6 +1381,15 @@ Lockfile:
     integrity sha512-1qGOpM0PKj+afj190/03Zz+lzUSb82+NzlNoPq/JYX576NTGh5mKsMnDB9J2/cwViQyrG3fz9chCt2L/qqC7EQ==
     dependencies:
       "@cocreate/docs" "^1.0.3"
+  
+  "@cocreate/prism@^1.0.0":
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/@cocreate/prism/-/prism-1.0.0.tgz#0b5bd8221282952a99c6f0fd3d081730fe557266"
+    integrity sha512-BLV53Tr9CmXtHGe40lKPia8UZyAw38AYctIubc1w3f0ZHvQsDTPCKLZ0FR3FDjNU04Vu+4SZ6F7swJo/x86L4g==
+    dependencies:
+      "@cocreate/docs" "^1.0.3"
+      mini-css-extract-plugin "^1.5.0"
+      prismjs "^1.23.0"
   
   "@cocreate/progress-bar@^1.0.0":
     version "1.0.1"
@@ -1602,6 +1635,14 @@ Lockfile:
     dependencies:
       "@cocreate/docs" "^1.0.3"
   
+  "@cocreate/utils@^1.0.3":
+    version "1.0.3"
+    resolved "https://registry.yarnpkg.com/@cocreate/utils/-/utils-1.0.3.tgz#3eefcb4a9b309dbf94d5796078745f715eb264ad"
+    integrity sha512-ATFDqKxvCwrre/ZfRV/RG+z2aULxcxduGDluftHWh/d14TBRvyGIa766SUENc8j0KfPcSkn6SK/kR36BDLtI1w==
+    dependencies:
+      "@cocreate/docs" "^1.0.3"
+      mini-css-extract-plugin "^1.5.0"
+  
   "@cocreate/uuid@^1.0.0":
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/@cocreate/uuid/-/uuid-1.0.1.tgz#7ca113098f62e82ffc853eace2b58b90086a324c"
@@ -1620,6 +1661,11 @@ Lockfile:
     version "0.5.2"
     resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.2.tgz#8f03a22a04de437254e8ce8cc84ba39689288752"
     integrity sha512-HyYEUDeIj5rRQU2Hk5HTB2uHsbRQpF70nvMhVzi+VJR0X+xNEhjPui4/kBf3VeH/wqD28PT4sVOm8qqLjBrSZg==
+  
+  "@fortawesome/fontawesome-free@^5.15.3":
+    version "5.15.3"
+    resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.3.tgz#c36ffa64a2a239bf948541a97b6ae8d729e09a9a"
+    integrity sha512-rFnSUN/QOtnOAgqFRooTA3H57JLDm0QEG/jPdk+tLQNL/eWd+Aok8g3qCI+Q1xuDPWpGW/i9JySpJVsq8Q0s9w==
   
   "@npmcli/move-file@^1.0.1":
     version "1.1.2"
@@ -4369,6 +4415,15 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-1.1.1.tgz#a4d293ef67ebb7b88d4a4d42c0ccf00c4d1e366d"
     integrity sha1-pNKT72frt7iNSk1CwMzwDE0eNm0=
   
+  clipboard@^2.0.0:
+    version "2.0.8"
+    resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.8.tgz#ffc6c103dd2967a83005f3f61976aa4655a4cdba"
+    integrity sha512-Y6WO0unAIQp5bLmk1zdThRhgJt/x3ks6f30s3oE3H1mgIEU33XyQjEf8gsf6DxC7NPX8Y1SsNWjUjL/ywLnnbQ==
+    dependencies:
+      good-listener "^1.2.2"
+      select "^1.1.2"
+      tiny-emitter "^2.0.0"
+  
   clone-buffer@^1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/clone-buffer/-/clone-buffer-1.0.0.tgz#e3e25b207ac4e701af721e2cb5a16792cac3dc58"
@@ -5076,6 +5131,11 @@ Lockfile:
       p-map "^2.0.0"
       pify "^4.0.1"
       rimraf "^2.6.3"
+  
+  delegate@^3.1.2:
+    version "3.2.0"
+    resolved "https://registry.yarnpkg.com/delegate/-/delegate-3.2.0.tgz#b66b71c3158522e8ab5744f720d8ca0c2af59166"
+    integrity sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==
   
   delimiter-regex@^1.3.1:
     version "1.3.1"
@@ -6160,6 +6220,13 @@ Lockfile:
       object-assign "^4.0.1"
       pify "^2.0.0"
       pinkie-promise "^2.0.0"
+  
+  good-listener@^1.2.2:
+    version "1.2.2"
+    resolved "https://registry.yarnpkg.com/good-listener/-/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
+    integrity sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=
+    dependencies:
+      delegate "^3.1.2"
   
   graceful-fs@^4.0.0, graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.4, graceful-fs@^4.2.4:
     version "4.2.6"
@@ -8027,6 +8094,15 @@ Lockfile:
       schema-utils "^3.0.0"
       webpack-sources "^1.1.0"
   
+  mini-css-extract-plugin@^1.5.0:
+    version "1.5.0"
+    resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-1.5.0.tgz#69bee3b273d2d4ee8649a2eb409514b7df744a27"
+    integrity sha512-SIbuLMv6jsk1FnLIU5OUG/+VMGUprEjM1+o2trOAx8i5KOKMrhyezb1dJ4Ugsykb8Jgq8/w5NEopy6escV9G7g==
+    dependencies:
+      loader-utils "^2.0.0"
+      schema-utils "^3.0.0"
+      webpack-sources "^1.1.0"
+  
   minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz#2e194de044626d4a10e7f7fbc00ce73e83e4d5c7"
@@ -9182,6 +9258,13 @@ Lockfile:
       is-number "^2.0.2"
       nanoseconds "^0.1.0"
   
+  prismjs@^1.23.0:
+    version "1.23.0"
+    resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.23.0.tgz#d3b3967f7d72440690497652a9d40ff046067f33"
+    integrity sha512-c29LVsqOaLbBHuIbsTxaKENh1N2EQBOHaWv7gkHN4dgRbxSREqDnDbtFJYdpPauS4YCplMSNCABQ6Eeor69bAA==
+    optionalDependencies:
+      clipboard "^2.0.0"
+  
   private@^0.1.6:
     version "0.1.8"
     resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
@@ -9910,6 +9993,11 @@ Lockfile:
       ajv "^6.12.5"
       ajv-keywords "^3.5.2"
   
+  select@^1.1.2:
+    version "1.1.2"
+    resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
+    integrity sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
+  
   semver@7.0.0:
     version "7.0.0"
     resolved "https://registry.yarnpkg.com/semver/-/semver-7.0.0.tgz#5f3ca35761e47e05b206c6daff2cf814f0316b8e"
@@ -10436,6 +10524,11 @@ Lockfile:
     dependencies:
       has-flag "^4.0.0"
   
+  svg-loader@^0.0.2:
+    version "0.0.2"
+    resolved "https://registry.yarnpkg.com/svg-loader/-/svg-loader-0.0.2.tgz#601ab2fdaa1dadae3ca9975b550de92a07e1d92b"
+    integrity sha1-YBqy/aodra48qZdbVQ3pKgfh2Ss=
+  
   svgo@^1.0.0:
     version "1.3.2"
     resolved "https://registry.yarnpkg.com/svgo/-/svgo-1.3.2.tgz#b6dc511c063346c9e415b81e43401145b96d4167"
@@ -10658,6 +10751,11 @@ Lockfile:
     version "0.3.0"
     resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
     integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
+  
+  tiny-emitter@^2.0.0:
+    version "2.1.0"
+    resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
+    integrity sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
   
   to-absolute-glob@^0.1.1:
     version "0.1.1"
@@ -10997,6 +11095,15 @@ Lockfile:
     version "0.1.0"
     resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
     integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+  
+  url-loader@^4.1.1:
+    version "4.1.1"
+    resolved "https://registry.yarnpkg.com/url-loader/-/url-loader-4.1.1.tgz#28505e905cae158cf07c92ca622d7f237e70a4e2"
+    integrity sha512-3BTV812+AVHHOJQO8O5MkWgZ5aosP7GnROJwvzLS9hWDj00lZ6Z0wNak423Lp9PBZN05N+Jk/N5Si8jRAlGyWA==
+    dependencies:
+      loader-utils "^2.0.0"
+      mime-types "^2.1.27"
+      schema-utils "^3.0.0"
   
   url-parse@^1.4.3, url-parse@^1.4.7:
     version "1.5.1"
