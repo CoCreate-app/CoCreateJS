@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.11...v1.1.12) (2021-04-24)
+
+
+### Bug Fixes
+
+* add missing google auth dependency ([b4c6fce](https://github.com/CoCreate-app/CoCreateJS/commit/b4c6fce532f75018814b5d55b3333026eaae220d))
+
 ## [1.1.11](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.10...v1.1.11) (2021-04-24)
 
 
