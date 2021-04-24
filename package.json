@@ -94,6 +94,7 @@
     "@cocreate/form": "^1.0.0",
     "@cocreate/fullcalendar": "^1.0.0",
     "@cocreate/fullscreen": "^1.0.0",
+    "@cocreate/google-auth": "^1.0.5",
     "@cocreate/htmltags": "^1.0.0",
     "@cocreate/industry": "^1.0.1",
     "@cocreate/input": "^1.0.0",
