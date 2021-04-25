@@ -6,33 +6,53 @@ module.exports = {
         host: "server.cocreate.app:8088"
     },
  
-    sources: [{
-            path: "./docs/index.html",
+    sources: [
+        // {
+        //     path: "./docs/index.html",
+        //     collection: "files",
+        //     document_id: "602726f95e697f4f26a98a57",
+        //     key: "html",
+        //     data:{
+        //         name: "CoCreateJS Doc",
+        //     }
+        // },
+        {
+            path: "./docs/elements.html",
             collection: "files",
-            document_id: "602726f95e697f4f26a98a57",
+            document_id: "6084db6968177d4c2f556fd7",
             key: "html",
             data:{
-                name: "CoCreateJS Doc",
+                name: "CoCreateJS Elements Doc",
             }
         },
-        {
-            path: "./docs/menu.html",
-            collection: "components",
-            document_id: "603717b07de7fb350ae9fec8",
-            key: "html",
-            data:{
-                name: "CoCreateJS Doc Menu",
-            }
-        },
-        {
-            path: "./docs/navbar.html",
-            collection: "components",
-            document_id: "60395ef42b3ac232657040fd",
-            key: "html",
-            data:{
-                name: "CoCreateJS Doc Navbar",
-            }
-        },
+
+        // {
+        //     path: "./docs/menu.html",
+        //     collection: "components",
+        //     document_id: "603717b07de7fb350ae9fec8",
+        //     key: "html",
+        //     data:{
+        //         name: "CoCreateJS Doc Menu",
+        //     }
+        // },
+        // {
+        //     path: "./docs/navbar.html",
+        //     collection: "components",
+        //     document_id: "60395ef42b3ac232657040fd",
+        //     key: "html",
+        //     data:{
+        //         name: "CoCreateJS Doc Navbar",
+        //     }
+        // },
+        // {
+        //     path: "./docs/elements.html",
+        //     collection: "files",
+        //     document_id: "6084db6968177d4c2f556fd7",
+        //     key: "html",
+        //     data:{
+        //         name: "CoCreateJS Elements Doc",
+        //     }
+        // },
     ],
    
     crud: [{
@@ -43,7 +63,18 @@ module.exports = {
                 document_id: "602726f95e697f4f26a98a57",
                 name: "html",
                 domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
-                route: "/docs/CoCreateJS",
+                route: "/docs",
+            }
+        },
+        {
+            collection: "routes",
+            document_id: "6084db6968177d4c2f556fd6",
+            data:{
+                collection: "files",
+                document_id: "6084db6968177d4c2f556fd7",
+                name: "html",
+                domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
+                route: "/docs/elements",
             }
         }
     ],

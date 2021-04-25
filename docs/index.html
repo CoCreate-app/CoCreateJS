@@ -9,15 +9,8 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
 		
 		<!-- CoCreate CSS -->
-  		<link rel="stylesheet" href="https://cdn.cocreate.app/1.0.15/CoCreate.min.css" type="text/css" />
+		<link rel="stylesheet" href="https://server.cocreate.app/CoCreateJS/dist/CoCreate.css" type="text/css" />
 		
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous" />    
-		
-		<!-- Codemirror -->
-		<!--<link rel="stylesheet" href="https://server.cocreate.app/CoCreate-plugins/CoCreate-codemirror/src/CoCreate-codemirror.css" type="text/css" />-->
-		<link rel=stylesheet href="https://codemirror.net/lib/codemirror.css"  async defer>
-
 	</head>
 	<style type="text/css" media="screen">
 		/*Sidenav Search Field */
@@ -40,13 +33,7 @@
 	</style>
 	
 	<body>
-		<navbar class="nav display:flex align-items:center background:whitesmoke padding-top:10px padding-bottom:10px" data-main_content_id="content" data-scroll="sticky-nav,hide-nav" data-scroll_up="10" data-scroll_down="10" data-collection="components" data-document_id="60395ef42b3ac232657040fd" name="html">
-		</navbar>
-		<sidenav id="menuL" class="cocreate-sidenav background:whitesmoke" data-main_content="content" sidenav-default_desktop="expanded" sidenav-default_tablet="offcanvas" sidenav-ontoggle_desktop="offcanvas" sidenav-ontoggle_tablet="expanded">
-			<menu data-collection="components" data-document_id="603717b07de7fb350ae9fec8" name="html"></menu>
-			<div class="resizeHandler"></div>
-	    </sidenav>
-
+  
 	    <!-- Navbar  -->
 	    <nav class="nav display:flex align-items:center padding-top:10px padding-bottom:10px background:whitesmoke" 
 			data-main_content_id="content"
@@ -55,10 +42,12 @@
 			data-scroll_down="10">
 			
 			<!-- Logo -->
-			<a href="./index.html" class="height:50px padding:5px_10px_5px_20px display:none@xs@sm@md">
-				<img data-collection="organizations" data-document_id="" name="logo" src="images/logo.png" height="40px" />
-			</a>
-
+			<div class="height:50px show-on-tablet-and-up">
+				<a href="./index.html" class="padding:5px_10px">
+					<img src="images/logo.png" height="40px" />
+				</a>
+			</div>
+	    
 			<!-- Menu Icon -->
 			<a class="menu_icon display:none@md@lg@xl" data-toggle="active" data-toggle_sidenav="menuL">
 				<span></span>
@@ -66,26 +55,37 @@
 				<span></span>
 			</a>
 		
-			<!-- Icon Logo -->
-			<a href="./index.html" class="height:50px padding:5px_12px display:none@lg@xl">	
-				<img data-collection="organizations" data-document_id="" name="icon-logo" src="images/icon.png" height="40px" alt="icon logo">
-			</a>
-
+	    	<!-- Icon Logo -->
+	    	<span class="padding:5px_12px show-on-phone-only">
+				<a href="./index.html">	
+					<img data-collection="organizations" data-document_id="" name="logo" data-pass_id="me1234" src="images/icon.png" height="40px"alt="...">
+				</a>
+			</span>
+			
 	    	<!-- Navigation -->
-			<div class="display:flex align-items:center overflow:overlay height:50px width:100% color:#555 margin-left:15px padding-top:3px display:none!important@xs@sm">
-				<a href="./index.html#features" class="margin-right:25px color:dodgerblue:hover">FEATURES</a>
-				<a href="./elements.html" class="margin-right:25px color:dodgerblue:hover">DOCS</a>
-				<a href="./blog.html" class="margin-right:25px color:dodgerblue:hover">BLOG</a>
-				<a href="./discuss.html" class="margin-right:25px color:dodgerblue:hover">DISCUSS</a>
-				<a href="./university.html" class="margin-right:25px color:dodgerblue:hover">UNIVERSITY</a>
+			<div class="display:flex align-items:center show-on-tablet-and-up overflow:overlay height:50px width:100% text-transform:uppercase color:#555 margin-left:15px">
+				<div class="margin-right:25px">
+					<a href="./index.html#features" class="color:dodgerblue:hover">Features</a>
+				</div>
+				<div class="margin-right:25px">
+					<a href="./docs/elements" class="color:dodgerblue:hover">Docs</a>
+				</div>
+				<div class="margin-right:25px">
+					<a href="./blog" class="color:dodgerblue:hover">Blog</a>
+				</div>
+				<div class="margin-right:25px">
+					<a href="./discuss" class="color:dodgerblue:hover">Discuss</a>
+				</div>
+				<div class="margin-right:25px">
+					<a href="./university" class="color:dodgerblue:hover">University</a>
+				</div>
 	        </div>
 
 			<!-- Horizontal Scroll Nav/Tabs -->
 			<div class="display:flex direction:rtl overflow:overlay align-items:center width:400px width:100%@xs@sm height:50px padding-right:10px font-size:20px">
 				
 				<!-- Social Share -->
-				<div class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px background:white">
-                    <div class="display:flex align-items:center transition:0.3s padding-left:10px" data-share_network="true" data-share_text="Enter decription here" data-share_title="testing im a title" data-share_height="600" data-share_width="700" data-share_media="https://cdn.cocreate.app/docs/boilerplate.png">
+				<div class="display:flex align-items:center font-size:20px social_share" data-height="600" data-width="500" data-media="https://via.placeholder.com/300/09f/fff.png">
 		            <a href="https://github.com/CoCreate-app" target="_blank" class="margin-right:15px"><i class="fab fa-github"></i></a>
 		            <a href="https://twitter.com/CoCreate_App" target="_blank" class="margin-right:15px"><i class="fab fa-twitter"></i></a>
 		            <a href="https://www.facebook.com/CoCreate.apps" target="_blank" class="margin-right:15px"><i class="fab fa-facebook"></i></a>
@@ -144,7 +144,7 @@
 			<!-- Navigation -->
 			<div class="color:#212121 text-transform:uppercase">
 				<a href="./index.html#features" class="display:block color:dodgerblue:hover padding:12px_24px">Features</a>
-				<a href="./elements" class="display:block color:dodgerblue:hover padding:12px_24px">Docs</a>
+				<a href="./docs//elements" class="display:block color:dodgerblue:hover padding:12px_24px">Docs</a>
 				<a href="./blog" class="display:block color:dodgerblue:hover padding:12px_24px">Blog</a>
 				<a href="./discuss.html" class="display:block color:dodgerblue:hover padding:12px_24px">Discuss</a>
 				<a href="./university.html" class="display:block color:dodgerblue:hover padding:12px_24px">University</a>
@@ -161,14 +161,14 @@
 			<section class="padding-top:80px padding-bottom:40px">
 				<div class=" max-width:90% margin:0px_auto">
 					<div class="display:flex flex-wrap:wrap align-items:center flex-direction:row-reverse">
-						<div class="flex-grow:1 width:300px">
+						<div class="flex-grow:1 min-width:300px width:50%">
 							<video loop autoplay muted class="width:100%">
 								<source src="images/dashboard-video.mp4" type="video/mp4">
 							</video>
 						</div>
-						<div class="flex-grow:1 width:300px padding:0px_15px font-size:16px ">
+						<div class="flex-grow:1 min-width:300px width:50% padding:0px_15px font-size:16px ">
 							<h1 class="font-size:2rem">A Low-code JavaScript <span class="color:dodgerblue">Framework</span></h1>
-							<span class="font-size:16px margin-top:10px">For Building Collaborative No Code Apps, Platforms and UI's</span>
+							<span class="font-size:16px margin-top:10px">For Building Collaborative Apps, Platforms and UI's</span>
 							<!--<p class="margin-top:10px">HTML and CSS, No JS Required...</p>-->
 							<button href="./elements.html" class="background-color:dodgerblue color:white border-radius-50px margin-top:20px padding:10px_30px">Get Started</button>
 						</div>
@@ -205,12 +205,12 @@
 		    <section class="padding-top:80px padding-bottom:40px" id="features">
 		      <div class="max-width:90% margin:0px_auto">
 		        <div class="display:flex flex-wrap:wrap align-items:center">
-		          <div class="flex-grow:1 width:300px">
+		          <div class="flex-grow:1 min-width:300px width:50%">
 		            <video loop autoplay muted class="width:100%">
 		              <source type="video/mp4" src="images/on-board-video.webm">
 		            </video>
 		          </div>
-		          <div class="flex-grow:1 width:300px padding-left:15px padding-right:15px">
+		          <div class="flex-grow:1 min-width:300px width:50% padding-left:15px padding-right:15px">
 		            <h1 class="font-size:1.5rem text-transform:uppercase">Micro Component Architecture</h1>
 		            <p class="margin-top:10px line-height:1.5">Vanilla javascript, lightweight, single purpose micro components. Easily modify, remove and/or replace components. Highly configuarable using HTML5 data-attributes. HTML5 developers can use a combination of data-attributes to create a dynamic experience. Javascript developers still have access to API, callbacks and events.</p>
 		            <p></p>
@@ -224,12 +224,12 @@
 		    <section class="background:whitesmoke padding-top:80px padding-bottom:40px">
 		      <div class="max-width:90% margin:0px_auto">
 		        <div class="display:flex flex-wrap:wrap align-items:center flex-direction:row-reverse">
-		          <div class="flex-grow:1 width:300px">
+		          <div class="flex-grow:1 min-width:300px width:50%">
 		            <video loop autoplay muted class="width:100%">
 		              <source type="video/mp4" src="images/cards.webm">
 		            </video>
 		          </div>
-		          <div class="flex-grow:1 width:300px padding-left:15px padding-right:15px">
+		          <div class="flex-grow:1 min-width:300px width:50% padding-left:15px padding-right:15px">
 		            <h1 class="font-size:1.5rem text-transform:uppercase">Collaborative Headless CMS</h1>
 		            <p class="margin-top:10px line-height:1.5">A lighting fast headless CMS over websocket, providing CRUD and CRDT functionality. Create, Read, Update, Delete and Filter lists. Collaborate on Text, DOM and Objects. Configure using HTML5 data-attibutes. Supports offline editing and user cursor positions in Inputs, Textareas, Rich Text Editors and Code Editors. But of course... Javascript developers still have access to API, callbacks and events.</p>
 		            <a class="text-decoration-underline padding:10px_30px background:#3690FF background:#3790FF:hover min-width:30% text-align:center color:#fff color:#ddd:hover transition:0.4s margin-top:30px display:inline-block">Get Your API Key</a>
@@ -242,12 +242,12 @@
 		    <section class="padding-top:80px padding-bottom:40px">
 		      <div class="max-width:90% margin:0px_auto">
 		        <div class="display:flex flex-wrap:wrap align-items:center">
-		          <div class="flex-grow:1 width:300px">
+		          <div class="flex-grow:1 min-width:300px width:50%">
 		            <video loop autoplay muted class="width:100%">
 		              <source type="video/mp4" src="images/on-board-video.webm">
 		            </video>
 		          </div>
-		          <div class="flex-grow:1 width:300px padding-left:15px padding-right:15px">
+		          <div class="flex-grow:1 min-width:300px width:50% padding-left:15px padding-right:15px">
 		            <h1 class="font-size:1.5rem text-transform:uppercase">Fully Customizable Admin Panel</h1>
 		            <p class="margin-top:10px line-height:1.5">HTML5 Admin dashboard UI powered by CoCreateJS. It is 100% editable and used to manage and create views for your data and content. Use it as a Collaborative CRM, CMS and ERP. Can be modified, replaced or used as an example to build your own custom HTML5 admin dashboard.</p>
 		            <p></p>
@@ -261,12 +261,12 @@
 		    <section class="background:whitesmoke padding-top:80px padding-bottom:40px">
 		      <div class="max-width:90% margin:0px_auto">
 		        <div class="display:flex flex-wrap:wrap align-items:center flex-direction:row-reverse">
-		          <div class="flex-grow:1 width:300px">
+		          <div class="flex-grow:1 min-width:300px width:50%">
 		            <video loop autoplay muted class="width:100%">
 		              <source type="video/mp4" src="images/cards.webm">
 		            </video>
 		          </div>
-		          <div class="flex-grow:1 width:300px padding-left:15px padding-right:15px">
+		          <div class="flex-grow:1 min-width:300px width:50% padding-left:15px padding-right:15px">
 		            <h1 class="font-size:1.5rem text-transform:uppercase">Collaborative Drag-n-Drop Builder</h1>
 		            <p class="margin-top:10px line-height:1.5">We are in the process of using CoCreateJS components to create an experimental NO Code expereince. Every page of the adminUI can be edited in the drag and drop builder. CoCreate builder UI is completely customizable and supports editing of any html5 template. Can be modified, replaced or used as an example to build your own custom drang and drop builder.</p>
 		          </div>
@@ -278,12 +278,12 @@
 		    <section class="padding-top:80px padding-bottom:40px">
 		      <div class="max-width:90% margin:0px_auto">
 		        <div class="display:flex flex-wrap:wrap align-items:center">
-		          <div class="flex-grow:1 width:300px">
+		          <div class="flex-grow:1 min-width:300px width:50%">
 		            <video loop autoplay muted class="width:100%">
 		              <source type="video/mp4" src="images/on-board-video.webm">
 		            </video>
 		          </div>
-		          <div class="flex-grow:1 width:300px padding-left:15px padding-right:15px">
+		          <div class="flex-grow:1 min-width:300px width:50% padding-left:15px padding-right:15px">
 		            <h1 class="font-size:1.5rem text-transform:uppercase">Thirdparty API Intergration</h1>
 		            <p class="margin-top:10px line-height:1.5">We have put together a few thirdparty APIs and developed them to be used and configured with HTML5 data-attributes. Build custom flows and logic without ever leaving the html page... The CoCreate Way... Almost forgot, Javascript developers still have access to API, callbacks and events.</p>
 		            <p></p>
@@ -302,7 +302,7 @@
 								
 				<div class="margin:20px_30px padding-bottom:20px font-size:21px border-bottom:1px_solid_white">
 					<!-- Social Share -->
-					<div class="display:flex justify-content:center" data-share_network="true" data-share_text="Enter decription here" data-share_title="testing im a title" data-share_height="600" data-share_width="700" data-share_media="https://cdn.cocreate.app/docs/boilerplate.png">
+					<div class="display:flex justify-content:center social_share" data-height="600" data-width="500" data-media="https://via.placeholder.com/300/09f/fff.png">
 						<a href="https://twitter.com/CoCreate_App" target="_blank" class="margin:15px color:white"><i class="fab fa-twitter"></i></a>
 						<a href="https://www.facebook.com/CoCreate.apps/" target="_blank" class="margin:15px color:white"><i class="fab fa-facebook"></i></a>
 						<a href="https://www.instagram.com/cocreate_app/" target="_blank" class="margin:15px color:white"><i class="fab fa-instagram"></i></a>
@@ -316,11 +316,17 @@
 			</div>
 		</footer>
 
-        <script src="./apikey.js"></script>
-        <script src="https://cdn.cocreate.app/1.0.15/CoCreate.min.js"></script>
-		
-	    
-	    
+        <script>
+            var config = {
+                apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+                organization_Id: '5de0387b12e200ea63204d6c',
+                host: 'wss://server.cocreate.app:8088'
+            }
+        </script>
+    
+        <!--CoCreateJS-->
+        <!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>-->
+        <script src="https://server.cocreate.app/CoCreateJS/dist/CoCreate.js" ></script>
 	    
 	</body>
 </html>
