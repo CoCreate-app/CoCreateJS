@@ -20,17 +20,27 @@
     </style>
 
     <body>
-        <div data-collection="" data-document_id="" name="" id="cocreate-xxxxx">
-            <div class="display:flex flex-wrap:wrap justify-content:space-between margin:10px">
+		<navbar class="nav display:flex align-items:center background:whitesmoke padding-top:10px padding-bottom:10px" data-main_content_id="content" data-scroll="sticky-nav,hide-nav" data-scroll_up="10" data-scroll_down="10" data-collection="components" data-document_id="60395ef42b3ac232657040fd" name="html">
+		</navbar>
+		<sidenav id="menuL" class="cocreate-sidenav background:whitesmoke" data-main_content="content" sidenav-default_desktop="expanded" sidenav-default_tablet="offcanvas" sidenav-ontoggle_desktop="offcanvas" sidenav-ontoggle_tablet="expanded">
+			<menu data-collection="components" data-document_id="603717b07de7fb350ae9fec8" name="html"></menu>
+			<div class="resizeHandler"></div>
+	    </sidenav>
+        <main class="padding:15px_15px_0px_15px" data-main_content_id="content" id="cocreate-xxxxx">
+            <div class="display:flex flex-wrap:wrap justify-content:space-between position:relative margin:10px">
                 <div class="display:flex align-items:center">
                     <h2>CoCreateJS</h2>
                 </div>
-                <div class="display:flex align-items:center font-size:20px" data-share_network="true" data-share_text="Enter decription here" data-share_title="testing im a title" data-share_height="600" data-share_width="700" data-share_media="https://cdn.cocreate.app/docs/boilerplate.png">
+                <div class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px background:white">
+                    <div class="display:flex align-items:center transition:0.3s padding-left:10px" data-share_network="true" data-share_text="Enter decription here" data-share_title="testing im a title" data-share_height="600" data-share_width="700" data-share_media="https://cdn.cocreate.app/docs/boilerplate.png" data-hover="display:block!important" data-hover_target=".social-networks">
+                        <div class="display:none social-networks">
+                            <a class="margin-right:15px" data-share_network='twitter' title="Share on twitter"><i class="fab fa-twitter"></i></a>
+                            <a class="margin-right:15px" data-share_network='facebook' title="Share on Facebook"><i class="fab fa-facebook"></i></a>
+                            <a class="margin-right:15px" data-share_network='instagram' title="Share on instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a class="margin-right:15px" data-share_network='share' title="Share on share"><i class="fas fa-share-alt"></i></a>
+                    </div>
                     <a href="https://github.com/CoCreate-app/CoCreate-xxxxx" target="_blank" class="margin-right:15px"><i class="fab fa-github"></i></a>
-                    <a class="margin-right:15px" data-share_network='twitter' title="Share on twitter"><i class="fab fa-twitter"></i></a>
-                    <a class="margin-right:15px" data-share_network='facebook' title="Share on Facebook"><i class="fab fa-facebook"></i></a>
-                    <a class="margin-right:15px" data-share_network='instagram' title="Share on instagram"><i class="fab fa-instagram"></i></a>
-                    <a class="margin-right:15px" data-share_network='share' title="Share on share"><i class="fas fa-share-alt"></i></a>
                 </div>
             </div>
             <p class="max-width:500px margin-bottom:20px">Learn how to convert your html into a dynamic realtime application.</p>
@@ -1050,16 +1060,16 @@ CoCreate.readDocumentList({
 				</div>
 
 			</div>
-        </div>
+        </main>
         <script>
             var config = {
                 apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
-                                organization_Id: '5de0387b12e200ea63204d6c'
+                organization_Id: '5de0387b12e200ea63204d6c'
             }
         </script>
     
         <!--CoCreateJS-->
-        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
         
          
     </body>
