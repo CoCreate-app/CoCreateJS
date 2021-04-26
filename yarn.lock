@@ -1075,16 +1075,13 @@
   dependencies:
     "@cocreate/docs" "^1.0.3"
 
-"@cocreate/font-awesome@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@cocreate/font-awesome/-/font-awesome-1.0.0.tgz#378f6769c07c227e85ca7d93142cd2bd45eda6c1"
-  integrity sha512-B2WiAoXk5XuCWZa50hqXCKm8LD3pc6+ODlqW2/VshwU3USNMLzgUaGcvxcx6XXI6ZdfqSDsIk3AQpPaeofVljA==
+"@cocreate/font-awesome@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@cocreate/font-awesome/-/font-awesome-1.0.2.tgz#148c71c9c852c22e93c283f5077879f6553664e5"
+  integrity sha512-2zqMWp3d8iu3BI0w3fig0bGkG+pME0/8qEroJEmIPofMKX8SEY7FBphScRHC1644fisV2YhqvntWuF0lkjMGKA==
   dependencies:
-    "@cocreate/crud-client" "^1.0.5"
     "@cocreate/docs" "^1.0.3"
-    "@cocreate/utils" "^1.0.3"
     "@fortawesome/fontawesome-free" "^5.15.3"
-    mini-css-extract-plugin "^1.5.0"
 
 "@cocreate/form@^1.0.0", "@cocreate/form@^1.0.5":
   version "1.0.7"
@@ -1506,14 +1503,6 @@
   integrity sha512-lWLs9vmJwZ+4NCU8hbWNi0PCRtb8QP41tnvjFELa/UoPgKfL2QEam/MPhxqFbW7unLkWbiurB88rERJ68pWUEQ==
   dependencies:
     "@cocreate/docs" "^1.0.3"
-
-"@cocreate/utils@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@cocreate/utils/-/utils-1.0.3.tgz#3eefcb4a9b309dbf94d5796078745f715eb264ad"
-  integrity sha512-ATFDqKxvCwrre/ZfRV/RG+z2aULxcxduGDluftHWh/d14TBRvyGIa766SUENc8j0KfPcSkn6SK/kR36BDLtI1w==
-  dependencies:
-    "@cocreate/docs" "^1.0.3"
-    mini-css-extract-plugin "^1.5.0"
 
 "@cocreate/uuid@^1.0.0":
   version "1.0.1"
