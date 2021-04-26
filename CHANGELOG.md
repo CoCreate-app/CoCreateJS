@@ -1,3 +1,10 @@
+## [1.1.17](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.16...v1.1.17) (2021-04-26)
+
+
+### Bug Fixes
+
+* test deploy with fontawesome ([f720a11](https://github.com/CoCreate-app/CoCreateJS/commit/f720a113dca2bf1dc26c0c1c7452ad29e7055020))
+
 ## [1.1.16](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.15...v1.1.16) (2021-04-26)
 
 
