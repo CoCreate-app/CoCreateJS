@@ -1,3 +1,38 @@
+## [1.1.19](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.18...v1.1.19) (2021-04-26)
+
+
+### Bug Fixes
+
+* test deploy with fontawesome ([23ee989](https://github.com/CoCreate-app/CoCreateJS/commit/23ee989dd2c9261f5b03a0ee0bc98777247c28db))
+
+## [1.1.18](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.17...v1.1.18) (2021-04-26)
+
+
+### Bug Fixes
+
+* test deploy with fontawesome ([35d805d](https://github.com/CoCreate-app/CoCreateJS/commit/35d805de05934f48c821e08587ee5ba97e196201))
+
+## [1.1.17](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.16...v1.1.17) (2021-04-26)
+
+
+### Bug Fixes
+
+* test deploy with fontawesome ([f720a11](https://github.com/CoCreate-app/CoCreateJS/commit/f720a113dca2bf1dc26c0c1c7452ad29e7055020))
+
+## [1.1.16](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.15...v1.1.16) (2021-04-26)
+
+
+### Bug Fixes
+
+* min file ([949fd3f](https://github.com/CoCreate-app/CoCreateJS/commit/949fd3fec1c11da5b52e6c73da0371970dbf28c3))
+
+## [1.1.15](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.14...v1.1.15) (2021-04-26)
+
+
+### Bug Fixes
+
+* crud permissions ([c13d35f](https://github.com/CoCreate-app/CoCreateJS/commit/c13d35f3267aed4be4aa74d8e22560117bb5865e))
+
 ## [1.1.14](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.13...v1.1.14) (2021-04-25)
 
 
