@@ -1,3 +1,10 @@
+## [1.1.16](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.15...v1.1.16) (2021-04-26)
+
+
+### Bug Fixes
+
+* min file ([949fd3f](https://github.com/CoCreate-app/CoCreateJS/commit/949fd3fec1c11da5b52e6c73da0371970dbf28c3))
+
 ## [1.1.15](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.14...v1.1.15) (2021-04-26)
 
 
