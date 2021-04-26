@@ -1,3 +1,10 @@
+## [1.1.15](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.14...v1.1.15) (2021-04-26)
+
+
+### Bug Fixes
+
+* crud permissions ([c13d35f](https://github.com/CoCreate-app/CoCreateJS/commit/c13d35f3267aed4be4aa74d8e22560117bb5865e))
+
 ## [1.1.14](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.13...v1.1.14) (2021-04-25)
 
 
