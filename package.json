@@ -95,7 +95,7 @@
     "@cocreate/fullcalendar": "^1.0.0",
     "@cocreate/fullscreen": "^1.0.0",
     "@cocreate/google-auth": "^1.0.5",
-    "@cocreate/htmltags": "^1.0.0",
+    "@cocreate/htmltags": "^1.0.10",
     "@cocreate/industry": "^1.0.1",
     "@cocreate/input": "^1.0.0",
     "@cocreate/instagram": "^1.0.0",
