@@ -7,6 +7,15 @@ module.exports = {
     },
  
     sources: [
+        {
+            path: "./docs/index.html",
+            collection: "website-pages",
+            document_id: "5fcd7624a1e91e001085a053",
+            key: "html",
+            data:{
+                name: "CoCreateJS Doc",
+            }
+        },
         // {
         //     path: "./docs/index.html",
         //     collection: "files",
@@ -17,6 +26,15 @@ module.exports = {
         //     }
         // },
         {
+            path: "./docs/introduction.html",
+            collection: "files",
+            document_id: "60888216117c640e7596303f",
+            key: "html",
+            data:{
+                name: "CoCreateJS Intro Doc",
+            }
+        },
+        {
             path: "./docs/elements.html",
             collection: "files",
             document_id: "6084db6968177d4c2f556fd7",
@@ -25,7 +43,15 @@ module.exports = {
                 name: "CoCreateJS Elements Doc",
             }
         },
-
+        {
+            path: "./docs/CoCreateJS-objects.html",
+            collection: "files",
+            document_id: "60888216117c640e75963040",
+            key: "html",
+            data:{
+                name: "CoCreateJS Objects Doc",
+            }
+        },
         {
             path: "./docs/menu.html",
             collection: "components",
@@ -68,6 +94,17 @@ module.exports = {
         },
         {
             collection: "routes",
+            document_id: "60888216117c640e7596303d",
+            data:{
+                collection: "files",
+                document_id: "60888216117c640e7596303f",
+                name: "html",
+                domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
+                route: "/docs/intro",
+            }
+        },
+        {
+            collection: "routes",
             document_id: "6084db6968177d4c2f556fd6",
             data:{
                 collection: "files",
@@ -76,7 +113,18 @@ module.exports = {
                 domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
                 route: "/docs/elements",
             }
-        }
+        },
+        {
+            collection: "routes",
+            document_id: "60888216117c640e7596303e",
+            data:{
+                collection: "files",
+                document_id: "60888216117c640e75963040",
+                name: "html",
+                domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
+                route: "/docs/cocreatejs-objects",
+            }
+        },
     ],
     
     extract: {
