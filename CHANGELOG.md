@@ -1,3 +1,10 @@
+## [1.1.26](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.25...v1.1.26) (2021-04-27)
+
+
+### Bug Fixes
+
+* add host in docs ([75fc2e8](https://github.com/CoCreate-app/CoCreateJS/commit/75fc2e87da20743538391efb4fbd33c56088cb90))
+
 ## [1.1.25](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.24...v1.1.25) (2021-04-27)
 
 
