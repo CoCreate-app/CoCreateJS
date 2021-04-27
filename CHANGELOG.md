@@ -1,3 +1,38 @@
+## [1.1.24](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.23...v1.1.24) (2021-04-27)
+
+
+### Bug Fixes
+
+* test ci ([5a46fa4](https://github.com/CoCreate-app/CoCreateJS/commit/5a46fa4bf37f0905e835427c232284ec20270ea7))
+
+## [1.1.23](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.22...v1.1.23) (2021-04-27)
+
+
+### Bug Fixes
+
+* test ci ([11e2cab](https://github.com/CoCreate-app/CoCreateJS/commit/11e2cabc551fdb005029ccb96ad59ed8ea7268cf))
+
+## [1.1.22](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.21...v1.1.22) (2021-04-27)
+
+
+### Bug Fixes
+
+* test ci ([c54a8c3](https://github.com/CoCreate-app/CoCreateJS/commit/c54a8c3ae7aa49cbf133e111d3956c323043cd5c))
+
+## [1.1.21](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.20...v1.1.21) (2021-04-27)
+
+
+### Bug Fixes
+
+* test ci ([6cb0762](https://github.com/CoCreate-app/CoCreateJS/commit/6cb0762bb4f7ffb0de26e49c091723584b2282dd))
+
+## [1.1.20](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.19...v1.1.20) (2021-04-27)
+
+
+### Bug Fixes
+
+* test ci ([f1792ed](https://github.com/CoCreate-app/CoCreateJS/commit/f1792ed375ed88cef0f59ed39d5457c9e4ea66f6))
+
 ## [1.1.19](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.18...v1.1.19) (2021-04-26)
 
 
