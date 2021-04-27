@@ -1,3 +1,10 @@
+## [1.1.24](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.23...v1.1.24) (2021-04-27)
+
+
+### Bug Fixes
+
+* test ci ([5a46fa4](https://github.com/CoCreate-app/CoCreateJS/commit/5a46fa4bf37f0905e835427c232284ec20270ea7))
+
 ## [1.1.23](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.22...v1.1.23) (2021-04-27)
 
 
