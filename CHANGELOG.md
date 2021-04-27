@@ -1,3 +1,10 @@
+## [1.1.25](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.24...v1.1.25) (2021-04-27)
+
+
+### Bug Fixes
+
+* Update to readme, demo, added cdn scripts ([aaed666](https://github.com/CoCreate-app/CoCreateJS/commit/aaed666a4dc9e59d1ac1967a874eb492f51897d6))
+
 ## [1.1.24](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.23...v1.1.24) (2021-04-27)
 
 
