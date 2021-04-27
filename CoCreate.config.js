@@ -26,15 +26,15 @@ module.exports = {
             }
         },
 
-        // {
-        //     path: "./docs/menu.html",
-        //     collection: "components",
-        //     document_id: "603717b07de7fb350ae9fec8",
-        //     key: "html",
-        //     data:{
-        //         name: "CoCreateJS Doc Menu",
-        //     }
-        // },
+        {
+            path: "./docs/menu.html",
+            collection: "components",
+            document_id: "603717b07de7fb350ae9fec8",
+            key: "html",
+            data:{
+                name: "CoCreateJS Doc Menu",
+            }
+        },
         {
             path: "./docs/navbar.html",
             collection: "components",
