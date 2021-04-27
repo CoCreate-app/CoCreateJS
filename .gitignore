@@ -7,3 +7,4 @@ dist/contenteditable-chunk.min.js
 dist/crdt-chunk.min.js
 dist/cursors-chunk.min.js
 dist/text-chunk.min.js
+yarn.lock
