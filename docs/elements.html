@@ -404,19 +404,19 @@
 				    <ul class="list-style-type:none position:sticky top:0 height:100vh overflow:auto">
 						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				    		<h4><span>data-realtime</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Save data onChange. If attribute is empty or not used Default's to true.</p>
+							<p>Save data onChange, if false a btn required to save. If attribute is empty or not used Default's to true.</p>
 						</li>
 						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				    		<h4><span>data-collection</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-							<p>Save data onChange. Default's to true if not appllied.</p>
+							<p>Defines a collection name where your documents will be stored. sql equivalent is a table.</p>
 						</li>
 						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				    		<h4><span>data-document_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-							<p>Save data onChange. Default's to true if not appllied.</p>
+							<p>Defines the document by id where your data will be stored. if left empty one will be generated. sql equvalient is a row</p>
 						</li>
 						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				    		<h4><span>name</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-							<p>Save data onChange. If attribute is empty or not used Default's to true.</p>
+							<p>Defines the name in the document containing the value. sql equvalient is a column</p>
 						</li>
 						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				    		<h4><span>data-read_value</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
@@ -428,27 +428,27 @@
 						</li>
 						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				    		<h4><span>data-cursors</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Save data onChange/submitBtn. If attribute is empty or not used Default's to true.</p>
+							<p>Show collaborators cursor positions. If attribute is empty or not used Default's to true.</p>
 						</li>
 						<li class="padding:15px_0px  border-bottom:1px_solid_lightgrey">
 				    		<h4><span>contenteditable</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>htmltags can be editable</p>
+							<p>htmltags can be editable and display will collaborators cursors.</p>
 						</li>
 						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				            <h4><span>data-namespace</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-				            <p>room-attribute</p>
+				            <p>Define a unique namespace where messages and changes are sent and received</p>
 				        </li>
 				        <li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				            <h4><span>data-room</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-				            <p>room-attribute</p>
+				            <p>Define a unique room where messages and changes are sent and received</p>
 				        </li>
 				        <li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				            <h4><span>data-broadcast</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-				            <p>room-attribute</p>
+				            <p>Broadcast messages and changes to other collaborators in the same namespace and room. If attribute is empty or not used default's to true.</p>
 				        </li>
 				        <li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				            <h4><span>data-broadcast_sender</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-				            <p>room-attribute</p>
+				            <p>Broadcast messages and changes to self. If attribute is empty or not used default's to false.</p>
 				        </li>
 
 				    </ul>

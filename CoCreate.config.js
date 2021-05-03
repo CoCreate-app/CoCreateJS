@@ -7,53 +7,52 @@ module.exports = {
     },
  
     sources: [
-        {
-            path: "./docs/index.html",
-            collection: "website-pages",
-            document_id: "5fcd7624a1e91e001085a053",
-            key: "html",
-            data:{
-                name: "CoCreateJS Doc",
-            }
-        },
         // {
-        //     path: "./docs/index.html",
-        //     collection: "files",
-        //     document_id: "602726f95e697f4f26a98a57",
-        //     key: "html",
+        //     entry: "./docs/index.html",
+        //     collection: "website-pages",
+        //     document_id: "5fcd7624a1e91e001085a053",
+        //     key: "src",
         //     data:{
         //         name: "CoCreateJS Doc",
+        //         domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
+        //         path: "/docs",
+        //     }
+        // },
+        // {
+        //     entry: "./docs/introduction.html",
+        //     collection: "files",
+        //     document_id: "60888216117c640e7596303f",
+        //     key: "src",
+        //     data:{
+        //         name: "CoCreateJS Intro Doc",
+        //         domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
+        //         path: "/docs/intro",
+        //     }
+        // },
+        // {
+        //     entry: "./docs/elements.html",
+        //     collection: "files",
+        //     document_id: "6084db6968177d4c2f556fd7",
+        //     key: "html",
+        //     data:{
+        //         name: "CoCreateJS Elements Doc",
+        //         domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
+        //         path: "/docs/elements",
+        //     }
+        // },
+        // {
+        //     entry: "./docs/CoCreateJS-objects.html",
+        //     collection: "files",
+        //     document_id: "60888216117c640e75963040",
+        //     key: "src",
+        //     data:{
+        //         name: "CoCreateJS Objects Doc",
+        //         domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
+        //         path: "/docs/cocreatejs-objects",
         //     }
         // },
         {
-            path: "./docs/introduction.html",
-            collection: "files",
-            document_id: "60888216117c640e7596303f",
-            key: "html",
-            data:{
-                name: "CoCreateJS Intro Doc",
-            }
-        },
-        {
-            path: "./docs/elements.html",
-            collection: "files",
-            document_id: "6084db6968177d4c2f556fd7",
-            key: "html",
-            data:{
-                name: "CoCreateJS Elements Doc",
-            }
-        },
-        {
-            path: "./docs/CoCreateJS-objects.html",
-            collection: "files",
-            document_id: "60888216117c640e75963040",
-            key: "html",
-            data:{
-                name: "CoCreateJS Objects Doc",
-            }
-        },
-        {
-            path: "./docs/menu.html",
+            entry: "./docs/menu.html",
             collection: "components",
             document_id: "603717b07de7fb350ae9fec8",
             key: "html",
@@ -62,7 +61,7 @@ module.exports = {
             }
         },
         {
-            path: "./docs/navbar.html",
+            entry: "./docs/navbar.html",
             collection: "components",
             document_id: "60395ef42b3ac232657040fd",
             key: "html",
@@ -70,63 +69,9 @@ module.exports = {
                 name: "CoCreateJS Doc Navbar",
             }
         },
-        // {
-        //     path: "./docs/elements.html",
-        //     collection: "files",
-        //     document_id: "6084db6968177d4c2f556fd7",
-        //     key: "html",
-        //     data:{
-        //         name: "CoCreateJS Elements Doc",
-        //     }
-        // },
     ],
    
-    crud: [{
-            collection: "routes",
-            document_id: "602726f95e697f4f26a98a56",
-            data:{
-                collection: "files",
-                document_id: "602726f95e697f4f26a98a57",
-                name: "html",
-                domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
-                route: "/docs",
-            }
-        },
-        {
-            collection: "routes",
-            document_id: "60888216117c640e7596303d",
-            data:{
-                collection: "files",
-                document_id: "60888216117c640e7596303f",
-                name: "html",
-                domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
-                route: "/docs/intro",
-            }
-        },
-        {
-            collection: "routes",
-            document_id: "6084db6968177d4c2f556fd6",
-            data:{
-                collection: "files",
-                document_id: "6084db6968177d4c2f556fd7",
-                name: "html",
-                domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
-                route: "/docs/elements",
-            }
-        },
-        {
-            collection: "routes",
-            document_id: "60888216117c640e7596303e",
-            data:{
-                collection: "files",
-                document_id: "60888216117c640e75963040",
-                name: "html",
-                domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
-                route: "/docs/cocreatejs-objects",
-            }
-        },
-    ],
-    
+
     extract: {
         directory: "./src/",
         extensions: [

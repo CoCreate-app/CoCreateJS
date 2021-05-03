@@ -7,7 +7,7 @@ addDependency('common-fun', import (/*webpackChunkName: "common-fun-chunk"*/ '@c
 addDependency('message', import (/*webpackChunkName: "message-chunk"*/ '@cocreate/message-client'));
 addDependency('crud', import (/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud-client'));
 addDependency('crdt', import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
-addDependency('domToText', import (/*webpackChunkName: "domToText-chunk"*/ '@cocreate/dom-to-text'));
+// addDependency('domText', import (/*webpackChunkName: "domText-chunk"*/ '@cocreate/domtext'));
 addDependency('cursors', import (/*webpackChunkName: "cursors-chunk"*/ '@cocreate/cursors'));
 addDependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 addDependency('form', import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
@@ -16,7 +16,7 @@ addDependency('form', import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form
 addLazily('action', '[data-actions]', ()=> import (/*webpackChunkName: "action-chunk"*/ '@cocreate/action'))
 addLazily('room', '[data-room]', ()=> import (/*webpackChunkName: "room-chunk"*/ '@cocreate/room'))
 addLazily('logic', '[data-pass_id], [data-pass_to], [data-pass_value_to], [data-pass_value_id], [data-for]', ()=> import (/*webpackChunkName: "logic-chunk"*/ '@cocreate/logic'))
-addLazily('htmltags', '[data-collection]', ()=> import (/*webpackChunkName: "htmltags-chunk"*/ '@cocreate/htmltags'))
+// addLazily('htmltags', '[data-collection]', ()=> import (/*webpackChunkName: "htmltags-chunk"*/ '@cocreate/htmltags'))
 addLazily('input', 'input[data-collection], textarea[data-collection]', ()=> import (/*webpackChunkName: "input-chunk"*/ '@cocreate/input'))
 addLazily('render', '[data-render]', ()=> import (/*webpackChunkName: "render-chunk"*/ '@cocreate/render'))
 addLazily('fetch', '[data-fetch_collection]', ()=> import (/*webpackChunkName: "fetch-chunk"*/ '@cocreate/fetch'))
