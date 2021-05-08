@@ -7,16 +7,17 @@ addDependency('common-fun', import (/*webpackChunkName: "common-fun-chunk"*/ '@c
 addDependency('message', import (/*webpackChunkName: "message-chunk"*/ '@cocreate/message-client'));
 addDependency('crud', import (/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud-client'));
 addDependency('crdt', import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
-// addDependency('domText', import (/*webpackChunkName: "domText-chunk"*/ '@cocreate/domtext'));
+addDependency('domText', import (/*webpackChunkName: "domText-chunk"*/ '@cocreate/domtext'));
 addDependency('cursors', import (/*webpackChunkName: "cursors-chunk"*/ '@cocreate/cursors'));
 addDependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 addDependency('form', import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
 
 // Core Components
+addLazily('cssSave', '[data-save]', ()=> import (/*webpackChunkName: "css-save-chunk"*/ '@cocreate/cocreatecss/src/save.js'))
 addLazily('action', '[data-actions]', ()=> import (/*webpackChunkName: "action-chunk"*/ '@cocreate/action'))
 addLazily('room', '[data-room]', ()=> import (/*webpackChunkName: "room-chunk"*/ '@cocreate/room'))
 addLazily('logic', '[data-pass_id], [data-pass_to], [data-pass_value_to], [data-pass_value_id], [data-for]', ()=> import (/*webpackChunkName: "logic-chunk"*/ '@cocreate/logic'))
-// addLazily('htmltags', '[data-collection]', ()=> import (/*webpackChunkName: "htmltags-chunk"*/ '@cocreate/htmltags'))
+addLazily('htmltags', '[data-collection]', ()=> import (/*webpackChunkName: "htmltags-chunk"*/ '@cocreate/htmltags'))
 addLazily('input', 'input[data-collection], textarea[data-collection]', ()=> import (/*webpackChunkName: "input-chunk"*/ '@cocreate/input'))
 addLazily('render', '[data-render]', ()=> import (/*webpackChunkName: "render-chunk"*/ '@cocreate/render'))
 addLazily('fetch', '[data-fetch_collection]', ()=> import (/*webpackChunkName: "fetch-chunk"*/ '@cocreate/fetch'))
@@ -28,11 +29,11 @@ addLazily('selected', '[data-selected]', ()=> import (/*webpackChunkName: "selec
 addLazily('scroll', '[data-scroll]', ()=> import (/*webpackChunkName: "scroll-chunk"*/ '@cocreate/scroll'))
 addLazily('resize', '[data-resize]', ()=>import(/*webpackChunkName: "resize-chunk"*/ '@cocreate/resize'))
 addLazily('attributes', '[data-attributes]', ()=>import(/*webpackChunkName: "attributes-chunk"*/ '@cocreate/attributes'))
-addLazily('users', '[data-permissions], .loginBtn', ()=> import (/*webpackChunkName: "users-chunk"*/ '@cocreate/users'))
-addLazily('organizations', '#org_id', ()=> import (/*webpackChunkName: "organizations-chunk"*/ '@cocreate/organizations'))
-addLazily('industry', '[data-permissions], .industry', ()=> import (/*webpackChunkName: "industry-chunk"*/ '@cocreate/industry'))
+addLazily('users', '[data-permissions], [data-actions*="createUser"], [data-actions*="loginBtn"]', ()=> import (/*webpackChunkName: "users-chunk"*/ '@cocreate/users'))
+addLazily('organizations', '[data-actions*="createOrg"]', ()=> import (/*webpackChunkName: "organizations-chunk"*/ '@cocreate/organizations'))
+addLazily('industry', '[data-actions*="runIndustry"]', ()=> import (/*webpackChunkName: "industry-chunk"*/ '@cocreate/industry'))
 addLazily('uuid', '[data-uuid], .loginBtn', ()=> import (/*webpackChunkName: "uuid-chunk"*/ '@cocreate/uuid'))
-addLazily('render-key', '[data-key]', ()=> import (/*webpackChunkName: "render-key-chunk"*/ '@cocreate/render-key'))
+addLazily('renderKey', '[data-key]', ()=> import (/*webpackChunkName: "render-key-chunk"*/ '@cocreate/render-key'))
 
 // Collabortion Components
 addLazily('text', 'input[data-collection], textarea[data-collection]', ()=> import (/*webpackChunkName: "text-chunk"*/ '@cocreate/text'))
@@ -70,16 +71,16 @@ addLazily('instagram', '[data-instagram]', ()=> import (/*webpackChunkName: "ins
 // addLazily('linkedin', '[data-linkedin]', ()=> import (/*webpackChunkName: "linkedin-chunk"*/ '@cocreate/linkedin'))
 // addLazily('monaco', '.monaco', ()=> import (/*webpackChunkName: "monaco-chunk"*/ '@cocreate/monaco'))
 addLazily('pickr', '.color-pickr', ()=> import (/*webpackChunkName: "pickr-chunk"*/ '@cocreate/pickr'))
-// addLazily('pinterest', '[data-pinterest]', ()=> import (/*webpackChunkName: "pinterest-chunk"*/ '@cocreate/pinterest'))
-// addLazily('plaid', '[data-plaid]', ()=> import (/*webpackChunkName: "plaid-chunk"*/ '@cocreate/plaid'))
+addLazily('pinterest', '[data-pinterest]', ()=> import (/*webpackChunkName: "pinterest-chunk"*/ '@cocreate/pinterest'))
+addLazily('plaid', '[data-plaid]', ()=> import (/*webpackChunkName: "plaid-chunk"*/ '@cocreate/plaid'))
 addLazily('prism', '.language-html, .language-css, .language-js, .language-shell, .language-json', ()=> import (/*webpackChunkName: "prism-chunk"*/ '@cocreate/prism'))
-// addLazily('progressbar', '[data-progressbar]', ()=> import (/*webpackChunkName: "progressbar-chunk"*/ '@cocreate/progressbar'))
+//addLazily('progressbar', '[data-progressbar]', ()=> import (/*webpackChunkName: "progressbar-chunk"*/ '@cocreate/progressbar'))
 addLazily('sendgrid', '[data-sendgrid]', ()=> import (/*webpackChunkName: "sendgrid-chunk"*/ '@cocreate/sendgrid'))
-// addLazily('shipengine', '[data-shipengine]', ()=> import (/*webpackChunkName: "shipengine-chunk"*/ '@cocreate/shipengine'))
+addLazily('shipengine', '[data-shipengine]', ()=> import (/*webpackChunkName: "shipengine-chunk"*/ '@cocreate/shipengine'))
 addLazily('stripe', '[data-stripe]', ()=> import (/*webpackChunkName: "stripe-chunk"*/ '@cocreate/stripe'))
 // addLazily('twilio', '[data-twilio]', ()=> import (/*webpackChunkName: "twilio-chunk"*/ '@cocreate/twilio'))
-// addLazily('twitter', '[data-twitter]', ()=> import (/*webpackChunkName: "twitter-chunk"*/ '@cocreate/twitter'))
-// addLazily('uppy', '#drag-drop-area', ()=> import (/*webpackChunkName: "uppy-chunk"*/ '@cocreate/uppy'))
+addLazily('twitter', '[data-twitter]', ()=> import (/*webpackChunkName: "twitter-chunk"*/ '@cocreate/twitter'))
+addLazily('uppy', '.uppy', ()=> import (/*webpackChunkName: "uppy-chunk"*/ '@cocreate/uppy'))
 
 // Test component
 // addLazily('test', '[data-test]', ()=> import (webpackChunkName: "test-chunk" '@cocreate/test'))
