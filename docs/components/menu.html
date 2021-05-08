@@ -1,0 +1,610 @@
+<style>
+	/*Sidenav Search Field */
+	.floating-label_field{
+		margin-top:0px;
+	}
+	.hide-nav ~ #menuL{
+		margin-top:0px;
+		max-height: -moz-available;   
+		max-height: -webkit-fill-available;  
+		max-height: fill-available;
+		will-change: transform;
+		transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+		transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+		transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+	}
+	.system-status {
+	    position: absolute;
+	    overflow:hidden;
+	    right: 30px;
+	    top: 30px;
+	    /*display: flex;*/
+	    height: 12px;
+	    width: 12px;
+	    border: 2px solid #f7f7f7;
+	    border-radius: 50%;
+	    background-color: yellowgreen;
+	    transition:0.3s;
+	    color:white;
+	    word-wrap: none
+	}
+
+	.system-status:hover {
+	    position: absolute;
+	    right: 0px;
+	    top: 0px;
+	    height: 100%;
+	    width: 100%;
+	    border-radius: 0%;
+	    border: 0px solid #f7f7f7;
+	    padding:25px 20px;
+	
+	}
+	.system-status.up::before {
+	    content: 'System up';
+	    background-color: yellowgreen;
+	    padding:25px;
+	}
+	.system-status.down:hover {
+		background-color: #f44336;
+	}
+	.system-status.down::before {
+		content:'System Outage';
+		background-color: #f44336;
+		padding:25px;
+	
+	}
+
+</style>	
+			
+<!--Logo -->
+<div class="display:flex position:relative background:gainsboro padding-top:10px padding-bottom:10px">
+	<a href="/" class=" height:50px padding:5px_10px">
+		<img src="/assets/logo.png" height="40px" />
+	</a>
+	<div class="system-status up"></div>
+</div>
+
+ <!--Search -->
+<div class="cocreate-search padding:5px height:50px"> 
+	<form id='menu-search'>
+    	<input type="text" class="searchInput floating-label browser-default" data-pass_value_to="me1234">
+		<span class="passValueBtn position:relative bottom:28px right:14px float:right font-size:18px">
+			<a  target="modal" href="template-engine"
+			  	   data-pass_to="me1234" 
+			  	   data-modal_ajax="false" 
+			  	   data-modal_width="900px" 
+			  	   data-modal_height="100%" 
+			  	   data-modal_color="#229954"
+			  	   data-modal_header="true"
+			  	   data-modal_x="" 
+			  	   data-modal_y="">
+			  <i class="fas fa-search"></i>
+			</a>
+		</span>
+	</form>
+</div>
+<div class="padding-right:5px">
+  	<ul class="overflow:auto display:flex flex-direction:column width:100% height:calc(100vh_-_140px) bottom:10px margin-right:5px">
+	
+		 <!--Navigation -->
+		<div class="display:none@md@lg@xl">
+			<li class="padding-right:10px font-size:20px line-height:40px height:40px">
+				<a href="/#features" class="padding-left:15px color:dodgerblue:hover">Features</a>
+			</li>
+			<li class="padding-right:10px font-size:20px line-height:40px height:40px">
+				<a href="/docs" class="padding-left:15px color:dodgerblue:hover">Docs</a>
+			</li>
+			<li class="padding-right:10px font-size:20px line-height:40px height:40px">
+				<a href="/blog" class="padding-left:15px color:dodgerblue:hover">Blog</a>
+			</li>
+			<li class="padding-right:10px font-size:20px line-height:40px height:40px">
+				<a href="/discuss" class="padding-left:15px color:dodgerblue:hover">Discuss</a>
+			</li>
+			<li class="padding-right:10px font-size:20px line-height:40px height:40px">
+				<a href="/university" class="padding-left:15px color:dodgerblue:hover">University</a>
+			</li>
+			<hr/>
+		</div>
+		
+		<li class="padding-right:10px font-size:20px line-height:40px height:40px">
+		  <a class="padding-left:15px width:100%" data-show=".gettingstarted" data-hide=".gettingstarted">
+		    <span>Getting Started</span>
+		    <span class="float:right"><i class="fas fa-chevron-down gettingstarted hidden"></i><i class="fas fa-chevron-up gettingstarted"></i></span>
+		  </a>
+		</li>
+		<div class="padding-bottom:20px gettingstarted ">
+			<li class="line-height:40px height:40px padding-left:30px">
+				<a href="#apikeys">
+					<span class="color:dodgerblue:hover">API Keys</span>
+				</a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+				<a href="#cdn">
+				    <span class="color:dodgerblue:hover">CDN</span>
+				</a>
+			</li>
+		</div>	
+		
+		<li class="padding-right:10px font-size:20px line-height:40px height:40px color:dodgerblue:hover">
+		  <a class="padding-left:15px width:100%" data-show=".cocreatejs" data-hide=".cocreatejs">
+		    <span class="color:dodgerblue:hover">CoCreateJS</span>
+		    <span class="float:right"><i class="fas fa-chevron-down cocreatejs hidden"></i><i class="fas fa-chevron-up cocreatejs"></i></span>
+		  </a>
+		</li>
+			
+		<div class="padding-bottom:20px cocreatejs ">
+			<li class="line-height:40px height:40px padding-left:30px">
+				<a href="./elements#">
+			    <span class="font-weight:600 color:dodgerblue:hover">Calloborative Elements</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./elements#realtime_form">
+			    <span id="form-item" class="color:dodgerblue:hover">Form</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./elements#realtime_input">
+			    <span id="input-item" class="color:dodgerblue:hover">Input</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./elements#realtime_checkbox">
+					<span id="checkbox-item" class="color:dodgerblue:hover">Checkbox</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./elements#realtime_textarea">			    
+					<span id="textarea-item" class="color:dodgerblue:hover">Textarea</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./elements#realtime_select">			    
+			    	<span id="select-item" class="color:dodgerblue:hover">Select</span>
+				</a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./elements#realtime_htmltags">			    
+			    <span id="htmltags-item" class="color:dodgerblue:hover">HTML Tags</span>
+			  </a>
+			</li>
+
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./fetch">
+			    <span class="font-weight:600 color:dodgerblue:hover">Templating</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+			  <a href="./fetch">
+			    <span class="color:dodgerblue:hover">Fetch</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+			  <a href="./filter">
+			    <span class="color:dodgerblue:hover">Filter</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+			  <a href="./render">
+			    <span class="color:dodgerblue:hover">Render</span>
+			  </a>
+			</li>
+
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./logic">
+			    <span class="font-weight:600 color:dodgerblue:hover">Logic</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+			  <a href="./logic">
+			    <span class="color:dodgerblue:hover">Passing Attributtes</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+			  <a href="./logic">
+			    <span class="color:dodgerblue:hover">Fetching Attributtes</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:30px padding-left:45px">
+			  <a href="./logic">
+			    <span class="color:dodgerblue:hover">Passing Values</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+			  <a href="./conditional-logic">
+			    <span>Conditional Logic</span>
+			  </a>
+			</li>
+
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./action">
+			    <span class="font-weight:600 color:dodgerblue:hover">Action</span>
+			  </a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./api">
+			    <span class="font-weight:600 color:dodgerblue:hover">Api</span>
+			  </a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./attributes">
+			    <span class="font-weight:600 color:dodgerblue:hover">Attributes</span>
+			  </a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./form">
+			    <span class="font-weight:600 color:dodgerblue:hover">Form</span>
+			  </a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./cloning">
+			    <span class="font-weight:600 color:dodgerblue:hover">Cloning</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./dnd">
+			    <span class="font-weight:600 color:dodgerblue:hover">Drag and Drop</span>
+			  </a>
+			</li>
+
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./calculation">
+			    <span class="font-weight:600 color:dodgerblue:hover">Calculations</span>
+			  </a>
+			</li>
+
+			<li class="line-height:40px height:40px margin-top:20px padding-left:30px">
+			  <a href="./users">
+			    <span class="font-weight:600 color:dodgerblue:hover">User Management</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+			  <a href="./users">
+			    <span class="color:dodgerblue:hover">Register Attributes</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">			  
+			  <a href="./users">
+			    <span class="color:dodgerblue:hover">Login Attributes</span>
+			  </a> 
+			</li>
+			<li class="line-height:30px padding-left:45px">
+			  <a href="./permissions">
+			    <span class="color:dodgerblue:hover">Permissions</span>
+			  </a> 
+			</li>
+
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./checkout">
+			    <span class="color:dodgerblue:hover">Checkout</span>
+			  </a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./compiler">
+			    <span class="color:dodgerblue:hover">Compiler</span>
+			  </a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./image">
+			    <span class="color:dodgerblue:hover">Image</span>
+			  </a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./progress">
+			    <span class="color:dodgerblue:hover">Progress</span>
+			  </a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./room">
+			    <span class="color:dodgerblue:hover">Room</span>
+			  </a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./social-share">
+			    <span class="color:dodgerblue:hover">Social Share</span>
+			  </a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./vdom">
+			    <span class="color:dodgerblue:hover">VDOM</span>
+			  </a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./CoCreateJS#cocreate-website">
+			    <span class="color:dodgerblue:hover">Website</span>
+			  </a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+				<a href="./objects#crud_objects">			    
+			    <span class="font-weight:600 color:dodgerblue:hover">CRUD Objects</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./objects#crud_create">			    
+			    <span class="color:dodgerblue:hover">Create</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./objects#crud_read">			    
+			    <span class="color:dodgerblue:hover">Read</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./objects#crud_update">			    
+			    <span class="color:dodgerblue:hover">Update</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./objects#crud_delete">			    
+			    <span class="color:dodgerblue:hover">Delete</span>
+			  </a>
+			</li>
+
+			<li class="line-height:40px height:40px  padding-left:30px">
+				<a href="./objects#crdt-objects">			    
+			    <span class="font-weight:600 color:dodgerblue:hover">CRDT Objects</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./objects#crdt-init">			    
+			    <span class="color:dodgerblue:hover">Init</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./objects#crdt-insert">			    
+			    <span class="color:dodgerblue:hover">Insert</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./objects#crdt-get">			    
+			    <span class="color:dodgerblue:hover">Get</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./objects#crdt-replace">			    
+			    <span class="color:dodgerblue:hover">Replace</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./objects#crdt-delete">			    
+			    <span class="color:dodgerblue:hover">Delete</span>
+			  </a>
+			</li>
+
+			<li class="line-height:40px height:40px padding-left:30px">
+				<a href="./objects#websocket-objects">			    
+			    <span class="font-weight:600 color:dodgerblue:hover">Websocket Objects</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./objects#websocket-create">			    
+			    <span class="color:dodgerblue:hover">Create</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./objects#websocket-send">			    
+			    <span class="color:dodgerblue:hover">Send</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+				<a href="./objects#websocket-listen">			    
+			    <span class="color:dodgerblue:hover">Listen</span>
+			  </a>
+			</li>
+		</div>
+		
+		<li class="padding-right:10px font-size:20px line-height:40px height:40px color:dodgerblue:hover">
+		  <a class="padding-left:15px width:100%" data-show=".cocreatecss" data-hide=".cocreatecss">
+		    <span class="color:dodgerblue:hover">CoCreateCSS</span>
+		    <span class="float:right"><i class="fas fa-chevron-down cocreatecss"></i><i class="fas fa-chevron-up cocreatecss hidden"></i></span>
+		  </a>
+		</li>
+		<div id="" class="cocreatecss hidden">
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./utility">
+			    <span class="color:dodgerblue:hover">Utility Classes</span>
+			  </a>
+			</li>
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./navbar">
+			    <span class="color:dodgerblue:hover">Nav</span>
+			  </a>
+			</li>
+
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./sidenav">
+			    <span class="color:dodgerblue:hover">Sidenav</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./modal">
+			    <span class="color:dodgerblue:hover">Modal</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./floating-label">
+			    <span class="color:dodgerblue:hover">Floating Label</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./scroll">
+			    <span class="color:dodgerblue:hover">Scroll</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./fullscreen">
+			    <span class="color:dodgerblue:hover">Fullscreen</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./cards">
+			    <span class="color:dodgerblue:hover">Cards</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./avatar">
+			    <span class="color:dodgerblue:hover">Avatar</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./menu-icons">
+			    <span class="color:dodgerblue:hover">Menu Icons</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./paralax">
+			    <span class="color:dodgerblue:hover">Parallax</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./splitview">
+			    <span class="color:dodgerblue:hover">Splitview</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./overlay-scroll">
+			    <span class="color:dodgerblue:hover">Overlay Scroll</span>
+			  </a>
+			</li>
+
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./flip-item">
+			    <span class="color:dodgerblue:hover">Flip Item</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./icon-transform">
+			    <span class="color:dodgerblue:hover">Icon Transform</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./random-color">
+			    <span class="color:dodgerblue:hover">Random Color</span>
+			  </a>
+			</li>
+			
+		</div>
+
+		
+		<li class="padding-right:10px font-size:20px line-height:40px height:40px color:dodgerblue:hover">
+		  <a class="padding-left:15px width:100%" data-show=".modules" data-hide=".modules">
+		    <span class="color:dodgerblue:hover">Modules</span>
+		    <span class="float:right"><i class="fas fa-chevron-down modules"></i><i class="fas fa-chevron-up modules hidden"></i></span>
+		  </a>
+		</li>
+		<div class="padding-bottom:20px modules hidden">
+		
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./search">
+			    <span class="color:dodgerblue:hover">Search</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:30px padding-left:45px">
+			  <a href="./search">
+			    <span class="color:dodgerblue:hover">Search Attributes</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./datatable">
+			    <span class="color:dodgerblue:hover">Datatables</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+			  <a href="./select">
+			    <span class="color:dodgerblue:hover">CoCreate Select</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./kanban">
+			    <span class="color:dodgerblue:hover">Kanban</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./progress-bar">
+			    <span class="color:dodgerblue:hover">Progress Bar</span>
+			  </a>
+			</li>
+			
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="/email">
+			    <span class="color:dodgerblue:hover">E-mail</span>
+			  </a>
+			</li>
+			
+		</div>
+
+		<li class="padding-right:10px font-size:20px line-height:40px height:40px color:dodgerblue:hover">
+		  <a class="padding-left:15px width:100%" data-show=".plugins" data-hide=".plugins">
+		    <span class="color:dodgerblue:hover">Plugins</span>
+		    <span class="float:right"><i class="fas fa-chevron-down plugins"></i><i class="fas fa-chevron-up plugins hidden"></i></span>
+		  </a>
+		</li>
+		<div class="padding-bottom:20px plugins hidden">
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./charts">
+			    <span class="color:dodgerblue:hover">Charts</span>
+			  </a>
+			</li>
+
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./fullcalendar">
+			    <span class="color:dodgerblue:hover">Full Calendar</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+			    <a href="./fullcalendar">
+			      <span class="color:dodgerblue:hover">Calendar Attributes</span>
+			    </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+			    <a href="./fullcalendar">
+			      <span class="color:dodgerblue:hover">Calendar Views</span>
+			    </a>
+			</li>
+
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./stripe">
+			    <span class="color:dodgerblue:hover">Stripe</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+			    <a href="./stripe">
+			      <span class="color:dodgerblue:hover">Stripe Attributes</span>
+			    </a>
+			  </li>
+
+			<li class="line-height:40px height:40px padding-left:30px">
+			  <a href="./googgle-maps">
+			    <span class="color:dodgerblue:hover">Google Maps</span>
+			  </a>
+			</li>
+			<li class="line-height:30px padding-left:45px">
+			    <a href="./googlemaps">
+			      <span class="color:dodgerblue:hover">Map Attributes</span>
+			    </a>
+			 </li>
+		</div>	  
+
+	</ul>
+</div>
