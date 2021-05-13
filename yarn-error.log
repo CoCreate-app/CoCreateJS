@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add puppeteer
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add @cocraete/crdt
 
 PATH: 
   /home/ubuntu/.rvm/gems/ruby-2.6.3/bin:/home/ubuntu/.rvm/gems/ruby-2.6.3@global/bin:/home/ubuntu/.rvm/rubies/ruby-2.6.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/.rvm/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/.rvm/bin:/home/ubuntu/.rvm/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/.rvm/bin:/home/ubuntu/.rvm/bin
@@ -14,7 +14,17 @@ Platform:
   linux x64
 
 Trace: 
-  Error: ENOENT: no such file or directory, lstat '/home/ubuntu/environment/public/CoCreateJS/node_modules/puppeteer/node_modules/rimraf'
+  Error: https://registry.yarnpkg.com/@cocraete%2fcrdt: Not found
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140749:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141721:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141643:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (internal/streams/readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
 
 npm manifest: 
   {
@@ -95,17 +105,17 @@ npm manifest:
       "@cocreate/charts": "^1.0.0",
       "@cocreate/clone": "^1.0.0",
       "@cocreate/cocreatecss": "^1.0.0",
-      "@cocreate/codemirror": "^1.0.0",
+      "@cocreate/codemirror": "^1.0.15",
       "@cocreate/conditional-logic": "^1.0.0",
       "@cocreate/contenteditable": "^1.0.0",
-      "@cocreate/crdt": "^1.0.0",
+      "@cocreate/crdt": "^1.0.12",
       "@cocreate/croppie": "^1.0.0",
       "@cocreate/crud-client": "^1.0.0",
       "@cocreate/cursors": "^1.0.0",
       "@cocreate/dnd": "^0.10.0",
       "@cocreate/docs": "^1.0.0",
-      "@cocreate/dom-to-text": "^1.0.0",
       "@cocreate/domain": "^1.0.0",
+      "@cocreate/domtext": "^1.0.0",
       "@cocreate/facebook": "^1.0.0",
       "@cocreate/fetch": "^1.0.0",
       "@cocreate/filter": "^1.0.0",
@@ -147,7 +157,7 @@ npm manifest:
       "@cocreate/shipengine": "^1.0.0",
       "@cocreate/sidenav": "^1.0.0",
       "@cocreate/social-share": "^1.0.0",
-      "@cocreate/socket-client": "^1.0.0",
+      "@cocreate/socket-client": "^1.0.9",
       "@cocreate/splitview": "^1.0.0",
       "@cocreate/stripe": "^1.0.0",
       "@cocreate/text": "^1.0.0",
@@ -1150,10 +1160,10 @@ Lockfile:
       "@cocreate/docs" "^1.0.3"
       "@cocreate/observer" "^1.0.1"
   
-  "@cocreate/codemirror@^1.0.0":
-    version "1.0.13"
-    resolved "https://registry.yarnpkg.com/@cocreate/codemirror/-/codemirror-1.0.13.tgz#e9373cbb7ea302f176cc9d23bea72c1f4bb17f6e"
-    integrity sha512-wfnL61ZVGC1fsPF9XN6+GHF0gDjHYz/IXV+MQyCUGhnAwS7+YfdgpRhYLiF/OO2uYH1tUPtrO7gtAyL3lHdy2w==
+  "@cocreate/codemirror@^1.0.15":
+    version "1.0.15"
+    resolved "https://registry.yarnpkg.com/@cocreate/codemirror/-/codemirror-1.0.15.tgz#18874903d20943ed650919b0ee05ec44482e241d"
+    integrity sha512-ZAJByWry652Yi1TlOjTP8T/DmK0m7Kg19FsRu8NLMAfJKlBtJ48lON0kYCfAbMUwbpn6nmHh2rPF9p4HOHusrw==
     dependencies:
       "@cocreate/crdt" "^1.0.8"
       "@cocreate/crud-client" "^1.0.3"
@@ -1191,6 +1201,18 @@ Lockfile:
       "@cocreate/crud-client" "^1.0.3"
       "@cocreate/cursors" "^1.1.5"
       mini-css-extract-plugin "^1.4.1"
+      y-indexeddb "^9.0.5"
+      y-webrtc "^10.1.5"
+      y-websocket "^1.2.5"
+      yjs "^13.0.0-89"
+  
+  "@cocreate/crdt@^1.0.12":
+    version "1.0.12"
+    resolved "https://registry.yarnpkg.com/@cocreate/crdt/-/crdt-1.0.12.tgz#f10915db94286f66d322ded0083845664f53b21a"
+    integrity sha512-bRjciicS5mqDRoQYlyAWHv7fUorSg2pRa73hKNlglbZlm7fiOVusKXHtSYfiRTRPFqDRusDeDWqw8KvDqsk+9Q==
+    dependencies:
+      "@cocreate/crud-client" "^1.0.3"
+      "@cocreate/cursors" "^1.1.5"
       y-indexeddb "^9.0.5"
       y-webrtc "^10.1.5"
       y-websocket "^1.2.5"
@@ -1245,7 +1267,7 @@ Lockfile:
       parse-html-comments "^1.3.1"
       ws "^7.3.1"
   
-  "@cocreate/dom-to-text@^1.0.0", "@cocreate/dom-to-text@^1.1.3":
+  "@cocreate/dom-to-text@^1.1.3":
     version "1.1.7"
     resolved "https://registry.yarnpkg.com/@cocreate/dom-to-text/-/dom-to-text-1.1.7.tgz#458ae1f6dbcdeaa1da9559355e89cf63353eb04d"
     integrity sha512-kCQi4NOjephEjqjMNvZobp8kIbmjeH+K/Lf9EQJrXJDv03RoczVb+lKxnjxeDwDLIZU29NZMOZCPnBsBHTQz0A==
@@ -1265,6 +1287,13 @@ Lockfile:
       "@cocreate/docs" "^1.0.3"
       axios "^0.21.1"
       qs "^6.10.1"
+  
+  "@cocreate/domtext@^1.0.0":
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/@cocreate/domtext/-/domtext-1.0.0.tgz#d8023963e44287a55eeab35a5a56c491992c2cbd"
+    integrity sha512-TEJuqx1MThIfvDnS6Pb1o/izs7viczpOHO7zbyMebn7JJlk9xsZRuuZcLPpkOCQxXOJJW4tb3E+a8rpFk2CljA==
+    dependencies:
+      "@cocreate/docs" "^1.0.3"
   
   "@cocreate/facebook@^1.0.0":
     version "1.0.7"
@@ -1686,7 +1715,7 @@ Lockfile:
     dependencies:
       "@cocreate/docs" "^1.0.3"
   
-  "@cocreate/socket-client@^1.0.0", "@cocreate/socket-client@^1.0.4", "@cocreate/socket-client@^1.0.9":
+  "@cocreate/socket-client@^1.0.4", "@cocreate/socket-client@^1.0.9":
     version "1.0.9"
     resolved "https://registry.yarnpkg.com/@cocreate/socket-client/-/socket-client-1.0.9.tgz#e9604f906ef50bc6563832c61457d9b136591733"
     integrity sha512-RWNcqJWkS+Y0nfJvA3dbEy4nV48vX9XGLtzjfXqYwvg9NfnZ+Nfis/+BnV1AK5aU6QC/XrxrSFcuEfrp+lc/mg==

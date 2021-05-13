@@ -980,10 +980,10 @@
     "@cocreate/docs" "^1.0.3"
     "@cocreate/observer" "^1.0.1"
 
-"@cocreate/codemirror@^1.0.0":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@cocreate/codemirror/-/codemirror-1.0.13.tgz#e9373cbb7ea302f176cc9d23bea72c1f4bb17f6e"
-  integrity sha512-wfnL61ZVGC1fsPF9XN6+GHF0gDjHYz/IXV+MQyCUGhnAwS7+YfdgpRhYLiF/OO2uYH1tUPtrO7gtAyL3lHdy2w==
+"@cocreate/codemirror@^1.0.15":
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/@cocreate/codemirror/-/codemirror-1.0.15.tgz#18874903d20943ed650919b0ee05ec44482e241d"
+  integrity sha512-ZAJByWry652Yi1TlOjTP8T/DmK0m7Kg19FsRu8NLMAfJKlBtJ48lON0kYCfAbMUwbpn6nmHh2rPF9p4HOHusrw==
   dependencies:
     "@cocreate/crdt" "^1.0.8"
     "@cocreate/crud-client" "^1.0.3"
@@ -1021,6 +1021,18 @@
     "@cocreate/crud-client" "^1.0.3"
     "@cocreate/cursors" "^1.1.5"
     mini-css-extract-plugin "^1.4.1"
+    y-indexeddb "^9.0.5"
+    y-webrtc "^10.1.5"
+    y-websocket "^1.2.5"
+    yjs "^13.0.0-89"
+
+"@cocreate/crdt@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@cocreate/crdt/-/crdt-1.1.1.tgz#5c4af4192713312ac457ec19fdcb1ef4e577ab9b"
+  integrity sha512-9f5MxmpsTOHPBfNpWQZRZpJNmAb0PmR+cnLpY+S8XqgTD6mwNOwfEs9lv+LpfxzjjnVVDLnXBbp0KD4Mp60GwA==
+  dependencies:
+    "@cocreate/crud-client" "^1.0.3"
+    "@cocreate/cursors" "^1.1.5"
     y-indexeddb "^9.0.5"
     y-webrtc "^10.1.5"
     y-websocket "^1.2.5"
@@ -1075,7 +1087,7 @@
     parse-html-comments "^1.3.1"
     ws "^7.3.1"
 
-"@cocreate/dom-to-text@^1.0.0", "@cocreate/dom-to-text@^1.1.3":
+"@cocreate/dom-to-text@^1.1.3":
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/@cocreate/dom-to-text/-/dom-to-text-1.1.7.tgz#458ae1f6dbcdeaa1da9559355e89cf63353eb04d"
   integrity sha512-kCQi4NOjephEjqjMNvZobp8kIbmjeH+K/Lf9EQJrXJDv03RoczVb+lKxnjxeDwDLIZU29NZMOZCPnBsBHTQz0A==
@@ -1095,6 +1107,13 @@
     "@cocreate/docs" "^1.0.3"
     axios "^0.21.1"
     qs "^6.10.1"
+
+"@cocreate/domtext@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@cocreate/domtext/-/domtext-1.0.0.tgz#d8023963e44287a55eeab35a5a56c491992c2cbd"
+  integrity sha512-TEJuqx1MThIfvDnS6Pb1o/izs7viczpOHO7zbyMebn7JJlk9xsZRuuZcLPpkOCQxXOJJW4tb3E+a8rpFk2CljA==
+  dependencies:
+    "@cocreate/docs" "^1.0.3"
 
 "@cocreate/facebook@^1.0.0":
   version "1.0.7"

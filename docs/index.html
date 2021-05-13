@@ -24,22 +24,34 @@
 			<div class="resizeHandler"></div>
 	    </sidenav>
 	    
-		<main class="padding:15px_15px_0px_15px" data-main_content_id="content">
-			<h1 class="padding:10px_0">Introduction</h1>
-			<h3 class="padding:5px_0" id="cocreatejs">CoCreateJS</h3>
-			<p> A dependancy free, vanilla javascript Realtime CRUD and Collaboration API. Easily integrates in any HTML template using HTML5 data-attributtes. Converts a regular html website into a dynamic Realtime application. If you know basic html you can easily implement and use the CoCreateJS library/framework. If you have javascript knowledege, CoCreateJS is highly extendable Object oriented collaboration framework. A CoCreate api key is required to open a real time socket channels.</p>
-			
-			<h3 class="padding:5px_0" id="cocreatecss">CoCreateCSS</h3>
-			<p>A dependancy free, CSS and vanilla javascript library. Containing a set of easy to use natraul language helper classes, and a wide range of components to assist in developing modern UI/UX. We are excited to see what you build.</p>
-			
-			<h3 class="padding:5px_0">Micro Service Archeticture</h3>
-			<p>CoCreateJS 90kb gizipped and CoCreateCSS 15kb gzipped were compiled from a large list of opensource projects. You can include and compile only the components you need, create custom components and contribute to a long list of existing componenets located on github</p>
-		</div>
+		<main class="padding-top:15px padding:15px@lg@xl line-height:1.5" data-main_content_id="content">
+			<section class="padding:10px">
+                <div id="introduction" class="margin-top:10px" data-scroll data-scroll_intersect="color:dodgerblue" data-scroll_target="">
+                    <span class="display:flex align-items:center width:fit-content" data-hover="display:block!important" data-hover_target='[href="#introduction"]'>
+                        <h2 class="padding:5px_0px">Introduction</h2>
+                        <a class="margin-left:10px display:none" href="#introduction"><i class="fas fa-link"></i></a>
+                    </span>
+                </div>
+				<h3 class="padding-top:10px" id="cocreatejs">CoCreateJS</h3>
+				<p> A dependancy free, vanilla javascript Realtime CRUD and Collaboration API. Easily integrates in any HTML template using HTML5 data-attributtes. Converts a regular html website into a dynamic Realtime application. If you know basic html you can easily implement and use the CoCreateJS library/framework. If you have javascript knowledege, CoCreateJS is highly extendable Object oriented collaboration framework. A CoCreate api key is required to open a real time socket channels.</p>
+				
+				<h3 class="padding-top:10px" id="cocreatecss">CoCreateCSS</h3>
+				<p>A dependancy free, CSS and vanilla javascript library. Containing a set of easy to use natraul language helper classes, and a wide range of components to assist in developing modern UI/UX. We are excited to see what you build.</p>
+				
+				<h3 class="padding-top:10px">Micro Service Archeticture</h3>
+				<p>CoCreateJS 90kb gizipped and CoCreateCSS 15kb gzipped were compiled from a large list of opensource projects. You can include and compile only the components you need, create custom components and contribute to a long list of existing componenets located on github</p>
+			</section>
 		
-		<div class="padding:10px_0" id="getting_started">
-			<h1>Getting Started</h1>
-			<p>Go to <a href="https://CoCreate.app/register">CoCreate.app/register</a>  and retrieve your script which will include the necessary api and security key. And paste it at the end before the ending body tag of any page where you would like to fetch and save data in real time.</p>
-            <pre><code class="language-html">
+			<section class="padding:10px" id="getting_started">
+				 <div id="introduction" class="margin-top:50px" data-scroll data-scroll_intersect="color:dodgerblue" data-scroll_target="/docs/#getting-started">
+                    <span class="display:flex align-items:center width:fit-content" data-hover="display:block!important" data-hover_target='[href="#getting-started"]'>
+                        <h2 class="padding:5px_0px">Getting Started</h2>
+                        <a class="margin-left:10px display:none" href="#getting-started"><i class="fas fa-link"></i></a>
+                    </span>
+                </div>
+
+				<p>Go to <a href="https://CoCreate.app/register">CoCreate.app/register</a>  and retrieve your script which will include the necessary api and security key. And paste it at the end before the ending body tag of any page where you would like to fetch and save data in real time.</p>
+	            <pre><code class="language-html">
 &lt;html&gt;
   &lt;head&gt;
     &lt;link src="http://cdn.cocreate.app/CoCreate.min.css"&gt;&lt;/link&gt;
@@ -58,7 +70,8 @@
 
   &lt;/body&gt;
 &lt;/html&gt;
-	        </code></pre>
+	        	</code></pre>
+	        </section>
 			<button href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/index.html?message=docs%3A%20describe%20your%20change..." target="_blank" class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue grow-hover border-radius:50%">
 		        <i class="fas fa-pencil-alt"></i>
 	        </button>
