@@ -52,7 +52,7 @@
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.1.2",
-    "css-minimizer-webpack-plugin": "^2.0.0",
+    "css-minimizer-webpack-plugin": "^3.0.0",
     "file-loader": "^6.2.0",
     "html-webpack-inline-source-plugin": "^0.0.10",
     "html-webpack-plugin": "^5.3.1",
@@ -79,9 +79,9 @@
     "@cocreate/codemirror": "^1.0.15",
     "@cocreate/conditional-logic": "^1.0.0",
     "@cocreate/contenteditable": "^1.0.0",
-    "@cocreate/crdt": "^1.1.1",
+    "@cocreate/crdt": "^1.1.2",
     "@cocreate/croppie": "^1.0.0",
-    "@cocreate/crud-client": "^1.0.0",
+    "@cocreate/crud-client": "^1.0.9",
     "@cocreate/cursors": "^1.0.0",
     "@cocreate/dnd": "^0.10.0",
     "@cocreate/docs": "^1.0.0",
@@ -112,7 +112,7 @@
     "@cocreate/pinterest": "^1.0.0",
     "@cocreate/plaid": "^1.0.0",
     "@cocreate/prism": "^1.0.0",
-    "@cocreate/progress": "^1.0.0",
+    "@cocreate/progress": "^1.0.5",
     "@cocreate/progress-bar": "^1.0.0",
     "@cocreate/quill": "^1.0.0",
     "@cocreate/random-color": "^1.0.0",
@@ -141,6 +141,7 @@
     "@cocreate/users": "^1.0.0",
     "@cocreate/utils": "^1.0.0",
     "@cocreate/uuid": "^1.0.0",
-    "@cocreate/vdom": "^1.0.0"
+    "@cocreate/vdom": "^1.0.0",
+    "twilio-client": "^1.14.0"
   }
 }

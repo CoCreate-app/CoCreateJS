@@ -91,15 +91,15 @@
 		            	<pre>
   <code class="language-js">
   crud.createDocument({
-    namespace:'',
-    room:'',
-    broadcast: true|false, (default=ture)
-    broadcast_sender: true/false, //default to true) 
+    namespace:'string',
+    room:'string',
+    broadcast: true|false, //default to true
+    broadcast_sender: true|false, //default to true 
 
-    collection: "test123",
+    collection: "string",
     data:{
-      name1:“hello”,
-      name2:  “hello1”
+      name1: "hello"
+      name2: "hello1"
     },
     async: true|false, //defaults to false
     event: eventName,
@@ -130,16 +130,12 @@
 			        			<p>document_id to read from</p>
 							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>data</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>data to save</p>
-							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>element</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>Save data onChange/submitBtn. If attribute is empty or not used Default's to true.</p>
+				        		<h4><span>name</span> <span class="cocreate-badge success">array</span> <span class="cocreate-badge warning">optional</span></h4>
+			        			<p>names of values to from CMS. If not used whole document will be fetched</p>
 							</li>
 							<li class="padding:15px_0px">
 				        		<h4><span>metaData</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge success">array</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>Additonal data in the form of a string , array or object </p>
+			        			<p>Additonal data in the form of a string ,array or object</p>
 							</li>
 			            </ul>
 			        </div>
@@ -149,6 +145,7 @@
   crud.readDocument({
     collection: "module",
     document_id: "",
+    name: [],
 	event: eventName,
     metaData: "xxxx"
   }),
@@ -210,17 +207,18 @@
   crud.updateDocument({
     namespace: '',
     room: '',
-    broadcast: true/false,
-    broadcast_sender: true/false,
+    broadcast: true|false, //default to true
+    broadcast_sender: true|false, //default to true
 
     collection: "test123",
     document_id: "document_id",
+    upsert: true|false, //default to true
     data:{
-      name1:“hello”,
-      name2:  “hello1”
+      name1: "hello",
+      name2:  "hello1"
     },
-    async: true|false,
-    delete_fields:["name3", "name4"],
+    delete_fields: ["name3", "name4"],
+    async:  true|false, //default to true
     metaData: "xxxx"
   }),
   </code>
@@ -280,13 +278,14 @@
   crud.deleteDocument({
     namespace: '',
     room: '',
-    broadcast: true/false,
-    broadcast_sender: true/false,
+    broadcast: true|false, //default to true
+    broadcast_sender: true|false, //default to true
 
     collection: "module",
     document_id: "",
-    metadata: "xxxx"
+    async:  true|false, //default to true
     event: "xxxx"
+    metadata: "xxxx"
   }),
   </code>
 						</pre>
@@ -401,35 +400,33 @@
     collection: "modules",
 	event: eventName,
     metadata: "",
+    
     operator: {
-    fetch: {
-      name: 'xxxx',
-      value: 'xxxxx'
-    },
-    filters: [{
-      name: 'field1',
-      operator: "$contain | $range | $eq | $ne | $lt | $lte | $gt | $gte | $in | $nin | $geoWithin",
-      value: [v1, v2, ...]
-    }, {
-      name: "_id",
-      opreator: "in",
-      value: ["id1"]
-    }],
-    orders: [{
-      name: 'field-x',
-      type: 1 | -1
-    }],
-    search: {
-      type: 'or | and',
-      value: [value1, value2]
-    },
-
-    startIndex: 0 (integer),
-    count: 0 (integer)
+	    filters: [{
+				name: 'field1',
+				operator: "$contain | $range | $eq | $ne | $lt | $lte | $gt | $gte | $in | $nin | $geoWithin",
+				value: [v1, v2, ...]
+		    }, {
+		    	name: "_id",
+				opreator: "in",
+				value: ["id1"]
+	    	}
+	    ],
+	    orders: [{
+			name: 'field-x',
+			type: 1 | -1
+	    }],
+	    search: {
+			type: 'or | and',
+			value: [value1, value2]
+	    },
+	
+	    startIndex: 0 (integer),
+	    count: 0 (integer)
     },
 
     is_collection: true | false,
-    //. case fetch document case
+    // case fetch document case
     created_ids : [id1, id2, ...],
     export: true | false
 
