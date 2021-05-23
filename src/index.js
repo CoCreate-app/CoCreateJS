@@ -32,4 +32,4 @@ function removeComponent(key) {
     }
 }
 
-export default { core, addComponent, removeComponent}
+export default { core, addComponent, removeComponent, observer}
