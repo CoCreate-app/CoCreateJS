@@ -1,3 +1,10 @@
+## [1.1.28](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.27...v1.1.28) (2021-06-06)
+
+
+### Bug Fixes
+
+* Invalidations for cdn ([db801a8](https://github.com/CoCreate-app/CoCreateJS/commit/db801a834966dda6436069aea9f0e9b37f2f7882))
+
 ## [1.1.27](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.26...v1.1.27) (2021-05-08)
 
 
