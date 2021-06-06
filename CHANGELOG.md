@@ -1,3 +1,10 @@
+## [1.1.29](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.28...v1.1.29) (2021-06-06)
+
+
+### Bug Fixes
+
+* remove console.js ([2aa50e1](https://github.com/CoCreate-app/CoCreateJS/commit/2aa50e181dce194c88a8e0148416d9ed4c769328))
+
 ## [1.1.28](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.27...v1.1.28) (2021-06-06)
 
 
