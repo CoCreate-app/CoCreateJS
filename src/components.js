@@ -1,7 +1,6 @@
 import { addLazily, addDependency } from './lazy-loader';
-
+// import '@cocreate/dnd'
 // Dependencies
-// addDependency('observer', import (/*webpackChunkName: "observer-chunk"*/ '@cocreate/observer'));
 addDependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
 addDependency('socket', import (/*webpackChunkName: "socket-chunk"*/ '@cocreate/socket-client'));
 addDependency('common-fun', import (/*webpackChunkName: "common-fun-chunk"*/ '@cocreate/socket-client/src/common-fun.js'));
@@ -57,11 +56,12 @@ addLazily('toolbar', '[data-toolbar_target]', ()=> import (/*webpackChunkName: "
 
 // Modules
 addLazily('builder', '#canvas', ()=> import (/*webpackChunkName: "builder-chunk"*/ '@cocreate/builder'))
+addLazily('clipboard', '.clipboard', ()=> import (/*webpackChunkName: "clipboard-chunk"*/ '@cocreate/builder/src/components/clipboard.js'))
 
 // Plugins
 addLazily('charts', '.cocreate-chart', ()=> import (/*webpackChunkName: "charts-chunk"*/ '@cocreate/charts'))
 // addLazily('codemirror', '.codemirror', ()=> import (/*webpackChunkName: "codemirror-chunk"*/ '@cocreate/codemirror'))
-// addLazily('croppie', '[data-croppie]', ()=> import (/*webpackChunkName: "croppie-chunk"*/ '@cocreate/croppie'))
+addLazily('croppie', '[data-croppie]', ()=> import (/*webpackChunkName: "croppie-chunk"*/ '@cocreate/croppie'))
 addLazily('domain', '[data-domain]', ()=> import (/*webpackChunkName: "domain-chunk"*/ '@cocreate/domain'))
 addLazily('facebook', '[data-facebook]', ()=> import (/*webpackChunkName: "facebook-chunk"*/ '@cocreate/facebook'))
 addLazily('fullcalendar', '.cal-container', ()=> import (/*webpackChunkName: "fullcalendar-chunk"*/ '@cocreate/fullcalendar'))
@@ -72,17 +72,14 @@ addLazily('instagram', '[data-instagram]', ()=> import (/*webpackChunkName: "ins
 addLazily('lighthouse', '[data-lighthouse]', ()=> import (/*webpackChunkName: "lighthouse-chunk"*/ '@cocreate/lighthouse'))
 addLazily('linkedin', '[data-linkedin]', ()=> import (/*webpackChunkName: "linkedin-chunk"*/ '@cocreate/linkedin'))
 // addLazily('monaco', '.monaco', ()=> import (/*webpackChunkName: "monaco-chunk"*/ '@cocreate/monaco'))
-addLazily('pickr', '.color-pickr', ()=> import (/*webpackChunkName: "pickr-chunk"*/ '@cocreate/pickr'))
+addLazily('pickr', '.color-picker', ()=> import (/*webpackChunkName: "pickr-chunk"*/ '@cocreate/pickr'))
 addLazily('pinterest', '[data-pinterest]', ()=> import (/*webpackChunkName: "pinterest-chunk"*/ '@cocreate/pinterest'))
 addLazily('plaid', '[data-plaid]', ()=> import (/*webpackChunkName: "plaid-chunk"*/ '@cocreate/plaid'))
 addLazily('prism', '.language-html, .language-css, .language-js, .language-shell, .language-json', ()=> import (/*webpackChunkName: "prism-chunk"*/ '@cocreate/prism'))
-//addLazily('quill', '.quill', ()=> import (/*webpackChunkName: "quill-chunk"*/ '@cocreate/quill'))
+// addLazily('quill', '.quill', ()=> import (/*webpackChunkName: "quill-chunk"*/ '@cocreate/quill'))
 addLazily('sendgrid', '[data-sendgrid]', ()=> import (/*webpackChunkName: "sendgrid-chunk"*/ '@cocreate/sendgrid'))
 addLazily('shipengine', '[data-shipengine]', ()=> import (/*webpackChunkName: "shipengine-chunk"*/ '@cocreate/shipengine'))
 addLazily('stripe', '[data-stripe]', ()=> import (/*webpackChunkName: "stripe-chunk"*/ '@cocreate/stripe'))
 addLazily('twilio', '[data-twilio]', ()=> import (/*webpackChunkName: "twilio-chunk"*/ '@cocreate/twilio'))
 addLazily('twitter', '[data-twitter]', ()=> import (/*webpackChunkName: "twitter-chunk"*/ '@cocreate/twitter'))
 addLazily('uppy', '.uppy', ()=> import (/*webpackChunkName: "uppy-chunk"*/ '@cocreate/uppy'))
-
-// Test component
-// addLazily('test', '[data-test]', ()=> import (webpackChunkName: "test-chunk" '@cocreate/test'))

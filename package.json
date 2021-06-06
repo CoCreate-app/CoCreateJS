@@ -142,6 +142,7 @@
     "@cocreate/utils": "^1.0.0",
     "@cocreate/uuid": "^1.0.0",
     "@cocreate/vdom": "^1.0.0",
+    "@simonwep/pickr": "1.8.0",
     "twilio-client": "^1.14.0"
   }
 }

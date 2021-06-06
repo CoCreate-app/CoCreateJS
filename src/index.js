@@ -1,7 +1,6 @@
 // core components
 import core from "./core.js"
 import observer from '@cocreate/observer';
-// import css from '@cocreate/cocreatecss';
 import './components.js'
 
 // (async function() {
@@ -28,7 +27,7 @@ function addComponent(key, component) {
 
 function removeComponent(key) {
     if (this[key]) {
-
+        
     }
 }
 
