@@ -1,3 +1,10 @@
+## [1.1.30](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.29...v1.1.30) (2021-06-06)
+
+
+### Bug Fixes
+
+* remove dom-to-text ([7b5cdbd](https://github.com/CoCreate-app/CoCreateJS/commit/7b5cdbdc6b377e0bae39c66d20cbb2201096ce06))
+
 ## [1.1.29](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.28...v1.1.29) (2021-06-06)
 
 
