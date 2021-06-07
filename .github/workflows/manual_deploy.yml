@@ -17,14 +17,13 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # Deploy components
-  cdn:
+  deploy:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    needs: release
-    if: needs.release.outputs.new_release_published == 'true'
+    # Environment variables
     env:
-      VERSION: '${{ needs.release.outputs.new_release_version }}'
-    steps:
+      DRY_RUN: ${{ github.event.inputs.dry_run }}
+    # Steps represent a sequence of tasks that will be executed as part of the job    steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: setup nodejs
@@ -59,27 +58,7 @@ jobs:
           destination: /latest
           acl: public-read
           invalidations: true
-  dist:
-    runs-on: ubuntu-latest
-    needs: release
-    if: needs.release.outputs.new_release_published
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-      - name: setup nodejs
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14.15.4
-      - run: git pull origin master
-      - name: yarn install
-        run: >
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
-          .npmrc
 
-          yarn install --no-lockfile
-      - run: yarn build
       - run: git add .
       - run: git config user.email "frank@cocreate.app"
       - run: git config user.name "frank pagan"
