@@ -25,6 +25,9 @@ jobs:
     # Environment variables
     env:
       DRY_RUN: ${{ github.event.inputs.dry_run }}
+      GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+      NPM_TOKEN: '${{ secrets.NPM_TOKEN }}'
+
     # Steps represent a sequence of tasks that will be executed as part of the job    
     steps:
       - name: Checkout
