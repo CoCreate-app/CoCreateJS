@@ -7,64 +7,13 @@ name: Manual Deploy Workflow
 on:
   workflow_dispatch:
     # Inputs the workflow accepts.
-    # inputs:
-    #   deploy_components:
-    #     description: |
-    #       Components to deploy separated by commas.
-    #       Support "nodeautoscaler", "lb", "keepalived".
-    #     default: 'nodeautoscaler,lb,keepalived'
-    #     required: true
-    #   dry_run:
-    #     description: |
-    #       If set to 'yes', run all deployment in dry-run mode.
-    #       Otherwise, set to 'no'.
-    #     default: 'yes'
-    #     required: true
-    #   kubectl_version:
-    #     description: 'Version of kubectl to be installed'
-    #     default: '1.19.9'
-    #     required: true
-    #   # Use following command to generate base64 code:
-    #   #   cat <<EOF | base64 | tr -d '\n' | xargs echo
-    #   #   <your_autoscalegroups_yaml>
-    #   #   EOF
-    #   auto_scale_groups:
-    #     description: |
-    #       The auto scale groups defined in yaml to apply given as a string from base64 encoding.
-    #       See the comments in .github/workflows/manual.yml for how to get a base64 encoded yaml.
-    #       If this is set to empty, the nodeautoscaler/deploy/auto-scale-groups-configmap.yml in repo will be used.
-    #     default: ''
-    #     required: false
-    #   all_peers_ip:
-    #     description: |
-    #       The private IPs of all nodes running keepalived talked to AWS separated by comma.
-    #       For example, "10.0.0.1,10.0.0.2"
-    #       This must be non-empty if keepalived is deployed.
-    #     default: ''
-    #     required: false
-    #   eip_alloc_id:
-    #     description: |
-    #       The allocation ID of elastic IP in AWS used as the virtual IP in keepalived.
-    #       If this is set to empty, the secret EIP_ALLOC_ID will be used.
-    #     default: ''
-    #     required: false
-    #   aws_default_region:
-    #     description: |
-    #       The default AWS region connected by keepalived. This must match the granted permission
-    #       to AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY stored in secrets.
-    #     default: 'us-east-1'
-    #     required: true
-    #   primary_nic_name:
-    #     description: |
-    #       The primary NIC on the host that will be assigned VIP by keepalived.
-    #     default: 'ens5'
-    #     required: true
-    #   rancher_url:
-    #     description: |
-    #       The URL of target rancher when node auto scaler uses Rancher as backend node provisioner.
-    #       If set to empty, the value of secret RANCHER_URL will be used
-    #     default: ''
-    #     required: false
+    inputs:
+      dry_run:
+        description: |
+          If set to 'yes', run all deployment in dry-run mode.
+          Otherwise, set to 'no'.
+        default: 'yes'
+        required: true
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
