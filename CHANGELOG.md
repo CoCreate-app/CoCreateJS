@@ -1,3 +1,10 @@
+## [1.1.31](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.30...v1.1.31) (2021-06-07)
+
+
+### Bug Fixes
+
+* update package.json to use @cocreate/packagename latest ([b78ce71](https://github.com/CoCreate-app/CoCreateJS/commit/b78ce71de678a09fbce1e47a732ce51a27f874fd))
+
 ## [1.1.30](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.29...v1.1.30) (2021-06-06)
 
 
