@@ -1,3 +1,10 @@
+## [1.1.32](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.31...v1.1.32) (2021-06-07)
+
+
+### Bug Fixes
+
+* adding manual deployment ([2cff7af](https://github.com/CoCreate-app/CoCreateJS/commit/2cff7af953e9d9588b5dc2888289830c015d59e9))
+
 ## [1.1.31](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.30...v1.1.31) (2021-06-07)
 
 
