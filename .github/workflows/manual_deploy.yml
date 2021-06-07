@@ -1,0 +1,138 @@
+# This is a workflow that is manually triggered to deploy supported components other than applications
+
+name: Manual Deploy Workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    # inputs:
+    #   deploy_components:
+    #     description: |
+    #       Components to deploy separated by commas.
+    #       Support "nodeautoscaler", "lb", "keepalived".
+    #     default: 'nodeautoscaler,lb,keepalived'
+    #     required: true
+    #   dry_run:
+    #     description: |
+    #       If set to 'yes', run all deployment in dry-run mode.
+    #       Otherwise, set to 'no'.
+    #     default: 'yes'
+    #     required: true
+    #   kubectl_version:
+    #     description: 'Version of kubectl to be installed'
+    #     default: '1.19.9'
+    #     required: true
+    #   # Use following command to generate base64 code:
+    #   #   cat <<EOF | base64 | tr -d '\n' | xargs echo
+    #   #   <your_autoscalegroups_yaml>
+    #   #   EOF
+    #   auto_scale_groups:
+    #     description: |
+    #       The auto scale groups defined in yaml to apply given as a string from base64 encoding.
+    #       See the comments in .github/workflows/manual.yml for how to get a base64 encoded yaml.
+    #       If this is set to empty, the nodeautoscaler/deploy/auto-scale-groups-configmap.yml in repo will be used.
+    #     default: ''
+    #     required: false
+    #   all_peers_ip:
+    #     description: |
+    #       The private IPs of all nodes running keepalived talked to AWS separated by comma.
+    #       For example, "10.0.0.1,10.0.0.2"
+    #       This must be non-empty if keepalived is deployed.
+    #     default: ''
+    #     required: false
+    #   eip_alloc_id:
+    #     description: |
+    #       The allocation ID of elastic IP in AWS used as the virtual IP in keepalived.
+    #       If this is set to empty, the secret EIP_ALLOC_ID will be used.
+    #     default: ''
+    #     required: false
+    #   aws_default_region:
+    #     description: |
+    #       The default AWS region connected by keepalived. This must match the granted permission
+    #       to AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY stored in secrets.
+    #     default: 'us-east-1'
+    #     required: true
+    #   primary_nic_name:
+    #     description: |
+    #       The primary NIC on the host that will be assigned VIP by keepalived.
+    #     default: 'ens5'
+    #     required: true
+    #   rancher_url:
+    #     description: |
+    #       The URL of target rancher when node auto scaler uses Rancher as backend node provisioner.
+    #       If set to empty, the value of secret RANCHER_URL will be used
+    #     default: ''
+    #     required: false
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # Deploy components
+  cdn:
+    runs-on: ubuntu-latest
+    needs: release
+    if: needs.release.outputs.new_release_published == 'true'
+    env:
+      VERSION: '${{ needs.release.outputs.new_release_version }}'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: setup nodejs
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.15.4
+      - name: yarn install
+        run: >
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
+          .npmrc
+
+          yarn install
+      - name: yarn build
+        run: yarn build
+      - name: upload bundle as version
+        uses: CoCreate-app/CoCreate-s3@master
+        with:
+          aws-key-id: '${{ secrets.AWSACCESSKEYID }}'
+          aws-access-key: '${{ secrets.AWSSECERTACCESSKEY }}'
+          bucket: testcrudbucket
+          source: ./dist
+          destination: '/${{env.VERSION}}'
+          acl: public-read
+      - name: upload bundle as latest
+        uses: CoCreate-app/CoCreate-s3@master
+        with:
+          aws-key-id: '${{ secrets.AWSACCESSKEYID }}'
+          aws-access-key: '${{ secrets.AWSSECERTACCESSKEY }}'
+          distributionId: '${{ secrets.DISTRIBUTION_ID }}'
+          bucket: testcrudbucket
+          source: ./dist
+          destination: /latest
+          acl: public-read
+          invalidations: true
+  dist:
+    runs-on: ubuntu-latest
+    needs: release
+    if: needs.release.outputs.new_release_published
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+      - name: setup nodejs
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.15.4
+      - run: git pull origin master
+      - name: yarn install
+        run: >
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
+          .npmrc
+
+          yarn install --no-lockfile
+      - run: yarn build
+      - run: git add .
+      - run: git config user.email "frank@cocreate.app"
+      - run: git config user.name "frank pagan"
+      - run: git commit --allow-empty -m "add dist bundle"
+      - run: git push origin master
