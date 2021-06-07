@@ -13,7 +13,7 @@ addDependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/
 addDependency('form', import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
 
 // Core Components
-addLazily('cssParse', '[data-parse]', ()=> import (/*webpackChunkName: "css-chunk"*/ '@cocreate/cocreatecss'))
+addLazily('cssParse', 'body', ()=> import (/*webpackChunkName: "css-chunk"*/ '@cocreate/cocreatecss'))
 addLazily('cssSave', '[data-save]', ()=> import (/*webpackChunkName: "css-save-chunk"*/ '@cocreate/cocreatecss/src/save.js'))
 addLazily('action', '[data-actions]', ()=> import (/*webpackChunkName: "action-chunk"*/ '@cocreate/action'))
 addLazily('room', '[data-room]', ()=> import (/*webpackChunkName: "room-chunk"*/ '@cocreate/room'))
