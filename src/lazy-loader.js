@@ -33,7 +33,7 @@ export async function addLazily(name, selector, cb) {
 }
 
 
-export async function addDependency(name, promise) {
+export async function dependency(name, promise) {
     let module = await promise;
     Object.assign(window.CoCreate, {
         [name]: module.default })

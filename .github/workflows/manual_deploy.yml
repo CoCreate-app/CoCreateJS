@@ -1,6 +1,6 @@
 # This is a workflow that is manually triggered to deploy supported components other than applications
 
-name: Manual Deploy Workflow
+name: Manual Deployment
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -8,16 +8,15 @@ on:
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
-      dry_run:
+      invalidations:
         description: |
-          If set to 'yes', run all deployment in dry-run mode.
-          Otherwise, set to 'no'.
-        default: 'yes'
+          If set to 'true', invalidates previous upload.
+        default: 'true'
         required: true
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  deploy:
+  cdn:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     # Environment variables
@@ -42,16 +41,7 @@ jobs:
           yarn install
       - name: yarn build
         run: yarn build
-      - name: upload bundle as version
-        uses: CoCreate-app/CoCreate-s3@master
-        with:
-          aws-key-id: '${{ secrets.AWSACCESSKEYID }}'
-          aws-access-key: '${{ secrets.AWSSECERTACCESSKEY }}'
-          bucket: testcrudbucket
-          source: ./dist
-          destination: '/${{env.VERSION}}'
-          acl: public-read
-      - name: upload bundle as latest
+      - name: upload latest bunndle
         uses: CoCreate-app/CoCreate-s3@master
         with:
           aws-key-id: '${{ secrets.AWSACCESSKEYID }}'
@@ -61,10 +51,10 @@ jobs:
           source: ./dist
           destination: /latest
           acl: public-read
-          invalidations: true
+          invalidations: ${{ github.event.inputs.dry_run }}
       - run: git pull origin master
       - run: git add .
       - run: git config user.email "frank@cocreate.app"
       - run: git config user.name "frank pagan"
-      - run: git commit --allow-empty -m "add dist bundle"
+      - run: git commit --allow-empty -m "latest"
       - run: git push origin master
