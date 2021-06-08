@@ -17,7 +17,7 @@ function listen(callback, selector) {
     // todo: observer add attributes
 }
 
-export async function addLazily(name, selector, cb) {
+export async function lazyLoad(name, selector, cb) {
     async function cc() {
         let component = (await cb()).default;
         Object.assign(window.CoCreate, {
