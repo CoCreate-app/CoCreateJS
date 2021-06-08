@@ -1,3 +1,10 @@
+## [1.1.35](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.34...v1.1.35) (2021-06-08)
+
+
+### Bug Fixes
+
+* update names for readability ([7b1fb07](https://github.com/CoCreate-app/CoCreateJS/commit/7b1fb0793c7c2e587c89c71147085f6615004d03))
+
 ## [1.1.34](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.33...v1.1.34) (2021-06-07)
 
 
