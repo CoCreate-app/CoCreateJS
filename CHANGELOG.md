@@ -1,3 +1,10 @@
+## [1.1.36](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.35...v1.1.36) (2021-06-08)
+
+
+### Bug Fixes
+
+* lazyLoad ([3420e33](https://github.com/CoCreate-app/CoCreateJS/commit/3420e33e839785553a69eccb763f550383c5f6e2))
+
 ## [1.1.35](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.34...v1.1.35) (2021-06-08)
 
 
