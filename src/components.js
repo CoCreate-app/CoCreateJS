@@ -45,7 +45,7 @@ lazyLoad('floatingLabel', '.floating-label', ()=> import (/*webpackChunkName: "f
 lazyLoad('sidenav', '.cocreate-sidenav', ()=> import (/*webpackChunkName: "sidenav-chunk"*/ '@cocreate/sidenav'))
 lazyLoad('fullscreen', '[data-fullscreen]', ()=> import (/*webpackChunkName: "fullscreen-chunk"*/ '@cocreate/fullscreen'))
 lazyLoad('modal', '[target="modal"]', ()=> import (/*webpackChunkName: "modal-chunk"*/ '@cocreate/modal'))
-lazyLoad('parallax', '[data-parallax]', ()=> import (/*webpackChunkName: "parallax-chunk"*/ '@cocreate/parallax'))
+lazyLoad('parallax', '[data-parallax_src]', ()=> import (/*webpackChunkName: "parallax-chunk"*/ '@cocreate/parallax'))
 lazyLoad('calculation', '[data-calculation]', ()=> import (/*webpackChunkName: "calculation-chunk"*/ '@cocreate/calculation'))
 lazyLoad('progress', '[data-progress]', ()=> import (/*webpackChunkName: "progress-chunk"*/ '@cocreate/progress'))
 lazyLoad('randomColor', '[data-background_color]', ()=> import (/*webpackChunkName: "color-chunk"*/ '@cocreate/random-color'))

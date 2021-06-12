@@ -51,7 +51,7 @@ jobs:
           source: ./dist
           destination: /latest
           acl: public-read
-          invalidations: ${{ github.event.inputs.dry_run }}
+          invalidations: ${{ github.event.inputs.invalidations }}
       - run: git pull origin master
       - run: git add .
       - run: git config user.email "frank@cocreate.app"
