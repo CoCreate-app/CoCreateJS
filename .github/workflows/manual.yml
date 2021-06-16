@@ -41,7 +41,7 @@ jobs:
           yarn install
       - name: yarn build
         run: yarn build
-      - name: upload latest bunndle
+      - name: upload latest bundle
         uses: CoCreate-app/CoCreate-s3@master
         with:
           aws-key-id: '${{ secrets.AWSACCESSKEYID }}'
