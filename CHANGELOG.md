@@ -1,3 +1,11 @@
+## [1.1.37](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.36...v1.1.37) (2021-06-17)
+
+
+### Bug Fixes
+
+* added header for seo ([6fbe45f](https://github.com/CoCreate-app/CoCreateJS/commit/6fbe45fb06e08691112101258146e38d97c8620e))
+* package.json syntax error ([d589878](https://github.com/CoCreate-app/CoCreateJS/commit/d589878a825e4454ba53aef3593c6435526311d4))
+
 ## [1.1.36](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.35...v1.1.36) (2021-06-08)
 
 
