@@ -1,6 +1,4 @@
 import { lazyLoad, dependency } from './lazy-loader';
-// import "y-codemirror"
-// import '@cocreate/dnd'
 // Dependencies
 dependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
 dependency('socket', import (/*webpackChunkName: "socket-chunk"*/ '@cocreate/socket-client'));
@@ -30,6 +28,7 @@ lazyLoad('toggle', '[data-toogle], [data-hover]', ()=> import (/*webpackChunkNam
 lazyLoad('selected', '[data-selected]', ()=> import (/*webpackChunkName: "selected-chunk"*/ '@cocreate/selected'))
 lazyLoad('scroll', '[data-scroll]', ()=> import (/*webpackChunkName: "scroll-chunk"*/ '@cocreate/scroll'))
 // lazyLoad('resize', '[data-resize]', ()=>import(/*webpackChunkName: "resize-chunk"*/ '@cocreate/resize'))
+// lazyLoad('resize', '[data-resizeObserver]', ()=>import(/*webpackChunkName: "resize-chunk"*/ '@cocreate/resize'))
 lazyLoad('attributes', '[data-attributes], [data-style]', ()=>import(/*webpackChunkName: "attributes-chunk"*/ '@cocreate/attributes'))
 lazyLoad('users', '[data-permissions], [data-actions*="createUser"], [data-actions*="loginBtn"]', ()=> import (/*webpackChunkName: "users-chunk"*/ '@cocreate/users'))
 lazyLoad('organizations', '[data-actions*="createOrg"]', ()=> import (/*webpackChunkName: "organizations-chunk"*/ '@cocreate/organizations'))

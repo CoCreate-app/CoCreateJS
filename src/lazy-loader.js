@@ -2,15 +2,16 @@ import observer from '@cocreate/observer';
 
 function listen(callback, selector) {
 
-    function observerCallback() {
-        callback()
-        observer.remove(observerCallback)
+    function observerCallback({ target }) {
+        if (target.matches && target.matches(selector)) {
+            callback()
+            observer.uninit(observerCallback)
+        }
     }
 
     observer.init({
         name: 'lazyloadObserver',
-        observe: ['subtree', 'childList', 'attributes'],
-        include: selector,
+        observe: ['addedNodes', 'attributes'],
         callback: observerCallback
     })
 
@@ -36,5 +37,6 @@ export async function lazyLoad(name, selector, cb) {
 export async function dependency(name, promise) {
     let module = await promise;
     Object.assign(window.CoCreate, {
-        [name]: module.default })
+        [name]: module.default
+    })
 }
