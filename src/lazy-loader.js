@@ -3,7 +3,7 @@ import observer from '@cocreate/observer';
 function listen(callback, selector) {
 
     function observerCallback({ target }) {
-        if (target.matches && target.matches(selector)) {
+        if (target.matches(selector)) {
             callback()
             observer.uninit(observerCallback)
         }
