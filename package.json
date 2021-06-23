@@ -92,7 +92,7 @@
     "@cocreate/filter": "latest",
     "@cocreate/floating-label": "latest",
     "@cocreate/font-awesome": "latest",
-    "@cocreate/form": "latest",
+    "@cocreate/form": "^1.0.20",
     "@cocreate/fullcalendar": "latest",
     "@cocreate/fullscreen": "latest",
     "@cocreate/google-auth": "latest",
