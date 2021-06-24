@@ -20,9 +20,7 @@
     "html5-framework",
     "javascript-framework"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
+  "publishConfig": { "access": "public" },
   "scripts": {
     "start": "npx webpack --config webpack.config.js ",
     "build": "NODE_ENV=production npx webpack --config webpack.config.js",
@@ -37,9 +35,7 @@
   },
   "author": "CoCreate LLC",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/CoCreate-app/CoCreateJS/issues"
-  },
+  "bugs": { "url": "https://github.com/CoCreate-app/CoCreateJS/issues" },
   "homepage": "https://cocreate.app/docs/CoCreateJS",
   "funding": {
     "type": "GitHub Sponsors ❤",
@@ -92,7 +88,7 @@
     "@cocreate/filter": "latest",
     "@cocreate/floating-label": "latest",
     "@cocreate/font-awesome": "latest",
-    "@cocreate/form": "^1.0.20",
+    "@cocreate/form": "latest",
     "@cocreate/fullcalendar": "latest",
     "@cocreate/fullscreen": "latest",
     "@cocreate/google-auth": "latest",
