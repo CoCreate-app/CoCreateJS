@@ -10,6 +10,8 @@ dependency('domText', import (/*webpackChunkName: "domText-chunk"*/ '@cocreate/d
 dependency('cursors', import (/*webpackChunkName: "cursors-chunk"*/ '@cocreate/cursors'));
 dependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 dependency('form', import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
+dependency('uuid', import (/*webpackChunkName: "uuid-chunk"*/ '@cocreate/uuid'));
+// dependency('api', import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 
 // Core Components
 lazyLoad('cssParse', 'body', ()=> import (/*webpackChunkName: "css-chunk"*/ '@cocreate/cocreatecss'))
@@ -56,7 +58,7 @@ lazyLoad('toolbar', '[data-toolbar_target]', ()=> import (/*webpackChunkName: "t
 
 // Modules
 lazyLoad('builder', '#canvas', ()=> import (/*webpackChunkName: "builder-chunk"*/ '@cocreate/builder'))
-lazyLoad('clipboard', '.clipboard', ()=> import (/*webpackChunkName: "clipboard-chunk"*/ '@cocreate/builder/src/components/clipboard.js'))
+// lazyLoad('clipboard', '.clipboard', ()=> import (/*webpackChunkName: "clipboard-chunk"*/ '@cocreate/builder/src/components/clipboard.js'))
 
 // Plugins
 lazyLoad('charts', '.cocreate-chart', ()=> import (/*webpackChunkName: "charts-chunk"*/ '@cocreate/charts'))
