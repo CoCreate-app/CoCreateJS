@@ -1,3 +1,11 @@
+## [1.1.41](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.40...v1.1.41) (2021-06-24)
+
+
+### Bug Fixes
+
+* add method to turn on and off console.log while in development ([72dbe06](https://github.com/CoCreate-app/CoCreateJS/commit/72dbe064b45669a6f71ea942a87e79efd9e44d1d))
+* update all [@cocreate](https://github.com/cocreate) to use latest versions ([1760438](https://github.com/CoCreate-app/CoCreateJS/commit/176043821fc0ef0b4bcae238be3fb6882b9f15d4))
+
 ## [1.1.40](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.39...v1.1.40) (2021-06-23)
 
 

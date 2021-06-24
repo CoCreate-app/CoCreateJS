@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/cocreatejs",
-  "version": "1.1.40",
+  "version": "1.1.41",
   "description": "A simple CoCreateJS component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API.",
   "keywords": [
     "cocreatejs",
@@ -20,7 +20,9 @@
     "html5-framework",
     "javascript-framework"
   ],
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "npx webpack --config webpack.config.js ",
     "build": "NODE_ENV=production npx webpack --config webpack.config.js",
@@ -35,7 +37,9 @@
   },
   "author": "CoCreate LLC",
   "license": "MIT",
-  "bugs": { "url": "https://github.com/CoCreate-app/CoCreateJS/issues" },
+  "bugs": {
+    "url": "https://github.com/CoCreate-app/CoCreateJS/issues"
+  },
   "homepage": "https://cocreate.app/docs/CoCreateJS",
   "funding": {
     "type": "GitHub Sponsors ❤",
