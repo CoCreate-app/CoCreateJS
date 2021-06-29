@@ -53,6 +53,7 @@ jobs:
           .npmrc
 
           yarn install
+          yarn add webpack-cli
       - name: yarn build
         run: yarn build
       - name: upload bundle as version
