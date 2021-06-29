@@ -53,10 +53,10 @@ jobs:
           .npmrc
 
           yarn install
-      - name: yarn build
-        run: yarn build
       - name: yarn add
         run: yarn add webpack-cli
+      - name: yarn build
+        run: yarn build
       - name: upload bundle as version
         uses: CoCreate-app/CoCreate-s3@master
         with:
