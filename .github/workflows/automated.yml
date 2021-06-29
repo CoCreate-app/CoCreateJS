@@ -88,11 +88,5 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Setup node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14.15.4
-      - run: yarn start
       - name: update documentation
         uses: CoCreate-app/CoCreate-docs@master
-
