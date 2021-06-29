@@ -1,3 +1,10 @@
+## [1.1.44](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.43...v1.1.44) (2021-06-29)
+
+
+### Bug Fixes
+
+* add logger utility ([234bfc8](https://github.com/CoCreate-app/CoCreateJS/commit/234bfc855c84f5dd0ca1e0d59989defab7a39f4f))
+
 ## [1.1.43](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.42...v1.1.43) (2021-06-25)
 
 
