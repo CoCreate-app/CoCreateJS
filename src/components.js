@@ -1,4 +1,5 @@
 import { lazyLoad, dependency } from './lazy-loader';
+
 // Dependencies
 dependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
 dependency('socket', import (/*webpackChunkName: "socket-chunk"*/ '@cocreate/socket-client'));
@@ -31,7 +32,7 @@ lazyLoad('selected', '[data-selected]', ()=> import (/*webpackChunkName: "select
 lazyLoad('scroll', '[data-scroll]', ()=> import (/*webpackChunkName: "scroll-chunk"*/ '@cocreate/scroll'))
 // lazyLoad('resize', '[data-resize]', ()=>import(/*webpackChunkName: "resize-chunk"*/ '@cocreate/resize'))
 // lazyLoad('resize', '[data-resizeObserver]', ()=>import(/*webpackChunkName: "resize-chunk"*/ '@cocreate/resize'))
-lazyLoad('attributes', '[data-attributes], [data-style]', ()=>import(/*webpackChunkName: "attributes-chunk"*/ '@cocreate/attributes'))
+// lazyLoad('attributes', '[data-attributes], [data-style]', ()=>import(/*webpackChunkName: "attributes-chunk"*/ '@cocreate/attributes'))
 lazyLoad('users', '[data-permissions], [data-actions*="createUser"], [data-actions*="loginBtn"]', ()=> import (/*webpackChunkName: "users-chunk"*/ '@cocreate/users'))
 lazyLoad('organizations', '[data-actions*="createOrg"]', ()=> import (/*webpackChunkName: "organizations-chunk"*/ '@cocreate/organizations'))
 lazyLoad('industry', '[data-actions*="runIndustry"]', ()=> import (/*webpackChunkName: "industry-chunk"*/ '@cocreate/industry'))
@@ -74,7 +75,7 @@ lazyLoad('instagram', '[data-instagram]', ()=> import (/*webpackChunkName: "inst
 lazyLoad('lighthouse', '[data-lighthouse]', ()=> import (/*webpackChunkName: "lighthouse-chunk"*/ '@cocreate/lighthouse'))
 lazyLoad('linkedin', '[data-linkedin]', ()=> import (/*webpackChunkName: "linkedin-chunk"*/ '@cocreate/linkedin'))
 // lazyLoad('monaco', '.monaco', ()=> import (/*webpackChunkName: "monaco-chunk"*/ '@cocreate/monaco'))
-lazyLoad('pickr', '.color-picker', ()=> import (/*webpackChunkName: "pickr-chunk"*/ '@cocreate/pickr'))
+// lazyLoad('pickr', '.color-picker', ()=> import (/*webpackChunkName: "pickr-chunk"*/ '@cocreate/pickr'))
 lazyLoad('pinterest', '[data-pinterest]', ()=> import (/*webpackChunkName: "pinterest-chunk"*/ '@cocreate/pinterest'))
 lazyLoad('plaid', '[data-plaid]', ()=> import (/*webpackChunkName: "plaid-chunk"*/ '@cocreate/plaid'))
 lazyLoad('prism', '.language-html, .language-css, .language-js, .language-shell, .language-json', ()=> import (/*webpackChunkName: "prism-chunk"*/ '@cocreate/prism'))

@@ -13,11 +13,12 @@ function listen(callback, selector) {
 
     observer.init({
         name: 'lazyloadObserver',
-        observe: ['childList'],
+        observe: ['addedNodes'],
+        // attributeFilter: selector,
+        classFilter: ['test'], // only works for attributes but some of our components use class... if we update to target.atributes.value contains test 
         callback: observerCallback
     })
 
-    // todo: observer add attributes
 }
 
 export async function lazyLoad(name, selector, cb) {

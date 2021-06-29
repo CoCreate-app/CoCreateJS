@@ -1,23 +1,18 @@
 import observer from '@cocreate/observer';
-
-function listen(callback, selector) {
-
-    function observerCallback({ target }) {
-        let isInit = target.querySelector(selector)
-        if (isInit) {
+let imports = {};
+window.CoCreate = {}
+function observerCallback( target ) {
+    for(let [name, {callback, selector}] of Object.entries(imports))
+    {   
+        // if(!name)
+        //     return;
+        let isInit = target.querySelector(selector) //
+        if (isInit && callback) {
             callback()
-            console.log('lazyloaded', selector)
-            observer.uninit(observerCallback)
+            delete imports[name] ;
         }
     }
 
-    observer.init({
-        name: 'lazyloadObserver',
-        observe: ['childList'],
-        callback: observerCallback
-    })
-
-    // todo: observer add attributes
 }
 
 export async function lazyLoad(name, selector, cb) {
@@ -27,11 +22,10 @@ export async function lazyLoad(name, selector, cb) {
             [name]: component
         })
     }
-
     if (document.querySelector(selector))
         await cc()
     else
-        listen(cc, selector)
+        imports[name] = { selector, cb };
 
 }
 
@@ -42,3 +36,11 @@ export async function dependency(name, promise) {
         [name]: module.default
     })
 }
+
+observer.init({
+    name: 'lazyloadObserver',
+    observe: ['childList'],
+    callback: function(mutation) {
+        observerCallback(mutation.target)
+    }
+})

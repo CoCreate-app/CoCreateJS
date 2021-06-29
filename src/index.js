@@ -1,6 +1,7 @@
 // core components
 import core from "./core.js"
 import observer from '@cocreate/observer';
+
 import './components.js'
 
 // (async function() {
@@ -31,4 +32,4 @@ function removeComponent(key) {
     }
 }
 
-export default { core, addComponent, removeComponent, observer}
+export default { core, addComponent, removeComponent, observer }
