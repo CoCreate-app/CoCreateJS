@@ -1,3 +1,10 @@
+## [1.1.45](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.44...v1.1.45) (2021-06-29)
+
+
+### Bug Fixes
+
+* serverside and clientside render intergrations ([1c09f7a](https://github.com/CoCreate-app/CoCreateJS/commit/1c09f7a1b42b13014edfb6051dfda7ccfb9bc146))
+
 ## [1.1.44](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.43...v1.1.44) (2021-06-29)
 
 
