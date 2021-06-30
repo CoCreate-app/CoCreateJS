@@ -1,10 +1,5 @@
 # ignore
 node_modules
-dist/*
-!dist/*.min.js
+dist
 .npmrc
-dist/contenteditable-chunk.min.js
-dist/crdt-chunk.min.js
-dist/cursors-chunk.min.js
-dist/text-chunk.min.js
 yarn.lock
