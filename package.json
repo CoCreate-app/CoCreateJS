@@ -29,7 +29,8 @@
     "dev": "npx webpack --config webpack.config.js --watch",
     "docs": "node ./node_modules/@cocreate/docs/src/index.js",
     "hosting": "node ./node_modules/@cocreate/hosting/src/index.js",
-    "dist": "node --version"
+    "dist": "node --version",
+    "postinstall": "sudo npm i -g @cocreate/cli"
   },
   "repository": {
     "type": "git",
