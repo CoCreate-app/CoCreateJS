@@ -1,3 +1,10 @@
+## [1.1.53](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.52...v1.1.53) (2021-07-02)
+
+
+### Bug Fixes
+
+* postinstall cli ([f809605](https://github.com/CoCreate-app/CoCreateJS/commit/f809605d36a2aa9cf230d9c2e1a4a35a2b1b79e9))
+
 ## [1.1.52](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.51...v1.1.52) (2021-07-01)
 
 
