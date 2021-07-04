@@ -1,3 +1,10 @@
+## [1.1.54](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.53...v1.1.54) (2021-07-04)
+
+
+### Bug Fixes
+
+* use host url as default socket url ([c5049be](https://github.com/CoCreate-app/CoCreateJS/commit/c5049be9fbf8b341a6fa344ce0292348ace643fd))
+
 ## [1.1.53](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.52...v1.1.53) (2021-07-02)
 
 
