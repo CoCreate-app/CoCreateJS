@@ -125,7 +125,7 @@ const CoCreateCore = {
 }
 
 CoCreateCore.setSocket(socket);
-CoCreateCore.init(window.config.host ? window.config.host : 'server.cocreate.app');
+CoCreateCore.init(window.config.host ? window.config.host : window.location.hostname);
 
 export default CoCreateCore;
 
