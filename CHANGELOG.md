@@ -1,3 +1,10 @@
+## [1.1.56](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.55...v1.1.56) (2021-07-08)
+
+
+### Bug Fixes
+
+* manual workflow ([c79cb83](https://github.com/CoCreate-app/CoCreateJS/commit/c79cb837de1e5da15f86097cf4b60668e950e9fe))
+
 ## [1.1.55](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.54...v1.1.55) (2021-07-07)
 
 
