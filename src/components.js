@@ -21,7 +21,7 @@ lazyLoad('action', '[data-actions]', ()=> import (/*webpackChunkName: "action-ch
 lazyLoad('room', '[data-room]', ()=> import (/*webpackChunkName: "room-chunk"*/ '@cocreate/room'))
 lazyLoad('logic', '[data-pass_id], [data-pass_to], [data-pass_value_to], [data-pass_value_id], [data-for]', ()=> import (/*webpackChunkName: "logic-chunk"*/ '@cocreate/logic'))
 lazyLoad('htmltags', '[data-collection]', ()=> import (/*webpackChunkName: "htmltags-chunk"*/ '@cocreate/htmltags'))
-lazyLoad('input', 'input[data-collection], textarea[data-collection]', ()=> import (/*webpackChunkName: "input-chunk"*/ '@cocreate/input'))
+lazyLoad('input', 'input, textarea, select', ()=> import (/*webpackChunkName: "input-chunk"*/ '@cocreate/input'))
 lazyLoad('render', '[data-render]', ()=> import (/*webpackChunkName: "render-chunk"*/ '@cocreate/render'))
 lazyLoad('fetch', '[data-fetch_collection]', ()=> import (/*webpackChunkName: "fetch-chunk"*/ '@cocreate/fetch'))
 lazyLoad('vdom', '[data-vdom_target]', ()=> import (/*webpackChunkName: "vdom-chunk"*/ '@cocreate/vdom'))
@@ -40,7 +40,7 @@ lazyLoad('uuid', '[data-uuid], .loginBtn', ()=> import (/*webpackChunkName: "uui
 lazyLoad('renderKey', '[data-key]', ()=> import (/*webpackChunkName: "render-key-chunk"*/ '@cocreate/render-key'))
 
 // Collabortion Components
-lazyLoad('text', 'input[data-collection], textarea[data-collection]', ()=> import (/*webpackChunkName: "text-chunk"*/ '@cocreate/text'))
+// lazyLoad('text', 'input, textarea', ()=> import (/*webpackChunkName: "text-chunk"*/ '@cocreate/text'))
 lazyLoad('contenteditable', '[data-collection][contenteditable]', ()=> import (/*webpackChunkName: "contenteditable-chunk"*/ '@cocreate/contenteditable'))
 
 // UI Components
