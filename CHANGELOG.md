@@ -1,3 +1,10 @@
+## [1.1.57](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.56...v1.1.57) (2021-07-10)
+
+
+### Bug Fixes
+
+* gitignore all logs ([59eeaa0](https://github.com/CoCreate-app/CoCreateJS/commit/59eeaa0ed58312338ec75b6f348b2e94318daf56))
+
 ## [1.1.56](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.55...v1.1.56) (2021-07-08)
 
 
