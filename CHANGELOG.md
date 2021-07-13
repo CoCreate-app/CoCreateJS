@@ -1,3 +1,10 @@
+## [1.1.59](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.58...v1.1.59) (2021-07-13)
+
+
+### Bug Fixes
+
+* no-lockfile ([7bef5f1](https://github.com/CoCreate-app/CoCreateJS/commit/7bef5f10965229890c6f909bc7f6e3c761f8819c))
+
 ## [1.1.58](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.57...v1.1.58) (2021-07-13)
 
 
