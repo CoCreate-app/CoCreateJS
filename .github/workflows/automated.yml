@@ -52,7 +52,7 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
           .npmrc
 
-          yarn install
+          yarn install --no-lockfile
       - name: yarn add
         run: yarn add webpack-cli
       - name: yarn build
