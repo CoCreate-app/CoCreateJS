@@ -1,3 +1,11 @@
+## [1.1.60](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.59...v1.1.60) (2021-07-13)
+
+
+### Bug Fixes
+
+* add yarn lockfile to git ignore ([3c3bd33](https://github.com/CoCreate-app/CoCreateJS/commit/3c3bd334a0df59d0efd502acd46b9042ba54e264))
+* add yarn lockfile to git ignore ([25b78d5](https://github.com/CoCreate-app/CoCreateJS/commit/25b78d5a11e0bc17730fe2ba129de01b7995cc59))
+
 ## [1.1.59](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.58...v1.1.59) (2021-07-13)
 
 
