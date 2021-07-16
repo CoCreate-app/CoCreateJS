@@ -14,8 +14,7 @@ function listen(callback, selector) {
     observer.init({
         name: 'lazyloadObserver',
         observe: ['addedNodes'],
-        // attributeFilter: selector,
-        classFilter: ['test'], // only works for attributes but some of our components use class... if we update to target.atributes.value contains test 
+        // target: selector,
         callback: observerCallback
     })
 
