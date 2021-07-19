@@ -8,8 +8,6 @@ if (!socket) {
   window.CoCreateCrudSocket = socket;
 }
 
-// let socket = new CoCreateSocket('ws');
-
 const CoCreateCore = {
   socketInitFuncs: [],
   moduleSelectors: [],
@@ -34,12 +32,12 @@ const CoCreateCore = {
   
   __setConfig: function() {
 		let orgId = window.localStorage.getItem('organization_id');
-		let securityKey = window.localStorage.getItem('securityKey');
 		let apiKey = window.localStorage.getItem('apiKey');
-		
-		if (orgId)        config['organization_Id'] = orgId
-		if (apiKey)       config['apiKey'] = apiKey
-		if (securityKey)  config['securityKey'] = securityKey;
+		let host = window.localStorage.getItem('host');
+
+		if (orgId)    config['organization_Id'] = orgId
+		if (apiKey)   config['apiKey'] = apiKey
+		if (host)     config['host'] = host;
   },
   
   initSocketListener: function() {
@@ -94,20 +92,7 @@ const CoCreateCore = {
       instance : instance || window
     });
   },
-  // registerSelector: function(selector) {
-  //   if (this.moduleSelectors.indexOf(selector) === -1) {
-  //     this.moduleSelectors.push(selector);
-  //   }
-  // },
-  
-  // getSelectors: function(selector) {
-  //   return this.moduleSelectors.join(",");
-  // },
 
-  // listenMessage: function(message, fun) {
-  //   this.socket.listen(message, fun);
-  // },
- 
  createSocket: function(config) {
    this.socket.create(config);
  },
@@ -128,5 +113,3 @@ CoCreateCore.setSocket(socket);
 CoCreateCore.init(window.config.host ? window.config.host : window.location.hostname);
 
 export default CoCreateCore;
-
-
