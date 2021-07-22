@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.2.0...v1.2.1) (2021-07-22)
+
+
+### Bug Fixes
+
+* config generated from local storage ([44e47a1](https://github.com/CoCreate-app/CoCreateJS/commit/44e47a1c53f84fdf2e01bad6ea7fc261aad4af37))
+
 # [1.2.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.57...v1.2.0) (2021-07-17)
 
 
