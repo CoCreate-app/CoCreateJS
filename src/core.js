@@ -8,6 +8,8 @@ if (!socket) {
   window.CoCreateCrudSocket = socket;
 }
 
+
+
 const CoCreateCore = {
   socketInitFuncs: [],
   moduleSelectors: [],
@@ -25,7 +27,7 @@ const CoCreateCore = {
     }
     
     this.__setConfig()
-    this.createGeneralSocket(host, namespace || config.organization_Id);
+    this.createGeneralSocket(host, namespace || window.config.organization_Id);
     this.initSocketListener();
     this.createUserSocket(host);
   },
@@ -34,10 +36,13 @@ const CoCreateCore = {
 		let orgId = window.localStorage.getItem('organization_id');
 		let apiKey = window.localStorage.getItem('apiKey');
 		let host = window.localStorage.getItem('host');
+  if(!window.config){
+    window.config = {}
+  }
 
-		if (orgId)    config['organization_Id'] = orgId
-		if (apiKey)   config['apiKey'] = apiKey
-		if (host)     config['host'] = host;
+		if (orgId)    window.config['organization_Id'] = orgId
+		if (apiKey)   window.config['apiKey'] = apiKey
+		if (host)     window.config['host'] = host;
   },
   
   initSocketListener: function() {
@@ -108,7 +113,7 @@ const CoCreateCore = {
    this.socket.destroy(socket, key);
  },
 }
-
+CoCreateCore.__setConfig()
 CoCreateCore.setSocket(socket);
 CoCreateCore.init(window.config.host ? window.config.host : window.location.hostname);
 
