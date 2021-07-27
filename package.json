@@ -1,6 +1,10 @@
 {
   "name": "@cocreate/cocreatejs",
+<<<<<<< HEAD
   "version": "1.1.61",
+=======
+  "version": "1.2.1",
+>>>>>>> 80c125b006ff4736909d266b0a6db9f1a7be143c
   "description": "A simple CoCreateJS component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API.",
   "keywords": [
     "cocreatejs",

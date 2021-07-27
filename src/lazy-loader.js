@@ -43,3 +43,4 @@ export async function dependency(name, promise) {
         [name]: module.default
     })
 }
+

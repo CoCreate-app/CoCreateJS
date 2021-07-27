@@ -1,3 +1,36 @@
+<<<<<<< HEAD
+=======
+## [1.2.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.2.0...v1.2.1) (2021-07-22)
+
+
+### Bug Fixes
+
+* config generated from local storage ([44e47a1](https://github.com/CoCreate-app/CoCreateJS/commit/44e47a1c53f84fdf2e01bad6ea7fc261aad4af37))
+
+# [1.2.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.57...v1.2.0) (2021-07-17)
+
+
+### Bug Fixes
+
+* asa ([b8672fc](https://github.com/CoCreate-app/CoCreateJS/commit/b8672fc58c07da29c2f263cd5444b6498d9e06c5))
+* init and update demos scripts ([d00f44a](https://github.com/CoCreate-app/CoCreateJS/commit/d00f44a5e620a464c9311d8340af410d0b758b6a))
+* workflows ([b83d9a7](https://github.com/CoCreate-app/CoCreateJS/commit/b83d9a792fb436171e1bf59894fe00ff64c5ad53))
+
+
+### Features
+
+* lazy load and remove component after observer ([d8b54ea](https://github.com/CoCreate-app/CoCreateJS/commit/d8b54ea991a709b3df08f5fad92cd6ea160d3ea1))
+
+## [1.1.58](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.57...v1.1.58) (2021-07-17)
+
+
+### Bug Fixes
+
+* asa ([b8672fc](https://github.com/CoCreate-app/CoCreateJS/commit/b8672fc58c07da29c2f263cd5444b6498d9e06c5))
+* init and update demos scripts ([d00f44a](https://github.com/CoCreate-app/CoCreateJS/commit/d00f44a5e620a464c9311d8340af410d0b758b6a))
+* workflows ([b83d9a7](https://github.com/CoCreate-app/CoCreateJS/commit/b83d9a792fb436171e1bf59894fe00ff64c5ad53))
+
+>>>>>>> 80c125b006ff4736909d266b0a6db9f1a7be143c
 ## [1.1.61](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.60...v1.1.61) (2021-07-14)
 
 

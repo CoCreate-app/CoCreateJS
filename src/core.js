@@ -8,7 +8,7 @@ if (!socket) {
   window.CoCreateCrudSocket = socket;
 }
 
-// let socket = new CoCreateSocket('ws');
+
 
 const CoCreateCore = {
   socketInitFuncs: [],
@@ -27,19 +27,22 @@ const CoCreateCore = {
     }
     
     this.__setConfig()
-    this.createGeneralSocket(host, namespace || config.organization_Id);
+    this.createGeneralSocket(host, namespace || window.config.organization_Id);
     this.initSocketListener();
     this.createUserSocket(host);
   },
   
   __setConfig: function() {
 		let orgId = window.localStorage.getItem('organization_id');
-		let securityKey = window.localStorage.getItem('securityKey');
 		let apiKey = window.localStorage.getItem('apiKey');
-		
-		if (orgId)        config['organization_Id'] = orgId
-		if (apiKey)       config['apiKey'] = apiKey
-		if (securityKey)  config['securityKey'] = securityKey;
+		let host = window.localStorage.getItem('host');
+  if(!window.config){
+    window.config = {}
+  }
+
+		if (orgId)    window.config['organization_Id'] = orgId
+		if (apiKey)   window.config['apiKey'] = apiKey
+		if (host)     window.config['host'] = host;
   },
   
   initSocketListener: function() {
@@ -94,20 +97,7 @@ const CoCreateCore = {
       instance : instance || window
     });
   },
-  // registerSelector: function(selector) {
-  //   if (this.moduleSelectors.indexOf(selector) === -1) {
-  //     this.moduleSelectors.push(selector);
-  //   }
-  // },
-  
-  // getSelectors: function(selector) {
-  //   return this.moduleSelectors.join(",");
-  // },
 
-  // listenMessage: function(message, fun) {
-  //   this.socket.listen(message, fun);
-  // },
- 
  createSocket: function(config) {
    this.socket.create(config);
  },
@@ -123,10 +113,8 @@ const CoCreateCore = {
    this.socket.destroy(socket, key);
  },
 }
-
+CoCreateCore.__setConfig()
 CoCreateCore.setSocket(socket);
 CoCreateCore.init(window.config.host ? window.config.host : window.location.hostname);
 
 export default CoCreateCore;
-
-
