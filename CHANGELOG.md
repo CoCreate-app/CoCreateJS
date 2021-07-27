@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ## [1.2.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.2.0...v1.2.1) (2021-07-22)
 
 
@@ -30,7 +28,6 @@
 * init and update demos scripts ([d00f44a](https://github.com/CoCreate-app/CoCreateJS/commit/d00f44a5e620a464c9311d8340af410d0b758b6a))
 * workflows ([b83d9a7](https://github.com/CoCreate-app/CoCreateJS/commit/b83d9a792fb436171e1bf59894fe00ff64c5ad53))
 
->>>>>>> 80c125b006ff4736909d266b0a6db9f1a7be143c
 ## [1.1.61](https://github.com/CoCreate-app/CoCreateJS/compare/v1.1.60...v1.1.61) (2021-07-14)
 
 
