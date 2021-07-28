@@ -1,3 +1,17 @@
+## [1.3.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.0...v1.3.1) (2021-07-28)
+
+
+### Bug Fixes
+
+* improve coctreate text lazyload query ([7fb88cd](https://github.com/CoCreate-app/CoCreateJS/commit/7fb88cd1872a48e7da1a641b6e05c09151e1f8b2))
+
+# [1.3.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.2.1...v1.3.0) (2021-07-28)
+
+
+### Features
+
+* add new is{attribute} system and remove data- from attributtes ([78fa269](https://github.com/CoCreate-app/CoCreateJS/commit/78fa269ea421908629b664a5c421396b67af0397))
+
 ## [1.2.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.2.0...v1.2.1) (2021-07-22)
 
 
