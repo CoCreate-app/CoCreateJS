@@ -40,7 +40,7 @@ lazyLoad('uuid', '[data-uuid], .loginBtn', ()=> import (/*webpackChunkName: "uui
 lazyLoad('renderKey', '[data-key]', ()=> import (/*webpackChunkName: "render-key-chunk"*/ '@cocreate/render-key'))
 
 // Collabortion Components
-lazyLoad('text[collection]', 'input[collection], textarea[collection]', ()=> import (/*webpackChunkName: "text-chunk"*/ '@cocreate/text'))
+lazyLoad('text', 'input, textarea', ()=> import (/*webpackChunkName: "text-chunk"*/ '@cocreate/text'))
 lazyLoad('contenteditable', '[collection][contenteditable]', ()=> import (/*webpackChunkName: "contenteditable-chunk"*/ '@cocreate/contenteditable'))
 
 // UI Components
