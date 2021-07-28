@@ -244,7 +244,7 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-vdom.git'
     },
 
-    // Modules        
+    // // Modules        
     {
         'path': '../CoCreate-modules/CoCreate-builder',
         'repo': 'github.com/CoCreate-app/CoCreate-builder.git'
@@ -278,7 +278,7 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-sandbox.git'
     },
 
-    // Plugins        
+    // // Plugins        
     {
         'path': '../CoCreate-plugins/CoCreate-charts',
         'repo': 'github.com/CoCreate-app/CoCreate-charts.git'
