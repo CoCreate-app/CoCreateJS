@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.2...v1.3.3) (2021-08-02)
+
+
+### Bug Fixes
+
+* remove data- from lazyloader selectors ([b71ecd6](https://github.com/CoCreate-app/CoCreateJS/commit/b71ecd6ed9b500a36b0da016b2a1497dca0fe6a1))
+
 ## [1.3.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.1...v1.3.2) (2021-07-28)
 
 
