@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.3...v1.3.4) (2021-08-02)
+
+
+### Bug Fixes
+
+* cocreate text and input ([8eab533](https://github.com/CoCreate-app/CoCreateJS/commit/8eab5338190945a5e9fbc944802349d55125ec42))
+
 ## [1.3.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.2...v1.3.3) (2021-08-02)
 
 
