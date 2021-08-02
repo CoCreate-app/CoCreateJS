@@ -35,7 +35,7 @@ lazyLoad('resize', '[resize]', ()=>import(/*webpackChunkName: "resize-chunk"*/ '
 lazyLoad('attributes', '[data-attributes], [data-style]', ()=>import(/*webpackChunkName: "attributes-chunk"*/ '@cocreate/attributes'))
 lazyLoad('users', '[actions*="createUser"], [actions*="login"], [actions*="logout"]', ()=> import (/*webpackChunkName: "users-chunk"*/ '@cocreate/users'))
 lazyLoad('organizations', '[actions*="createOrg"]', ()=> import (/*webpackChunkName: "organizations-chunk"*/ '@cocreate/organizations'))
-lazyLoad('industry', '[actions*="runIndustry"]', ()=> import (/*webpackChunkName: "industry-chunk"*/ '@cocreate/industry'))
+lazyLoad('industry', '[actions*="createIndustry"], [actions*="runIndustry"]', ()=> import (/*webpackChunkName: "industry-chunk"*/ '@cocreate/industry'))
 lazyLoad('uuid', '[uuid], .loginBtn', ()=> import (/*webpackChunkName: "uuid-chunk"*/ '@cocreate/uuid'))
 lazyLoad('renderKey', '[data-key]', ()=> import (/*webpackChunkName: "render-key-chunk"*/ '@cocreate/render-key'))
 
