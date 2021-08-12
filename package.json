@@ -80,7 +80,6 @@
     "@cocreate/cocreatecss": "^1.4.10",
     "@cocreate/codemirror": "^1.0.15",
     "@cocreate/conditional-logic": "^1.0.19",
-    "@cocreate/contenteditable": "^1.0.10",
     "@cocreate/crdt": "^1.1.20",
     "@cocreate/croppie": "^1.0.14",
     "@cocreate/crud-client": "^1.1.15",
