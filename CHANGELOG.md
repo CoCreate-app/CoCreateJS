@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.4...v1.3.5) (2021-08-12)
+
+
+### Bug Fixes
+
+* removed contenteditable component ([e1128ed](https://github.com/CoCreate-app/CoCreateJS/commit/e1128ed9a83f71290ee608cb98c58afeddee5120))
+
 ## [1.3.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.3...v1.3.4) (2021-08-02)
 
 
