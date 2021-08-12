@@ -51,10 +51,6 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-conditional-logic.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-contenteditable',
-        'repo': 'github.com/CoCreate-app/CoCreate-contenteditable.git'
-    },
-    {
         'path': '../CoCreate-components/CoCreate-crdt',
         'repo': 'github.com/CoCreate-app/CoCreate-crdt.git',
     },
@@ -150,10 +146,6 @@ module.exports = [
     {
         'path': '../CoCreate-components/CoCreate-progress',
         'repo': 'github.com/CoCreate-app/CoCreate-progress.git'
-    },
-    {
-        'path': '../CoCreate-components/CoCreate-quill-adder',
-        'repo': 'github.com/CoCreate-app/CoCreate-quill-adder.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-random-color',
