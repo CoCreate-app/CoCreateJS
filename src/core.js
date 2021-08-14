@@ -58,32 +58,8 @@ const CoCreateCore = {
         })
       }
     })
-
-    this.socket.listen('downloadFileInfo', function(data) {
-      self.socket.saveFileName = data.file_name;
-      self.saveFile(data);
-    })
-
   },
   
-	saveFile: function(data) {
-		if (window.document) {
-			const file_name = data.file_name || 'downloadFile';
-			const ndata = data.binaryData.data;
-			var a = document.createElement("a");
-      a.style = "display: none";
-	    let blob = new Blob([ndata], { type: "application/json" });	
-      let url = window.URL.createObjectURL(blob);
-      a.href = url;
-      a.download = file_name;
-      document.body.appendChild(a);
-      a.click();
-      window.URL.revokeObjectURL(url);
-			a.remove()		
-      this.saveFileName = ''
-		}
-	},
-
 
   createUserSocket: function(host) {
     var user_id = window.localStorage.getItem('user_id');
