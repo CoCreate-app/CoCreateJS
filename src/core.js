@@ -1,4 +1,3 @@
-// ***********   define variables end ***************** /// 
 import CoCreateSocket from "@cocreate/socket-client"
 let socket = window.CoCreateCrudSocket;
 
@@ -6,8 +5,6 @@ if (!socket) {
   socket = new CoCreateSocket('ws');
   window.CoCreateCrudSocket = socket;
 }
-
-
 
 const CoCreateCore = {
   socketInitFuncs: [],

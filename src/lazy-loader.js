@@ -36,11 +36,9 @@ export async function lazyLoad(name, selector, cb) {
 
 }
 
-
 export async function dependency(name, promise) {
     let module = await promise;
     Object.assign(window.CoCreate, {
         [name]: module.default
     })
 }
-
