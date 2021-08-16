@@ -16,8 +16,7 @@ dependency('render', import (/*webpackChunkName: "render-chunk"*/ '@cocreate/ren
 // dependency('api', import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 
 // Core Components
-lazyLoad('cssParse', 'body', ()=> import (/*webpackChunkName: "css-chunk"*/ '@cocreate/cocreatecss'))
-lazyLoad('cssSave', '[save]', ()=> import (/*webpackChunkName: "css-save-chunk"*/ '@cocreate/cocreatecss/src/save.js'))
+lazyLoad('css', 'body', ()=> import (/*webpackChunkName: "css-chunk"*/ '@cocreate/cocreatecss'))
 lazyLoad('action', '[actions]', ()=> import (/*webpackChunkName: "action-chunk"*/ '@cocreate/action'))
 lazyLoad('room', '[namespace], [room]', ()=> import (/*webpackChunkName: "room-chunk"*/ '@cocreate/room'))
 lazyLoad('logic', '[pass_id], [pass_to], [get-value], [pass-value_to], [pass-value_id], [data-for]', ()=> import (/*webpackChunkName: "logic-chunk"*/ '@cocreate/logic'))
