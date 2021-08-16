@@ -1,3 +1,12 @@
+## [1.3.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.6...v1.3.7) (2021-08-14)
+
+
+### Bug Fixes
+
+* remove data- from element_id ([34c4bce](https://github.com/CoCreate-app/CoCreateJS/commit/34c4bceaf1a937831de4a42e08a7547bfb7812ca))
+* remove quill-adder ([cdc6071](https://github.com/CoCreate-app/CoCreateJS/commit/cdc6071946f3ef29dff1b540896ed78a1c7124db))
+* removed data- from attribute ([64d2727](https://github.com/CoCreate-app/CoCreateJS/commit/64d27272b50d83f4ce28bdc219d389ab5538a9b8))
+
 ## [1.3.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.5...v1.3.6) (2021-08-12)
 
 
