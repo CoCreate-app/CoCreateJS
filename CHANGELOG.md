@@ -1,3 +1,11 @@
+## [1.3.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.7...v1.3.8) (2021-08-16)
+
+
+### Bug Fixes
+
+* remove deadcode ([2dfc348](https://github.com/CoCreate-app/CoCreateJS/commit/2dfc348cc055726c5af92adbff92db39d87c8ba5))
+* remove save.js ([81d31ef](https://github.com/CoCreate-app/CoCreateJS/commit/81d31efd5bef518eb093298a11627d1e96570a1f))
+
 ## [1.3.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.6...v1.3.7) (2021-08-14)
 
 
