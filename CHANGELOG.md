@@ -1,3 +1,10 @@
+## [1.3.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.8...v1.3.9) (2021-08-22)
+
+
+### Bug Fixes
+
+* bump package versions ([36553ff](https://github.com/CoCreate-app/CoCreateJS/commit/36553ff8a1d0c606fd8b8fb16342e35ff9f87c98))
+
 ## [1.3.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.7...v1.3.8) (2021-08-16)
 
 
