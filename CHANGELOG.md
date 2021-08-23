@@ -1,3 +1,10 @@
+## [1.3.10](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.9...v1.3.10) (2021-08-23)
+
+
+### Bug Fixes
+
+* removed data- from sidenav, clone, and filter ([b2304f3](https://github.com/CoCreate-app/CoCreateJS/commit/b2304f35835e92f57c4612860cf17ee2f1d7ca4f))
+
 ## [1.3.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.8...v1.3.9) (2021-08-22)
 
 
