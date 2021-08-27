@@ -6,7 +6,7 @@ function listen(callback, selector) {
         let isInit = target.querySelector(selector)
         if (isInit) {
             callback()
-            console.log('lazyloaded', selector)
+            // console.log('lazyloaded', selector)
             observer.uninit(observerCallback)
         }
     }
