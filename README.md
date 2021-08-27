@@ -1,6 +1,6 @@
 # CoCreateJS
 
-A simple JS component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API. Take it for a spin in our [playground!](https://cocreate.app/docs/CoCreateJS)
+A low code Javascript framework for building collaborative no code platforms, apps and UI's. Build powerful applications using HTML5 attributes or Javascript api. Take a look at our Admin app. Its an open source CRM, CMS, Website builder powered by CoCreateJS https://github.com/CoCreate-app/CoCreate-admin
 
 ![minified](https://img.badgesize.io/https://cdn.cocreate.app/latest/CoCreate.min.js?style=flat-square&label=minified&color=orange)
 ![gzip](https://img.badgesize.io/https://cdn.cocreate.app/latest/CoCreate.min.js?compression=gzip&style=flat-square&label=gzip&color=yellow)
