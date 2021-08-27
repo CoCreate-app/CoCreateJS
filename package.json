@@ -77,7 +77,7 @@
     "@cocreate/calculation": "^1.2.8",
     "@cocreate/charts": "^1.2.8",
     "@cocreate/clone": "^1.1.8",
-    "@cocreate/cocreatecss": "^1.6.6",
+    "@cocreate/cocreatecss": "^1.6.7",
     "@cocreate/codemirror": "^1.0.15",
     "@cocreate/conditional-logic": "^1.1.8",
     "@cocreate/crdt": "^1.3.4",

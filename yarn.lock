@@ -966,10 +966,10 @@
     "@cocreate/utils" "^1.1.7"
     "@cocreate/uuid" "^1.1.7"
 
-"@cocreate/cocreatecss@^1.6.6":
-  version "1.6.6"
-  resolved "https://registry.yarnpkg.com/@cocreate/cocreatecss/-/cocreatecss-1.6.6.tgz#a2d4fcfcc82ff4799d0e626c8132168f553195f3"
-  integrity sha512-fN5M7CVRQQT3ENL+IRLAI0XmGfmvOwUaqkIPKchk75Yvf3LNA9J2thLMvOL4ppIPyq/3T/Ej+Hw+YnIAVlAzcw==
+"@cocreate/cocreatecss@^1.6.7":
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/@cocreate/cocreatecss/-/cocreatecss-1.6.7.tgz#8016b83e6b0e961e1ef48005c96dfae42404c405"
+  integrity sha512-3L8dGEebarWQwf+I3AGPS3dOrlEz0r2YhpcT6Zvp7cpRKhNTPcV/U7CgCRQBoRBErlD5FcaUOamU2Q3VlTRpkQ==
   dependencies:
     "@cocreate/crdt" "^1.3.3"
     "@cocreate/crud-client" "^1.2.11"
