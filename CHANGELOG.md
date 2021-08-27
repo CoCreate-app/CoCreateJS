@@ -1,3 +1,10 @@
+## [1.3.11](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.10...v1.3.11) (2021-08-27)
+
+
+### Bug Fixes
+
+* update dependencies ([dc9b59e](https://github.com/CoCreate-app/CoCreateJS/commit/dc9b59e03efb6d9d0a95af127243b63917c8248e))
+
 ## [1.3.10](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.9...v1.3.10) (2021-08-23)
 
 
