@@ -931,10 +931,10 @@
     "@cocreate/pickr" "^1.2.8"
     "@cocreate/select" "^1.1.10"
 
-"@cocreate/builder@^1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@cocreate/builder/-/builder-1.7.1.tgz#ecd0a84aac5016c2529bb5146f30b6d7a9709e20"
-  integrity sha512-hg3U+jd3d7fcNrUu7uDEGWYeiFmU0bDcoNMUP4GQVMRBPBywXLEw6Gf23jTu4YyBUxsbkB4CVufAmFDaQ0R8qQ==
+"@cocreate/builder@^1.7.2":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@cocreate/builder/-/builder-1.7.2.tgz#3de0a205988975f6c15248d0e7990ed4599a022c"
+  integrity sha512-mVdOQY/Qhcw5ZEqizh3sc9H05oZFOdJKgF2lZKr6jmbxfWYz1tQtuP3MXityO45YstYilt6cxL71pVh6472wgA==
   dependencies:
     "@cocreate/attributes" "^1.2.0"
     "@cocreate/crdt" "^1.3.5"

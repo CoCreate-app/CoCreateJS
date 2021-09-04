@@ -73,7 +73,7 @@
     "@cocreate/action": "^1.2.10",
     "@cocreate/api": "^1.1.9",
     "@cocreate/attributes": "^1.2.1",
-    "@cocreate/builder": "^1.7.1",
+    "@cocreate/builder": "^1.7.2",
     "@cocreate/calculation": "^1.2.10",
     "@cocreate/charts": "^1.2.10",
     "@cocreate/clone": "^1.1.10",
