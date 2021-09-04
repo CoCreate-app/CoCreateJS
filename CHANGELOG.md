@@ -1,3 +1,10 @@
+## [1.3.14](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.13...v1.3.14) (2021-09-04)
+
+
+### Bug Fixes
+
+* builder's attribute dependency path ([16850ab](https://github.com/CoCreate-app/CoCreateJS/commit/16850ab62f9a575c7600f97ebabd1b7382fca719))
+
 ## [1.3.13](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.12...v1.3.13) (2021-09-04)
 
 
