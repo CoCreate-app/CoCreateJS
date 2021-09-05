@@ -138,7 +138,7 @@
     "@cocreate/twilio": "^1.1.11",
     "@cocreate/twitter": "^1.2.10",
     "@cocreate/unique": "^1.1.10",
-    "@cocreate/uppy": "^1.1.12",
+    "@cocreate/uppy": "^1.1.13",
     "@cocreate/users": "^1.2.10",
     "@cocreate/utils": "^1.1.10",
     "@cocreate/uuid": "^1.1.10",

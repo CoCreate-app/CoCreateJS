@@ -1832,10 +1832,10 @@
     "@cocreate/docs" "^1.2.8"
     "@cocreate/uuid" "^1.1.9"
 
-"@cocreate/uppy@^1.1.12":
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/@cocreate/uppy/-/uppy-1.1.12.tgz#8d5a0c7cd296c27f22a0a09caf70f6ec06accece"
-  integrity sha512-gXffJYDqTd0188Hp+XEvMA/cedzPphH/9iOn1QwSkc1tStiu8kJoSgmlv0mbbqkAfwowoMgISHyx2iRuLLCAsQ==
+"@cocreate/uppy@^1.1.13":
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/@cocreate/uppy/-/uppy-1.1.13.tgz#c7210ae91045d5daaf28282a93a11e74d15b0b43"
+  integrity sha512-Ww0hOJdwnxDCrtMZznJ+0kDsZguQRdfiFaAkVs+6BYGJWyT3hdPfQ+FPog+zp5ylnzzHTBNkyfdQcqbD0VT1zQ==
   dependencies:
     "@babel/plugin-transform-runtime" "^7.13.10"
     "@cocreate/crud-client" "^1.2.13"
