@@ -1,3 +1,10 @@
+## [1.3.16](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.15...v1.3.16) (2021-09-07)
+
+
+### Bug Fixes
+
+* update @cocreate/dnd @cocreate/vdom @cocreate/builder ([b541273](https://github.com/CoCreate-app/CoCreateJS/commit/b5412737127e234dcb26d8fa7fcb57ec5ca5b85d))
+
 ## [1.3.15](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.14...v1.3.15) (2021-09-05)
 
 
