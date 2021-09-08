@@ -89,7 +89,7 @@
     "@cocreate/domain": "^1.1.11",
     "@cocreate/domtext": "^1.2.2",
     "@cocreate/facebook": "^1.1.9",
-    "@cocreate/fetch": "^1.2.1",
+    "@cocreate/fetch": "^1.2.2",
     "@cocreate/filter": "^1.1.11",
     "@cocreate/floating-label": "^1.1.11",
     "@cocreate/font-awesome": "^1.1.9",
@@ -142,6 +142,6 @@
     "@cocreate/users": "^1.2.10",
     "@cocreate/utils": "^1.1.10",
     "@cocreate/uuid": "^1.1.10",
-    "@cocreate/vdom": "^1.2.10"
+    "@cocreate/vdom": "^1.2.11"
   }
 }

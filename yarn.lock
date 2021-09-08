@@ -1164,17 +1164,17 @@
     "@cocreate/docs" "^1.2.8"
     fb "^2.0.0"
 
-"@cocreate/fetch@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@cocreate/fetch/-/fetch-1.2.1.tgz#f9f1ca024956cc2a1515014e9a74736b1d9ac63d"
-  integrity sha512-OTmVHgyxXBCut13LJQN1YyuKBkwO4UzI4SABw3d2VPVwf7ouPcJrDx7SpYJSzJp51HXHoF7y7EBCgucAIIrRig==
+"@cocreate/fetch@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@cocreate/fetch/-/fetch-1.2.2.tgz#660a5d9c48980908b60ab55d19bc38a2ac235a06"
+  integrity sha512-Ugrj/6uQE7qlxs2VH/078UZti2RAX+FFTHJzWvNyVVkVjM74/UBd2ZPY850ilQhRGjxQw7u+BCcSpEMkklPGyg==
   dependencies:
-    "@cocreate/crud-client" "^1.2.13"
-    "@cocreate/docs" "^1.2.8"
-    "@cocreate/filter" "^1.1.9"
-    "@cocreate/observer" "^1.3.10"
-    "@cocreate/render" "^1.1.8"
-    "@cocreate/utils" "^1.1.9"
+    "@cocreate/crud-client" "^1.2.14"
+    "@cocreate/docs" "^1.2.9"
+    "@cocreate/filter" "^1.1.11"
+    "@cocreate/observer" "^1.3.11"
+    "@cocreate/render" "^1.1.9"
+    "@cocreate/utils" "^1.1.10"
     "@cocreate/uuid" "^1.1.10"
 
 "@cocreate/filter@^1.1.11":
@@ -1861,6 +1861,14 @@
   version "1.2.10"
   resolved "https://registry.yarnpkg.com/@cocreate/vdom/-/vdom-1.2.10.tgz#ffdcfb2f88dfc82c2cc827f2448f99383b8ed76f"
   integrity sha512-Q/FdbIvqDxbB2/HtAGpvuK027NEkL2uhB0HTawevTMAm9tbEbbhV/n9Im4oGW0M2DFz9cZXqMQYXXK9OAhWutw==
+  dependencies:
+    "@cocreate/docs" "^1.2.9"
+    "@cocreate/observer" "^1.3.11"
+
+"@cocreate/vdom@^1.2.11":
+  version "1.2.11"
+  resolved "https://registry.yarnpkg.com/@cocreate/vdom/-/vdom-1.2.11.tgz#258d210a778f6c67331ca7dfb3c6725c0dea196b"
+  integrity sha512-b70QHLCWwVlWPyHdlgRl9A8lQTV7fcPWv8f0cbDYEFjagdsW+wP5XWeRAamwWJjTAtfghPwV+pDee4/fYLlXaA==
   dependencies:
     "@cocreate/docs" "^1.2.9"
     "@cocreate/observer" "^1.3.11"

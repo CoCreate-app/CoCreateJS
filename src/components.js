@@ -58,7 +58,7 @@ lazyLoad('select', 'cocreate-select', ()=> import (/*webpackChunkName: "select-c
 lazyLoad('toolbar', '[toolbar-target]', ()=> import (/*webpackChunkName: "toolbar-chunk"*/ '@cocreate/toolbar'))
 
 // Modules
-lazyLoad('builder', '#canvas', ()=> import (/*webpackChunkName: "builder-chunk"*/ '@cocreate/builder'))
+lazyLoad('builder', '#canvas, [editor="dom"]', ()=> import (/*webpackChunkName: "builder-chunk"*/ '@cocreate/builder'))
 lazyLoad('clipboard', '.clipboard', ()=> import (/*webpackChunkName: "clipboard-chunk"*/ '@cocreate/builder/src/components/initClipboard.js'))
 
 // Plugins
@@ -85,4 +85,4 @@ lazyLoad('shipengine', '[data-shipengine]', ()=> import (/*webpackChunkName: "sh
 lazyLoad('stripe', '[data-stripe]', ()=> import (/*webpackChunkName: "stripe-chunk"*/ '@cocreate/stripe'))
 // lazyLoad('twilio', '[data-twilio]', ()=> import (/*webpackChunkName: "twilio-chunk"*/ '@cocreate/twilio'))
 lazyLoad('twitter', '[data-twitter]', ()=> import (/*webpackChunkName: "twitter-chunk"*/ '@cocreate/twitter'))
-lazyLoad('uppy', '.uppy', ()=> import (/*webpackChunkName: "uppy-chunk"*/ '@cocreate/uppy'))
+lazyLoad('uppy', '.uppy, [uploader="uppy"]', ()=> import (/*webpackChunkName: "uppy-chunk"*/ '@cocreate/uppy'))
