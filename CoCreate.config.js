@@ -6,6 +6,23 @@ module.exports = {
     },
     "sources": [
         {
+            "entry": "./src/docs/apikey.js",
+            "collection": "files",
+            "document_id": "60de467b14b5ab0c2dd30098",
+            "key": "src",
+            "data": {
+                "name": "apikey.js",
+                "domains": [
+                    "general.cocreate.app"
+                ],
+                "path": "/docs/apikey.js",
+                "directory": "/docs",
+                "content-type": "application/javascript",
+                "public": "true",
+                "module_id": "5ff747727005da1c2727419c"
+            }
+        },
+        {
             "entry": "./docs/index.html",
             "collection": "files",
             "document_id": "60907b078bc9a6631d1d0ac4",

@@ -17,13 +17,13 @@
     </head>
 
     <body>
-		<nav class="nav display:flex align-items:center background:whitesmoke padding-top:10px padding-bottom:10px" main-content_id="content" scroll="sticky-nav,hide-nav" scroll-up="10" scroll-down="10" collection="files" document_id="60395ef42b3ac232657040fd" name="src">
+		<nav class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px" content_id="content" scroll="sticky-nav,hide-nav" scroll-up="10" scroll-down="10" collection="files" document_id="60395ef42b3ac232657040fd" name="src">
 		</nav>
-		<sidenav id="menuL" class="cocreate-sidenav background:whitesmoke" data-main_content="content" sidenav-default_desktop="expanded" sidenav-default_tablet="offcanvas" sidenav-ontoggle_desktop="offcanvas" sidenav-ontoggle_tablet="expanded">
+		<sidenav id="menuL" class="position:fixed top:0px left:0px background:whitesmoke height:100vh width:300px width:300px:hover width:0px@xs" resizable resize-target="[content_id='content']" resize-property="margin-left" resize-value="width">
 			<menu collection="files" document_id="603717b07de7fb350ae9fec8" name="src"></menu>
-			<div class="resizeHandler"></div>
+			<div resize="right"></div>
 	    </sidenav>
-        <main class="padding-top:15px padding:15px@lg@xl" main-content_id="content" id="cocreate-xxxxx">
+        <main class="padding-top:15px padding:15px@lg@xl" content_id="content" id="cocreate-xxxxx">
             <div class="display:flex flex-wrap:wrap justify-content:space-between position:relative margin:10px">
                 <div class="display:flex align-items:center">
                     <h2>CoCreateJS</h2>
@@ -1055,15 +1055,8 @@ crud.readDocumentList({
 		        <i class="fas fa-pencil-alt"></i>
 	        </button>
 		</main>
-		<script>
-			var config = {
-				apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
-				organization_Id: '5de0387b12e200ea63204d6c',
-                host: 'wss://ws.cocreate.app'
-			}
-		</script>
-		<!--CoCreateJS-->
-        <script src="https://server.cocreate.app/CoCreateJS/dist/CoCreate.js" ></script>
+		<script src="./apikey.js"></script>
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
         
          
     </body>

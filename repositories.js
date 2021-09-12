@@ -1,9 +1,9 @@
 module.exports = [
 
-    {
-        'path': '../CoCreateJS',
-        'repo': 'github.com/CoCreate-app/CoCreateJS.git'
-    },
+    // {
+    //     'path': '../CoCreateJS',
+    //     'repo': 'github.com/CoCreate-app/CoCreateJS.git'
+    // },
     {
         'path': '../CoCreateCSS',
         'repo': 'github.com/CoCreate-app/CoCreateCSS.git'
@@ -186,10 +186,6 @@ module.exports = [
     {
         'path': '../CoCreate-components/CoCreate-selected',
         'repo': 'github.com/CoCreate-app/CoCreate-selected.git'
-    },
-    {
-        'path': '../CoCreate-components/CoCreate-sidenav',
-        'repo': 'github.com/CoCreate-app/CoCreate-sidenav.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-socket-client',

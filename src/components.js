@@ -31,7 +31,7 @@ lazyLoad('toggle', '[toggle], [hover]', ()=> import (/*webpackChunkName: "toggle
 lazyLoad('selected', '[selected-value]', ()=> import (/*webpackChunkName: "selected-chunk"*/ '@cocreate/selected'))
 lazyLoad('scroll', '[scroll]', ()=> import (/*webpackChunkName: "scroll-chunk"*/ '@cocreate/scroll'))
 lazyLoad('resize', '[resize]', ()=>import(/*webpackChunkName: "resize-chunk"*/ '@cocreate/resize'))
-// lazyLoad('resizeObserver', '[resizeObserver]', ()=>import(/*webpackChunkName: "resizeObserver-chunk"*/ '@cocreate/resize-observer'))
+lazyLoad('resizeObserver', '[resize-target]', ()=>import(/*webpackChunkName: "resizeObserver-chunk"*/ '@cocreate/resize-observer'))
 lazyLoad('attributes', '[attribute]', ()=>import(/*webpackChunkName: "attributes-chunk"*/ '@cocreate/attributes'))
 lazyLoad('users', '[actions*="createUser"], [actions*="login"], [actions*="logout"]', ()=> import (/*webpackChunkName: "users-chunk"*/ '@cocreate/users'))
 lazyLoad('organizations', '[actions*="createOrg"]', ()=> import (/*webpackChunkName: "organizations-chunk"*/ '@cocreate/organizations'))
@@ -45,7 +45,7 @@ lazyLoad('text', 'input, textarea, [contenteditable]', ()=> import (/*webpackChu
 
 // UI Components
 lazyLoad('floatingLabel', '.floating-label', ()=> import (/*webpackChunkName: "floating-label-chunk"*/ '@cocreate/floating-label'))
-lazyLoad('sidenav', '.cocreate-sidenav', ()=> import (/*webpackChunkName: "sidenav-chunk"*/ '@cocreate/sidenav'))
+// lazyLoad('sidenav', '.cocreate-sidenav', ()=> import (/*webpackChunkName: "sidenav-chunk"*/ '@cocreate/sidenav'))
 lazyLoad('fullscreen', '[fullscreen]', ()=> import (/*webpackChunkName: "fullscreen-chunk"*/ '@cocreate/fullscreen'))
 lazyLoad('modal', '[target="modal"]', ()=> import (/*webpackChunkName: "modal-chunk"*/ '@cocreate/modal'))
 lazyLoad('parallax', '[parallax-src]', ()=> import (/*webpackChunkName: "parallax-chunk"*/ '@cocreate/parallax'))
