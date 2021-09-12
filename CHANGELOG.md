@@ -1,3 +1,10 @@
+## [1.3.19](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.18...v1.3.19) (2021-09-12)
+
+
+### Bug Fixes
+
+* remove sidenav dependency. has bee replaced by resize and toggle ([4622c71](https://github.com/CoCreate-app/CoCreateJS/commit/4622c713c5d54afdbe263783d499a83ae80bf112))
+
 ## [1.3.18](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.17...v1.3.18) (2021-09-09)
 
 
