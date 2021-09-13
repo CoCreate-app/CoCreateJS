@@ -1,3 +1,10 @@
+## [1.3.20](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.19...v1.3.20) (2021-09-13)
+
+
+### Bug Fixes
+
+* update sidenav ([87145e5](https://github.com/CoCreate-app/CoCreateJS/commit/87145e5b24cb506486e9d2c01f6a02d1a03ebefc))
+
 ## [1.3.19](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.18...v1.3.19) (2021-09-12)
 
 
