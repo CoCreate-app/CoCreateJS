@@ -1,9 +1,9 @@
 module.exports = [
 
-    {
-        'path': '../CoCreateJS',
-        'repo': 'github.com/CoCreate-app/CoCreateJS.git'
-    },
+    // {
+    //     'path': '../CoCreateJS',
+    //     'repo': 'github.com/CoCreate-app/CoCreateJS.git'
+    // },
     {
         'path': '../CoCreateCSS',
         'repo': 'github.com/CoCreate-app/CoCreateCSS.git'
@@ -41,6 +41,10 @@ module.exports = [
     {
         'path': '../CoCreate-components/CoCreate-calculation',
         'repo': 'github.com/CoCreate-app/CoCreate-calculation.git'
+    },
+    {
+        'path': '../CoCreate-components/CoCreate-cli',
+        'repo': 'github.com/CoCreate-app/CoCreate-cli.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-clone',
