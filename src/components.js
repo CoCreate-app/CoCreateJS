@@ -7,7 +7,7 @@ dependency('common-fun', import (/*webpackChunkName: "common-fun-chunk"*/ '@cocr
 dependency('message', import (/*webpackChunkName: "message-chunk"*/ '@cocreate/message-client'));
 dependency('crud', import (/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud-client'));
 dependency('crdt', import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
-dependency('domText', import (/*webpackChunkName: "domText-chunk"*/ '@cocreate/domtext'));
+// dependency('domText', import (/*webpackChunkName: "domText-chunk"*/ '@cocreate/domtext'));
 dependency('cursors', import (/*webpackChunkName: "cursors-chunk"*/ '@cocreate/cursors'));
 dependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 dependency('form', import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
@@ -58,7 +58,7 @@ lazyLoad('toolbar', '[toolbar-target]', ()=> import (/*webpackChunkName: "toolba
 
 // Modules
 lazyLoad('builder', '#canvas, [editor="dom"]', ()=> import (/*webpackChunkName: "builder-chunk"*/ '@cocreate/builder'))
-lazyLoad('clipboard', '.clipboard', ()=> import (/*webpackChunkName: "clipboard-chunk"*/ '@cocreate/builder/src/components/initClipboard.js'))
+// lazyLoad('clipboard', '.clipboard', ()=> import (/*webpackChunkName: "clipboard-chunk"*/ '@cocreate/builder/src/components/initClipboard.js'))
 
 // Plugins
 lazyLoad('charts', '.cocreate-chart', ()=> import (/*webpackChunkName: "charts-chunk"*/ '@cocreate/charts'))

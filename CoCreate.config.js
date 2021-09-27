@@ -34,8 +34,8 @@ module.exports = {
                     "cocreate.app",
                     "general.cocreate.app"
                 ],
-                "path": "/css/index.html",
-                "directory": "/css",
+                "path": "/docs/index.html",
+                "directory": "/docs",
                 "content-type": "text/html",
                 "public": "true"
             }

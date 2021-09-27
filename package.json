@@ -87,7 +87,6 @@
     "@cocreate/dnd": "latest",
     "@cocreate/docs": "latest",
     "@cocreate/domain": "latest",
-    "@cocreate/domtext": "latest",
     "@cocreate/facebook": "latest",
     "@cocreate/fetch": "latest",
     "@cocreate/filter": "latest",
