@@ -1,3 +1,10 @@
+## [1.3.23](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.22...v1.3.23) (2021-09-28)
+
+
+### Bug Fixes
+
+* updated component.js ([cec4182](https://github.com/CoCreate-app/CoCreateJS/commit/cec418220b928710c4ac83ec50abe17e1b7869d8))
+
 ## [1.3.22](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.21...v1.3.22) (2021-09-27)
 
 
