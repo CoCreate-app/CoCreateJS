@@ -41,6 +41,7 @@ lazyLoad('search', '[search_id]', ()=> import (/*webpackChunkName: "search-chunk
 
 // Collabortion Components
 lazyLoad('text', 'input, textarea, [contenteditable]', ()=> import (/*webpackChunkName: "text-chunk"*/ '@cocreate/text'));
+lazyLoad('rich-text', '[actions*="nodeName"], [actions*="cloneElement"], [actions*="deleteElement"]', ()=> import (/*webpackChunkName: "rich-text-chunk"*/ '@cocreate/rich-text'));
 
 // UI Components
 lazyLoad('floatingLabel', '.floating-label', ()=> import (/*webpackChunkName: "floating-label-chunk"*/ '@cocreate/floating-label'));
@@ -56,7 +57,7 @@ lazyLoad('select', 'cocreate-select', ()=> import (/*webpackChunkName: "select-c
 lazyLoad('toolbar', '[toolbar-target]', ()=> import (/*webpackChunkName: "toolbar-chunk"*/ '@cocreate/toolbar'));
 
 // Modules
-lazyLoad('builder', '#canvas, [editor="dom"]', ()=> import (/*webpackChunkName: "builder-chunk"*/ '@cocreate/builder'));
+lazyLoad('builder', 'iframe[contenteditable]', ()=> import (/*webpackChunkName: "builder-chunk"*/ '@cocreate/builder'));
 
 // Plugins
 lazyLoad('charts', '.cocreate-chart', ()=> import (/*webpackChunkName: "charts-chunk"*/ '@cocreate/charts'));

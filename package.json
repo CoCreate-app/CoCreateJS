@@ -120,6 +120,7 @@
     "@cocreate/render-key": "latest",
     "@cocreate/resize": "latest",
     "@cocreate/resize-observer": "latest",
+    "@cocreate/rich-text": "latest",
     "@cocreate/room": "latest",
     "@cocreate/scroll": "latest",
     "@cocreate/search": "latest",
