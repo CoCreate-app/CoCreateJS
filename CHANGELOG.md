@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.23...v1.4.0) (2021-09-30)
+
+
+### Features
+
+* rich-text ([b7ac86a](https://github.com/CoCreate-app/CoCreateJS/commit/b7ac86a9e0d6f4a1b241320f01711c628c673907))
+
 ## [1.3.23](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.22...v1.3.23) (2021-09-28)
 
 
