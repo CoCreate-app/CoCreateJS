@@ -167,6 +167,10 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-resize-observer.git'
     },
     {
+        'path': '../CoCreate-components/CoCreate-rich-text',
+        'repo': 'github.com/CoCreate-app/CoCreate-rich-text.git'
+    },
+    {
         'path': '../CoCreate-components/CoCreate-room',
         'repo': 'github.com/CoCreate-app/CoCreate-room.git'
     },

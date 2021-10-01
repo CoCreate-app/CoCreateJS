@@ -1,8 +1,8 @@
 // core components
-import core from "./core.js"
+import core from "./core.js";
 import observer from '@cocreate/observer';
-
-import './components.js'
+import '@cocreate/crdt';
+import './components.js';
 
 // (async function() {
 
@@ -21,7 +21,6 @@ import './components.js'
 
 // })()
 
-/*global window*/
 function addComponent(key, component) {
     this[key] = component;
 }
@@ -32,4 +31,4 @@ function removeComponent(key) {
     }
 }
 
-export default { core, addComponent, removeComponent, observer }
+export default { core, addComponent, removeComponent, observer };
