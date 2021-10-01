@@ -1,7 +1,7 @@
 // core components
 import core from "./core.js";
 import observer from '@cocreate/observer';
-import '@cocreate/crdt';
+// import '@cocreate/crdt';
 import './components.js';
 
 // (async function() {
