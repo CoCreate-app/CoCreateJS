@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.4.0...v1.4.1) (2021-10-01)
+
+
+### Bug Fixes
+
+* added crdt and cursor as laztload ([c29d641](https://github.com/CoCreate-app/CoCreateJS/commit/c29d6417b39ae2a1e845054259af1a881b3cce84))
+
 # [1.4.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.3.23...v1.4.0) (2021-09-30)
 
 
