@@ -75,6 +75,10 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-docs.git'
     },
     {
+        'path': '../CoCreate-components/CoCreate-element-config',
+        'repo': 'github.com/CoCreate-app/CoCreate-element-config.git'
+    },
+    {
         'path': '../CoCreate-components/CoCreate-fetch',
         'repo': 'github.com/CoCreate-app/CoCreate-fetch.git'
     },
