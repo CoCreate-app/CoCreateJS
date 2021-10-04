@@ -1,8 +1,6 @@
-// core components
-import core from "./core.js";
-import observer from '@cocreate/observer';
-// import '@cocreate/crdt';
+import './core.js';
 import './components.js';
+import observer from '@cocreate/observer';
 
 // (async function() {
 
@@ -14,7 +12,7 @@ import './components.js';
 //     )
 
 
-//      // prefetched - downloads after main chunk has complete and in idle mode. If no longer idle will pause then resume when not idle. Priority using 1, -1 true=0
+//      // prefetched - downloads after main chunk is complete and in idle mode. If no longer idle will pause then resume when not idle. Priority using 1, -1 true=0
 //      import ( /* webpackChunkName: "htmltags-chunk", webpackPrefetch: true */ "../CoCreate-components/CoCreate-htmltags/src/index.js");
 //           Object.assign(window.CoCreate, {htmltags: importObj.default}
 //      )
@@ -31,4 +29,4 @@ function removeComponent(key) {
     }
 }
 
-export default { core, addComponent, removeComponent, observer };
+export default { addComponent, removeComponent, observer };

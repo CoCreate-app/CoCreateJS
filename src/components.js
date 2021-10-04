@@ -38,6 +38,7 @@ lazyLoad('industry', '[actions*="createIndustry"], [actions*="runIndustry"]', ()
 lazyLoad('uuid', '[uuid], .loginBtn', ()=> import (/*webpackChunkName: "uuid-chunk"*/ '@cocreate/uuid'));
 lazyLoad('renderKey', '[data-key]', ()=> import (/*webpackChunkName: "render-key-chunk"*/ '@cocreate/render-key'));
 lazyLoad('search', '[search_id]', ()=> import (/*webpackChunkName: "search-chunk"*/ '@cocreate/search'));
+lazyLoad('elementConfig', '[config-target]', ()=> import (/*webpackChunkName: "elementConfig-chunk"*/ '@cocreate/element-config'));
 
 // Collabortion Components
 lazyLoad('crdt', 'input, textarea, [contenteditable]', ()=> import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
