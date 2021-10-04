@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.5.0...v1.6.0) (2021-10-04)
+
+
+### Features
+
+* @cocreate/element-config ([6a87a7b](https://github.com/CoCreate-app/CoCreateJS/commit/6a87a7b7de28646017180994552ed323f5cce06c))
+
 # [1.5.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.4.1...v1.5.0) (2021-10-02)
 
 
