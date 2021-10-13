@@ -8,6 +8,7 @@ dependency('message', import (/*webpackChunkName: "message-chunk"*/ '@cocreate/m
 dependency('crud', import (/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud-client'));
 // dependency('crdt', import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
 dependency('cursors', import (/*webpackChunkName: "cursors-chunk"*/ '@cocreate/cursors'));
+dependency('selection', import (/*webpackChunkName: "selection-chunk"*/ '@cocreate/selection'));
 dependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 dependency('form', import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
 dependency('uuid', import (/*webpackChunkName: "uuid-chunk"*/ '@cocreate/uuid'));
@@ -33,12 +34,14 @@ lazyLoad('resize', '[resize]', ()=>import(/*webpackChunkName: "resize-chunk"*/ '
 lazyLoad('resizeObserver', '[resize-target]', ()=>import(/*webpackChunkName: "resizeObserver-chunk"*/ '@cocreate/resize-observer'));
 lazyLoad('attributes', '[attribute]', ()=>import(/*webpackChunkName: "attributes-chunk"*/ '@cocreate/attributes'));
 lazyLoad('users', '[actions*="createUser"], [actions*="login"], [actions*="logout"]', ()=> import (/*webpackChunkName: "users-chunk"*/ '@cocreate/users'));
+lazyLoad('unique', '[unique]', ()=> import (/*webpackChunkName: "unique-chunk"*/ '@cocreate/unique'));
 lazyLoad('organizations', '[actions*="createOrg"]', ()=> import (/*webpackChunkName: "organizations-chunk"*/ '@cocreate/organizations'));
 lazyLoad('industry', '[actions*="createIndustry"], [actions*="runIndustry"]', ()=> import (/*webpackChunkName: "industry-chunk"*/ '@cocreate/industry'));
 lazyLoad('uuid', '[uuid], .loginBtn', ()=> import (/*webpackChunkName: "uuid-chunk"*/ '@cocreate/uuid'));
 lazyLoad('renderKey', '[data-key]', ()=> import (/*webpackChunkName: "render-key-chunk"*/ '@cocreate/render-key'));
 lazyLoad('search', '[search_id]', ()=> import (/*webpackChunkName: "search-chunk"*/ '@cocreate/search'));
 lazyLoad('elementConfig', '[config-target]', ()=> import (/*webpackChunkName: "elementConfig-chunk"*/ '@cocreate/element-config'));
+lazyLoad('validation', '[actions*="validate"]', ()=> import (/*webpackChunkName: "validation-chunk"*/ '@cocreate/validation'));
 
 // Collabortion Components
 lazyLoad('crdt', 'input, textarea, [contenteditable]', ()=> import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));

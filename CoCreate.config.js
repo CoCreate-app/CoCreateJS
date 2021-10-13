@@ -20,7 +20,8 @@ module.exports = {
                 "directory": "/docs",
                 "content-type": "application/javascript",
                 "public": "true",
-                "module_id": "5ff747727005da1c2727419c"
+                "module_id": "5ff747727005da1c2727419c",
+                "website_id": "5ffbceb7f11d2d00103c4535"
             }
         },
         {
@@ -37,7 +38,8 @@ module.exports = {
                 "path": "/docs/index.html",
                 "directory": "/docs",
                 "content-type": "text/html",
-                "public": "true"
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
             }
         },
         {
@@ -54,7 +56,8 @@ module.exports = {
                 "path": "/docs/elements.html",
                 "directory": "/docs",
                 "content-type": "text/html",
-                "public": "true"
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
             }
         },
         {
@@ -71,7 +74,8 @@ module.exports = {
                 "path": "/docs/objects.html",
                 "directory": "/docs",
                 "content-type": "text/html",
-                "public": "true"
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
             }
         },
         {
@@ -88,7 +92,8 @@ module.exports = {
                 "path": "/docs/components/menu.html",
                 "directory": "/docs/components",
                 "content-type": "text/html",
-                "public": "true"
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
             }
         },
         {
@@ -105,7 +110,8 @@ module.exports = {
                 "path": "/docs/components/navbar.html",
                 "directory": "/docs/components",
                 "content-type": "text/html",
-                "public": "true"
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
             }
         }
     ]

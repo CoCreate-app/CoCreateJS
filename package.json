@@ -143,6 +143,7 @@
     "@cocreate/users": "latest",
     "@cocreate/utils": "latest",
     "@cocreate/uuid": "latest",
+    "@cocreate/validation": "latest",
     "@cocreate/vdom": "latest"
   }
 }
