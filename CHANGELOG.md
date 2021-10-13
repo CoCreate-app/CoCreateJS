@@ -1,3 +1,11 @@
+## [1.7.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.7.0...v1.7.1) (2021-10-13)
+
+
+### Bug Fixes
+
+* postinstall @cocreate/cli ([a12df43](https://github.com/CoCreate-app/CoCreateJS/commit/a12df43c6909fb81e1d3793c66134f79d94c82fa))
+* update dependencies ([58ecb88](https://github.com/CoCreate-app/CoCreateJS/commit/58ecb88274429088e712404c459d4ee7bc55ba1f))
+
 # [1.7.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.6.0...v1.7.0) (2021-10-13)
 
 
