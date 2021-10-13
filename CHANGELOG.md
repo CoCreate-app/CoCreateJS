@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.6.0...v1.7.0) (2021-10-13)
+
+
+### Features
+
+* added validation.js to provide form validations ([48315a8](https://github.com/CoCreate-app/CoCreateJS/commit/48315a8972b19a7d67334596556e298c21457237))
+
 # [1.6.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.5.0...v1.6.0) (2021-10-04)
 
 
