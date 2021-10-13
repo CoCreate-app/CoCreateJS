@@ -30,7 +30,7 @@
     "docs": "node ./node_modules/@cocreate/docs/src/index.js",
     "hosting": "node ./node_modules/@cocreate/hosting/src/index.js",
     "dist": "node --version",
-    "postinsta": "sudo npm i -g @cocreate/cli"
+    "postinstall": "npm i -g @cocreate/cli"
   },
   "repository": {
     "type": "git",
