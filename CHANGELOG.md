@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.7.2...v1.8.0) (2021-10-14)
+
+
+### Features
+
+* added @cocreate/signup-animation ([4e05b67](https://github.com/CoCreate-app/CoCreateJS/commit/4e05b671d27d7390c1475b970fefe3c2affb934e))
+
 ## [1.7.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.7.1...v1.7.2) (2021-10-13)
 
 
