@@ -129,6 +129,7 @@
     "@cocreate/selected": "latest",
     "@cocreate/sendgrid": "latest",
     "@cocreate/shipengine": "latest",
+    "@cocreate/signup-animation": "latest",
     "@cocreate/social-share": "latest",
     "@cocreate/socket-client": "latest",
     "@cocreate/splitview": "latest",
