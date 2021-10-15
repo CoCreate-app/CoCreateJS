@@ -1,28 +1,26 @@
 import { lazyLoad, dependency } from './lazy-loader';
 
 // Dependencies
+dependency('observer', import (/*webpackChunkName: "observer-chunk"*/ '@cocreate/observer'));
 dependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
 dependency('socket', import (/*webpackChunkName: "socket-chunk"*/ '@cocreate/socket-client'));
-dependency('common-fun', import (/*webpackChunkName: "common-fun-chunk"*/ '@cocreate/socket-client/src/common-fun.js'));
 dependency('message', import (/*webpackChunkName: "message-chunk"*/ '@cocreate/message-client'));
 dependency('crud', import (/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud-client'));
-// dependency('crdt', import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
-dependency('cursors', import (/*webpackChunkName: "cursors-chunk"*/ '@cocreate/cursors'));
+dependency('crdt', import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
 dependency('selection', import (/*webpackChunkName: "selection-chunk"*/ '@cocreate/selection'));
 dependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
-dependency('form', import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
-dependency('uuid', import (/*webpackChunkName: "uuid-chunk"*/ '@cocreate/uuid'));
-dependency('render', import (/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
-// dependency('api', import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
+dependency('api', import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 
 // Core Components
 lazyLoad('css', 'body', ()=> import (/*webpackChunkName: "css-chunk"*/ '@cocreate/cocreatecss'));
 lazyLoad('logic', '[pass_id], [pass_to], [get-value], [pass-value_to], [pass-value_id], [data-for]', ()=> import (/*webpackChunkName: "logic-chunk"*/ '@cocreate/logic'));
 lazyLoad('action', '[actions]', ()=> import (/*webpackChunkName: "action-chunk"*/ '@cocreate/action'));
+lazyLoad('form', 'form', ()=> import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
 lazyLoad('room', '[namespace], [room]', ()=> import (/*webpackChunkName: "room-chunk"*/ '@cocreate/room'));
 lazyLoad('htmltags', '[collection]', ()=> import (/*webpackChunkName: "htmltags-chunk"*/ '@cocreate/htmltags'));
 lazyLoad('input', 'input, textarea, select', ()=> import (/*webpackChunkName: "input-chunk"*/ '@cocreate/input'));
 lazyLoad('fetch', '[fetch-collection]', ()=> import (/*webpackChunkName: "fetch-chunk"*/ '@cocreate/fetch'));
+lazyLoad('render', '[template_id]', ()=> import (/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
 lazyLoad('vdom', '[vdom-target], [vdom-id]', ()=> import (/*webpackChunkName: "vdom-chunk"*/ '@cocreate/vdom'));
 lazyLoad('dnd', '.sortable, .cloneable, [draggable], [cloneable]', ()=> import (/*webpackChunkName: "dnd-chunk"*/ '@cocreate/dnd'));
 lazyLoad('conditionalLogic', '[show], [hide]', ()=> import (/*webpackChunkName: "conditionalLogic-chunk"*/ '@cocreate/conditional-logic'));
@@ -33,20 +31,23 @@ lazyLoad('scroll', '[scroll]', ()=> import (/*webpackChunkName: "scroll-chunk"*/
 lazyLoad('resize', '[resize]', ()=>import(/*webpackChunkName: "resize-chunk"*/ '@cocreate/resize'));
 lazyLoad('resizeObserver', '[resize-target]', ()=>import(/*webpackChunkName: "resizeObserver-chunk"*/ '@cocreate/resize-observer'));
 lazyLoad('attributes', '[attribute]', ()=>import(/*webpackChunkName: "attributes-chunk"*/ '@cocreate/attributes'));
-lazyLoad('users', '[actions*="createUser"], [actions*="login"], [actions*="logout"]', ()=> import (/*webpackChunkName: "users-chunk"*/ '@cocreate/users'));
+lazyLoad('users', '[actions*="createUser"], [actions*="login"], [actions*="logout"], [user-status]', ()=> import (/*webpackChunkName: "users-chunk"*/ '@cocreate/users'));
 lazyLoad('unique', '[unique]', ()=> import (/*webpackChunkName: "unique-chunk"*/ '@cocreate/unique'));
 lazyLoad('organizations', '[actions*="createOrg"]', ()=> import (/*webpackChunkName: "organizations-chunk"*/ '@cocreate/organizations'));
 lazyLoad('industry', '[actions*="createIndustry"], [actions*="runIndustry"]', ()=> import (/*webpackChunkName: "industry-chunk"*/ '@cocreate/industry'));
-lazyLoad('uuid', '[uuid], .loginBtn', ()=> import (/*webpackChunkName: "uuid-chunk"*/ '@cocreate/uuid'));
+lazyLoad('uuid', '[uuid]', ()=> import (/*webpackChunkName: "uuid-chunk"*/ '@cocreate/uuid'));
 lazyLoad('renderKey', '[data-key]', ()=> import (/*webpackChunkName: "render-key-chunk"*/ '@cocreate/render-key'));
 lazyLoad('search', '[search_id]', ()=> import (/*webpackChunkName: "search-chunk"*/ '@cocreate/search'));
 lazyLoad('elementConfig', '[config-target]', ()=> import (/*webpackChunkName: "elementConfig-chunk"*/ '@cocreate/element-config'));
 lazyLoad('validation', '[actions*="validate"]', ()=> import (/*webpackChunkName: "validation-chunk"*/ '@cocreate/validation'));
 
 // Collabortion Components
-lazyLoad('crdt', 'input, textarea, [contenteditable]', ()=> import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
-lazyLoad('cursors', 'input, textarea, [contenteditable]', ()=> import (/*webpackChunkName: "cursors-chunk"*/ '@cocreate/cursors'));
-lazyLoad('text', 'input, textarea, [contenteditable]', ()=> import (/*webpackChunkName: "text-chunk"*/ '@cocreate/text'));
+// let crdtSelector = '[collection][document_id][name]:not([document_id=""]';
+// let crdtSelectors = `input${crdtSelector}, textarea${crdtSelector}, [contenteditable]${crdtSelector}`;
+let crdtSelectors = `input, textarea, [contenteditable]`;
+// lazyLoad('crdt', crdtSelectors, ()=> import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
+lazyLoad('cursors', crdtSelectors, ()=> import (/*webpackChunkName: "cursors-chunk"*/ '@cocreate/cursors'));
+lazyLoad('text', crdtSelectors, ()=> import (/*webpackChunkName: "text-chunk"*/ '@cocreate/text'));
 lazyLoad('rich-text', '[actions*="nodeName"], [actions*="cloneElement"], [actions*="deleteElement"]', ()=> import (/*webpackChunkName: "rich-text-chunk"*/ '@cocreate/rich-text'));
 
 // UI Components

@@ -1,119 +1,44 @@
-import CoCreateSocket from "@cocreate/socket-client"
-let socket = window.CoCreateCrudSocket;
+import CoCreateSocket from '@cocreate/socket-client';
+import render from '@cocreate/render';
 
-if (!socket) {
-  socket = new CoCreateSocket('ws');
-  window.CoCreateCrudSocket = socket;
-}
-
-const CoCreateCore = {
-  socketInitFuncs: [],
-  moduleSelectors: [],
-  socket: null,
-  host: 'server.cocreate.app',
-
-  setSocket: function(socket) {
-    this.socket = socket;
-  },
-
-
-  init: function(host, namespace) {
-    if (host) {
-      this.host = host;
-    }
-
-    this.__setConfig()
-    this.createGeneralSocket(host, namespace || window.config.organization_Id);
-    this.initSocketListener();
-    this.createUserSocket(host);
-  },
-
-  __setConfig: function() {
-    let config;
-    if (!window.config) {
-      config = {
-        organization_Id: window.localStorage.getItem('organization_id'),
-        apiKey: window.localStorage.getItem('apiKey'),
-        host: window.localStorage.getItem('host')
-      }
-
-      if (!config) {
-        console.log('missing config')
-      }else
-      window.config = config;
-    }
-  },
-
-  initSocketListener: function() {
-    const self = this;
-
-    this.socket.listen('connect', function(data, room) {
-
-      if (room == self.socket.getGlobalScope()) {
-        self.socketInitFuncs.forEach((func) => {
-          func.initFunc.call(func.instance);
-        })
-      }
-    })
-  },
-  
-
-  createUserSocket: function(host) {
-    var user_id = window.localStorage.getItem('user_id');
-    if (user_id) {
-      this.socket.create({
-        namespace: 'users',
-        room: user_id,
-        host: host
-      })
-    }
-  },
-
-  createGeneralSocket: function(host, namespace) {
-    if (namespace) {
-      this.socket.create({
-        namespace: namespace,
-        room: null,
-        host: host
-      });
-      this.socket.setGlobalScope(namespace);
-    }
-    else {
-      this.socket.create({
-        namespace: null,
-        room: null,
-        host: host
-      });
-    }
-  },
-
-  registerInit: function(initFunc, instance) {
-    this.socketInitFuncs.push({
-      initFunc,
-      instance: instance || window
-    });
-  },
-
-  createSocket: function(config) {
-    this.socket.create(config);
-  },
-
-  destroySocket: function(config) {
-    const {
-      namespace,
-      room
-    } = config;
-    const key = this.socket.getKey(namespace, room);
-    let socket = this.socket.sockets.get(key);
-
+function init() {
+    
+    let socket = window.CoCreateCrudSocket;
+    
     if (!socket) {
-      return
+      socket = new CoCreateSocket('ws');
+      window.CoCreateCrudSocket = socket;
     }
-    this.socket.destroy(socket, key);
-  },
-}
-CoCreateCore.__setConfig()
-CoCreateCore.setSocket(socket);
-CoCreateCore.init(window.config.host ? window.config.host : window.location.hostname);
+    
+    let config;
+    if (window.config && !window.config.host) {
+        window.config.host = window.location.hostname;
+    }
 
-// export {CoCreateCore};
+    if (!window.config) {
+        config = {
+            organization_Id: window.localStorage.getItem('organization_id'),
+            apiKey: window.localStorage.getItem('apiKey'),
+            host: window.localStorage.getItem('host')
+        };
+
+        if (!config.organization_Id || !config.apiKey) {
+            render.data({
+                selector: "[template_id='notification']",
+                data: {
+                    type: 'config',
+                    status: 'failed',
+                    message: 'apiKey and organization_id could not be found',
+                    success: false
+                }
+            });
+            console.log('apiKey and organization_id could not be found');
+        }
+        else
+            window.config = config;
+    }
+    
+    socket.socket = socket;
+}
+
+init();
