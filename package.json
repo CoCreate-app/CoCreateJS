@@ -127,6 +127,7 @@
     "@cocreate/search": "latest",
     "@cocreate/select": "latest",
     "@cocreate/selected": "latest",
+    "@cocreate/selection": "^1.0.2",
     "@cocreate/sendgrid": "latest",
     "@cocreate/shipengine": "latest",
     "@cocreate/signup-animation": "latest",

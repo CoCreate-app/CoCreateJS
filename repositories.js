@@ -191,6 +191,10 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-selected.git'
     },
     {
+        'path': '../CoCreate-components/CoCreate-selection',
+        'repo': 'github.com/CoCreate-app/CoCreate-selection.git'
+    },
+    {
         'path': '../CoCreate-components/CoCreate-socket-client',
         'repo': 'github.com/CoCreate-app/CoCreate-socket-client.git'
     },

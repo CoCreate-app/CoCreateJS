@@ -1022,6 +1022,14 @@
     "@cocreate/docs" "^1.2.30"
     "@cocreate/socket-client" "^1.2.28"
 
+"@cocreate/crud-client@^1.4.7":
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/@cocreate/crud-client/-/crud-client-1.4.8.tgz#7efb666303a3e12a4d3f3683dd4cb9e334cdad29"
+  integrity sha512-nWoCjZntWG8bVUvJIchag3ljVLGSY6lCkyY3VmS+2xQ8Z1EcP+dvuJIkxP4BidQCOLGu+lllgoDeMmzGVnfZIg==
+  dependencies:
+    "@cocreate/docs" "^1.2.35"
+    "@cocreate/socket-client" "^1.2.34"
+
 "@cocreate/cursors@^1.6.11", "@cocreate/cursors@latest":
   version "1.6.13"
   resolved "https://registry.yarnpkg.com/@cocreate/cursors/-/cursors-1.6.13.tgz#c950dc4a40ce54485f250f550126378fb166df16"
@@ -1054,6 +1062,18 @@
     "@cocreate/crud-client" "^1.4.1"
     "@cocreate/hosting" "^1.2.27"
     "@cocreate/socket-client" "^1.2.28"
+    extract-comments "^1.1.0"
+    glob "^7.1.6"
+    parse-html-comments "^1.3.1"
+
+"@cocreate/docs@^1.2.35":
+  version "1.2.36"
+  resolved "https://registry.yarnpkg.com/@cocreate/docs/-/docs-1.2.36.tgz#c36972a8add8744f62552a9a6b5834e12c471399"
+  integrity sha512-faXiSgqfuw1tiShkazx8uZlA9pJkKp+oa8q9GFEQvhbblBmg21wdXWiC9z60TwDQ/7kmXOe5Id5HhuHei2mwTA==
+  dependencies:
+    "@cocreate/crud-client" "^1.4.7"
+    "@cocreate/hosting" "^1.2.32"
+    "@cocreate/socket-client" "^1.2.34"
     extract-comments "^1.1.0"
     glob "^7.1.6"
     parse-html-comments "^1.3.1"
@@ -1179,6 +1199,16 @@
     "@cocreate/crud-client" "^1.4.1"
     "@cocreate/docs" "^1.2.30"
     "@cocreate/socket-client" "^1.2.28"
+    mime-types "^2.1.30"
+
+"@cocreate/hosting@^1.2.32":
+  version "1.2.32"
+  resolved "https://registry.yarnpkg.com/@cocreate/hosting/-/hosting-1.2.32.tgz#369bebde0f8bc2c528aad9881e4037d33326232f"
+  integrity sha512-CtrytGlKynV8oES2DnE84kWWhC8L2qwLhXaJo1DumpOBc80Dq/Qy/PW/FAlZ280b4V0odzT2sKU9Vj+10pZkWA==
+  dependencies:
+    "@cocreate/crud-client" "^1.4.7"
+    "@cocreate/docs" "^1.2.35"
+    "@cocreate/socket-client" "^1.2.34"
     mime-types "^2.1.30"
 
 "@cocreate/htmltags@^1.5.4", "@cocreate/htmltags@latest":
@@ -1495,6 +1525,14 @@
     "@cocreate/docs" "^1.2.26"
     "@cocreate/hosting" "^1.2.22"
 
+"@cocreate/selection@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@cocreate/selection/-/selection-1.0.2.tgz#21f129ad8335935609bd37b7b396c1a84b3e805e"
+  integrity sha512-U8dB6yfgCP3+eNILLzu6CmKvV6771z7nFfLZNrn43M1LglF+RGte2gHjRKsbvq31gxusUx8vlcMqIgMyE2hSiw==
+  dependencies:
+    "@cocreate/docs" "^1.2.35"
+    "@cocreate/hosting" "^1.2.32"
+
 "@cocreate/sendgrid@latest":
   version "1.1.28"
   resolved "https://registry.yarnpkg.com/@cocreate/sendgrid/-/sendgrid-1.1.28.tgz#7d963b1bc06c96997470490a74a2679077bb6f0d"
@@ -1516,7 +1554,7 @@
     "@cocreate/docs" "^1.2.30"
     shipengine "^0.3.1"
 
-"@cocreate/signup-animation@^1.0.0":
+"@cocreate/signup-animation@latest":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@cocreate/signup-animation/-/signup-animation-1.0.0.tgz#444905dd2f094bea54bedbf109f47839f79f4578"
   integrity sha512-EAQ+wI08PveQBu5e9G22Bw2ijDFOAbTIw2lLvJNyTqUe3Pd6Vtx2LNUa5cosqORu7ddJ6ClZGQ4lBijTH9nSZw==
@@ -1539,6 +1577,15 @@
   dependencies:
     "@cocreate/docs" "^1.2.30"
     "@cocreate/uuid" "^1.1.26"
+    ws "^7.4.4"
+
+"@cocreate/socket-client@^1.2.34":
+  version "1.2.35"
+  resolved "https://registry.yarnpkg.com/@cocreate/socket-client/-/socket-client-1.2.35.tgz#6576fb59a898c98c860430465c45a47369ecdfe2"
+  integrity sha512-Y90/YiM/Yk+REHUc3GZrJvWQmBFTqeSTEcinL26BaCdzE37XDXqXM9LwLXXzWZ5Kgk2J26etLIAtfHR8KeC1RQ==
+  dependencies:
+    "@cocreate/docs" "^1.2.35"
+    "@cocreate/uuid" "^1.1.30"
     ws "^7.4.4"
 
 "@cocreate/splitview@latest":
@@ -1671,6 +1718,13 @@
   integrity sha512-Fv/Yh37GUFfRhhZzCYHgqJ6ZjlKbu6xeZXbmkhzACP8mdanmDrCgGrkzupsW/BcyIRvHIZd6U8N2P7zOZ8koww==
   dependencies:
     "@cocreate/docs" "^1.2.30"
+
+"@cocreate/uuid@^1.1.30":
+  version "1.1.31"
+  resolved "https://registry.yarnpkg.com/@cocreate/uuid/-/uuid-1.1.31.tgz#6f3aa91f5e714308e669eb8910531428cbc1e37e"
+  integrity sha512-1cRhdUn8KkJD5hEypsW3TGK8DoduJ/Q2pfs+qoPJdxR9TGU/dtJPlXSmfZbkyLJVSvB/MBfXgPoBpgHpmr95cQ==
+  dependencies:
+    "@cocreate/docs" "^1.2.35"
 
 "@cocreate/validation@latest":
   version "1.1.3"
