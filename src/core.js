@@ -1,15 +1,6 @@
-import CoCreateSocket from '@cocreate/socket-client';
 import render from '@cocreate/render';
 
 function init() {
-    
-    let socket = window.CoCreateSockets;
-    
-    if (!socket) {
-      socket = new CoCreateSocket('ws');
-      window.CoCreateSockets = socket;
-    }
-    
     let config;
     if (window.config && !window.config.host) {
         window.config.host = window.location.hostname;
