@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.8.2...v1.8.3) (2021-10-16)
+
+
+### Bug Fixes
+
+* crud async await ([ec8affd](https://github.com/CoCreate-app/CoCreateJS/commit/ec8affd31ef7830de563d7c643ef40784ab7ea16))
+
 ## [1.8.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.8.1...v1.8.2) (2021-10-15)
 
 
