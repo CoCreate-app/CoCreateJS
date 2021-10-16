@@ -2,7 +2,6 @@ import { lazyLoad, dependency } from './lazy-loader';
 
 // Dependencies
 dependency('observer', import (/*webpackChunkName: "observer-chunk"*/ '@cocreate/observer'));
-dependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
 dependency('socket', import (/*webpackChunkName: "socket-chunk"*/ '@cocreate/socket-client'));
 dependency('message', import (/*webpackChunkName: "message-chunk"*/ '@cocreate/message-client'));
 dependency('crud', import (/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud-client'));
@@ -10,6 +9,8 @@ dependency('crdt', import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'))
 dependency('selection', import (/*webpackChunkName: "selection-chunk"*/ '@cocreate/selection'));
 dependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 dependency('api', import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
+dependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
+
 
 // Core Components
 lazyLoad('css', 'body', ()=> import (/*webpackChunkName: "css-chunk"*/ '@cocreate/cocreatecss'));

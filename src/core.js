@@ -3,11 +3,11 @@ import render from '@cocreate/render';
 
 function init() {
     
-    let socket = window.CoCreateCrudSocket;
+    let socket = window.CoCreateSockets;
     
     if (!socket) {
       socket = new CoCreateSocket('ws');
-      window.CoCreateCrudSocket = socket;
+      window.CoCreateSockets = socket;
     }
     
     let config;
@@ -38,7 +38,6 @@ function init() {
             window.config = config;
     }
     
-    socket.socket = socket;
 }
 
 init();
