@@ -1,3 +1,10 @@
+## [1.8.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.8.3...v1.8.4) (2021-10-17)
+
+
+### Bug Fixes
+
+* removed createSocket from core.js ([cf8f166](https://github.com/CoCreate-app/CoCreateJS/commit/cf8f1669693d0e23d6e2240593ce90cd5e18e4b6))
+
 ## [1.8.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.8.2...v1.8.3) (2021-10-16)
 
 
