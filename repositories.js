@@ -75,6 +75,10 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-element-config.git'
     },
     {
+        'path': '../CoCreate-components/CoCreate-elements',
+        'repo': 'github.com/CoCreate-app/CoCreate-elements.git'
+    },
+    {
         'path': '../CoCreate-components/CoCreate-fetch',
         'repo': 'github.com/CoCreate-app/CoCreate-fetch.git'
     },
@@ -99,16 +103,8 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-hosting.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-htmltags',
-        'repo': 'github.com/CoCreate-app/CoCreate-htmltags.git'
-    },
-    {
         'path': '../CoCreate-components/CoCreate-industry',
         'repo': 'github.com/CoCreate-app/CoCreate-industry.git'
-    },
-    {
-        'path': '../CoCreate-components/CoCreate-input',
-        'repo': 'github.com/CoCreate-app/CoCreate-input.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-local-storage',
