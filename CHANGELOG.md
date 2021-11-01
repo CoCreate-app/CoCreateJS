@@ -1,3 +1,15 @@
+# [1.9.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.8.6...v1.9.0) (2021-11-01)
+
+
+### Bug Fixes
+
+* remove @cocreate/builder from package.json ([4869223](https://github.com/CoCreate-app/CoCreateJS/commit/4869223777a6a9ecec9a5ea597625f1b017a09d0))
+
+
+### Features
+
+* removed builder from components.js as it no longer contains any js of its own and was created using various headless components configured using html 5 data attributes... Its officalgit add . A low code framework that can create a collabrative website builder or richtext editor ([5e3ebc7](https://github.com/CoCreate-app/CoCreateJS/commit/5e3ebc7f8f9a5523034ca4069d19ac6c802c3d2d))
+
 ## [1.8.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.8.5...v1.8.6) (2021-11-01)
 
 
