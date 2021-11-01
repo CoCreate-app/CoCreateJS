@@ -1,3 +1,10 @@
+## [1.8.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.8.5...v1.8.6) (2021-11-01)
+
+
+### Bug Fixes
+
+* add @cocreate/elements ([5935f91](https://github.com/CoCreate-app/CoCreateJS/commit/5935f912b6c7f6b43fdddc0dbad17afdca0f609e))
+
 ## [1.8.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.8.4...v1.8.5) (2021-11-01)
 
 
