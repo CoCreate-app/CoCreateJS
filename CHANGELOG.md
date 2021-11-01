@@ -1,3 +1,11 @@
+## [1.8.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.8.4...v1.8.5) (2021-11-01)
+
+
+### Bug Fixes
+
+* implemented new CRDT. Now able to use the components to create a collabrative website builder or richtext editor ([a4b279c](https://github.com/CoCreate-app/CoCreateJS/commit/a4b279c16403b99e98aca4abd9109b97d4921359))
+* replaced CoCreate-inputs and CoCreate-htmltags with COCreate-elements ([f5780f3](https://github.com/CoCreate-app/CoCreateJS/commit/f5780f3802409059f3324e11a98a4269c0d6e012))
+
 ## [1.8.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.8.3...v1.8.4) (2021-10-17)
 
 
