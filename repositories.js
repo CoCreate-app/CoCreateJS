@@ -142,6 +142,10 @@ module.exports = [
         'path': '../CoCreate-components/CoCreate-progress',
         'repo': 'github.com/CoCreate-app/CoCreate-progress.git'
     },
+    // {
+    //     'path': '../CoCreate-components/CoCreate-pwa',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-pwa.git'
+    // },
     {
         'path': '../CoCreate-components/CoCreate-random-color',
         'repo': 'github.com/CoCreate-app/CoCreate-random-color.git'

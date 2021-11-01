@@ -60,9 +60,6 @@ lazyLoad('splitview', '.container.svColumn', ()=> import (/*webpackChunkName: "s
 lazyLoad('select', 'cocreate-select', ()=> import (/*webpackChunkName: "select-chunk"*/ '@cocreate/select'));
 lazyLoad('toolbar', '[toolbar-target]', ()=> import (/*webpackChunkName: "toolbar-chunk"*/ '@cocreate/toolbar'));
 
-// Modules
-lazyLoad('builder', 'iframe[contenteditable]', ()=> import (/*webpackChunkName: "builder-chunk"*/ '@cocreate/builder'));
-
 // Plugins
 lazyLoad('charts', '.cocreate-chart', ()=> import (/*webpackChunkName: "charts-chunk"*/ '@cocreate/charts'));
 // lazyLoad('codemirror', '.codemirror', ()=> import (/*webpackChunkName: "codemirror-chunk"*/ '@cocreate/codemirror'));
