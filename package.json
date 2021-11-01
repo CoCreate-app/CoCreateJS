@@ -73,7 +73,6 @@
     "@cocreate/action": "latest",
     "@cocreate/api": "latest",
     "@cocreate/attributes": "latest",
-    "@cocreate/builder": "latest",
     "@cocreate/calculation": "latest",
     "@cocreate/charts": "latest",
     "@cocreate/clone": "latest",
