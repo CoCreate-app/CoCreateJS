@@ -11,7 +11,6 @@ dependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/fil
 dependency('api', import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 dependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
 
-
 // Core Components
 lazyLoad('css', 'body', ()=> import (/*webpackChunkName: "css-chunk"*/ '@cocreate/cocreatecss'));
 lazyLoad('logic', '[pass_id], [pass_to], [get-value], [pass-value_to], [pass-value_id], [data-for]', ()=> import (/*webpackChunkName: "logic-chunk"*/ '@cocreate/logic'));
