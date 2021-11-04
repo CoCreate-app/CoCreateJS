@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.0...v1.9.1) (2021-11-04)
+
+
+### Bug Fixes
+
+* update random-color selector ([579a937](https://github.com/CoCreate-app/CoCreateJS/commit/579a937138cc52267d6f103d18c74fe08d9b563d))
+
 # [1.9.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.8.6...v1.9.0) (2021-11-01)
 
 
