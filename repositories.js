@@ -382,4 +382,4 @@ module.exports = [
         'path': '../CoCreate-plugins/CoCreate-uppy',
         'repo': 'github.com/CoCreate-app/CoCreate-uppy.git'
     }
-]
+];
