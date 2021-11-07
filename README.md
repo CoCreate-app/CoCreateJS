@@ -9,7 +9,7 @@ A low code Javascript framework for building collaborative no code platforms, ap
 ![License](https://img.shields.io/github/license/CoCreate-app/CoCreateJS?style=flat-square)
 ![Hiring](https://img.shields.io/static/v1?style=flat-square&label=&message=Hiring&color=blueviolet)
 
-![CoCreateJS](https://cdn.cocreate.app/docs/CoCreateJS.gif)
+![CoCreateJS](https://cdn.cocreate.app/docs/CoCreateJS.png)
 
 ## [Docs & Demo](https://cocreate.app/docs/CoCreateJS)
 
