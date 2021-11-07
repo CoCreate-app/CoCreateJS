@@ -1,3 +1,10 @@
+## [1.9.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.1...v1.9.2) (2021-11-07)
+
+
+### Bug Fixes
+
+* update image path in read me ([96fe3a5](https://github.com/CoCreate-app/CoCreateJS/commit/96fe3a59c97cac3c1d437fe1d679cd488f708617))
+
 ## [1.9.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.0...v1.9.1) (2021-11-04)
 
 
