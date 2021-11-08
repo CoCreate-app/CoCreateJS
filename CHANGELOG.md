@@ -1,3 +1,10 @@
+## [1.9.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.5...v1.9.6) (2021-11-08)
+
+
+### Bug Fixes
+
+* add @cocreate/google-maps ([34cdca6](https://github.com/CoCreate-app/CoCreateJS/commit/34cdca6ccdf968aab82360eea2d4586e86d7879f))
+
 ## [1.9.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.4...v1.9.5) (2021-11-08)
 
 
