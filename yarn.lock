@@ -1035,6 +1035,14 @@
     "@cocreate/docs" "^1.2.44"
     "@cocreate/socket-client" "^1.3.8"
 
+"@cocreate/crud-client@^1.4.22":
+  version "1.4.23"
+  resolved "https://registry.yarnpkg.com/@cocreate/crud-client/-/crud-client-1.4.23.tgz#a7f82f5fd1306f770b6cf96f972bb498535d5efc"
+  integrity sha512-9IzjSbT557C1n2WMnYcMV9KI5KiAPm9HrTg4+xpIOispPPfRl04j8TOk3YRG1hYEqQrYSA0fF5ZZF9PUpyWSFA==
+  dependencies:
+    "@cocreate/docs" "^1.2.47"
+    "@cocreate/socket-client" "^1.4.2"
+
 "@cocreate/cursors@^1.6.11", "@cocreate/cursors@latest":
   version "1.6.13"
   resolved "https://registry.yarnpkg.com/@cocreate/cursors/-/cursors-1.6.13.tgz#c950dc4a40ce54485f250f550126378fb166df16"
@@ -1091,6 +1099,18 @@
     "@cocreate/crud-client" "^1.4.16"
     "@cocreate/hosting" "^1.2.37"
     "@cocreate/socket-client" "^1.3.7"
+    extract-comments "^1.1.0"
+    glob "^7.1.6"
+    parse-html-comments "^1.3.1"
+
+"@cocreate/docs@^1.2.47":
+  version "1.2.48"
+  resolved "https://registry.yarnpkg.com/@cocreate/docs/-/docs-1.2.48.tgz#6c512f56e72d83e6ece9da8d2f3446afb7e3aa6f"
+  integrity sha512-1h7Ed3vE5w9O1Ihb/Z93SpjKAnS4jXPDQFblpr2oAcVJS/VxGaA0dSWhgMyG4ZcgND4ID471t+xLRDiLfFYWkg==
+  dependencies:
+    "@cocreate/crud-client" "^1.4.22"
+    "@cocreate/hosting" "^1.2.42"
+    "@cocreate/socket-client" "^1.4.2"
     extract-comments "^1.1.0"
     glob "^7.1.6"
     parse-html-comments "^1.3.1"
@@ -1228,6 +1248,14 @@
     qs "^6.10.1"
     server-destroy "^1.0.1"
 
+"@cocreate/google-maps@^1.1.39":
+  version "1.1.39"
+  resolved "https://registry.yarnpkg.com/@cocreate/google-maps/-/google-maps-1.1.39.tgz#5a46916a8eefe61d647acffc8a608fbb4c8b43a1"
+  integrity sha512-QN4okpOVZGLNgiHGCpP3Crb0tRecsNwkq64q8J/7xgxbOvvmng424+MoSHoXHm+4GZgFpKlUukUrLKOGRkdRyA==
+  dependencies:
+    "@cocreate/docs" "^1.2.47"
+    "@googlemaps/js-api-loader" "^1.12.8"
+
 "@cocreate/hosting@^1.2.22", "@cocreate/hosting@^1.2.27":
   version "1.2.29"
   resolved "https://registry.yarnpkg.com/@cocreate/hosting/-/hosting-1.2.29.tgz#771bd7f9bab15a4a31fbeae70d96f0c1a0078fae"
@@ -1246,6 +1274,16 @@
     "@cocreate/crud-client" "^1.4.17"
     "@cocreate/docs" "^1.2.44"
     "@cocreate/socket-client" "^1.3.8"
+    mime-types "^2.1.30"
+
+"@cocreate/hosting@^1.2.42":
+  version "1.2.43"
+  resolved "https://registry.yarnpkg.com/@cocreate/hosting/-/hosting-1.2.43.tgz#5d586e707d49f0b3a82a8d55fb6b6ba027c5f423"
+  integrity sha512-dODjcfIFQn9zqLNBYQrsqurRZ1DoMO1Qxu9G6DRGcs14f4Bd2X9qKznB2cuag8mJ/MJRDhs6wgNWTzGg5UrXlA==
+  dependencies:
+    "@cocreate/crud-client" "^1.4.22"
+    "@cocreate/docs" "^1.2.47"
+    "@cocreate/socket-client" "^1.4.2"
     mime-types "^2.1.30"
 
 "@cocreate/htmltags@^1.5.4":
@@ -1611,6 +1649,15 @@
     "@cocreate/uuid" "^1.1.34"
     ws "^7.4.4"
 
+"@cocreate/socket-client@^1.4.2":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@cocreate/socket-client/-/socket-client-1.4.3.tgz#00b0f0bd1f296cd760ea8f9763c31b62e8aa805a"
+  integrity sha512-LEC0gfNly7S9sGWR8IcjfnPyBNwuNzKq3V8Aa+ZRlyd2XRiMQzO7y+lWNXi7lBBpFHfrxphDGB6pFIzLEZuArg==
+  dependencies:
+    "@cocreate/docs" "^1.2.47"
+    "@cocreate/uuid" "^1.1.37"
+    ws "^7.4.4"
+
 "@cocreate/splitview@latest":
   version "1.1.28"
   resolved "https://registry.yarnpkg.com/@cocreate/splitview/-/splitview-1.1.28.tgz#1368189aa277744b0983328064369cdfaa95a3b1"
@@ -1782,6 +1829,13 @@
   dependencies:
     "@cocreate/docs" "^1.2.44"
 
+"@cocreate/uuid@^1.1.37":
+  version "1.1.38"
+  resolved "https://registry.yarnpkg.com/@cocreate/uuid/-/uuid-1.1.38.tgz#d576f25c396aec5677e88e3a9ac9ad3c9b5edcb5"
+  integrity sha512-43tu6HzQvT9QYGsInOnps7pl8/XU1AzJjOux4rWVrkgYlGZf4SqVaiYY/t3a6k1R1TeqmNflhwdeROJLhpv/MQ==
+  dependencies:
+    "@cocreate/docs" "^1.2.47"
+
 "@cocreate/validation@latest":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@cocreate/validation/-/validation-1.1.3.tgz#31d528296ef168eea9a91884f5b2ec5de956d273"
@@ -1809,6 +1863,13 @@
   version "5.15.4"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.4.tgz#ecda5712b61ac852c760d8b3c79c96adca5554e5"
   integrity sha512-eYm8vijH/hpzr/6/1CJ/V/Eb1xQFW2nnUKArb3z+yUWv7HTwj6M7SP957oMjfZjAHU6qpoNc2wQvIxBLWYa/Jg==
+
+"@googlemaps/js-api-loader@^1.12.8":
+  version "1.12.8"
+  resolved "https://registry.yarnpkg.com/@googlemaps/js-api-loader/-/js-api-loader-1.12.8.tgz#1dec39c7ada607270679248662c02d6f0705e8e4"
+  integrity sha512-h1RNVIJkHWL4UrdJo8fwECJwSRg8CSIfTEtPdzvThcji7tAPvVBDVBPzvPKhvl8e8mWEGPhnYOt6kPfSxJL+vQ==
+  dependencies:
+    fast-deep-equal "^3.1.3"
 
 "@polka/url@^1.0.0-next.20":
   version "1.0.0-next.21"
@@ -5563,7 +5624,7 @@ extsprintf@^1.2.0:
   dependencies:
     kind-of "^5.0.2"
 
-fast-deep-equal@^3.1.1:
+fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
