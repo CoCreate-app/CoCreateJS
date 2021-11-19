@@ -1,3 +1,10 @@
+## [1.9.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.8...v1.9.9) (2021-11-19)
+
+
+### Bug Fixes
+
+* add signup-animation to repositories.js ([8d4a535](https://github.com/CoCreate-app/CoCreateJS/commit/8d4a53585e96cc4548e08d81d15d7dacbb5d5508))
+
 ## [1.9.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.7...v1.9.8) (2021-11-19)
 
 
