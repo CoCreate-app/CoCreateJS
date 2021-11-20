@@ -6,7 +6,7 @@ module.exports = {
     },
     "sources": [
         {
-            "entry": "./src/docs/apikey.js",
+            "entry": "./docs/apikey.js",
             "collection": "files",
             "document_id": "60de467b14b5ab0c2dd30098",
             "key": "src",
