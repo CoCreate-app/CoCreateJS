@@ -53,7 +53,7 @@ lazyLoad('parallax', '[parallax-src]', ()=> import (/*webpackChunkName: "paralla
 lazyLoad('calculation', '[calculate]', ()=> import (/*webpackChunkName: "calculation-chunk"*/ '@cocreate/calculation'));
 lazyLoad('progress', '[data-progress]', ()=> import (/*webpackChunkName: "progress-chunk"*/ '@cocreate/progress'));
 lazyLoad('randomColor', '[background-color]', ()=> import (/*webpackChunkName: "color-chunk"*/ '@cocreate/random-color'));
-lazyLoad('signupAnimation', '[actions*="animate"]', ()=> import (/*webpackChunkName: "signup-animation-chunk"*/ '@cocreate/signup-animation'));
+lazyLoad('signupAnimation', '[actions*="animateSignup"]', ()=> import (/*webpackChunkName: "signup-animation-chunk"*/ '@cocreate/signup-animation'));
 lazyLoad('socialShare', '[share-network]', ()=> import (/*webpackChunkName: "social-share-chunk"*/ '@cocreate/social-share'));
 lazyLoad('splitview', '.container.svColumn', ()=> import (/*webpackChunkName: "splitview-chunk"*/ '@cocreate/splitview'));
 lazyLoad('select', 'cocreate-select', ()=> import (/*webpackChunkName: "select-chunk"*/ '@cocreate/select'));
