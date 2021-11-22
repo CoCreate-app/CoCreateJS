@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/cocreatejs",
-  "version": "1.9.12",
+  "version": "1.9.13",
   "description": "A low code Javascript framework for building collaborative no code platforms, apps and UI's. Build powerful applications using HTML5 attributes or Javascript api.",
   "keywords": [
     "cocreatejs",
