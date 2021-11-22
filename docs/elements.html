@@ -85,39 +85,42 @@
 					<!-- End SandBox -->
 
 				</section>
-				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#textarea-item">
+				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="[href='./elements#realtime_textarea']">
 					<h3 id="realtime_textarea" class="padding-top:20px">Textarea</h3>
-
+					<p class="padding:10px_0px line-height:1.5">Using your forms with CoCreateJS Realtime CRUD is super easy, Form is used for grouping elements and applying attributes dynamically to it childeren. form tag can be left empty or you can apply attributes you would like to apply to childeren elements.
+						attributtes will only be applied to childeren if the attribute does not already exist. If form realtime false it will require submitBtn</p>
+					<p class="padding-top:15px">You will have the option to set realtime as true or false. If realtime set to false then the form will require a button to save.</p>
+					<div class="">
+						<pre><code class="language-html">&lt;button class="submitBtn"&gt; &lt;/button&gt;</code></pre>
+					</div>
+					
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-sandbox">
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="textarea-playground">
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="preview" show="preview" hide="code"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="code" show="code" hide="preview"><i class="fas fa-code"></i></a>
-							<!--<a class="margin-right:10px"><i class="far fa-window-maximize"></i></a>-->
-							<a target="modal" href="module_activities_datatable.html" pass-collection="modules" pass-document_id="" pass-fetch_value="" pass-prefix="" pass_to="render" modal-width="600px" modal-height="400px" modal-color="#229954" modal-header="false" class="margin-right:10px">
-						  	    <i class="fas fa-external-link-alt"></i>
-						     </a>
-							<a class="margin-right:5px" fullscreen target="#playground-1"><i class="fas fa-expand"></i></a>
+							<a class="margin-right:10px" id="textarea-code" show="#from-preview" hide="#textarea-code, #textarea-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="textarea-preview" show="#textarea-code, #textarea-view" hide="#textarea-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#textarea-playground"><i class="fas fa-expand"></i></a>
 						</div>
 
 						<div class="svRow">
 
 							<div class="svColumn">
 
-								<div class="svPanel">
-									<div realtime="true" collection="demos" document_id="5fe93293657724768bcf8b03" name="textaera" id="textaera" class="codemirror min-width:300px">
-									</div>
+								<div class="svPanel" id="textarea-view">
+									<textarea collection="demos" document_id="619bd887a8b6b4001a9e05af" name="textarea-demo" save="true" id="textarea-demo" class="height:100% width:100% border:none resize:none padding:5px">
+					                </textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
 								<div class="svPanel">
-									<iframe get-value="textaera" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+									<iframe get-value="textarea-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
 								</div>
 
 							</div>
 						</div>
 					</div>
 					<!-- End SandBox -->
+
 				</section>
 				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#checkbox-item">
 					<h3 id="realtime_checkbox" class="padding-top:20px">Checkbox</h3>
@@ -125,29 +128,25 @@
 					<pre><code class="language-html">&lt;input type="checkbox" collection="module_activities" document_id="" name="name"&gt;</code></pre>
 
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-sandbox">
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="checkbox-playground">
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="preview" show="preview" hide="code"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="code" show="code" hide="preview"><i class="fas fa-code"></i></a>
-							<!--<a class="margin-right:10px"><i class="far fa-window-maximize"></i></a>-->
-							<a target="modal" href="module_activities_datatable.html" pass-collection="modules" pass-document_id="" pass-fetch_value="" pass-prefix="" pass_to="render" modal-width="600px" modal-height="400px" modal-color="#229954" modal-header="false" class="margin-right:10px">
-						  	    <i class="fas fa-external-link-alt"></i>
-						     </a>
-							<a class="margin-right:5px" fullscreen target="#playground-1"><i class="fas fa-expand"></i></a>
+							<a class="margin-right:10px" id="checkbox-code" show="#from-preview" hide="#checkbox-code, #checkbox-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="checkbox-preview" show="#checkbox-code, #checkbox-view" hide="#checkbox-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#checkbox-playground"><i class="fas fa-expand"></i></a>
 						</div>
 
 						<div class="svRow">
 
 							<div class="svColumn">
 
-								<div class="svPanel">
-									<div realtime="true" collection="demos" document_id="5fe93293657724768bcf8b03" name="checkbox" id="checkbox" class="codemirror min-width:300px">
-									</div>
+								<div class="svPanel" id="checkbox-view">
+									<textarea collection="demos" document_id="619bdaf0a8b6b4001a9e063c" name="checkbox-demo" save="true" id="checkbox-demo" class="height:100% width:100% border:none resize:none padding:5px">
+					                </textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
 								<div class="svPanel">
-									<iframe get-value="4" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+									<iframe get-value="checkbox-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
 								</div>
 
 							</div>
@@ -156,31 +155,31 @@
 					<!-- End SandBox -->
 
 				</section>
-				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="[href='./elements#realtime_input']">
-					<h3 id="realtime_input" class="padding-top:20px">Radio</h3>
+				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="[href='./elements#realtime_radio']">
+					<h3 id="realtime_radio" class="padding-top:20px">Radio</h3>
 					<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>
 					<pre><code class="language-html">&lt;input type="text" collection="module_activities" document_id="" name="name"&gt;</code></pre>
 
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="input-playground">
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="radio-playground">
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="input-code" show="#from-preview" hide="#input-code, #input-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="input-preview" show="#input-code, #input-view" hide="#input-preview"><i class="fas fa-code"></i></a>
-							<a class="margin-right:5px" fullscreen target="#input-playground"><i class="fas fa-expand"></i></a>
+							<a class="margin-right:10px" id="radio-code" show="#from-preview" hide="#radio-code, #radio-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="radio-preview" show="#radio-code, #radio-view" hide="#radio-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#radio-playground"><i class="fas fa-expand"></i></a>
 						</div>
 
 						<div class="svRow">
 
 							<div class="svColumn">
 
-								<div class="svPanel" id="input-view">
-									<textarea collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="input-demo" save="false" id="input-demo" class="height:100% width:100% border:none resize:none padding:5px">
+								<div class="svPanel" id="radio-view">
+									<textarea collection="demos" document_id="619bde0da8b6b4001a9e06f3" name="radio-demo" save="true" id="radio-demo" class="height:100% width:100% border:none resize:none padding:5px">
 					                </textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
 								<div class="svPanel">
-									<iframe get-value="input-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+									<iframe get-value="radio-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
 								</div>
 
 							</div>
@@ -193,30 +192,27 @@
 					<h3 id="realtime_select" class="padding-top:20px">Select</h3>
 					<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>
 					<pre><code class="language-html">&lt;select type="text" collection="" document_id="" name="name"&gt;&lt;/select&gt;</code></pre>
+				
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-sandbox">
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="select-playground">
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="preview" show="preview" hide="code"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="code" show="code" hide="preview"><i class="fas fa-code"></i></a>
-							<!--<a class="margin-right:10px"><i class="far fa-window-maximize"></i></a>-->
-							<a target="modal" href="module_activities_datatable.html" pass-collection="modules" pass-document_id="" pass-fetch_value="" pass-prefix="" pass_to="render" modal-width="600px" modal-height="400px" modal-color="#229954" modal-header="false" class="margin-right:10px">
-						  	    <i class="fas fa-external-link-alt"></i>
-						     </a>
-							<a class="margin-right:5px" fullscreen target="#playground-1"><i class="fas fa-expand"></i></a>
+							<a class="margin-right:10px" id="select-code" show="#from-preview" hide="#select-code, #select-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="select-preview" show="#select-code, #select-view" hide="#select-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#select-playground"><i class="fas fa-expand"></i></a>
 						</div>
 
 						<div class="svRow">
 
 							<div class="svColumn">
 
-								<div class="svPanel">
-									<div realtime="true" collection="demos" document_id="5eefe30952c6e94c75fb5e3f" name="select" id="select" class="codemirror min-width:300px">
-									</div>
+								<div class="svPanel" id="select-view">
+									<textarea collection="demos" document_id="619be11ba8b6b4001a9e07b8" name="select-demo" save="true" id="select-demo" class="height:100% width:100% border:none resize:none padding:5px">
+					                </textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
 								<div class="svPanel">
-									<iframe get-value="select" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+									<iframe get-value="select-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
 								</div>
 
 							</div>
@@ -229,34 +225,34 @@
 					<h3 id="realtime_htmltags" class="padding-top:20px">Contenteditable</h3>
 					<p class="padding:10px_0px line-height:1.5"></p>
 					<pre><code class="language-html">&lt;h1 type="text" collection="module_activities" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+					
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-sandbox">
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="contenteditable-playground">
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="preview" show="preview" hide="code"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="code" show="code" hide="preview"><i class="fas fa-code"></i></a>
-							<!--<a class="margin-right:10px"><i class="far fa-window-maximize"></i></a>-->
-							<a target="modal" href="module_activities_datatable.html" pass-collection="modules" pass-document_id="" pass-fetch_value="" pass-prefix="" pass_to="render" modal-width="600px" modal-height="400px" modal-color="#229954" modal-header="false" class="margin-right:10px">
-							  	    <i class="fas fa-external-link-alt"></i>
-							     </a>
-							<a class="margin-right:5px" fullscreen target="#playground-1"><i class="fas fa-expand"></i></a>
+							<a class="margin-right:10px" id="contenteditable-code" show="#from-preview" hide="#contenteditable-code, #contenteditable-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="contenteditable-preview" show="#contenteditable-code, #contenteditable-view" hide="#contenteditable-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#contenteditable-playground"><i class="fas fa-expand"></i></a>
 						</div>
 
 						<div class="svRow">
+
 							<div class="svColumn">
-								<div class="svPanel">
-									<div realtime="true" collection="demos" document_id="5eefe30952c6e94c75fb5e3f" name="htmltags" id="htmltags" class="codemirror min-width:300px">
-									</div>
+
+								<div class="svPanel" id="contenteditable-view">
+									<textarea collection="demos" document_id="619be339a8b6b4001a9e0837" name="contenteditable-demo" save="true" id="contenteditable-demo" class="height:100% width:100% border:none resize:none padding:5px">
+					                </textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
 								<div class="svPanel">
-									<iframe get-value="htmltags" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+									<iframe get-value="contenteditable-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
 								</div>
 
 							</div>
 						</div>
 					</div>
 					<!-- End SandBox -->
+					
 				</section>
 				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="[href='./elements#realtime_form']">
 					<h3 id="realtime_form" class="padding-top:20px">Forms</h3>
@@ -375,8 +371,8 @@
 	</main>
 
 	<script src="/apikey.js"></script>
-	<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
-	<!--<script src="../dist/CoCreate.js"></script>-->
+	<!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>-->
+	<script src="../dist/CoCreate.js"></script>
 
 </body>
 
