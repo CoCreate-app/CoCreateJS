@@ -8,7 +8,7 @@ module.exports = {
         {
             "entry": "./docs/apikey.js",
             "collection": "files",
-            "document_id": "60de467b14b5ab0c2dd30098",
+            "document_id": "619c47f2a8b6b4001a9e1fae",
             "key": "src",
             "data": {
                 "name": "apikey.js",
@@ -20,7 +20,6 @@ module.exports = {
                 "directory": "/docs",
                 "content-type": "application/javascript",
                 "public": "true",
-                "module_id": "5ff747727005da1c2727419c",
                 "website_id": "5ffbceb7f11d2d00103c4535"
             }
         },
