@@ -1,3 +1,11 @@
+## [1.9.14](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.13...v1.9.14) (2021-11-23)
+
+
+### Bug Fixes
+
+* add select demo ([ac20a78](https://github.com/CoCreate-app/CoCreateJS/commit/ac20a7868eec22f5c5370d9f6d761d1b5d26ba56))
+* navbar and apikey ([913b9a9](https://github.com/CoCreate-app/CoCreateJS/commit/913b9a9ca99dad39e71c52b04541ebe6b75af01f))
+
 ## [1.9.13](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.12...v1.9.13) (2021-11-22)
 
 
