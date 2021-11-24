@@ -1,3 +1,10 @@
+## [1.9.15](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.14...v1.9.15) (2021-11-24)
+
+
+### Bug Fixes
+
+* added collaboration demo ([c96cef2](https://github.com/CoCreate-app/CoCreateJS/commit/c96cef2a737fe497ac5a571478a4b55aba06f495))
+
 ## [1.9.14](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.13...v1.9.14) (2021-11-23)
 
 
