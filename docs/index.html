@@ -16,10 +16,10 @@
 	<body>
 		<nav class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px" content_id="content" scroll="sticky-nav,hide-nav" scroll-up="10" scroll-down="10" collection="files" document_id="60395ef42b3ac232657040fd" name="src">
 		</nav>
-		<sidenav id="menuL" class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:300px width:0px@xs@sm" resizable resize-target="[content_id='content']" resize-property="margin-left" resize-value="width">
+		<sidenav id="menuL" class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl " resizable resize-target="[content_id='content']" resize-property="margin-left" resize-value="width">
 			<menu collection="files" document_id="603717b07de7fb350ae9fec8" name="src"></menu>
 			<div resize="right"></div>
-	    </sidenav>
+		</sidenav>
 	    
 		<main class="padding-top:15px padding:15px@lg@xl line-height:1.5" content_id="content">
 			<section class="padding:10px">
@@ -59,6 +59,19 @@
     &lt;script src="http://cdn.cocreate.app/latest/CoCreate.min.js"&gt;&lt;/script&gt;
 	        	</code></pre>
 	        </section>
+	        
+            <!--  Previous & Next  -->
+            <div class="padding:10px width:100% margin-top:20px display:flex flex-wrap:wrap justify-content:flex-start">
+                <div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50%">
+                    <p class="color:#888">Back to the top</p>
+                    <p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="#introduction">Introduction to CoCreateJS</a></p>
+                </div>
+                <div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50% text-align:right">
+                    <p class="color:#888">Next Topic</p>
+                    <p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="./elements.html">Using CoCreateJS attributes on html elements</a></p>
+                </div>
+            </div>
+            
 			<button href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/index.html?message=docs%3A%20describe%20your%20change..." target="_blank" class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue grow-hover border-radius:50%">
 		        <i class="fas fa-pencil-alt"></i>
 	        </button>

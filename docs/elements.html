@@ -93,7 +93,7 @@
 					<div class="">
 						<pre><code class="language-html">&lt;button class="submitBtn"&gt; &lt;/button&gt;</code></pre>
 					</div>
-					
+
 					<!-- SandBox -->
 					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="textarea-playground">
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
@@ -192,7 +192,7 @@
 					<h3 id="realtime_select" class="padding-top:20px">Select</h3>
 					<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>
 					<pre><code class="language-html">&lt;select type="text" collection="" document_id="" name="name"&gt;&lt;/select&gt;</code></pre>
-				
+
 					<!-- SandBox -->
 					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="select-playground">
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
@@ -225,7 +225,7 @@
 					<h3 id="realtime_htmltags" class="padding-top:20px">Contenteditable</h3>
 					<p class="padding:10px_0px line-height:1.5"></p>
 					<pre><code class="language-html">&lt;h1 type="text" collection="module_activities" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
-					
+
 					<!-- SandBox -->
 					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="contenteditable-playground">
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
@@ -252,21 +252,19 @@
 						</div>
 					</div>
 					<!-- End SandBox -->
-					
+
 				</section>
-				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="[href='./elements#realtime_form']">
-					<h3 id="realtime_form" class="padding-top:20px">Forms</h3>
-					<p class="padding:10px_0px line-height:1.5">Using your forms with CoCreateJS Realtime CRUD is super easy, Form is used for grouping elements and applying attributes dynamically to it childeren. form tag can be left empty or you can apply attributes you would like to apply to childeren elements.
-						attributtes will only be applied to childeren if the attribute does not already exist. If form realtime false it will require submitBtn</p>
-					<p class="padding-top:15px">You will have the option to set realtime as true or false. If realtime set to false then the form will require a button to save.</p>
+				<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="[href='./elements#realtime_form']">
+					<h3 id="realtime_form" class="padding-top:20px">Form</h3>
+					<p class="padding:10px_0px line-height:1.5">The form tag is used for grouping elements and applying attributes dynamically to it's childeren. Attributtes added to a form tag will only be applied to the child elements if the attribute is not already defined with a value. If realtime="false" is applied, the form will require a button and action to trigger save</p>
 					<div class="">
-						<pre><code class="language-html">&lt;button class="submitBtn"&gt; &lt;/button&gt;</code></pre>
+						<pre><code class="language-html">&lt;button actions="saveDocument"&gt; &lt;/button&gt;</code></pre>
 					</div>
-					
+
 					<!-- SandBox -->
 					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-playground">
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="form-code" show="#from-preview" hide="#form-code, #form-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px" id="form-code" show="#form-preview" hide="#form-code, #form-view"><i class="far fa-eye"></i></a>
 							<a class="margin-right:10px hidden" id="form-preview" show="#form-code, #form-view" hide="#form-preview"><i class="fas fa-code"></i></a>
 							<a class="margin-right:5px" fullscreen target="#form-playground"><i class="fas fa-expand"></i></a>
 						</div>
@@ -276,13 +274,60 @@
 							<div class="svColumn">
 
 								<div class="svPanel" id="form-view">
-									<textarea collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="form-demo" save="false" id="form-demo" class="height:100% width:100% border:none resize:none padding:5px">
+									<textarea collection="demos" document_id="619d438ca8b6b4001a9e5faf" name="form-demo" save="false" id="form-demo" class="height:100% width:100% border:none resize:none padding:5px">
 					                </textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
 								<div class="svPanel">
 									<iframe get-value="form-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- End SandBox -->
+
+				</section>
+				<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="[href='./elements#realtime_collaboration']">
+					<h3 id="realtime_collaboration" class="padding-top:20px">Collaboration</h3>
+					<p class="padding:10px_0px line-height:1.5">The collaboration tag is used for grouping elements and applying attributes dynamically to it's childeren. Attributtes added to a collaboration tag will only be applied to the child elements if the attribute is not already defined with a value. If realtime="false" is applied, the collaboration will require a button and action to trigger save</p>
+					<div class="">
+						<pre><code class="language-html">&lt;button actions="saveDocument"&gt; &lt;/button&gt;</code></pre>
+					</div>
+
+					<!-- SandBox -->
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="collaboration-playground">
+						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+							<a class="margin-right:10px" id="collaboration-code" show="#collaboration-preview" hide="#collaboration-code, #collaboration-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="collaboration-preview" show="#collaboration-code, #collaboration-view" hide="#collaboration-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#collaboration-playground"><i class="fas fa-expand"></i></a>
+						</div>
+
+						<div class="svRow">
+
+							<div class="svColumn">
+
+								<div class="svPanel" id="collaboration-view">
+									<textarea collection="demos" document_id="619d495ca8b6b4001a9e6127" name="collaboration-demo" save="false" id="collaboration-demo" class="height:100% width:100% border:none resize:none padding:5px">
+					                </textarea>
+								</div>
+								<div class="svSplitter svHorizontal"> </div>
+
+								<div class="svPanel">
+									<div class="svRow">
+										<div class="svColumn">
+											<div class="svPanel">
+												<iframe get-value="collaboration-demo" frameBorder="0" height="100%" width="100%"></iframe>
+											</div>
+										</div>
+										<div class="svSplitter svVertical"> </div>
+										<div class="svColumn">
+											<div class="svPanel">
+												<iframe get-value="collaboration-demo" frameBorder="0" height="100%" width="100%"></iframe>
+											</div>
+										</div>
+									</div>
 								</div>
 
 							</div>
@@ -361,13 +406,31 @@
 						<h4><span>room</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
 						<p>Define a unique room where messages and changes are sent and received</p>
 					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+						<h4><span>value-prefix</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+						<p>Adds a prefix to value before saving</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+						<h4><span>value-suffix</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+						<p>Adds a suffix to value before saving</p>
+					</li>
 				</ul>
 			</section>
 		</div>
-
+            <!--  Previous & Next  -->
+            <div class="padding:10px width:100% margin-top:20px display:flex flex-wrap:wrap justify-content:flex-start">
+                <div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50%">
+                    <p class="color:#888">Previous Topic</p>
+                    <p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="#introduction">Getting started</a></p>
+                </div>
+                <div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50% text-align:right">
+                    <p class="color:#888">Next Topic</p>
+                    <p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="./elements.html">Fetch a list and render the data using a template</a></p>
+                </div>
+            </div>
 		<button href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/elements.html?message=docs%3A%20describe%20your%20change..." target="_blank" class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue grow-hover border-radius:50%">
-		        <i class="fas fa-pencil-alt"></i>
-	        </button>
+			<i class="fas fa-pencil-alt"></i>
+	    </button>
 	</main>
 
 	<script src="/apikey.js"></script>
