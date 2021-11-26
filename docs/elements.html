@@ -323,6 +323,46 @@
 					<!-- End SandBox -->
 
 				</section>
+				<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#actions-item">
+					<h3 id="realtime_actions" class="padding-top:20px">Actions</h3>
+					<p class="padding:10px_0px line-height:1.5">The actions attribute is used to trigger one or more actions in the order they were applied. Actions are chainable and require success of the first to trigger the next. Many of the CoCreate's components have actions, you will find the actions defined in the respective components documentation. Here we will be introduing the basics as it relates to form and saving. For more information on the full caabilities of actions vitsit the actions documentation page</p>
+					
+					<div class="">
+						<pre><code class="language-html">&lt;button actions="saveDocument"&gt; &lt;/button&gt;</code></pre>
+					</div>
+					<p class="padding:10px_0px line-height:1.5">Applying and clicking this action will save the value of the elements in a form to their respective collection, document_id and name. If a element does not have a document_id defined a document_id will be generated and applied to all other elements with the same collection defined and do not have a document_id. Existing document_id are never overwriten.</p>
+					
+					<div class="">
+						<pre><code class="language-html">&lt;button actions="createDocument"&gt; &lt;/button&gt;</code></pre>
+					</div>
+					<p class="padding:10px_0px line-height:1.5">The createDocument action is simialr to the saveDocument action. The key difference is that a new document_id will generate each time action is clicked. </p>
+					<!-- SandBox -->
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="actions-playground">
+						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+							<a class="margin-right:10px" id="actions-code" show="#actions-preview" hide="#actions-code, #actions-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="actions-preview" show="#actions-code, #actions-view" hide="#actions-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#actions-playground"><i class="fas fa-expand"></i></a>
+						</div>
+
+						<div class="svRow">
+
+							<div class="svColumn">
+
+								<div class="svPanel" id="actions-view">
+									<textarea collection="demos" document_id="61a1456da8b6b4001a9f6029" name="actions-demo" save="false" id="actions-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+								</div>
+								<div class="svSplitter svHorizontal"> </div>
+
+								<div class="svPanel">
+									<iframe get-value="actions-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- End SandBox -->
+
+				</section>
 			</div>
 			<!-- end column -->
 
@@ -421,8 +461,8 @@
 	</main>
 
 	<script src="/apikey.js"></script>
-	<!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>-->
-	<script src="../dist/CoCreate.js"></script>
+	<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+	<!--<script src="../dist/CoCreate.js"></script>-->
 
 </body>
 
