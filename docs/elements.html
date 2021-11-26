@@ -49,241 +49,13 @@
 
 		<div id="xxxxx-section" class="display:flex flex-wrap:wrap justify-content:space-between">
 			<div class="flex-grow:1 width:300px padding:0px_10px margin:20px_0px">
-				<section>
-					<h2 class="border-bottom:1px_solid_lightgrey padding:5px_0px">Collaborative Elements</h2>
-					<p class="padding:10px_0px line-height:1.5">Simply define a collection, document_id and name. If the collection contains the document and the document contains the field name. Viola! The value is fetched in the input. Like was typing in the input will save the value. If the collection did
-						not exist previously it will be created. If the document_id is left empty, typing in the input will create a new document_id.</p>
+				<section scroll scroll-intersect="color:dodgerblue" scroll-target="#collaboration-item">
+					<h2 id="collabrotive_elements" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Collaborative Elements</h2>
+					<p class="padding:10px_0px line-height:1.5">Simply define a collection, document_id and name. If the collection contains the document and the document contains the field name. Viola! The value is fetched in the input. Like wise, typing in the input will save the value. If the collection did not exist previously it will be created. If the document_id is left empty, typing in the input will create a new document_id.</p>
 					<pre><code class="language-html">&lt;input collection="test" document_id="" name="name"&gt;</code></pre>
-					<p class="padding:10px_0px line-height:1.5">The attributes collection, document_id and name are at the center of the CoCreate universe, we take a data first aproach. By defining these 3 attributes you can save and fetch data from any input, textarea, select and thier various types. All other
-						elements like h1, h2, span, etc will only fetch. Apply contenteditable attribute, and the data you input will now save. </p>
-					
-					<h3 id="realtime_input" class="padding-top:20px">Input</h3>
-					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-					<!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
-					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="input-playground">
-						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="input-code" show="#input-preview" hide="#input-code, #input-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="input-preview" show="#input-code, #input-view" hide="#input-preview"><i class="fas fa-code"></i></a>
-							<a class="margin-right:5px" fullscreen target="#input-playground"><i class="fas fa-expand"></i></a>
-						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="input-view">
-									<textarea collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="input-demo" save="false" id="input-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="input-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<!-- End SandBox -->
-
-				</section>
-				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="[href='./elements#realtime_textarea']">
-					<h3 id="realtime_textarea" class="padding-top:20px">Textarea</h3>
-					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-					<!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
-
-					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="textarea-playground">
-						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="textarea-code" show="#from-preview" hide="#textarea-code, #textarea-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="textarea-preview" show="#textarea-code, #textarea-view" hide="#textarea-preview"><i class="fas fa-code"></i></a>
-							<a class="margin-right:5px" fullscreen target="#textarea-playground"><i class="fas fa-expand"></i></a>
-						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="textarea-view">
-									<textarea collection="demos" document_id="619bd887a8b6b4001a9e05af" name="textarea-demo" save="false" id="textarea-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="textarea-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<!-- End SandBox -->
-
-				</section>
-				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="[href='./elements#realtime_radio']">
-					<h3 id="realtime_radio" class="padding-top:20px">Radio</h3>
-					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-					<!--<pre><code class="language-html">&lt;input type="text" collection="test" document_id="" name="name"&gt;</code></pre>-->
-
-					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="radio-playground">
-						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="radio-code" show="#from-preview" hide="#radio-code, #radio-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="radio-preview" show="#radio-code, #radio-view" hide="#radio-preview"><i class="fas fa-code"></i></a>
-							<a class="margin-right:5px" fullscreen target="#radio-playground"><i class="fas fa-expand"></i></a>
-						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="radio-view">
-									<textarea collection="demos" document_id="619bde0da8b6b4001a9e06f3" name="radio-demo" save="false" id="radio-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="radio-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<!-- End SandBox -->
-
-				</section>
-				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#checkbox-item">
-					<h3 id="realtime_checkbox" class="padding-top:20px">Checkbox</h3>
-					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-					<!--<pre><code class="language-html">&lt;input type="checkbox" collection="test" document_id="" name="name"&gt;</code></pre>-->
-
-					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="checkbox-playground">
-						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="checkbox-code" show="#from-preview" hide="#checkbox-code, #checkbox-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="checkbox-preview" show="#checkbox-code, #checkbox-view" hide="#checkbox-preview"><i class="fas fa-code"></i></a>
-							<a class="margin-right:5px" fullscreen target="#checkbox-playground"><i class="fas fa-expand"></i></a>
-						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="checkbox-view">
-									<textarea collection="demos" document_id="619bdaf0a8b6b4001a9e063c" name="checkbox-demo" save="false" id="checkbox-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="checkbox-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<!-- End SandBox -->
-
-				</section>
-				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#select-item">
-					<h3 id="realtime_select" class="padding-top:20px">Select</h3>
-					<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>
-					<pre><code class="language-html">&lt;select collection="" document_id="" name="name"&gt;&lt;/select&gt;</code></pre>
-
-					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="select-playground">
-						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="select-code" show="#from-preview" hide="#select-code, #select-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="select-preview" show="#select-code, #select-view" hide="#select-preview"><i class="fas fa-code"></i></a>
-							<a class="margin-right:5px" fullscreen target="#select-playground"><i class="fas fa-expand"></i></a>
-						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="select-view">
-									<textarea collection="demos" document_id="619be11ba8b6b4001a9e07b8" name="select-demo" save="false" id="select-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="select-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<!-- End SandBox -->
-
-				</section>
-				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#htmltags-item">
-					<h3 id="realtime_htmltags" class="padding-top:20px">Contenteditable</h3>
-					<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts contenteditable elements to collabrative rich text editors or a website builder.</p>
-					<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
-
-					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="contenteditable-playground">
-						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="contenteditable-code" show="#from-preview" hide="#contenteditable-code, #contenteditable-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="contenteditable-preview" show="#contenteditable-code, #contenteditable-view" hide="#contenteditable-preview"><i class="fas fa-code"></i></a>
-							<a class="margin-right:5px" fullscreen target="#contenteditable-playground"><i class="fas fa-expand"></i></a>
-						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="contenteditable-view">
-									<textarea collection="demos" document_id="619be339a8b6b4001a9e0837" name="contenteditable-demo" save="false" id="contenteditable-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="contenteditable-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<!-- End SandBox -->
-
-				</section>
-				<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="[href='./elements#realtime_form']">
-					<h3 id="realtime_form" class="padding-top:20px">Form</h3>
-					<p class="padding:10px_0px line-height:1.5">The form tag is used for grouping elements and applying attributes dynamically to it's childeren. Attributtes added to a form tag will only be applied to the child elements if the attribute is not already defined with a value. If realtime="false" is applied, the form will require a button and action to trigger save</p>
-					<div class="">
-						<pre><code class="language-html">&lt;button actions="saveDocument"&gt; &lt;/button&gt;</code></pre>
-					</div>
-
-					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-playground">
-						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="form-code" show="#form-preview" hide="#form-code, #form-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="form-preview" show="#form-code, #form-view" hide="#form-preview"><i class="fas fa-code"></i></a>
-							<a class="margin-right:5px" fullscreen target="#form-playground"><i class="fas fa-expand"></i></a>
-						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="form-view">
-									<textarea collection="demos" document_id="619d438ca8b6b4001a9e5faf" name="form-demo" save="false" id="form-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="form-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<!-- End SandBox -->
-
-				</section>
-				<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="[href='./elements#realtime_collaboration']">
-					<h3 id="realtime_collaboration" class="padding-top:20px">Collaboration</h3>
-					<p class="padding:10px_0px line-height:1.5">CoCreateJS by default is collabrative. To turn collaboration off for an element, apply attribute realtime="false"</p>
+					<p class="padding:10px_0px line-height:1.5">The attributes collection, document_id and name are at the center of the CoCreate universe, we take a data first aproach. By defining these 3 attributes you can save and fetch data from any input, textarea, select and thier various types. All other elements like h1, h2, span, etc will only fetch. Apply contenteditable attribute, and the data you input will now save. </p>
+					<pre><code class="language-html">&lt;h1 collection="test" document_id="" name="name" contenteditable&gt;&lt;/h1&gt;</code></pre>
+					<p class="padding:10px_0px line-height:1.5">CoCreateJS by default is collabrotive. To turn collaboration off for an element, apply attribute realtime="false"</p>
 					
 					<!-- SandBox -->
 					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="collaboration-playground">
@@ -316,6 +88,233 @@
 											</div>
 										</div>
 									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- End SandBox -->
+
+				</section>
+				
+				
+				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#input-item">
+					<h3 id="realtime_input" class="padding-top:20px">Input</h3>
+					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
+					<!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
+					<!-- SandBox -->
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="input-playground">
+						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+							<a class="margin-right:10px" id="input-code" show="#input-preview" hide="#input-code, #input-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="input-preview" show="#input-code, #input-view" hide="#input-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#input-playground"><i class="fas fa-expand"></i></a>
+						</div>
+
+						<div class="svRow">
+
+							<div class="svColumn">
+
+								<div class="svPanel" id="input-view">
+									<textarea collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="input-demo" save="false" id="input-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+								</div>
+								<div class="svSplitter svHorizontal"> </div>
+
+								<div class="svPanel">
+									<iframe get-value="input-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- End SandBox -->
+
+				</section>
+				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#textarea-item">
+					<h3 id="realtime_textarea" class="padding-top:20px">Textarea</h3>
+					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
+					<!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
+
+					<!-- SandBox -->
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="textarea-playground">
+						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+							<a class="margin-right:10px" id="textarea-code" show="#textarea-preview" hide="#textarea-code, #textarea-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="textarea-preview" show="#textarea-code, #textarea-view" hide="#textarea-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#textarea-playground"><i class="fas fa-expand"></i></a>
+						</div>
+
+						<div class="svRow">
+
+							<div class="svColumn">
+
+								<div class="svPanel" id="textarea-view">
+									<textarea collection="demos" document_id="619bd887a8b6b4001a9e05af" name="textarea-demo" save="false" id="textarea-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+								</div>
+								<div class="svSplitter svHorizontal"> </div>
+
+								<div class="svPanel">
+									<iframe get-value="textarea-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- End SandBox -->
+
+				</section>
+				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#contenteditable-item">
+					<h3 id="realtime_contenteditable" class="padding-top:20px">Contenteditable</h3>
+					<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts contenteditable elements to collabrative rich text editors or a website builder.</p>
+					<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+
+					<!-- SandBox -->
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="contenteditable-playground">
+						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+							<a class="margin-right:10px" id="contenteditable-code" show="#contenteditable-preview" hide="#contenteditable-code, #contenteditable-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="contenteditable-preview" show="#contenteditable-code, #contenteditable-view" hide="#contenteditable-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#contenteditable-playground"><i class="fas fa-expand"></i></a>
+						</div>
+
+						<div class="svRow">
+
+							<div class="svColumn">
+
+								<div class="svPanel" id="contenteditable-view">
+									<textarea collection="demos" document_id="619be339a8b6b4001a9e0837" name="contenteditable-demo" save="false" id="contenteditable-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+								</div>
+								<div class="svSplitter svHorizontal"> </div>
+
+								<div class="svPanel">
+									<iframe get-value="contenteditable-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- End SandBox -->
+
+				</section>
+				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#radio-item">
+					<h3 id="realtime_radio" class="padding-top:20px">Radio</h3>
+					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
+					<!--<pre><code class="language-html">&lt;input type="text" collection="test" document_id="" name="name"&gt;</code></pre>-->
+
+					<!-- SandBox -->
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="radio-playground">
+						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+							<a class="margin-right:10px" id="radio-code" show="#radio-preview" hide="#radio-code, #radio-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="radio-preview" show="#radio-code, #radio-view" hide="#radio-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#radio-playground"><i class="fas fa-expand"></i></a>
+						</div>
+
+						<div class="svRow">
+
+							<div class="svColumn">
+
+								<div class="svPanel" id="radio-view">
+									<textarea collection="demos" document_id="619bde0da8b6b4001a9e06f3" name="radio-demo" save="false" id="radio-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+								</div>
+								<div class="svSplitter svHorizontal"> </div>
+
+								<div class="svPanel">
+									<iframe get-value="radio-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- End SandBox -->
+
+				</section>
+				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#checkbox-item">
+					<h3 id="realtime_checkbox" class="padding-top:20px">Checkbox</h3>
+					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
+					<!--<pre><code class="language-html">&lt;input type="checkbox" collection="test" document_id="" name="name"&gt;</code></pre>-->
+
+					<!-- SandBox -->
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="checkbox-playground">
+						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+							<a class="margin-right:10px" id="checkbox-code" show="#checkbox-preview" hide="#checkbox-code, #checkbox-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="checkbox-preview" show="#checkbox-code, #checkbox-view" hide="#checkbox-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#checkbox-playground"><i class="fas fa-expand"></i></a>
+						</div>
+
+						<div class="svRow">
+
+							<div class="svColumn">
+
+								<div class="svPanel" id="checkbox-view">
+									<textarea collection="demos" document_id="619bdaf0a8b6b4001a9e063c" name="checkbox-demo" save="false" id="checkbox-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+								</div>
+								<div class="svSplitter svHorizontal"> </div>
+
+								<div class="svPanel">
+									<iframe get-value="checkbox-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- End SandBox -->
+
+				</section>
+				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#select-item">
+					<h3 id="realtime_select" class="padding-top:20px">Select</h3>
+					<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>
+					<pre><code class="language-html">&lt;select collection="" document_id="" name="name"&gt;&lt;/select&gt;</code></pre>
+
+					<!-- SandBox -->
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="select-playground">
+						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+							<a class="margin-right:10px" id="select-code" show="#select-preview" hide="#select-code, #select-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="select-preview" show="#select-code, #select-view" hide="#select-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#select-playground"><i class="fas fa-expand"></i></a>
+						</div>
+
+						<div class="svRow">
+
+							<div class="svColumn">
+
+								<div class="svPanel" id="select-view">
+									<textarea collection="demos" document_id="619be11ba8b6b4001a9e07b8" name="select-demo" save="false" id="select-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+								</div>
+								<div class="svSplitter svHorizontal"> </div>
+
+								<div class="svPanel">
+									<iframe get-value="select-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- End SandBox -->
+
+				</section>
+				<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#form-item">
+					<h3 id="realtime_form" class="padding-top:20px">Form</h3>
+					<p class="padding:10px_0px line-height:1.5">The form tag is used for grouping elements and applying attributes dynamically to it's childeren. Attributtes added to a form tag will only be applied to the child elements if the attribute is not already defined with a value. If realtime="false" is applied, the form will require a button and action to trigger save</p>
+					<div class="">
+						<pre><code class="language-html">&lt;button actions="saveDocument"&gt; &lt;/button&gt;</code></pre>
+					</div>
+
+					<!-- SandBox -->
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-playground">
+						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+							<a class="margin-right:10px" id="form-code" show="#form-preview" hide="#form-code, #form-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="form-preview" show="#form-code, #form-view" hide="#form-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#form-playground"><i class="fas fa-expand"></i></a>
+						</div>
+
+						<div class="svRow">
+
+							<div class="svColumn">
+
+								<div class="svPanel" id="form-view">
+									<textarea collection="demos" document_id="619d438ca8b6b4001a9e5faf" name="form-demo" save="false" id="form-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+								</div>
+								<div class="svSplitter svHorizontal"> </div>
+
+								<div class="svPanel">
+									<iframe get-value="form-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
 								</div>
 
 							</div>
@@ -422,8 +421,8 @@
 	</main>
 
 	<script src="/apikey.js"></script>
-	<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
-	<!--<script src="../dist/CoCreate.js"></script>-->
+	<!--<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>-->
+	<script src="../dist/CoCreate.js"></script>
 
 </body>
 
