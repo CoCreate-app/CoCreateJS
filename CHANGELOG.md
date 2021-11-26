@@ -1,3 +1,13 @@
+## [1.9.17](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.16...v1.9.17) (2021-11-26)
+
+
+### Bug Fixes
+
+* docs sidenav width ([ebf55a6](https://github.com/CoCreate-app/CoCreateJS/commit/ebf55a6fd5c4595ceb3ef91b027c192a39e9fd42))
+* update docs ([358d701](https://github.com/CoCreate-app/CoCreateJS/commit/358d7012389cb4a9bafd0018d463cb46a96e1991))
+* update menu and order of demos ([7b1074d](https://github.com/CoCreate-app/CoCreateJS/commit/7b1074d4b5e051e940d54ba04b2fa7d6bcdc7134))
+* updated action dependency to actions ([f1358cd](https://github.com/CoCreate-app/CoCreateJS/commit/f1358cd6244b2c84e233d7bde1623fdf5ac388c0))
+
 ## [1.9.16](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.15...v1.9.16) (2021-11-26)
 
 
