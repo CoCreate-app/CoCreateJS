@@ -70,7 +70,7 @@
     "webpack-log": "^3.0.1"
   },
   "dependencies": {
-    "@cocreate/action": "latest",
+    "@cocreate/actions": "latest",
     "@cocreate/api": "latest",
     "@cocreate/attributes": "latest",
     "@cocreate/calculation": "latest",

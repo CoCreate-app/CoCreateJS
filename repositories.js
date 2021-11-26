@@ -23,8 +23,8 @@ module.exports = [
 
     // Components       
     {
-        'path': '../CoCreate-components/CoCreate-action',
-        'repo': 'github.com/CoCreate-app/CoCreate-action.git'
+        'path': '../CoCreate-components/CoCreate-actions',
+        'repo': 'github.com/CoCreate-app/CoCreate-actions.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-api',

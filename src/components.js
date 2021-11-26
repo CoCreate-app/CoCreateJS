@@ -14,7 +14,7 @@ dependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils
 // Core Components
 lazyLoad('css', 'body', ()=> import (/*webpackChunkName: "css-chunk"*/ '@cocreate/cocreatecss'));
 lazyLoad('logic', '[pass_id], [pass_to], [get-value], [pass-value_to], [pass-value_id], [data-for]', ()=> import (/*webpackChunkName: "logic-chunk"*/ '@cocreate/logic'));
-lazyLoad('action', '[actions]', ()=> import (/*webpackChunkName: "action-chunk"*/ '@cocreate/action'));
+lazyLoad('actions', '[actions]', ()=> import (/*webpackChunkName: "actions-chunk"*/ '@cocreate/actions'));
 lazyLoad('form', 'form', ()=> import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
 lazyLoad('room', '[namespace], [room]', ()=> import (/*webpackChunkName: "room-chunk"*/ '@cocreate/room'));
 lazyLoad('elements', '[collection]', ()=> import (/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
