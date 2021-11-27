@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CoCreateJS - Templating</title>
+	<meta name="description" content="A codeless Javascript framework for building collaborative no code platforms, apps and UI">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
+
+	<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" save="false" />
+</head>
+
+<body>
+	<nav class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px" content_id="content" scroll="sticky-nav,hide-nav" scroll-up="10" scroll-down="10" collection="files" document_id="60395ef42b3ac232657040fd"
+	 name="src">
+	</nav>
+	<sidenav id="menuL" class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl" resizable resize-target="[content_id='content']" resize-property="margin-left" resize-value="width">
+		<menu collection="files" document_id="603717b07de7fb350ae9fec8" name="src"></menu>
+		<div resize="right"></div>
+	</sidenav>
+
+	<!-- Main Content -->
+	<main class="padding-top:15px padding:15px@lg@xl" content_id="content">
+		<section>
+			<div class="display:flex flex-wrap:wrap justify-content:space-between position:relative margin:10px">
+				<div class="display:flex align-items:center">
+					<h2>CoCreateJS</h2>
+				</div>
+				<div class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px background:white">
+					<div class="display:flex align-items:center transition:0.3s padding-left:10px" share-network="true" share-text="Enter decription here" share-title="testing im a title" share-height="600" share-width="700" share-media="https://cdn.cocreate.app/docs/action.png"
+					 hover="display:block!important" hover-target=".social-networks">
+						<div class="display:none social-networks">
+							<a class="margin-right:15px" share-network='twitter' title="Share on twitter"><i class="fab fa-twitter"></i></a>
+							<a class="margin-right:15px" share-network='facebook' title="Share on Facebook"><i class="fab fa-facebook"></i></a>
+							<a class="margin-right:15px" share-network='instagram' title="Share on instagram"><i class="fab fa-instagram"></i></a>
+						</div>
+						<a class="margin-right:15px" share-network='share' title="Share on share"><i class="fas fa-share-alt"></i></a>
+					</div>
+					<a href="https://github.com/CoCreate-app/CoCreate-action" target="_blank" class=""><i class="fab fa-github"></i></a>
+				</div>
+			</div>
+			<h1 class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">Learn how to convert your html into a dynamic realtime application.</h1>
+		</section>
+
+		<div id="xxxxx-section" class="display:flex flex-wrap:wrap justify-content:space-between">
+			<div class="flex-grow:1 width:300px padding:0px_10px margin:20px_0px">
+				<section scroll scroll-intersect="color:dodgerblue" scroll-target="#fetch-item">
+					<h2 id="templating" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Templating</h2>
+					<p class="padding:10px_0px line-height:1.5">Fetch, filter and render list's is done by applying fetch-collection to a container div and difing a template with in the container</p>
+					<pre><code class="language-html">&lt;div fetch-collection="test" template_id="A unique id"&gt;&lt;/div&gt;</code></pre>
+
+					<!-- SandBox -->
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="fetch-playground">
+						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+							<a class="margin-right:10px" id="fetch-code" show="#fetch-preview" hide="#fetch-code, #fetch-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="fetch-preview" show="#fetch-code, #fetch-view" hide="#fetch-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#fetch-playground"><i class="fas fa-expand"></i></a>
+						</div>
+
+						<div class="svRow">
+
+							<div class="svColumn">
+
+								<div class="svPanel" id="fetch-view">
+									<textarea collection="demos" document_id="" name="fetch-demo" save="false" id="fetch-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+								</div>
+								<div class="svSplitter svHorizontal"> </div>
+
+								<div class="svPanel">
+									<iframe get-value="fetch-demo" frameBorder="0" height="100%" width="100%"></iframe>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- End SandBox -->
+
+				</section>
+				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#filter-item">
+					<h3 id="realtime_filter" class="padding-top:20px">Filter</h3>
+					<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts filter elements to collabrative rich text editors or a website builder.</p>
+					<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+
+					<!-- SandBox -->
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="filter-playground">
+						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+							<a class="margin-right:10px" id="filter-code" show="#filter-preview" hide="#filter-code, #filter-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="filter-preview" show="#filter-code, #filter-view" hide="#filter-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#filter-playground"><i class="fas fa-expand"></i></a>
+						</div>
+
+						<div class="svRow">
+
+							<div class="svColumn">
+
+								<div class="svPanel" id="filter-view">
+									<textarea collection="demos" document_id="" name="filter-demo" save="false" id="filter-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+								</div>
+								<div class="svSplitter svHorizontal"> </div>
+
+								<div class="svPanel">
+									<iframe get-value="filter-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- End SandBox -->
+
+				</section>
+				<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#filter-item">
+					<h3 id="realtime_render" class="padding-top:20px">Render</h3>
+					<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts render elements to collabrative rich text editors or a website builder.</p>
+					<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+
+					<!-- SandBox -->
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="render-playground">
+						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+							<a class="margin-right:10px" id="render-code" show="#render-preview" hide="#render-code, #render-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="render-preview" show="#render-code, #render-view" hide="#render-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#render-playground"><i class="fas fa-expand"></i></a>
+						</div>
+
+						<div class="svRow">
+
+							<div class="svColumn">
+
+								<div class="svPanel" id="render-view">
+									<textarea collection="demos" document_id="" name="render-demo" save="false" id="render-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+								</div>
+								<div class="svSplitter svHorizontal"> </div>
+
+								<div class="svPanel">
+									<iframe get-value="render-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- End SandBox -->
+
+				</section>
+			</div>
+			<!-- end column -->
+
+			<section class="flex-grow:1 width:300px max-width:400px@md@lg@xl padding:0px_10px padding-bottom:10px margin:20px_0px">
+				<h2 class="border-bottom:1px_solid_lightgrey padding:5px_0px">Templating Attributes</h2>
+				<ul class="list-style-type:none position:sticky top:0 height:100vh overflow:auto">
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>template_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
+	        			<p>Template identifier. This attribute should be define.</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>fetch-collection</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
+	        			<p>Collection name to fetch data. It is required. </p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>fetch-name</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>Define the field name to fetch array</p>
+	        			<p>If this value defined, it will fetch the special field's value</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>fetch-value</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>Define the value to filter by . Require fetch-name</p>
+	        			<p>colleciton: whole collections list fetch.</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>fetch-value_type</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>collection</p>
+	        			<p>colleciton: whole collections list fetch.</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>fetch-count</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>Fetch the item's count on page load or when updated. If attribute is empty or not used, total items will be fetch.</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>fetch-type</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>Available value: loadmore | scroll | total.</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>filter-name</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>Collections's field name for filter.</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>filter-value</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>Collection's field value for filter. If filter-name defined, this attribute should defined too</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>filter-value_type</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>string | raw . Default value is string</p>
+	        			<p>raw case, it will make values array from string by "," separation </p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>filter-operator</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>Define the filter operator.</P>
+	        			<p>Operators: $contain | $range | $eq | $ne | $lt | $lte | $gt | $gte | $in | $nin | $geoWithin</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>export_type</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>To export the fetched data, This attribute will be use</p>
+	        			<p>Available value: json | cvs</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>import</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>When import the file content into selected collection, This attribute will be use</p>
+	        			<p>Available value: true</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>order-by</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>Field name to sorting.</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>order-type</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>Available value: asc | desc.</p>
+	        			<p>Fetch order value on page load or when updated. If attribute is empty or not used Default's to asc.</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>render_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>This value should define in template wrapper. </p>
+	        			<p>Mulitple template case, render_id would use that generate new object by this value</p>
+					</li>
+				</ul>
+			</section>
+		</div>
+            <!--  Previous & Next  -->
+            <div class="padding:10px width:100% margin-top:20px display:flex flex-wrap:wrap justify-content:flex-start">
+                <div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50%">
+                    <p class="color:#888">Previous Topic</p>
+                    <p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="#introduction">Using CoCreateJS attributes on html elements</a></p>
+                </div>
+                <div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50% text-align:right">
+                    <p class="color:#888">Next Topic</p>
+                    <p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="./elements.html">Applying logic and sharing data between pages</a></p>
+                </div>
+            </div>
+		<button href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/elements.html?message=docs%3A%20describe%20your%20change..." target="_blank" class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue grow-hover border-radius:50%">
+			<i class="fas fa-pencil-alt"></i>
+	    </button>
+	</main>
+
+	<script src="/apikey.js"></script>
+	<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+	<!--<script src="../dist/CoCreate.js"></script>-->
+
+</body>
+
+</html>
