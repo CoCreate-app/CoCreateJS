@@ -1,3 +1,10 @@
+## [1.9.18](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.17...v1.9.18) (2021-11-27)
+
+
+### Bug Fixes
+
+* add docs/templating.html ([fab802c](https://github.com/CoCreate-app/CoCreateJS/commit/fab802cbd402a75564eda5dd3d39d55ecba471c8))
+
 ## [1.9.17](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.16...v1.9.17) (2021-11-26)
 
 
