@@ -60,6 +60,24 @@ module.exports = {
             }
         },
         {
+            "entry": "./docs/logic.html",
+            "collection": "files",
+            "document_id": "61a2ff48a8b6b4001a9fce9e",
+            "key": "src",
+            "data": {
+                "name": "logic.html",
+                "domains": [
+                    "cocreate.app",
+                    "general.cocreate.app"
+                ],
+                "path": "/docs/logic.html",
+                "directory": "/docs",
+                "content-type": "text/html",
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
+            }
+        },
+        {
             "entry": "./docs/objects.html",
             "collection": "files",
             "document_id": "60888216117c640e75963040",
@@ -71,6 +89,24 @@ module.exports = {
                     "general.cocreate.app"
                 ],
                 "path": "/docs/objects.html",
+                "directory": "/docs",
+                "content-type": "text/html",
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
+            }
+        },
+        {
+            "entry": "./docs/templating.html",
+            "collection": "files",
+            "document_id": "61a29714a8b6b4001a9fb48a",
+            "key": "src",
+            "data": {
+                "name": "templating.html",
+                "domains": [
+                    "cocreate.app",
+                    "general.cocreate.app"
+                ],
+                "path": "/docs/templating.html",
                 "directory": "/docs",
                 "content-type": "text/html",
                 "public": "true",

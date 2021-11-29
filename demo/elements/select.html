@@ -3,11 +3,13 @@
 
     <body class="padding:5px">
         
-        <form collection="test" document_id="619af0e4a8b6b4001a9dd231">
-            <input placeholder="Name" name="name" class="floating-label">
-            <h1 name="name"></h1>
-        </form>
+        <select collection="test" name='skills' document_id="619af0e4a8b6b4001a9dd231">
+            <option value="Leader">Leader</option>
+            <option value="Reliable">Reliable</option>
+        </select>
         
+        <h1 collection="test" name='skills' document_id="619af0e4a8b6b4001a9dd231"></h1>
+       
         <script>
             var config = {                 
                 apiKey: '8aa85c85-c5e8-43a0-9e01-aa1c16a7',           
@@ -15,7 +17,7 @@
                 host: 'demo.cocreate.app'
             };
         </script>
-        <script src="../dist/CoCreate.js"></script>
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
         
     </body>
 </html>
