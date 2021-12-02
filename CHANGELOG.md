@@ -1,3 +1,10 @@
+## [1.9.19](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.18...v1.9.19) (2021-11-29)
+
+
+### Bug Fixes
+
+* add templating and logic docs and demo ([0af58b7](https://github.com/CoCreate-app/CoCreateJS/commit/0af58b7cef286892eef7dd7f94cdf3439d14bc49))
+
 ## [1.9.18](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.17...v1.9.18) (2021-11-27)
 
 
