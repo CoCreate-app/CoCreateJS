@@ -2,10 +2,12 @@
 <html lang="en">
 
     <body class="padding:5px">
-    
-        <input collection="test" placeholder="Name" name='name' document_id="619af0e4a8b6b4001a9dd231" class="floating-label">
-        <h1 collection="test" placeholder="html" name='name' document_id="619af0e4a8b6b4001a9dd231"></h1>
-  
+        
+    	
+    	<h1 pass_id="test" collection="test" document_id name="name"></h1>
+        <div template_id="test" fetch-collection="test">
+        	<a template_id="test" pass-document_id="{{data._id}}" pass_to="test" class="template">Click to pass: {{data._id}}</a>
+        </div>
         <script>
             var config = {                 
                 apiKey: '8aa85c85-c5e8-43a0-9e01-aa1c16a7',           

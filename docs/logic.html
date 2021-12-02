@@ -9,7 +9,7 @@
 	<meta name="description" content="A codeless Javascript framework for building collaborative no code platforms, apps and UI">
 	<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
 
-	<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" save="false" />
+	<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" realtime="true" />
 </head>
 
 <body>
@@ -46,30 +46,30 @@
 
 		<div id="xxxxx-section" class="display:flex flex-wrap:wrap justify-content:space-between">
 			<div class="flex-grow:1 width:300px padding:0px_10px margin:20px_0px">
-				<section scroll scroll-intersect="color:dodgerblue" scroll-target="#fetch-item">
+				<section scroll scroll-intersect="color:dodgerblue" scroll-target="#pass-attributes-item">
 					<h2 id="pass-attributes" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Pass Attributes</h2>
-					<p class="padding:10px_0px line-height:1.5">Fetch, filter and render list's is done by applying fetch-collection to a container div and difing a template with in the container</p>
-					<pre><code class="language-html">&lt;div fetch-collection="test" template_id="A unique id"&gt;&lt;/div&gt;</code></pre>
+					<p class="padding:10px_0px line-height:1.5">Passing attributes to elements can be done from same page or from page to new page. The attribute's can be applied to any element which will add a click event to the element.</p>
+					<pre><code class="language-html">&lt;a pass-document_id="test" pass_to="A unique id"&gt;&lt;/a&gt;</code></pre>
 
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="fetch-playground">
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="pass-attributes-playground">
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="fetch-code" show="#fetch-preview" hide="#fetch-code, #fetch-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="fetch-preview" show="#fetch-code, #fetch-view" hide="#fetch-preview"><i class="fas fa-code"></i></a>
-							<a class="margin-right:5px" fullscreen target="#fetch-playground"><i class="fas fa-expand"></i></a>
+							<a class="margin-right:10px" id="pass-attributes-code" show="#pass-attributes-preview" hide="#pass-attributes-code, #pass-attributes-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="pass-attributes-preview" show="#pass-attributes-code, #pass-attributes-view" hide="#pass-attributes-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#pass-attributes-playground"><i class="fas fa-expand"></i></a>
 						</div>
 
 						<div class="svRow">
 
 							<div class="svColumn">
 
-								<div class="svPanel" id="fetch-view">
-									<textarea collection="demos" document_id="" name="fetch-demo" save="false" id="fetch-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+								<div class="svPanel" id="pass-attributes-view">
+									<textarea collection="demos" document_id="61a56035a8b6b4001aa0806c" name="pass-attributes-demo" realtime="true" id="pass-attributes-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
 								<div class="svPanel">
-									<iframe get-value="fetch-demo" frameBorder="0" height="100%" width="100%"></iframe>
+									<iframe get-value="pass-attributes-demo" frameBorder="0" height="100%" width="100%"></iframe>
 								</div>
 
 							</div>
@@ -78,30 +78,30 @@
 					<!-- End SandBox -->
 
 				</section>
-				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#filter-item">
+				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#pass-values-item">
 					<h3 id="pass-values" class="padding-top:20px">Pass Values</h3>
-					<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts filter elements to collabrative rich text editors or a website builder.</p>
+					<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts pass-values elements to collabrative rich text editors or a website builder.</p>
 					<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
 
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="filter-playground">
+					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="pass-values-playground">
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="filter-code" show="#filter-preview" hide="#filter-code, #filter-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px hidden" id="filter-preview" show="#filter-code, #filter-view" hide="#filter-preview"><i class="fas fa-code"></i></a>
-							<a class="margin-right:5px" fullscreen target="#filter-playground"><i class="fas fa-expand"></i></a>
+							<a class="margin-right:10px" id="pass-values-code" show="#pass-values-preview" hide="#pass-values-code, #pass-values-view"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px hidden" id="pass-values-preview" show="#pass-values-code, #pass-values-view" hide="#pass-values-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#pass-values-playground"><i class="fas fa-expand"></i></a>
 						</div>
 
 						<div class="svRow">
 
 							<div class="svColumn">
 
-								<div class="svPanel" id="filter-view">
-									<textarea collection="demos" document_id="" name="filter-demo" save="false" id="filter-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+								<div class="svPanel" id="pass-values-view">
+									<textarea collection="demos" document_id="61a56b1da8b6b4001aa08542" name="pass-values-demo" realtime="true" id="pass-values-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
 								<div class="svPanel">
-									<iframe get-value="filter-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+									<iframe get-value="pass-values-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
 								</div>
 
 							</div>
@@ -128,7 +128,7 @@
 							<div class="svColumn">
 
 								<div class="svPanel" id="render-view">
-									<textarea collection="demos" document_id="" name="render-demo" save="false" id="render-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+									<textarea collection="demos" document_id="61a579d7a8b6b4001aa089f0" name="render-demo" realtime="true" id="render-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
