@@ -1,9 +1,9 @@
 module.exports = [
 
-    // {
-    //     'path': '../CoCreateJS',
-    //     'repo': 'github.com/CoCreate-app/CoCreateJS.git'
-    // },
+    {
+        'path': '../CoCreateJS',
+        'repo': 'github.com/CoCreate-app/CoCreateJS.git'
+    },
     {
         'path': '../CoCreateCSS',
         'repo': 'github.com/CoCreate-app/CoCreateCSS.git'
