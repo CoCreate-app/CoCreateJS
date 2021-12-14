@@ -97,7 +97,7 @@
     "@cocreate/fullcalendar": "latest",
     "@cocreate/fullscreen": "latest",
     "@cocreate/google-auth": "latest",
-    "@cocreate/google-maps": "^1.1.39",
+    "@cocreate/google-maps": "latest",
     "@cocreate/industry": "latest",
     "@cocreate/instagram": "latest",
     "@cocreate/lighthouse": "latest",

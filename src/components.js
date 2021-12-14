@@ -42,6 +42,7 @@ lazyLoad('validation', '[actions*="validate"]', ()=> import (/*webpackChunkName:
 
 // Collabortion Components
 lazyLoad('cursors', 'input, textarea, [contenteditable]', ()=> import (/*webpackChunkName: "cursors-chunk"*/ '@cocreate/cursors'));
+lazyLoad('selection', 'input, textarea, [contenteditable]', ()=> import (/*webpackChunkName: "selection-chunk"*/ '@cocreate/selection'));
 lazyLoad('text', 'input, textarea, [contenteditable]', ()=> import (/*webpackChunkName: "text-chunk"*/ '@cocreate/text'));
 lazyLoad('rich-text', '[actions*="nodeName"], [actions*="cloneElement"], [actions*="deleteElement"]', ()=> import (/*webpackChunkName: "rich-text-chunk"*/ '@cocreate/rich-text'));
 
