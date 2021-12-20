@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <body class="padding:5px">
+        
+    	<form class="padding:25px background:gainsboro text-align:left">
+    		<input type="email" id="email"
+    			collection="users"
+    			unique
+    			document_id="" 
+    			name='email'  
+    			placeholder="Email" 
+    			class="floating-label"
+    			required>
+    	 		<small id="errorUemail" class="text-danger"></small>
+    	
+    		<input type="password" id="password"
+    			collection="users"
+    	    	document_id=""
+    	    	name="password" 
+    	    	placeholder="Password" 
+    	    	class="floating-label">
+    	    	<small id="errorUpassword" class="text-danger"></small>
+    	
+    		<input type="password"
+    	    	matches="#password" 
+    	    	placeholder="Confirm Password" 
+    	    	class="floating-label">
+    	    	<small id="errorUconfirmpassword" class="text-danger"></small>
+    			
+    		<!-- User _id  -->
+    		<input type="hidden" id="user_id"
+    			collection="users"
+    			document_id=""
+    			name="_id">
+    		
+    		<!-- Organiztion _id  -->
+    		<input type="hidden" id="org_id"
+    			collection="organizations"
+    			document_id=""
+    			name="_id">
+    		
+    		<!-- API key  -->
+    		<input type="hidden" id="apiKey"
+    			collection="organizations"
+    			document_id=""
+    			name="apiKey" 
+    			uuid="32">
+    		
+    		<!-- Sub Domain -->
+    		<input type="hidden" 
+    			collection="organizations"
+    			document_id="" 
+    			name="domains[0]"
+    			data-type="array"
+    			data-key="renderKey.domain">
+    		
+    		<!-- Connected Org  -->
+    		<input type="hidden" id="connected_orgs"
+    			collection="users"
+    			document_id=""
+    			name="connected_orgs[0]">
+    
+    		<!-- Current Org  -->
+    		<input type="hidden" id="current_org"
+    			collection="users"
+    			document_id=""
+    			name="current_org">
+    			
+    		<!-- Send Email -->
+    		<div template_id="renderKey">
+    			<input type="hidden" placeholder="to email" data-sendgrid="sendEmail.to" get-value="user-email">
+    		    <input type="hidden" placeholder="from email" data-sendgrid="sendEmail.from" value="testing@cocreate.app">
+    		    <input type="hidden" placeholder="subject" data-sendgrid="sendEmail.subject" value="Welcome, {{data.name}} — Please confirm your email">
+    		    <textarea placeholder="html" data-sendgrid="sendEmail.html" hidden collection="email-templates" document_id="60bfdaa304ee68b159b63532" name="src"></textarea>
+    
+    			<div class="display:flex">
+    				<button type="button" class="outline white-blue margin-right:15px" show='#step4,#ava4' hide='#step5,#ava5'>Previous</button>
+    				<button type="button" class="outline red-white startAnimation" show='#step6,#ava6' hide='#step5,#ava5' actions="validate, animateSignup, showHide, createOrg, createUser, timeout{3000}, runIndustry, renderKey" href="https://{{data.domain}}/admin/signin.html">
+    					Launch
+    				</button>
+    			</div>
+    		</div>
+    		
+    	</form>
+    	
+        <script>
+            var config = {                 
+                apiKey: '8aa85c85-c5e8-43a0-9e01-aa1c16a7',           
+                organization_Id: '619aefcea8b6b4001a9dd078',             
+                host: 'demo.cocreate.app'
+            };
+        </script>
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+        
+    </body>
+</html>					     					                    					                    

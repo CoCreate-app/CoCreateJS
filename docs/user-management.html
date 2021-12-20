@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CoCreateJS - User Management</title>
+		<meta name="description" content="A codeless Javascript framework for building collaborative no code platforms, apps and UI">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
+	
+		<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" realtime="true" />
+	</head>
+	
+	<body>
+		<nav class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px" content_id="content" scroll="sticky-nav,hide-nav" scroll-up="10" scroll-down="10" collection="files" document_id="60395ef42b3ac232657040fd"
+		 name="src">
+		</nav>
+		<sidenav id="menuL" class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl" resizable resize-target="[content_id='content']" resize-property="margin-left" resize-value="width">
+			<menu collection="files" document_id="603717b07de7fb350ae9fec8" name="src"></menu>
+			<div resize="right"></div>
+		</sidenav>
+	
+		<!-- Main Content -->
+		<main class="padding-top:15px padding:15px@lg@xl" content_id="content">
+			<section>
+				<div class="display:flex flex-wrap:wrap justify-content:space-between position:relative margin:10px">
+					<div class="display:flex align-items:center">
+						<h2>User Management</h2>
+					</div>
+					<div class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px background:white">
+						<div class="display:flex align-items:center transition:0.3s padding-left:10px" share-network="true" share-text="Enter decription here" share-title="testing im a title" share-height="600" share-width="700" share-media="https://cdn.cocreate.app/docs/action.png"
+						 hover="display:block!important" hover-target=".social-networks">
+							<div class="display:none social-networks">
+								<a class="margin-right:15px" share-network='twitter' title="Share on twitter"><i class="fab fa-twitter"></i></a>
+								<a class="margin-right:15px" share-network='facebook' title="Share on Facebook"><i class="fab fa-facebook"></i></a>
+								<a class="margin-right:15px" share-network='instagram' title="Share on instagram"><i class="fab fa-instagram"></i></a>
+							</div>
+							<a class="margin-right:15px" share-network='share' title="Share on share"><i class="fas fa-share-alt"></i></a>
+						</div>
+						<a href="https://github.com/CoCreate-app/CoCreate-action" target="_blank" class=""><i class="fab fa-github"></i></a>
+					</div>
+				</div>
+				<h1 class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">Learn how to convert your html into a dynamic realtime application.</h1>
+			</section>
+	
+			<div id="xxxxx-section" class="display:flex flex-wrap:wrap justify-content:space-between">
+				<div class="flex-grow:1 width:300px padding:0px_10px margin:20px_0px">
+					<section scroll scroll-intersect="color:dodgerblue" scroll-target="#register-item">
+						<h2 id="register" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Register</h2>
+						<p class="padding:10px_0px line-height:1.5">Passing attributes to elements can be done from same page or from page to new page. The attribute's can be applied to any element which will add a click event to the element.</p>
+						<pre><code class="language-html">&lt;a pass-document_id="test" pass_to="A unique id"&gt;&lt;/a&gt;</code></pre>
+	
+						<!-- SandBox -->
+						<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="register-playground">
+							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+								<a class="margin-right:10px" id="register-code" show="#register-preview" hide="#register-code, #register-view"><i class="far fa-eye"></i></a>
+								<a class="margin-right:10px hidden" id="register-preview" show="#register-code, #register-view" hide="#register-preview"><i class="fas fa-code"></i></a>
+								<a class="margin-right:5px" fullscreen target="#register-playground"><i class="fas fa-expand"></i></a>
+							</div>
+	
+							<div class="svRow">
+	
+								<div class="svColumn">
+	
+									<div class="svPanel" id="register-view">
+										<textarea collection="demos" document_id="61a56035a8b6b4001aa0806c" name="register-demo" realtime="true" id="register-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+									</div>
+									<div class="svSplitter svHorizontal"> </div>
+	
+									<div class="svPanel">
+										<iframe get-value="register-demo" frameBorder="0" height="100%" width="100%"></iframe>
+									</div>
+	
+								</div>
+							</div>
+						</div>
+						<!-- End SandBox -->
+	
+					</section>
+					<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#login-item">
+						<h3 id="login" class="padding-top:20px">Login</h3>
+						<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts login elements to collabrative rich text editors or a website builder.</p>
+						<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+	
+						<!-- SandBox -->
+						<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="login-playground">
+							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+								<a class="margin-right:10px" id="login-code" show="#login-preview" hide="#login-code, #login-view"><i class="far fa-eye"></i></a>
+								<a class="margin-right:10px hidden" id="login-preview" show="#login-code, #login-view" hide="#login-preview"><i class="fas fa-code"></i></a>
+								<a class="margin-right:5px" fullscreen target="#login-playground"><i class="fas fa-expand"></i></a>
+							</div>
+	
+							<div class="svRow">
+	
+								<div class="svColumn">
+	
+									<div class="svPanel" id="login-view">
+										<textarea collection="demos" document_id="61a56b1da8b6b4001aa08542" name="login-demo" realtime="true" id="login-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+									</div>
+									<div class="svSplitter svHorizontal"> </div>
+	
+									<div class="svPanel">
+										<iframe get-value="login-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+									</div>
+	
+								</div>
+							</div>
+						</div>
+						<!-- End SandBox -->
+	
+					</section>
+					<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#permissions-item">
+						<h3 id="permissions" class="padding-top:20px">Permissions</h3>
+						<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts permissions elements to collabrative rich text editors or a website builder.</p>
+						<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+	
+						<!-- SandBox -->
+						<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="permissions-playground">
+							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+								<a class="margin-right:10px" id="permissions-code" show="#permissions-preview" hide="#permissions-code, #permissions-view"><i class="far fa-eye"></i></a>
+								<a class="margin-right:10px hidden" id="permissions-preview" show="#permissions-code, #permissions-view" hide="#permissions-preview"><i class="fas fa-code"></i></a>
+								<a class="margin-right:5px" fullscreen target="#permissions-playground"><i class="fas fa-expand"></i></a>
+							</div>
+	
+							<div class="svRow">
+	
+								<div class="svColumn">
+	
+									<div class="svPanel" id="permissions-view">
+										<textarea collection="demos" document_id="61a579d7a8b6b4001aa089f0" name="permissions-demo" realtime="true" id="permissions-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+									</div>
+									<div class="svSplitter svHorizontal"> </div>
+	
+									<div class="svPanel">
+										<iframe get-value="permissions-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
+									</div>
+	
+								</div>
+							</div>
+						</div>
+						<!-- End SandBox -->
+	
+					</section>
+				</div>
+				<!-- end column -->
+	
+				<section class="flex-grow:1 width:300px max-width:400px@md@lg@xl padding:0px_10px padding-bottom:10px margin:20px_0px">
+					<h2 class="border-bottom:1px_solid_lightgrey padding:5px_0px">User Attributes</h2>
+					<ul class="list-style-type:none position:sticky top:0 height:100vh overflow:auto">
+						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+			        		<h4><span>pass_to</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
+		        			<p>Template identifier. This attribute should be define.</p>
+						</li>
+						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+			        		<h4><span>pass_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+		        			<p>Collection name to fetch data. It is required. </p>
+						</li>
+					</ul>
+				</section>
+			</div>
+            <!--  Previous & Next  -->
+            <div class="padding:10px width:100% margin-top:20px display:flex flex-wrap:wrap justify-content:flex-start">
+                <div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50%">
+                    <p class="color:#888">Previous Topic</p>
+                    <p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="./logic.html">Applying logic and sharing data between pages</a></p>
+                </div>
+                <div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50% text-align:right">
+                    <p class="color:#888">Next Topic</p>
+                    <p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="./user-management.html">User Management</a></p>
+                </div>
+            </div>
+			<button href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/elements.html?message=docs%3A%20describe%20your%20change..." target="_blank" class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue grow-hover border-radius:50%">
+				<i class="fas fa-pencil-alt"></i>
+		    </button>
+		</main>
+	
+		<script src="/apikey.js"></script>
+		<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+		<!--<script src="../dist/CoCreate.js"></script>-->
+	
+	</body>
+
+</html>

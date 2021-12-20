@@ -78,6 +78,24 @@ module.exports = {
             }
         },
         {
+            "entry": "./docs/user-management.html",
+            "collection": "files",
+            "document_id": "61bf9089a8b6b4001aaba266",
+            "key": "src",
+            "data": {
+                "name": "user-management.html",
+                "domains": [
+                    "cocreate.app",
+                    "general.cocreate.app"
+                ],
+                "path": "/docs/user-management.html",
+                "directory": "/docs",
+                "content-type": "text/html",
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
+            }
+        },
+        {
             "entry": "./docs/objects.html",
             "collection": "files",
             "document_id": "60888216117c640e75963040",
