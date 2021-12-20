@@ -1,3 +1,10 @@
+## [1.9.21](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.20...v1.9.21) (2021-12-15)
+
+
+### Bug Fixes
+
+* lazyload @cocreate/selections ([3d74e65](https://github.com/CoCreate-app/CoCreateJS/commit/3d74e6573f6c97d182370cb4e46ed3d451de649e))
+
 ## [1.9.20](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.19...v1.9.20) (2021-12-02)
 
 
