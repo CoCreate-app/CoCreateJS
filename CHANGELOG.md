@@ -1,3 +1,10 @@
+## [1.9.22](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.21...v1.9.22) (2021-12-20)
+
+
+### Bug Fixes
+
+* add user-management to docs/ and cocreate.config.js ([e906d39](https://github.com/CoCreate-app/CoCreateJS/commit/e906d3968ad02d1e2da7cec28301037aa49ae100))
+
 ## [1.9.21](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.20...v1.9.21) (2021-12-15)
 
 
