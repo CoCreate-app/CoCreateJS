@@ -1,3 +1,10 @@
+## [1.9.23](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.22...v1.9.23) (2021-12-23)
+
+
+### Bug Fixes
+
+* renamed filter-value_type to filter-value-type ([adf1121](https://github.com/CoCreate-app/CoCreateJS/commit/adf11219717c4083d0e17b231f9dfd56632db467))
+
 ## [1.9.22](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.21...v1.9.22) (2021-12-20)
 
 
