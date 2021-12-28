@@ -1,6 +1,6 @@
 # CoCreateJS
 
-A low code Javascript framework for building collaborative no code platforms, apps and UI's. Build powerful applications using HTML5 attributes or Javascript api. Take a look at our Admin app. Its an open source CRM, CMS, Website builder powered by CoCreateJS https://github.com/CoCreate-app/CoCreate-admin
+A low code headless CMS and Javascript framework for building real time and collaborative, SaaS Apps, No Code platforms, Website Builders, eCommerce, Blogs, websites, landing pages, CRM’s, Admins and anything else you dream up. Build powerful applications using HTML5 attributes or Javascript api. Take a look at our Admin app. Its an open source CRM, CMS, Website builder powered by CoCreateJS https://github.com/CoCreate-app/CoCreate-admin
 
 ![minified](https://img.badgesize.io/https://cdn.cocreate.app/latest/CoCreate.min.js?style=flat-square&label=minified&color=orange)
 ![gzip](https://img.badgesize.io/https://cdn.cocreate.app/latest/CoCreate.min.js?compression=gzip&style=flat-square&label=gzip&color=yellow)
