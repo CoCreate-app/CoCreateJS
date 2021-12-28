@@ -1,3 +1,10 @@
+## [1.9.24](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.23...v1.9.24) (2021-12-28)
+
+
+### Bug Fixes
+
+* updated description, added set-value as a selector in components.js ([86898a9](https://github.com/CoCreate-app/CoCreateJS/commit/86898a9b90088cb2770fd7788c9e1352778d74ce))
+
 ## [1.9.23](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.22...v1.9.23) (2021-12-23)
 
 
