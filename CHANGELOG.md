@@ -1,3 +1,11 @@
+## [1.9.26](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.25...v1.9.26) (2022-01-01)
+
+
+### Bug Fixes
+
+* merged render-key with render ([888f6d4](https://github.com/CoCreate-app/CoCreateJS/commit/888f6d4f23df77a6011a9f3160bf2a67d5109835))
+* removed data- from attributes ([baf3790](https://github.com/CoCreate-app/CoCreateJS/commit/baf37903cdb7ed476e9389b251a0dbaa513b1bb8))
+
 ## [1.9.25](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.24...v1.9.25) (2021-12-31)
 
 
