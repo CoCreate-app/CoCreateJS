@@ -53,7 +53,7 @@
     			document_id="" 
     			name="domains[0]"
     			data-type="array"
-    			data-key="renderKey.domain">
+    			render-key="renderKey.domain">
     		
     		<!-- Connected Org  -->
     		<input type="hidden" id="connected_orgs"
@@ -69,10 +69,10 @@
     			
     		<!-- Send Email -->
     		<div template_id="renderKey">
-    			<input type="hidden" placeholder="to email" data-sendgrid="sendEmail.to" get-value="user-email">
-    		    <input type="hidden" placeholder="from email" data-sendgrid="sendEmail.from" value="testing@cocreate.app">
-    		    <input type="hidden" placeholder="subject" data-sendgrid="sendEmail.subject" value="Welcome, {{data.name}} — Please confirm your email">
-    		    <textarea placeholder="html" data-sendgrid="sendEmail.html" hidden collection="email-templates" document_id="60bfdaa304ee68b159b63532" name="src"></textarea>
+    			<input type="hidden" placeholder="to email" sendgrid="sendEmail.to" get-value="user-email">
+    		    <input type="hidden" placeholder="from email" sendgrid="sendEmail.from" value="testing@cocreate.app">
+    		    <input type="hidden" placeholder="subject" sendgrid="sendEmail.subject" value="Welcome, {{data.name}} — Please confirm your email">
+    		    <textarea placeholder="html" sendgrid="sendEmail.html" hidden collection="email-templates" document_id="60bfdaa304ee68b159b63532" name="src"></textarea>
     
     			<div class="display:flex">
     				<button type="button" class="outline white-blue margin-right:15px" show='#step4,#ava4' hide='#step5,#ava5'>Previous</button>
