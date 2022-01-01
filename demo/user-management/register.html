@@ -69,7 +69,7 @@
     			
     		<!-- Send Email -->
     		<div template_id="renderKey">
-    			<input type="hidden" placeholder="to email" sendgrid="sendEmail.to" get-value="user-email">
+    			<input type="hidden" placeholder="to email" sendgrid="sendEmail.to" get-value="#user-email">
     		    <input type="hidden" placeholder="from email" sendgrid="sendEmail.from" value="testing@cocreate.app">
     		    <input type="hidden" placeholder="subject" sendgrid="sendEmail.subject" value="Welcome, {{data.name}} — Please confirm your email">
     		    <textarea placeholder="html" sendgrid="sendEmail.html" hidden collection="email-templates" document_id="60bfdaa304ee68b159b63532" name="src"></textarea>
