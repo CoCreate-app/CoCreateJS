@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.27...v1.10.0) (2022-01-02)
+
+
+### Features
+
+* sperated coreatellogic in to 3 components. link, pass and render-json. removed cocreate/clone and cocreate/render-key ([fc50463](https://github.com/CoCreate-app/CoCreateJS/commit/fc504633be86069007be7174eddd34c352aa6ddf))
+
 ## [1.9.27](https://github.com/CoCreate-app/CoCreateJS/compare/v1.9.26...v1.9.27) (2022-01-01)
 
 
