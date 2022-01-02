@@ -43,10 +43,6 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-cli.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-clone',
-        'repo': 'github.com/CoCreate-app/CoCreate-clone.git'
-    },
-    {
         'path': '../CoCreate-components/CoCreate-conditional-logic',
         'repo': 'github.com/CoCreate-app/CoCreate-conditional-logic.git'
     },
@@ -111,8 +107,8 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-local-storage.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-logic',
-        'repo': 'github.com/CoCreate-app/CoCreate-logic.git'
+        'path': '../CoCreate-components/CoCreate-link',
+        'repo': 'github.com/CoCreate-app/CoCreate-link.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-message-client',
@@ -139,6 +135,10 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-parallax.git'
     },
     {
+        'path': '../CoCreate-components/CoCreate-pass',
+        'repo': 'github.com/CoCreate-app/CoCreate-pass.git'
+    },
+    {
         'path': '../CoCreate-components/CoCreate-progress',
         'repo': 'github.com/CoCreate-app/CoCreate-progress.git'
     },
@@ -155,8 +155,8 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-render.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-render-key',
-        'repo': 'github.com/CoCreate-app/CoCreate-render-key.git'
+        'path': '../CoCreate-components/CoCreate-render-json',
+        'repo': 'github.com/CoCreate-app/CoCreate-render-json.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-resize',
