@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.10.1...v1.10.2) (2022-01-09)
+
+
+### Bug Fixes
+
+* add @cocreate/remove ([3834aff](https://github.com/CoCreate-app/CoCreateJS/commit/3834affe8529ac11cbd155dcc618785bbb91755d))
+
 ## [1.10.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.10.0...v1.10.1) (2022-01-09)
 
 
