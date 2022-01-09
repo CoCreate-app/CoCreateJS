@@ -1,5 +1,13 @@
 import observer from '@cocreate/observer';
 
+export function addComponent(key, component) {
+    this[key] = component;
+}
+
+export function removeComponent(key) {
+    if (this[key]) {}
+}
+
 function listen(callback, selector) {
 
     function observerCallback({ target }) {
@@ -14,7 +22,7 @@ function listen(callback, selector) {
     observer.init({
         name: 'lazyloadObserver',
         observe: ['childList'],
-           target: selector,
+        target: selector,
         callback: observerCallback
     })
 
@@ -40,5 +48,5 @@ export async function dependency(name, promise) {
     let module = await promise;
     Object.assign(window.CoCreate, {
         [name]: module.default
-    })
+    });
 }

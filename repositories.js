@@ -151,6 +151,10 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-random-color.git'
     },
     {
+        'path': '../CoCreate-components/CoCreate-remove',
+        'repo': 'github.com/CoCreate-app/CoCreate-remove.git'
+    },
+    {
         'path': '../CoCreate-components/CoCreate-render',
         'repo': 'github.com/CoCreate-app/CoCreate-render.git'
     },
