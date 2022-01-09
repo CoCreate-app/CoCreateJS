@@ -115,6 +115,7 @@
     "@cocreate/progress": "latest",
     "@cocreate/progress-bar": "latest",
     "@cocreate/random-color": "latest",
+    "@cocreate/remove": "latest",
     "@cocreate/render": "latest",
     "@cocreate/render-json": "latest",
     "@cocreate/resize": "latest",
