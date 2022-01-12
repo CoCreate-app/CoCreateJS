@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>CoCreateJS Documentation</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
-        <meta name="description" content="Utility first css framework, design faster and improve on your css by using native inline styles as classes. No learning curve, use what you already know" />
-        <meta name="keywords" content="helper classes, utility classes, css framework, css library, inline style classes" />
-        <meta name="robots" content="index,follow" />
-       	<meta property="og:image" content="https://cdn.cocreate.app/docs/action.png">
 
-        <!-- CoCreate CSS -->
-        <link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css" type="text/css"/>
-        <link rel="stylesheet" href="https://ws.cocreate.app/docs/index.css" data-collection="files" data-document_id="60888216117c640e7596303f" name="src" type="text/css" data-save="true"/>
-    </head>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CoCreateJS Documentation</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
+	<meta name="description"
+				content="Utility first css framework, design faster and improve on your css by using native inline styles as classes. No learning curve, use what you already know." />
+	<meta name="keywords" content="helper classes, utility classes, css framework, css library, inline style classes" />
+	<meta name="robots" content="index,follow" />
+	<meta property="og:image" content="https://cdn.cocreate.app/docs/action.png">
 
-	<body>
-		<nav class="nav display:flex align-items:center background:whitesmoke padding-top:10px padding-bottom:10px" data-main_content_id="content" data-scroll="sticky-nav,hide-nav" data-scroll_up="10" data-scroll_down="10" data-collection="components" data-document_id="60395ef42b3ac232657040fd" name="html">
-		</nav>
-		<sidenav id="menuL" class="cocreate-sidenav background:whitesmoke" data-main_content="content" sidenav-default_desktop="expanded" sidenav-default_tablet="offcanvas" sidenav-ontoggle_desktop="offcanvas" sidenav-ontoggle_tablet="expanded">
-			<menu data-collection="components" data-document_id="603717b07de7fb350ae9fec8" name="html"></menu>
-			<div class="resizeHandler"></div>
-	    </sidenav>
-	    
-		<main class="padding-top:15px padding:15px@lg@xl line-height:1.5" data-main_content_id="content">
-			<section class="padding:10px">
-                <div id="introduction" class="margin-top:10px" data-scroll data-scroll_intersect="color:dodgerblue" data-scroll_target="">
-                    <span class="display:flex align-items:center width:fit-content" data-hover="display:block!important" data-hover_target='[href="#introduction"]'>
-                        <h2 class="padding:5px_0px">Introduction</h2>
-                        <a class="margin-left:10px display:none" href="#introduction"><i class="fas fa-link"></i></a>
-                    </span>
-                </div>
-				<h3 class="padding-top:10px" id="cocreatejs">CoCreateJS</h3>
-				<p> A dependancy free, vanilla javascript Realtime CRUD and Collaboration API. Easily integrates in any HTML template using HTML5 data-attributtes. Converts a regular html website into a dynamic Realtime application. If you know basic html you can easily implement and use the CoCreateJS library/framework. If you have javascript knowledege, CoCreateJS is highly extendable Object oriented collaboration framework. A CoCreate api key is required to open a real time socket channels.</p>
-				
-				<h3 class="padding-top:10px" id="cocreatecss">CoCreateCSS</h3>
-				<p>A dependancy free, CSS and vanilla javascript library. Containing a set of easy to use natraul language helper classes, and a wide range of components to assist in developing modern UI/UX. We are excited to see what you build.</p>
-				
-				<h3 class="padding-top:10px">Micro Service Archeticture</h3>
-				<p>CoCreateJS 90kb gizipped and CoCreateCSS 15kb gzipped were compiled from a large list of opensource projects. You can include and compile only the components you need, create custom components and contribute to a long list of existing componenets located on github</p>
-			</section>
-		
-			<section class="padding:10px" id="getting_started">
-				 <div id="introduction" class="margin-top:50px" data-scroll data-scroll_intersect="color:dodgerblue" data-scroll_target="">
-                    <span class="display:flex align-items:center width:fit-content" data-hover="display:block!important" data-hover_target='[href="#getting-started"]'>
-                        <h2 class="padding:5px_0px">Getting Started</h2>
-                        <a class="margin-left:10px display:none" href="#getting-started"><i class="fas fa-link"></i></a>
-                    </span>
-                </div>
+	<!-- CoCreate CSS -->
+	<link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css" type="text/css" />
+	<link rel="stylesheet" href="https://ws.cocreate.app/docs/index.css" data-collection="files"
+				data-document_id="60888216117c640e7596303f" name="src" type="text/css" data-save="true" />
+</head>
 
-				<p>Go to <a href="https://CoCreate.app/register">CoCreate.app/register</a>  and retrieve your script which will include the necessary api and security key. And paste it at the end before the ending body tag of any page where you would like to fetch and save data in real time.</p>
-	            <pre><code class="language-html">
+<body>
+	<nav class="nav display:flex align-items:center background:whitesmoke padding-top:10px padding-bottom:10px"
+			 data-main_content_id="content" data-scroll="sticky-nav,hide-nav" data-scroll_up="10" data-scroll_down="10"
+			 data-collection="components" data-document_id="60395ef42b3ac232657040fd" name="html">
+	</nav>
+	<sidenav id="menuL" class="cocreate-sidenav background:whitesmoke" data-main_content="content"
+					 sidenav-default_desktop="expanded" sidenav-default_tablet="offcanvas" sidenav-ontoggle_desktop="offcanvas"
+					 sidenav-ontoggle_tablet="expanded">
+		<menu data-collection="components" data-document_id="603717b07de7fb350ae9fec8" name="html"></menu>
+		<div class="resizeHandler"></div>
+	</sidenav>
+
+	<main class="padding-top:15px padding:15px@lg@xl line-height:1.5" data-main_content_id="content">
+		<section class="padding:10px">
+			<div id="introduction" class="margin-top:10px" data-scroll data-scroll_intersect="color:dodgerblue"
+					 data-scroll_target="">
+				<span class="display:flex align-items:center width:fit-content" data-hover="display:block!important"
+							data-hover_target='[href="#introduction"]'>
+					<h2 class="padding:5px_0px">Introduction</h2>
+					<a class="margin-left:10px display:none" href="#introduction"><i class="fas fa-link"></i></a>
+				</span>
+			</div>
+			<h3 class="padding-top:10px" id="cocreatejs">CoCreateJS</h3>
+			<p> A dependancy-free, vanilla JavaScript Realtime CRUD and Collaboration API. Easily integrates in any HTML
+				template using HTML5 data-attributtes. Converts a regular HTML website into a dynamic Real-Time application. If
+				you know basic HTML you can easily implement and use the CoCreateJS library/framework. If you have JavaScript
+				knowledge, CoCreateJS is a highly extendable Object-oriented collaboration framework. A CoCreate API key is
+				required to open real-time socket channels.</p>
+
+			<h3 class="padding-top:10px" id="cocreatecss">CoCreateCSS</h3>
+			<p>A dependancy free, CSS and vanilla JavaScript library. Contains a set of easy to use natural language helper
+				classes, and a wide range of components to assist in developing modern UI/UX. We are excited to see what you
+				build.</p>
+
+			<h3 class="padding-top:10px">Micro Service Archeticture</h3>
+			<p>CoCreateJS (90kb gizipped) and CoCreateCSS (15kb gzipped) were compiled from a large list of open source
+				projects. You can include and compile only the components you need, create custom components, and contribute to
+				a long list of existing componenets located on GitHub.</p>
+		</section>
+
+		<section class="padding:10px" id="getting_started">
+			<div id="introduction" class="margin-top:50px" data-scroll data-scroll_intersect="color:dodgerblue"
+					 data-scroll_target="">
+				<span class="display:flex align-items:center width:fit-content" data-hover="display:block!important"
+							data-hover_target='[href="#getting-started"]'>
+					<h2 class="padding:5px_0px">Getting Started</h2>
+					<a class="margin-left:10px display:none" href="#getting-started"><i class="fas fa-link"></i></a>
+				</span>
+			</div>
+
+			<p>Go to <a href="https://CoCreate.app/register">CoCreate.app/register</a> and retrieve your script which will
+				include the necessary API and security key. Then, paste these at the end before the ending body tag of any page
+				where
+				you would like to fetch and save data in real time.</p>
+			<pre><code class="language-html">
 &lt;html&gt;
   &lt;head&gt;
     &lt;link src="http://cdn.cocreate.app/CoCreate.min.css"&gt;&lt;/link&gt;
@@ -70,21 +92,24 @@
 
   &lt;/body&gt;
 &lt;/html&gt;
-	        	</code></pre>
-	        </section>
-			<button href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/index.html?message=docs%3A%20describe%20your%20change..." target="_blank" class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue grow-hover border-radius:50%">
-		        <i class="fas fa-pencil-alt"></i>
-	        </button>
-		</main>
+			</code></pre>
+		</section>
+		<button href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/index.html?message=docs%3A%20describe%20your%20change..."
+						target="_blank"
+						class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue grow-hover border-radius:50%">
+			<i class="fas fa-pencil-alt"></i>
+		</button>
+	</main>
 
-		<script>
-			var config = {
-				apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
-				organization_Id: '5de0387b12e200ea63204d6c',
-                host: 'wss://ws.cocreate.app'
-			}
-		</script>
-		<!--CoCreateJS-->
-        <script src="https://server.cocreate.app/CoCreateJS/dist/CoCreate.js" ></script>
-    </body>
+	<script>
+		var config = {
+			apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+			organization_Id: '5de0387b12e200ea63204d6c',
+			host: 'wss://ws.cocreate.app'
+		}
+	</script>
+	<!--CoCreateJS-->
+	<script src="https://server.cocreate.app/CoCreateJS/dist/CoCreate.js"></script>
+</body>
+
 </html>
