@@ -1,6 +1,6 @@
 # CoCreateJS
 
-A simple JS component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API. Take it for a spin in our [playground!](https://cocreate.app/docs/CoCreateJS)
+A low code headless CMS and Javascript framework for building real time and collaborative, SaaS Apps, No Code platforms, Website Builders, eCommerce, Blogs, websites, landing pages, CRM’s, Admins and anything else you dream up. Build powerful applications using HTML5 attributes or Javascript api. Take a look at our Admin app. Its an open source CRM, CMS, Website builder powered by CoCreateJS https://github.com/CoCreate-app/CoCreate-admin
 
 ![minified](https://img.badgesize.io/https://cdn.cocreate.app/latest/CoCreate.min.js?style=flat-square&label=minified&color=orange)
 ![gzip](https://img.badgesize.io/https://cdn.cocreate.app/latest/CoCreate.min.js?compression=gzip&style=flat-square&label=gzip&color=yellow)
@@ -9,7 +9,7 @@ A simple JS component in vanilla javascript. Easily configured using HTML5 data-
 ![License](https://img.shields.io/github/license/CoCreate-app/CoCreateJS?style=flat-square)
 ![Hiring](https://img.shields.io/static/v1?style=flat-square&label=&message=Hiring&color=blueviolet)
 
-![CoCreateJS](https://cdn.cocreate.app/docs/CoCreateJS.gif)
+![CoCreateJS](https://github.com/CoCreate-app/CoCreateJS/blob/master/CoCreateJS.png)
 
 ## [Docs & Demo](https://cocreate.app/docs/CoCreateJS)
 
@@ -78,7 +78,8 @@ We want this library to be community-driven, and CoCreate led. We need your help
 
 We appreciate your continued support, thank you!
 
+
+<a name="license"></a>
 # License
 
 [The MIT License (MIT)](https://github.com/CoCreate-app/CoCreateJS/blob/master/LICENSE)
-

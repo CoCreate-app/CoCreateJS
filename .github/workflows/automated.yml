@@ -52,8 +52,8 @@ jobs:
           .npmrc
 
           yarn install --no-lockfile
-      - name: yarn add
-        run: yarn add webpack-cli
+      # - name: yarn add
+      #   run: yarn add webpack-cli
       - name: yarn build
         run: yarn build
       - name: upload bundle as version

@@ -10,42 +10,39 @@
         <meta name="keywords" content="helper classes, utility classes, css framework, css library, inline style classes" />
         <meta name="robots" content="index,follow" />
        	<meta property="og:image" content="https://cdn.cocreate.app/docs/boilerplate.png">
-        
-        <!-- CoCreate CSS -->
-        <link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css" type="text/css" />
-        <link rel="stylesheet" href="/docs/index.css" data-collection="files" data-document_id="60888216117c640e7596303f" name="src" type="text/css" data-save="true"/>
+        <link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" save="true"/>
     </head>
 
     <body>
-		<nav class="nav display:flex align-items:center background:whitesmoke padding-top:10px padding-bottom:10px" data-main_content_id="content" data-scroll="sticky-nav,hide-nav" data-scroll_up="10" data-scroll_down="10" data-collection="components" data-document_id="60395ef42b3ac232657040fd" name="html">
+		<nav class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px" content_id="content" scroll="sticky-nav,hide-nav" scroll-up="10" scroll-down="10" collection="files" document_id="60395ef42b3ac232657040fd" name="src">
 		</nav>
-		<sidenav id="menuL" class="cocreate-sidenav background:whitesmoke" data-main_content="content" sidenav-default_desktop="expanded" sidenav-default_tablet="offcanvas" sidenav-ontoggle_desktop="offcanvas" sidenav-ontoggle_tablet="expanded">
-			<menu data-collection="components" data-document_id="603717b07de7fb350ae9fec8" name="html"></menu>
-			<div class="resizeHandler"></div>
-	    </sidenav>
-        <main class="padding-top:15px padding:15px@lg@xl" data-main_content_id="content" id="cocreate-xxxxx">
+		<sidenav id="menuL" class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl " resizable resize-target="[content_id='content']" resize-property="margin-left" resize-value="width">
+			<menu collection="files" document_id="603717b07de7fb350ae9fec8" name="src"></menu>
+			<div resize="right"></div>
+		</sidenav>
+        <main class="padding-top:15px padding:15px@lg@xl" content_id="content" id="cocreate-xxxxx">
             <div class="display:flex flex-wrap:wrap justify-content:space-between position:relative margin:10px">
                 <div class="display:flex align-items:center">
                     <h2>CoCreateJS</h2>
                 </div>
                 <div class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px background:white">
-                    <div class="display:flex align-items:center transition:0.3s padding-left:10px" data-share_network="true" data-share_text="Enter decription here" data-share_title="testing im a title" data-share_height="600" data-share_width="700" data-share_media="https://cdn.cocreate.app/docs/boilerplate.png" data-hover="display:block!important" data-hover_target=".social-networks">
+                    <div class="display:flex align-items:center transition:0.3s padding-left:10px" share-network="true" share-text="Enter decription here" share-title="testing im a title" share-height="600" share-width="700" share-media="https://cdn.cocreate.app/docs/boilerplate.png" hover="display:block!important" hover-target=".social-networks">
                         <div class="display:none social-networks">
-                            <a class="margin-right:15px" data-share_network='twitter' title="Share on twitter"><i class="fab fa-twitter"></i></a>
-                            <a class="margin-right:15px" data-share_network='facebook' title="Share on Facebook"><i class="fab fa-facebook"></i></a>
-                            <a class="margin-right:15px" data-share_network='instagram' title="Share on instagram"><i class="fab fa-instagram"></i></a>
+                            <a class="margin-right:15px" share-network='twitter' title="Share on twitter"><i class="fab fa-twitter"></i></a>
+                            <a class="margin-right:15px" share-network='facebook' title="Share on Facebook"><i class="fab fa-facebook"></i></a>
+                            <a class="margin-right:15px" share-network='instagram' title="Share on instagram"><i class="fab fa-instagram"></i></a>
                         </div>
-                        <a class="margin-right:15px" data-share_network='share' title="Share on share"><i class="fas fa-share-alt"></i></a>
+                        <a class="margin-right:15px" share-network='share' title="Share on share"><i class="fas fa-share-alt"></i></a>
                     </div>
                     <a href="https://github.com/CoCreate-app/CoCreate-xxxxx" target="_blank" class="margin-right:15px"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <p class="max-width:500px margin-bottom:20px">Learn how to convert your html into a dynamic realtime application.</p>
-			<div data-collection="" data-document_id="" name="" id="crud_objects" class="padding:35px_0px">
+			<div collection="" document_id="" name="" id="crud_objects" class="padding:35px_0px">
 				<h1>CRUD Objects</h1>
 				<p class="max-width:500px margin-bottom:20px">Simple objects you can use to create custom components.</p>
 
-		        <a href="#create-crud" id="create-crud" data-show=".create,.crudplusicon" data-hide=".create,.crud">
+		        <a href="#create-crud" id="create-crud" show=".create,.crudplusicon" hide=".create,.crud">
 		            <h3 class="padding:15px_0px border-top border-bottom:1px_solid_lightgrey">
 		            	<span class="create crudplusicon hidden"><i class="fas fa-plus"></i></span>
 		            	<span class="create crud"><i class="fas fa-minus"></i></span> 
@@ -75,10 +72,6 @@
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				        		<h4><span>data</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>data to save</p>
-							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>element</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>Save data onChange/submitBtn. If attribute is empty or not used Default's to true.</p>
 							</li>
 							<li class="padding:15px_0px">
 				        		<h4><span>metaData</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge success">array</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
@@ -110,7 +103,7 @@
 					</div>
 				</div>	
 
-		        <a href="#read-crud" id="read-crud" data-show=".read,.crudplusicon" data-hide=".read,.crud">
+		        <a href="#read-crud" id="read-crud" show=".read,.crudplusicon" hide=".read,.crud">
 		            <h3 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 		            	<span class="read crudplusicon"><i class="fas fa-plus"></i></span>
 		            	<span class="read crud hidden"><i class="fas fa-minus"></i></span> 
@@ -155,7 +148,7 @@
 				</div>
 
 			    
-		        <a href="#update-crud" id="update-crud" data-show=".update,.crudplusicon" data-hide=".update,.crud">
+		        <a href="#update-crud" id="update-crud" show=".update,.crudplusicon" hide=".update,.crud">
 		            <h3 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 		            	<span class="update crudplusicon"><i class="fas fa-plus"></i></span>
 		            	<span class="update crud hidden"><i class="fas fa-minus"></i></span> 
@@ -191,10 +184,6 @@
 			        			<p>data to save</p>
 							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>element</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>Save data onChange/submitBtn. If attribute is empty or not used Default's to true.</p>
-							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				        		<h4><span>metaData</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge success">array</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>Additonal data in the form of a string , array or object </p>
 							</li>
@@ -227,7 +216,7 @@
 				</div>
 			    
 			    
-		        <a href="#delete-crud" id="delete-crud" data-show=".delete,.crudplusicon" data-hide=".delete,.crud">
+		        <a href="#delete-crud" id="delete-crud" show=".delete,.crudplusicon" hide=".delete,.crud">
 		            <h3 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 		            	<span class="delete crudplusicon"><i class="fas fa-plus"></i></span>
 		            	<span class="delete crud hidden"><i class="fas fa-minus"></i></span> 
@@ -262,10 +251,6 @@
 				        		<h4><span>data</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>data to save</p>
 							</li>
-							<li class="padding:15px_0px">
-				        		<h4><span>element</span> <span class="cocreate-badge success border-bottom:1px_solid_lightgrey">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>Save data onChange/submitBtn. If attribute is empty or not used Default's to true.</p>
-							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				        		<h4><span>metaData</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge success">array</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>Additonal data in the form of a string , array or object </p>
@@ -294,7 +279,7 @@
 				</div>
 				
 			    
-		        <a href="#readlist" id="readlist" data-show=".readlist,.crudplusicon" data-hide=".readlist,.crud">
+		        <a href="#readlist" id="readlist" show=".readlist,.crudplusicon" hide=".readlist,.crud">
 		            <h3 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 		            	<span class="readlist crudplusicon"><i class="fas fa-plus"></i></span>
 		            	<span class="readlist crud hidden"><i class="fas fa-minus"></i></span> 
@@ -322,7 +307,7 @@
 			        			<p>Additonal data in the form of a string , array or object </p>
 							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-								<a href="#readlist-operator" id="readlist-operator" data-show=".readlist-operator,.crudplusicon" data-hide=".readlist-operator,.operator">
+								<a href="#readlist-operator" id="readlist-operator" show=".readlist-operator,.crudplusicon" hide=".readlist-operator,.operator">
 					        		<h4>
 					        			<span class="readlist-operator crudplusicon"><i class="fas fa-plus"></i></span>
 			            				<span class="readlist-operator crud hidden"><i class="fas fa-minus"></i></span>
@@ -398,7 +383,6 @@
   <code class="language-js"> 
   crud.readDcoumentList {
     collection: "modules",
-	event: eventName,
     metadata: "",
     
     operator: {
@@ -442,11 +426,10 @@ crud.readDocumentList({
   "securityKey": "f26baf68-e3a9-45fc-effe-502e47116265",
   "organization_id": "5de0387b12e200ea63204d6c",
   "collection": "module_activity",
-  "element": "filter_test",
   "metadata": "",
   "operator": {
     "fetch": {
-      "name": "data-module_id",
+      "name": "document_id",
       "value": "5deb167e189f212c8ebd0137"
     },
     "filters": [
@@ -477,12 +460,12 @@ crud.readDocumentList({
 				</div>
 				
 			</div>
-			<div data-collection="" data-document_id="" name="" id="crdt-objects" class="padding:35px_0px">
+			<div collection="" document_id="" name="" id="crdt-objects" class="padding:35px_0px">
 				<h1>CRDT Objects</h1>
 				<p class="max-width:500px margin-bottom:20px">Conflict resolving objects to create collabrative apps.</p>
 
 			    
-		        <a href="#crdt-init" id="crdt-init" data-show=".init-crdt,.crdtplusicon" data-hide=".init-crdt,.crdt">
+		        <a href="#crdt-init" id="crdt-init" show=".init-crdt,.crdtplusicon" hide=".init-crdt,.crdt">
 		            <h3 class="padding:15px_0px border-top border-bottom:1px_solid_lightgrey">
 		            	<span class="init-crdt crdtplusicon hidden"><i class="fas fa-plus"></i></span>
 		            	<span class="init-crdt crdt"><i class="fas fa-minus"></i></span> 
@@ -513,10 +496,6 @@ crud.readDocumentList({
 				        		<h4><span>data</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>data to save</p>
 							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>element</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>Save data onChange/submitBtn. If attribute is empty or not used Default's to true.</p>
-							</li>
 							<li class="padding:15px_0px">
 				        		<h4><span>metaData</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge success">array</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>Additonal data in the form of a string , array or object </p>
@@ -531,7 +510,6 @@ crud.readDocumentList({
     collection: "module",
     document_id: "",
     name: "",
-    element: dom_object,
     metadata: "xxxx"
   })
   </code>
@@ -539,7 +517,7 @@ crud.readDocumentList({
 					</div>
 				</div>	
 
-		        <a href="#crdt-get" id="crdt-get" data-show=".get-crdt,.crdtplusicon" data-hide=".get-crdt,.crdt">
+		        <a href="#crdt-get" id="crdt-get" show=".get-crdt,.crdtplusicon" hide=".get-crdt,.crdt">
 		            <h3 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 		            	<span class="get-crdt crdtplusicon"><i class="fas fa-plus"></i></span>
 		            	<span class="get-crdt crdt hidden"><i class="fas fa-minus"></i></span> 
@@ -581,15 +559,15 @@ crud.readDocumentList({
 					</div>
 				</div>
 		        
-		        <a href="#crdt-insert" id="crdt-insert" data-show=".insert-crdt,.crdtplusicon" data-hide=".insert-crdt,.crdt">
+		        <a href="#crdt-update" id="crdt-update" show=".update-crdt,.crdtplusicon" hide=".update-crdt,.crdt">
 		            <h3 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-		            	<span class="insert-crdt crdtplusicon"><i class="fas fa-plus"></i></span>
-		            	<span class="insert-crdt crdt hidden"><i class="fas fa-minus"></i></span> 
-		            	<span>Insert Data CRDT Parameters</span>
+		            	<span class="update-crdt crdtplusicon"><i class="fas fa-plus"></i></span>
+		            	<span class="update-crdt crdt hidden"><i class="fas fa-minus"></i></span> 
+		            	<span>Update Data CRDT Parameters</span>
 		            </h3>
 		        </a>
 			    
-				<div class="display:flex flex-wrap:wrap border-bottom:1px_solid_lightgrey insert-crdt crdt hidden">
+				<div class="display:flex flex-wrap:wrap border-bottom:1px_solid_lightgrey update-crdt crdt hidden">
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 			            <ul class="list-style-type:none padding-right:15px">
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -601,7 +579,19 @@ crud.readDocumentList({
 			        			<p>document_id to insert-crdt from</p>
 							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>data</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
+				        		<h4><span>name</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
+			        			<p>data to save</p>
+							</li>
+							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+				        		<h4><span>value</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
+			        			<p>data to save</p>
+							</li>
+							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+				        		<h4><span>start</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
+			        			<p>data to save</p>
+							</li>
+							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+				        		<h4><span>crud</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>data to save</p>
 							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -617,84 +607,19 @@ crud.readDocumentList({
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 		            	<pre>
   <code class="language-js">
-  crdt.insertText({
+  crdt.updateText({
 	collection: 'module_activities',
 	document_id: '5e4802ce3ed96d38e71fc7e5',
 	name: 'name',
 	value: 'T',
-	position:'8
-	attributes: {bold: true}
-  })
-  </code>
-						</pre>
-					</div>
-				</div>
-
-			    
-		        <a href="#crdt-delete" id="crdt-delete" data-show=".delete-crdt,.crdtplusicon" data-hide=".delete-crdt,.crdt">
-		            <h3 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-		            	<span class="delete-crdt crdtplusicon"><i class="fas fa-plus"></i></span>
-		            	<span class="delete-crdt crdt hidden"><i class="fas fa-minus"></i></span> 
-		            	<span>Delete Data CRDT Parameters</span>
-		            </h3>
-		        </a>
-			    
-				<div class="display:flex flex-wrap:wrap border-bottom:1px_solid_lightgrey delete-crdt crdt hidden">
-				    <div class="flex-grow:1 width:300px padding:0px_10px">
-			            <ul class="list-style-type:none">
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>namespace</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>create namespace</p>
-							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>rooms</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>creates room</p>
-							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>broadcast</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>broadcast or only save to db</p>
-							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>collection</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-			        			<p>collection to save to</p>
-							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>document_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-			        			<p>Document _id to save to</p>
-							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>data</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>data to save</p>
-							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>element</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>Save data onChange/submitBtn. If attribute is empty or not used Default's to true.</p>
-							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>metaData</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge success">array</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>Additonal data in the form of a string , array or object </p>
-							</li>
-			            </ul>
-			        </div>
-	
-				    <div class="flex-grow:1 width:300px padding:0px_10px">
-		            	<pre>
-							
-  <code class="language-js">
-  crdt.deleteText({
-  	collection: 'module_activities',
-  	document_id: '5e4802ce3ed96d38e71fc7e5',
-  	name: 'name',
-  	position:8,
-  	length:2,
+	start: 8,
   })
   </code>
 						</pre>
 					</div>
 				</div>
 			    
-			    
-		        <a href="#crdt-replace" id="crdt-replace" data-show=".replace-crdt,.crdtplusicon" data-hide=".replace-crdt,.crdt">
+		        <a href="#crdt-replace" id="crdt-replace" show=".replace-crdt,.crdtplusicon" hide=".replace-crdt,.crdt">
 		            <h3 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 		            	<span class="replace-crdt crdtplusicon"><i class="fas fa-plus"></i></span>
 		            	<span class="replace-crdt crdt hidden"><i class="fas fa-minus"></i></span> 
@@ -706,14 +631,6 @@ crud.readDocumentList({
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 			            <ul class="list-style-type:none padding-right:15px">
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>namespace</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>create namespace</p>
-							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>rooms</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>creates room</p>
-							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				        		<h4><span>broadcast</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>broadcast or only save to db</p>
 							</li>
@@ -726,8 +643,12 @@ crud.readDocumentList({
 			        			<p>collection to save to</p>
 							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>data</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>data to save</p>
+				        		<h4><span>name</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
+			        			<p>name to save</p>
+							</li>
+							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+				        		<h4><span>value</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
+			        			<p>characters to insert</p>
 							</li>
 							<li class="padding:15px_0px">
 				        		<h4><span>element</span> <span class="cocreate-badge success border-bottom:1px_solid_lightgrey">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
@@ -747,8 +668,6 @@ crud.readDocumentList({
     document_id: "",
     name: "",
     value: "",
-    delete-crdt_crud: true | false,
-    element: dom_object,
     metadata: "xxxx"
   })
   </code>
@@ -758,12 +677,12 @@ crud.readDocumentList({
 				</div>
 				
 			</div>
-			<div data-collection="" data-document_id="" name="" id="cursor_objects" class="padding:35px_0px">
+			<div collection="" document_id="" name="" id="cursor_objects" class="padding:35px_0px">
 				<h1>Cursor Objects</h1>
 				<p class="max-width:500px margin-bottom:20px">Send and receive cursor positions</p>
 
 			    
-		        <a href="#send-cursor" id="send-cursor" data-show=".send-cursor,.cursorplusicon" data-hide=".send-cursor,.cursors">
+		        <a href="#send-cursor" id="send-cursor" show=".send-cursor,.cursorplusicon" hide=".send-cursor,.cursors">
 		            <h3 class="padding:15px_0px border-top border-bottom:1px_solid_lightgrey">
 		            	<span class="send-cursor cursorplusicon hidden"><i class="fas fa-plus"></i></span>
 		            	<span class="send-cursor cursors"><i class="fas fa-minus"></i></span>
@@ -804,15 +723,15 @@ crud.readDocumentList({
 	collection:"module_activities",
 	document_id:"5e4802ce3ed96d38e71fc7e5",
 	name:"name",
-	startPosition: 2,
-	endPositon: 2,
+	start: 2,
+	end: 2,
   )}
   </code>
 						</pre>
 					</div>
 				</div>	
 
-		        <a href="#get-cursor" id="get-cursor" data-show=".get-cursor,.cursorplusicon" data-hide=".get-cursor,.cursors">
+		        <a href="#get-cursor" id="get-cursor" show=".get-cursor,.cursorplusicon" hide=".get-cursor,.cursors">
 		            <h3 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 		            	<span class="get-cursor cursorplusicon"><i class="fas fa-plus"></i></span>
 		            	<span class="get-cursor cursors hidden"><i class="fas fa-minus"></i></span> 
@@ -847,12 +766,12 @@ crud.readDocumentList({
 				</div>
 
 			</div>
-	<!--		<div data-collection="" data-document_id="" name="" id="cursor_objects" class="padding:35px_0px">-->
+	<!--		<div collection="" document_id="" name="" id="cursor_objects" class="padding:35px_0px">-->
 	<!--			<h1>Component register</h1>-->
 	<!--			<p class="max-width:500px margin-bottom:20px">Register your components save function to run with form Btn</p>-->
 
 			    
-	<!--	        <a href="#component-registry" id="component-registry" data-show=".component-registry" data-hide=".component-registry">-->
+	<!--	        <a href="#component-registry" id="component-registry" show=".component-registry" hide=".component-registry">-->
 	<!--	            <h3 class="padding:15px_0px border-top border-bottom:1px_solid_lightgrey">-->
 	<!--	            	<span class="component-registry hidden"><i class="fas fa-plus"></i></span>-->
 	<!--	            	<span class="component-registry"><i class="fas fa-minus"></i></span>-->
@@ -902,12 +821,12 @@ crud.readDocumentList({
 	<!--			</div>	-->
 
 	<!--		</div>-->
-			<div data-collection="" data-document_id="" name="" id="websocket_objects" class="padding:35px_0px">
+			<div collection="" document_id="" name="" id="websocket_objects" class="padding:35px_0px">
 				<h1>WebSocket Objects</h1>
 				<p class="max-width:500px margin-bottom:20px">Send and listen to messages</p>
 
 			    
-		        <a href="#websocket-create" id="websocket-create" data-show=".websocket-create,.socketplusicon" data-hide=".websocket-create,.socket">
+		        <a href="#websocket-create" id="websocket-create" show=".websocket-create,.socketplusicon" hide=".websocket-create,.socket">
 		            <h3 class="padding:15px_0px border-top border-bottom:1px_solid_lightgrey">
 		            	<span class="websocket-create socketplusicon hidden"><i class="fas fa-plus"></i></span>
 		            	<span class="websocket-create socket"><i class="fas fa-minus"></i></span> 
@@ -931,11 +850,11 @@ crud.readDocumentList({
 			        			<p>Save data onChange. If attribute is empty or not used Default's to true.</p>
 							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>startPosition</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+				        		<h4><span>start</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>Save data onChange/submitBtn. If attribute is empty or not used Default's to true.</p>
 							</li>
 							<li class="padding:15px_0px">
-				        		<h4><span>endPositon</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge success">array</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
+				        		<h4><span>end</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge success">array</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>Additonal data in the form of a string , array or object </p>
 							</li>
 			            </ul>
@@ -950,7 +869,7 @@ crud.readDocumentList({
     broadcast: true/false,
     broadcast_sender: true/false
     
-    rooms: [r1, r2],
+    <!--rooms: [r1, r2],-->
     emit: {
       message': 'function name to trigger',
       data': 'let's play a game ....'
@@ -960,7 +879,7 @@ crud.readDocumentList({
 						</pre>
 					</div>
 				</div>	
-		        <a href="#websocket-send" id="websocket-send" data-show=".websocket-send,.socketplusicon" data-hide=".websocket-send,.socket">
+		        <a href="#websocket-send" id="websocket-send" show=".websocket-send,.socketplusicon" hide=".websocket-send,.socket">
 		            <h3 class="padding:15px_0px border-top border-bottom:1px_solid_lightgrey">
 		            	<span class="websocket-send socketplusicon"><i class="fas fa-plus"></i></span>
 		            	<span class="websocket-send socket hidden"><i class="fas fa-minus"></i></span>
@@ -984,11 +903,11 @@ crud.readDocumentList({
 			        			<p>Save data onChange. If attribute is empty or not used Default's to true.</p>
 							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>startPosition</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+				        		<h4><span>start</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>Save data onChange/submitBtn. If attribute is empty or not used Default's to true.</p>
 							</li>
 							<li class="padding:15px_0px">
-				        		<h4><span>endPositon</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge success">array</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
+				        		<h4><span>end</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge success">array</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>Additonal data in the form of a string , array or object </p>
 							</li>
 			            </ul>
@@ -1014,7 +933,7 @@ crud.readDocumentList({
 					</div>
 				</div>	
 
-		        <a href="#websocket-listen" id="websocket-listen" data-show=".websocket-listen,.socketplusicon" data-hide=".websocket-listen,.socket">
+		        <a href="#websocket-listen" id="websocket-listen" show=".websocket-listen,.socketplusicon" hide=".websocket-listen,.socket">
 		            <h3 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 		            	<span class="websocket-listen socketplusicon"><i class="fas fa-plus"></i></span>
 		            	<span class="websocket-listen socket hidden"><i class="fas fa-minus"></i></span> 
@@ -1055,15 +974,9 @@ crud.readDocumentList({
 		        <i class="fas fa-pencil-alt"></i>
 	        </button>
 		</main>
-		<script>
-			var config = {
-				apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
-				organization_Id: '5de0387b12e200ea63204d6c',
-                host: 'wss://ws.cocreate.app'
-			}
-		</script>
-		<!--CoCreateJS-->
-        <script src="https://server.cocreate.app/CoCreateJS/dist/CoCreate.js" ></script>
+		
+		<script src="/apikey.js"></script>
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
         
          
     </body>

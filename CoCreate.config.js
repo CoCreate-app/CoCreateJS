@@ -1,25 +1,44 @@
 module.exports = {
-    
     "config": {
-        "apiKey": "c2b08663-06e3-440c-ef6f-13978b42883a",
-        "securityKey": "f26baf68-e3a9-45fc-effe-502e47116265",
-        "organization_Id": "5de0387b12e200ea63204d6c",
-        "host": "server.cocreate.app:8088"
+        "apiKey": "2061acef-0451-4545-f754-60cf8160",
+        "organization_Id": "5ff747727005da1c272740ab",
+        "host": "general.cocreate.app"
     },
     "sources": [
+        {
+            "entry": "./docs/apikey.js",
+            "collection": "files",
+            "document_id": "619c47f2a8b6b4001a9e1fae",
+            "key": "src",
+            "data": {
+                "name": "apikey.js",
+                "domains": [
+                    "cocreate.app",
+                    "general.cocreate.app"
+                ],
+                "path": "/docs/apikey.js",
+                "directory": "/docs",
+                "content-type": "application/javascript",
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
+            }
+        },
         {
             "entry": "./docs/index.html",
             "collection": "files",
             "document_id": "60907b078bc9a6631d1d0ac4",
             "key": "src",
             "data": {
-                "name": "CoCreateJS Doc",
+                "name": "index.html",
                 "domains": [
                     "cocreate.app",
-                    "server.cocreate.app",
-                    "ws.cocreate.app"
+                    "general.cocreate.app"
                 ],
-                "path": "/docs"
+                "path": "/docs/index.html",
+                "directory": "/docs",
+                "content-type": "text/html",
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
             }
         },
         {
@@ -28,13 +47,52 @@ module.exports = {
             "document_id": "60907f898bc9a6631d1d0ad8",
             "key": "src",
             "data": {
-                "name": "CoCreateJS Elements Doc",
+                "name": "elements.html",
                 "domains": [
                     "cocreate.app",
-                    "server.cocreate.app",
-                    "ws.cocreate.app"
+                    "general.cocreate.app"
                 ],
-                "path": "/docs/elements"
+                "path": "/docs/elements.html",
+                "directory": "/docs",
+                "content-type": "text/html",
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
+            }
+        },
+        {
+            "entry": "./docs/logic.html",
+            "collection": "files",
+            "document_id": "61a2ff48a8b6b4001a9fce9e",
+            "key": "src",
+            "data": {
+                "name": "logic.html",
+                "domains": [
+                    "cocreate.app",
+                    "general.cocreate.app"
+                ],
+                "path": "/docs/logic.html",
+                "directory": "/docs",
+                "content-type": "text/html",
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
+            }
+        },
+        {
+            "entry": "./docs/user-management.html",
+            "collection": "files",
+            "document_id": "61bf9089a8b6b4001aaba266",
+            "key": "src",
+            "data": {
+                "name": "user-management.html",
+                "domains": [
+                    "cocreate.app",
+                    "general.cocreate.app"
+                ],
+                "path": "/docs/user-management.html",
+                "directory": "/docs",
+                "content-type": "text/html",
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
             }
         },
         {
@@ -43,31 +101,70 @@ module.exports = {
             "document_id": "60888216117c640e75963040",
             "key": "src",
             "data": {
-                "name": "CoCreateJS Objects Doc",
+                "name": "objects.html",
                 "domains": [
                     "cocreate.app",
-                    "server.cocreate.app",
-                    "ws.cocreate.app"
+                    "general.cocreate.app"
                 ],
-                "path": "/docs/objects"
+                "path": "/docs/objects.html",
+                "directory": "/docs",
+                "content-type": "text/html",
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
+            }
+        },
+        {
+            "entry": "./docs/templating.html",
+            "collection": "files",
+            "document_id": "61a29714a8b6b4001a9fb48a",
+            "key": "src",
+            "data": {
+                "name": "templating.html",
+                "domains": [
+                    "cocreate.app",
+                    "general.cocreate.app"
+                ],
+                "path": "/docs/templating.html",
+                "directory": "/docs",
+                "content-type": "text/html",
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
             }
         },
         {
             "entry": "./docs/components/menu.html",
-            "collection": "components",
+            "collection": "files",
             "document_id": "603717b07de7fb350ae9fec8",
-            "key": "html",
+            "key": "src",
             "data": {
-                "name": "CoCreateJS Doc Menu"
+                "name": "menu.html",
+                "domains": [
+                    "cocreate.app",
+                    "general.cocreate.app"
+                ],
+                "path": "/docs/components/menu.html",
+                "directory": "/docs/components",
+                "content-type": "text/html",
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
             }
         },
         {
             "entry": "./docs/components/navbar.html",
-            "collection": "components",
+            "collection": "files",
             "document_id": "60395ef42b3ac232657040fd",
-            "key": "html",
+            "key": "src",
             "data": {
-                "name": "CoCreateJS Doc Navbar"
+                "name": "navbar.html",
+                "domains": [
+                    "cocreate.app",
+                    "general.cocreate.app"
+                ],
+                "path": "/docs/components/navbar.html",
+                "directory": "/docs/components",
+                "content-type": "text/html",
+                "public": "true",
+                "website_id": "5ffbceb7f11d2d00103c4535"
             }
         }
     ]

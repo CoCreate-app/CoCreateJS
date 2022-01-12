@@ -2,10 +2,17 @@
 <html lang="en">
 
     <body class="padding:5px">
-    
-        <input collection="test" placeholder="Name" name='name' document_id="619af0e4a8b6b4001a9dd231" class="floating-label">
-        <h1 collection="test" name='name' document_id="619af0e4a8b6b4001a9dd231"></h1>
-  
+        <form>
+            <input render-key="renderKey.name">
+            <div template_id="renderKey">
+                <div>This is <b>{{data.name}}</b></div>
+                <p>This {{data.name}}</p>
+                <input value="{{data.name}}">
+            </div>
+        
+            <button actions='renderKey'>Render</button>
+        </form>
+        
         <script>
             var config = {                 
                 apiKey: '8aa85c85-c5e8-43a0-9e01-aa1c16a7',           
@@ -16,4 +23,4 @@
         <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
         
     </body>
-</html>					     					                    					                    
+</html>

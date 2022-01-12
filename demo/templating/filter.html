@@ -2,10 +2,14 @@
 <html lang="en">
 
     <body class="padding:5px">
-    
-        <input collection="test" placeholder="Name" name='name' document_id="619af0e4a8b6b4001a9dd231" class="floating-label">
-        <h1 collection="test" name='name' document_id="619af0e4a8b6b4001a9dd231"></h1>
-  
+        <input template_id="temp1" filter-name="name">
+		<div template_id="temp1" fetch-collection="test">
+			<div class="template card" template_id="temp1">
+				<h4 collection="{{collection}}" document_id="{{data._id}}" name="name"></h4>
+				<h4>{{data.name}}</h4>
+			</div>	
+		</div>
+        
         <script>
             var config = {                 
                 apiKey: '8aa85c85-c5e8-43a0-9e01-aa1c16a7',           
@@ -16,4 +20,4 @@
         <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
         
     </body>
-</html>					     					                    					                    
+</html>

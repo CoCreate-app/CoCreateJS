@@ -1,25 +1,21 @@
 module.exports = [
 
-    // {
-    //     'path': '../CoCreateJS',
-    //     'repo': 'github.com/CoCreate-app/CoCreateJS.git'
-    // },
+    {
+        'path': '../CoCreateJS',
+        'repo': 'github.com/CoCreate-app/CoCreateJS.git'
+    },
     {
         'path': '../CoCreateCSS',
         'repo': 'github.com/CoCreate-app/CoCreateCSS.git'
     },
     {
-        'path': '../CoCreate-adminUI',
-        'repo': 'github.com/CoCreate-app/CoCreate-adminUI.git'
+        'path': '../CoCreate-admin',
+        'repo': 'github.com/CoCreate-app/CoCreate-admin.git'
     },
-    // {
-    //     'path': '../CoCreate-repositories',
-    //     'repo': 'github.com/CoCreate-app/CoCreate-repositories.git'
-    // },
-    // {
-    //     'path': '../CoCreate-website',
-    //     'repo': 'github.com/CoCreate-app/CoCreate-website.git'
-    // },
+    {
+        'path': '../CoCreate-website',
+        'repo': 'github.com/CoCreate-app/CoCreate-website.git'
+    },
     // {
     //     'path': '../CoCreate-website-template',
     //     'repo': 'github.com/CoCreate-app/CoCreate-website-template.git'
@@ -27,8 +23,8 @@ module.exports = [
 
     // Components       
     {
-        'path': '../CoCreate-components/CoCreate-action',
-        'repo': 'github.com/CoCreate-app/CoCreate-action.git'
+        'path': '../CoCreate-components/CoCreate-actions',
+        'repo': 'github.com/CoCreate-app/CoCreate-actions.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-api',
@@ -43,16 +39,12 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-calculation.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-clone',
-        'repo': 'github.com/CoCreate-app/CoCreate-clone.git'
+        'path': '../CoCreate-components/CoCreate-cli',
+        'repo': 'github.com/CoCreate-app/CoCreate-cli.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-conditional-logic',
         'repo': 'github.com/CoCreate-app/CoCreate-conditional-logic.git'
-    },
-    {
-        'path': '../CoCreate-components/CoCreate-contenteditable',
-        'repo': 'github.com/CoCreate-app/CoCreate-contenteditable.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-crdt',
@@ -74,10 +66,13 @@ module.exports = [
         'path': '../CoCreate-components/CoCreate-docs',
         'repo': 'github.com/CoCreate-app/CoCreate-docs.git'
     },
-
     {
-        'path':'../CoCreate-components/CoCreate-domText',
-        'repo' : 'github.com/CoCreate-app/CoCreate-domText.git'
+        'path': '../CoCreate-components/CoCreate-element-config',
+        'repo': 'github.com/CoCreate-app/CoCreate-element-config.git'
+    },
+    {
+        'path': '../CoCreate-components/CoCreate-elements',
+        'repo': 'github.com/CoCreate-app/CoCreate-elements.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-fetch',
@@ -104,24 +99,16 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-hosting.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-htmltags',
-        'repo': 'github.com/CoCreate-app/CoCreate-htmltags.git'
-    },
-    {
         'path': '../CoCreate-components/CoCreate-industry',
         'repo': 'github.com/CoCreate-app/CoCreate-industry.git'
-    },
-    {
-        'path': '../CoCreate-components/CoCreate-input',
-        'repo': 'github.com/CoCreate-app/CoCreate-input.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-local-storage',
         'repo': 'github.com/CoCreate-app/CoCreate-local-storage.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-logic',
-        'repo': 'github.com/CoCreate-app/CoCreate-logic.git'
+        'path': '../CoCreate-components/CoCreate-link',
+        'repo': 'github.com/CoCreate-app/CoCreate-link.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-message-client',
@@ -148,24 +135,32 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-parallax.git'
     },
     {
+        'path': '../CoCreate-components/CoCreate-pass',
+        'repo': 'github.com/CoCreate-app/CoCreate-pass.git'
+    },
+    {
         'path': '../CoCreate-components/CoCreate-progress',
         'repo': 'github.com/CoCreate-app/CoCreate-progress.git'
     },
-    {
-        'path': '../CoCreate-components/CoCreate-quill-adder',
-        'repo': 'github.com/CoCreate-app/CoCreate-quill-adder.git'
-    },
+    // {
+    //     'path': '../CoCreate-components/CoCreate-pwa',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-pwa.git'
+    // },
     {
         'path': '../CoCreate-components/CoCreate-random-color',
         'repo': 'github.com/CoCreate-app/CoCreate-random-color.git'
+    },
+    {
+        'path': '../CoCreate-components/CoCreate-remove',
+        'repo': 'github.com/CoCreate-app/CoCreate-remove.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-render',
         'repo': 'github.com/CoCreate-app/CoCreate-render.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-render-key',
-        'repo': 'github.com/CoCreate-app/CoCreate-render-key.git'
+        'path': '../CoCreate-components/CoCreate-render-json',
+        'repo': 'github.com/CoCreate-app/CoCreate-render-json.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-resize',
@@ -174,6 +169,10 @@ module.exports = [
     {
         'path': '../CoCreate-components/CoCreate-resize-observer',
         'repo': 'github.com/CoCreate-app/CoCreate-resize-observer.git'
+    },
+    {
+        'path': '../CoCreate-components/CoCreate-rich-text',
+        'repo': 'github.com/CoCreate-app/CoCreate-rich-text.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-room',
@@ -196,8 +195,12 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-selected.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-sidenav',
-        'repo': 'github.com/CoCreate-app/CoCreate-sidenav.git'
+        'path': '../CoCreate-components/CoCreate-selection',
+        'repo': 'github.com/CoCreate-app/CoCreate-selection.git'
+    },
+    {
+        'path': '../CoCreate-components/CoCreate-signup-animation',
+        'repo': 'github.com/CoCreate-app/CoCreate-signup-animation.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-socket-client',
@@ -238,6 +241,10 @@ module.exports = [
     {
         'path': '../CoCreate-components/CoCreate-uuid',
         'repo': 'github.com/CoCreate-app/CoCreate-uuid.git'
+    },
+    {
+        'path': '../CoCreate-components/CoCreate-validation',
+        'repo': 'github.com/CoCreate-app/CoCreate-validation.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-vdom',
@@ -383,4 +390,4 @@ module.exports = [
         'path': '../CoCreate-plugins/CoCreate-uppy',
         'repo': 'github.com/CoCreate-app/CoCreate-uppy.git'
     }
-]
+];
