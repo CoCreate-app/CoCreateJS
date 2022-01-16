@@ -293,7 +293,7 @@
 					<h3 id="form" class="padding-top:20px">Form</h3>
 					<p class="padding:10px_0px line-height:1.5">The form tag is used for grouping elements and applying attributes dynamically to it's childeren. Attributtes added to a form tag will only be applied to the child elements if the attribute is not already defined with a value. If realtime="false" is applied, the form will require a button and action to trigger save</p>
 					<div class="">
-						<pre><code class="language-html">&lt;button actions="saveDocument"&gt; &lt;/button&gt;</code></pre>
+						<pre><code class="language-html">&lt;button actions="save"&gt; &lt;/button&gt;</code></pre>
 					</div>
 
 					<!-- SandBox -->
@@ -328,14 +328,14 @@
 					<p class="padding:10px_0px line-height:1.5">The actions attribute is used to trigger one or more actions in the order they were applied. Actions are chainable and require success of the first to trigger the next. Many of the CoCreate's components have actions, you will find the actions defined in the respective components documentation. Here we will be introduing the basics as it relates to form and saving. For more information on the full caabilities of actions vitsit the actions documentation page</p>
 					
 					<div class="">
-						<pre><code class="language-html">&lt;button actions="saveDocument"&gt; &lt;/button&gt;</code></pre>
+						<pre><code class="language-html">&lt;button actions="save"&gt; &lt;/button&gt;</code></pre>
 					</div>
 					<p class="padding:10px_0px line-height:1.5">Applying and clicking this action will save the value of the elements in a form to their respective collection, document_id and name. If a element does not have a document_id defined a document_id will be generated and applied to all other elements with the same collection defined and do not have a document_id. Existing document_id are never overwriten.</p>
 					
 					<div class="">
 						<pre><code class="language-html">&lt;button actions="createDocument"&gt; &lt;/button&gt;</code></pre>
 					</div>
-					<p class="padding:10px_0px line-height:1.5">The createDocument action is simialr to the saveDocument action. The key difference is that a new document_id will generate each time action is clicked. </p>
+					<p class="padding:10px_0px line-height:1.5">The createDocument action is simialr to the save action. The key difference is that a new document_id will generate each time action is clicked. </p>
 					<!-- SandBox -->
 					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="actions-playground">
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
