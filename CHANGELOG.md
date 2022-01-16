@@ -1,3 +1,10 @@
+## [1.10.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.10.3...v1.10.4) (2022-01-16)
+
+
+### Bug Fixes
+
+* updated saveDocument to save ([98d4dcc](https://github.com/CoCreate-app/CoCreateJS/commit/98d4dcc2b14590bd20b6048f90678c8e1776df33))
+
 ## [1.10.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.10.2...v1.10.3) (2022-01-16)
 
 
