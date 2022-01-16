@@ -1,3 +1,15 @@
+## [1.10.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.10.2...v1.10.3) (2022-01-16)
+
+
+### Bug Fixes
+
+* add yarn lockfile to git ignore ([3c3bd33](https://github.com/CoCreate-app/CoCreateJS/commit/3c3bd334a0df59d0efd502acd46b9042ba54e264))
+* add yarn lockfile to git ignore ([25b78d5](https://github.com/CoCreate-app/CoCreateJS/commit/25b78d5a11e0bc17730fe2ba129de01b7995cc59))
+* no-lockfile ([7bef5f1](https://github.com/CoCreate-app/CoCreateJS/commit/7bef5f10965229890c6f909bc7f6e3c761f8819c))
+* update class overflow:overlay to overflow:auto ([cd39497](https://github.com/CoCreate-app/CoCreateJS/commit/cd39497e74db59bf9b7327abe474ee3007232f5b))
+* upgrade all packages ([d103515](https://github.com/CoCreate-app/CoCreateJS/commit/d103515177dd024b3068b31dcbcadacf6794839d))
+* upgrade packages ([c076113](https://github.com/CoCreate-app/CoCreateJS/commit/c076113076c06b7870b2fafd7a6a66b9d94a3f81))
+
 ## [1.10.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.10.1...v1.10.2) (2022-01-09)
 
 
