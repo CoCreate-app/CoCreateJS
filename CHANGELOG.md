@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.10.5...v1.11.0) (2022-01-20)
+
+
+### Features
+
+* add @cocreate/lazy-loader ([b4b6add](https://github.com/CoCreate-app/CoCreateJS/commit/b4b6adda87fe2033a03a2ff4fc0482760c067700))
+
 ## [1.10.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.10.4...v1.10.5) (2022-01-20)
 
 
