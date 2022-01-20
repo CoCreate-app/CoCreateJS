@@ -99,6 +99,7 @@
     "@cocreate/google-maps": "latest",
     "@cocreate/industry": "latest",
     "@cocreate/instagram": "latest",
+    "@cocreate/lazy-loader": "latest",
     "@cocreate/lighthouse": "latest",
     "@cocreate/link": "latest",
     "@cocreate/linkedin": "latest",

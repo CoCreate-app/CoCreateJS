@@ -1,4 +1,4 @@
-import { lazyLoad, dependency } from './lazy-loader';
+import { lazyLoad, dependency } from '@cocreate/lazy-loader';
 // preload - /*..., webpackPreload: true*/ downloads with main chunk but does not execute until main chunk complete. Priority using 1, -1 true=0
 // prefetched - /*..., webpackPrefetch: true*/ downloads after main chunk is complete and in idle mode. If no longer idle will pause then resume when not idle. Priority using 1, -1 true=0
 

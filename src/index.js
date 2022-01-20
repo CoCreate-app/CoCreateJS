@@ -1,5 +1,5 @@
 import './components.js';
-import { addComponent, removeComponent } from './lazy-loader';
+import { addComponent, removeComponent } from '@cocreate/lazy-loader';
 import render from '@cocreate/render';
 
 function init() {
