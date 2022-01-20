@@ -1,3 +1,10 @@
+## [1.10.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.10.4...v1.10.5) (2022-01-20)
+
+
+### Bug Fixes
+
+* updated css lazyload selector ([de24a13](https://github.com/CoCreate-app/CoCreateJS/commit/de24a13f1d9dc2d3c40a62f2c716607eaf43a351))
+
 ## [1.10.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.10.3...v1.10.4) (2022-01-16)
 
 
