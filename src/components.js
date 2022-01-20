@@ -15,7 +15,7 @@ dependency('link', import (/*webpackChunkName: "link-chunk"*/ '@cocreate/link'))
 dependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
 
 // Components
-lazyLoad('css', 'body', ()=> import (/*webpackChunkName: "css-chunk"*/ '@cocreate/cocreatecss'));
+lazyLoad('css', 'link[collection][document_id][name], link[parse="true"]', ()=> import (/*webpackChunkName: "css-chunk"*/ '@cocreate/cocreatecss'));
 lazyLoad('renderJson', '[fetch-for]', ()=> import (/*webpackChunkName: "render-json-chunk"*/ '@cocreate/render-json'));
 lazyLoad('pass', '[pass_id], [pass_to], [pass-value_to], [pass-value_id]', ()=> import (/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'));
 lazyLoad('actions', '[actions]', ()=> import (/*webpackChunkName: "actions-chunk"*/ '@cocreate/actions'));
