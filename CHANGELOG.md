@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.11.0...v1.11.1) (2022-01-22)
+
+
+### Bug Fixes
+
+* added webpackPrefetch: true to components ([26075e4](https://github.com/CoCreate-app/CoCreateJS/commit/26075e4074ee91bea40eab39f2c6671333b93d53))
+
 # [1.11.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.10.5...v1.11.0) (2022-01-20)
 
 
