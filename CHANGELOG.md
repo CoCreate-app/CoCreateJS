@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.11.1...v1.12.0) (2022-01-23)
+
+
+### Features
+
+* fetch-collections attribute to return a list of collections, fetch-collections added to lazyloader selector ([9c35bf1](https://github.com/CoCreate-app/CoCreateJS/commit/9c35bf16b874795a24bea3454c5695d6de6a4206))
+
 ## [1.11.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.11.0...v1.11.1) (2022-01-22)
 
 
