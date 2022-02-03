@@ -30,7 +30,6 @@ function init() {
         else
             window.config = config;
     }
-    
 }
 
 init();
