@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.0...v1.12.1) (2022-02-03)
+
+
+### Bug Fixes
+
+* replaced show and hide class hidden with attribute hidden ([dd65fca](https://github.com/CoCreate-app/CoCreateJS/commit/dd65fca5705b85ef238a5e40172e43bf64f46f69))
+
 # [1.12.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.11.1...v1.12.0) (2022-01-23)
 
 
