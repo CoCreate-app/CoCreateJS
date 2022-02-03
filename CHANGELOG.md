@@ -1,3 +1,10 @@
+## [1.12.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.1...v1.12.2) (2022-02-03)
+
+
+### Bug Fixes
+
+* CoCreateCSS hidden attribute display:noneimportant ([08c2f5e](https://github.com/CoCreate-app/CoCreateJS/commit/08c2f5ec633fc2be95de0429fbfb713b9317bdd3))
+
 ## [1.12.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.0...v1.12.1) (2022-02-03)
 
 
