@@ -1,3 +1,10 @@
+## [1.12.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.2...v1.12.3) (2022-02-04)
+
+
+### Bug Fixes
+
+* updated notification message to include links for signup and signin if apiKeys are missing ([064ba2c](https://github.com/CoCreate-app/CoCreateJS/commit/064ba2c47e00c3fca5d7a292b754a82dd0bb1979))
+
 ## [1.12.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.1...v1.12.2) (2022-02-03)
 
 
