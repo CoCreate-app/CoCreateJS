@@ -21,7 +21,7 @@ function init() {
                 data: {
                     type: 'config',
                     status: 'failed',
-                    message: 'apiKey and organization_id could not be found',
+                    message: `<span>apiKey and organization_id could not be found. If you already have an API key <a href="/admin/signin.html">signin</a> Otherwise <a href="https://cocreate.app/admin/signup.html">signup</a></span>`,
                     success: false
                 }
             });
