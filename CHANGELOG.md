@@ -1,3 +1,10 @@
+## [1.12.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.3...v1.12.4) (2022-02-06)
+
+
+### Bug Fixes
+
+* removed preFetch from comonents ([8c58f01](https://github.com/CoCreate-app/CoCreateJS/commit/8c58f01572692e6697c1ff4980c4e355fd642a3e))
+
 ## [1.12.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.2...v1.12.3) (2022-02-04)
 
 
