@@ -1,3 +1,10 @@
+## [1.12.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.4...v1.12.5) (2022-02-06)
+
+
+### Bug Fixes
+
+* bump select and elements versions ([6b6b4d2](https://github.com/CoCreate-app/CoCreateJS/commit/6b6b4d20c341a5410c68a64a144312cc9b3e85f3))
+
 ## [1.12.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.3...v1.12.4) (2022-02-06)
 
 
