@@ -1,3 +1,10 @@
+## [1.12.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.6...v1.12.7) (2022-02-07)
+
+
+### Bug Fixes
+
+* crdt duplicate value, filter reset ([3fcf592](https://github.com/CoCreate-app/CoCreateJS/commit/3fcf59255d4d23f825cb5322b9756014d42ecfc5))
+
 ## [1.12.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.5...v1.12.6) (2022-02-07)
 
 
