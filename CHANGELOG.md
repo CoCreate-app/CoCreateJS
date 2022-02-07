@@ -1,3 +1,10 @@
+## [1.12.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.5...v1.12.6) (2022-02-07)
+
+
+### Bug Fixes
+
+* Bump dnd and utils version ([0d7b315](https://github.com/CoCreate-app/CoCreateJS/commit/0d7b3150d7e7a8ba7dd9f8326256ffa22a878a0e))
+
 ## [1.12.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.4...v1.12.5) (2022-02-06)
 
 
