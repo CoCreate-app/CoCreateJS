@@ -1,3 +1,10 @@
+## [1.12.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.8...v1.12.9) (2022-02-08)
+
+
+### Bug Fixes
+
+* resolved text bug that caused static value to merge with value returned from db ([90b9f45](https://github.com/CoCreate-app/CoCreateJS/commit/90b9f450be1b139753d73c04ff6b86fcd79e7e0d))
+
 ## [1.12.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.7...v1.12.8) (2022-02-07)
 
 
