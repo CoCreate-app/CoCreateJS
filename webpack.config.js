@@ -20,8 +20,7 @@ module.exports = {
 
     // Path to your entry point. From this file Webpack will begin his work
     entry: {
-        'CoCreate': './src/index.js',
-        // 'CoCreate-floating-label': '../CoCreate-components/CoCreate-floating-label/src'
+        'CoCreate': './src/index.js'
     },
 
     // Path and filename of your result bundle.
@@ -39,7 +38,7 @@ module.exports = {
         //     else
         //         return isProduction ? '[name].min.js' : '[name].js';
         // },
-        // filename: isProduction ? '[name].min.js' : '[name].js',
+        filename: isProduction ? '[name].min.js' : '[name].js',
         chunkFilename: isProduction ? '[name].min.js' : '[name].js',
         libraryTarget: 'umd',
         libraryExport: 'default',
@@ -53,15 +52,15 @@ module.exports = {
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
-            // both options are optional
-            // filename: (pathData) => {
-            //     if (pathData.name === 'CoCreateCS')
-            //         return isProduction ? 'CoCreate.min.css' : 'CoCreate.css';
-            //     else
-            //         return isProduction ? '[name].min.css' : '[name].css';
-            // },
-            // filename: isProduction ? '[name].min.css' : '[name].css',
-            chunkFilename: isProduction ? '[name].min.css' : '[name].css',
+
+            filename: isProduction ? '[name].min.css' : '[name].css',
+            // chunkFilename: isProduction ? '[name].min.css' : '[name].css',
+            chunkFilename: (path) => {
+                if (path.name === 'CoCreateCSS')
+                    return isProduction ? 'CoCreate.min.css' : 'CoCreate.css';
+                else
+                    return isProduction ? '[name].min.css' : '[name].css';
+            },
         }),
     ],
 
@@ -154,7 +153,5 @@ module.exports = {
             },
         },
     },
-
-
 
 };
