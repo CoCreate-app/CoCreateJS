@@ -1,3 +1,10 @@
+## [1.12.13](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.12...v1.12.13) (2022-02-10)
+
+
+### Bug Fixes
+
+* webpack compile CoCeate.min ([67257ec](https://github.com/CoCreate-app/CoCreateJS/commit/67257ec76d0769689433afc12490e53224787060))
+
 ## [1.12.12](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.11...v1.12.12) (2022-02-10)
 
 
