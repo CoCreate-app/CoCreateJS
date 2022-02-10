@@ -1,3 +1,10 @@
+## [1.12.10](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.9...v1.12.10) (2022-02-10)
+
+
+### Bug Fixes
+
+* add css as a dependency ([3fd61a8](https://github.com/CoCreate-app/CoCreateJS/commit/3fd61a8e7aad0b575a9360889126b21e7dc77007))
+
 ## [1.12.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.8...v1.12.9) (2022-02-08)
 
 
