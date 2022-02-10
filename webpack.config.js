@@ -28,7 +28,6 @@ module.exports = {
     // Webpack will bundle all JavaScript into this file
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: isProduction ? '[name].min.js' : '[name].js',
         // filename: (pathData) => {
         //     if (isProduction) {
         //         if (pathData.chunk.name === 'CoCreate')
@@ -40,6 +39,7 @@ module.exports = {
         //     else
         //         return isProduction ? '[name].min.js' : '[name].js';
         // },
+        // filename: isProduction ? '[name].min.js' : '[name].js',
         chunkFilename: isProduction ? '[name].min.js' : '[name].js',
         libraryTarget: 'umd',
         libraryExport: 'default',
@@ -54,11 +54,16 @@ module.exports = {
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // both options are optional
-            filename: isProduction ? '[name].min.css' : '[name].css',
+            // filename: (pathData) => {
+            //     if (pathData.name === 'CoCreateCS')
+            //         return isProduction ? 'CoCreate.min.css' : 'CoCreate.css';
+            //     else
+            //         return isProduction ? '[name].min.css' : '[name].css';
+            // },
+            // filename: isProduction ? '[name].min.css' : '[name].css',
             chunkFilename: isProduction ? '[name].min.css' : '[name].css',
         }),
     ],
-
 
     devServer: {
         hot: true,
