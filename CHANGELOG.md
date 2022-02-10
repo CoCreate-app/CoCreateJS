@@ -1,3 +1,10 @@
+## [1.12.12](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.11...v1.12.12) (2022-02-10)
+
+
+### Bug Fixes
+
+* filter event bug ([c8dd5ea](https://github.com/CoCreate-app/CoCreateJS/commit/c8dd5ea3964d8faffc23f642241397794b3028c0))
+
 ## [1.12.11](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.10...v1.12.11) (2022-02-10)
 
 
