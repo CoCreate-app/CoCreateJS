@@ -104,11 +104,11 @@ module.exports = [
     },
     {
         'path': '../CoCreate-components/CoCreate-lazy-loader',
-        'repo': 'github.com/CoCreate-app/CoCreate-local-storage.git'
+        'repo': 'github.com/CoCreate-app/CoCreate-lazy-loader.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-lazy-loader',
-        'repo': 'github.com/CoCreate-app/CoCreate-lazy-loader.git'
+        'path': '../CoCreate-components/CoCreate-local-storage',
+        'repo': 'github.com/CoCreate-app/CoCreate-local-storage.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-link',
