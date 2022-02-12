@@ -1,3 +1,10 @@
+## [1.12.14](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.13...v1.12.14) (2022-02-12)
+
+
+### Bug Fixes
+
+* typo with lazyloader in repositories.js ([1ec970b](https://github.com/CoCreate-app/CoCreateJS/commit/1ec970b4e84bb4cb2d148e9637515892888f47cc))
+
 ## [1.12.13](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.12...v1.12.13) (2022-02-10)
 
 
