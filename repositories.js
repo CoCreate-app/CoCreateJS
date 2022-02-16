@@ -294,102 +294,102 @@ module.exports = [
         'path': '../CoCreate-plugins/CoCreate-charts',
         'repo': 'github.com/CoCreate-app/CoCreate-charts.git'
     },
-    // {
-    //     'path': '../CoCreate-plugins/CoCreate-codemirror',
-    //     'repo': 'github.com/CoCreate-app/CoCreate-codemirror.git'
-    // },
+    // // {
+    // //     'path': '../CoCreate-plugins/CoCreate-codemirror',
+    // //     'repo': 'github.com/CoCreate-app/CoCreate-codemirror.git'
+    // // },
     {
         'path': '../CoCreate-plugins/CoCreate-croppie',
         'repo': 'github.com/CoCreate-app/CoCreate-croppie.git'
     },
-    {
-        'path': '../CoCreate-plugins/CoCreate-domain',
-        'repo': 'github.com/CoCreate-app/CoCreate-domain.git'
-    },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-domain',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-domain.git'
+    // },
     {
         'path': '../CoCreate-plugins/CoCreate-fullcalendar',
         'repo': 'github.com/CoCreate-app/CoCreate-fullcalendar.git'
     },
-    {
-        'path': '../CoCreate-plugins/CoCreate-facebook',
-        'repo': 'github.com/CoCreate-app/CoCreate-facebook.git'
-    },
-    {
-        'path': '../CoCreate-plugins/CoCreate-font-awesome',
-        'repo': 'github.com/CoCreate-app/CoCreate-font-awesome.git'
-    },
-    {
-        'path': '../CoCreate-plugins/CoCreate-google-maps',
-        'repo': 'github.com/CoCreate-app/CoCreate-google-maps.git'
-    },
-    {
-        'path': '../CoCreate-plugins/CoCreate-google-auth',
-        'repo': 'github.com/CoCreate-app/CoCreate-google-auth.git'
-    },
-    {
-        'path': '../CoCreate-plugins/CoCreate-instagram',
-        'repo': 'github.com/CoCreate-app/CoCreate-instagram.git'
-    },
-    {
-        'path': '../CoCreate-plugins/CoCreate-lighthouse',
-        'repo': 'github.com/CoCreate-app/CoCreate-lighthouse.git'
-    },
-    {
-        'path': '../CoCreate-plugins/CoCreate-linkedin',
-        'repo': 'github.com/CoCreate-app/CoCreate-linkedin.git'
-    },
     // {
-    //     'path': '../CoCreate-plugins/CoCreate-monaco',
-    //     'repo': 'github.com/CoCreate-app/CoCreate-monaco.git'
+    //     'path': '../CoCreate-plugins/CoCreate-facebook',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-facebook.git'
     // },
-    {
-        'path': '../CoCreate-plugins/CoCreate-pickr',
-        'repo': 'github.com/CoCreate-app/CoCreate-pickr.git'
-    },
-    {
-        'path': '../CoCreate-plugins/CoCreate-pinterest',
-        'repo': 'github.com/CoCreate-app/CoCreate-pinterest.git'
-    },
-    {
-        'path': '../CoCreate-plugins/CoCreate-plaid',
-        'repo': 'github.com/CoCreate-app/CoCreate-plaid.git'
-    },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-font-awesome',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-font-awesome.git'
+    // },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-google-maps',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-google-maps.git'
+    // },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-google-auth',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-google-auth.git'
+    // },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-instagram',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-instagram.git'
+    // },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-lighthouse',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-lighthouse.git'
+    // },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-linkedin',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-linkedin.git'
+    // },
+    // // {
+    // //     'path': '../CoCreate-plugins/CoCreate-monaco',
+    // //     'repo': 'github.com/CoCreate-app/CoCreate-monaco.git'
+    // // },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-pickr',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-pickr.git'
+    // },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-pinterest',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-pinterest.git'
+    // },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-plaid',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-plaid.git'
+    // },
     {
         'path': '../CoCreate-plugins/CoCreate-prism',
         'repo': 'github.com/CoCreate-app/CoCreate-prism.git'
     },
-    // {
-    //     'path': '../CoCreate-plugins/CoCreate-quill',
-    //     'repo': 'github.com/CoCreate-app/CoCreate-quill.git'
-    // },
+    // // {
+    // //     'path': '../CoCreate-plugins/CoCreate-quill',
+    // //     'repo': 'github.com/CoCreate-app/CoCreate-quill.git'
+    // // },
     {
         'path': '../CoCreate-plugins/CoCreate-s3',
         'repo': 'github.com/CoCreate-app/CoCreate-s3.git'
     },
-    {
-        'path': '../CoCreate-plugins/CoCreate-sendgrid',
-        'repo': 'github.com/CoCreate-app/CoCreate-sendgrid.git'
-    },
-    {
-        'path': '../CoCreate-plugins/CoCreate-shipengine',
-        'repo': 'github.com/CoCreate-app/CoCreate-shipengine.git'
-    },
-    {
-        'path': '../CoCreate-plugins/CoCreate-stripe',
-        'repo': 'github.com/CoCreate-app/CoCreate-stripe.git'
-    },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-sendgrid',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-sendgrid.git'
+    // },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-shipengine',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-shipengine.git'
+    // },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-stripe',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-stripe.git'
+    // },
     {
         'path': '../CoCreate-plugins/CoCreate-tui-image-editor',
         'repo': 'github.com/CoCreate-app/CoCreate-tui-image-editor.git'
     },
-    {
-        'path': '../CoCreate-plugins/CoCreate-twilio',
-        'repo': 'github.com/CoCreate-app/CoCreate-twilio.git'
-    },
-    {
-        'path': '../CoCreate-plugins/CoCreate-twitter',
-        'repo': 'github.com/CoCreate-app/CoCreate-twitter.git'
-    },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-twilio',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-twilio.git'
+    // },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-twitter',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-twitter.git'
+    // },
     {
         'path': '../CoCreate-plugins/CoCreate-uppy',
         'repo': 'github.com/CoCreate-app/CoCreate-uppy.git'
