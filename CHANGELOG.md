@@ -1,3 +1,11 @@
+## [1.12.15](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.14...v1.12.15) (2022-02-16)
+
+
+### Bug Fixes
+
+* update action param to name ([82c7a78](https://github.com/CoCreate-app/CoCreateJS/commit/82c7a78df30f4c2232ba4c5097b753a2bfe0a874))
+* update repository.js ([c54dde9](https://github.com/CoCreate-app/CoCreateJS/commit/c54dde9bcc7bff5122d98820e9ae5830c1c936b8))
+
 ## [1.12.14](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.13...v1.12.14) (2022-02-12)
 
 
