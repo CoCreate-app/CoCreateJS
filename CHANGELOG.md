@@ -1,3 +1,10 @@
+## [1.12.17](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.16...v1.12.17) (2022-02-18)
+
+
+### Bug Fixes
+
+* redeploy cdn ([4b40082](https://github.com/CoCreate-app/CoCreateJS/commit/4b40082d13457b755008b00df95bad791e348217))
+
 ## [1.12.16](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.15...v1.12.16) (2022-02-18)
 
 
