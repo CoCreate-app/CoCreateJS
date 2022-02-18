@@ -1,3 +1,10 @@
+## [1.12.16](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.15...v1.12.16) (2022-02-18)
+
+
+### Bug Fixes
+
+* removed dependency @cocreate/codemirror ([79c1b84](https://github.com/CoCreate-app/CoCreateJS/commit/79c1b84b44870beb57cbd26f9953b7f765984b7b))
+
 ## [1.12.15](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.14...v1.12.15) (2022-02-16)
 
 
