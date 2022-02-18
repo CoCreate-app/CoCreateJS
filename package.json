@@ -76,7 +76,6 @@
     "@cocreate/calculation": "latest",
     "@cocreate/charts": "latest",
     "@cocreate/cocreatecss": "latest",
-    "@cocreate/codemirror": "latest",
     "@cocreate/conditional-logic": "latest",
     "@cocreate/crdt": "latest",
     "@cocreate/croppie": "latest",
