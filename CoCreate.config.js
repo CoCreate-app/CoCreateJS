@@ -13,7 +13,7 @@ module.exports = {
             "data": {
                 "name": "apikey.js",
                 "domains": [
-                    "cocreate.app",
+                    "*",
                     "general.cocreate.app"
                 ],
                 "path": "/docs/apikey.js",
@@ -31,7 +31,7 @@ module.exports = {
             "data": {
                 "name": "index.html",
                 "domains": [
-                    "cocreate.app",
+                    "*",
                     "general.cocreate.app"
                 ],
                 "path": "/docs/index.html",
@@ -49,7 +49,7 @@ module.exports = {
             "data": {
                 "name": "elements.html",
                 "domains": [
-                    "cocreate.app",
+                    "*",
                     "general.cocreate.app"
                 ],
                 "path": "/docs/elements.html",
@@ -67,7 +67,7 @@ module.exports = {
             "data": {
                 "name": "logic.html",
                 "domains": [
-                    "cocreate.app",
+                    "*",
                     "general.cocreate.app"
                 ],
                 "path": "/docs/logic.html",
@@ -85,7 +85,7 @@ module.exports = {
             "data": {
                 "name": "user-management.html",
                 "domains": [
-                    "cocreate.app",
+                    "*",
                     "general.cocreate.app"
                 ],
                 "path": "/docs/user-management.html",
@@ -103,7 +103,7 @@ module.exports = {
             "data": {
                 "name": "objects.html",
                 "domains": [
-                    "cocreate.app",
+                    "*",
                     "general.cocreate.app"
                 ],
                 "path": "/docs/objects.html",
@@ -121,7 +121,7 @@ module.exports = {
             "data": {
                 "name": "templating.html",
                 "domains": [
-                    "cocreate.app",
+                    "*",
                     "general.cocreate.app"
                 ],
                 "path": "/docs/templating.html",
@@ -139,7 +139,7 @@ module.exports = {
             "data": {
                 "name": "menu.html",
                 "domains": [
-                    "cocreate.app",
+                    "*",
                     "general.cocreate.app"
                 ],
                 "path": "/docs/components/menu.html",
@@ -157,7 +157,7 @@ module.exports = {
             "data": {
                 "name": "navbar.html",
                 "domains": [
-                    "cocreate.app",
+                    "*",
                     "general.cocreate.app"
                 ],
                 "path": "/docs/components/navbar.html",
