@@ -1,3 +1,10 @@
+## [1.12.18](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.17...v1.12.18) (2022-02-28)
+
+
+### Bug Fixes
+
+* CoCreate.config replace CoCreate.app with * ([811beb8](https://github.com/CoCreate-app/CoCreateJS/commit/811beb89c52f79e9645e141f0df9df27cc430224))
+
 ## [1.12.17](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.16...v1.12.17) (2022-02-18)
 
 
