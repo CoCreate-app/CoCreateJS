@@ -1,3 +1,10 @@
+## [1.12.19](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.18...v1.12.19) (2022-03-07)
+
+
+### Bug Fixes
+
+* bup versions for element, textand pass components ([b7df248](https://github.com/CoCreate-app/CoCreateJS/commit/b7df2488efe5f9d957c0eb80b787e23f3e6026a4))
+
 ## [1.12.18](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.17...v1.12.18) (2022-02-28)
 
 
