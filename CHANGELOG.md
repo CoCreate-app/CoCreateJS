@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.13.0...v1.13.1) (2022-03-07)
+
+
+### Bug Fixes
+
+* industry collection to industries ([ab26935](https://github.com/CoCreate-app/CoCreateJS/commit/ab26935f460086e3dadd401b0ea6c9d0fd1861f4))
+
 # [1.13.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.19...v1.13.0) (2022-03-07)
 
 
