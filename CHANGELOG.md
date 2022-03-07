@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.19...v1.13.0) (2022-03-07)
+
+
+### Features
+
+* deleteIndustry action to remove industry and related industry documents ([9227a11](https://github.com/CoCreate-app/CoCreateJS/commit/9227a11de90d2c970d37b86644455ee2a710c3c0))
+
 ## [1.12.19](https://github.com/CoCreate-app/CoCreateJS/compare/v1.12.18...v1.12.19) (2022-03-07)
 
 
