@@ -257,35 +257,35 @@ module.exports = [
 
     // Modules        
     {
-        'path': '../CoCreate-modules/CoCreate-builder',
+        'path': '../CoCreate-apps/CoCreate-builder',
         'repo': 'github.com/CoCreate-app/CoCreate-builder.git'
     },
     // {
-    //     'path':'../CoCreate-modules/CoCreate-calendar',
+    //     'path':'../CoCreate-apps/CoCreate-calendar',
     //     'repo' : 'github.com/CoCreate-app/CoCreate-calendar.git'
     // },
     // {
-    //     'path':'../CoCreate-modules/CoCreate-checkout',
+    //     'path':'../CoCreate-apps/CoCreate-checkout',
     //     'repo' : 'github.com/CoCreate-app/CoCreate-checkout.git'
     // },
     {
-        'path': '../CoCreate-modules/CoCreate-dashboard',
+        'path': '../CoCreate-apps/CoCreate-dashboard',
         'repo': 'github.com/CoCreate-app/CoCreate-dashboard.git'
     },
     {
-        'path': '../CoCreate-modules/CoCreate-datatable',
+        'path': '../CoCreate-apps/CoCreate-datatable',
         'repo': 'github.com/CoCreate-app/CoCreate-datatable.git'
     },
     // {
-    //     'path':'../CoCreate-modules/CoCreate-email',
+    //     'path':'../CoCreate-apps/CoCreate-email',
     //     'repo' : 'github.com/CoCreate-app/CoCreate-email.git'
     // },
     {
-        'path': '../CoCreate-modules/CoCreate-kanban',
+        'path': '../CoCreate-apps/CoCreate-kanban',
         'repo': 'github.com/CoCreate-app/CoCreate-kanban.git'
     },
     {
-        'path': '../CoCreate-modules/CoCreate-sandbox',
+        'path': '../CoCreate-apps/CoCreate-sandbox',
         'repo': 'github.com/CoCreate-app/CoCreate-sandbox.git'
     },
 
