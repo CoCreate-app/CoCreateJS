@@ -1,6 +1,6 @@
 # CoCreateJS
 
-A low code headless CMS and Javascript framework for building real time and collaborative, SaaS Apps, No Code platforms, Website Builders, eCommerce, Blogs, websites, landing pages, CRM’s, Admins and anything else you dream up. Build powerful applications using HTML5 attributes or Javascript api. Take a look at our Admin app. Its an open source CRM, CMS, Website builder powered by CoCreateJS https://github.com/CoCreate-app/CoCreate-admin
+A low code headless CMS and Javascript framework for building real time and collaborative, SaaS Apps, No Code platforms, Website Builders, rich text editors, eCommerce, Blogs, websites, landing pages, CRM’s, Admins and anything else you dream up. Build powerful applications using HTML5 attributes or Javascript api. Take a look at our Admin app. Its an open source CRM, CMS, Website builder powered by CoCreateJS https://github.com/CoCreate-app/CoCreate-admin
 
 ![minified](https://img.badgesize.io/https://cdn.cocreate.app/latest/CoCreate.min.js?style=flat-square&label=minified&color=orange)
 ![gzip](https://img.badgesize.io/https://cdn.cocreate.app/latest/CoCreate.min.js?compression=gzip&style=flat-square&label=gzip&color=yellow)
@@ -14,6 +14,25 @@ A low code headless CMS and Javascript framework for building real time and coll
 ## [Docs & Demo](https://cocreate.app/docs/CoCreateJS)
 
 For a complete guide and working demo refer to the [doumentation](https://cocreate.app/docs/CoCreateJS)
+
+<br/>
+
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Announcements](#announcements)
+- [Roadmap](#roadmap)
+- [How to Contribute](#how-to-contribute)
+- [About](#about)
+- [License](#license)
+
+<br/>
+
+<a name="installation"></a>
+
+# Installation
+Note: Requires [CoCreateWS](https://github.com/CoCreate-app/CoCreateWS) server. You can connect to our cloud servers or do a self install.  
 
 ## CDN
 
@@ -31,20 +50,19 @@ For a complete guide and working demo refer to the [doumentation](https://cocrea
 $ npm i @cocreate/cocreatejs
 
 ```
+```shell
+$ npm install
+```
 ## yarn
 
 ```shell
 $ yarn install @cocreate/cocreatejs
 ```
+```shell
+$ yarn install
+```
 
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Announcements](#announcements)
-- [Roadmap](#roadmap)
-- [How to Contribute](#how-to-contribute)
-- [About](#about)
-- [License](#license)
+<br/>
 
 <a name="announcements"></a>
 
