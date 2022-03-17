@@ -32,7 +32,7 @@ For a complete guide and working demo refer to the [doumentation](https://cocrea
 <a name="installation"></a>
 
 # Installation
-Note: Requires [CoCreateWS](https://github.com/CoCreate-app/CoCreateWS) server. You can connect to our cloud servers or do a self install.  
+Note: Requires [CoCreateWS](https://github.com/CoCreate-app/CoCreateWS) websocket server if you intend on using CRUD and collabrative features. You can connect to our cloud servers using the subdomain and APIKEY provided on [SignUp](https://cocreate.app/admin/signup.html) or do a self hosted install.  
 
 ## CDN
 
