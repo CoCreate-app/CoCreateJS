@@ -1,3 +1,11 @@
+## [1.13.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.13.2...v1.13.3) (2022-03-21)
+
+
+### Bug Fixes
+
+* update class sortable to attribute sortable ([3eb9eca](https://github.com/CoCreate-app/CoCreateJS/commit/3eb9eca41b60612882e9aae236853af6df392153))
+* update dnd lazyload selectors ([02c9afa](https://github.com/CoCreate-app/CoCreateJS/commit/02c9afa3faec47064853bd58f8eb210c7521f459))
+
 ## [1.13.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.13.1...v1.13.2) (2022-03-11)
 
 
