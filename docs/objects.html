@@ -865,15 +865,11 @@ crud.readDocumentList({
   <code class="language-js">
   socket.create({
     namespace: '',
-    room: '',
+    rooms: [r1, r2],
     broadcast: true/false,
     broadcast_sender: true/false
-    
-    <!--rooms: [r1, r2],-->
-    emit: {
-      message': 'function name to trigger',
-      data': 'let's play a game ....'
-    }
+	message': 'function name to trigger',
+	data': 'let's play a game ....'
   })
   </code>
 						</pre>
@@ -923,10 +919,8 @@ crud.readDocumentList({
     broadcast_sender: true/false
     
     rooms: [r1, r2],
-    emit: {
-      message': 'function name to trigger',
-      data': 'let's play a game ....'
-    }
+	message': 'function name to trigger',
+	data': 'let's play a game ....'
   })
   </code>
 						</pre>
