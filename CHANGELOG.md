@@ -1,3 +1,10 @@
+## [1.13.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.13.3...v1.13.4) (2022-03-22)
+
+
+### Bug Fixes
+
+* removed emit from message.send and message.listen ([eebf409](https://github.com/CoCreate-app/CoCreateJS/commit/eebf4090b7f9018192aff2139690357962d8caa3))
+
 ## [1.13.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.13.2...v1.13.3) (2022-03-21)
 
 
