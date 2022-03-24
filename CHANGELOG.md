@@ -1,3 +1,10 @@
+## [1.13.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.13.4...v1.13.5) (2022-03-24)
+
+
+### Bug Fixes
+
+* bump @cocreate/selection version. contains bug fixes related to insertAdjacent positions ([88b6b2e](https://github.com/CoCreate-app/CoCreateJS/commit/88b6b2e5feff0c0784e031c49d5b7f5fad5497bf))
+
 ## [1.13.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.13.3...v1.13.4) (2022-03-22)
 
 
