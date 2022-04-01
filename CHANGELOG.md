@@ -1,3 +1,10 @@
+## [1.13.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.13.5...v1.13.6) (2022-04-01)
+
+
+### Bug Fixes
+
+* bump crud-client and fetch dependency versions ([fd0af79](https://github.com/CoCreate-app/CoCreateJS/commit/fd0af79533b992069c2a1eb4081f5f1cdf2fb7c4))
+
 ## [1.13.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.13.4...v1.13.5) (2022-03-24)
 
 
