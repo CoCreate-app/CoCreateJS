@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.13.6...v1.14.0) (2022-04-15)
+
+
+### Features
+
+* cocreate/render supports rendering object key and value. bump fcocreate/ftch version ([b3d17a7](https://github.com/CoCreate-app/CoCreateJS/commit/b3d17a7f6975e19e7cee0c6f3cbe0424a751f349))
+
 ## [1.13.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.13.5...v1.13.6) (2022-04-01)
 
 
