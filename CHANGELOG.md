@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.14.0...v1.14.1) (2022-04-16)
+
+
+### Bug Fixes
+
+* bump cocreate/modal version. ([1ba42ad](https://github.com/CoCreate-app/CoCreateJS/commit/1ba42ad24fe16249b4560d9bbe1717c76055da53))
+
 # [1.14.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.13.6...v1.14.0) (2022-04-15)
 
 
