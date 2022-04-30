@@ -1,3 +1,10 @@
+## [1.14.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.14.1...v1.14.2) (2022-04-30)
+
+
+### Bug Fixes
+
+* bump cursor and text package. contains bugfix related to multiple cursors ([8782066](https://github.com/CoCreate-app/CoCreateJS/commit/87820667b40e8b67272b961e04321f4d9c4cf588))
+
 ## [1.14.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.14.0...v1.14.1) (2022-04-16)
 
 
