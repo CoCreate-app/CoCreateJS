@@ -1,3 +1,10 @@
+## [1.14.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.14.2...v1.14.3) (2022-05-03)
+
+
+### Bug Fixes
+
+* bump dependency @cocreate/render ([c4e852a](https://github.com/CoCreate-app/CoCreateJS/commit/c4e852a54e0186ca10191ec7a86d55a5f9fa5e63))
+
 ## [1.14.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.14.1...v1.14.2) (2022-04-30)
 
 
