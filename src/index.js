@@ -10,12 +10,12 @@ function init() {
 
     if (!window.config) {
         config = {
-            organization_Id: window.localStorage.getItem('organization_id'),
+            organization_id: window.localStorage.getItem('organization_id'),
             apiKey: window.localStorage.getItem('apiKey'),
             host: window.localStorage.getItem('host')
         };
 
-        if (!config.organization_Id || !config.apiKey) {
+        if (!config.organization_id || !config.apiKey) {
             render.data({
                 selector: "[template_id='notification']",
                 data: {
