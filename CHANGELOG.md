@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.14.7...v1.15.0) (2022-05-14)
+
+
+### Features
+
+* renamed readDocumentsList to readDocuments ([4a83d5b](https://github.com/CoCreate-app/CoCreateJS/commit/4a83d5b10d54416861309c1e1367e6b13437203c))
+
 ## [1.14.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.14.6...v1.14.7) (2022-05-13)
 
 
