@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.0...v1.15.1) (2022-05-15)
+
+
+### Bug Fixes
+
+* update element dependency version. contains bug fixes related to iframe srcdoc ([b8883c7](https://github.com/CoCreate-app/CoCreateJS/commit/b8883c7a115e8b8b8ca343bd95cd71bc3c436ab6))
+
 # [1.15.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.14.7...v1.15.0) (2022-05-14)
 
 
