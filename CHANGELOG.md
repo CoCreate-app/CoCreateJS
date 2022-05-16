@@ -1,3 +1,10 @@
+## [1.15.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.1...v1.15.2) (2022-05-16)
+
+
+### Bug Fixes
+
+* make doc examples realtime=false and add cdn ([135191a](https://github.com/CoCreate-app/CoCreateJS/commit/135191ae35341c56104cb86f55fa7f8d29ee7777))
+
 ## [1.15.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.0...v1.15.1) (2022-05-15)
 
 
