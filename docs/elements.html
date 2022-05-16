@@ -9,7 +9,7 @@
 	<meta name="description" content="A codeless Javascript framework for building collaborative no code platforms, apps and UI">
 	<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
 
-	<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" realtime="true" />
+	<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" realtime="false" />
 </head>
 
 <body>
@@ -55,7 +55,7 @@
 					<pre><code class="language-html">&lt;input collection="test" document_id="" name="name"&gt;</code></pre>
 					<p class="padding:10px_0px line-height:1.5">The attributes collection, document_id and name are at the center of the CoCreate universe, we take a data first aproach. By defining these 3 attributes you can save and fetch data from any input, textarea, select and thier various types. All other elements like h1, h2, span, etc will only fetch. Apply contenteditable attribute, and the data you input will now save. </p>
 					<pre><code class="language-html">&lt;h1 collection="test" document_id="" name="name" contenteditable&gt;&lt;/h1&gt;</code></pre>
-					<p class="padding:10px_0px line-height:1.5">CoCreateJS by default is collabrotive. To turn collaboration off for an element, apply attribute realtime="true"</p>
+					<p class="padding:10px_0px line-height:1.5">CoCreateJS by default is collabrotive. To turn collaboration off for an element, apply attribute realtime="false"</p>
 					
 					<!-- SandBox -->
 					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="collaboration-playground">
@@ -70,7 +70,7 @@
 							<div class="svColumn">
 
 								<div class="svPanel" id="collaboration-view">
-									<textarea collection="demos" document_id="619d495ca8b6b4001a9e6127" name="collaboration-demo" realtime="true" id="collaboration-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+									<textarea collection="demos" document_id="619d495ca8b6b4001a9e6127" name="collaboration-demo" realtime="false" id="collaboration-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
@@ -115,7 +115,7 @@
 							<div class="svColumn">
 
 								<div class="svPanel" id="input-view">
-									<textarea collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="input-demo" realtime="true" id="input-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+									<textarea collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="input-demo" realtime="false" id="input-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
@@ -147,7 +147,7 @@
 							<div class="svColumn">
 
 								<div class="svPanel" id="textarea-view">
-									<textarea collection="demos" document_id="619bd887a8b6b4001a9e05af" name="textarea-demo" realtime="true" id="textarea-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+									<textarea collection="demos" document_id="619bd887a8b6b4001a9e05af" name="textarea-demo" realtime="false" id="textarea-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
@@ -179,7 +179,7 @@
 							<div class="svColumn">
 
 								<div class="svPanel" id="contenteditable-view">
-									<textarea collection="demos" document_id="619be339a8b6b4001a9e0837" name="contenteditable-demo" realtime="true" id="contenteditable-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+									<textarea collection="demos" document_id="619be339a8b6b4001a9e0837" name="contenteditable-demo" realtime="false" id="contenteditable-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
@@ -211,7 +211,7 @@
 							<div class="svColumn">
 
 								<div class="svPanel" id="radio-view">
-									<textarea collection="demos" document_id="619bde0da8b6b4001a9e06f3" name="radio-demo" realtime="true" id="radio-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+									<textarea collection="demos" document_id="619bde0da8b6b4001a9e06f3" name="radio-demo" realtime="false" id="radio-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
@@ -243,7 +243,7 @@
 							<div class="svColumn">
 
 								<div class="svPanel" id="checkbox-view">
-									<textarea collection="demos" document_id="619bdaf0a8b6b4001a9e063c" name="checkbox-demo" realtime="true" id="checkbox-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+									<textarea collection="demos" document_id="619bdaf0a8b6b4001a9e063c" name="checkbox-demo" realtime="false" id="checkbox-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
@@ -275,7 +275,7 @@
 							<div class="svColumn">
 
 								<div class="svPanel" id="select-view">
-									<textarea collection="demos" document_id="619be11ba8b6b4001a9e07b8" name="select-demo" realtime="true" id="select-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+									<textarea collection="demos" document_id="619be11ba8b6b4001a9e07b8" name="select-demo" realtime="false" id="select-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
@@ -291,7 +291,7 @@
 				</section>
 				<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#form-item">
 					<h3 id="form" class="padding-top:20px">Form</h3>
-					<p class="padding:10px_0px line-height:1.5">The form tag is used for grouping elements and applying attributes dynamically to it's childeren. Attributtes added to a form tag will only be applied to the child elements if the attribute is not already defined with a value. If realtime="true" is applied, the form will require a button and action to trigger save</p>
+					<p class="padding:10px_0px line-height:1.5">The form tag is used for grouping elements and applying attributes dynamically to it's childeren. Attributtes added to a form tag will only be applied to the child elements if the attribute is not already defined with a value. If realtime="false" is applied, the form will require a button and action to trigger save</p>
 					<div class="">
 						<pre><code class="language-html">&lt;button actions="save"&gt; &lt;/button&gt;</code></pre>
 					</div>
@@ -309,7 +309,7 @@
 							<div class="svColumn">
 
 								<div class="svPanel" id="form-view">
-									<textarea collection="demos" document_id="619d438ca8b6b4001a9e5faf" name="form-demo" realtime="true" id="form-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+									<textarea collection="demos" document_id="619d438ca8b6b4001a9e5faf" name="form-demo" realtime="false" id="form-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
@@ -349,7 +349,7 @@
 							<div class="svColumn">
 
 								<div class="svPanel" id="actions-view">
-									<textarea collection="demos" document_id="61a1456da8b6b4001a9f6029" name="actions-demo" realtime="true" id="actions-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
+									<textarea collection="demos" document_id="61a1456da8b6b4001a9f6029" name="actions-demo" realtime="false" id="actions-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
 								</div>
 								<div class="svSplitter svHorizontal"> </div>
 
@@ -461,8 +461,8 @@
 	</main>
 
 	<script src="/apikey.js"></script>
-	<!-- <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script> -->
-	<script src="../dist/CoCreate.js"></script>
+	<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+	<!-- <script src="../dist/CoCreate.js"></script> -->
 
 </body>
 
