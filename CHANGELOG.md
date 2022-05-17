@@ -1,3 +1,10 @@
+## [1.15.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.2...v1.15.3) (2022-05-17)
+
+
+### Bug Fixes
+
+* update document_id for link tag index.css ([c41e2c6](https://github.com/CoCreate-app/CoCreateJS/commit/c41e2c66ceaaed9e2eb3e42ed12ac29ee0e1e617))
+
 ## [1.15.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.1...v1.15.2) (2022-05-16)
 
 
