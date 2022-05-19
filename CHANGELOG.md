@@ -1,3 +1,10 @@
+## [1.15.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.3...v1.15.4) (2022-05-19)
+
+
+### Bug Fixes
+
+* bump @cocreate/validation ([3649d9c](https://github.com/CoCreate-app/CoCreateJS/commit/3649d9cdf0fda69dead6711ed3bcfde0e9fd7397))
+
 ## [1.15.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.2...v1.15.3) (2022-05-17)
 
 
