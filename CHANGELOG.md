@@ -1,3 +1,10 @@
+## [1.15.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.4...v1.15.5) (2022-05-21)
+
+
+### Bug Fixes
+
+* bump @cocreate/render & @cocreate/css versions ([ed1dc01](https://github.com/CoCreate-app/CoCreateJS/commit/ed1dc014c3a1ad98eb5824048ac221c64c8d5884))
+
 ## [1.15.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.3...v1.15.4) (2022-05-19)
 
 
