@@ -1,3 +1,10 @@
+## [1.15.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.5...v1.15.6) (2022-05-22)
+
+
+### Bug Fixes
+
+* bump @cocreate/pass dependency ([3e5f60b](https://github.com/CoCreate-app/CoCreateJS/commit/3e5f60b1f820f4a6cbf6a8000fa5628ea79cac63))
+
 ## [1.15.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.4...v1.15.5) (2022-05-21)
 
 
