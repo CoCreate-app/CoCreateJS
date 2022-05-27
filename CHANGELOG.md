@@ -1,3 +1,10 @@
+## [1.15.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.8...v1.15.9) (2022-05-27)
+
+
+### Bug Fixes
+
+* bump @cocreate/filter and @cocreate/floating-label dependencies ([204a3ce](https://github.com/CoCreate-app/CoCreateJS/commit/204a3ce54fc05f10521d1ee52893e8e87c558543))
+
 ## [1.15.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.7...v1.15.8) (2022-05-25)
 
 
