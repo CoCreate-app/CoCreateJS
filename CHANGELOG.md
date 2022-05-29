@@ -1,3 +1,10 @@
+## [1.15.10](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.9...v1.15.10) (2022-05-29)
+
+
+### Bug Fixes
+
+* add lazyload selector for actions deleteOrg ([d8a8f63](https://github.com/CoCreate-app/CoCreateJS/commit/d8a8f630624feac8c4ca02802f6e7e48792c49c1))
+
 ## [1.15.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.8...v1.15.9) (2022-05-27)
 
 
