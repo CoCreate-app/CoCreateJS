@@ -36,7 +36,7 @@ lazyLoad('remove', '[actions*="remove"]', ()=>import(/*webpackChunkName: "remove
 lazyLoad('attributes', '[attribute]', ()=>import(/*webpackChunkName: "attributes-chunk"*/ '@cocreate/attributes'));
 lazyLoad('users', '[actions*="createUser"], [actions*="login"], [actions*="logout"], [user-status]', ()=> import (/*webpackChunkName: "users-chunk"*/ '@cocreate/users'));
 lazyLoad('unique', '[unique]', ()=> import (/*webpackChunkName: "unique-chunk"*/ '@cocreate/unique'));
-lazyLoad('organizations', '[actions*="createOrg"]', ()=> import (/*webpackChunkName: "organizations-chunk"*/ '@cocreate/organizations'));
+lazyLoad('organizations', '[actions*="createOrg"], [actions*="deleteOrg"]', ()=> import (/*webpackChunkName: "organizations-chunk"*/ '@cocreate/organizations'));
 lazyLoad('industry', '[actions*="createIndustry"], [actions*="runIndustry"]', ()=> import (/*webpackChunkName: "industry-chunk"*/ '@cocreate/industry'));
 lazyLoad('uuid', '[uuid]', ()=> import (/*webpackChunkName: "uuid-chunk"*/ '@cocreate/uuid'));
 lazyLoad('search', '[search_id]', ()=> import (/*webpackChunkName: "search-chunk"*/ '@cocreate/search'));
