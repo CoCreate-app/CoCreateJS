@@ -1,3 +1,10 @@
+## [1.15.11](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.10...v1.15.11) (2022-06-02)
+
+
+### Bug Fixes
+
+* bump dependencies css, fetch, and elements ([097c6c2](https://github.com/CoCreate-app/CoCreateJS/commit/097c6c2177c5474b42e7cf58c8d1251b686a7352))
+
 ## [1.15.10](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.9...v1.15.10) (2022-05-29)
 
 
