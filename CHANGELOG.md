@@ -1,3 +1,10 @@
+## [1.15.13](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.12...v1.15.13) (2022-06-08)
+
+
+### Bug Fixes
+
+* bump @cocreate/resize and @cocreate/dnd dependencies ([a773cfc](https://github.com/CoCreate-app/CoCreateJS/commit/a773cfc52c7f62ea56aa9b341172d5a86fb31709))
+
 ## [1.15.12](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.11...v1.15.12) (2022-06-07)
 
 
