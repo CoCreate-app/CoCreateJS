@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.13...v1.16.0) (2022-06-11)
+
+
+### Features
+
+* undo and redo support ([ba042f0](https://github.com/CoCreate-app/CoCreateJS/commit/ba042f0ad01f9d3167835cd6a11a5207d6267974))
+
 ## [1.15.13](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.12...v1.15.13) (2022-06-08)
 
 
