@@ -1,3 +1,10 @@
+## [1.16.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.16.0...v1.16.1) (2022-06-13)
+
+
+### Bug Fixes
+
+* update index.css document_id ([a43cec1](https://github.com/CoCreate-app/CoCreateJS/commit/a43cec14d3275a9635976620aa94cb86028e5643))
+
 # [1.16.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.15.13...v1.16.0) (2022-06-11)
 
 
