@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.17.0...v1.17.1) (2022-06-16)
+
+
+### Bug Fixes
+
+* bump @cocreate/dnd and @cocreate/text for minor bug fixes ([59a9930](https://github.com/CoCreate-app/CoCreateJS/commit/59a9930f2836ae5224d0919f986418114da5ec27))
+
 # [1.17.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.16.2...v1.17.0) (2022-06-16)
 
 
