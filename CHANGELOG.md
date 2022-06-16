@@ -1,3 +1,15 @@
+# [1.17.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.16.2...v1.17.0) (2022-06-16)
+
+
+### Bug Fixes
+
+* addd demo for login ([bd8752b](https://github.com/CoCreate-app/CoCreateJS/commit/bd8752b1b87916eff7e5572645b740f6cf0cf0a8))
+
+
+### Features
+
+* bump @cocreate/dnd and [@cocreate](https://github.com/cocreate) elements for new absolute or fixed dragging feature and cloneable-html tagname ([077dc5d](https://github.com/CoCreate-app/CoCreateJS/commit/077dc5d447e1846ae053bb0c7b72b093ebc028ee))
+
 ## [1.16.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.16.1...v1.16.2) (2022-06-13)
 
 
