@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.17.1...v1.18.0) (2022-06-17)
+
+
+### Features
+
+* bump @cocreate/fetch - contains realtime update e  temlplate placeholder. bump @cocreate/select - minor bug fixes ([cbddd5a](https://github.com/CoCreate-app/CoCreateJS/commit/cbddd5ab3fb5cf9ea5f0c63cfb47655c5d8dbc58))
+
 ## [1.17.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.17.0...v1.17.1) (2022-06-16)
 
 
