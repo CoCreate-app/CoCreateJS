@@ -1,3 +1,10 @@
+## [1.18.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.18.1...v1.18.2) (2022-06-18)
+
+
+### Bug Fixes
+
+* workflow ([1825a52](https://github.com/CoCreate-app/CoCreateJS/commit/1825a52e6f9c83b70f6801d8135ba9e603eb7103))
+
 ## [1.18.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.18.0...v1.18.1) (2022-06-18)
 
 
