@@ -1,3 +1,10 @@
+## [1.18.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.18.3...v1.18.4) (2022-06-19)
+
+
+### Bug Fixes
+
+* bump@cocreate/render,  @cocreate/scroll ([5518e83](https://github.com/CoCreate-app/CoCreateJS/commit/5518e83e954bd899f27a73a1ef9c2c6148a6760e))
+
 ## [1.18.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.18.2...v1.18.3) (2022-06-19)
 
 
