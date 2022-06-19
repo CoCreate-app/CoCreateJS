@@ -1,3 +1,10 @@
+## [1.18.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.18.2...v1.18.3) (2022-06-19)
+
+
+### Bug Fixes
+
+* @cocreate/select - bug fix with collaboration. @cocreate/render - remove placeholders if not replaced with value ([8ace925](https://github.com/CoCreate-app/CoCreateJS/commit/8ace9250cef94f6e6f4ab7dc12b27c3621822b04))
+
 ## [1.18.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.18.1...v1.18.2) (2022-06-18)
 
 
