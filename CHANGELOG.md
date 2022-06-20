@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.19.0...v1.20.0) (2022-06-20)
+
+
+### Features
+
+* Bump @cocreate/select contains feat that allows to set value-type= object || json to convert stringvalues to objects when storing in db ([8597d8b](https://github.com/CoCreate-app/CoCreateJS/commit/8597d8b7fb395588929e802dd8513289c270174b))
+
 # [1.19.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.18.4...v1.19.0) (2022-06-20)
 
 
