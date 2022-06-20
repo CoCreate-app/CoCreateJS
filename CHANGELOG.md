@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.18.4...v1.19.0) (2022-06-20)
+
+
+### Features
+
+* Bump @cocreate/crud-client and @cocreate/form contains feat that allows to set value-type= object || json to convert stringvalues to objects when storing in db ([66a2ed4](https://github.com/CoCreate-app/CoCreateJS/commit/66a2ed47b135a9c9fc36707605ca82e8c28016cf))
+
 ## [1.18.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.18.3...v1.18.4) (2022-06-19)
 
 
