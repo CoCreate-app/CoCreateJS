@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.20.0...v1.20.1) (2022-06-21)
+
+
+### Bug Fixes
+
+* bump @cocreate/select - bug rendering template for selected items on select read ([d69e8e8](https://github.com/CoCreate-app/CoCreateJS/commit/d69e8e81998688a7390902c87ee82ee539bfc1bc))
+
 # [1.20.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.19.0...v1.20.0) (2022-06-20)
 
 
