@@ -1,3 +1,10 @@
+## [1.20.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.20.1...v1.20.2) (2022-06-22)
+
+
+### Bug Fixes
+
+* bump @cocreate/scroll - contains infinite loop fix when scrolling up or down ([1009367](https://github.com/CoCreate-app/CoCreateJS/commit/1009367d98d7ab02f15fe0d5fb2165f4e0fe8193))
+
 ## [1.20.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.20.0...v1.20.1) (2022-06-21)
 
 
