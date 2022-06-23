@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.20.2...v1.21.0) (2022-06-23)
+
+
+### Features
+
+* bump @cocreate/lazyloader supports observing attributes if match lazyloads component ([5bf03b1](https://github.com/CoCreate-app/CoCreateJS/commit/5bf03b12d176ef3e83cb7c8ccedc76612cb0e3a6))
+
 ## [1.20.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.20.1...v1.20.2) (2022-06-22)
 
 
