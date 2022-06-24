@@ -1,3 +1,10 @@
+## [1.21.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.21.0...v1.21.1) (2022-06-24)
+
+
+### Bug Fixes
+
+* bump @cocreate/text and @cocreate/utils ([bfa1bba](https://github.com/CoCreate-app/CoCreateJS/commit/bfa1bba63d523a17fd81bb51927d0e89c6757f5f))
+
 # [1.21.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.20.2...v1.21.0) (2022-06-23)
 
 
