@@ -1,3 +1,10 @@
+## [1.21.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.21.1...v1.21.2) (2022-06-25)
+
+
+### Bug Fixes
+
+* bump @cocreate/dnd - contains fixes related to absolute and fixed positions ([f466d38](https://github.com/CoCreate-app/CoCreateJS/commit/f466d38e6c238a3be940cc1648d258ce7df7d302))
+
 ## [1.21.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.21.0...v1.21.1) (2022-06-24)
 
 
