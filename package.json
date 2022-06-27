@@ -111,6 +111,7 @@
     "@cocreate/pickr": "latest",
     "@cocreate/pinterest": "latest",
     "@cocreate/plaid": "latest",
+    "@cocreate/position": "latest",
     "@cocreate/prism": "latest",
     "@cocreate/progress": "latest",
     "@cocreate/progress-bar": "latest",

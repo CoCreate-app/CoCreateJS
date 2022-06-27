@@ -143,6 +143,10 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-pass.git'
     },
     {
+        'path': '../CoCreate-components/CoCreate-position',
+        'repo': 'github.com/CoCreate-app/CoCreate-position.git'
+    },
+    {
         'path': '../CoCreate-components/CoCreate-progress',
         'repo': 'github.com/CoCreate-app/CoCreate-progress.git'
     },
