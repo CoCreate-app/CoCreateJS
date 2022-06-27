@@ -1,3 +1,10 @@
+## [1.22.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.22.0...v1.22.1) (2022-06-27)
+
+
+### Bug Fixes
+
+* bump @cocreate/position contains fix for displaying snap position ([e469bd9](https://github.com/CoCreate-app/CoCreateJS/commit/e469bd91243f01fe5901ec009d194254eb4c2fe1))
+
 # [1.22.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.21.2...v1.22.0) (2022-06-27)
 
 
