@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.21.2...v1.22.0) (2022-06-27)
+
+
+### Features
+
+* add new component @cocreate/position, bump @cocreate/modal component ([02f76cc](https://github.com/CoCreate-app/CoCreateJS/commit/02f76cc799d38539029d4c348590f7f9a403fe17))
+
 ## [1.21.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.21.1...v1.21.2) (2022-06-25)
 
 
