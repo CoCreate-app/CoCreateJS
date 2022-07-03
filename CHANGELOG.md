@@ -1,3 +1,15 @@
+# [1.23.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.22.1...v1.23.0) (2022-07-03)
+
+
+### Bug Fixes
+
+* remove unused fetch attributes from documentation ([b4fa6ec](https://github.com/CoCreate-app/CoCreateJS/commit/b4fa6ec9772fcdca94ddce1dc8213731fd597077))
+
+
+### Features
+
+* support for value-type object, string, etc ([accf97f](https://github.com/CoCreate-app/CoCreateJS/commit/accf97f6b420937c5d40011a53cc62dacb6f8714))
+
 ## [1.22.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.22.0...v1.22.1) (2022-06-27)
 
 
