@@ -1,3 +1,10 @@
+## [1.23.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.23.0...v1.23.1) (2022-07-04)
+
+
+### Bug Fixes
+
+* bump @cocreate/modal dependency. Contains attribute bug fix ([de21ad2](https://github.com/CoCreate-app/CoCreateJS/commit/de21ad241999ddbbb32d3c616d3292940593cf49))
+
 # [1.23.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.22.1...v1.23.0) (2022-07-03)
 
 
