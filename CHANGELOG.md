@@ -1,3 +1,10 @@
+## [1.23.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.23.2...v1.23.3) (2022-07-09)
+
+
+### Bug Fixes
+
+* bump @cocreate/select contains fix to issue causing fetched selected values not to render ([6bd249a](https://github.com/CoCreate-app/CoCreateJS/commit/6bd249af14b21fe23a2c4c533ff61c9790f9c7e1))
+
 ## [1.23.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.23.1...v1.23.2) (2022-07-08)
 
 
