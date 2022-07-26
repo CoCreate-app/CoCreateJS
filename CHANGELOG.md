@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.23.4...v1.24.0) (2022-07-26)
+
+
+### Features
+
+* getObjectValueByPath, crud support for collections, render nested objects and arrays ([4b65367](https://github.com/CoCreate-app/CoCreateJS/commit/4b65367ad34107fea8458e9006ae9863a87c198a))
+
 ## [1.23.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.23.3...v1.23.4) (2022-07-10)
 
 
