@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.24.0...v1.25.0) (2022-07-29)
+
+
+### Features
+
+* fetch components support handling collections, render component updates values if value has changed ([5c25dd4](https://github.com/CoCreate-app/CoCreateJS/commit/5c25dd45fb8a2011124a43516c2768eddd0dceae))
+
 # [1.24.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.23.4...v1.24.0) (2022-07-26)
 
 
