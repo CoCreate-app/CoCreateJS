@@ -1,3 +1,10 @@
+## [1.25.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.25.0...v1.25.1) (2022-07-31)
+
+
+### Bug Fixes
+
+* typo in creatocument, attributes required if condition to see if elementnt is defined ([ea5d457](https://github.com/CoCreate-app/CoCreateJS/commit/ea5d45755f9cc615fc276140a88daf56ffa4e7e0))
+
 # [1.25.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.24.0...v1.25.0) (2022-07-29)
 
 
