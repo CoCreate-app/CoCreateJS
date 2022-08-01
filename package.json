@@ -80,6 +80,7 @@
     "@cocreate/crdt": "latest",
     "@cocreate/croppie": "latest",
     "@cocreate/crud-client": "latest",
+    "@cocreate/css-parser": "latest",
     "@cocreate/cursors": "latest",
     "@cocreate/dnd": "latest",
     "@cocreate/docs": "latest",
@@ -149,3 +150,4 @@
     "@cocreate/vdom": "latest"
   }
 }
+

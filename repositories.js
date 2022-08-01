@@ -8,10 +8,10 @@ module.exports = [
         'path': '../CoCreateCSS',
         'repo': 'github.com/CoCreate-app/CoCreateCSS.git'
     },
-    {
-        'path': '../CoCreate-admin',
-        'repo': 'github.com/CoCreate-app/CoCreate-admin.git'
-    },
+    // {
+    //     'path': '../CoCreate-admin',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-admin.git'
+    // },
     {
         'path': '../CoCreate-website',
         'repo': 'github.com/CoCreate-app/CoCreate-website.git'
@@ -53,6 +53,10 @@ module.exports = [
     {
         'path': '../CoCreate-components/CoCreate-crud-client',
         'repo': 'github.com/CoCreate-app/CoCreate-crud-client.git'
+    },
+    {
+        'path': '../CoCreate-components/CoCreate-css-parser',
+        'repo': 'github.com/CoCreate-app/CoCreate-css-parser.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-cursors',

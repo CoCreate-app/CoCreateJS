@@ -12,10 +12,11 @@ dependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/fil
 dependency('api', import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 dependency('link', import (/*webpackChunkName: "link-chunk"*/ '@cocreate/link'));
 dependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
-dependency('css', import (/*webpackChunkName: "CoCreateCSS"*/ '@cocreate/cocreatecss'));
+dependency('cssParser', import (/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
+
 
 // Components
-// lazyLoad('cssParser', 'link[collection][document_id][name], link[parse="true"]', ()=> import (/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/cocreatecss/src/css-parser.js'));
+// lazyLoad('cssParser', 'link[collection][document_id][name], link[parse="true"]', ()=> import (/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
 // lazyLoad('css', 'cocreatecss', ()=> import (/*webpackChunkName: "CoCreateCSS"*/ '@cocreate/cocreatecss'));
 lazyLoad('renderJson', '[fetch-for]', ()=> import (/*webpackChunkName: "render-json-chunk"*/ '@cocreate/render-json'));
 lazyLoad('pass', '[pass_id], [pass_to], [pass-value_to], [pass-value_id]', ()=> import (/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'));
