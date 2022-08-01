@@ -1,3 +1,10 @@
+## [1.25.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.25.1...v1.25.2) (2022-08-01)
+
+
+### Bug Fixes
+
+* seperate css-parser from CoCreateCSS. fix bug with renderkey action. fetch auto adds document_id to template ([70dea8b](https://github.com/CoCreate-app/CoCreateJS/commit/70dea8b05847db176462b4c6b9efe55104ab2152))
+
 ## [1.25.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.25.0...v1.25.1) (2022-07-31)
 
 
