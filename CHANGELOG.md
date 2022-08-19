@@ -1,3 +1,11 @@
+## [1.25.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.25.2...v1.25.3) (2022-08-19)
+
+
+### Bug Fixes
+
+* bump crdt, render, and toolbar dependencies ([f34dd18](https://github.com/CoCreate-app/CoCreateJS/commit/f34dd1897dcd0d98721c1138685404ee3d14047d))
+* deprciate action createDocument ([e9e9a05](https://github.com/CoCreate-app/CoCreateJS/commit/e9e9a0507d165123ded67e35a2903d331bf9cbd9))
+
 ## [1.25.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.25.1...v1.25.2) (2022-08-01)
 
 
