@@ -1,3 +1,10 @@
+# [1.26.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.25.4...v1.26.0) (2022-08-23)
+
+
+### Features
+
+* convert dotNotation to object and render keys if key has not previously been rendered ([07e954c](https://github.com/CoCreate-app/CoCreateJS/commit/07e954cb57ea3f07899db24d81bb67581a606e50))
+
 ## [1.25.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.25.3...v1.25.4) (2022-08-19)
 
 
