@@ -1,3 +1,15 @@
+# [1.27.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.26.0...v1.27.0) (2022-08-31)
+
+
+### Bug Fixes
+
+* renamed broadcast_sender to broadcastSender ([ac91d4f](https://github.com/CoCreate-app/CoCreateJS/commit/ac91d4ff595d61efccd6d91357cc266d756b5f12))
+
+
+### Features
+
+* filter and sort collections, delete and update db field name/key, getValue and setValue using HTMLElement prototype ([dfb6ebf](https://github.com/CoCreate-app/CoCreateJS/commit/dfb6ebfb165394204d07756a064d0a92478be45a))
+
 # [1.26.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.25.4...v1.26.0) (2022-08-23)
 
 
