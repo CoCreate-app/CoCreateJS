@@ -1,3 +1,15 @@
+# [1.28.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.27.1...v1.28.0) (2022-09-29)
+
+
+### Bug Fixes
+
+* config renameed to CoCreateConfig ([ac38149](https://github.com/CoCreate-app/CoCreateJS/commit/ac38149ea1ebf0ae80db9b8a60e7fae001fdc4ad))
+
+
+### Features
+
+* Installable, cacheable, offline editable ([b5fed72](https://github.com/CoCreate-app/CoCreateJS/commit/b5fed720cb6426a5a4ab92b964ec32c936508b2f))
+
 ## [1.27.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.27.0...v1.27.1) (2022-09-01)
 
 
