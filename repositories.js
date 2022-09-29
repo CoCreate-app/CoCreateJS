@@ -1,9 +1,9 @@
 module.exports = [
 
-    // {
-    //     'path': '../CoCreateJS',
-    //     'repo': 'github.com/CoCreate-app/CoCreateJS.git'
-    // },
+    {
+        'path': '../CoCreateJS',
+        'repo': 'github.com/CoCreate-app/CoCreateJS.git'
+    },
     {
         'path': '../CoCreateCSS',
         'repo': 'github.com/CoCreate-app/CoCreateCSS.git'
@@ -103,6 +103,10 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-hosting.git'
     },
     {
+        'path': '../CoCreate-components/CoCreate-indexeddb',
+        'repo': 'github.com/CoCreate-app/CoCreate-indexeddb.git'
+    },
+    {
         'path': '../CoCreate-components/CoCreate-industry',
         'repo': 'github.com/CoCreate-app/CoCreate-industry.git'
     },
@@ -154,10 +158,10 @@ module.exports = [
         'path': '../CoCreate-components/CoCreate-progress',
         'repo': 'github.com/CoCreate-app/CoCreate-progress.git'
     },
-    // {
-    //     'path': '../CoCreate-components/CoCreate-pwa',
-    //     'repo': 'github.com/CoCreate-app/CoCreate-pwa.git'
-    // },
+    {
+        'path': '../CoCreate-components/CoCreate-pwa',
+        'repo': 'github.com/CoCreate-app/CoCreate-pwa.git'
+    },
     {
         'path': '../CoCreate-components/CoCreate-random-color',
         'repo': 'github.com/CoCreate-app/CoCreate-random-color.git'

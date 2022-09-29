@@ -13,6 +13,8 @@ dependency('api', import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 dependency('link', import (/*webpackChunkName: "link-chunk"*/ '@cocreate/link'));
 dependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
 dependency('cssParser', import (/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
+dependency('indexeddb', import (/*webpackChunkName: "indexeddb-chunk"*/ '@cocreate/indexeddb'));
+dependency('pwa', import (/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));
 
 
 // Components
