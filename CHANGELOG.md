@@ -1,3 +1,10 @@
+## [1.28.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.28.2...v1.28.3) (2022-09-30)
+
+
+### Bug Fixes
+
+* export defualt bug in filter.js ([9b5f102](https://github.com/CoCreate-app/CoCreateJS/commit/9b5f102e7b4abcad426afb2f84958e513ea99afc))
+
 ## [1.28.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.28.1...v1.28.2) (2022-09-30)
 
 
