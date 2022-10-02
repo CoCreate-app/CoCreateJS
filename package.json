@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/cocreatejs",
-  "version": "1.28.4",
+  "version": "1.28.5",
   "description": "A collaborative low code headless CMS and Javascript framework for building collaborative no code platforms, apps and UI's. Build powerful applications using HTML5 attributes or Javascript api.",
   "keywords": [
     "cocreatejs",
@@ -20,7 +20,9 @@
     "html5-framework",
     "javascript-framework"
   ],
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "npx webpack --config webpack.config.js ",
     "build": "NODE_ENV=production npx webpack --config webpack.config.js",
@@ -36,7 +38,9 @@
   },
   "author": "CoCreate LLC",
   "license": "MIT",
-  "bugs": { "url": "https://github.com/CoCreate-app/CoCreateJS/issues" },
+  "bugs": {
+    "url": "https://github.com/CoCreate-app/CoCreateJS/issues"
+  },
   "homepage": "https://cocreate.app",
   "funding": {
     "type": "GitHub Sponsors ❤",

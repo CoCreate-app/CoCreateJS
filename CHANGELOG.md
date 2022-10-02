@@ -1,3 +1,10 @@
+## [1.28.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.28.4...v1.28.5) (2022-10-02)
+
+
+### Bug Fixes
+
+* bump @cocreate/socket-client and @cocreate/hosting ([9e1e0a7](https://github.com/CoCreate-app/CoCreateJS/commit/9e1e0a7525846313d84e2a418bff87761a547527))
+
 ## [1.28.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.28.3...v1.28.4) (2022-10-01)
 
 
