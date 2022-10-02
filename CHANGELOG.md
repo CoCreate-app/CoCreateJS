@@ -1,3 +1,10 @@
+## [1.28.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.28.5...v1.28.6) (2022-10-02)
+
+
+### Bug Fixes
+
+* bug in modal ([709dbd6](https://github.com/CoCreate-app/CoCreateJS/commit/709dbd6cdc8bcdac80c0d064e5dd2299891268b5))
+
 ## [1.28.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.28.4...v1.28.5) (2022-10-02)
 
 
