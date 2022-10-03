@@ -1,3 +1,10 @@
+## [1.28.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.28.6...v1.28.7) (2022-10-03)
+
+
+### Bug Fixes
+
+* render array bug resolved ([7e0b4de](https://github.com/CoCreate-app/CoCreateJS/commit/7e0b4de6bed5dab387b711f7f947e2055cd1c99c))
+
 ## [1.28.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.28.5...v1.28.6) (2022-10-02)
 
 
