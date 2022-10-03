@@ -1,3 +1,10 @@
+## [1.28.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.28.7...v1.28.8) (2022-10-03)
+
+
+### Bug Fixes
+
+* bump @cocreate/select ([25b82d4](https://github.com/CoCreate-app/CoCreateJS/commit/25b82d4be36443ce67afd10824c12bef4aaae9fb))
+
 ## [1.28.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.28.6...v1.28.7) (2022-10-03)
 
 
