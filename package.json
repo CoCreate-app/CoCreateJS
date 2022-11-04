@@ -86,6 +86,7 @@
     "@cocreate/docs": "latest",
     "@cocreate/domain": "latest",
     "@cocreate/element-config": "latest",
+    "@cocreate/element-prototype": "latest",
     "@cocreate/elements": "latest",
     "@cocreate/facebook": "latest",
     "@cocreate/fetch": "latest",
