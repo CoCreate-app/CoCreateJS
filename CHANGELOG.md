@@ -1,3 +1,11 @@
+# [1.29.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.28.8...v1.29.0) (2022-11-21)
+
+
+### Features
+
+* add @cocreate/elment-prototype, renamed {{data.key}} to document.key ([c593511](https://github.com/CoCreate-app/CoCreateJS/commit/c593511879c345e495c1616aca7c8d0e7a20333a))
+* CRUD multiple databases, client loadBalancer capable of connecting to multiple servers simultaneously or round robin. socket event system extends accross multiple windows and tabs while online or offline. improved syncing of offline data changes ([b993b6b](https://github.com/CoCreate-app/CoCreateJS/commit/b993b6b149abee809101355c8638e93861f648dd))
+
 ## [1.28.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.28.7...v1.28.8) (2022-10-03)
 
 
