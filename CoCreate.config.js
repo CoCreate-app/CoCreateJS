@@ -8,10 +8,10 @@ module.exports = {
         {
             "entry": "./docs/apikey.js",
             "collection": "files",
-            "document_id": "619c47f2a8b6b4001a9e1fae",
-            "key": "src",
-            "data": {
+            "document": {
+                "_id": "619c47f2a8b6b4001a9e1fae",
                 "name": "apikey.js",
+                "src": "{{source}}",
                 "domains": [
                     "*",
                     "general.cocreate.app"
@@ -26,10 +26,10 @@ module.exports = {
         {
             "entry": "./docs/index.html",
             "collection": "files",
-            "document_id": "60907b078bc9a6631d1d0ac4",
-            "key": "src",
-            "data": {
+            "document": {
+                "_id": "60907b078bc9a6631d1d0ac4",
                 "name": "index.html",
+                "src": "{{source}}",
                 "domains": [
                     "*",
                     "general.cocreate.app"
@@ -44,10 +44,10 @@ module.exports = {
         {
             "entry": "./docs/elements.html",
             "collection": "files",
-            "document_id": "60907f898bc9a6631d1d0ad8",
-            "key": "src",
-            "data": {
+            "document": {
+                "_id": "60907f898bc9a6631d1d0ad8",
                 "name": "elements.html",
+                "src": "{{source}}",
                 "domains": [
                     "*",
                     "general.cocreate.app"
@@ -62,10 +62,10 @@ module.exports = {
         {
             "entry": "./docs/logic.html",
             "collection": "files",
-            "document_id": "61a2ff48a8b6b4001a9fce9e",
-            "key": "src",
-            "data": {
+            "document": {
+                "_id": "61a2ff48a8b6b4001a9fce9e",
                 "name": "logic.html",
+                "src": "{{source}}",
                 "domains": [
                     "*",
                     "general.cocreate.app"
@@ -80,10 +80,10 @@ module.exports = {
         {
             "entry": "./docs/user-management.html",
             "collection": "files",
-            "document_id": "61bf9089a8b6b4001aaba266",
-            "key": "src",
-            "data": {
+            "document": {
+                "_id": "61bf9089a8b6b4001aaba266",
                 "name": "user-management.html",
+                "src": "{{source}}",
                 "domains": [
                     "*",
                     "general.cocreate.app"
@@ -98,10 +98,10 @@ module.exports = {
         {
             "entry": "./docs/objects.html",
             "collection": "files",
-            "document_id": "60888216117c640e75963040",
-            "key": "src",
-            "data": {
+            "document": {
+                "_id": "60888216117c640e75963040",
                 "name": "objects.html",
+                "src": "{{source}}",
                 "domains": [
                     "*",
                     "general.cocreate.app"
@@ -116,10 +116,10 @@ module.exports = {
         {
             "entry": "./docs/templating.html",
             "collection": "files",
-            "document_id": "61a29714a8b6b4001a9fb48a",
-            "key": "src",
-            "data": {
+            "document": {
+                "_id": "61a29714a8b6b4001a9fb48a",
                 "name": "templating.html",
+                "src": "{{source}}",
                 "domains": [
                     "*",
                     "general.cocreate.app"
@@ -134,10 +134,10 @@ module.exports = {
         {
             "entry": "./docs/components/menu.html",
             "collection": "files",
-            "document_id": "603717b07de7fb350ae9fec8",
-            "key": "src",
-            "data": {
+            "document": {
+                "_id": "603717b07de7fb350ae9fec8",
                 "name": "menu.html",
+                "src": "{{source}}",
                 "domains": [
                     "*",
                     "general.cocreate.app"
@@ -152,10 +152,10 @@ module.exports = {
         {
             "entry": "./docs/components/navbar.html",
             "collection": "files",
-            "document_id": "60395ef42b3ac232657040fd",
-            "key": "src",
-            "data": {
+            "document": {
+                "_id": "60395ef42b3ac232657040fd",
                 "name": "navbar.html",
+                "src": "{{source}}",
                 "domains": [
                     "*",
                     "general.cocreate.app"
