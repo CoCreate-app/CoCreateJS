@@ -1,3 +1,10 @@
+# [1.30.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.29.4...v1.30.0) (2022-11-26)
+
+
+### Features
+
+* export fetched data as json, display total, fetched count in html elemets, loadmore using btn or on scroll ([ec26d4e](https://github.com/CoCreate-app/CoCreateJS/commit/ec26d4e437d12b7b797f47c54bccfbb19a755e3f))
+
 ## [1.29.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.29.3...v1.29.4) (2022-11-25)
 
 
