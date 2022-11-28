@@ -1,3 +1,10 @@
+## [1.31.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.31.0...v1.31.1) (2022-11-28)
+
+
+### Bug Fixes
+
+* search results ([13e21af](https://github.com/CoCreate-app/CoCreateJS/commit/13e21afad86646c332460f39f6f0a2f81a6f6781))
+
 # [1.31.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.30.0...v1.31.0) (2022-11-28)
 
 
