@@ -1,3 +1,10 @@
+# [1.31.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.30.0...v1.31.0) (2022-11-28)
+
+
+### Features
+
+* export fetched data as json, improved query, search and sort features, performance improvement to sync ([8162c59](https://github.com/CoCreate-app/CoCreateJS/commit/8162c592638e8534c21fc28d23512408fccc3295))
+
 # [1.30.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.29.4...v1.30.0) (2022-11-26)
 
 
