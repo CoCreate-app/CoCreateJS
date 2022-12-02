@@ -1,3 +1,10 @@
+## [1.31.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.31.2...v1.31.3) (2022-12-02)
+
+
+### Bug Fixes
+
+* createUser renamed to signUp, filter-sort-type renamed to filter-sort-direction ([b42f4f9](https://github.com/CoCreate-app/CoCreateJS/commit/b42f4f90b4fcd961f391d49e9486f9b9df8e3f3d))
+
 ## [1.31.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.31.1...v1.31.2) (2022-11-28)
 
 
