@@ -1,3 +1,10 @@
+# [1.32.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.31.3...v1.32.0) (2022-12-04)
+
+
+### Features
+
+* simplified onboarding. Apply cdn and db will be created local ([c065093](https://github.com/CoCreate-app/CoCreateJS/commit/c0650931d0027e608ca0b38c909abea6e4691b75))
+
 ## [1.31.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.31.2...v1.31.3) (2022-12-02)
 
 
