@@ -1,3 +1,10 @@
+## [1.32.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.32.4...v1.32.5) (2022-12-09)
+
+
+### Bug Fixes
+
+* bump @cocreate/css-parser ([ac619ee](https://github.com/CoCreate-app/CoCreateJS/commit/ac619ee45226475253fc9530ce8be090ce174322))
+
 ## [1.32.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.32.3...v1.32.4) (2022-12-09)
 
 
