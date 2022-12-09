@@ -1,3 +1,10 @@
+## [1.32.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.32.3...v1.32.4) (2022-12-09)
+
+
+### Bug Fixes
+
+* bump @cocreate/crdt ([cbbdc74](https://github.com/CoCreate-app/CoCreateJS/commit/cbbdc74d05ada6f28463cee837565a61574c6e96))
+
 ## [1.32.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.32.2...v1.32.3) (2022-12-08)
 
 
