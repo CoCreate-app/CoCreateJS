@@ -1,3 +1,10 @@
+## [1.33.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.2...v1.33.3) (2022-12-09)
+
+
+### Bug Fixes
+
+* redploy cdn ([bf8ca95](https://github.com/CoCreate-app/CoCreateJS/commit/bf8ca9528c45445dd4c870642088fadcf0473ad3))
+
 ## [1.33.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.1...v1.33.2) (2022-12-09)
 
 
