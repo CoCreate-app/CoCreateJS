@@ -1,3 +1,10 @@
+# [1.33.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.32.5...v1.33.0) (2022-12-09)
+
+
+### Features
+
+* cssParser can be globally set to false from localStorage ([385a592](https://github.com/CoCreate-app/CoCreateJS/commit/385a59246e46621d5b9fa02048492bbc8b9b9584))
+
 ## [1.32.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.32.4...v1.32.5) (2022-12-09)
 
 
