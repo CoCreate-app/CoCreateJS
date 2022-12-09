@@ -1,3 +1,10 @@
+## [1.33.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.3...v1.33.4) (2022-12-09)
+
+
+### Bug Fixes
+
+* test vdom ([1e58f47](https://github.com/CoCreate-app/CoCreateJS/commit/1e58f47efafff83a878e19f441a455980ffed0fd))
+
 ## [1.33.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.2...v1.33.3) (2022-12-09)
 
 
