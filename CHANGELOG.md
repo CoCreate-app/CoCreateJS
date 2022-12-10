@@ -1,3 +1,10 @@
+## [1.33.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.6...v1.33.7) (2022-12-10)
+
+
+### Bug Fixes
+
+* vdom observer name duplication ([393945c](https://github.com/CoCreate-app/CoCreateJS/commit/393945cafdac576e0454f14708558e5a72d0135d))
+
 ## [1.33.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.5...v1.33.6) (2022-12-09)
 
 
