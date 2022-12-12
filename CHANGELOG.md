@@ -1,3 +1,10 @@
+## [1.33.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.8...v1.33.9) (2022-12-12)
+
+
+### Bug Fixes
+
+* crudSync to keep client upto date with server ([ce6cc9c](https://github.com/CoCreate-app/CoCreateJS/commit/ce6cc9c36d9f0cfd1ccfb8927faac8371d1ca633))
+
 ## [1.33.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.7...v1.33.8) (2022-12-11)
 
 
