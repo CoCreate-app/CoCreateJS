@@ -4,6 +4,8 @@ import { lazyLoad, dependency } from '@cocreate/lazy-loader';
 
 // Dependencies
 dependency('observer', import (/*webpackChunkName: "observer-chunk"*/ '@cocreate/observer'));
+dependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
+dependency('indexeddb', import (/*webpackChunkName: "indexeddb-chunk"*/ '@cocreate/indexeddb'));
 dependency('socket', import (/*webpackChunkName: "socket-chunk"*/ '@cocreate/socket-client'));
 dependency('crud', import (/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud-client'));
 dependency('crdt', import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
@@ -13,9 +15,7 @@ dependency('pass', import (/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'))
 dependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 dependency('api', import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 dependency('link', import (/*webpackChunkName: "link-chunk"*/ '@cocreate/link'));
-dependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
 dependency('cssParser', import (/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
-dependency('indexeddb', import (/*webpackChunkName: "indexeddb-chunk"*/ '@cocreate/indexeddb'));
 dependency('pwa', import (/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));
 
 
