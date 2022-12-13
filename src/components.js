@@ -26,7 +26,6 @@ lazyLoad('renderJson', '[fetch-for]', ()=> import (/*webpackChunkName: "render-j
 // lazyLoad('pass', '[pass_id], [pass_to], [pass-value_to], [pass-value_id]', ()=> import (/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'));
 lazyLoad('actions', '[actions]', ()=> import (/*webpackChunkName: "actions-chunk"*/ '@cocreate/actions'));
 lazyLoad('form', 'form', ()=> import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
-lazyLoad('room', '[namespace], [room]', ()=> import (/*webpackChunkName: "room-chunk"*/ '@cocreate/room'));
 lazyLoad('elements', '[collection], [get-value], [set-value]', ()=> import (/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
 lazyLoad('fetch', '[fetch-db], [fetch-database], [fetch-collection], [fetch-index], [fetch-document], [fetch-name]', ()=> import (/*webpackChunkName: "fetch-chunk"*/ '@cocreate/fetch'));
 lazyLoad('render', '[template_id]', ()=> import (/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));

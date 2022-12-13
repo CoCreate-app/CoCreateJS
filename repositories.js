@@ -195,10 +195,6 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-rich-text.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-room',
-        'repo': 'github.com/CoCreate-app/CoCreate-room.git'
-    },
-    {
         'path': '../CoCreate-components/CoCreate-scroll',
         'repo': 'github.com/CoCreate-app/CoCreate-scroll.git'
     },
