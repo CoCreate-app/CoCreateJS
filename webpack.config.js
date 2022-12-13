@@ -1,21 +1,19 @@
 // Webpack uses this to work with directories
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-
 const TerserPlugin = require("terser-webpack-plugin");
-let isProduction = process.env.NODE_ENV === 'production';
-const getLogger = require('webpack-log');
-const log = getLogger({ name: 'webpack-batman' });
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-// log.info(__filename);
 
-// This is main configuration object.
-// Here you write different options and tell Webpack what to do
+let isProduction = process.env.NODE_ENV === 'production';
+
+// const getLogger = require('webpack-log');
+// const log = getLogger({ name: 'webpack-batman' });
+// log.info(__filename);
 // let version = require('./package.json').version;
 // log.info(version);
+
 module.exports = {
 
     // Path to your entry point. From this file Webpack will begin his work
@@ -27,17 +25,6 @@ module.exports = {
     // Webpack will bundle all JavaScript into this file
     output: {
         path: path.resolve(__dirname, 'dist'),
-        // filename: (pathData) => {
-        //     if (isProduction) {
-        //         if (pathData.chunk.name === 'CoCreate')
-        //             // return `[name].${version}.min.js`;
-        //             return `[name].min.js`;
-        //         else
-        //             return '[name].min.js';
-        //     }
-        //     else
-        //         return isProduction ? '[name].min.js' : '[name].js';
-        // },
         filename: isProduction ? '[name].min.js' : '[name].js',
         chunkFilename: isProduction ? '[name].min.js' : '[name].js',
         libraryTarget: 'umd',
@@ -67,10 +54,7 @@ module.exports = {
     devServer: {
         hot: true,
     },
-    // Default mode for Webpack is production.
-    // Depending on mode Webpack will apply different things
-    // on final bundle. For now we don't need production's JavaScript
-    // minifying and other thing so let's set mode to development
+
     mode: isProduction ? 'production' : 'development',
     // add source map
     ...(isProduction ? {} : { devtool: 'eval-source-map' }),
@@ -90,13 +74,6 @@ module.exports = {
                     }
                 }
             },
-            // {
-            //     test: /\.css$/,
-            //     use: [MiniCssExtractPlugin.loader, 'css-loader',
-
-            //         // "file-loader",
-            //     ]
-            // },
             {
                 test: /.css$/i,
                 use: [
@@ -131,8 +108,6 @@ module.exports = {
                 parallel: true,
                 // sourceMap: true, // Must be set to true if using source-maps in production
                 terserOptions: {
-                    // https://github.com/webpack-contrib/terser-webpack-plugin#terseroptions
-                    // extractComments: 'all',
                     compress: {
                         drop_console: true,
                     },

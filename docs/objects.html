@@ -336,7 +336,7 @@
 												<p>The data structure for each item: {name: <span class="cocreate-badge success">string</span>, operator: <span class="cocreate-badge success">string</span>, value: <span class="cocreate-badge success">array</span>} </p>
 												<div class="padding-left:15px">
 													<p><strong>name:</strong> The field name</p>
-													<p><strong>operator:</strong> Query operator ($includes | $range | $eq | $ne | $lt | $lte | $gt | $gte | $in | $nin | $geoWithin)</p>
+													<p><strong>operator:</strong> Query operator (includes | $range | $eq | $ne | $lt | $lte | $gt | $gte | $in | $nin | $geoWithin)</p>
 													<p><strong>value:</strong> The operator values</p>
 												</div>
 											</li>
@@ -389,7 +389,7 @@
     operator: {
 	    filters: [{
 				name: 'field1',
-				operator: "$includes | $range | $eq | $ne | $lt | $lte | $gt | $gte | $in | $nin | $geoWithin",
+				operator: "includes | $range | $eq | $ne | $lt | $lte | $gt | $gte | $in | $nin | $geoWithin",
 				value: [v1, v2, ...]
 		    }, {
 		    	name: "_id",
