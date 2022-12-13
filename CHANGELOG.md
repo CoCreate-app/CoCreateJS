@@ -1,3 +1,10 @@
+## [1.33.10](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.9...v1.33.10) (2022-12-13)
+
+
+### Bug Fixes
+
+* depreciated @cocreate/room ([1d3a049](https://github.com/CoCreate-app/CoCreateJS/commit/1d3a049503ac0aeaad1411e8e67bcd130395c22a))
+
 ## [1.33.9](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.8...v1.33.9) (2022-12-12)
 
 
