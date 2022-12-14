@@ -1,3 +1,10 @@
+## [1.33.13](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.12...v1.33.13) (2022-12-14)
+
+
+### Bug Fixes
+
+* uncomment components picker and prism ([db3a796](https://github.com/CoCreate-app/CoCreateJS/commit/db3a796f97fed2621d0e459a28ff2ea072652d47))
+
 ## [1.33.12](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.11...v1.33.12) (2022-12-14)
 
 
