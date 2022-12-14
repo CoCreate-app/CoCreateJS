@@ -69,19 +69,25 @@
 					</div>
 					
 					<!-- Avatar -->
+					<style type="text/css">
+						div[user-status="on"] {background-color:yellowgreen;}
+						div[user-status="off"] {background-color:red;}
+						div[user-status="idle"] {background-color:orange;}
+					</style>
+				
 					<div class="avatar-wrapper margin-right:10px">
-						<a class="avatar round" href="../admin/signin.html">
+						<a class="avatar round" href="./admin/signin.html">
 							<span collection="users" 
 								document_id="" 
 								name="name" 
 								class="sessionUser_Id avatar-name">
 								<i class="fas fa-sign-in-alt"></i>
 							</span>
-							<span collection="users" document_id="" name="profile_image" class="sessionUser_Id avatar-image">
-							  <img collection="users" document_id="" name="profile_image" src="" onerror="this.style.display='none'"/>
+							<span class="sessionUser_Id avatar-image">
+								<img collection="users" document_id="" name="avatar" onerror="this.style.display='none'" class="sessionUser_Id" width="40px"/>
 							</span>
 						</a>
-						  <div class="avatar-status off"></div>
+						<div class="avatar-status sessionUser_Id"  collection="users" document_id="" user-status='{"name":"status"}'></div>
 					</div>
 				</div>
 			</div>
