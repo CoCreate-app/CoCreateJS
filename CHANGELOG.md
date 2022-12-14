@@ -1,3 +1,10 @@
+## [1.33.11](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.10...v1.33.11) (2022-12-13)
+
+
+### Bug Fixes
+
+* rmoved rooms from components ([0979a5c](https://github.com/CoCreate-app/CoCreateJS/commit/0979a5cd8401a49072976a5daca8dfd279a322ac))
+
 ## [1.33.10](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.9...v1.33.10) (2022-12-13)
 
 
