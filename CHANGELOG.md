@@ -1,3 +1,10 @@
+## [1.33.12](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.11...v1.33.12) (2022-12-14)
+
+
+### Bug Fixes
+
+* added CoCreate.min.css, bump @cocreate/crud-client ([cd13c66](https://github.com/CoCreate-app/CoCreateJS/commit/cd13c668d38034a9c7638edbc0bb1bca913d3cf3))
+
 ## [1.33.11](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.10...v1.33.11) (2022-12-13)
 
 
