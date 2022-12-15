@@ -1,3 +1,10 @@
+## [1.33.18](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.17...v1.33.18) (2022-12-15)
+
+
+### Bug Fixes
+
+* missing devDependency in components ([aaa7be4](https://github.com/CoCreate-app/CoCreateJS/commit/aaa7be43827a8c8486fbf29c21655effd713261f))
+
 ## [1.33.17](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.16...v1.33.17) (2022-12-15)
 
 
