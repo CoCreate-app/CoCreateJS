@@ -1,3 +1,10 @@
+## [1.33.16](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.15...v1.33.16) (2022-12-15)
+
+
+### Bug Fixes
+
+* removed style user-status from navbar. now handeled by @cocreate/user ([cad358c](https://github.com/CoCreate-app/CoCreateJS/commit/cad358ce5f0249be6fc182f5fff5fbd98a78d7fb))
+
 ## [1.33.15](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.14...v1.33.15) (2022-12-15)
 
 
