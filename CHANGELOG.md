@@ -1,3 +1,10 @@
+## [1.33.15](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.14...v1.33.15) (2022-12-15)
+
+
+### Bug Fixes
+
+* bump @cocreate/floating-label ([b4239a5](https://github.com/CoCreate-app/CoCreateJS/commit/b4239a540edf7dd48c815020d1c8c54d2a82cac6))
+
 ## [1.33.14](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.13...v1.33.14) (2022-12-14)
 
 
