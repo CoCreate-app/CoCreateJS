@@ -53,6 +53,7 @@ lazyLoad('selection', 'input, textarea, [contenteditable]', ()=> import (/*webpa
 lazyLoad('cursors', 'input, textarea, [contenteditable]', ()=> import (/*webpackChunkName: "cursors-chunk"*/ '@cocreate/cursors'));
 lazyLoad('text', 'input, textarea, [contenteditable]', ()=> import (/*webpackChunkName: "text-chunk"*/ '@cocreate/text'));
 lazyLoad('rich-text', '[actions*="nodeName"], [actions*="cloneElement"], [actions*="deleteElement"]', ()=> import (/*webpackChunkName: "rich-text-chunk"*/ '@cocreate/rich-text'));
+lazyLoad('codearea', '[type="code"]', ()=> import (/*webpackChunkName: "codearea-chunk"*/ '@cocreate/codearea'));
 
 // UI Components
 lazyLoad('floatingLabel', 'floating-label, .floating-label', ()=> import (/*webpackChunkName: "floating-label-chunk"*/ '@cocreate/floating-label'));
