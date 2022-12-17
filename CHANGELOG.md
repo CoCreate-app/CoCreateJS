@@ -1,3 +1,10 @@
+# [1.34.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.18...v1.34.0) (2022-12-17)
+
+
+### Features
+
+* codearea - converts a textarea into a collabrative code editor with syntax highlighting ([0030a26](https://github.com/CoCreate-app/CoCreateJS/commit/0030a26f8ff6fa3e15d75706e9303c0216ec0e43))
+
 ## [1.33.18](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.17...v1.33.18) (2022-12-15)
 
 
