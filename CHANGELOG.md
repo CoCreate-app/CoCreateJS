@@ -1,3 +1,11 @@
+## [1.34.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.34.0...v1.34.1) (2022-12-20)
+
+
+### Bug Fixes
+
+* add cdn to elements demo ([a35e855](https://github.com/CoCreate-app/CoCreateJS/commit/a35e8554274b93ac362be3730db309e73cfae8ab))
+* update docs and demos, bump dependencies ([ad8dcef](https://github.com/CoCreate-app/CoCreateJS/commit/ad8dcef736bc5aed92526aa4bad74e9a9084524c))
+
 # [1.34.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.33.18...v1.34.0) (2022-12-17)
 
 
