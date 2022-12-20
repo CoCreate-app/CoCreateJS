@@ -1,3 +1,10 @@
+## [1.34.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.34.1...v1.34.2) (2022-12-20)
+
+
+### Bug Fixes
+
+* bump @cocreate/socket-client ([815bf93](https://github.com/CoCreate-app/CoCreateJS/commit/815bf93c320bb36c454a37a4f0f073b6dfd41fb3))
+
 ## [1.34.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.34.0...v1.34.1) (2022-12-20)
 
 
