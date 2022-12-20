@@ -166,6 +166,22 @@ module.exports = {
                 "public": "true",
                 "website_id": "5ffbceb7f11d2d00103c4535"
             }
+        },
+        {
+            "entry": "./demo/elements/input.html",
+            "collection": "demos",
+            "document": {
+                "_id": "619aa8e8a8b6b4001a9dc24e",
+                "input-demo": "{{source}}"
+            }
+        },
+        {
+            "entry": "./demo/elements/textarea.html",
+            "collection": "demos",
+            "document": {
+                "_id": "619bd887a8b6b4001a9e05af",
+                "textarea-demo": "{{source}}"
+            }
         }
     ]
 }
