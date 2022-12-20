@@ -9,8 +9,9 @@
 	<meta name="description" content="A codeless Javascript framework for building collaborative no code platforms, apps and UI">
 	<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
 	<link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css"/>
-	<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" realtime="false" />
+	<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" realtime="true" />
 </head>
+<style>.code-height {height:100%!important}</style>
 
 <body>
 	<nav class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px" content_id="content" scroll="sticky-nav,hide-nav" scroll-up="10" scroll-down="10" collection="files" document_id="60395ef42b3ac232657040fd"
@@ -53,47 +54,36 @@
 					<h2 id="collabrotive_elements" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Collaborative Elements</h2>
 					<p class="padding:10px_0px line-height:1.5">Simply define a collection, document_id and name. If the collection contains the document and the document contains the field name. Viola! The value is fetched in the input. Like wise, typing in the input will save the value. If the collection did not exist previously it will be created. If the document_id is left empty, typing in the input will create a new document_id.</p>
 					<pre><code class="language-html">&lt;input collection="test" document_id="" name="name"&gt;</code></pre>
-					<p class="padding:10px_0px line-height:1.5">The attributes collection, document_id and name are at the center of the CoCreate universe, we take a data first aproach. By defining these 3 attributes you can save and fetch data from any input, textarea, select and thier various types. All other elements like h1, h2, span, etc will only fetch. Apply contenteditable attribute, and the data you input will now save. </p>
+					<p class="padding:10px_0px line-height:1.5">The attributes collection, document_id and name are at the center of the CoCreate universe, we take a data first aproach. By defining these 3 attributes you can save and fetch data from any input, textarea, select and thier various types. All other elements like h1, h2, span, etc will only fetch unless the contenteditable attribute is applied.</p>
 					<pre><code class="language-html">&lt;h1 collection="test" document_id="" name="name" contenteditable&gt;&lt;/h1&gt;</code></pre>
-					<p class="padding:10px_0px line-height:1.5">CoCreateJS by default is collabrotive. To turn collaboration off for an element, apply attribute realtime="false"</p>
+					<p class="padding:10px_0px line-height:1.5">CoCreateJS by default is collabortive. To turn collaboration off for an element, apply attribute realtime="false"</p>
 					
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="collaboration-playground">
-						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="collaboration-code" show="#collaboration-preview" hide="#collaboration-code, #collaboration-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px" hidden id="collaboration-preview" show="#collaboration-code, #collaboration-view" hide="#collaboration-preview"><i class="fas fa-code"></i></a>
-							<a class="margin-right:5px" fullscreen target="#collaboration-playground"><i class="fas fa-expand"></i></a>
+					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="collaboration-playground">
+						<div id="collaboration-demo-code" resizable class="position:relative height:50%">
+							<textarea type="code" lang="html" collection="demos" document_id="619d495ca8b6b4001a9e6127" name="collaboration-demo" realtime="true" id="collaboration-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<div resize="bottom" class="background:lightgrey"></div>
 						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="collaboration-view">
-									<textarea collection="demos" document_id="619d495ca8b6b4001a9e6127" name="collaboration-demo" realtime="false" id="collaboration-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<div class="svRow">
-										<div class="svColumn">
-											<div class="svPanel">
-												<iframe get-value="#collaboration-demo" frameBorder="0" height="100%" width="100%"></iframe>
-											</div>
-										</div>
-										<div class="svSplitter svVertical"> </div>
-										<div class="svColumn">
-											<div class="svPanel">
-												<iframe get-value="#collaboration-demo" frameBorder="0" height="100%" width="100%"></iframe>
-											</div>
-										</div>
-									</div>
-								</div>
-
+	
+						<div id="collaboration-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<div class="position:relative width:50%" resizable>
+								<iframe get-value="#collaboration-demo" frameBorder="0" height="100%" width="100%"></iframe>
+								<div resize="right" class="background:lightgrey"></div>
+							</div>
+							<div>
+								<iframe get-value="#collaboration-demo" frameBorder="0" height="100%" width="100%"></iframe>
 							</div>
 						</div>
+						
+						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+							<a class="margin-right:10px" id="collaboration-eye" show="#collaboration-eye-slash" hide="#collaboration-eye, #collaboration-demo-preview" toggle="code-height" toggle-target="#collaboration-demo-code"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px" hidden id="collaboration-eye-slash" show="#collaboration-eye, #collaboration-demo-preview" hide="#collaboration-eye-slash" toggle="code-height" toggle-target="#collaboration-demo-code"><i class="fas fa-eye-slash"></i></a>
+							<a class="margin-right:10px" id="collaboration-code" show="#collaboration-code-slash" hide="#collaboration-code, #collaboration-demo-code"><i class="fa fa-code"></i></a>
+							<a class="margin-right:10px" hidden id="collaboration-code-slash" show="#collaboration-code, #collaboration-demo-code" hide="#collaboration-code-slash"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#collaboration-playground"><i class="fas fa-expand"></i></a>
+						</div>
+	
 					</div>
-					<!-- End SandBox -->
 
 				</section>
 				
@@ -102,29 +92,26 @@
 					<h3 class="padding-top:20px">Input</h3>
 					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
 					<!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
+
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="input-playground">
+					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="input-playground">
+						<div id="input-demo-code" resizable class="position:relative height:50%">
+							<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="input-demo" realtime="true" id="input-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<div resize="bottom" class="background:lightgrey"></div>
+						</div>
+	
+						<div id="input-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<iframe get-value="#input-demo" frameBorder="0" height="100%" width="100%"></iframe>
+						</div>
+						
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="input-code" show="#input-preview" hide="#input-code, #input-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px" hidden id="input-preview" show="#input-code, #input-view" hide="#input-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:10px" id="input-eye" show="#input-eye-slash" hide="#input-eye, #input-demo-preview" toggle="code-height" toggle-target="#input-demo-code"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px" hidden id="input-eye-slash" show="#input-eye, #input-demo-preview" hide="#input-eye-slash" toggle="code-height" toggle-target="#input-demo-code"><i class="fas fa-eye-slash"></i></a>
+							<a class="margin-right:10px" id="input-code" show="#input-code-slash" hide="#input-code, #input-demo-code"><i class="fa fa-code"></i></a>
+							<a class="margin-right:10px" hidden id="input-code-slash" show="#input-code, #input-demo-code" hide="#input-code-slash"><i class="fas fa-code"></i></a>
 							<a class="margin-right:5px" fullscreen target="#input-playground"><i class="fas fa-expand"></i></a>
 						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="input-view">
-									<textarea collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="input-demo" realtime="false" id="input-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="#input-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
+	
 					</div>
 					<!-- End SandBox -->
 
@@ -133,30 +120,25 @@
 					<h3 class="padding-top:20px">Textarea</h3>
 					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
 					<!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
-
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="textarea-playground">
+					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="textarea-playground">
+						<div id="textarea-demo-code" resizable class="position:relative height:50%">
+							<textarea type="code" lang="html" collection="demos" document_id="619bd887a8b6b4001a9e05af" name="textarea-demo" realtime="true" id="textarea-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<div resize="bottom" class="background:lightgrey"></div>
+						</div>
+	
+						<div id="textarea-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<iframe get-value="#textarea-demo" frameBorder="0" height="100%" width="100%"></iframe>
+						</div>
+						
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="textarea-code" show="#textarea-preview" hide="#textarea-code, #textarea-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px" hidden id="textarea-preview" show="#textarea-code, #textarea-view" hide="#textarea-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:10px" id="textarea-eye" show="#textarea-eye-slash" hide="#textarea-eye, #textarea-demo-preview" toggle="code-height" toggle-target="#textarea-demo-code"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px" hidden id="textarea-eye-slash" show="#textarea-eye, #textarea-demo-preview" hide="#textarea-eye-slash" toggle="code-height" toggle-target="#textarea-demo-code"><i class="fas fa-eye-slash"></i></a>
+							<a class="margin-right:10px" id="textarea-code" show="#textarea-code-slash" hide="#textarea-code, #textarea-demo-code"><i class="fa fa-code"></i></a>
+							<a class="margin-right:10px" hidden id="textarea-code-slash" show="#textarea-code, #textarea-demo-code" hide="#textarea-code-slash"><i class="fas fa-code"></i></a>
 							<a class="margin-right:5px" fullscreen target="#textarea-playground"><i class="fas fa-expand"></i></a>
 						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="textarea-view">
-									<textarea collection="demos" document_id="619bd887a8b6b4001a9e05af" name="textarea-demo" realtime="false" id="textarea-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="#textarea-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
+	
 					</div>
 					<!-- End SandBox -->
 
@@ -167,60 +149,53 @@
 					<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
 
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="contenteditable-playground">
+					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="contenteditable-playground">
+						<div id="contenteditable-demo-code" resizable class="position:relative height:50%">
+							<textarea type="code" lang="html" collection="demos" document_id="619be339a8b6b4001a9e0837" name="contenteditable-demo" realtime="true" id="contenteditable-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<div resize="bottom" class="background:lightgrey"></div>
+						</div>
+	
+						<div id="contenteditable-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<iframe get-value="#contenteditable-demo" frameBorder="0" height="100%" width="100%"></iframe>
+						</div>
+						
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="contenteditable-code" show="#contenteditable-preview" hide="#contenteditable-code, #contenteditable-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px" hidden id="contenteditable-preview" show="#contenteditable-code, #contenteditable-view" hide="#contenteditable-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:10px" id="contenteditable-eye" show="#contenteditable-eye-slash" hide="#contenteditable-eye, #contenteditable-demo-preview" toggle="code-height" toggle-target="#contenteditable-demo-code"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px" hidden id="contenteditable-eye-slash" show="#contenteditable-eye, #contenteditable-demo-preview" hide="#contenteditable-eye-slash" toggle="code-height" toggle-target="#contenteditable-demo-code"><i class="fas fa-eye-slash"></i></a>
+							<a class="margin-right:10px" id="contenteditable-code" show="#contenteditable-code-slash" hide="#contenteditable-code, #contenteditable-demo-code"><i class="fa fa-code"></i></a>
+							<a class="margin-right:10px" hidden id="contenteditable-code-slash" show="#contenteditable-code, #contenteditable-demo-code" hide="#contenteditable-code-slash"><i class="fas fa-code"></i></a>
 							<a class="margin-right:5px" fullscreen target="#contenteditable-playground"><i class="fas fa-expand"></i></a>
 						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="contenteditable-view">
-									<textarea collection="demos" document_id="619be339a8b6b4001a9e0837" name="contenteditable-demo" realtime="false" id="contenteditable-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="#contenteditable-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
+	
 					</div>
 					<!-- End SandBox -->
-
+					
 				</section>
+
 				<section id="radio" class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#radio-item">
 					<h3 class="padding-top:20px">Radio</h3>
 					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
 					<!--<pre><code class="language-html">&lt;input type="text" collection="test" document_id="" name="name"&gt;</code></pre>-->
 
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="radio-playground">
+					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="radio-playground">
+						<div id="radio-demo-code" resizable class="position:relative height:50%">
+							<textarea type="code" lang="html" collection="demos" document_id="619bde0da8b6b4001a9e06f3" name="radio-demo" realtime="true" id="radio-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<div resize="bottom" class="background:lightgrey"></div>
+						</div>
+	
+						<div id="radio-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<iframe get-value="#radio-demo" frameBorder="0" height="100%" width="100%"></iframe>
+						</div>
+						
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="radio-code" show="#radio-preview" hide="#radio-code, #radio-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px" hidden id="radio-preview" show="#radio-code, #radio-view" hide="#radio-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:10px" id="radio-eye" show="#radio-eye-slash" hide="#radio-eye, #radio-demo-preview" toggle="code-height" toggle-target="#radio-demo-code"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px" hidden id="radio-eye-slash" show="#radio-eye, #radio-demo-preview" hide="#radio-eye-slash" toggle="code-height" toggle-target="#radio-demo-code"><i class="fas fa-eye-slash"></i></a>
+							<a class="margin-right:10px" id="radio-code" show="#radio-code-slash" hide="#radio-code, #radio-demo-code"><i class="fa fa-code"></i></a>
+							<a class="margin-right:10px" hidden id="radio-code-slash" show="#radio-code, #radio-demo-code" hide="#radio-code-slash"><i class="fas fa-code"></i></a>
 							<a class="margin-right:5px" fullscreen target="#radio-playground"><i class="fas fa-expand"></i></a>
 						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="radio-view">
-									<textarea collection="demos" document_id="619bde0da8b6b4001a9e06f3" name="radio-demo" realtime="false" id="radio-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="#radio-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
+	
 					</div>
 					<!-- End SandBox -->
 
@@ -231,28 +206,24 @@
 					<!--<pre><code class="language-html">&lt;input type="checkbox" collection="test" document_id="" name="name"&gt;</code></pre>-->
 
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="checkbox-playground">
+					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="checkbox-playground">
+						<div id="checkbox-demo-code" resizable class="position:relative height:50%">
+							<textarea type="code" lang="html" collection="demos" document_id="619bdaf0a8b6b4001a9e063c" name="checkbox-demo" realtime="true" id="checkbox-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<div resize="bottom" class="background:lightgrey"></div>
+						</div>
+	
+						<div id="checkbox-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<iframe get-value="#checkbox-demo" frameBorder="0" height="100%" width="100%"></iframe>
+						</div>
+						
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="checkbox-code" show="#checkbox-preview" hide="#checkbox-code, #checkbox-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px" hidden id="checkbox-preview" show="#checkbox-code, #checkbox-view" hide="#checkbox-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:10px" id="checkbox-eye" show="#checkbox-eye-slash" hide="#checkbox-eye, #checkbox-demo-preview" toggle="code-height" toggle-target="#checkbox-demo-code"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px" hidden id="checkbox-eye-slash" show="#checkbox-eye, #checkbox-demo-preview" hide="#checkbox-eye-slash" toggle="code-height" toggle-target="#checkbox-demo-code"><i class="fas fa-eye-slash"></i></a>
+							<a class="margin-right:10px" id="checkbox-code" show="#checkbox-code-slash" hide="#checkbox-code, #checkbox-demo-code"><i class="fa fa-code"></i></a>
+							<a class="margin-right:10px" hidden id="checkbox-code-slash" show="#checkbox-code, #checkbox-demo-code" hide="#checkbox-code-slash"><i class="fas fa-code"></i></a>
 							<a class="margin-right:5px" fullscreen target="#checkbox-playground"><i class="fas fa-expand"></i></a>
 						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="checkbox-view">
-									<textarea collection="demos" document_id="619bdaf0a8b6b4001a9e063c" name="checkbox-demo" realtime="false" id="checkbox-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="#checkbox-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
+	
 					</div>
 					<!-- End SandBox -->
 
@@ -263,28 +234,24 @@
 					<pre><code class="language-html">&lt;select collection="" document_id="" name="name"&gt;&lt;/select&gt;</code></pre>
 
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="select-playground">
+					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="select-playground">
+						<div id="select-demo-code" resizable class="position:relative height:50%">
+							<textarea type="code" lang="html" collection="demos" document_id="619be11ba8b6b4001a9e07b8" name="select-demo" realtime="true" id="select-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<div resize="bottom" class="background:lightgrey"></div>
+						</div>
+	
+						<div id="select-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<iframe get-value="#select-demo" frameBorder="0" height="100%" width="100%"></iframe>
+						</div>
+						
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="select-code" show="#select-preview" hide="#select-code, #select-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px" hidden id="select-preview" show="#select-code, #select-view" hide="#select-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:10px" id="select-eye" show="#select-eye-slash" hide="#select-eye, #select-demo-preview" toggle="code-height" toggle-target="#select-demo-code"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px" hidden id="select-eye-slash" show="#select-eye, #select-demo-preview" hide="#select-eye-slash" toggle="code-height" toggle-target="#select-demo-code"><i class="fas fa-eye-slash"></i></a>
+							<a class="margin-right:10px" id="select-code" show="#select-code-slash" hide="#select-code, #select-demo-code"><i class="fa fa-code"></i></a>
+							<a class="margin-right:10px" hidden id="select-code-slash" show="#select-code, #select-demo-code" hide="#select-code-slash"><i class="fas fa-code"></i></a>
 							<a class="margin-right:5px" fullscreen target="#select-playground"><i class="fas fa-expand"></i></a>
 						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="select-view">
-									<textarea collection="demos" document_id="619be11ba8b6b4001a9e07b8" name="select-demo" realtime="false" id="select-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="#select-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
+	
 					</div>
 					<!-- End SandBox -->
 
@@ -297,28 +264,24 @@
 					</div>
 
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-playground">
+					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-playground">
+						<div id="form-demo-code" resizable class="position:relative height:50%">
+							<textarea type="code" lang="html" collection="demos" document_id="619d438ca8b6b4001a9e5faf" name="form-demo" realtime="true" id="form-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<div resize="bottom" class="background:lightgrey"></div>
+						</div>
+	
+						<div id="form-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<iframe get-value="#form-demo" frameBorder="0" height="100%" width="100%"></iframe>
+						</div>
+						
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="form-code" show="#form-preview" hide="#form-code, #form-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px" hidden id="form-preview" show="#form-code, #form-view" hide="#form-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:10px" id="form-eye" show="#form-eye-slash" hide="#form-eye, #form-demo-preview" toggle="code-height" toggle-target="#form-demo-code"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px" hidden id="form-eye-slash" show="#form-eye, #form-demo-preview" hide="#form-eye-slash" toggle="code-height" toggle-target="#form-demo-code"><i class="fas fa-eye-slash"></i></a>
+							<a class="margin-right:10px" id="form-code" show="#form-code-slash" hide="#form-code, #form-demo-code"><i class="fa fa-code"></i></a>
+							<a class="margin-right:10px" hidden id="form-code-slash" show="#form-code, #form-demo-code" hide="#form-code-slash"><i class="fas fa-code"></i></a>
 							<a class="margin-right:5px" fullscreen target="#form-playground"><i class="fas fa-expand"></i></a>
 						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="form-view">
-									<textarea collection="demos" document_id="619d438ca8b6b4001a9e5faf" name="form-demo" realtime="false" id="form-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="#form-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
+	
 					</div>
 					<!-- End SandBox -->
 
@@ -332,33 +295,29 @@
 						<pre><code class="language-html">&lt;button actions="save"&gt; &lt;/button&gt;</code></pre>
 					</div>
 					<p class="padding:10px_0px line-height:1.5">Applying and clicking this action will save the value of the elements in a form to their respective collection, document_id and name. If a element does not have a document_id defined a document_id will be generated and applied to all other elements with the same collection defined and do not have a document_id. Existing document_id are never overwriten.</p>
-					
+
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="actions-playground">
+					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="actions-playground">
+						<div id="actions-demo-code" resizable class="position:relative height:50%">
+							<textarea type="code" lang="html" collection="demos" document_id="61a1456da8b6b4001a9f6029" name="actions-demo" realtime="true" id="actions-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<div resize="bottom" class="background:lightgrey"></div>
+						</div>
+	
+						<div id="actions-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<iframe get-value="#actions-demo" frameBorder="0" height="100%" width="100%"></iframe>
+						</div>
+						
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="actions-code" show="#actions-preview" hide="#actions-code, #actions-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px" hidden id="actions-preview" show="#actions-code, #actions-view" hide="#actions-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:10px" id="actions-eye" show="#actions-eye-slash" hide="#actions-eye, #actions-demo-preview" toggle="code-height" toggle-target="#actions-demo-code"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px" hidden id="actions-eye-slash" show="#actions-eye, #actions-demo-preview" hide="#actions-eye-slash" toggle="code-height" toggle-target="#actions-demo-code"><i class="fas fa-eye-slash"></i></a>
+							<a class="margin-right:10px" id="actions-code" show="#actions-code-slash" hide="#actions-code, #actions-demo-code"><i class="fa fa-code"></i></a>
+							<a class="margin-right:10px" hidden id="actions-code-slash" show="#actions-code, #actions-demo-code" hide="#actions-code-slash"><i class="fas fa-code"></i></a>
 							<a class="margin-right:5px" fullscreen target="#actions-playground"><i class="fas fa-expand"></i></a>
 						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="actions-view">
-									<textarea collection="demos" document_id="61a1456da8b6b4001a9f6029" name="actions-demo" realtime="false" id="actions-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="#actions-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
+	
 					</div>
 					<!-- End SandBox -->
-
+					
 				</section>
 			</div>
 			<!-- end column -->
@@ -458,8 +417,8 @@
 	</main>
 
 	<script src="/apikey.js"></script>
-	<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
-	<!-- <script src="../dist/CoCreate.js"></script> -->
+	<!-- <script src="https://cdn.cocreate.app/1.34.0/CoCreate.min.js"></script> -->
+	<script src="../dist/CoCreate.js"></script>
 
 </body>
 

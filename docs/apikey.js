@@ -5,17 +5,3 @@
         host: 'general.cocreate.app'
     } 
     
-    // Mo
-    // var CoCreateConfig = {                 
-    //     apiKey: 'c05a5bfe-0fe1-44c9-cf48-fed9f835',                 
-    //     organization_id: '60fa0259a701eb7f5117e4c8',                 
-    //     // host: 'general.cocreate.app'  
-    //     host: 'server.cocreate.app:8088'
-    // }         
-    
-    // var CoCreateConfig = {
-    //     apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
-    //     organization_id: '5ff747727005da1c272740ab',
-    //     host: 'wss://server.cocreate.app:8088'
-    //  }
-    
