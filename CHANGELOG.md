@@ -1,3 +1,10 @@
+## [1.34.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.34.3...v1.34.4) (2022-12-23)
+
+
+### Bug Fixes
+
+* bump user and filter ([eb21116](https://github.com/CoCreate-app/CoCreateJS/commit/eb21116c66d374e1666066aa9b544f255ee6b761))
+
 ## [1.34.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.34.2...v1.34.3) (2022-12-21)
 
 
