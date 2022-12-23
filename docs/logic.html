@@ -9,7 +9,7 @@
 	<meta name="description" content="A codeless Javascript framework for building collaborative no code platforms, apps and UI">
 	<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
 	<link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css"/>
-	<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" realtime="false" />
+	<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" />
 </head>
 
 <body>
@@ -52,31 +52,28 @@
 					<pre><code class="language-html">&lt;a pass-document_id="test" pass_to="A unique id"&gt;&lt;/a&gt;</code></pre>
 
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="pass-attributes-playground">
+					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="pass-attributes-playground">
+						
+						<div id="pass-attributes-demo-code" resizable class="position:relative height:50%">
+							<textarea type="code" lang="html" collection="demos" document_id="63a5a63e042c990ff57cdfe3" name="pass-attributes-demo" save="false" id="pass-attributes-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<div resize="bottom" class="background:lightgrey"></div>
+						</div>
+	
+						<div id="pass-attributes-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<div get-value="#pass-attributes-demo" class="padding:20px"></div>
+						</div>
+						
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="pass-attributes-code" show="#pass-attributes-preview" hide="#pass-attributes-code, #pass-attributes-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px" hidden id="pass-attributes-preview" show="#pass-attributes-code, #pass-attributes-view" hide="#pass-attributes-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:10px" id="pass-attributes-eye" show="#pass-attributes-eye-slash" hide="#pass-attributes-eye, #pass-attributes-demo-preview" toggle="code-height" toggle-target="#pass-attributes-demo-code"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px" hidden id="pass-attributes-eye-slash" show="#pass-attributes-eye, #pass-attributes-demo-preview" hide="#pass-attributes-eye-slash" toggle="code-height" toggle-target="#pass-attributes-demo-code"><i class="fas fa-eye-slash"></i></a>
+							<a class="margin-right:10px" id="pass-attributes-code" show="#pass-attributes-code-slash" hide="#pass-attributes-code, #pass-attributes-demo-code"><i class="fa fa-code"></i></a>
+							<a class="margin-right:10px" hidden id="pass-attributes-code-slash" show="#pass-attributes-code, #pass-attributes-demo-code" hide="#pass-attributes-code-slash"><i class="fas fa-code"></i></a>
 							<a class="margin-right:5px" fullscreen target="#pass-attributes-playground"><i class="fas fa-expand"></i></a>
 						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="pass-attributes-view">
-									<textarea collection="demos" document_id="61a56035a8b6b4001aa0806c" name="pass-attributes-demo" realtime="false" id="pass-attributes-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="#pass-attributes-demo" frameBorder="0" height="100%" width="100%"></iframe>
-								</div>
-
-							</div>
-						</div>
+	
 					</div>
 					<!-- End SandBox -->
-
+					
 				</section>
 				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#pass-values-item">
 					<h3 id="pass-values" class="padding-top:20px">Pass Values</h3>
@@ -84,31 +81,28 @@
 					<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
 
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="pass-values-playground">
+					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="pass-values-playground">
+						
+						<div id="pass-values-demo-code" resizable class="position:relative height:50%">
+							<textarea type="code" lang="html" collection="demos" document_id="63a5a9a6e2e0834c920bbebf" name="pass-values-demo" save="false" id="pass-values-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<div resize="bottom" class="background:lightgrey"></div>
+						</div>
+	
+						<div id="pass-values-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<div get-value="#pass-values-demo" class="padding:20px"></div>
+						</div>
+						
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="pass-values-code" show="#pass-values-preview" hide="#pass-values-code, #pass-values-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px" hidden id="pass-values-preview" show="#pass-values-code, #pass-values-view" hide="#pass-values-preview"><i class="fas fa-code"></i></a>
+							<a class="margin-right:10px" id="pass-values-eye" show="#pass-values-eye-slash" hide="#pass-values-eye, #pass-values-demo-preview" toggle="code-height" toggle-target="#pass-values-demo-code"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px" hidden id="pass-values-eye-slash" show="#pass-values-eye, #pass-values-demo-preview" hide="#pass-values-eye-slash" toggle="code-height" toggle-target="#pass-values-demo-code"><i class="fas fa-eye-slash"></i></a>
+							<a class="margin-right:10px" id="pass-values-code" show="#pass-values-code-slash" hide="#pass-values-code, #pass-values-demo-code"><i class="fa fa-code"></i></a>
+							<a class="margin-right:10px" hidden id="pass-values-code-slash" show="#pass-values-code, #pass-values-demo-code" hide="#pass-values-code-slash"><i class="fas fa-code"></i></a>
 							<a class="margin-right:5px" fullscreen target="#pass-values-playground"><i class="fas fa-expand"></i></a>
 						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="pass-values-view">
-									<textarea collection="demos" document_id="61a56b1da8b6b4001aa08542" name="pass-values-demo" realtime="false" id="pass-values-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="#pass-values-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
+	
 					</div>
 					<!-- End SandBox -->
-
+					
 				</section>
 				<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#filter-item">
 					<h3 id="conditional-logic" class="padding-top:20px">Conditional Logic</h3>
@@ -116,28 +110,25 @@
 					<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
 
 					<!-- SandBox -->
-					<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="render-playground">
+					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="conditional-logic-playground">
+						
+						<div id="conditional-logic-demo-code" resizable class="position:relative height:50%">
+							<textarea type="code" lang="html" collection="demos" document_id="63a5a9f1f46f989e400148cc" name="conditional-logic-demo" save="false" id="conditional-logic-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<div resize="bottom" class="background:lightgrey"></div>
+						</div>
+	
+						<div id="conditional-logic-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<div get-value="#conditional-logic-demo" class="padding:20px"></div>
+						</div>
+						
 						<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-							<a class="margin-right:10px" id="render-code" show="#render-preview" hide="#render-code, #render-view"><i class="far fa-eye"></i></a>
-							<a class="margin-right:10px" hidden id="render-preview" show="#render-code, #render-view" hide="#render-preview"><i class="fas fa-code"></i></a>
-							<a class="margin-right:5px" fullscreen target="#render-playground"><i class="fas fa-expand"></i></a>
+							<a class="margin-right:10px" id="conditional-logic-eye" show="#conditional-logic-eye-slash" hide="#conditional-logic-eye, #conditional-logic-demo-preview" toggle="code-height" toggle-target="#conditional-logic-demo-code"><i class="far fa-eye"></i></a>
+							<a class="margin-right:10px" hidden id="conditional-logic-eye-slash" show="#conditional-logic-eye, #conditional-logic-demo-preview" hide="#conditional-logic-eye-slash" toggle="code-height" toggle-target="#conditional-logic-demo-code"><i class="fas fa-eye-slash"></i></a>
+							<a class="margin-right:10px" id="conditional-logic-code" show="#conditional-logic-code-slash" hide="#conditional-logic-code, #conditional-logic-demo-code"><i class="fa fa-code"></i></a>
+							<a class="margin-right:10px" hidden id="conditional-logic-code-slash" show="#conditional-logic-code, #conditional-logic-demo-code" hide="#conditional-logic-code-slash"><i class="fas fa-code"></i></a>
+							<a class="margin-right:5px" fullscreen target="#conditional-logic-playground"><i class="fas fa-expand"></i></a>
 						</div>
-
-						<div class="svRow">
-
-							<div class="svColumn">
-
-								<div class="svPanel" id="render-view">
-									<textarea collection="demos" document_id="61a579d7a8b6b4001aa089f0" name="render-demo" realtime="false" id="render-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-								</div>
-								<div class="svSplitter svHorizontal"> </div>
-
-								<div class="svPanel">
-									<iframe get-value="#render-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-								</div>
-
-							</div>
-						</div>
+	
 					</div>
 					<!-- End SandBox -->
 
@@ -217,7 +208,7 @@
 	</main>
 
 	<script src="/apikey.js"></script>
-	<script src="https://cdn.cocreate.app/1.34.2/CoCreate.min.js"></script>
+	<script src="https://cdn.cocreate.app/1.34.3/CoCreate.min.js"></script>
 	<!--<script src="../dist/CoCreate.js"></script>-->
 
 </body>

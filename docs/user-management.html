@@ -9,7 +9,7 @@
 		<meta name="description" content="A codeless Javascript framework for building collaborative no code platforms, apps and UI">
 		<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
         <link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css"/>
-		<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" realtime="true" />
+		<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" />
 	</head>
 	
 	<body>
@@ -41,71 +41,94 @@
 						<a href="https://github.com/CoCreate-app/CoCreate-action" target="_blank" class=""><i class="fab fa-github"></i></a>
 					</div>
 				</div>
-				<h1 class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">Learn how to convert your html into a dynamic realtime application.</h1>
+				<h1 class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">Handeling signin, sign up and sign out</h1>
 			</section>
 	
 			<div id="xxxxx-section" class="display:flex flex-wrap:wrap justify-content:space-between">
 				<div class="flex-grow:1 width:300px padding:0px_10px margin:20px_0px">
 					<section scroll scroll-intersect="color:dodgerblue" scroll-target="#register-item">
-						<h2 id="register" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Register</h2>
+						<h2 id="register" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Sign Up</h2>
 						<p class="padding:10px_0px line-height:1.5">Passing attributes to elements can be done from same page or from page to new page. The attribute's can be applied to any element which will add a click event to the element.</p>
 						<pre><code class="language-html">&lt;a pass-document_id="test" pass_to="A unique id"&gt;&lt;/a&gt;</code></pre>
 	
 						<!-- SandBox -->
-						<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="register-playground">
+						<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="signup-playground">
+							
+							<div id="signup-demo-code" resizable class="position:relative height:50%">
+								<textarea type="code" lang="html" collection="demos" document_id="63a5e11caf7e30e658cc4112" name="signup-demo" save="false" id="signup-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+								<div resize="bottom" class="background:lightgrey"></div>
+							</div>
+		
+							<div id="signup-demo-preview" class="position:relative display:flex height:100% background-color:white">
+								<div get-value="#signup-demo" class="padding:20px"></div>
+							</div>
+							
 							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="register-code" show="#register-preview" hide="#register-code, #register-view"><i class="far fa-eye"></i></a>
-								<a class="margin-right:10px" hidden id="register-preview" show="#register-code, #register-view" hide="#register-preview"><i class="fas fa-code"></i></a>
-								<a class="margin-right:5px" fullscreen target="#register-playground"><i class="fas fa-expand"></i></a>
+								<a class="margin-right:10px" id="signup-eye" show="#signup-eye-slash" hide="#signup-eye, #signup-demo-preview" toggle="code-height" toggle-target="#signup-demo-code"><i class="far fa-eye"></i></a>
+								<a class="margin-right:10px" hidden id="signup-eye-slash" show="#signup-eye, #signup-demo-preview" hide="#signup-eye-slash" toggle="code-height" toggle-target="#signup-demo-code"><i class="fas fa-eye-slash"></i></a>
+								<a class="margin-right:10px" id="signup-code" show="#signup-code-slash" hide="#signup-code, #signup-demo-code"><i class="fa fa-code"></i></a>
+								<a class="margin-right:10px" hidden id="signup-code-slash" show="#signup-code, #signup-demo-code" hide="#signup-code-slash"><i class="fas fa-code"></i></a>
+								<a class="margin-right:5px" fullscreen target="#signup-playground"><i class="fas fa-expand"></i></a>
 							</div>
-	
-							<div class="svRow">
-	
-								<div class="svColumn">
-	
-									<div class="svPanel" id="register-view">
-										<textarea collection="demos" document_id="61a56035a8b6b4001aa0806c" name="register-demo" realtime="true" id="register-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-									</div>
-									<div class="svSplitter svHorizontal"> </div>
-	
-									<div class="svPanel">
-										<iframe get-value="#register-demo" frameBorder="0" height="100%" width="100%"></iframe>
-									</div>
-	
-								</div>
-							</div>
+		
 						</div>
 						<!-- End SandBox -->
 	
 					</section>
-					<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#login-item">
-						<h3 id="login" class="padding-top:20px">Login</h3>
-						<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts login elements to collabrative rich text editors or a website builder.</p>
+					<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#signIn-item">
+						<h3 id="signIn" class="padding-top:20px">Sign In</h3>
+						<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts signIn elements to collabrative rich text editors or a website builder.</p>
 						<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
 	
 						<!-- SandBox -->
-						<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="login-playground">
+						<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="signin-playground">
+							
+							<div id="signin-demo-code" resizable class="position:relative height:50%">
+								<textarea type="code" lang="html" collection="demos" document_id="63a5e3071e232abb1bfa6a76" name="signin-demo" save="false" id="signin-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+								<div resize="bottom" class="background:lightgrey"></div>
+							</div>
+		
+							<div id="signin-demo-preview" class="position:relative display:flex height:100% background-color:white">
+								<div get-value="#signin-demo" class="padding:20px"></div>
+							</div>
+							
 							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="login-code" show="#login-preview" hide="#login-code, #login-view"><i class="far fa-eye"></i></a>
-								<a class="margin-right:10px" hidden id="login-preview" show="#login-code, #login-view" hide="#login-preview"><i class="fas fa-code"></i></a>
-								<a class="margin-right:5px" fullscreen target="#login-playground"><i class="fas fa-expand"></i></a>
+								<a class="margin-right:10px" id="signin-eye" show="#signin-eye-slash" hide="#signin-eye, #signin-demo-preview" toggle="code-height" toggle-target="#signin-demo-code"><i class="far fa-eye"></i></a>
+								<a class="margin-right:10px" hidden id="signin-eye-slash" show="#signin-eye, #signin-demo-preview" hide="#signin-eye-slash" toggle="code-height" toggle-target="#signin-demo-code"><i class="fas fa-eye-slash"></i></a>
+								<a class="margin-right:10px" id="signin-code" show="#signin-code-slash" hide="#signin-code, #signin-demo-code"><i class="fa fa-code"></i></a>
+								<a class="margin-right:10px" hidden id="signin-code-slash" show="#signin-code, #signin-demo-code" hide="#signin-code-slash"><i class="fas fa-code"></i></a>
+								<a class="margin-right:5px" fullscreen target="#signin-playground"><i class="fas fa-expand"></i></a>
 							</div>
+		
+						</div>
+						<!-- End SandBox -->
 	
-							<div class="svRow">
+					</section>
+					<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#signOut-item">
+						<h3 id="signOut" class="padding-top:20px">Sign Out</h3>
+						<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts signOut elements to collabrative rich text editors or a website builder.</p>
+						<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
 	
-								<div class="svColumn">
-	
-									<div class="svPanel" id="login-view">
-										<textarea collection="demos" document_id="61a56b1da8b6b4001aa08542" name="login-demo" realtime="true" id="login-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-									</div>
-									<div class="svSplitter svHorizontal"> </div>
-	
-									<div class="svPanel">
-										<iframe get-value="#login-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-									</div>
-	
-								</div>
+						<!-- SandBox -->
+						<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="signout-playground">
+							
+							<div id="signout-demo-code" resizable class="position:relative height:50%">
+								<textarea type="code" lang="html" collection="demos" document_id="63a5e3071e232abb1bfa6a76" name="signout-demo" save="false" id="signout-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+								<div resize="bottom" class="background:lightgrey"></div>
 							</div>
+		
+							<div id="signout-demo-preview" class="position:relative display:flex height:100% background-color:white">
+								<div get-value="#signout-demo" class="padding:20px"></div>
+							</div>
+							
+							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+								<a class="margin-right:10px" id="signout-eye" show="#signout-eye-slash" hide="#signout-eye, #signout-demo-preview" toggle="code-height" toggle-target="#signout-demo-code"><i class="far fa-eye"></i></a>
+								<a class="margin-right:10px" hidden id="signout-eye-slash" show="#signout-eye, #signout-demo-preview" hide="#signout-eye-slash" toggle="code-height" toggle-target="#signout-demo-code"><i class="fas fa-eye-slash"></i></a>
+								<a class="margin-right:10px" id="signout-code" show="#signout-code-slash" hide="#signout-code, #signout-demo-code"><i class="fa fa-code"></i></a>
+								<a class="margin-right:10px" hidden id="signout-code-slash" show="#signout-code, #signout-demo-code" hide="#signout-code-slash"><i class="fas fa-code"></i></a>
+								<a class="margin-right:5px" fullscreen target="#signout-playground"><i class="fas fa-expand"></i></a>
+							</div>
+		
 						</div>
 						<!-- End SandBox -->
 	
@@ -116,28 +139,25 @@
 						<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
 	
 						<!-- SandBox -->
-						<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="permissions-playground">
+						<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="permissions-playground">
+							
+							<div id="permissions-demo-code" resizable class="position:relative height:50%">
+								<textarea type="code" lang="html" collection="demos" document_id="" name="permissions-demo" save="false" id="permissions-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+								<div resize="bottom" class="background:lightgrey"></div>
+							</div>
+		
+							<div id="permissions-demo-preview" class="position:relative display:flex height:100% background-color:white">
+								<div get-value="#permissions-demo" class="padding:20px"></div>
+							</div>
+							
 							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="permissions-code" show="#permissions-preview" hide="#permissions-code, #permissions-view"><i class="far fa-eye"></i></a>
-								<a class="margin-right:10px" hidden id="permissions-preview" show="#permissions-code, #permissions-view" hide="#permissions-preview"><i class="fas fa-code"></i></a>
+								<a class="margin-right:10px" id="permissions-eye" show="#permissions-eye-slash" hide="#permissions-eye, #permissions-demo-preview" toggle="code-height" toggle-target="#permissions-demo-code"><i class="far fa-eye"></i></a>
+								<a class="margin-right:10px" hidden id="permissions-eye-slash" show="#permissions-eye, #permissions-demo-preview" hide="#permissions-eye-slash" toggle="code-height" toggle-target="#permissions-demo-code"><i class="fas fa-eye-slash"></i></a>
+								<a class="margin-right:10px" id="permissions-code" show="#permissions-code-slash" hide="#permissions-code, #permissions-demo-code"><i class="fa fa-code"></i></a>
+								<a class="margin-right:10px" hidden id="permissions-code-slash" show="#permissions-code, #permissions-demo-code" hide="#permissions-code-slash"><i class="fas fa-code"></i></a>
 								<a class="margin-right:5px" fullscreen target="#permissions-playground"><i class="fas fa-expand"></i></a>
 							</div>
-	
-							<div class="svRow">
-	
-								<div class="svColumn">
-	
-									<div class="svPanel" id="permissions-view">
-										<textarea collection="demos" document_id="61a579d7a8b6b4001aa089f0" name="permissions-demo" realtime="true" id="permissions-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-									</div>
-									<div class="svSplitter svHorizontal"> </div>
-	
-									<div class="svPanel">
-										<iframe get-value="#permissions-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-									</div>
-	
-								</div>
-							</div>
+		
 						</div>
 						<!-- End SandBox -->
 	
@@ -176,7 +196,7 @@
 		</main>
 	
 		<script src="/apikey.js"></script>
-		<script src="https://cdn.cocreate.app/1.34.2/CoCreate.min.js"></script>
+		<script src="https://cdn.cocreate.app/1.34.3/CoCreate.min.js"></script>
 		<!--<script src="../dist/CoCreate.js"></script>-->
 	
 	</body>

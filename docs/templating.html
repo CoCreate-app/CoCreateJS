@@ -8,8 +8,8 @@
 		<title>CoCreateJS - Templating</title>
 		<meta name="description" content="A codeless Javascript framework for building collaborative no code platforms, apps and UI">
 		<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
-        <link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css"/>
-		<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" realtime="false" />
+		<link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css"/>
+		<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css"/>
 	</head>
 	
 	<body>
@@ -50,30 +50,26 @@
 						<h2 id="fetch" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Fetch</h2>
 						<p class="padding:10px_0px line-height:1.5">Fetch, filter and render list's is done by applying fetch-collection to a container div and difining a template with in the container</p>
 						<pre><code class="language-html">&lt;div fetch-collection="test" template_id="A unique id"&gt;&lt;/div&gt;</code></pre>
-	
+
 						<!-- SandBox -->
-						<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="fetch-playground">
+						<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="fetch-playground">
+							<div id="fetch-demo-code" resizable class="position:relative height:50%">
+								<textarea type="code" lang="html" collection="demos" document_id="63a596482658e8f09dcf3a45" name="fetch-demo" save="false" id="fetch-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+								<div resize="bottom" class="background:lightgrey"></div>
+							</div>
+		
+							<div id="fetch-demo-preview" class="position:relative display:flex height:100% background-color:white">
+								<div get-value="#fetch-demo" class="padding:20px"></div>
+							</div>
+							
 							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="fetch-code" show="#fetch-preview" hide="#fetch-code, #fetch-view"><i class="far fa-eye"></i></a>
-								<a class="margin-right:10px" hidden id="fetch-preview" show="#fetch-code, #fetch-view" hide="#fetch-preview"><i class="fas fa-code"></i></a>
+								<a class="margin-right:10px" id="fetch-eye" show="#fetch-eye-slash" hide="#fetch-eye, #fetch-demo-preview" toggle="code-height" toggle-target="#fetch-demo-code"><i class="far fa-eye"></i></a>
+								<a class="margin-right:10px" hidden id="fetch-eye-slash" show="#fetch-eye, #fetch-demo-preview" hide="#fetch-eye-slash" toggle="code-height" toggle-target="#fetch-demo-code"><i class="fas fa-eye-slash"></i></a>
+								<a class="margin-right:10px" id="fetch-code" show="#fetch-code-slash" hide="#fetch-code, #fetch-demo-code"><i class="fa fa-code"></i></a>
+								<a class="margin-right:10px" hidden id="fetch-code-slash" show="#fetch-code, #fetch-demo-code" hide="#fetch-code-slash"><i class="fas fa-code"></i></a>
 								<a class="margin-right:5px" fullscreen target="#fetch-playground"><i class="fas fa-expand"></i></a>
 							</div>
-	
-							<div class="svRow">
-	
-								<div class="svColumn">
-	
-									<div class="svPanel" id="fetch-view">
-										<textarea collection="demos" document_id="61a3fe7ba8b6b4001aa01590" name="fetch-demo" realtime="false" id="fetch-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-									</div>
-									<div class="svSplitter svHorizontal"> </div>
-	
-									<div class="svPanel">
-										<iframe get-value="#fetch-demo" frameBorder="0" height="100%" width="100%"></iframe>
-									</div>
-	
-								</div>
-							</div>
+		
 						</div>
 						<!-- End SandBox -->
 	
@@ -81,66 +77,31 @@
 					<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#filter-item">
 						<h3 id="filter" class="padding-top:20px">Filter</h3>
 						<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts filter elements to collabrative rich text editors or a website builder.</p>
-						<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+						<pre><code class="language-html">&lt;input filter-name="name" template_id="" /&gt;</code></pre>
 	
 						<!-- SandBox -->
-						<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="filter-playground">
+						<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="filter-playground">
+							
+							<div id="filter-demo-code" resizable class="position:relative height:50%">
+								<textarea type="code" lang="html" collection="demos" document_id="63a596c7210596fd237c1250" name="filter-demo" save="false" id="filter-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+								<div resize="bottom" class="background:lightgrey"></div>
+							</div>
+		
+							<div id="filter-demo-preview" class="position:relative display:flex height:100% background-color:white">
+								<div get-value="#filter-demo" class="padding:20px"></div>
+							</div>
+							
 							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="filter-code" show="#filter-preview" hide="#filter-code, #filter-view"><i class="far fa-eye"></i></a>
-								<a class="margin-right:10px" hidden id="filter-preview" show="#filter-code, #filter-view" hide="#filter-preview"><i class="fas fa-code"></i></a>
+								<a class="margin-right:10px" id="filter-eye" show="#filter-eye-slash" hide="#filter-eye, #filter-demo-preview" toggle="code-height" toggle-target="#filter-demo-code"><i class="far fa-eye"></i></a>
+								<a class="margin-right:10px" hidden id="filter-eye-slash" show="#filter-eye, #filter-demo-preview" hide="#filter-eye-slash" toggle="code-height" toggle-target="#filter-demo-code"><i class="fas fa-eye-slash"></i></a>
+								<a class="margin-right:10px" id="filter-code" show="#filter-code-slash" hide="#filter-code, #filter-demo-code"><i class="fa fa-code"></i></a>
+								<a class="margin-right:10px" hidden id="filter-code-slash" show="#filter-code, #filter-demo-code" hide="#filter-code-slash"><i class="fas fa-code"></i></a>
 								<a class="margin-right:5px" fullscreen target="#filter-playground"><i class="fas fa-expand"></i></a>
 							</div>
-	
-							<div class="svRow">
-	
-								<div class="svColumn">
-	
-									<div class="svPanel" id="filter-view">
-										<textarea collection="demos" document_id="61a3fff4a8b6b4001aa01781" name="filter-demo" realtime="false" id="filter-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-									</div>
-									<div class="svSplitter svHorizontal"> </div>
-	
-									<div class="svPanel">
-										<iframe get-value="#filter-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-									</div>
-	
-								</div>
-							</div>
+		
 						</div>
 						<!-- End SandBox -->
-	
-					</section>
-					<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#filter-item">
-						<h3 id="render" class="padding-top:20px">Render</h3>
-						<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts render elements to collabrative rich text editors or a website builder.</p>
-						<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
-	
-						<!-- SandBox -->
-						<div class="container svColumn position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="render-playground">
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="render-code" show="#render-preview" hide="#render-code, #render-view"><i class="far fa-eye"></i></a>
-								<a class="margin-right:10px" hidden id="render-preview" show="#render-code, #render-view" hide="#render-preview"><i class="fas fa-code"></i></a>
-								<a class="margin-right:5px" fullscreen target="#render-playground"><i class="fas fa-expand"></i></a>
-							</div>
-	
-							<div class="svRow">
-	
-								<div class="svColumn">
-	
-									<div class="svPanel" id="render-view">
-										<textarea collection="demos" document_id="61a40e95a8b6b4001aa01bde" name="render-demo" realtime="false" id="render-demo" class="height:100% width:100% border:none resize:none padding:5px"></textarea>
-									</div>
-									<div class="svSplitter svHorizontal"> </div>
-	
-									<div class="svPanel">
-										<iframe get-value="#render-demo" frameBorder="0" height="100%" width="100%" class="min-width:300px"></iframe>
-									</div>
-	
-								</div>
-							</div>
-						</div>
-						<!-- End SandBox -->
-	
+
 					</section>
 				</div>
 				<!-- end column -->
@@ -179,23 +140,26 @@
 						</li>
 						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 			        		<h4><span>filter-value-type</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-		        			<p>string | raw . Default value is string</p>
-		        			<p>raw case, it will make values array from string by "," separation </p>
+		        			<p>string | number | object | array . Default value is string</p>
 						</li>
 						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 			        		<h4><span>filter-operator</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-		        			<p>Define the filter operator.</P>
-		        			<p>Operators: includes | $range | $eq | $ne | $lt | $lte | $gt | $gte | $in | $nin | $geoWithin</p>
+		        			<p>Define the filter operator.</p>
+		        			<p>Operators: includes | $range | $eq | $ne | $lt | $lte | $gt | $gte | $in | $nin </p>
 						</li>
 						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-			        		<h4><span>export_type</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-		        			<p>To export the fetched data, This attribute will be use</p>
-		        			<p>Available value: json | cvs</p>
+			        		<h4><span>filter-logical-operator</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+		        			<p>Define the filter operator.</p>
+		        			<p>Operators: and | or </p>
 						</li>
 						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-			        		<h4><span>import</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-		        			<p>When import the file content into selected collection, This attribute will be use</p>
-		        			<p>Available value: true</p>
+			        		<h4><span>filter-case-sensitive</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
+		        			<p>Define the filter operator.</p>
+		        			<p>true | false defauts to false </p>
+						</li>
+						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+			        		<h4><span>filter-search</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+		        			<p>define on input elemens. Will perform a search for the value across all names in the collection</p>
 						</li>
 						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 			        		<h4><span>filter-sort-name</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
@@ -207,9 +171,9 @@
 		        			<p>Fetch order value on page load or when updated. If attribute is empty or not used Default's to asc.</p>
 						</li>
 						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-			        		<h4><span>render_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-		        			<p>This value should define in template wrapper. </p>
-		        			<p>Mulitple template case, render_id would use that generate new object by this value</p>
+			        		<h4><span>filter-sort-toggle</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+		        			<p>Available value: asc | desc.</p>
+		        			<p>Fetch order value on page load or when updated. If attribute is empty or not used Default's to asc.</p>
 						</li>
 					</ul>
 				</section>
@@ -234,7 +198,7 @@
 		</main>
 	
 		<script src="/apikey.js"></script>
-		<script src="https://cdn.cocreate.app/1.34.2/CoCreate.min.js"></script>
+		<script src="https://cdn.cocreate.app/1.34.3/CoCreate.min.js"></script>
 		<!--<script src="../dist/CoCreate.js"></script>-->
 	
 	</body>

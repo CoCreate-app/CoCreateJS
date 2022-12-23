@@ -231,10 +231,6 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-social-share.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-splitview',
-        'repo': 'github.com/CoCreate-app/CoCreate-splitview.git'
-    },
-    {
         'path': '../CoCreate-components/CoCreate-text',
         'repo': 'github.com/CoCreate-app/CoCreate-text.git'
     },

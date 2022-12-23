@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
 
-    <body class="padding:5px">
-        
-    	
-    	<h1 pass_id="test" collection="test" document_id name="name"></h1>
-        <div template_id="test" fetch-collection="test">
-        	<a template_id="test" pass-document_id="{{document._id}}" pass_to="test" class="template">Click to pass: {{document._id}}</a>
-        </div>
-        <script>
-            var CoCreateConfig = {                 
-                apiKey: '80e7a123-4514-4f05-875b-8db4dfba',           
-                organization_id: '62a65e6ce6dfc91d581db5e0',             
-                host: 'demo.cocreate.app'
-            };
-        </script>
-        <script src="https://cdn.cocreate.app/1.34.2/CoCreate.min.js"></script>
-        
-    </body>
-</html>					     					                    					                    
+<input pass_id="test" collection="test" document_id name="name" pass-refresh/>
+
+<div fetch-collection="test" template_id="temp1">
+	<div class="template card" template_id="temp1">
+        <a pass-document_id="{{document._id}}" pass_to="test">
+            <h4>{{document.name}}</h4>
+            <h4>{{document._id}}</h4>
+        </a>
+	</div>
+</div>
+
+        		     					                    					                    

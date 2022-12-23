@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
 
-    <body class="padding:5px">
-        <input template_id="temp1" filter-name="name">
-		<div template_id="temp1" fetch-collection="test">
-			<div class="template card" template_id="temp1">
-				<h4>{{document.name}}</h4>
-				<h4>{{document.name}}</h4>
-			</div>	
-		</div>
+<input filter-name="name" template_id="temp2">
+
+<div fetch-collection="test" template_id="temp2">
+	<div class="template card" template_id="temp2">
+		<h4>{{document.name}}</h4>
+		<h4>{{document._id}}</h4>
+	</div>
+</div>
         
-        <script>
-            var CoCreateConfig = {                 
-                apiKey: '80e7a123-4514-4f05-875b-8db4dfba',           
-                organization_id: '62a65e6ce6dfc91d581db5e0',             
-                host: 'demo.cocreate.app'
-            };
-        </script>
-        <script src="https://cdn.cocreate.app/1.34.2/CoCreate.min.js"></script>
-        
-    </body>
-</html>
