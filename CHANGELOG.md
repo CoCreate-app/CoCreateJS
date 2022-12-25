@@ -1,3 +1,10 @@
+# [1.35.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.34.4...v1.35.0) (2022-12-25)
+
+
+### Features
+
+* bump @cocreate/dependencies ([ed6cdb1](https://github.com/CoCreate-app/CoCreateJS/commit/ed6cdb168f722dcf66e63f6565c8b23cb2d0c9f7))
+
 ## [1.34.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.34.3...v1.34.4) (2022-12-23)
 
 
