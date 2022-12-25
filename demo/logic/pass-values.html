@@ -1,4 +1,19 @@
 
-<input pass-value_id="test">
-<button pass-value="hello" pass-value_to="test">Click to pass: hello</button>
-<button pass-value="goodbye" pass-value_to="test">Click to pass: goodbye</button>
+<input pass_id="test">
+<button pass-value="hello" pass_to="test">Click to pass: hello</button>
+<button pass-value="goodbye" pass_to="test">Click to pass: goodbye</button>
+
+
+<form>
+
+    <input pass_to="test1" placeholder="Value 1" class="floating-label"/>
+    <input pass_to="test2" placeholder="Value 2"  class="floating-label"/>
+
+    <button actions="pass">
+        Pass Values
+    </button>
+
+</form>
+
+<h1 pass_id="test1"></h1>
+<h1 pass_id="test"></h1>

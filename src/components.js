@@ -23,7 +23,7 @@ dependency('pwa', import (/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));
 // lazyLoad('cssParser', 'link[collection][document_id][name], link[parse="true"]', ()=> import (/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
 // lazyLoad('css', 'cocreatecss', ()=> import (/*webpackChunkName: "CoCreateCSS"*/ '@cocreate/cocreatecss'));
 lazyLoad('renderJson', '[fetch-for]', ()=> import (/*webpackChunkName: "render-json-chunk"*/ '@cocreate/render-json'));
-// lazyLoad('pass', '[pass_id], [pass_to], [pass-value_to], [pass-value_id]', ()=> import (/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'));
+// lazyLoad('pass', '[pass_to], [pass_id]', ()=> import (/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'));
 lazyLoad('actions', '[actions]', ()=> import (/*webpackChunkName: "actions-chunk"*/ '@cocreate/actions'));
 lazyLoad('form', 'form', ()=> import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
 lazyLoad('elements', '[collection], [get-value], [set-value]', ()=> import (/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
@@ -58,7 +58,7 @@ lazyLoad('codearea', '[type="code"]', ()=> import (/*webpackChunkName: "codearea
 // UI Components
 lazyLoad('floatingLabel', 'floating-label, .floating-label', ()=> import (/*webpackChunkName: "floating-label-chunk"*/ '@cocreate/floating-label'));
 lazyLoad('fullscreen', '[fullscreen]', ()=> import (/*webpackChunkName: "fullscreen-chunk"*/ '@cocreate/fullscreen'));
-lazyLoad('modal', '[target="modal"]', ()=> import (/*webpackChunkName: "modal-chunk"*/ '@cocreate/modal'));
+lazyLoad('modal', '[actions*="Modal"', ()=> import (/*webpackChunkName: "modal-chunk"*/ '@cocreate/modal'));
 lazyLoad('parallax', '[parallax-src]', ()=> import (/*webpackChunkName: "parallax-chunk"*/ '@cocreate/parallax'));
 lazyLoad('calculation', '[calculate]', ()=> import (/*webpackChunkName: "calculation-chunk"*/ '@cocreate/calculation'));
 lazyLoad('progress', '[data-progress]', ()=> import (/*webpackChunkName: "progress-chunk"*/ '@cocreate/progress'));

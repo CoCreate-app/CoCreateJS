@@ -1,8 +1,9 @@
 # CoCreateJS
+Transform static HTML into a dynamic web application, no Javascript required!
 
-A low code headless CMS and Javascript framework for building real time and collaborative, SaaS Apps, No Code platforms, Website Builders, rich text editors, eCommerce, Blogs, websites, landing pages, CRM’s, Admins and anything else you dream up. Build powerful online and ofline applications using HTML5 attributes or Javascript api. [CoCreateJS](https://CoCreate.app) https://CoCreate.app
+A low code headless CMS and Javascript framework for building collaborative, SaaS Apps, No Code platforms, Website Builders, rich text editors, eCommerce, Blogs, websites, landing pages, CRM’s, Admins and anything else you dream up. Build powerful online and offline applications using HTML5 attributes or Javascript api. [CoCreateJS](https://CoCreate.app) https://CoCreate.app
 
-Note: CoCreateJS is the clients side and requires the backend server side to fuction. The backend can be used via our cloud service or you can deploy and manage the backend yourself via [CoCreateWS](https://github.com/CoCreate-app/CoCreateWS)
+<!-- Note: CoCreateJS is the clients side and requires the backend server side to fuction. The backend can be used via our cloud service or you can deploy and manage the backend yourself via [CoCreateWS](https://github.com/CoCreate-app/CoCreateWS) -->
 
 <br/>
 
@@ -36,7 +37,7 @@ For a complete guide and working demo refer to the [doumentation](https://cocrea
 <a name="installation"></a>
 
 # Installation
-Note: Requires [CoCreateWS](https://github.com/CoCreate-app/CoCreateWS) websocket server if you intend on using CRUD and collabrative features. You can connect to our cloud servers using the subdomain and APIKEY provided on [SignUp](https://cocreate.app/admin/signup.html) or do a self hosted install.  
+<!-- Note: Requires [CoCreateWS](https://github.com/CoCreate-app/CoCreateWS) websocket server if you intend on using CRUD and collabrative features. You can connect to our cloud servers using the subdomain and APIKEY provided on [SignUp](https://cocreate.app/admin/signup.html) or do a self hosted install.   -->
 
 ## CDN
 
@@ -44,10 +45,7 @@ Note: Requires [CoCreateWS](https://github.com/CoCreate-app/CoCreateWS) websocke
 <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
 ```
 
-```html
-<script src="https://cdn.cocreate.app/latest/CoCreate.min.css"></script>
-```
-
+-am ""
 ## NPM
 
 ```shell
