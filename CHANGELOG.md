@@ -1,3 +1,10 @@
+# [1.36.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.35.0...v1.36.0) (2022-12-27)
+
+
+### Features
+
+* actions="pass", modal-src, performance improvements ([e500778](https://github.com/CoCreate-app/CoCreateJS/commit/e5007784a49ac584be10eca275bb96d29efa9672))
+
 # [1.35.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.34.4...v1.35.0) (2022-12-25)
 
 
