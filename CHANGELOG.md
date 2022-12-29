@@ -1,3 +1,10 @@
+# [1.37.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.36.0...v1.37.0) (2022-12-29)
+
+
+### Features
+
+* pass-* can set $uid as a value which will replace with a unique id. api component lazyloaded when [template_id] or [action] observered. link supports all target types ([47ac5a9](https://github.com/CoCreate-app/CoCreateJS/commit/47ac5a97251afc4d8f959fbc35183a0a47fba5cb))
+
 # [1.36.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.35.0...v1.36.0) (2022-12-27)
 
 
