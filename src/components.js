@@ -13,22 +13,20 @@ dependency('message', import (/*webpackChunkName: "message-chunk"*/ '@cocreate/m
 dependency('element-prototype', import (/*webpackChunkName: "element-prototype-chunk"*/ '@cocreate/element-prototype'));
 dependency('pass', import (/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'));
 dependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
-dependency('api', import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 dependency('link', import (/*webpackChunkName: "link-chunk"*/ '@cocreate/link'));
-dependency('cssParser', import (/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
 dependency('pwa', import (/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));
 
 
 // Components
-// lazyLoad('cssParser', 'link[collection][document_id][name], link[parse="true"]', ()=> import (/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
 // lazyLoad('css', 'cocreatecss', ()=> import (/*webpackChunkName: "CoCreateCSS"*/ '@cocreate/cocreatecss'));
+lazyLoad('cssParser', 'link[collection][document_id][name], link[parse="true"]', ()=> import (/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
 lazyLoad('renderJson', '[fetch-for]', ()=> import (/*webpackChunkName: "render-json-chunk"*/ '@cocreate/render-json'));
-// lazyLoad('pass', '[pass_to], [pass_id]', ()=> import (/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'));
 lazyLoad('actions', '[actions]', ()=> import (/*webpackChunkName: "actions-chunk"*/ '@cocreate/actions'));
 lazyLoad('form', 'form', ()=> import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
 lazyLoad('elements', '[collection], [get-value], [set-value]', ()=> import (/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
 lazyLoad('fetch', '[fetch-db], [fetch-database], [fetch-collection], [fetch-index], [fetch-document], [fetch-name]', ()=> import (/*webpackChunkName: "fetch-chunk"*/ '@cocreate/fetch'));
 lazyLoad('render', '[template_id]', ()=> import (/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
+lazyLoad('api', '[actions], [template_id]', ()=> import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 lazyLoad('resizeObserver', '[resize-target]', ()=> import(/*webpackChunkName: "resizeObserver-chunk"*/ '@cocreate/resize-observer'));
 lazyLoad('dnd', '[sortable], [cloneables], [draggable], [droppable], [cloneable]', ()=> import (/*webpackChunkName: "dnd-chunk"*/ '@cocreate/dnd'));
 lazyLoad('position', '[positionable], [moveable]', ()=> import (/*webpackChunkName: "position-chunk"*/ '@cocreate/position'));
