@@ -1,3 +1,10 @@
+## [1.37.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.37.1...v1.37.2) (2022-12-31)
+
+
+### Bug Fixes
+
+* bump @cocreate/elemment and @cocreate/users ([13a02fd](https://github.com/CoCreate-app/CoCreateJS/commit/13a02fd8360fb246218c4ce6e0da7d6d6d1b0b73))
+
 ## [1.37.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.37.0...v1.37.1) (2022-12-31)
 
 
