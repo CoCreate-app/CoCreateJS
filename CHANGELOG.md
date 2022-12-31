@@ -1,3 +1,10 @@
+## [1.37.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.37.0...v1.37.1) (2022-12-31)
+
+
+### Bug Fixes
+
+* update config to use new directories, bump cdn to 1.37.0 ([1d9c71f](https://github.com/CoCreate-app/CoCreateJS/commit/1d9c71f3013553c403ad2eeffa865608c30018be))
+
 # [1.37.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.36.0...v1.37.0) (2022-12-29)
 
 
