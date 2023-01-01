@@ -1,3 +1,10 @@
+# [1.38.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.37.2...v1.38.0) (2023-01-01)
+
+
+### Features
+
+* supports template="" to define template and id. replaces .template template_id ([7e8ad07](https://github.com/CoCreate-app/CoCreateJS/commit/7e8ad07c2dd07ea721d126ac8c87075e3d6099e8))
+
 ## [1.37.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.37.1...v1.37.2) (2022-12-31)
 
 
