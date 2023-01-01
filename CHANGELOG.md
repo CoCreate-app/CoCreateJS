@@ -1,3 +1,10 @@
+## [1.38.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.38.0...v1.38.1) (2023-01-01)
+
+
+### Bug Fixes
+
+* bump dependencies ([375ebb6](https://github.com/CoCreate-app/CoCreateJS/commit/375ebb6f5ac178399b971e39dc3d66b4077c9014))
+
 # [1.38.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.37.2...v1.38.0) (2023-01-01)
 
 
