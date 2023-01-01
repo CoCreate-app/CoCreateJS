@@ -203,8 +203,7 @@
 				</section>
 				<section id="select" class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#select-item">
 					<h3 class="padding-top:20px">Select</h3>
-					<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>
-					<pre><code class="language-html">&lt;select collection="" document_id="" name="name"&gt;&lt;/select&gt;</code></pre>
+					<!-- <p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p> -->
 
 					<!-- SandBox -->
 					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="select-playground">
@@ -231,10 +230,7 @@
 				</section>
 				<section id="form" class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#form-item">
 					<h3 class="padding-top:20px">Form</h3>
-					<p class="padding:10px_0px line-height:1.5">The form tag is used for grouping elements and applying attributes dynamically to it's childeren. Attributtes added to a form tag will only be applied to the child elements if the attribute is not already defined with a value. If save="false" is applied, the form will require a button and action to trigger save</p>
-					<div class="">
-						<pre><code class="language-html">&lt;button actions="save"&gt; &lt;/button&gt;</code></pre>
-					</div>
+					<p class="padding:10px_0px line-height:1.5">The form tag is used for grouping elements and applying attributes dynamically to it's childeren. Attributtes added to a form tag will only be applied to the child elements if the child elements attribute does not currently contain a value.</p>
 
 					<!-- SandBox -->
 					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-playground">
@@ -262,7 +258,7 @@
 
 				<section id="actions" class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#actions-item">
 					<h3 class="padding-top:20px">Actions</h3>
-					<p class="padding:10px_0px line-height:1.5">The actions attribute is used to trigger one or more actions in the order they were applied. Actions are chainable and require success of the first to trigger the next. Many of the CoCreate's components have actions, you will find the actions defined in the respective components documentation. Here we will be introduing the basics as it relates to form and saving. For more information on the full caabilities of actions vitsit the actions documentation page</p>
+					<p class="padding:10px_0px line-height:1.5">The actions attribute is used to trigger one or more actions in the order they were applied. Actions are chainable and require success of the first to trigger the next. Many of the CoCreate's components have actions, you will find the actions defined in the respective components documentation. Here we will be introduing the basics as it relates to form and saving.</p>
 					
 					<div class="">
 						<pre><code class="language-html">&lt;button actions="save"&gt; &lt;/button&gt;</code></pre>
@@ -355,6 +351,10 @@
 						<p>Broadcast messages and changes to self. If attribute is empty or not used default's to true.</p>
 					</li>
 					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+						<h4><span>broadcast-browser</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+						<p>Broadcast messages and changes locally to all open windows, tabs and iframes in current browser. If attribute is empty or not used default's to true.</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 						<h4><span>namespace</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
 						<p>Define a unique namespace where messages and changes are sent and received</p>
 					</li>
@@ -390,7 +390,7 @@
 	</main>
 
 	<script src="/apikey.js"></script>
-	<script src="https://cdn.cocreate.app/1.37.1/CoCreate.min.js"></script>
+	<script src="https://cdn.cocreate.app/1.37.2/CoCreate.min.js"></script>
 	<!-- <script src="../dist/CoCreate.js"></script> -->
 
 </body>
