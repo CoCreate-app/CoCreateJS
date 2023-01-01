@@ -31,15 +31,19 @@ module.exports = {
             "collection": "demos",
             "document": {
                 "_id": "619aa8e8a8b6b4001a9dc24e",
-                "input-demo": "{{./demo/elements/input.html}}"
-            }
-        },
-        {
-            "entry": "./demo/elements/textarea.html",
-            "collection": "demos",
-            "document": {
-                "_id": "619bd887a8b6b4001a9e05af",
-                "textarea-demo": "{{./demo/elements/textarea.html}}"
+                "input-demo": "{{./demo/elements/input.html}}",
+                "textarea-demo": "{{./demo/elements/textarea.html}}",
+                "contenteditable-demo": "{{./demo/elements/contenteditable.html}}",
+                "checkbox-demo": "{{./demo/elements/checkbox.html}}",
+                "radio-demo": "{{./demo/elements/radio.html}}",
+                "select-demo": "{{./demo/elements/select.html}}",
+                "form-demo": "{{./demo/elements/form.html}}",
+                "actions-demo": "{{./demo/elements/actions.html}}",
+                "fetch-demo": "{{./demo/templating/fetch.html}}",
+                "filter-demo": "{{./demo/templating/filter.html}}",
+                "pass-attributes-demo": "{{./demo/logic/pass-attributes.html}}",
+                "pass-values-demo": "{{./demo/logic/pass-values.html}}",
+                "conditional-logic-demo": "{{./demo/logic/conditional-logic.html}}"
             }
         }
     ]

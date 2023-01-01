@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CoCreateJS - Logic</title>
-	<meta name="description" content="A codeless Javascript framework for building collaborative no code platforms, apps and UI">
+	<meta name="description" content="Update element attributes, pass values between elements, show and hide elements.">
 	<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
 	<link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css"/>
 	<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" />
@@ -41,25 +41,25 @@
 					<a href="https://github.com/CoCreate-app/CoCreate-action" target="_blank" class=""><i class="fab fa-github"></i></a>
 				</div>
 			</div>
-			<h1 class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">Learn how to convert your html into a dynamic realtime application.</h1>
+			<h1 class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">Update element attributes, pass values between elements, show and hide elements.</h1>
 		</section>
 
 		<div id="xxxxx-section" class="display:flex flex-wrap:wrap justify-content:space-between">
 			<div class="flex-grow:1 width:300px padding:0px_10px margin:20px_0px">
 				<section scroll scroll-intersect="color:dodgerblue" scroll-target="#pass-attributes-item">
 					<h2 id="pass-attributes" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Pass Attributes</h2>
-					<p class="padding:10px_0px line-height:1.5">Passing attributes to elements can be done from same page or from page to new page. The attribute's can be applied to any element which will add a click event to the element.</p>
+					<p class="padding:10px_0px line-height:1.5">Pass attributes from elements to elements within same page or across multiple tabs and windows.</p>
 					<pre><code class="language-html">&lt;a actions="pass" pass-document_id="test" pass_to="A unique id"&gt;&lt;/a&gt;</code></pre>
 
 					<!-- SandBox -->
-					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="pass-attributes-playground">
+					<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="pass-attributes-playground">
 						
 						<div id="pass-attributes-demo-code" resizable class="position:relative height:50%">
-							<textarea type="code" lang="html" collection="demos" document_id="63a5a63e042c990ff57cdfe3" name="pass-attributes-demo" save="false" id="pass-attributes-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="pass-attributes-demo" save="false" id="pass-attributes-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
 							<div resize="bottom" class="background:lightgrey"></div>
 						</div>
 	
-						<div id="pass-attributes-demo-preview" class="position:relative display:flex height:100% background-color:white">
+						<div id="pass-attributes-demo-preview" class="position:relative overflow:auto background-color:white">
 							<div get-value="#pass-attributes-demo" class="padding:20px"></div>
 						</div>
 						
@@ -77,18 +77,18 @@
 				</section>
 				<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#pass-values-item">
 					<h3 id="pass-values" class="padding-top:20px">Pass Values</h3>
-					<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts pass-values elements to collaborative rich text editors or a website builder.</p>
-					<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+					<p class="padding:10px_0px line-height:1.5">Pass a value from an input to any element</p>
+					<!-- <pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre> -->
 
 					<!-- SandBox -->
-					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="pass-values-playground">
+					<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="pass-values-playground">
 						
 						<div id="pass-values-demo-code" resizable class="position:relative height:50%">
-							<textarea type="code" lang="html" collection="demos" document_id="63a5a9a6e2e0834c920bbebf" name="pass-values-demo" save="false" id="pass-values-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="pass-values-demo" save="false" id="pass-values-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
 							<div resize="bottom" class="background:lightgrey"></div>
 						</div>
 	
-						<div id="pass-values-demo-preview" class="position:relative display:flex height:100% background-color:white">
+						<div id="pass-values-demo-preview" class="position:relative overflow:auto background-color:white">
 							<div get-value="#pass-values-demo" class="padding:20px"></div>
 						</div>
 						
@@ -107,17 +107,17 @@
 				<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#filter-item">
 					<h3 id="conditional-logic" class="padding-top:20px">Conditional Logic</h3>
 					<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts render elements to collaborative rich text editors or a website builder.</p>
-					<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+					<pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
 
 					<!-- SandBox -->
-					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="conditional-logic-playground">
+					<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="conditional-logic-playground">
 						
 						<div id="conditional-logic-demo-code" resizable class="position:relative height:50%">
-							<textarea type="code" lang="html" collection="demos" document_id="63a5a9f1f46f989e400148cc" name="conditional-logic-demo" save="false" id="conditional-logic-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="conditional-logic-demo" save="false" id="conditional-logic-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
 							<div resize="bottom" class="background:lightgrey"></div>
 						</div>
 	
-						<div id="conditional-logic-demo-preview" class="position:relative display:flex height:100% background-color:white">
+						<div id="conditional-logic-demo-preview" class="position:relative overflow:auto background-color:white">
 							<div get-value="#conditional-logic-demo" class="padding:20px"></div>
 						</div>
 						
@@ -140,53 +140,20 @@
 				<h2 class="border-bottom:1px_solid_lightgrey padding:5px_0px">Logic Attributes</h2>
 				<ul class="list-style-type:none position:sticky top:0 height:100vh overflow:auto">
 					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+		        		<h4><span>pass_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
+	        			<p>A uinque id to receive pass attribute.</p>
+					</li>
+					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 		        		<h4><span>pass_to</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-	        			<p>Template identifier. This attribute should be define.</p>
+	        			<p>id where the attributes will be passed to.</p>
 					</li>
 					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-		        		<h4><span>pass_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-	        			<p>Collection name to fetch data. It is required. </p>
+		        		<h4><span>pass-*</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
+	        			<p>Pass any attribute defined</p>
 					</li>
 					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-		        		<h4><span>pass-refresh</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-	        			<p>Collection name to fetch data. It is required. </p>
-					</li>
-					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-		        		<h4><span>pass-collection</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-	        			<p>Collection name to fetch data. It is required. </p>
-					</li>
-					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-		        		<h4><span>pass-document_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-	        			<p>Define the field name to fetch array</p>
-	        			<p>If this value defined, it will fetch the special field's value</p>
-					</li>
-					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-		        		<h4><span>pass-name</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-	        			<p>Define the field name to fetch array</p>
-	        			<p>If this value defined, it will fetch the special field's value</p>
-					</li>
-					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-		        		<h4><span>pass-value</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-	        			<p>Define the value to filter by . Require fetch-name</p>
-	        			<p>colleciton: whole collections list fetch.</p>
-					</li>
-					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-		        		<h4><span>pass-fetch-collection</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-	        			<p>collection</p>
-	        			<p>colleciton: whole collections list fetch.</p>
-					</li>
-					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-		        		<h4><span>pass-fetch-name</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-	        			<p>collection</p>
-	        			<p>colleciton: whole collections list fetch.</p>
-					</li>
-					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-		        		<h4><span>pass-filter-name</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-	        			<p>Collections's field name for filter.</p>
-					</li>
-					<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-		        		<h4><span>pass-filter-value</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-	        			<p>Collection's field value for filter. If filter-name defined, this attribute should defined too</p>
+		        		<h4><span>pass-refresh</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+	        			<p>Overwrites attribute values </p>
 					</li>
 				</ul>
 			</section>
@@ -208,7 +175,7 @@
 	</main>
 
 	<script src="/apikey.js"></script>
-	<script src="https://cdn.cocreate.app/1.37.2/CoCreate.min.js"></script>
+	<script src="https://cdn.cocreate.app/1.38.0/CoCreate.min.js"></script>
 	<!--<script src="../dist/CoCreate.js"></script>-->
 
 </body>

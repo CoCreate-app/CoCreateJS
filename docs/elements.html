@@ -53,9 +53,9 @@
 				<section scroll scroll-intersect="color:dodgerblue" scroll-target="#collaboration-item">
 					<h2 id="collaborative_elements" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Collaborative Elements</h2>
 					<p class="padding:10px_0px line-height:1.5">Simply define a collection, document_id and name. If the collection contains the document and the document contains the field name. Viola! The value is fetched in the input. Like wise, typing in the input will save the value. If the collection did not exist previously it will be created. If the document_id is left empty, typing in the input will create a new document_id.</p>
-					<pre><code class="language-html">&lt;input collection="test" document_id="" name="name"&gt;</code></pre>
+					<pre><code class="language-html">&lt;input collection="contacts" document_id="" name="name"&gt;</code></pre>
 					<p class="padding:10px_0px line-height:1.5">The attributes collection, document_id and name are at the center of the CoCreate universe, we take a data first aproach. By defining these 3 attributes you can save and fetch data from any input, textarea, select and thier various types. All other elements like h1, h2, span, etc will only fetch if the contenteditable attribute is applied.</p>
-					<pre><code class="language-html">&lt;h1 collection="test" document_id="" name="name" contenteditable&gt;&lt;/h1&gt;</code></pre>
+					<pre><code class="language-html">&lt;h1 collection="contacts" document_id="" name="name" contenteditable&gt;&lt;/h1&gt;</code></pre>
 					<p class="padding:10px_0px line-height:1.5">CoCreateJS by default is collaborative. To turn collaboration off for an element, apply attribute realtime="false"</p>
 					
 				</section>
@@ -67,13 +67,13 @@
 					<!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
 
 					<!-- SandBox -->
-					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="input-playground">
+					<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="input-playground">
 						<div id="input-demo-code" resizable class="position:relative height:50%">
 							<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="input-demo" save="false" id="input-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
 							<div resize="bottom" class="background:lightgrey"></div>
 						</div>
 	
-						<div id="input-demo-preview" class="position:relative display:flex height:100% background-color:white">
+						<div id="input-demo-preview" class="position:relative overflow:auto background-color:white">
 							<div get-value="#input-demo" class="padding:20px"></div>
 						</div>
 						
@@ -94,13 +94,13 @@
 					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
 					<!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
 					<!-- SandBox -->
-					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="textarea-playground">
+					<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="textarea-playground">
 						<div id="textarea-demo-code" resizable class="position:relative height:50%">
-							<textarea type="code" lang="html" collection="demos" document_id="619bd887a8b6b4001a9e05af" name="textarea-demo" save="false" id="textarea-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="textarea-demo" save="false" id="textarea-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
 							<div resize="bottom" class="background:lightgrey"></div>
 						</div>
 	
-						<div id="textarea-demo-preview" class="position:relative display:flex height:100% background-color:white">
+						<div id="textarea-demo-preview" class="position:relative overflow:auto background-color:white">
 							<div get-value="#textarea-demo" class="padding:20px"></div>
 						</div>
 						
@@ -119,16 +119,16 @@
 				<section id="contenteditable" class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#contenteditable-item">
 					<h3 class="padding-top:20px">Contenteditable</h3>
 					<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts contenteditable elements to collaborative rich text editors or a website builder.</p>
-					<pre><code class="language-html">&lt;h1 type="text" collection="test" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+					<pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
 
 					<!-- SandBox -->
-					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="contenteditable-playground">
+					<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="contenteditable-playground">
 						<div id="contenteditable-demo-code" resizable class="position:relative height:50%">
-							<textarea type="code" lang="html" collection="demos" document_id="619be339a8b6b4001a9e0837" name="contenteditable-demo" save="false" id="contenteditable-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="contenteditable-demo" save="false" id="contenteditable-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
 							<div resize="bottom" class="background:lightgrey"></div>
 						</div>
 	
-						<div id="contenteditable-demo-preview" class="position:relative display:flex height:100% background-color:white">
+						<div id="contenteditable-demo-preview" class="position:relative overflow:auto background-color:white">
 							<div get-value="#contenteditable-demo" class="padding:20px"></div>
 						</div>
 						
@@ -148,16 +148,16 @@
 				<section id="radio" class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#radio-item">
 					<h3 class="padding-top:20px">Radio</h3>
 					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-					<!--<pre><code class="language-html">&lt;input type="text" collection="test" document_id="" name="name"&gt;</code></pre>-->
+					<!--<pre><code class="language-html">&lt;input type="text" collection="contacts" document_id="" name="name"&gt;</code></pre>-->
 
 					<!-- SandBox -->
-					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="radio-playground">
+					<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="radio-playground">
 						<div id="radio-demo-code" resizable class="position:relative height:50%">
-							<textarea type="code" lang="html" collection="demos" document_id="619bde0da8b6b4001a9e06f3" name="radio-demo" save="false" id="radio-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="radio-demo" save="false" id="radio-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
 							<div resize="bottom" class="background:lightgrey"></div>
 						</div>
 	
-						<div id="radio-demo-preview" class="position:relative display:flex height:100% background-color:white">
+						<div id="radio-demo-preview" class="position:relative overflow:auto background-color:white">
 							<div get-value="#radio-demo" class="padding:20px"></div>
 						</div>
 						
@@ -176,16 +176,16 @@
 				<section id="checkbox" class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#checkbox-item">
 					<h3 class="padding-top:20px">Checkbox</h3>
 					<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-					<!--<pre><code class="language-html">&lt;input type="checkbox" collection="test" document_id="" name="name"&gt;</code></pre>-->
+					<!--<pre><code class="language-html">&lt;input type="checkbox" collection="contacts" document_id="" name="name"&gt;</code></pre>-->
 
 					<!-- SandBox -->
-					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="checkbox-playground">
+					<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="checkbox-playground">
 						<div id="checkbox-demo-code" resizable class="position:relative height:50%">
-							<textarea type="code" lang="html" collection="demos" document_id="619bdaf0a8b6b4001a9e063c" name="checkbox-demo" save="false" id="checkbox-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="checkbox-demo" save="false" id="checkbox-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
 							<div resize="bottom" class="background:lightgrey"></div>
 						</div>
 	
-						<div id="checkbox-demo-preview" class="position:relative display:flex height:100% background-color:white">
+						<div id="checkbox-demo-preview" class="position:relative overflow:auto background-color:white">
 							<div get-value="#checkbox-demo" class="padding:20px"></div>
 						</div>
 						
@@ -206,13 +206,13 @@
 					<!-- <p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p> -->
 
 					<!-- SandBox -->
-					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="select-playground">
+					<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="select-playground">
 						<div id="select-demo-code" resizable class="position:relative height:50%">
-							<textarea type="code" lang="html" collection="demos" document_id="619be11ba8b6b4001a9e07b8" name="select-demo" save="false" id="select-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="select-demo" save="false" id="select-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
 							<div resize="bottom" class="background:lightgrey"></div>
 						</div>
 	
-						<div id="select-demo-preview" class="position:relative display:flex height:100% background-color:white">
+						<div id="select-demo-preview" class="position:relative overflow:auto background-color:white">
 							<div get-value="#select-demo" class="padding:20px"></div>
 						</div>
 						
@@ -233,13 +233,13 @@
 					<p class="padding:10px_0px line-height:1.5">The form tag is used for grouping elements and applying attributes dynamically to it's childeren. Attributtes added to a form tag will only be applied to the child elements if the child elements attribute does not currently contain a value.</p>
 
 					<!-- SandBox -->
-					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-playground">
+					<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-playground">
 						<div id="form-demo-code" resizable class="position:relative height:50%">
-							<textarea type="code" lang="html" collection="demos" document_id="619d438ca8b6b4001a9e5faf" name="form-demo" save="false" id="form-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="form-demo" save="false" id="form-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
 							<div resize="bottom" class="background:lightgrey"></div>
 						</div>
 	
-						<div id="form-demo-preview" class="position:relative display:flex height:100% background-color:white">
+						<div id="form-demo-preview" class="position:relative overflow:auto background-color:white">
 							<div get-value="#form-demo" class="padding:20px"></div>
 						</div>
 						
@@ -266,13 +266,13 @@
 					<p class="padding:10px_0px line-height:1.5">Applying and clicking this action will save the value of the elements in a form to their respective collection, document_id and name. If a element does not have a document_id defined a document_id will be generated and applied to all other elements with the same collection defined and do not have a document_id. Existing document_id are never overwriten.</p>
 
 					<!-- SandBox -->
-					<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="actions-playground">
+					<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="actions-playground">
 						<div id="actions-demo-code" resizable class="position:relative height:50%">
-							<textarea type="code" lang="html" collection="demos" document_id="61a1456da8b6b4001a9f6029" name="actions-demo" save="false" id="actions-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+							<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="actions-demo" save="false" id="actions-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
 							<div resize="bottom" class="background:lightgrey"></div>
 						</div>
 	
-						<div id="actions-demo-preview" class="position:relative display:flex height:100% background-color:white">
+						<div id="actions-demo-preview" class="position:relative overflow:auto background-color:white">
 							<div get-value="#actions-demo" class="padding:20px"></div>
 						</div>
 						
@@ -390,7 +390,7 @@
 	</main>
 
 	<script src="/apikey.js"></script>
-	<script src="https://cdn.cocreate.app/1.37.2/CoCreate.min.js"></script>
+	<script src="https://cdn.cocreate.app/1.38.0/CoCreate.min.js"></script>
 	<!-- <script src="../dist/CoCreate.js"></script> -->
 
 </body>

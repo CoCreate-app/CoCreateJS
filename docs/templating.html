@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>CoCreateJS - Templating</title>
-		<meta name="description" content="A codeless Javascript framework for building collaborative no code platforms, apps and UI">
+		<meta name="description" content="Fetch, filter and render a list of data using HTML.">
 		<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
 		<link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css"/>
 		<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css"/>
@@ -41,24 +41,24 @@
 						<a href="https://github.com/CoCreate-app/CoCreate-action" target="_blank" class=""><i class="fab fa-github"></i></a>
 					</div>
 				</div>
-				<h1 class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">Learn how to convert your html into a dynamic realtime application.</h1>
+				<h1 class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">Fetch, filter and render a list of data using HTML. Great for creating blogs, shopping items, datatables, etc.</h1>
 			</section>
 	
 			<div id="xxxxx-section" class="display:flex flex-wrap:wrap justify-content:space-between">
 				<div class="flex-grow:1 width:300px padding:0px_10px margin:20px_0px">
 					<section scroll scroll-intersect="color:dodgerblue" scroll-target="#fetch-item">
 						<h2 id="fetch" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Fetch</h2>
-						<p class="padding:10px_0px line-height:1.5">Fetch, filter and render list's is done by applying fetch-collection to a container div and difining a template with in the container</p>
-						<!-- <pre><code class="language-html">&lt;div fetch-collection="test" template_id="A unique id"&gt;&lt;/div&gt;</code></pre> -->
+						<p class="padding:10px_0px line-height:1.5">Fetching and rendering a list is done by applying fetch-collection to an element and nesting a template within</p>
+						<!-- <pre><code class="language-html">&lt;div fetch-collection="contacts" template_id="A unique id"&gt;&lt;/div&gt;</code></pre> -->
 
 						<!-- SandBox -->
-						<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="fetch-playground">
+						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="fetch-playground">
 							<div id="fetch-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="63a596482658e8f09dcf3a45" name="fetch-demo" save="false" id="fetch-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="fetch-demo" save="false" id="fetch-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
 								<div resize="bottom" class="background:lightgrey"></div>
 							</div>
 		
-							<div id="fetch-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<div id="fetch-demo-preview" class="position:relative overflow:auto background-color:white">
 								<div get-value="#fetch-demo" class="padding:20px"></div>
 							</div>
 							
@@ -80,14 +80,14 @@
 						<!-- <pre><code class="language-html">&lt;input filter-name="name" template_id="" /&gt;</code></pre> -->
 	
 						<!-- SandBox -->
-						<div class="position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="filter-playground">
+						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="filter-playground">
 							
 							<div id="filter-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="63a596c7210596fd237c1250" name="filter-demo" save="false" id="filter-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="filter-demo" save="false" id="filter-demo" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
 								<div resize="bottom" class="background:lightgrey"></div>
 							</div>
 		
-							<div id="filter-demo-preview" class="position:relative display:flex height:100% background-color:white">
+							<div id="filter-demo-preview" class="position:relative overflow:auto background-color:white">
 								<div get-value="#filter-demo" class="padding:20px"></div>
 							</div>
 							
@@ -198,7 +198,7 @@
 		</main>
 	
 		<script src="/apikey.js"></script>
-		<script src="https://cdn.cocreate.app/1.37.2/CoCreate.min.js"></script>
+		<script src="https://cdn.cocreate.app/1.38.0/CoCreate.min.js"></script>
 		<!--<script src="../dist/CoCreate.js"></script>-->
 	
 	</body>
