@@ -1,3 +1,10 @@
+## [1.39.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.39.3...v1.39.4) (2023-01-02)
+
+
+### Bug Fixes
+
+* bump @cocreate/fetch ([e4165d7](https://github.com/CoCreate-app/CoCreateJS/commit/e4165d779742c88ad8ad46a146146966a5660cad))
+
 ## [1.39.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.39.2...v1.39.3) (2023-01-02)
 
 
