@@ -43,7 +43,10 @@ module.exports = {
                 "filter-demo": "{{./demo/templating/filter.html}}",
                 "pass-attributes-demo": "{{./demo/logic/pass-attributes.html}}",
                 "pass-values-demo": "{{./demo/logic/pass-values.html}}",
-                "conditional-logic-demo": "{{./demo/logic/conditional-logic.html}}"
+                "conditional-logic-demo": "{{./demo/logic/conditional-logic.html}}",
+                "signup-demo": "{{./demo/user-management/signup.html}}",
+                "signin-demo": "{{./demo/user-management/signin.html}}",
+                "signout-demo": "{{./demo/user-management/signout.html}}"
             }
         }
     ]
