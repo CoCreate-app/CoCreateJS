@@ -1,3 +1,10 @@
+## [1.39.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.39.1...v1.39.2) (2023-01-02)
+
+
+### Bug Fixes
+
+* bump cdn to 1.39.1 ([ac1f443](https://github.com/CoCreate-app/CoCreateJS/commit/ac1f44337a75eecb66cdea4017205ed007c48a15))
+
 ## [1.39.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.39.0...v1.39.1) (2023-01-02)
 
 
