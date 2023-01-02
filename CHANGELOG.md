@@ -1,3 +1,16 @@
+# [1.39.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.38.1...v1.39.0) (2023-01-02)
+
+
+### Bug Fixes
+
+* bump cdn to 1.38.1 ([d8372fe](https://github.com/CoCreate-app/CoCreateJS/commit/d8372fe928a330acbdf3fbce30600c1fb1d395d9))
+* update template attribute ([6ddb575](https://github.com/CoCreate-app/CoCreateJS/commit/6ddb57583d8c9c9057ab084afb38c470bf6c7c5a))
+
+
+### Features
+
+* class="template" template_id="id" replaced with template="id" ([35c2dc6](https://github.com/CoCreate-app/CoCreateJS/commit/35c2dc6c656c09eacc68ee9184c12c4e2ed0300e))
+
 ## [1.38.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.38.0...v1.38.1) (2023-01-01)
 
 
