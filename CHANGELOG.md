@@ -1,3 +1,10 @@
+# [1.40.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.39.5...v1.40.0) (2023-01-04)
+
+
+### Features
+
+* crdt - listen to sync message and update ([ced02e2](https://github.com/CoCreate-app/CoCreateJS/commit/ced02e20bc48bfeaa4a0a3d27bc5b615c66b6d6d))
+
 ## [1.39.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.39.4...v1.39.5) (2023-01-04)
 
 
