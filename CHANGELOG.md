@@ -1,3 +1,10 @@
+# [1.41.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.40.0...v1.41.0) (2023-01-05)
+
+
+### Features
+
+* if fetch element does not have template id will find child template to retrieve id ([36e7ff7](https://github.com/CoCreate-app/CoCreateJS/commit/36e7ff7b476b9ac3ce6317c03a8efd0ff49429e8))
+
 # [1.40.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.39.5...v1.40.0) (2023-01-04)
 
 
