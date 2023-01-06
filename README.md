@@ -45,7 +45,6 @@ For a complete guide and working demo refer to the [doumentation](https://cocrea
 <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
 ```
 
--am ""
 ## NPM
 
 ```shell
