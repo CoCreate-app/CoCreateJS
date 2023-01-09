@@ -1,3 +1,10 @@
+# [1.42.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.41.2...v1.42.0) (2023-01-09)
+
+
+### Features
+
+* improved handling of checkobox and radio inputs ([f0dd200](https://github.com/CoCreate-app/CoCreateJS/commit/f0dd200ce59daf0d61f9d2e5cad03a330e42de58))
+
 ## [1.41.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.41.1...v1.41.2) (2023-01-09)
 
 
