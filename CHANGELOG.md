@@ -1,3 +1,10 @@
+# [1.43.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.42.0...v1.43.0) (2023-01-10)
+
+
+### Features
+
+* pass attributes run before elements are rendered in dom reducing observer event ([19171da](https://github.com/CoCreate-app/CoCreateJS/commit/19171da9d3a9a7e19b5fa23897c635edf7ec884d))
+
 # [1.42.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.41.2...v1.42.0) (2023-01-09)
 
 
