@@ -1,3 +1,11 @@
+## [1.43.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.43.0...v1.43.1) (2023-01-10)
+
+
+### Bug Fixes
+
+* bump @cocreae/elements  and @cocreate/elment-prototype ([78fb41e](https://github.com/CoCreate-app/CoCreateJS/commit/78fb41edc6014c817df50532f7927c9ef3ac2464))
+* bump cdn to 1.43.0 ([f65ff75](https://github.com/CoCreate-app/CoCreateJS/commit/f65ff75311004e596a6a4341ae2838622b4cf1b8))
+
 # [1.43.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.42.0...v1.43.0) (2023-01-10)
 
 
