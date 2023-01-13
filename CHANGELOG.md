@@ -1,3 +1,15 @@
+# [1.44.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.43.1...v1.44.0) (2023-01-13)
+
+
+### Bug Fixes
+
+* bump cdn to 1.34.1 ([5fd5ba3](https://github.com/CoCreate-app/CoCreateJS/commit/5fd5ba3f2b96230fc8c68c1c57963b8e4492a5a3))
+
+
+### Features
+
+* CoCreate-fetch supports dnd, items reordered will update crud ([3f9ba1b](https://github.com/CoCreate-app/CoCreateJS/commit/3f9ba1b96c9e07758d3e28bf1738936bb4d91899))
+
 ## [1.43.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.43.0...v1.43.1) (2023-01-10)
 
 
