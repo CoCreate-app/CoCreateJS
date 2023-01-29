@@ -1,3 +1,10 @@
+# [1.45.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.44.0...v1.45.0) (2023-01-29)
+
+
+### Features
+
+* fetch.storage and localStorage fallback ([2ef9ec5](https://github.com/CoCreate-app/CoCreateJS/commit/2ef9ec5a4e36140c30060a30887196bf3158367e))
+
 # [1.44.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.43.1...v1.44.0) (2023-01-13)
 
 
