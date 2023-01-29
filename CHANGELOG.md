@@ -1,3 +1,10 @@
+## [1.45.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.1...v1.45.2) (2023-01-29)
+
+
+### Bug Fixes
+
+* bump @cocreate/local-storage ([dfbc94b](https://github.com/CoCreate-app/CoCreateJS/commit/dfbc94b86e6f674c44821d809a79dc5a25b8ec5f))
+
 ## [1.45.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.0...v1.45.1) (2023-01-29)
 
 
