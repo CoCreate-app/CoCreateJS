@@ -1,3 +1,10 @@
+## [1.45.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.2...v1.45.3) (2023-01-30)
+
+
+### Bug Fixes
+
+* catch cross-origin error when accessing window.top ([d54902b](https://github.com/CoCreate-app/CoCreateJS/commit/d54902b4ce0b91c8c86b908a97d51c23ffa965b3))
+
 ## [1.45.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.1...v1.45.2) (2023-01-29)
 
 
