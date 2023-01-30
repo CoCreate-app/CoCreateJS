@@ -1,3 +1,10 @@
+## [1.45.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.6...v1.45.7) (2023-01-30)
+
+
+### Bug Fixes
+
+* lazyload selector [click] ([7cb4979](https://github.com/CoCreate-app/CoCreateJS/commit/7cb497995c6606180af0f98cbaaa1c1dc280f2f4))
+
 ## [1.45.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.5...v1.45.6) (2023-01-30)
 
 
