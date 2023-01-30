@@ -1,3 +1,10 @@
+## [1.45.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.4...v1.45.5) (2023-01-30)
+
+
+### Bug Fixes
+
+* utils queryDocumentSelectorAll array ([fd6c273](https://github.com/CoCreate-app/CoCreateJS/commit/fd6c273f20ab8d0e098093ae128ee201b615a777))
+
 ## [1.45.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.3...v1.45.4) (2023-01-30)
 
 
