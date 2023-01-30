@@ -1,3 +1,10 @@
+## [1.45.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.3...v1.45.4) (2023-01-30)
+
+
+### Bug Fixes
+
+* bump @cocreate/utils ([8b033b6](https://github.com/CoCreate-app/CoCreateJS/commit/8b033b6a643d1a1ab1709600cd1ee5f795a6d77a))
+
 ## [1.45.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.2...v1.45.3) (2023-01-30)
 
 
