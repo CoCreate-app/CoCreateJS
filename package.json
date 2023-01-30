@@ -46,7 +46,7 @@
     "type": "GitHub Sponsors ❤",
     "url": "https://github.com/sponsors/CoCreate-app"
   },
-  "main": "index.js",
+  "main": "./src/index.js",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
