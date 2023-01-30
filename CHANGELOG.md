@@ -1,3 +1,10 @@
+## [1.45.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.5...v1.45.6) (2023-01-30)
+
+
+### Bug Fixes
+
+* temporarily removed thirdparty api packages ([9605a16](https://github.com/CoCreate-app/CoCreateJS/commit/9605a16b4230d13f6fec926f939878cc498a340b))
+
 ## [1.45.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.4...v1.45.5) (2023-01-30)
 
 
