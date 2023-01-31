@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/cocreatejs",
-  "version": "1.45.7",
+  "version": "1.45.8",
   "description": "A collaborative low code headless CMS and Javascript framework for building collaborative no code platforms, apps and UI's. Build powerful applications using HTML5 attributes or Javascript api.",
   "keywords": [
     "cocreatejs",
@@ -136,4 +136,3 @@
     "@cocreate/vdom": "latest"
   }
 }
-

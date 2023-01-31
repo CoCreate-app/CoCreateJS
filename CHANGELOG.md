@@ -1,3 +1,10 @@
+## [1.45.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.7...v1.45.8) (2023-01-31)
+
+
+### Bug Fixes
+
+* impoved handeling of filter-search empty string case ([13e3d39](https://github.com/CoCreate-app/CoCreateJS/commit/13e3d39b26d8b831cc1c9ca57879f535239ea081))
+
 ## [1.45.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.6...v1.45.7) (2023-01-30)
 
 
