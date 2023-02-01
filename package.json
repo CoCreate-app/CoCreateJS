@@ -86,6 +86,7 @@
     "@cocreate/element-config": "latest",
     "@cocreate/element-prototype": "latest",
     "@cocreate/elements": "latest",
+    "@cocreate/events": "latest",
     "@cocreate/fetch": "latest",
     "@cocreate/filter": "latest",
     "@cocreate/floating-label": "latest",
