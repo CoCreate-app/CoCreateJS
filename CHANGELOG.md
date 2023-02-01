@@ -1,3 +1,10 @@
+# [1.46.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.8...v1.46.0) (2023-02-01)
+
+
+### Features
+
+* @cocreate/events ([b6b2740](https://github.com/CoCreate-app/CoCreateJS/commit/b6b2740fce653514f2ad7b415f11ed0da0e4e35b))
+
 ## [1.45.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.7...v1.45.8) (2023-01-31)
 
 
