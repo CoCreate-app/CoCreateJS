@@ -1,3 +1,10 @@
+## [1.47.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.47.0...v1.47.1) (2023-02-02)
+
+
+### Bug Fixes
+
+* events-chunck ([66ee21f](https://github.com/CoCreate-app/CoCreateJS/commit/66ee21f9a9240ebdd63f1231c935fe6a42f7304d))
+
 # [1.47.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.46.1...v1.47.0) (2023-02-02)
 
 
