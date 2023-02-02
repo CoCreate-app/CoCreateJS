@@ -1,3 +1,10 @@
+# [1.47.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.46.1...v1.47.0) (2023-02-02)
+
+
+### Features
+
+* rest form sets empty value to trigger events ([bd38ab7](https://github.com/CoCreate-app/CoCreateJS/commit/bd38ab79a3cb66dc02e0114e9ff1a8b8bc8f3359))
+
 ## [1.46.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.46.0...v1.46.1) (2023-02-02)
 
 
