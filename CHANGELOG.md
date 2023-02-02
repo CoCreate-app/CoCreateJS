@@ -1,3 +1,10 @@
+## [1.46.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.46.0...v1.46.1) (2023-02-02)
+
+
+### Bug Fixes
+
+* add CoCreate-events to repo list ([b0f84dc](https://github.com/CoCreate-app/CoCreateJS/commit/b0f84dcaa5733924950ddf59c918f71a96c6f3bf))
+
 # [1.46.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.45.8...v1.46.0) (2023-02-01)
 
 
