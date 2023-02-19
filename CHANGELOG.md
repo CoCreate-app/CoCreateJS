@@ -1,3 +1,11 @@
+## [1.47.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.47.1...v1.47.2) (2023-02-19)
+
+
+### Bug Fixes
+
+* add CoCreate-events to lazyload, bump cdn to 1.47.1 ([431e9ad](https://github.com/CoCreate-app/CoCreateJS/commit/431e9ad55b2fa35c1e7f1d9050de3849b05f9c2b))
+* removed CoCrete-toggle and CoCreate-selected, replaced with CoCreate-events ([2afa86b](https://github.com/CoCreate-app/CoCreateJS/commit/2afa86b4ef6119b4ec942b74c523f12b841ea9c1))
+
 ## [1.47.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.47.0...v1.47.1) (2023-02-02)
 
 
