@@ -215,10 +215,6 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-select.git'
     },
     {
-        'path': '../CoCreate-components/CoCreate-selected',
-        'repo': 'github.com/CoCreate-app/CoCreate-selected.git'
-    },
-    {
         'path': '../CoCreate-components/CoCreate-selection',
         'repo': 'github.com/CoCreate-app/CoCreate-selection.git'
     },
@@ -238,10 +234,6 @@ module.exports = [
         'path': '../CoCreate-components/CoCreate-text',
         'repo': 'github.com/CoCreate-app/CoCreate-text.git'
     },
-    // {
-    //     'path': '../CoCreate-components/CoCreate-toggle',
-    //     'repo': 'github.com/CoCreate-app/CoCreate-toggle.git'
-    // },
     {
         'path': '../CoCreate-components/CoCreate-toolbar',
         'repo': 'github.com/CoCreate-app/CoCreate-toolbar.git'
