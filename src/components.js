@@ -15,6 +15,7 @@ dependency('pass', import (/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'))
 dependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 dependency('link', import (/*webpackChunkName: "link-chunk"*/ '@cocreate/link'));
 dependency('pwa', import (/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));
+// lazyLoad('events', import (/*webpackChunkName: "events-chunk"*/ '@cocreate/events'));
 
 
 // Components
@@ -31,8 +32,8 @@ lazyLoad('resizeObserver', '[resize-target]', ()=> import(/*webpackChunkName: "r
 lazyLoad('dnd', '[sortable], [cloneables], [draggable], [droppable], [cloneable]', ()=> import (/*webpackChunkName: "dnd-chunk"*/ '@cocreate/dnd'));
 lazyLoad('position', '[positionable], [moveable]', ()=> import (/*webpackChunkName: "position-chunk"*/ '@cocreate/position'));
 lazyLoad('conditionalLogic', '[show], [hide]', ()=> import (/*webpackChunkName: "conditionalLogic-chunk"*/ '@cocreate/conditional-logic'));
-lazyLoad('events', '[toggle], [click], [hover]', ()=> import (/*webpackChunkName: "events-chunk"*/ '@cocreate/events'));
-lazyLoad('selected', '[selected-value]', ()=> import (/*webpackChunkName: "selected-chunk"*/ '@cocreate/selected'));
+lazyLoad('events', '[toggle], [click], [hover], [selected-value]', ()=> import (/*webpackChunkName: "events-chunk"*/ '@cocreate/events'));
+// lazyLoad('selected', '[selected-value]', ()=> import (/*webpackChunkName: "selected-chunk"*/ '@cocreate/selected'));
 lazyLoad('scroll', '[scroll]', ()=> import (/*webpackChunkName: "scroll-chunk"*/ '@cocreate/scroll'));
 lazyLoad('resize', '[resize]', ()=>import(/*webpackChunkName: "resize-chunk"*/ '@cocreate/resize'));
 lazyLoad('remove', '[actions*="remove"]', ()=>import(/*webpackChunkName: "remove-chunk"*/ '@cocreate/remove'));
