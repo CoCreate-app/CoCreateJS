@@ -302,10 +302,6 @@ module.exports = [
         'path': '../CoCreate-plugins/CoCreate-charts',
         'repo': 'github.com/CoCreate-app/CoCreate-charts.git'
     },
-    // {
-    //     'path': '../CoCreate-plugins/CoCreate-codemirror',
-    //     'repo': 'github.com/CoCreate-app/CoCreate-codemirror.git'
-    // },
     {
         'path': '../CoCreate-plugins/CoCreate-croppie',
         'repo': 'github.com/CoCreate-app/CoCreate-croppie.git'
@@ -346,10 +342,6 @@ module.exports = [
         'path': '../CoCreate-plugins/CoCreate-linkedin',
         'repo': 'github.com/CoCreate-app/CoCreate-linkedin.git'
     },
-    // {
-    //     'path': '../CoCreate-plugins/CoCreate-monaco',
-    //     'repo': 'github.com/CoCreate-app/CoCreate-monaco.git'
-    // },
     {
         'path': '../CoCreate-plugins/CoCreate-pickr',
         'repo': 'github.com/CoCreate-app/CoCreate-pickr.git'
@@ -366,10 +358,6 @@ module.exports = [
         'path': '../CoCreate-plugins/CoCreate-prism',
         'repo': 'github.com/CoCreate-app/CoCreate-prism.git'
     },
-    // {
-    //     'path': '../CoCreate-plugins/CoCreate-quill',
-    //     'repo': 'github.com/CoCreate-app/CoCreate-quill.git'
-    // },
     {
         'path': '../CoCreate-plugins/CoCreate-s3',
         'repo': 'github.com/CoCreate-app/CoCreate-s3.git'
