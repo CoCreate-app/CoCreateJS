@@ -1,16 +1,18 @@
 module.exports = [
 
-    // {
-    //     'path': '../CoCreateJS',
-    //     'repo': 'github.com/CoCreate-app/CoCreateJS.git'
-    // },
+    {
+        'path': '../CoCreateJS',
+        'repo': 'github.com/CoCreate-app/CoCreateJS.git',
+        'exclude': ['git']
+    },
     {
         'path': '../CoCreateCSS',
         'repo': 'github.com/CoCreate-app/CoCreateCSS.git'
     },
     {
         'path': '../CoCreate-admin',
-        'repo': 'github.com/CoCreate-app/CoCreate-admin.git'
+        'repo': 'github.com/CoCreate-app/CoCreate-admin.git',
+        'exclude': ['git']
     },
     {
         'path': '../CoCreate-website',
@@ -40,11 +42,16 @@ module.exports = [
     },
     {
         'path': '../CoCreate-components/CoCreate-cli',
-        'repo': 'github.com/CoCreate-app/CoCreate-cli.git'
+        'repo': 'github.com/CoCreate-app/CoCreate-cli.git',
+        'install': true
     },
     {
         'path': '../CoCreate-components/CoCreate-codearea',
         'repo': 'github.com/CoCreate-app/CoCreate-codearea.git'
+    },
+    {
+        'path': '../CoCreate-components/CoCreate-clone',
+        'repo': 'github.com/CoCreate-app/CoCreate-clone.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-conditional-logic',
@@ -360,7 +367,8 @@ module.exports = [
     },
     {
         'path': '../CoCreate-plugins/CoCreate-s3',
-        'repo': 'github.com/CoCreate-app/CoCreate-s3.git'
+        'repo': 'github.com/CoCreate-app/CoCreate-s3.git',
+        'install': true
     },
     {
         'path': '../CoCreate-plugins/CoCreate-sendgrid',

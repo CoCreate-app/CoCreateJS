@@ -24,7 +24,7 @@ lazyLoad('cssParser', 'link[collection][document_id][name], link[parse="true"]',
 lazyLoad('renderJson', '[fetch-for]', ()=> import (/*webpackChunkName: "render-json-chunk"*/ '@cocreate/render-json'));
 lazyLoad('actions', '[actions]', ()=> import (/*webpackChunkName: "actions-chunk"*/ '@cocreate/actions'));
 lazyLoad('form', 'form', ()=> import (/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
-lazyLoad('elements', '[collection], [get-value], [set-value]', ()=> import (/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
+lazyLoad('elements', '[collection]', ()=> import (/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
 lazyLoad('fetch', '[fetch-db], [fetch-database], [fetch-collection], [fetch-index], [fetch-document], [fetch-name]', ()=> import (/*webpackChunkName: "fetch-chunk"*/ '@cocreate/fetch'));
 lazyLoad('render', '[template_id]', ()=> import (/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
 lazyLoad('api', '[actions], [template_id]', ()=> import (/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
@@ -32,9 +32,10 @@ lazyLoad('resizeObserver', '[resize-target]', ()=> import(/*webpackChunkName: "r
 lazyLoad('dnd', '[sortable], [cloneables], [draggable], [droppable], [cloneable]', ()=> import (/*webpackChunkName: "dnd-chunk"*/ '@cocreate/dnd'));
 lazyLoad('position', '[positionable], [moveable]', ()=> import (/*webpackChunkName: "position-chunk"*/ '@cocreate/position'));
 lazyLoad('conditionalLogic', '[show], [hide]', ()=> import (/*webpackChunkName: "conditionalLogic-chunk"*/ '@cocreate/conditional-logic'));
-lazyLoad('events', '[toggle], [click], [hover], [selected-value]', ()=> import (/*webpackChunkName: "events-chunk"*/ '@cocreate/events'));
+lazyLoad('events', '[toggle], [click], [hover], [toggle-value], [click-value], [hover-value], [selected-value]', ()=> import (/*webpackChunkName: "events-chunk"*/ '@cocreate/events'));
 lazyLoad('scroll', '[scroll]', ()=> import (/*webpackChunkName: "scroll-chunk"*/ '@cocreate/scroll'));
 lazyLoad('resize', '[resize]', ()=>import(/*webpackChunkName: "resize-chunk"*/ '@cocreate/resize'));
+lazyLoad('clone', '[actions*="clone"]', ()=>import(/*webpackChunkName: "clone-chunk"*/ '@cocreate/clone'));
 lazyLoad('remove', '[actions*="remove"]', ()=>import(/*webpackChunkName: "remove-chunk"*/ '@cocreate/remove'));
 lazyLoad('attributes', '[attribute]', ()=>import(/*webpackChunkName: "attributes-chunk"*/ '@cocreate/attributes'));
 lazyLoad('users', '[actions*="signUp"], [actions*="signIn"], [actions*="signOut"], [user-status]', ()=> import (/*webpackChunkName: "users-chunk"*/ '@cocreate/users'));
