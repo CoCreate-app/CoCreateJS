@@ -1,3 +1,10 @@
+## [1.48.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.48.0...v1.48.1) (2023-03-16)
+
+
+### Bug Fixes
+
+* minor bug fixes and performance improvements ([9c8ad32](https://github.com/CoCreate-app/CoCreateJS/commit/9c8ad32e8244447f0396ab6665b13eed39a3d2ac))
+
 # [1.48.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.47.2...v1.48.0) (2023-03-16)
 
 
