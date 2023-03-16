@@ -1,3 +1,15 @@
+# [1.48.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.47.2...v1.48.0) (2023-03-16)
+
+
+### Bug Fixes
+
+* removed depreciated plugins ([da6c37b](https://github.com/CoCreate-app/CoCreateJS/commit/da6c37b93a13009747b6d5916d06659102e7a5ac))
+
+
+### Features
+
+* replaced get-value and set-value with a super charged version of CoCreate-events. Attributes to target parent an sibling elements. ([92c13dc](https://github.com/CoCreate-app/CoCreateJS/commit/92c13dce2add4e8a6c181c4b6c81385c78dcd497))
+
 ## [1.47.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.47.1...v1.47.2) (2023-02-19)
 
 
