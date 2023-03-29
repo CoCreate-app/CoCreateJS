@@ -29,8 +29,7 @@
     "dev": "npx webpack --config webpack.config.js --watch",
     "docs": "node ./node_modules/@cocreate/docs/src/index.js",
     "hosting": "node ./node_modules/@cocreate/hosting/src/index.js",
-    "dist": "node --version",
-    "postinstall": "npm i -g @cocreate/cli"
+    "dist": "node --version"
   },
   "repository": {
     "type": "git",
@@ -109,7 +108,6 @@
     "@cocreate/position": "latest",
     "@cocreate/prism": "latest",
     "@cocreate/progress": "latest",
-    "@cocreate/progress-bar": "latest",
     "@cocreate/pwa": "latest",
     "@cocreate/random-color": "latest",
     "@cocreate/remove": "latest",
