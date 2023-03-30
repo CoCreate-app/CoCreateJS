@@ -1,3 +1,10 @@
+# [1.49.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.48.2...v1.49.0) (2023-03-30)
+
+
+### Features
+
+* client side loadbalaing, will round robin defined hosts. cached files not replaced when server returns 502. supports custom dburls ([6283439](https://github.com/CoCreate-app/CoCreateJS/commit/6283439cef2dc8bdcab8b49ba4a5d2ede5030391))
+
 ## [1.48.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.48.1...v1.48.2) (2023-03-29)
 
 
