@@ -1,3 +1,11 @@
+## [1.49.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.49.0...v1.49.1) (2023-04-11)
+
+
+### Bug Fixes
+
+* removed url from config ([b206233](https://github.com/CoCreate-app/CoCreateJS/commit/b206233ac1fa3d66d8b7966e2e59e35e1f854d0e))
+* renamed domains to hosts. bump cdn to 1.40.0. supports applying custom dburls to connect to private databases ([dac49d7](https://github.com/CoCreate-app/CoCreateJS/commit/dac49d73f83c04926388d29406bef9fbf4bc5380))
+
 # [1.49.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.48.2...v1.49.0) (2023-03-30)
 
 
