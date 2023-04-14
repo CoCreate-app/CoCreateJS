@@ -1,10 +1,10 @@
 
     <form>
-        <input render-key="renderKey.name">
-        <div template_id="renderKey">
-            <div>This is <b>{{document.name}}</b></div>
-            <p>This {{document.name}}</p>
-            <input value="{{document.name}}">
+        <input render-key="name">
+        <div template_id="render-key">
+            <div>This is <b>{{render-key.name}}</b></div>
+            <p>This {{render-key.name}}</p>
+            <input value="{{render-key.name}}">
         </div>
     
         <button actions='renderKey'>Render</button>
