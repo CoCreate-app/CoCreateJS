@@ -1,3 +1,11 @@
+## [1.49.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.49.2...v1.49.3) (2023-04-14)
+
+
+### Bug Fixes
+
+* bump cdn to 1.49.2 ([d4ee6ad](https://github.com/CoCreate-app/CoCreateJS/commit/d4ee6adf8887d223224acf0ffcf9999e71a87861))
+* moved events component to dependency list ([1240d50](https://github.com/CoCreate-app/CoCreateJS/commit/1240d50b6dd834f98a9ff9ac36b7a7a88b70ac35))
+
 ## [1.49.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.49.1...v1.49.2) (2023-04-11)
 
 
