@@ -43,7 +43,8 @@ module.exports = [
     {
         'path': '../CoCreate-components/CoCreate-cli',
         'repo': 'github.com/CoCreate-app/CoCreate-cli.git',
-        'install': true
+        'install': true,
+        'exclude': ['git']
     },
     {
         'path': '../CoCreate-components/CoCreate-codearea',
