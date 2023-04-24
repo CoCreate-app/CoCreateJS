@@ -1,3 +1,10 @@
+## [1.50.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.50.2...v1.50.3) (2023-04-24)
+
+
+### Bug Fixes
+
+* redeploy failed workflow ([9c17a7f](https://github.com/CoCreate-app/CoCreateJS/commit/9c17a7f25d09dc60cc576ee2a98955b824e79524))
+
 ## [1.50.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.50.1...v1.50.2) (2023-04-24)
 
 
