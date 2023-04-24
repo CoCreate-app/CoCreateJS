@@ -1,3 +1,10 @@
+## [1.50.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.50.1...v1.50.2) (2023-04-24)
+
+
+### Bug Fixes
+
+* redploy failed actions ([6390fbc](https://github.com/CoCreate-app/CoCreateJS/commit/6390fbc996a2e54d1603f7877ee59bf16d347735))
+
 ## [1.50.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.50.0...v1.50.1) (2023-04-24)
 
 
