@@ -1,3 +1,10 @@
+## [1.50.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.50.5...v1.50.6) (2023-04-24)
+
+
+### Bug Fixes
+
+* node version 16 in build action ([6aa8367](https://github.com/CoCreate-app/CoCreateJS/commit/6aa836756fcd20d42be2ef8bcf6a77410e0ad0c5))
+
 ## [1.50.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.50.4...v1.50.5) (2023-04-24)
 
 
