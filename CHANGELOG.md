@@ -1,3 +1,10 @@
+# [1.51.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.50.6...v1.51.0) (2023-04-26)
+
+
+### Features
+
+* window.confirm() if organization_id not found. clicking ok creates new organization ([a2a651c](https://github.com/CoCreate-app/CoCreateJS/commit/a2a651c2628e5c5225428b14942ddd514b57ef5c))
+
 ## [1.50.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.50.5...v1.50.6) (2023-04-24)
 
 
