@@ -6,7 +6,9 @@ import { lazyLoad, dependency } from '@cocreate/lazy-loader';
 dependency('observer', import (/*webpackChunkName: "observer-chunk"*/ '@cocreate/observer'));
 dependency('utils', import (/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
 dependency('indexeddb', import (/*webpackChunkName: "indexeddb-chunk"*/ '@cocreate/indexeddb'));
+dependency('localstorage', import (/*webpackChunkName: "localstorage-chunk"*/ '@cocreate/local-storage'));
 dependency('socket', import (/*webpackChunkName: "socket-chunk"*/ '@cocreate/socket-client'));
+dependency('events', import (/*webpackChunkName: "events-chunk"*/ '@cocreate/events'));
 dependency('crud', import (/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud-client'));
 dependency('crdt', import (/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
 dependency('message', import (/*webpackChunkName: "message-chunk"*/ '@cocreate/message-client'));
@@ -15,7 +17,6 @@ dependency('pass', import (/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'))
 dependency('filter', import (/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 dependency('link', import (/*webpackChunkName: "link-chunk"*/ '@cocreate/link'));
 dependency('pwa', import (/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));
-dependency('events', import (/*webpackChunkName: "events-chunk"*/ '@cocreate/events'));
 
 
 // Components

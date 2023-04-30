@@ -64,24 +64,25 @@
 			        	</div>
 		
 						<!--fullscreen toogle and icon transform-->
-						<a class="margin-right:15px" fullscreen><i toggle="fa-compress, fa-expand" class="fas fa-expand"></i></a>
+						<a class="margin-right:15px" fullscreen></a>
 						
 					</div>
 					
 					<!-- Avatar -->
+					<div localstorage-get="user_id" localstorage-key="userId" localstorage-target=".avatar-wrapper"></div>
 					<div class="avatar-wrapper margin-right:10px">
 						<a class="avatar round" href="/admin/signin.html">
 							<span collection="users" 
-								document_id="" 
+								document_id="{{userId}}" 
 								name="name" 
-								class="sessionUser_Id avatar-name">
+								class="avatar-name">
 								<i class="fas fa-sign-in-alt"></i>
 							</span>
-							<span class="sessionUser_Id avatar-image">
-								<img collection="users" document_id="" name="avatar" onerror="this.style.display='none'" class="sessionUser_Id" width="40px"/>
+							<span class="avatar-image">
+								<img collection="users" document_id="{{userId}}" name="avatar" onerror="this.style.display='none'" width="40px"/>
 							</span>
 						</a>
-						<div class="avatar-status sessionUser_Id"  collection="users" document_id="" user-status='{"name":"status"}'></div>
+						<div class="avatar-status"  collection="users" document_id="{{userId}}" user-status='{"name":"status"}'></div>
 					</div>
 				</div>
 			</div>
