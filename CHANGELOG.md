@@ -1,3 +1,10 @@
+# [1.52.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.51.2...v1.52.0) (2023-05-01)
+
+
+### Features
+
+* parentDirectory key in files ([773f139](https://github.com/CoCreate-app/CoCreateJS/commit/773f139ceb2b937d4c18c804ba83295d230e7d76))
+
 ## [1.51.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.51.1...v1.51.2) (2023-05-01)
 
 
