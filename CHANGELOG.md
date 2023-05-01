@@ -1,3 +1,12 @@
+## [1.51.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.51.0...v1.51.1) (2023-05-01)
+
+
+### Bug Fixes
+
+* fullscreen target updated to fullscreen fullscreen-target ([cc24517](https://github.com/CoCreate-app/CoCreateJS/commit/cc245174c4c35fafbdc1f6c803e904e41b30f583))
+* package-lock.json and pnpm-lock.yaml added to .gitignore ([23e3d06](https://github.com/CoCreate-app/CoCreateJS/commit/23e3d06444a18e6b17bbf2c873febef72f577944))
+* replaced toggle fullscreenbicons with css content and removed toogle fullscreen icons. now using css content ([284f42c](https://github.com/CoCreate-app/CoCreateJS/commit/284f42ce6da1cdc71450501041615107353aa736))
+
 # [1.51.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.50.6...v1.51.0) (2023-04-26)
 
 
