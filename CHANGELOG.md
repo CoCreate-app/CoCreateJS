@@ -1,3 +1,11 @@
+## [1.51.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.51.1...v1.51.2) (2023-05-01)
+
+
+### Bug Fixes
+
+* replace fontawesome with svg ([c7d238e](https://github.com/CoCreate-app/CoCreateJS/commit/c7d238ee7d698d79e9b44f3d266312cded69314b))
+* update manifest.json to manifest.webmanifest ([a8fa6ee](https://github.com/CoCreate-app/CoCreateJS/commit/a8fa6eebd69ef1a38c8f9901ef6de1036d05a51c))
+
 ## [1.51.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.51.0...v1.51.1) (2023-05-01)
 
 
