@@ -1,3 +1,10 @@
+# [1.53.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.52.1...v1.53.0) (2023-05-01)
+
+
+### Features
+
+* svg support, removed font awesome ([262a93e](https://github.com/CoCreate-app/CoCreateJS/commit/262a93e63cc7323da7ef0e647e2d2b6d050d8f38))
+
 ## [1.52.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.52.0...v1.52.1) (2023-05-01)
 
 
