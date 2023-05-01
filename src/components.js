@@ -58,7 +58,7 @@ lazyLoad('codearea', '[type="code"]', ()=> import (/*webpackChunkName: "codearea
 // UI Components
 lazyLoad('floatingLabel', 'floating-label, .floating-label', ()=> import (/*webpackChunkName: "floating-label-chunk"*/ '@cocreate/floating-label'));
 lazyLoad('fullscreen', '[fullscreen]', ()=> import (/*webpackChunkName: "fullscreen-chunk"*/ '@cocreate/fullscreen'));
-lazyLoad('modal', '[actions*="Modal"', ()=> import (/*webpackChunkName: "modal-chunk"*/ '@cocreate/modal'));
+lazyLoad('modal', '[actions*="Modal"]', ()=> import (/*webpackChunkName: "modal-chunk"*/ '@cocreate/modal'));
 lazyLoad('parallax', '[parallax-src]', ()=> import (/*webpackChunkName: "parallax-chunk"*/ '@cocreate/parallax'));
 lazyLoad('calculation', '[calculate]', ()=> import (/*webpackChunkName: "calculation-chunk"*/ '@cocreate/calculation'));
 lazyLoad('progress', '[data-progress]', ()=> import (/*webpackChunkName: "progress-chunk"*/ '@cocreate/progress'));
