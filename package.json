@@ -90,7 +90,6 @@
     "@cocreate/fetch": "^1.23.2",
     "@cocreate/filter": "^1.19.2",
     "@cocreate/floating-label": "^1.6.1",
-    "@cocreate/font-awesome": "^1.3.2",
     "@cocreate/form": "^1.14.1",
     "@cocreate/fullcalendar": "^1.5.1",
     "@cocreate/fullscreen": "^1.3.1",

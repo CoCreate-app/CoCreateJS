@@ -327,10 +327,6 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-facebook.git'
     },
     {
-        'path': '../CoCreate-plugins/CoCreate-font-awesome',
-        'repo': 'github.com/CoCreate-app/CoCreate-font-awesome.git'
-    },
-    {
         'path': '../CoCreate-plugins/CoCreate-google-maps',
         'repo': 'github.com/CoCreate-app/CoCreate-google-maps.git'
     },
