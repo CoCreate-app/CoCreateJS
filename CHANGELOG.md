@@ -1,3 +1,10 @@
+## [1.52.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.52.0...v1.52.1) (2023-05-01)
+
+
+### Bug Fixes
+
+* typo with modal component selector ([90e8557](https://github.com/CoCreate-app/CoCreateJS/commit/90e8557824159614d96c086863501873a823a213))
+
 # [1.52.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.51.2...v1.52.0) (2023-05-01)
 
 
