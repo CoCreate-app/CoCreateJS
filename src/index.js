@@ -1,5 +1,4 @@
+import { dependency, lazyLoad } from '@cocreate/lazy-loader';
 import './components.js';
-import { addComponent, removeComponent } from '@cocreate/lazy-loader';
 
-
-export default { addComponent, removeComponent };
+export default { dependency, lazyLoad };
