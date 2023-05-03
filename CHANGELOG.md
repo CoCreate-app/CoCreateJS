@@ -1,3 +1,10 @@
+# [1.54.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.53.0...v1.54.0) (2023-05-03)
+
+
+### Features
+
+* dependency and lazyload functions to define cmponents ([3d4a66c](https://github.com/CoCreate-app/CoCreateJS/commit/3d4a66c49e60d8406cc6e11f0e61ba8ec7fa2588))
+
 # [1.53.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.52.1...v1.53.0) (2023-05-01)
 
 
