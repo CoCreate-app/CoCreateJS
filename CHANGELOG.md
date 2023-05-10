@@ -1,3 +1,10 @@
+## [1.54.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.54.1...v1.54.2) (2023-05-10)
+
+
+### Bug Fixes
+
+* apikey renamed to key ([6ee7233](https://github.com/CoCreate-app/CoCreateJS/commit/6ee723392de93b0b59721f107304c43c0fb2e920))
+
 ## [1.54.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.54.0...v1.54.1) (2023-05-10)
 
 
