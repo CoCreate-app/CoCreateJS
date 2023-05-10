@@ -1,3 +1,10 @@
+## [1.54.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.54.0...v1.54.1) (2023-05-10)
+
+
+### Bug Fixes
+
+* bump [@cocreate](https://github.com/cocreate) dependencies ([2e0baa4](https://github.com/CoCreate-app/CoCreateJS/commit/2e0baa4a1ae41b185921c40ce96174b6d7d9db43))
+
 # [1.54.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.53.0...v1.54.0) (2023-05-03)
 
 
