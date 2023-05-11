@@ -1,3 +1,10 @@
+# [1.55.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.54.2...v1.55.0) (2023-05-11)
+
+
+### Features
+
+* confirm dialog to create new org if one does not exist ([3d8c830](https://github.com/CoCreate-app/CoCreateJS/commit/3d8c830ac22ba660246f92f7b82eb0547eb9d3ee))
+
 ## [1.54.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.54.1...v1.54.2) (2023-05-10)
 
 
