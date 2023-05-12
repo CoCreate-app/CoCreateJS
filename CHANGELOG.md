@@ -1,3 +1,10 @@
+## [1.55.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.55.0...v1.55.1) (2023-05-12)
+
+
+### Bug Fixes
+
+* removed selector deleteOrg ([644e683](https://github.com/CoCreate-app/CoCreateJS/commit/644e683a1e7c653d4adc94d24161b37d12d66411))
+
 # [1.55.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.54.2...v1.55.0) (2023-05-11)
 
 
