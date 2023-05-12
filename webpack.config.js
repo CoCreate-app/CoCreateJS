@@ -59,7 +59,7 @@ module.exports = {
     // add source map
     ...(isProduction ? {} : { devtool: 'eval-source-map' }),
 
-    // todo: this will produce a large chunk file
+    // TODO: this will produce a large chunk file
     // ...isProduction && {devtool: 'eval-source-map' },
 
     module: {
