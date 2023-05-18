@@ -1,3 +1,10 @@
+# [1.56.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.55.1...v1.56.0) (2023-05-18)
+
+
+### Features
+
+* request organization_id from service worker ([152b1ef](https://github.com/CoCreate-app/CoCreateJS/commit/152b1efdd56df9a8b4ea75026364f681a9c8ec8f))
+
 ## [1.55.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.55.0...v1.55.1) (2023-05-12)
 
 
