@@ -16,7 +16,8 @@ module.exports = [
     },
     {
         'path': '../CoCreate-website',
-        'repo': 'github.com/CoCreate-app/CoCreate-website.git'
+        'repo': 'github.com/CoCreate-app/CoCreate-website.git',
+        'exclude': ['git']
     },
     // {
     //     'path': '../CoCreate-website-template',

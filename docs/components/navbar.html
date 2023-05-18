@@ -1,21 +1,29 @@
-	    	 <!--Menu Icon Animations -->
-			<a class="menu_icon" click="active" toggle="width:300px, width:0px" toggle-target="#menuL" toggle-attribute="style">
-				<span></span>
-				<span></span>
-				<span></span>
-			</a>
-			
-			<div class="display:flex justify-content:space-between width:100%">
-		    	 <!--Icon Logo -->
-		    	<span class="padding:5px_12px display:none@md@lg@xl">
-					<a href="/">	
-						<img src="/assets/icon.png" height="40px" alt="...">
-					</a>
-				</span>
-				
-		    	 <!--Navigation -->
-				<div class="display:flex align-items:center display:none@xs@sm overflow:auto height:50px width:100% font-size:20px">
-					<!-- <a class="margin-right:25px color:dodgerblue:hover" toggle="display:block,display:none" toggle-target="#products">Products</a>
+<!DOCTYPE html>
+
+<!--Menu Icon Animations -->
+<a
+    class="menu_icon"
+    click="active"
+    toggle="width:300px, width:0px"
+    toggle-target="#menuL"
+    toggle-attribute="style">
+    <span></span>
+    <span></span>
+    <span></span>
+</a>
+
+<div class="display:flex justify-content:space-between width:100%">
+    <!--Icon Logo -->
+    <span class="padding:5px_12px display:none@md@lg@xl">
+        <a href="/">
+            <img src="/assets/icon.png" height="40px" alt="..." />
+        </a>
+    </span>
+
+    <!--Navigation -->
+    <div
+        class="display:flex align-items:center display:none@xs@sm overflow:auto height:50px width:100% font-size:20px">
+        <!-- <a class="margin-right:25px color:dodgerblue:hover" toggle="display:block,display:none" toggle-target="#products">Products</a>
 					<ul id="products" class="card position:absolute padding:10px list-style:none top:50px background:white display:none">
 						<li class="padding:5px">
 							<a href="/business-builder" class="color:dodgerblue:hover">
@@ -36,11 +44,11 @@
 							</a>
 						</li>
 					</ul> -->
-					
-					<div class="margin-right:25px">
-						<a href="/docs/" class="color:dodgerblue:hover">Docs</a>
-					</div>
-					<!-- <div class="margin-right:25px">
+
+        <div class="margin-right:25px">
+            <a href="/docs/" class="color:dodgerblue:hover">Docs</a>
+        </div>
+        <!-- <div class="margin-right:25px">
 						<a href="/blog/" class="color:dodgerblue:hover">Blog</a>
 					</div>
 					<div class="margin-right:25px">
@@ -49,41 +57,89 @@
 					<div class="margin-right:25px">
 						<a href="/university/" class="color:dodgerblue:hover">University</a>
 					</div> -->
-		        </div>
-		        
-		        <div class="display:flex">
-					 <!--Horizontal Scroll Nav/Tabs -->
-					<div class="display:flex direction:rtl overflow:auto align-items:center width:100%!important@xs@sm height:50px padding-right:10px font-size:20px">
-						
-						 <!--Social Share -->
-		                <div class="display:flex align-items:center transition:0.3s padding-left:10px" share-network="true" share-text="Enter decription here" share-title="testing im a title" share-height="600" share-width="700" share-media="https://cdn.cocreate.app/docs/boilerplate.png">
-				            <a href="https://github.com/CoCreate-app/CoCreateJS" target="_blank" class="margin-right:15px"><i class="height:20px fill:#505050" src="/assets/svg/github.svg"></i></a>
-				            <a href="https://twitter.com/CoCreate_App" target="_blank" class="margin-right:15px"><i class="height:20px fill:#505050" src="/assets/svg/twitter.svg"></i></a>
-				            <a href="https://www.facebook.com/CoCreate.apps" target="_blank" class="margin-right:15px"><i class="height:20px fill:#505050" src="/assets/svg/facebook.svg"></i></a>
-			                <a href="https://www.instagram.com/cocreate_app/" target="_blank" class="margin-right:15px"><i class="height:20px fill:#505050" src="/assets/svg/instagram.svg"></i></a>
-			        	</div>
-		
-						<!--fullscreen toogle and icon transform-->
-						<a class="margin-right:15px" fullscreen></a>
-						
-					</div>
-					
-					<!-- Avatar -->
-					<div localstorage-get="user_id" localstorage-key="userId" localstorage-target=".avatar-wrapper"></div>
-					<div class="avatar-wrapper margin-right:10px">
-						<a class="avatar round" href="/admin/signin.html">
-							<span collection="users" 
-								document_id="{{userId}}" 
-								name="name" 
-								class="avatar-name">
-								<i class="height:20px fill:#505050" src="/assets/svg/sign-in-alt.svg"></i>
-							</span>
-							<span class="avatar-image">
-								<img collection="users" document_id="{{userId}}" name="avatar" onerror="this.style.display='none'" width="40px"/>
-							</span>
-						</a>
-						<div class="avatar-status"  collection="users" document_id="{{userId}}" user-status='{"name":"status"}'></div>
-					</div>
-				</div>
-			</div>
-			
+    </div>
+
+    <div class="display:flex">
+        <!--Horizontal Scroll Nav/Tabs -->
+        <div
+            class="display:flex direction:rtl overflow:auto align-items:center width:100%!important@xs@sm height:50px padding-right:10px font-size:20px">
+            <!--Social Share -->
+            <div
+                class="display:flex align-items:center transition:0.3s padding-left:10px"
+                share-network="true"
+                share-text="Enter decription here"
+                share-title="testing im a title"
+                share-height="600"
+                share-width="700"
+                share-media="https://cdn.cocreate.app/docs/boilerplate.png">
+                <a
+                    href="https://github.com/CoCreate-app/CoCreateJS"
+                    target="_blank"
+                    class="margin-right:15px"
+                    ><i
+                        class="height:20px fill:#505050"
+                        src="/assets/svg/github.svg"></i
+                ></a>
+                <a
+                    href="https://twitter.com/CoCreate_App"
+                    target="_blank"
+                    class="margin-right:15px"
+                    ><i
+                        class="height:20px fill:#505050"
+                        src="/assets/svg/twitter.svg"></i
+                ></a>
+                <a
+                    href="https://www.facebook.com/CoCreate.apps"
+                    target="_blank"
+                    class="margin-right:15px"
+                    ><i
+                        class="height:20px fill:#505050"
+                        src="/assets/svg/facebook.svg"></i
+                ></a>
+                <a
+                    href="https://www.instagram.com/cocreate_app/"
+                    target="_blank"
+                    class="margin-right:15px"
+                    ><i
+                        class="height:20px fill:#505050"
+                        src="/assets/svg/instagram.svg"></i
+                ></a>
+            </div>
+
+            <!--fullscreen toogle and icon transform-->
+            <a class="margin-right:15px" fullscreen></a>
+        </div>
+
+        <!-- Avatar -->
+        <div
+            localstorage-get="user_id"
+            localstorage-key="userId"
+            localstorage-target=".avatar-wrapper"></div>
+        <div class="avatar-wrapper margin-right:10px">
+            <a class="avatar round" href="/admin/signin.html">
+                <span
+                    collection="users"
+                    document_id="{{userId}}"
+                    name="name"
+                    class="avatar-name">
+                    <i
+                        class="height:20px fill:#505050"
+                        src="/assets/svg/sign-in-alt.svg"></i>
+                </span>
+                <span class="avatar-image">
+                    <img
+                        collection="users"
+                        document_id="{{userId}}"
+                        name="avatar"
+                        onerror="this.style.display='none'"
+                        width="40px" />
+                </span>
+            </a>
+            <div
+                class="avatar-status"
+                collection="users"
+                document_id="{{userId}}"
+                user-status="{'name':'status'}"></div>
+        </div>
+    </div>
+</div>
