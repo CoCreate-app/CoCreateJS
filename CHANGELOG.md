@@ -1,3 +1,10 @@
+## [1.56.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.56.3...v1.56.4) (2023-05-19)
+
+
+### Bug Fixes
+
+* indexeddb bug fix ([e7ccd3b](https://github.com/CoCreate-app/CoCreateJS/commit/e7ccd3bdd595c651b02e29c8c7e68256066afa06))
+
 ## [1.56.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.56.2...v1.56.3) (2023-05-19)
 
 
