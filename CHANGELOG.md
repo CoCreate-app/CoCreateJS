@@ -1,3 +1,10 @@
+## [1.56.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.56.0...v1.56.1) (2023-05-19)
+
+
+### Bug Fixes
+
+* bug in socket-client ([f71b1ce](https://github.com/CoCreate-app/CoCreateJS/commit/f71b1ce1862914fec5d8dc40cca9f7126dcc24b1))
+
 # [1.56.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.55.1...v1.56.0) (2023-05-18)
 
 
