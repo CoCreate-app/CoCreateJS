@@ -1,410 +1,1334 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CoCreateJS - Collaborative Html elements</title>
+        <meta
+            name="description"
+            content="A codeless Javascript framework for building collaborative no code platforms, apps and UI" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://cocreate.app/images/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.cocreate.app/latest/CoCreate.min.css" />
+        <link
+            rel="stylesheet"
+            href="/docs/index.css"
+            collection="files"
+            document_id="60888216117c640e7596303f"
+            name="src"
+            type="text/css" />
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>CoCreateJS - Collaborative Html elements</title>
-		<meta name="description" content="A codeless Javascript framework for building collaborative no code platforms, apps and UI">
-		<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
-		<link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css"/>
-		<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css"/>
-		
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121709453-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-121709453-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-			gtag('config', 'UA-121709453-1');
-		</script>
-		
-		<link rel="manifest" href="/manifest.webmanifest" />
-	</head>
-	<style>.code-height {height:100%!important}</style>
+            gtag("config", "UA-121709453-1");
+        </script>
 
-	<body>
-		<nav class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px" content_id="content" scroll="sticky-nav,hide-nav" scroll-up="10" scroll-down="10" collection="files" document_id="60395ef42b3ac232657040fd"
-		name="src">
-		</nav>
-		<sidenav id="menuL" class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl" resizable resize-target="[content_id='content']" resize-property="margin-left" resize-value="width">
-			<menu collection="files" document_id="603717b07de7fb350ae9fec8" name="src"></menu>
-			<div resize="right"></div>
-		</sidenav>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
+    <style>
+        .code-height {
+            height: 100% !important;
+        }
+    </style>
 
-		<!-- Modal Viewport/Boundaries -->
-		<!--<div class="position:fixed margin-top:50px" content_id="content" id="modal-viewport"></div>-->
+    <body>
+        <nav
+            class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px"
+            content_id="content"
+            scroll="sticky-nav,hide-nav"
+            scroll-up="10"
+            scroll-down="10"
+            collection="files"
+            document_id="60395ef42b3ac232657040fd"
+            name="src"></nav>
+        <sidenav
+            id="menuL"
+            class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl"
+            resizable
+            resize-target="[content_id='content']"
+            resize-property="margin-left"
+            resize-value="width">
+            <menu
+                collection="files"
+                document_id="603717b07de7fb350ae9fec8"
+                name="src"></menu>
+            <div resize="right"></div>
+        </sidenav>
 
-		<!-- Main Content -->
-		<main class="padding-top:15px padding:15px@lg@xl" content_id="content">
-			<section>
-				<div class="display:flex flex-wrap:wrap justify-content:space-between position:relative margin:10px">
-					<div class="display:flex align-items:center">
-						<h2>CoCreateJS</h2>
-					</div>
-					<div class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px background:white">
-						<div class="display:flex align-items:center transition:0.3s padding-left:10px" share-network="true" share-text="Enter decription here" share-title="testing im a title" share-height="600" share-width="700" share-media="https://cdn.cocreate.app/docs/action.png"
-						hover="display:block!important" hover-target=".social-networks">
-							<div class="display:none social-networks">
-								<a class="margin-right:15px" share-network="twitter" title="Share on twitter"><i class="height:20px fill:#505050" src="/assets/svg/twitter.svg"></i></a>
-								<a class="margin-right:15px" share-network="facebook" title="Share on Facebook"><i class="height:20px fill:#505050" src="/assets/svg/facebook.svg"></i></a>
-								<a class="margin-right:15px" share-network="instagram" title="Share on instagram"><i class="height:20px fill:#505050" src="/assets/svg/instagram.svg"></i></a>
-							</div>
-							<a class="margin-right:15px" share-network="share" title="Share on share"><i class="height:20px fill:#505050" src="/assets/svg/share-alt.svg"></i></a>
-						</div>
-						<a href="https://github.com/CoCreate-app/CoCreateJS" target="_blank" class=""><i class="height:20px fill:#505050" src="/assets/svg/github.svg"></i></a>
-					</div>
-				</div>
-				<h1 class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">Learn how to convert your html into a dynamic realtime application.</h1>
-			</section>
+        <!-- Modal Viewport/Boundaries -->
+        <!--<div class="position:fixed margin-top:50px" content_id="content" id="modal-viewport"></div>-->
 
-			<div id="xxxxx-section" class="display:flex flex-wrap:wrap justify-content:space-between">
-				<div class="flex-grow:1 width:300px padding:0px_10px margin:20px_0px">
-					<section scroll scroll-intersect="color:dodgerblue" scroll-target="#collaboration-item">
-						<h2 id="collaborative_elements" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Collaborative Elements</h2>
-						<p class="padding:10px_0px line-height:1.5">Simply define a collection, document_id and name. If the collection contains the document and the document contains the field name. Viola! The value is fetched in the input. Like wise, typing in the input will save the value. If the collection did not exist previously it will be created. If the document_id is left empty, typing in the input will create a new document_id.</p>
-						<pre><code class="language-html">&lt;input collection="contacts" document_id="" name="name"&gt;</code></pre>
-						<p class="padding:10px_0px line-height:1.5">The attributes collection, document_id and name are at the center of the CoCreate universe, we take a data first aproach. By defining these 3 attributes you can save and fetch data from any input, textarea, select and thier various types. All other elements like h1, h2, span, etc will only fetch if the contenteditable attribute is applied.</p>
-						<pre><code class="language-html">&lt;h1 collection="contacts" document_id="" name="name" contenteditable&gt;&lt;/h1&gt;</code></pre>
-						<p class="padding:10px_0px line-height:1.5">CoCreateJS by default is collaborative. To turn collaboration off for an element, apply attribute realtime="false"</p>
-						
-					</section>
-					
-					
-					<section id="input" class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#input-item">
-						<h3 class="padding-top:20px">Input</h3>
-						<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-						<!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
+        <!-- Main Content -->
+        <main class="padding-top:15px padding:15px@lg@xl" content_id="content">
+            <section>
+                <div
+                    class="display:flex flex-wrap:wrap justify-content:space-between position:relative margin:10px">
+                    <div class="display:flex align-items:center">
+                        <h2>CoCreateJS</h2>
+                    </div>
+                    <div
+                        class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px background:white">
+                        <div
+                            class="display:flex align-items:center transition:0.3s padding-left:10px"
+                            share-network="true"
+                            share-text="Enter decription here"
+                            share-title="testing im a title"
+                            share-height="600"
+                            share-width="700"
+                            share-media="https://cdn.cocreate.app/docs/action.png"
+                            hover="display:block!important"
+                            hover-target=".social-networks">
+                            <div class="display:none social-networks">
+                                <a
+                                    class="margin-right:15px"
+                                    share-network="twitter"
+                                    title="Share on twitter"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/twitter.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:15px"
+                                    share-network="facebook"
+                                    title="Share on Facebook"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/facebook.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:15px"
+                                    share-network="instagram"
+                                    title="Share on instagram"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/instagram.svg"></i
+                                ></a>
+                            </div>
+                            <a
+                                class="margin-right:15px"
+                                share-network="share"
+                                title="Share on share"
+                                ><i
+                                    class="height:20px fill:#505050"
+                                    src="/assets/svg/share-alt.svg"></i
+                            ></a>
+                        </div>
+                        <a
+                            href="https://github.com/CoCreate-app/CoCreateJS"
+                            target="_blank"
+                            class=""
+                            ><i
+                                class="height:20px fill:#505050"
+                                src="/assets/svg/github.svg"></i
+                        ></a>
+                    </div>
+                </div>
+                <h1
+                    class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">
+                    Learn how to convert your html into a dynamic realtime
+                    application.
+                </h1>
+            </section>
 
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="input-playground">
-							<div id="input-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="input-demo" save="false" id="input-demo" input-target=".input-demo" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="input-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="input-demo padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="input-eye" show="#input-eye-slash" hide="#input-eye, #input-demo-preview" toggle="code-height" toggle-target="#input-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="input-eye-slash" show="#input-eye, #input-demo-preview" hide="#input-eye-slash" toggle="code-height" toggle-target="#input-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="input-code" show="#input-code-slash" hide="#input-code, #input-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="input-code-slash" show="#input-code, #input-demo-code" hide="#input-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#input-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
+            <div
+                id="xxxxx-section"
+                class="display:flex flex-wrap:wrap justify-content:space-between">
+                <div
+                    class="flex-grow:1 width:300px padding:0px_10px margin:20px_0px">
+                    <section
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#collaboration-item">
+                        <h2
+                            id="collaborative_elements"
+                            class="border-bottom:1px_solid_lightgrey padding:5px_0px">
+                            Collaborative Elements
+                        </h2>
+                        <p class="padding:10px_0px line-height:1.5">
+                            Simply define a collection, document_id and name. If
+                            the collection contains the document and the
+                            document contains the field name. Viola! The value
+                            is fetched in the input. Like wise, typing in the
+                            input will save the value. If the collection did not
+                            exist previously it will be created. If the
+                            document_id is left empty, typing in the input will
+                            create a new document_id.
+                        </p>
+                        <pre><code class="language-html">&lt;input collection="contacts" document_id="" name="name"&gt;</code></pre>
+                        <p class="padding:10px_0px line-height:1.5">
+                            The attributes collection, document_id and name are
+                            at the center of the CoCreate universe, we take a
+                            data first aproach. By defining these 3 attributes
+                            you can save and fetch data from any input,
+                            textarea, select and thier various types. All other
+                            elements like h1, h2, span, etc will only fetch if
+                            the contenteditable attribute is applied.
+                        </p>
+                        <pre><code class="language-html">&lt;h1 collection="contacts" document_id="" name="name" contenteditable&gt;&lt;/h1&gt;</code></pre>
+                        <p class="padding:10px_0px line-height:1.5">
+                            CoCreateJS by default is collaborative. To turn
+                            collaboration off for an element, apply attribute
+                            realtime="false"
+                        </p>
+                    </section>
 
-					</section>
-					<section id="textarea" class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#textarea-item">
-						<h3 class="padding-top:20px">Textarea</h3>
-						<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-						<!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="textarea-playground">
-							<div id="textarea-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="textarea-demo" save="false" id="textarea-demo" input-target=".textarea-demo" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="textarea-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="textarea-demo padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="textarea-eye" show="#textarea-eye-slash" hide="#textarea-eye, #textarea-demo-preview" toggle="code-height" toggle-target="#textarea-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="textarea-eye-slash" show="#textarea-eye, #textarea-demo-preview" hide="#textarea-eye-slash" toggle="code-height" toggle-target="#textarea-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="textarea-code" show="#textarea-code-slash" hide="#textarea-code, #textarea-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="textarea-code-slash" show="#textarea-code, #textarea-demo-code" hide="#textarea-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#textarea-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
+                    <section
+                        id="input"
+                        class="padding:35px_0px"
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#input-item">
+                        <h3 class="padding-top:20px">Input</h3>
+                        <!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
+                        <!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
 
-					</section>
-					<section id="contenteditable" class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#contenteditable-item">
-						<h3 class="padding-top:20px">Contenteditable</h3>
-						<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts contenteditable elements to collaborative rich text editors or a website builder.</p>
-						<pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="input-playground">
+                            <div
+                                id="input-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="input-demo"
+                                    save="false"
+                                    id="input-demo"
+                                    input-target=".input-demo"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
 
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="contenteditable-playground">
-							<div id="contenteditable-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="contenteditable-demo" save="false" id="contenteditable-demo" input-target=".contenteditable-demo" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="contenteditable-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="contenteditable-demo padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="contenteditable-eye" show="#contenteditable-eye-slash" hide="#contenteditable-eye, #contenteditable-demo-preview" toggle="code-height" toggle-target="#contenteditable-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="contenteditable-eye-slash" show="#contenteditable-eye, #contenteditable-demo-preview" hide="#contenteditable-eye-slash" toggle="code-height" toggle-target="#contenteditable-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="contenteditable-code" show="#contenteditable-code-slash" hide="#contenteditable-code, #contenteditable-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="contenteditable-code-slash" show="#contenteditable-code, #contenteditable-demo-code" hide="#contenteditable-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#contenteditable-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
-						
-					</section>
+                            <div
+                                id="input-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div class="input-demo padding:20px"></div>
+                            </div>
 
-					<section id="radio" class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#radio-item">
-						<h3 class="padding-top:20px">Radio</h3>
-						<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-						<!--<pre><code class="language-html">&lt;input type="text" collection="contacts" document_id="" name="name"&gt;</code></pre>-->
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="input-eye"
+                                    show="#input-eye-slash"
+                                    hide="#input-eye, #input-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#input-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="input-eye-slash"
+                                    show="#input-eye, #input-demo-preview"
+                                    hide="#input-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#input-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="input-code"
+                                    show="#input-code-slash"
+                                    hide="#input-code, #input-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="input-code-slash"
+                                    show="#input-code, #input-demo-code"
+                                    hide="#input-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#input-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+                    <section
+                        id="textarea"
+                        class="padding:35px_0px"
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#textarea-item">
+                        <h3 class="padding-top:20px">Textarea</h3>
+                        <!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
+                        <!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="textarea-playground">
+                            <div
+                                id="textarea-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="textarea-demo"
+                                    save="false"
+                                    id="textarea-demo"
+                                    input-target=".textarea-demo"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
 
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="radio-playground">
-							<div id="radio-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="radio-demo" save="false" id="radio-demo" input-target=".radio-demo" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="radio-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="radio-demo padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="radio-eye" show="#radio-eye-slash" hide="#radio-eye, #radio-demo-preview" toggle="code-height" toggle-target="#radio-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="radio-eye-slash" show="#radio-eye, #radio-demo-preview" hide="#radio-eye-slash" toggle="code-height" toggle-target="#radio-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="radio-code" show="#radio-code-slash" hide="#radio-code, #radio-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="radio-code-slash" show="#radio-code, #radio-demo-code" hide="#radio-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#radio-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
+                            <div
+                                id="textarea-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div class="textarea-demo padding:20px"></div>
+                            </div>
 
-					</section>
-					<section id="checkbox" class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#checkbox-item">
-						<h3 class="padding-top:20px">Checkbox</h3>
-						<!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-						<!--<pre><code class="language-html">&lt;input type="checkbox" collection="contacts" document_id="" name="name"&gt;</code></pre>-->
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="textarea-eye"
+                                    show="#textarea-eye-slash"
+                                    hide="#textarea-eye, #textarea-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#textarea-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="textarea-eye-slash"
+                                    show="#textarea-eye, #textarea-demo-preview"
+                                    hide="#textarea-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#textarea-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="textarea-code"
+                                    show="#textarea-code-slash"
+                                    hide="#textarea-code, #textarea-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="textarea-code-slash"
+                                    show="#textarea-code, #textarea-demo-code"
+                                    hide="#textarea-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#textarea-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+                    <section
+                        id="contenteditable"
+                        class="padding:35px_0px"
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#contenteditable-item">
+                        <h3 class="padding-top:20px">Contenteditable</h3>
+                        <p class="padding:10px_0px line-height:1.5">
+                            Add attribute contenteditbale to any html and
+                            element and use it as an input. CoCreateJS also
+                            converts contenteditable elements to collaborative
+                            rich text editors or a website builder.
+                        </p>
+                        <pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
 
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="checkbox-playground">
-							<div id="checkbox-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="checkbox-demo" save="false" id="checkbox-demo" input-target=".checkbox-demo" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="checkbox-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="checkbox-demo padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="checkbox-eye" show="#checkbox-eye-slash" hide="#checkbox-eye, #checkbox-demo-preview" toggle="code-height" toggle-target="#checkbox-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="checkbox-eye-slash" show="#checkbox-eye, #checkbox-demo-preview" hide="#checkbox-eye-slash" toggle="code-height" toggle-target="#checkbox-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="checkbox-code" show="#checkbox-code-slash" hide="#checkbox-code, #checkbox-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="checkbox-code-slash" show="#checkbox-code, #checkbox-demo-code" hide="#checkbox-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#checkbox-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="contenteditable-playground">
+                            <div
+                                id="contenteditable-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="contenteditable-demo"
+                                    save="false"
+                                    id="contenteditable-demo"
+                                    input-target=".contenteditable-demo"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
 
-					</section>
-					<section id="select" class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#select-item">
-						<h3 class="padding-top:20px">Select</h3>
-						<!-- <p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p> -->
+                            <div
+                                id="contenteditable-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div
+                                    class="contenteditable-demo padding:20px"></div>
+                            </div>
 
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="select-playground">
-							<div id="select-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="select-demo" save="false" id="select-demo" input-target=".select-demo" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="select-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="select-demo padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="select-eye" show="#select-eye-slash" hide="#select-eye, #select-demo-preview" toggle="code-height" toggle-target="#select-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="select-eye-slash" show="#select-eye, #select-demo-preview" hide="#select-eye-slash" toggle="code-height" toggle-target="#select-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="select-code" show="#select-code-slash" hide="#select-code, #select-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="select-code-slash" show="#select-code, #select-demo-code" hide="#select-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#select-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="contenteditable-eye"
+                                    show="#contenteditable-eye-slash"
+                                    hide="#contenteditable-eye, #contenteditable-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#contenteditable-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="contenteditable-eye-slash"
+                                    show="#contenteditable-eye, #contenteditable-demo-preview"
+                                    hide="#contenteditable-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#contenteditable-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="contenteditable-code"
+                                    show="#contenteditable-code-slash"
+                                    hide="#contenteditable-code, #contenteditable-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="contenteditable-code-slash"
+                                    show="#contenteditable-code, #contenteditable-demo-code"
+                                    hide="#contenteditable-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#contenteditable-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
 
-					</section>
-					<section id="form" class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#form-item">
-						<h3 class="padding-top:20px">Form</h3>
-						<p class="padding:10px_0px line-height:1.5">The form tag is used for grouping elements and applying attributes dynamically to it's childeren. Attributtes added to a form tag will only be applied to the child elements if the child elements attribute does not currently contain a value.</p>
+                    <section
+                        id="radio"
+                        class="padding:35px_0px"
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#radio-item">
+                        <h3 class="padding-top:20px">Radio</h3>
+                        <!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
+                        <!--<pre><code class="language-html">&lt;input type="text" collection="contacts" document_id="" name="name"&gt;</code></pre>-->
 
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="form-playground">
-							<div id="form-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="form-demo" save="false" id="form-demo" input-target=".form-demo" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="form-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="form-demo padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="form-eye" show="#form-eye-slash" hide="#form-eye, #form-demo-preview" toggle="code-height" toggle-target="#form-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="form-eye-slash" show="#form-eye, #form-demo-preview" hide="#form-eye-slash" toggle="code-height" toggle-target="#form-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="form-code" show="#form-code-slash" hide="#form-code, #form-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="form-code-slash" show="#form-code, #form-demo-code" hide="#form-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#form-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="radio-playground">
+                            <div
+                                id="radio-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="radio-demo"
+                                    save="false"
+                                    id="radio-demo"
+                                    input-target=".radio-demo"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
 
-					</section>
+                            <div
+                                id="radio-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div class="radio-demo padding:20px"></div>
+                            </div>
 
-					<section id="actions" class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#actions-item">
-						<h3 class="padding-top:20px">Actions</h3>
-						<p class="padding:10px_0px line-height:1.5">The actions attribute is used to trigger one or more actions in the order they were applied. Actions are chainable and require success of the first to trigger the next. Many of the CoCreate's components have actions, you will find the actions defined in the respective components documentation. Here we will be introduing the basics as it relates to form and saving.</p>
-						
-						<div class="">
-							<pre><code class="language-html">&lt;button actions="save"&gt; &lt;/button&gt;</code></pre>
-						</div>
-						<p class="padding:10px_0px line-height:1.5">Applying and clicking this action will save the value of the elements in a form to their respective collection, document_id and name. If a element does not have a document_id defined a document_id will be generated and applied to all other elements with the same collection defined and do not have a document_id. Existing document_id are never overwriten.</p>
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="radio-eye"
+                                    show="#radio-eye-slash"
+                                    hide="#radio-eye, #radio-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#radio-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="radio-eye-slash"
+                                    show="#radio-eye, #radio-demo-preview"
+                                    hide="#radio-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#radio-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="radio-code"
+                                    show="#radio-code-slash"
+                                    hide="#radio-code, #radio-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="radio-code-slash"
+                                    show="#radio-code, #radio-demo-code"
+                                    hide="#radio-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#radio-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+                    <section
+                        id="checkbox"
+                        class="padding:35px_0px"
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#checkbox-item">
+                        <h3 class="padding-top:20px">Checkbox</h3>
+                        <!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
+                        <!--<pre><code class="language-html">&lt;input type="checkbox" collection="contacts" document_id="" name="name"&gt;</code></pre>-->
 
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="actions-playground">
-							<div id="actions-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="actions-demo" save="false" id="actions-demo" input-target=".actions-demo" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="actions-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="actions-demo padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="actions-eye" show="#actions-eye-slash" hide="#actions-eye, #actions-demo-preview" toggle="code-height" toggle-target="#actions-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="actions-eye-slash" show="#actions-eye, #actions-demo-preview" hide="#actions-eye-slash" toggle="code-height" toggle-target="#actions-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="actions-code" show="#actions-code-slash" hide="#actions-code, #actions-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="actions-code-slash" show="#actions-code, #actions-demo-code" hide="#actions-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#actions-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
-						
-					</section>
-				</div>
-				<!-- end column -->
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="checkbox-playground">
+                            <div
+                                id="checkbox-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="checkbox-demo"
+                                    save="false"
+                                    id="checkbox-demo"
+                                    input-target=".checkbox-demo"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
 
-				<section class="flex-grow:1 width:300px max-width:400px@md@lg@xl padding:0px_10px padding-bottom:10px margin:20px_0px">
-					<h2 class="border-bottom:1px_solid_lightgrey padding:5px_0px">CRUD Attributes</h2>
-					<ul class="list-style-type:none position:sticky top:0 height:100vh overflow:auto">
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>collection</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-							<p>Defines a collection name where your documents will be stored. sql equivalent is a table.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>document_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-							<p>Defines the document by id where your data will be stored. if left empty one will be generated. sql equvalient is a row</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>name</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-							<p>Defines the name in the document containing the value. sql equvalient is a column</p>
-						</li>
-						<li class="padding:15px_0px  border-bottom:1px_solid_lightgrey">
-							<h4><span>contenteditable</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>htmltags can be editable and display will collaborators cursors.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>realtime</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Save data onChange, if false a btn required to save. If attribute is empty or not used Default's to true.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>read</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Fetch value on page load or when updated. If attribute is empty or not used Default's to true.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>save</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Save data onChange/submitBtn. If attribute is empty or not used Default's to true.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>update</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>If false the element will not listen to updates from others. Using a btn will also not save. If attribute is empty or not used Default's to true.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>listen</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>If false the element will not listen to updates from others. Using a btn will also not save. If attribute is empty or not used Default's to true.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>crud</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>If false the data you insert onChange will not store in DB. The data will only be retained by CRDT. If attribute is empty or not used Default's to true.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>crdt</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>If false all data will be stored directly in db and CRDT will track changes. If attribute is empty or not used Default's to true.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>cursors</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Show collaborators cursor positions. If attribute is empty or not used Default's to true.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>broadcast</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Broadcast messages and changes to other collaborators in the same namespace and room. If attribute is empty or not used default's to true.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>broadcast-sender</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Broadcast messages and changes to self. If attribute is empty or not used default's to true.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>broadcast-browser</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Broadcast messages and changes locally to all open windows, tabs and iframes in current browser. If attribute is empty or not used default's to true.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>namespace</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Define a unique namespace where messages and changes are sent and received</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>room</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Define a unique room where messages and changes are sent and received</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>value-prefix</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Adds a prefix to value before saving</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>value-suffix</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Adds a suffix to value before saving</p>
-						</li>
-					</ul>
-				</section>
-			</div>
-				<!--  Previous & Next  -->
-				<div class="padding:10px width:100% margin-top:20px display:flex flex-wrap:wrap justify-content:flex-start">
-					<div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50%">
-						<p class="color:#888">Previous Topic</p>
-						<p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="#introduction">Getting started</a></p>
-					</div>
-					<div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50% text-align:right">
-						<p class="color:#888">Next Topic</p>
-						<p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="./templating.html">Fetch a list and render the data using a template</a></p>
-					</div>
-				</div>
-			<button href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/elements.html?message=docs%3A%20describe%20your%20change..." target="_blank" class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
-				<i class="height:20px fill:#505050" src="/assets/svg/pencil-alt.svg"></i>
-			</button>
-		</main>
+                            <div
+                                id="checkbox-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div class="checkbox-demo padding:20px"></div>
+                            </div>
 
-		<script src="/apikey.js"></script>
-		<script src="https://cdn.cocreate.app/1.56.0/CoCreate.min.js"></script>
-		<!-- <script src="../dist/CoCreate.js"></script> -->
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="checkbox-eye"
+                                    show="#checkbox-eye-slash"
+                                    hide="#checkbox-eye, #checkbox-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#checkbox-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="checkbox-eye-slash"
+                                    show="#checkbox-eye, #checkbox-demo-preview"
+                                    hide="#checkbox-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#checkbox-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="checkbox-code"
+                                    show="#checkbox-code-slash"
+                                    hide="#checkbox-code, #checkbox-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="checkbox-code-slash"
+                                    show="#checkbox-code, #checkbox-demo-code"
+                                    hide="#checkbox-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#checkbox-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+                    <section
+                        id="select"
+                        class="padding:35px_0px"
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#select-item">
+                        <h3 class="padding-top:20px">Select</h3>
+                        <!-- <p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p> -->
 
-	</body>
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="select-playground">
+                            <div
+                                id="select-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="select-demo"
+                                    save="false"
+                                    id="select-demo"
+                                    input-target=".select-demo"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
 
+                            <div
+                                id="select-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div class="select-demo padding:20px"></div>
+                            </div>
+
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="select-eye"
+                                    show="#select-eye-slash"
+                                    hide="#select-eye, #select-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#select-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="select-eye-slash"
+                                    show="#select-eye, #select-demo-preview"
+                                    hide="#select-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#select-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="select-code"
+                                    show="#select-code-slash"
+                                    hide="#select-code, #select-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="select-code-slash"
+                                    show="#select-code, #select-demo-code"
+                                    hide="#select-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#select-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+                    <section
+                        id="form"
+                        class="padding-top:35px"
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#form-item">
+                        <h3 class="padding-top:20px">Form</h3>
+                        <p class="padding:10px_0px line-height:1.5">
+                            The form tag is used for grouping elements and
+                            applying attributes dynamically to it's childeren.
+                            Attributtes added to a form tag will only be applied
+                            to the child elements if the child elements
+                            attribute does not currently contain a value.
+                        </p>
+
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="form-playground">
+                            <div
+                                id="form-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="form-demo"
+                                    save="false"
+                                    id="form-demo"
+                                    input-target=".form-demo"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
+
+                            <div
+                                id="form-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div class="form-demo padding:20px"></div>
+                            </div>
+
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="form-eye"
+                                    show="#form-eye-slash"
+                                    hide="#form-eye, #form-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#form-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="form-eye-slash"
+                                    show="#form-eye, #form-demo-preview"
+                                    hide="#form-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#form-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="form-code"
+                                    show="#form-code-slash"
+                                    hide="#form-code, #form-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="form-code-slash"
+                                    show="#form-code, #form-demo-code"
+                                    hide="#form-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#form-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+
+                    <section
+                        id="actions"
+                        class="padding-top:35px"
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#actions-item">
+                        <h3 class="padding-top:20px">Actions</h3>
+                        <p class="padding:10px_0px line-height:1.5">
+                            The actions attribute is used to trigger one or more
+                            actions in the order they were applied. Actions are
+                            chainable and require success of the first to
+                            trigger the next. Many of the CoCreate's components
+                            have actions, you will find the actions defined in
+                            the respective components documentation. Here we
+                            will be introduing the basics as it relates to form
+                            and saving.
+                        </p>
+
+                        <div class="">
+                            <pre><code class="language-html">&lt;button actions="save"&gt; &lt;/button&gt;</code></pre>
+                        </div>
+                        <p class="padding:10px_0px line-height:1.5">
+                            Applying and clicking this action will save the
+                            value of the elements in a form to their respective
+                            collection, document_id and name. If a element does
+                            not have a document_id defined a document_id will be
+                            generated and applied to all other elements with the
+                            same collection defined and do not have a
+                            document_id. Existing document_id are never
+                            overwriten.
+                        </p>
+
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="actions-playground">
+                            <div
+                                id="actions-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="actions-demo"
+                                    save="false"
+                                    id="actions-demo"
+                                    input-target=".actions-demo"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
+
+                            <div
+                                id="actions-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div class="actions-demo padding:20px"></div>
+                            </div>
+
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="actions-eye"
+                                    show="#actions-eye-slash"
+                                    hide="#actions-eye, #actions-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#actions-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="actions-eye-slash"
+                                    show="#actions-eye, #actions-demo-preview"
+                                    hide="#actions-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#actions-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="actions-code"
+                                    show="#actions-code-slash"
+                                    hide="#actions-code, #actions-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="actions-code-slash"
+                                    show="#actions-code, #actions-demo-code"
+                                    hide="#actions-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#actions-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+                </div>
+                <!-- end column -->
+
+                <section
+                    class="flex-grow:1 width:300px max-width:400px@md@lg@xl padding:0px_10px padding-bottom:10px margin:20px_0px">
+                    <h2
+                        class="border-bottom:1px_solid_lightgrey padding:5px_0px">
+                        CRUD Attributes
+                    </h2>
+                    <ul
+                        class="list-style-type:none position:sticky top:0 height:100vh overflow:auto">
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>collection</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge danger"
+                                    >required</span
+                                >
+                            </h4>
+                            <p>
+                                Defines a collection name where your documents
+                                will be stored. sql equivalent is a table.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>document_id</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge danger"
+                                    >required</span
+                                >
+                            </h4>
+                            <p>
+                                Defines the document by id where your data will
+                                be stored. if left empty one will be generated.
+                                sql equvalient is a row
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>name</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge danger"
+                                    >required</span
+                                >
+                            </h4>
+                            <p>
+                                Defines the name in the document containing the
+                                value. sql equvalient is a column
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>contenteditable</span>
+                                <span class="cocreate-badge success"
+                                    >boolean</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                htmltags can be editable and display will
+                                collaborators cursors.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>realtime</span>
+                                <span class="cocreate-badge success"
+                                    >boolean</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                Save data onChange, if false a btn required to
+                                save. If attribute is empty or not used
+                                Default's to true.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>read</span>
+                                <span class="cocreate-badge success"
+                                    >boolean</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                Fetch value on page load or when updated. If
+                                attribute is empty or not used Default's to
+                                true.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>save</span>
+                                <span class="cocreate-badge success"
+                                    >boolean</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                Save data onChange/submitBtn. If attribute is
+                                empty or not used Default's to true.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>update</span>
+                                <span class="cocreate-badge success"
+                                    >boolean</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                If false the element will not listen to updates
+                                from others. Using a btn will also not save. If
+                                attribute is empty or not used Default's to
+                                true.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>listen</span>
+                                <span class="cocreate-badge success"
+                                    >boolean</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                If false the element will not listen to updates
+                                from others. Using a btn will also not save. If
+                                attribute is empty or not used Default's to
+                                true.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>crud</span>
+                                <span class="cocreate-badge success"
+                                    >boolean</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                If false the data you insert onChange will not
+                                store in DB. The data will only be retained by
+                                CRDT. If attribute is empty or not used
+                                Default's to true.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>crdt</span>
+                                <span class="cocreate-badge success"
+                                    >boolean</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                If false all data will be stored directly in db
+                                and CRDT will track changes. If attribute is
+                                empty or not used Default's to true.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>cursors</span>
+                                <span class="cocreate-badge success"
+                                    >boolean</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                Show collaborators cursor positions. If
+                                attribute is empty or not used Default's to
+                                true.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>broadcast</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                Broadcast messages and changes to other
+                                collaborators in the same namespace and room. If
+                                attribute is empty or not used default's to
+                                true.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>broadcast-sender</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                Broadcast messages and changes to self. If
+                                attribute is empty or not used default's to
+                                true.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>broadcast-browser</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                Broadcast messages and changes locally to all
+                                open windows, tabs and iframes in current
+                                browser. If attribute is empty or not used
+                                default's to true.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>namespace</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                Define a unique namespace where messages and
+                                changes are sent and received
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>room</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                Define a unique room where messages and changes
+                                are sent and received
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>value-prefix</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>Adds a prefix to value before saving</p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>value-suffix</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>Adds a suffix to value before saving</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <!--  Previous & Next  -->
+            <div
+                class="padding:10px width:100% margin-top:20px display:flex flex-wrap:wrap justify-content:flex-start">
+                <div
+                    class="padding:30px_15px border:1px_solid_#ddd flex-basis:50%">
+                    <p class="color:#888">Previous Topic</p>
+                    <p
+                        class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px">
+                        <a class="color:#1877F2:hover" href="#introduction"
+                            >Getting started</a
+                        >
+                    </p>
+                </div>
+                <div
+                    class="padding:30px_15px border:1px_solid_#ddd flex-basis:50% text-align:right">
+                    <p class="color:#888">Next Topic</p>
+                    <p
+                        class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px">
+                        <a class="color:#1877F2:hover" href="./templating.html"
+                            >Fetch a list and render the data using a
+                            template</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <button
+                href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/elements.html?message=docs%3A%20describe%20your%20change..."
+                target="_blank"
+                class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
+                <i
+                    class="height:20px fill:#505050"
+                    src="/assets/svg/pencil-alt.svg"></i>
+            </button>
+        </main>
+
+        <script src="/apikey.js"></script>
+        <script src="https://cdn.cocreate.app/1.56.1/CoCreate.min.js"></script>
+        <!-- <script src="../dist/CoCreate.js"></script> -->
+    </body>
 </html>

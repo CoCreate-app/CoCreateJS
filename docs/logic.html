@@ -1,197 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CoCreateJS - Logic</title>
+        <meta
+            name="description"
+            content="Update element attributes, pass values between elements, show and hide elements." />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://cocreate.app/images/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.cocreate.app/latest/CoCreate.min.css" />
+        <link
+            rel="stylesheet"
+            href="/docs/index.css"
+            collection="files"
+            document_id="60888216117c640e7596303f"
+            name="src"
+            type="text/css" />
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>CoCreateJS - Logic</title>
-		<meta name="description" content="Update element attributes, pass values between elements, show and hide elements.">
-		<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
-		<link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css"/>
-		<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" />
-			
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121709453-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-121709453-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-			gtag('config', 'UA-121709453-1');
-		</script>
+            gtag("config", "UA-121709453-1");
+        </script>
 
-		<link rel="manifest" href="/manifest.webmanifest" />
-	</head>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-	<body>
-		<nav class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px" content_id="content" scroll="sticky-nav,hide-nav" scroll-up="10" scroll-down="10" collection="files" document_id="60395ef42b3ac232657040fd"
-		name="src">
-		</nav>
-		<sidenav id="menuL" class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl" resizable resize-target="[content_id='content']" resize-property="margin-left" resize-value="width">
-			<menu collection="files" document_id="603717b07de7fb350ae9fec8" name="src"></menu>
-			<div resize="right"></div>
-		</sidenav>
+    <body>
+        <nav
+            class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px"
+            content_id="content"
+            scroll="sticky-nav,hide-nav"
+            scroll-up="10"
+            scroll-down="10"
+            collection="files"
+            document_id="60395ef42b3ac232657040fd"
+            name="src"></nav>
+        <sidenav
+            id="menuL"
+            class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl"
+            resizable
+            resize-target="[content_id='content']"
+            resize-property="margin-left"
+            resize-value="width">
+            <menu
+                collection="files"
+                document_id="603717b07de7fb350ae9fec8"
+                name="src"></menu>
+            <div resize="right"></div>
+        </sidenav>
 
-		<!-- Main Content -->
-		<main class="padding-top:15px padding:15px@lg@xl" content_id="content">
-			<section>
-				<div class="display:flex flex-wrap:wrap justify-content:space-between position:relative margin:10px">
-					<div class="display:flex align-items:center">
-						<h2>Logic</h2>
-					</div>
-					<div class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px background:white">
-						<div class="display:flex align-items:center transition:0.3s padding-left:10px" share-network="true" share-text="Enter decription here" share-title="testing im a title" share-height="600" share-width="700" share-media="https://cdn.cocreate.app/docs/action.png"
-						hover="display:block!important" hover-target=".social-networks">
-							<div class="display:none social-networks">
-								<a class="margin-right:15px" share-network="twitter" title="Share on twitter"><i class="height:20px fill:#505050" src="/assets/svg/twitter.svg"></i></a>
-								<a class="margin-right:15px" share-network="facebook" title="Share on Facebook"><i class="height:20px fill:#505050" src="/assets/svg/facebook.svg"></i></a>
-								<a class="margin-right:15px" share-network="instagram" title="Share on instagram"><i class="height:20px fill:#505050" src="/assets/svg/instagram.svg"></i></a>
-							</div>
-							<a class="margin-right:15px" share-network="share" title="Share on share"><i class="height:20px fill:#505050" src="/assets/svg/share-alt.svg"></i></a>
-						</div>
-						<a href="https://github.com/CoCreate-app/CoCreateJS" target="_blank" class=""><i class="height:20px fill:#505050" src="/assets/svg/github.svg"></i></a>
-					</div>
-				</div>
-				<h1 class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">Update element attributes, pass values between elements, show and hide elements.</h1>
-			</section>
+        <!-- Main Content -->
+        <main class="padding-top:15px padding:15px@lg@xl" content_id="content">
+            <section>
+                <div
+                    class="display:flex flex-wrap:wrap justify-content:space-between position:relative margin:10px">
+                    <div class="display:flex align-items:center">
+                        <h2>Logic</h2>
+                    </div>
+                    <div
+                        class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px background:white">
+                        <div
+                            class="display:flex align-items:center transition:0.3s padding-left:10px"
+                            share-network="true"
+                            share-text="Enter decription here"
+                            share-title="testing im a title"
+                            share-height="600"
+                            share-width="700"
+                            share-media="https://cdn.cocreate.app/docs/action.png"
+                            hover="display:block!important"
+                            hover-target=".social-networks">
+                            <div class="display:none social-networks">
+                                <a
+                                    class="margin-right:15px"
+                                    share-network="twitter"
+                                    title="Share on twitter"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/twitter.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:15px"
+                                    share-network="facebook"
+                                    title="Share on Facebook"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/facebook.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:15px"
+                                    share-network="instagram"
+                                    title="Share on instagram"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/instagram.svg"></i
+                                ></a>
+                            </div>
+                            <a
+                                class="margin-right:15px"
+                                share-network="share"
+                                title="Share on share"
+                                ><i
+                                    class="height:20px fill:#505050"
+                                    src="/assets/svg/share-alt.svg"></i
+                            ></a>
+                        </div>
+                        <a
+                            href="https://github.com/CoCreate-app/CoCreateJS"
+                            target="_blank"
+                            class=""
+                            ><i
+                                class="height:20px fill:#505050"
+                                src="/assets/svg/github.svg"></i
+                        ></a>
+                    </div>
+                </div>
+                <h1
+                    class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">
+                    Update element attributes, pass values between elements,
+                    show and hide elements.
+                </h1>
+            </section>
 
-			<div id="xxxxx-section" class="display:flex flex-wrap:wrap justify-content:space-between">
-				<div class="flex-grow:1 width:300px padding:0px_10px margin:20px_0px">
-					<section scroll scroll-intersect="color:dodgerblue" scroll-target="#pass-attributes-item">
-						<h2 id="pass-attributes" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Pass Attributes</h2>
-						<p class="padding:10px_0px line-height:1.5">Pass attributes from elements to elements within same page or across multiple tabs and windows.</p>
-						<pre><code class="language-html">&lt;a actions="pass" pass-document_id="test" pass_to="A unique id"&gt;&lt;/a&gt;</code></pre>
+            <div
+                id="xxxxx-section"
+                class="display:flex flex-wrap:wrap justify-content:space-between">
+                <div
+                    class="flex-grow:1 width:300px padding:0px_10px margin:20px_0px">
+                    <section
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#pass-attributes-item">
+                        <h2
+                            id="pass-attributes"
+                            class="border-bottom:1px_solid_lightgrey padding:5px_0px">
+                            Pass Attributes
+                        </h2>
+                        <p class="padding:10px_0px line-height:1.5">
+                            Pass attributes from elements to elements within
+                            same page or across multiple tabs and windows.
+                        </p>
+                        <pre><code class="language-html">&lt;a actions="pass" pass-document_id="test" pass_to="A unique id"&gt;&lt;/a&gt;</code></pre>
 
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="pass-attributes-playground">
-							
-							<div id="pass-attributes-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="pass-attributes-demo" save="false" id="pass-attributes-demo" input-target=".pass-attributes" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="pass-attributes-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="pass-attributes padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="pass-attributes-eye" show="#pass-attributes-eye-slash" hide="#pass-attributes-eye, #pass-attributes-demo-preview" toggle="code-height" toggle-target="#pass-attributes-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="pass-attributes-eye-slash" show="#pass-attributes-eye, #pass-attributes-demo-preview" hide="#pass-attributes-eye-slash" toggle="code-height" toggle-target="#pass-attributes-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="pass-attributes-code" show="#pass-attributes-code-slash" hide="#pass-attributes-code, #pass-attributes-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="pass-attributes-code-slash" show="#pass-attributes-code, #pass-attributes-demo-code" hide="#pass-attributes-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#pass-attributes-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
-						
-					</section>
-					<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#pass-values-item">
-						<h3 id="pass-values" class="padding-top:20px">Pass Values</h3>
-						<p class="padding:10px_0px line-height:1.5">Pass a value from an input to any element</p>
-						<!-- <pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre> -->
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="pass-attributes-playground">
+                            <div
+                                id="pass-attributes-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="pass-attributes-demo"
+                                    save="false"
+                                    id="pass-attributes-demo"
+                                    input-target=".pass-attributes"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
 
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="pass-values-playground">
-							
-							<div id="pass-values-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="pass-values-demo" save="false" id="pass-values-demo" input-target=".pass-values" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="pass-values-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="pass-values padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="pass-values-eye" show="#pass-values-eye-slash" hide="#pass-values-eye, #pass-values-demo-preview" toggle="code-height" toggle-target="#pass-values-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="pass-values-eye-slash" show="#pass-values-eye, #pass-values-demo-preview" hide="#pass-values-eye-slash" toggle="code-height" toggle-target="#pass-values-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="pass-values-code" show="#pass-values-code-slash" hide="#pass-values-code, #pass-values-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="pass-values-code-slash" show="#pass-values-code, #pass-values-demo-code" hide="#pass-values-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#pass-values-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
-						
-					</section>
-					<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#conditional-logic-item">
-						<h3 id="conditional-logic" class="padding-top:20px">Conditional Logic</h3>
-						<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts render elements to collaborative rich text editors or a website builder.</p>
-						<pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+                            <div
+                                id="pass-attributes-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div class="pass-attributes padding:20px"></div>
+                            </div>
 
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="conditional-logic-playground">
-							
-							<div id="conditional-logic-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="conditional-logic-demo" save="false" id="conditional-logic-demo" input-target=".conditional-logic" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="conditional-logic-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="conditional-logic padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="conditional-logic-eye" show="#conditional-logic-eye-slash" hide="#conditional-logic-eye, #conditional-logic-demo-preview" toggle="code-height" toggle-target="#conditional-logic-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="conditional-logic-eye-slash" show="#conditional-logic-eye, #conditional-logic-demo-preview" hide="#conditional-logic-eye-slash" toggle="code-height" toggle-target="#conditional-logic-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="conditional-logic-code" show="#conditional-logic-code-slash" hide="#conditional-logic-code, #conditional-logic-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="conditional-logic-code-slash" show="#conditional-logic-code, #conditional-logic-demo-code" hide="#conditional-logic-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#conditional-logic-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="pass-attributes-eye"
+                                    show="#pass-attributes-eye-slash"
+                                    hide="#pass-attributes-eye, #pass-attributes-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#pass-attributes-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="pass-attributes-eye-slash"
+                                    show="#pass-attributes-eye, #pass-attributes-demo-preview"
+                                    hide="#pass-attributes-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#pass-attributes-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="pass-attributes-code"
+                                    show="#pass-attributes-code-slash"
+                                    hide="#pass-attributes-code, #pass-attributes-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="pass-attributes-code-slash"
+                                    show="#pass-attributes-code, #pass-attributes-demo-code"
+                                    hide="#pass-attributes-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#pass-attributes-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+                    <section
+                        class="padding:35px_0px"
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#pass-values-item">
+                        <h3 id="pass-values" class="padding-top:20px">
+                            Pass Values
+                        </h3>
+                        <p class="padding:10px_0px line-height:1.5">
+                            Pass a value from an input to any element
+                        </p>
+                        <!-- <pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre> -->
 
-					</section>
-				</div>
-				<!-- end column -->
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="pass-values-playground">
+                            <div
+                                id="pass-values-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="pass-values-demo"
+                                    save="false"
+                                    id="pass-values-demo"
+                                    input-target=".pass-values"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
 
-				<section class="flex-grow:1 width:300px max-width:400px@md@lg@xl padding:0px_10px padding-bottom:10px margin:20px_0px">
-					<h2 class="border-bottom:1px_solid_lightgrey padding:5px_0px">Logic Attributes</h2>
-					<ul class="list-style-type:none position:sticky top:0 height:100vh overflow:auto">
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>pass_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-							<p>A uinque id to receive pass attribute.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>pass_to</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-							<p>id where the attributes will be passed to.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>pass-*</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-							<p>Pass any attribute defined</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-							<h4><span>pass-refresh</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-							<p>Overwrites attribute values </p>
-						</li>
-					</ul>
-				</section>
-			</div>
+                            <div
+                                id="pass-values-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div class="pass-values padding:20px"></div>
+                            </div>
 
-			<!--  Previous & Next  -->
-			<div class="padding:10px width:100% margin-top:20px display:flex flex-wrap:wrap justify-content:flex-start">
-				<div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50%">
-					<p class="color:#888">Previous Topic</p>
-					<p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="./templating.html">Fetch a list and render the data using a template</a></p>
-				</div>
-				<div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50% text-align:right">
-					<p class="color:#888">Next Topic</p>
-					<p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="./user-management.html">User Management</a></p>
-				</div>
-			</div>
-			
-			<button href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/elements.html?message=docs%3A%20describe%20your%20change..." target="_blank" class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
-				<i class="height:20px fill:#505050" src="/assets/svg/pencil-alt.svg"></i>
-			</button>
-		</main>
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="pass-values-eye"
+                                    show="#pass-values-eye-slash"
+                                    hide="#pass-values-eye, #pass-values-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#pass-values-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="pass-values-eye-slash"
+                                    show="#pass-values-eye, #pass-values-demo-preview"
+                                    hide="#pass-values-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#pass-values-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="pass-values-code"
+                                    show="#pass-values-code-slash"
+                                    hide="#pass-values-code, #pass-values-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="pass-values-code-slash"
+                                    show="#pass-values-code, #pass-values-demo-code"
+                                    hide="#pass-values-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#pass-values-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+                    <section
+                        class="padding-top:35px"
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#conditional-logic-item">
+                        <h3 id="conditional-logic" class="padding-top:20px">
+                            Conditional Logic
+                        </h3>
+                        <p class="padding:10px_0px line-height:1.5">
+                            Add attribute contenteditbale to any html and
+                            element and use it as an input. CoCreateJS also
+                            converts render elements to collaborative rich text
+                            editors or a website builder.
+                        </p>
+                        <pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
 
-		<script src="/apikey.js"></script>
-		<script src="https://cdn.cocreate.app/1.56.0/CoCreate.min.js"></script>
-		<!--<script src="../dist/CoCreate.js"></script>-->
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="conditional-logic-playground">
+                            <div
+                                id="conditional-logic-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="conditional-logic-demo"
+                                    save="false"
+                                    id="conditional-logic-demo"
+                                    input-target=".conditional-logic"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
 
-	</body>
+                            <div
+                                id="conditional-logic-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div
+                                    class="conditional-logic padding:20px"></div>
+                            </div>
 
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="conditional-logic-eye"
+                                    show="#conditional-logic-eye-slash"
+                                    hide="#conditional-logic-eye, #conditional-logic-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#conditional-logic-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="conditional-logic-eye-slash"
+                                    show="#conditional-logic-eye, #conditional-logic-demo-preview"
+                                    hide="#conditional-logic-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#conditional-logic-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="conditional-logic-code"
+                                    show="#conditional-logic-code-slash"
+                                    hide="#conditional-logic-code, #conditional-logic-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="conditional-logic-code-slash"
+                                    show="#conditional-logic-code, #conditional-logic-demo-code"
+                                    hide="#conditional-logic-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#conditional-logic-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+                </div>
+                <!-- end column -->
+
+                <section
+                    class="flex-grow:1 width:300px max-width:400px@md@lg@xl padding:0px_10px padding-bottom:10px margin:20px_0px">
+                    <h2
+                        class="border-bottom:1px_solid_lightgrey padding:5px_0px">
+                        Logic Attributes
+                    </h2>
+                    <ul
+                        class="list-style-type:none position:sticky top:0 height:100vh overflow:auto">
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>pass_id</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge danger"
+                                    >required</span
+                                >
+                            </h4>
+                            <p>A uinque id to receive pass attribute.</p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>pass_to</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge danger"
+                                    >required</span
+                                >
+                            </h4>
+                            <p>id where the attributes will be passed to.</p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>pass-*</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge danger"
+                                    >required</span
+                                >
+                            </h4>
+                            <p>Pass any attribute defined</p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>pass-refresh</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>Overwrites attribute values</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!--  Previous & Next  -->
+            <div
+                class="padding:10px width:100% margin-top:20px display:flex flex-wrap:wrap justify-content:flex-start">
+                <div
+                    class="padding:30px_15px border:1px_solid_#ddd flex-basis:50%">
+                    <p class="color:#888">Previous Topic</p>
+                    <p
+                        class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px">
+                        <a class="color:#1877F2:hover" href="./templating.html"
+                            >Fetch a list and render the data using a
+                            template</a
+                        >
+                    </p>
+                </div>
+                <div
+                    class="padding:30px_15px border:1px_solid_#ddd flex-basis:50% text-align:right">
+                    <p class="color:#888">Next Topic</p>
+                    <p
+                        class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px">
+                        <a
+                            class="color:#1877F2:hover"
+                            href="./user-management.html"
+                            >User Management</a
+                        >
+                    </p>
+                </div>
+            </div>
+
+            <button
+                href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/elements.html?message=docs%3A%20describe%20your%20change..."
+                target="_blank"
+                class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
+                <i
+                    class="height:20px fill:#505050"
+                    src="/assets/svg/pencil-alt.svg"></i>
+            </button>
+        </main>
+
+        <script src="/apikey.js"></script>
+        <script src="https://cdn.cocreate.app/1.56.1/CoCreate.min.js"></script>
+        <!--<script src="../dist/CoCreate.js"></script>-->
+    </body>
 </html>

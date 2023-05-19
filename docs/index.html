@@ -1,95 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>CoCreateJS Documentation</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
-        <meta name="description" 
-        			content="Utility first css framework, design faster and improve on your css by using native inline styles as classes. No learning curve, use what you already know" />
-        <meta name="keywords" content="helper classes, utility classes, css framework, css library, inline style classes" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://cocreate.app/images/favicon.ico" />
+        <meta
+            name="description"
+            content="Utility first css framework, design faster and improve on your css by using native inline styles as classes. No learning curve, use what you already know" />
+        <meta
+            name="keywords"
+            content="helper classes, utility classes, css framework, css library, inline style classes" />
         <meta name="robots" content="index,follow" />
-       	<meta property="og:image" content="https://cdn.cocreate.app/docs/action.png">
-        <link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css"/>
-        <link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" save="true"/>
-        
+        <meta
+            property="og:image"
+            content="https://cdn.cocreate.app/docs/action.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.cocreate.app/latest/CoCreate.min.css" />
+        <link
+            rel="stylesheet"
+            href="/docs/index.css"
+            collection="files"
+            document_id="60888216117c640e7596303f"
+            name="src"
+            type="text/css"
+            save="true" />
+
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121709453-1"></script>
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-121709453-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-            gtag('config', 'UA-121709453-1');
+            gtag("config", "UA-121709453-1");
         </script>
 
-		<link rel="manifest" href="/manifest.webmanifest" />
-	</head>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-	<body>
-		<nav class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px" 
-					content_id="content" scroll="sticky-nav,hide-nav" scroll-up="10" scroll-down="10" collection="files" document_id="60395ef42b3ac232657040fd"
-					name="src">
-		</nav>
-		<sidenav id="menuL" class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl " resizable resize-target="[content_id='content']" resize-property="margin-left" resize-value="width">
-			<menu collection="files" document_id="603717b07de7fb350ae9fec8" name="src"></menu>
-			<div resize="right"></div>
-		</sidenav>
-	    
-		<main class="padding-top:15px padding:15px@lg@xl line-height:1.5" content_id="content">
-			<section class="padding:10px">
-                <div id="introduction" class="margin-top:10px" scroll scroll-intersect="color:dodgerblue" scroll-target="">
-                    <span class="display:flex align-items:center width:fit-content" hover="display:block!important" hover-target="[href='#introduction']">
+    <body>
+        <nav
+            class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px"
+            content_id="content"
+            scroll="sticky-nav,hide-nav"
+            scroll-up="10"
+            scroll-down="10"
+            collection="files"
+            document_id="60395ef42b3ac232657040fd"
+            name="src"></nav>
+        <sidenav
+            id="menuL"
+            class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl"
+            resizable
+            resize-target="[content_id='content']"
+            resize-property="margin-left"
+            resize-value="width">
+            <menu
+                collection="files"
+                document_id="603717b07de7fb350ae9fec8"
+                name="src"></menu>
+            <div resize="right"></div>
+        </sidenav>
+
+        <main
+            class="padding-top:15px padding:15px@lg@xl line-height:1.5"
+            content_id="content">
+            <section class="padding:10px">
+                <div
+                    id="introduction"
+                    class="margin-top:10px"
+                    scroll
+                    scroll-intersect="color:dodgerblue"
+                    scroll-target="">
+                    <span
+                        class="display:flex align-items:center width:fit-content"
+                        hover="display:block!important"
+                        hover-target="[href='#introduction']">
                         <h2 class="padding:5px_0px">Introduction</h2>
-                        <a class="margin-left:10px display:none" href="#introduction"><i class="height:20px fill:#505050" src="/assets/svg/link.svg"></i></a>
+                        <a
+                            class="margin-left:10px display:none"
+                            href="#introduction"
+                            ><i
+                                class="height:20px fill:#505050"
+                                src="/assets/svg/link.svg"></i
+                        ></a>
                     </span>
                 </div>
-				<h3 class="padding-top:10px" id="cocreatejs">CoCreateJS</h3>
-				<p> A dependancy free, vanilla javascript Realtime CRUD and Collaboration Framework. Easily integrates in any HTML template using HTML5 attributtes. Converts a regular html website into a dynamic Realtime application. If you know basic html you can easily implement and use the CoCreateJS library/framework. If you have javascript knowledege, CoCreateJS is highly extensible Object oriented collaboration framework.</p>
-				
-				<!-- <h3 class="padding-top:10px" id="cocreatecss">CoCreateCSS</h3>
+                <h3 class="padding-top:10px" id="cocreatejs">CoCreateJS</h3>
+                <p>
+                    A dependancy free, vanilla javascript Realtime CRUD and
+                    Collaboration Framework. Easily integrates in any HTML
+                    template using HTML5 attributtes. Converts a regular html
+                    website into a dynamic Realtime application. If you know
+                    basic html you can easily implement and use the CoCreateJS
+                    library/framework. If you have javascript knowledege,
+                    CoCreateJS is highly extensible Object oriented
+                    collaboration framework.
+                </p>
+
+                <!-- <h3 class="padding-top:10px" id="cocreatecss">CoCreateCSS</h3>
 				<p>A dependancy free, CSS and vanilla javascript library. Containing a set of easy to use natural language atomic classes, and a wide range of components to assist in developing modern UI/UX. Litte to no learning curve, CoCreateCSS uses the same properties and values you are already familiar with.</p> -->
-				
-				<h3 class="padding-top:20px">Micro Archeticture</h3>
-				<p>Vanilla javascript, lightweight, single purpose micro components, lazy loaded as required. Easily modify, remove and/or replace components. Highly configuarable using HTML5 attributes. HTML5 developers can use a combination of attributes to create a dynamic web application. Javascript developers have access to API, callbacks and events. </p>
-			</section>
-		
-			<section class="padding:10px" id="getting_started">
-				 <div id="introduction1" class="margin-top:50px" scroll scroll-intersect="color:dodgerblue" scroll-target="">
-                    <span class="display:flex align-items:center width:fit-content" hover="display:block!important" hover-target="[href='#getting-started']">
+
+                <h3 class="padding-top:20px">Micro Archeticture</h3>
+                <p>
+                    Vanilla javascript, lightweight, single purpose micro
+                    components, lazy loaded as required. Easily modify, remove
+                    and/or replace components. Highly configuarable using HTML5
+                    attributes. HTML5 developers can use a combination of
+                    attributes to create a dynamic web application. Javascript
+                    developers have access to API, callbacks and events.
+                </p>
+            </section>
+
+            <section class="padding:10px" id="getting_started">
+                <div
+                    id="introduction1"
+                    class="margin-top:50px"
+                    scroll
+                    scroll-intersect="color:dodgerblue"
+                    scroll-target="">
+                    <span
+                        class="display:flex align-items:center width:fit-content"
+                        hover="display:block!important"
+                        hover-target="[href='#getting-started']">
                         <h2 class="padding:5px_0px">Getting Started</h2>
-                        <a class="margin-left:10px display:none" href="#getting-started"><i class="height:20px fill:#505050" src="/assets/svg/link.svg"></i></a>
+                        <a
+                            class="margin-left:10px display:none"
+                            href="#getting-started"
+                            ><i
+                                class="height:20px fill:#505050"
+                                src="/assets/svg/link.svg"></i
+                        ></a>
                     </span>
                 </div>
 
-				<p>Simply add the cdn script in your HTML files and apply CoCreate <a href="./elements.html" class="color:dodgerblue">attributes</a> to create a dynamic experience.</p>
-	            <pre><code class="language-html">
-	&lt;script src="https://cdn.cocreate.app/1.56.0/CoCreate.min.js"&gt;&lt;/script&gt;
+                <p>
+                    Simply add the cdn script in your HTML files and apply
+                    CoCreate
+                    <a href="./elements.html" class="color:dodgerblue"
+                        >attributes</a
+                    >
+                    to create a dynamic experience.
+                </p>
+                <pre><code class="language-html">
+	&lt;script src="https://cdn.cocreate.app/1.56.1/CoCreate.min.js"&gt;&lt;/script&gt;
 	        	</code></pre>
-	        </section>
-	        
+            </section>
+
             <!--  Previous & Next  -->
-            <div class="padding:10px width:100% margin-top:20px display:flex flex-wrap:wrap justify-content:flex-start">
-                <div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50%">
+            <div
+                class="padding:10px width:100% margin-top:20px display:flex flex-wrap:wrap justify-content:flex-start">
+                <div
+                    class="padding:30px_15px border:1px_solid_#ddd flex-basis:50%">
                     <p class="color:#888">Back to the top</p>
-                    <p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="#introduction">Introduction to CoCreateJS</a></p>
+                    <p
+                        class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px">
+                        <a class="color:#1877F2:hover" href="#introduction"
+                            >Introduction to CoCreateJS</a
+                        >
+                    </p>
                 </div>
-                <div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50% text-align:right">
+                <div
+                    class="padding:30px_15px border:1px_solid_#ddd flex-basis:50% text-align:right">
                     <p class="color:#888">Next Topic</p>
-                    <p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="./elements.html">Using CoCreateJS attributes on html elements</a></p>
+                    <p
+                        class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px">
+                        <a class="color:#1877F2:hover" href="./elements.html"
+                            >Using CoCreateJS attributes on html elements</a
+                        >
+                    </p>
                 </div>
             </div>
-            
-			<button href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/index.html?message=docs%3A%20describe%20your%20change..." 
-					target="_blank" 
-					class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
-		        <i class="height:20px fill:#505050" src="/assets/svg/pencil-alt.svg"></i>
-	        </button>
-		</main>
 
-		<script src="/apikey.js"></script>
-        <script src="https://cdn.cocreate.app/1.56.0/CoCreate.min.js" ></script>
-        
+            <button
+                href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/index.html?message=docs%3A%20describe%20your%20change..."
+                target="_blank"
+                class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
+                <i
+                    class="height:20px fill:#505050"
+                    src="/assets/svg/pencil-alt.svg"></i>
+            </button>
+        </main>
+
+        <script src="/apikey.js"></script>
+        <script src="https://cdn.cocreate.app/1.56.1/CoCreate.min.js"></script>
     </body>
 </html>

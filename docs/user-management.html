@@ -1,216 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CoCreateJS - User Management</title>
+        <meta
+            name="description"
+            content="A codeless Javascript framework for building collaborative no code platforms, apps and UI" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://cocreate.app/images/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.cocreate.app/latest/CoCreate.min.css" />
+        <link
+            rel="stylesheet"
+            href="/docs/index.css"
+            collection="files"
+            document_id="60888216117c640e7596303f"
+            name="src"
+            type="text/css" />
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>CoCreateJS - User Management</title>
-		<meta name="description" content="A codeless Javascript framework for building collaborative no code platforms, apps and UI">
-		<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
-        <link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css"/>
-		<link rel="stylesheet" href="/docs/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" />
-		
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121709453-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-121709453-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-			gtag('config', 'UA-121709453-1');
-		</script>
+            gtag("config", "UA-121709453-1");
+        </script>
 
-		<link rel="manifest" href="/manifest.webmanifest" />
-	</head>
-	
-	<body>
-		<nav class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px" content_id="content" scroll="sticky-nav,hide-nav" scroll-up="10" scroll-down="10" collection="files" document_id="60395ef42b3ac232657040fd"
-		 name="src">
-		</nav>
-		<sidenav id="menuL" class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl" resizable resize-target="[content_id='content']" resize-property="margin-left" resize-value="width">
-			<menu collection="files" document_id="603717b07de7fb350ae9fec8" name="src"></menu>
-			<div resize="right"></div>
-		</sidenav>
-	
-		<!-- Main Content -->
-		<main class="padding-top:15px padding:15px@lg@xl" content_id="content">
-			<section>
-				<div class="display:flex flex-wrap:wrap justify-content:space-between position:relative margin:10px">
-					<div class="display:flex align-items:center">
-						<h2>User Management</h2>
-					</div>
-					<div class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px background:white">
-						<div class="display:flex align-items:center transition:0.3s padding-left:10px" share-network="true" share-text="Enter decription here" share-title="testing im a title" share-height="600" share-width="700" share-media="https://cdn.cocreate.app/docs/action.png"
-						 hover="display:block!important" hover-target=".social-networks">
-							<div class="display:none social-networks">
-								<a class="margin-right:15px" share-network="twitter" title="Share on twitter"><i class="height:20px fill:#505050" src="/assets/svg/twitter.svg"></i></a>
-								<a class="margin-right:15px" share-network="facebook" title="Share on Facebook"><i class="height:20px fill:#505050" src="/assets/svg/facebook.svg"></i></a>
-								<a class="margin-right:15px" share-network="instagram" title="Share on instagram"><i class="height:20px fill:#505050" src="/assets/svg/instagram.svg"></i></a>
-							</div>
-							<a class="margin-right:15px" share-network="share" title="Share on share"><i class="height:20px fill:#505050" src="/assets/svg/share-alt.svg"></i></a>
-						</div>
-						<a href="https://github.com/CoCreate-app/CoCreateJS" target="_blank" class=""><i class="height:20px fill:#505050" src="/assets/svg/github.svg"></i></a>
-					</div>
-				</div>
-				<h1 class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">Handeling signin, sign up and sign out</h1>
-			</section>
-	
-			<div id="xxxxx-section" class="display:flex flex-wrap:wrap justify-content:space-between">
-				<div class="flex-grow:1 width:300px padding:0px_10px margin:20px_0px">
-					<section scroll scroll-intersect="color:dodgerblue" scroll-target="#signUp-item">
-						<h2 id="signUp" class="border-bottom:1px_solid_lightgrey padding:5px_0px">Sign Up</h2>
-						<p class="padding:10px_0px line-height:1.5">signup description</p>
-						<pre><code class="language-html">&lt;a actions="signUp"&gt;&lt;/a&gt;</code></pre>
-	
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="signup-playground">
-							
-							<div id="signup-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="signup-demo" save="false" id="signup-demo" input-target=".signup-demo" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="signup-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="signup-demo padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="signup-eye" show="#signup-eye-slash" hide="#signup-eye, #signup-demo-preview" toggle="code-height" toggle-target="#signup-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="signup-eye-slash" show="#signup-eye, #signup-demo-preview" hide="#signup-eye-slash" toggle="code-height" toggle-target="#signup-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="signup-code" show="#signup-code-slash" hide="#signup-code, #signup-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="signup-code-slash" show="#signup-code, #signup-demo-code" hide="#signup-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#signup-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
-	
-					</section>
-					<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#signIn-item">
-						<h3 id="signIn" class="padding-top:20px">Sign In</h3>
-						<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts signIn elements to collaborative rich text editors or a website builder.</p>
-						<pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
-	
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="signin-playground">
-							
-							<div id="signin-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="signin-demo" save="false" id="signin-demo" input-target=".signin-demo" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="signin-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="signin-demo padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="signin-eye" show="#signin-eye-slash" hide="#signin-eye, #signin-demo-preview" toggle="code-height" toggle-target="#signin-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="signin-eye-slash" show="#signin-eye, #signin-demo-preview" hide="#signin-eye-slash" toggle="code-height" toggle-target="#signin-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="signin-code" show="#signin-code-slash" hide="#signin-code, #signin-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="signin-code-slash" show="#signin-code, #signin-demo-code" hide="#signin-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#signin-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
-	
-					</section>
-					<section class="padding:35px_0px" scroll scroll-intersect="color:dodgerblue" scroll-target="#signOut-item">
-						<h3 id="signOut" class="padding-top:20px">Sign Out</h3>
-						<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts signOut elements to collaborative rich text editors or a website builder.</p>
-						<pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
-	
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="signout-playground">
-							
-							<div id="signout-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="619aa8e8a8b6b4001a9dc24e" name="signout-demo" save="false" id="signout-demo" input-target=".signout-demo" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="signout-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="signout-demo padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="signout-eye" show="#signout-eye-slash" hide="#signout-eye, #signout-demo-preview" toggle="code-height" toggle-target="#signout-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="signout-eye-slash" show="#signout-eye, #signout-demo-preview" hide="#signout-eye-slash" toggle="code-height" toggle-target="#signout-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="signout-code" show="#signout-code-slash" hide="#signout-code, #signout-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="signout-code-slash" show="#signout-code, #signout-demo-code" hide="#signout-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#signout-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
-	
-					</section>
-					<section class="padding-top:35px" scroll scroll-intersect="color:dodgerblue" scroll-target="#permissions-item">
-						<h3 id="permissions" class="padding-top:20px">Permissions</h3>
-						<p class="padding:10px_0px line-height:1.5">Add attribute contenteditbale to any html and element and use it as an input. CoCreateJS also converts permissions elements to collaborative rich text editors or a website builder.</p>
-						<pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
-	
-						<!-- SandBox -->
-						<div class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px" id="permissions-playground">
-							
-							<div id="permissions-demo-code" resizable class="position:relative height:50%">
-								<textarea type="code" lang="html" collection="demos" document_id="" name="permissions-demo" save="false" id="permissions-demo" input-target=".permissions-demo" input-attribute="value" input-events="input, onload" class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-								<div resize="bottom" class="background:lightgrey"></div>
-							</div>
-		
-							<div id="permissions-demo-preview" class="position:relative overflow:auto background-color:white">
-								<div class="permissions-demo padding:20px"></div>
-							</div>
-							
-							<div class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-								<a class="margin-right:10px" id="permissions-eye" show="#permissions-eye-slash" hide="#permissions-eye, #permissions-demo-preview" toggle="code-height" toggle-target="#permissions-demo-code"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-								<a class="margin-right:10px" hidden id="permissions-eye-slash" show="#permissions-eye, #permissions-demo-preview" hide="#permissions-eye-slash" toggle="code-height" toggle-target="#permissions-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/eye-slash.svg"></i></a>
-								<a class="margin-right:10px" id="permissions-code" show="#permissions-code-slash" hide="#permissions-code, #permissions-demo-code"><i class="height:20px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:10px" hidden id="permissions-code-slash" show="#permissions-code, #permissions-demo-code" hide="#permissions-code-slash"><i class="display:flex height:18px fill:#505050" src="/assets/svg/code.svg"></i></a>
-								<a class="margin-right:5px" fullscreen fullscreen-target="#permissions-playground"></a>
-							</div>
-		
-						</div>
-						<!-- End SandBox -->
-	
-					</section>
-				</div>
-				<!-- end column -->
-	
-				<section class="flex-grow:1 width:300px max-width:400px@md@lg@xl padding:0px_10px padding-bottom:10px margin:20px_0px">
-					<h2 class="border-bottom:1px_solid_lightgrey padding:5px_0px">User Attributes</h2>
-					<ul class="list-style-type:none position:sticky top:0 height:100vh overflow:auto">
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-			        		<h4><span>pass_to</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-		        			<p>Template identifier. This attribute should be define.</p>
-						</li>
-						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-			        		<h4><span>pass_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-		        			<p>Collection name to fetch data. It is required. </p>
-						</li>
-					</ul>
-				</section>
-			</div>
-            <!--  Previous & Next  -->
-            <div class="padding:10px width:100% margin-top:20px display:flex flex-wrap:wrap justify-content:flex-start">
-                <div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50%">
-                    <p class="color:#888">Previous Topic</p>
-                    <p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="./logic.html">Applying logic and sharing data between pages</a></p>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
+
+    <body>
+        <nav
+            class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px"
+            content_id="content"
+            scroll="sticky-nav,hide-nav"
+            scroll-up="10"
+            scroll-down="10"
+            collection="files"
+            document_id="60395ef42b3ac232657040fd"
+            name="src"></nav>
+        <sidenav
+            id="menuL"
+            class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl"
+            resizable
+            resize-target="[content_id='content']"
+            resize-property="margin-left"
+            resize-value="width">
+            <menu
+                collection="files"
+                document_id="603717b07de7fb350ae9fec8"
+                name="src"></menu>
+            <div resize="right"></div>
+        </sidenav>
+
+        <!-- Main Content -->
+        <main class="padding-top:15px padding:15px@lg@xl" content_id="content">
+            <section>
+                <div
+                    class="display:flex flex-wrap:wrap justify-content:space-between position:relative margin:10px">
+                    <div class="display:flex align-items:center">
+                        <h2>User Management</h2>
+                    </div>
+                    <div
+                        class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px background:white">
+                        <div
+                            class="display:flex align-items:center transition:0.3s padding-left:10px"
+                            share-network="true"
+                            share-text="Enter decription here"
+                            share-title="testing im a title"
+                            share-height="600"
+                            share-width="700"
+                            share-media="https://cdn.cocreate.app/docs/action.png"
+                            hover="display:block!important"
+                            hover-target=".social-networks">
+                            <div class="display:none social-networks">
+                                <a
+                                    class="margin-right:15px"
+                                    share-network="twitter"
+                                    title="Share on twitter"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/twitter.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:15px"
+                                    share-network="facebook"
+                                    title="Share on Facebook"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/facebook.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:15px"
+                                    share-network="instagram"
+                                    title="Share on instagram"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/instagram.svg"></i
+                                ></a>
+                            </div>
+                            <a
+                                class="margin-right:15px"
+                                share-network="share"
+                                title="Share on share"
+                                ><i
+                                    class="height:20px fill:#505050"
+                                    src="/assets/svg/share-alt.svg"></i
+                            ></a>
+                        </div>
+                        <a
+                            href="https://github.com/CoCreate-app/CoCreateJS"
+                            target="_blank"
+                            class=""
+                            ><i
+                                class="height:20px fill:#505050"
+                                src="/assets/svg/github.svg"></i
+                        ></a>
+                    </div>
                 </div>
-                <div class="padding:30px_15px border:1px_solid_#ddd flex-basis:50% text-align:right">
+                <h1
+                    class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">
+                    Handeling signin, sign up and sign out
+                </h1>
+            </section>
+
+            <div
+                id="xxxxx-section"
+                class="display:flex flex-wrap:wrap justify-content:space-between">
+                <div
+                    class="flex-grow:1 width:300px padding:0px_10px margin:20px_0px">
+                    <section
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#signUp-item">
+                        <h2
+                            id="signUp"
+                            class="border-bottom:1px_solid_lightgrey padding:5px_0px">
+                            Sign Up
+                        </h2>
+                        <p class="padding:10px_0px line-height:1.5">
+                            signup description
+                        </p>
+                        <pre><code class="language-html">&lt;a actions="signUp"&gt;&lt;/a&gt;</code></pre>
+
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="signup-playground">
+                            <div
+                                id="signup-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="signup-demo"
+                                    save="false"
+                                    id="signup-demo"
+                                    input-target=".signup-demo"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
+
+                            <div
+                                id="signup-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div class="signup-demo padding:20px"></div>
+                            </div>
+
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="signup-eye"
+                                    show="#signup-eye-slash"
+                                    hide="#signup-eye, #signup-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#signup-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="signup-eye-slash"
+                                    show="#signup-eye, #signup-demo-preview"
+                                    hide="#signup-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#signup-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="signup-code"
+                                    show="#signup-code-slash"
+                                    hide="#signup-code, #signup-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="signup-code-slash"
+                                    show="#signup-code, #signup-demo-code"
+                                    hide="#signup-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#signup-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+                    <section
+                        class="padding:35px_0px"
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#signIn-item">
+                        <h3 id="signIn" class="padding-top:20px">Sign In</h3>
+                        <p class="padding:10px_0px line-height:1.5">
+                            Add attribute contenteditbale to any html and
+                            element and use it as an input. CoCreateJS also
+                            converts signIn elements to collaborative rich text
+                            editors or a website builder.
+                        </p>
+                        <pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="signin-playground">
+                            <div
+                                id="signin-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="signin-demo"
+                                    save="false"
+                                    id="signin-demo"
+                                    input-target=".signin-demo"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
+
+                            <div
+                                id="signin-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div class="signin-demo padding:20px"></div>
+                            </div>
+
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="signin-eye"
+                                    show="#signin-eye-slash"
+                                    hide="#signin-eye, #signin-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#signin-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="signin-eye-slash"
+                                    show="#signin-eye, #signin-demo-preview"
+                                    hide="#signin-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#signin-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="signin-code"
+                                    show="#signin-code-slash"
+                                    hide="#signin-code, #signin-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="signin-code-slash"
+                                    show="#signin-code, #signin-demo-code"
+                                    hide="#signin-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#signin-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+                    <section
+                        class="padding:35px_0px"
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#signOut-item">
+                        <h3 id="signOut" class="padding-top:20px">Sign Out</h3>
+                        <p class="padding:10px_0px line-height:1.5">
+                            Add attribute contenteditbale to any html and
+                            element and use it as an input. CoCreateJS also
+                            converts signOut elements to collaborative rich text
+                            editors or a website builder.
+                        </p>
+                        <pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="signout-playground">
+                            <div
+                                id="signout-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id="619aa8e8a8b6b4001a9dc24e"
+                                    name="signout-demo"
+                                    save="false"
+                                    id="signout-demo"
+                                    input-target=".signout-demo"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
+
+                            <div
+                                id="signout-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div class="signout-demo padding:20px"></div>
+                            </div>
+
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="signout-eye"
+                                    show="#signout-eye-slash"
+                                    hide="#signout-eye, #signout-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#signout-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="signout-eye-slash"
+                                    show="#signout-eye, #signout-demo-preview"
+                                    hide="#signout-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#signout-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="signout-code"
+                                    show="#signout-code-slash"
+                                    hide="#signout-code, #signout-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="signout-code-slash"
+                                    show="#signout-code, #signout-demo-code"
+                                    hide="#signout-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#signout-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+                    <section
+                        class="padding-top:35px"
+                        scroll
+                        scroll-intersect="color:dodgerblue"
+                        scroll-target="#permissions-item">
+                        <h3 id="permissions" class="padding-top:20px">
+                            Permissions
+                        </h3>
+                        <p class="padding:10px_0px line-height:1.5">
+                            Add attribute contenteditbale to any html and
+                            element and use it as an input. CoCreateJS also
+                            converts permissions elements to collaborative rich
+                            text editors or a website builder.
+                        </p>
+                        <pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+
+                        <!-- SandBox -->
+                        <div
+                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
+                            id="permissions-playground">
+                            <div
+                                id="permissions-demo-code"
+                                resizable
+                                class="position:relative height:50%">
+                                <textarea
+                                    type="code"
+                                    lang="html"
+                                    collection="demos"
+                                    document_id=""
+                                    name="permissions-demo"
+                                    save="false"
+                                    id="permissions-demo"
+                                    input-target=".permissions-demo"
+                                    input-attribute="value"
+                                    input-events="input, onload"
+                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+                                <div
+                                    resize="bottom"
+                                    class="background:lightgrey"></div>
+                            </div>
+
+                            <div
+                                id="permissions-demo-preview"
+                                class="position:relative overflow:auto background-color:white">
+                                <div
+                                    class="permissions-demo padding:20px"></div>
+                            </div>
+
+                            <div
+                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                <a
+                                    class="margin-right:10px"
+                                    id="permissions-eye"
+                                    show="#permissions-eye-slash"
+                                    hide="#permissions-eye, #permissions-demo-preview"
+                                    toggle="code-height"
+                                    toggle-target="#permissions-demo-code"
+                                    ><i
+                                        class="height:18px fill:#505050"
+                                        src="/assets/svg/eye.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="permissions-eye-slash"
+                                    show="#permissions-eye, #permissions-demo-preview"
+                                    hide="#permissions-eye-slash"
+                                    toggle="code-height"
+                                    toggle-target="#permissions-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/eye-slash.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    id="permissions-code"
+                                    show="#permissions-code-slash"
+                                    hide="#permissions-code, #permissions-demo-code"
+                                    ><i
+                                        class="height:20px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:10px"
+                                    hidden
+                                    id="permissions-code-slash"
+                                    show="#permissions-code, #permissions-demo-code"
+                                    hide="#permissions-code-slash"
+                                    ><i
+                                        class="display:flex height:18px fill:#505050"
+                                        src="/assets/svg/code.svg"></i
+                                ></a>
+                                <a
+                                    class="margin-right:5px"
+                                    fullscreen
+                                    fullscreen-target="#permissions-playground"></a>
+                            </div>
+                        </div>
+                        <!-- End SandBox -->
+                    </section>
+                </div>
+                <!-- end column -->
+
+                <section
+                    class="flex-grow:1 width:300px max-width:400px@md@lg@xl padding:0px_10px padding-bottom:10px margin:20px_0px">
+                    <h2
+                        class="border-bottom:1px_solid_lightgrey padding:5px_0px">
+                        User Attributes
+                    </h2>
+                    <ul
+                        class="list-style-type:none position:sticky top:0 height:100vh overflow:auto">
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>pass_to</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge danger"
+                                    >required</span
+                                >
+                            </h4>
+                            <p>
+                                Template identifier. This attribute should be
+                                define.
+                            </p>
+                        </li>
+                        <li
+                            class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+                            <h4>
+                                <span>pass_id</span>
+                                <span class="cocreate-badge success"
+                                    >string</span
+                                >
+                                <span class="cocreate-badge warning"
+                                    >optional</span
+                                >
+                            </h4>
+                            <p>
+                                Collection name to fetch data. It is required.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <!--  Previous & Next  -->
+            <div
+                class="padding:10px width:100% margin-top:20px display:flex flex-wrap:wrap justify-content:flex-start">
+                <div
+                    class="padding:30px_15px border:1px_solid_#ddd flex-basis:50%">
+                    <p class="color:#888">Previous Topic</p>
+                    <p
+                        class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px">
+                        <a class="color:#1877F2:hover" href="./logic.html"
+                            >Applying logic and sharing data between pages</a
+                        >
+                    </p>
+                </div>
+                <div
+                    class="padding:30px_15px border:1px_solid_#ddd flex-basis:50% text-align:right">
                     <p class="color:#888">Next Topic</p>
-                    <p class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px"><a class="color:#1877F2:hover" href="./user-management.html">User Management</a></p>
+                    <p
+                        class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px">
+                        <a
+                            class="color:#1877F2:hover"
+                            href="./user-management.html"
+                            >User Management</a
+                        >
+                    </p>
                 </div>
             </div>
-			<button href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/elements.html?message=docs%3A%20describe%20your%20change..." target="_blank" class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
-				<i class="height:20px fill:#505050" src="/assets/svg/pencil-alt.svg"></i>
-		    </button>
-		</main>
-	
-		<script src="/apikey.js"></script>
-		<script src="https://cdn.cocreate.app/1.56.0/CoCreate.min.js"></script>
-		<!--<script src="../dist/CoCreate.js"></script>-->
-	
-	</body>
+            <button
+                href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/elements.html?message=docs%3A%20describe%20your%20change..."
+                target="_blank"
+                class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
+                <i
+                    class="height:20px fill:#505050"
+                    src="/assets/svg/pencil-alt.svg"></i>
+            </button>
+        </main>
 
+        <script src="/apikey.js"></script>
+        <script src="https://cdn.cocreate.app/1.56.1/CoCreate.min.js"></script>
+        <!--<script src="../dist/CoCreate.js"></script>-->
+    </body>
 </html>
