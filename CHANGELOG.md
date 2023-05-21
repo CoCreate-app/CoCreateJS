@@ -1,3 +1,10 @@
+## [1.56.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.56.6...v1.56.7) (2023-05-21)
+
+
+### Bug Fixes
+
+* @cocreate/user bug fixes ([65e3c47](https://github.com/CoCreate-app/CoCreateJS/commit/65e3c478b4f7a39527e69cd4376ee0f5266ce136))
+
 ## [1.56.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.56.5...v1.56.6) (2023-05-21)
 
 
