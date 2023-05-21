@@ -127,7 +127,7 @@
     "@cocreate/toolbar": "^1.10.9",
     "@cocreate/unique": "^1.11.3",
     "@cocreate/uppy": "^1.4.9",
-    "@cocreate/users": "^1.22.1",
+    "@cocreate/users": "^1.22.2",
     "@cocreate/utils": "^1.20.9",
     "@cocreate/uuid": "^1.4.10",
     "@cocreate/validation": "^1.8.9",
