@@ -1,3 +1,10 @@
+## [1.56.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.56.4...v1.56.5) (2023-05-21)
+
+
+### Bug Fixes
+
+* key types (key, user, role) ([9f3dcc8](https://github.com/CoCreate-app/CoCreateJS/commit/9f3dcc8dc2bb76a39c974e2b9dd4a5c60ea09229))
+
 ## [1.56.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.56.3...v1.56.4) (2023-05-19)
 
 
