@@ -1,3 +1,11 @@
+## [1.56.8](https://github.com/CoCreate-app/CoCreateJS/compare/v1.56.7...v1.56.8) (2023-05-23)
+
+
+### Bug Fixes
+
+* Update "@cocreate/users" version to 1.22.5 ([9332fc8](https://github.com/CoCreate-app/CoCreateJS/commit/9332fc83c0ae01a0d810bddd44f994f69be1348a))
+* Updated CoCreate.js CDN to version 1.56.7 ([55b089e](https://github.com/CoCreate-app/CoCreateJS/commit/55b089ec2afa0c295a0c3eae939c76ee9a40eee2))
+
 ## [1.56.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.56.6...v1.56.7) (2023-05-21)
 
 
