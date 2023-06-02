@@ -1,11 +1,11 @@
+<!DOCTYPE html>
+<form>
+    <input render-key="name" />
+    <div template_id="render-key">
+        <div>This is <b>{{render-key.name}}</b></div>
+        <p>This {{render-key.name}}</p>
+        <input value="{{render-key.name}}" />
+    </div>
 
-    <form>
-        <input render-key="name">
-        <div template_id="render-key">
-            <div>This is <b>{{render-key.name}}</b></div>
-            <p>This {{render-key.name}}</p>
-            <input value="{{render-key.name}}">
-        </div>
-    
-        <button actions='renderKey'>Render</button>
-    </form>
+    <button actions="renderKey">Render</button>
+</form>
