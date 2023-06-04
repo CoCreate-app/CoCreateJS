@@ -1,3 +1,11 @@
+## [1.56.11](https://github.com/CoCreate-app/CoCreateJS/compare/v1.56.10...v1.56.11) (2023-06-04)
+
+
+### Bug Fixes
+
+* html formating ([6b89354](https://github.com/CoCreate-app/CoCreateJS/commit/6b893541609d9ebb8e2eb1823f2a66a07e310b9c))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([c60b4c7](https://github.com/CoCreate-app/CoCreateJS/commit/c60b4c7446a5f80f521300f9631fcd7dc3d4d708))
+
 ## [1.56.10](https://github.com/CoCreate-app/CoCreateJS/compare/v1.56.9...v1.56.10) (2023-06-01)
 
 
