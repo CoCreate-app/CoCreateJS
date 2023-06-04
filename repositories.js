@@ -41,12 +41,12 @@ module.exports = [
         'path': '../CoCreate-components/CoCreate-calculation',
         'repo': 'github.com/CoCreate-app/CoCreate-calculation.git'
     },
-    {
-        'path': '../CoCreate-components/CoCreate-cli',
-        'repo': 'github.com/CoCreate-app/CoCreate-cli.git',
-        'install': true,
-        'exclude': ['git']
-    },
+    // {
+    //     'path': '../CoCreate-components/CoCreate-cli',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-cli.git',
+    //     'install': true,
+    //     'exclude': ['git']
+    // },
     {
         'path': '../CoCreate-components/CoCreate-codearea',
         'repo': 'github.com/CoCreate-app/CoCreate-codearea.git'
@@ -363,11 +363,11 @@ module.exports = [
         'path': '../CoCreate-plugins/CoCreate-prism',
         'repo': 'github.com/CoCreate-app/CoCreate-prism.git'
     },
-    {
-        'path': '../CoCreate-plugins/CoCreate-s3',
-        'repo': 'github.com/CoCreate-app/CoCreate-s3.git',
-        'install': true
-    },
+    // {
+    //     'path': '../CoCreate-plugins/CoCreate-s3',
+    //     'repo': 'github.com/CoCreate-app/CoCreate-s3.git',
+    //     'install': true
+    // },
     {
         'path': '../CoCreate-plugins/CoCreate-sendgrid',
         'repo': 'github.com/CoCreate-app/CoCreate-sendgrid.git'

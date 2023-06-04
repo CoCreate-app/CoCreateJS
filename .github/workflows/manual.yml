@@ -5,50 +5,50 @@ name: Manual Deployment
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
 on:
-  workflow_dispatch:
-    # Inputs the workflow accepts.
-    inputs:
-      invalidations:
-        description: |
-          If set to 'true', invalidates previous upload.
-        default: 'true'
-        required: true
+    workflow_dispatch:
+        # Inputs the workflow accepts.
+        inputs:
+            invalidations:
+                description: |
+                    If set to 'true', invalidates previous upload.
+                default: "true"
+                required: true
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  cdn:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-    # Environment variables
-    env:
-      DRY_RUN: ${{ github.event.inputs.dry_run }}
-      GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-      NPM_TOKEN: '${{ secrets.NPM_TOKEN }}'
+    cdn:
+        # The type of runner that the job will run on
+        runs-on: ubuntu-latest
+        # Environment variables
+        env:
+            DRY_RUN: ${{ github.event.inputs.dry_run }}
+            GITHUB_TOKEN: "${{ secrets.GITHUB }}"
+            NPM_TOKEN: "${{ secrets.NPM_TOKEN }}"
 
-    # Steps represent a sequence of tasks that will be executed as part of the job    
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: setup nodejs
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - name: yarn install
-        run: >
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
-          .npmrc
+        # Steps represent a sequence of tasks that will be executed as part of the job
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            - name: setup nodejs
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 16
+            - name: yarn install
+              run: >
+                  echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
+                  .npmrc
 
-          yarn install --no-lockfile
-      - name: yarn build
-        run: yarn build
-      - name: upload latest bundle
-        uses: CoCreate-app/CoCreate-s3@master
-        with:
-          aws-key-id: '${{ secrets.AWSACCESSKEYID }}'
-          aws-access-key: '${{ secrets.AWSSECERTACCESSKEY }}'
-          distributionId: '${{ secrets.DISTRIBUTION_ID }}'
-          bucket: testcrudbucket
-          source: ./dist
-          destination: /latest
-          acl: public-read
-          invalidations: ${{ github.event.inputs.invalidations }}
+                  yarn install --no-lockfile
+            - name: yarn build
+              run: yarn build
+            - name: upload latest bundle
+              uses: CoCreate-app/CoCreate-s3@master
+              with:
+                  aws-key-id: "${{ secrets.AWSACCESSKEYID }}"
+                  aws-access-key: "${{ secrets.AWSSECERTACCESSKEY }}"
+                  distributionId: "${{ secrets.DISTRIBUTION_ID }}"
+                  bucket: testcrudbucket
+                  source: ./dist
+                  destination: /latest
+                  acl: public-read
+                  invalidations: ${{ github.event.inputs.invalidations }}
