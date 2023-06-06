@@ -28,7 +28,6 @@
     "build": "NODE_ENV=production npx webpack --config webpack.config.js",
     "dev": "npx webpack --config webpack.config.js --watch",
     "docs": "node ./node_modules/@cocreate/docs/src/index.js",
-    "hosting": "node ./node_modules/@cocreate/hosting/src/index.js",
     "dist": "node --version"
   },
   "repository": {
@@ -88,6 +87,7 @@
     "@cocreate/elements": "^1.17.17",
     "@cocreate/events": "^1.10.4",
     "@cocreate/fetch": "^1.23.13",
+    "@cocreate/file": "^1.0.0",
     "@cocreate/filter": "^1.19.14",
     "@cocreate/floating-label": "^1.7.5",
     "@cocreate/form": "^1.14.14",

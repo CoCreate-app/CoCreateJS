@@ -104,6 +104,10 @@ module.exports = [
         'repo': 'github.com/CoCreate-app/CoCreate-fetch.git'
     },
     {
+        'path': '../CoCreate-components/CoCreate-file',
+        'repo': 'github.com/CoCreate-app/CoCreate-file.git'
+    },
+    {
         'path': '../CoCreate-components/CoCreate-filter',
         'repo': 'github.com/CoCreate-app/CoCreate-filter.git'
     },
@@ -118,10 +122,6 @@ module.exports = [
     {
         'path': '../CoCreate-components/CoCreate-fullscreen',
         'repo': 'github.com/CoCreate-app/CoCreate-fullscreen.git'
-    },
-    {
-        'path': '../CoCreate-components/CoCreate-hosting',
-        'repo': 'github.com/CoCreate-app/CoCreate-hosting.git'
     },
     {
         'path': '../CoCreate-components/CoCreate-indexeddb',
