@@ -1,3 +1,15 @@
+# [1.57.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.56.11...v1.57.0) (2023-06-08)
+
+
+### Bug Fixes
+
+* Refactor CoCreate.config.js to remove hard-coded credentials ([73a4cf2](https://github.com/CoCreate-app/CoCreateJS/commit/73a4cf2a6878b91145023a08d883d8e8c345d6de))
+
+
+### Features
+
+* Update automated.yml for CoCreate-docs with new environment variables ([618a1cc](https://github.com/CoCreate-app/CoCreateJS/commit/618a1ccc61a19d7583d97f0057ded67811d779b1))
+
 ## [1.56.11](https://github.com/CoCreate-app/CoCreateJS/compare/v1.56.10...v1.56.11) (2023-06-04)
 
 
