@@ -85,18 +85,42 @@ jobs:
                   acl: public-read
                   invalidations: true
 
-    docs:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v3
-            - name: setup nodejs
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 16
-            - name: update documentation
-              uses: CoCreate-app/CoCreate-docs@master
-              env:
-                organization_id: ${{ secrets.COCREATE_ORGANIZATION_ID }}
-                key: ${{ secrets.COCREATE_KEY }}
-                host: ${{ secrets.COCREATE_HOST }}
+    upload:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+
+        - name: Setup Node.js
+          uses: actions/setup-node@v3
+          with:
+            node-version: 16
+
+        - name: Get Environment Variables
+          run: |
+            echo "organization_id=${{ secrets.COCREATE_ORGANIZATION_ID }}" >> $GITHUB_ENV
+            echo "key=${{ secrets.COCREATE_KEY }}" >> $GITHUB_ENV
+            echo "host=${{ secrets.COCREATE_HOST }}" >> $GITHUB_ENV
+
+        - name: Install @cocreate/cli
+          run: npm install -g @cocreate/cli
+
+        - name: CoCreate CLI Upload
+          run: coc upload
+
+    # docs:
+    #     runs-on: ubuntu-latest
+    #     steps:
+    #         - name: Checkout
+    #           uses: actions/checkout@v3
+    #         - name: setup nodejs
+    #           uses: actions/setup-node@v3
+    #           with:
+    #               node-version: 16
+    #         - name: update documentation
+    #           uses: CoCreate-app/CoCreate-docs@master
+    #           env:
+    #             organization_id: ${{ secrets.COCREATE_ORGANIZATION_ID }}
+    #             key: ${{ secrets.COCREATE_KEY }}
+    #             host: ${{ secrets.COCREATE_HOST }}
