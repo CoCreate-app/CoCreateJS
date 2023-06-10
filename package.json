@@ -27,7 +27,6 @@
     "start": "npx webpack --config webpack.config.js ",
     "build": "NODE_ENV=production npx webpack --config webpack.config.js",
     "dev": "npx webpack --config webpack.config.js --watch",
-    "docs": "node ./node_modules/@cocreate/docs/src/index.js",
     "postinstall": "node ./node_modules/@cocreate/cli/check-coc.js",
     "dist": "node --version"
   },
@@ -82,7 +81,6 @@
     "@cocreate/css-parser": "^1.7.15",
     "@cocreate/cursors": "^1.16.15",
     "@cocreate/dnd": "^0.24.15",
-    "@cocreate/docs": "^1.8.13",
     "@cocreate/domain": "^1.6.15",
     "@cocreate/element-config": "^1.5.14",
     "@cocreate/element-prototype": "^1.8.16",
