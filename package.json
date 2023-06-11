@@ -27,7 +27,7 @@
     "start": "npx webpack --config webpack.config.js ",
     "build": "NODE_ENV=production npx webpack --config webpack.config.js",
     "dev": "npx webpack --config webpack.config.js --watch",
-    "postinstall": "node $PWD/node_modules/@cocreate/cli/check-coc.js",
+    "postinstall": "node -e \"const { execSync } = require('child_process'); try { execSync('coc --version', { stdio: 'ignore' }); } catch (error) { try { execSync('npm install -g @cocreate/cli', { stdio: 'inherit' }); console.log('Installed \"@cocreate/cli\" globally.'); } catch (error) { console.error('Failed to install \"@cocreate/cli\" globally:', error); } }\"",
     "dist": "node --version"
   },
   "repository": {
