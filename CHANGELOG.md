@@ -1,3 +1,10 @@
+## [1.57.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.57.3...v1.57.4) (2023-06-11)
+
+
+### Bug Fixes
+
+* @cocreate/cli moved to dependencies ([bb78f4a](https://github.com/CoCreate-app/CoCreateJS/commit/bb78f4a66447f373d259edfa6aabd74425944733))
+
 ## [1.57.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.57.2...v1.57.3) (2023-06-11)
 
 
