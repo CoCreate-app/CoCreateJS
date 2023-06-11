@@ -1,3 +1,10 @@
+## [1.57.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.57.1...v1.57.2) (2023-06-11)
+
+
+### Bug Fixes
+
+* renamed hosts to host. the value can be a string or an array of strings ([cf4fe82](https://github.com/CoCreate-app/CoCreateJS/commit/cf4fe825cef9d3c3c2c451483aba81cdc0f3fe78))
+
 ## [1.57.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.57.0...v1.57.1) (2023-06-10)
 
 
