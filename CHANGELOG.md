@@ -1,3 +1,10 @@
+## [1.57.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.57.4...v1.57.5) (2023-06-11)
+
+
+### Bug Fixes
+
+* postintall error ([b155b5f](https://github.com/CoCreate-app/CoCreateJS/commit/b155b5f22ef48c617fc6860ee469f5d83ab1e409))
+
 ## [1.57.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.57.3...v1.57.4) (2023-06-11)
 
 
