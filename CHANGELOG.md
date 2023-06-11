@@ -1,3 +1,10 @@
+## [1.57.7](https://github.com/CoCreate-app/CoCreateJS/compare/v1.57.6...v1.57.7) (2023-06-11)
+
+
+### Bug Fixes
+
+* testing workflow ([ec518b4](https://github.com/CoCreate-app/CoCreateJS/commit/ec518b4ad9bead0e277194213375395a748452a0))
+
 ## [1.57.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.57.5...v1.57.6) (2023-06-11)
 
 
