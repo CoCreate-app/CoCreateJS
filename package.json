@@ -27,7 +27,7 @@
     "start": "npx webpack --config webpack.config.js ",
     "build": "NODE_ENV=production npx webpack --config webpack.config.js",
     "dev": "npx webpack --config webpack.config.js --watch",
-    "postinstall": "node -e 'const fs = require(\"fs\"); const path = require(\"path\"); if (fs.existsSync(path.resolve(__dirname, \"node_modules/@cocreate/cli/check-coc.js\"))) { require(\"./node_modules/@cocreate/cli/check-coc.js\"); }'",
+    "postinstall": "node $PWD/node_modules/@cocreate/cli/check-coc.js",
     "dist": "node --version"
   },
   "repository": {
