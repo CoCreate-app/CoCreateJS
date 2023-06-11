@@ -48,7 +48,6 @@
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
-    "@cocreate/cli": "^1.33.0",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.2.6",
@@ -71,6 +70,7 @@
     "@cocreate/attributes": "^1.7.16",
     "@cocreate/calculation": "^1.7.18",
     "@cocreate/charts": "^1.6.16",
+    "@cocreate/cli": "^1.33.0",
     "@cocreate/clone": "^1.4.18",
     "@cocreate/cocreatecss": "^1.12.21",
     "@cocreate/codearea": "^1.4.18",
