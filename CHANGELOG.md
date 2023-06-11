@@ -1,3 +1,10 @@
+## [1.57.6](https://github.com/CoCreate-app/CoCreateJS/compare/v1.57.5...v1.57.6) (2023-06-11)
+
+
+### Bug Fixes
+
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([a309af5](https://github.com/CoCreate-app/CoCreateJS/commit/a309af5817db882e90ca6be38e3deafd3bad2c3d))
+
 ## [1.57.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.57.4...v1.57.5) (2023-06-11)
 
 
