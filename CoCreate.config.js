@@ -108,6 +108,10 @@ module.exports = {
             'repo': 'github.com/CoCreate-app/CoCreate-conditional-logic.git'
         },
         {
+            'path': '../CoCreate-components/CoCreate-config',
+            'repo': 'github.com/CoCreate-app/CoCreate-config.git'
+        },
+        {
             'path': '../CoCreate-components/CoCreate-crdt',
             'repo': 'github.com/CoCreate-app/CoCreate-crdt.git',
         },
