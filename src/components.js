@@ -29,6 +29,7 @@ lazyLoad('form', 'form', () => import(/*webpackChunkName: "form-chunk"*/ '@cocre
 lazyLoad('elements', '[collection]', () => import(/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
 lazyLoad('fetch', '[fetch-db], [fetch-database], [fetch-collection], [fetch-index], [fetch-document], [fetch-name]', () => import(/*webpackChunkName: "fetch-chunk"*/ '@cocreate/fetch'));
 lazyLoad('render', '[template_id]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
+lazyLoad('file', '[type="file"]', () => import(/*webpackChunkName: "file-chunk"*/ '@cocreate/file'));
 lazyLoad('api', '[actions], [template_id]', () => import(/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 lazyLoad('resizeObserver', '[resize-target]', () => import(/*webpackChunkName: "resizeObserver-chunk"*/ '@cocreate/resize-observer'));
 lazyLoad('dnd', '[sortable], [cloneables], [draggable], [droppable], [cloneable]', () => import(/*webpackChunkName: "dnd-chunk"*/ '@cocreate/dnd'));
