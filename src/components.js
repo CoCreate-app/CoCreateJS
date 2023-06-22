@@ -1,4 +1,4 @@
-import { lazyLoad, dependency } from '@cocreate/lazy-loader';
+import { dependency, lazyLoad } from '@cocreate/lazy-loader';
 // preload - /*..., webpackPreload: true*/ downloads with main chunk but does not execute until main chunk complete. Priority using 1, -1 true=0
 // prefetched - /*..., webpackPrefetch: true*/ downloads after main chunk is complete and in idle mode. If no longer idle will pause then resume when not idle. Priority using 1, -1 true=0
 
@@ -18,14 +18,12 @@ dependency('filter', import(/*webpackChunkName: "filter-chunk"*/ '@cocreate/filt
 dependency('link', import(/*webpackChunkName: "link-chunk"*/ '@cocreate/link'));
 dependency('pwa', import(/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));
 
-
 // Components
 // lazyLoad('css', 'cocreatecss', ()=> import (/*webpackChunkName: "CoCreateCSS"*/ '@cocreate/cocreatecss'));
 lazyLoad('cssParser', 'link[collection][document_id][name], link[parse="true"]', () => import(/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
 lazyLoad('renderJson', '[fetch-for]', () => import(/*webpackChunkName: "render-json-chunk"*/ '@cocreate/render-json'));
 lazyLoad('actions', '[actions]', () => import(/*webpackChunkName: "actions-chunk"*/ '@cocreate/actions'));
 lazyLoad('form', 'form', () => import(/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
-// lazyLoad('events', '[input-target], [toggle], [click], [hover], [input], [toggle-value], [click-value], [hover-value], [input-value], [selected-value], [event-name]', ()=> import (/*webpackChunkName: "events-chunk"*/ '@cocreate/events'));
 lazyLoad('elements', '[collection]', () => import(/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
 lazyLoad('fetch', '[fetch-db], [fetch-database], [fetch-collection], [fetch-index], [fetch-document], [fetch-name]', () => import(/*webpackChunkName: "fetch-chunk"*/ '@cocreate/fetch'));
 lazyLoad('render', '[template_id]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
@@ -90,4 +88,3 @@ lazyLoad('prism', '.language-html, .language-css, .language-js, .language-shell,
 // lazyLoad('stripe', '[stripe]', ()=> import (/*webpackChunkName: "stripe-chunk"*/ '@cocreate/stripe'));
 // // lazyLoad('twilio', '[twilio]', ()=> import (/*webpackChunkName: "twilio-chunk"*/ '@cocreate/twilio'));
 // lazyLoad('twitter', '[twitter]', ()=> import (/*webpackChunkName: "twitter-chunk"*/ '@cocreate/twitter'));
-// lazyLoad('uppy', '.uppy, [uploader="uppy"]', ()=> import (/*webpackChunkName: "uppy-chunk"*/ '@cocreate/uppy'));
