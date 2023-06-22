@@ -29,7 +29,7 @@ lazyLoad('fetch', '[fetch-db], [fetch-database], [fetch-collection], [fetch-inde
 lazyLoad('render', '[template_id]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
 lazyLoad('file', '[type="file"]', () => import(/*webpackChunkName: "file-chunk"*/ '@cocreate/file'));
 lazyLoad('api', '[actions], [template_id]', () => import(/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
-lazyLoad('resizeObserver', '[resize-target]', () => import(/*webpackChunkName: "resizeObserver-chunk"*/ '@cocreate/resize-observer'));
+lazyLoad('resizeObserver', '[resize-selector]', () => import(/*webpackChunkName: "resizeObserver-chunk"*/ '@cocreate/resize-observer'));
 lazyLoad('dnd', '[sortable], [cloneables], [draggable], [droppable], [cloneable]', () => import(/*webpackChunkName: "dnd-chunk"*/ '@cocreate/dnd'));
 lazyLoad('position', '[positionable], [moveable]', () => import(/*webpackChunkName: "position-chunk"*/ '@cocreate/position'));
 lazyLoad('conditionalLogic', '[show], [hide]', () => import(/*webpackChunkName: "conditionalLogic-chunk"*/ '@cocreate/conditional-logic'));
@@ -44,7 +44,7 @@ lazyLoad('organizations', '[actions*="createOrganization"]', () => import(/*webp
 lazyLoad('industry', '[actions*="createIndustry"], [actions*="runIndustry"], [actions*="deleteIndustry"], [actions*="deleteIndustries"]', () => import(/*webpackChunkName: "industry-chunk"*/ '@cocreate/industry'));
 lazyLoad('uuid', '[uuid]', () => import(/*webpackChunkName: "uuid-chunk"*/ '@cocreate/uuid'));
 lazyLoad('search', '[search_id]', () => import(/*webpackChunkName: "search-chunk"*/ '@cocreate/search'));
-lazyLoad('elementConfig', '[config-target]', () => import(/*webpackChunkName: "elementConfig-chunk"*/ '@cocreate/element-config'));
+lazyLoad('elementConfig', '[config-selector]', () => import(/*webpackChunkName: "elementConfig-chunk"*/ '@cocreate/element-config'));
 lazyLoad('validation', '[actions*="validate"], required, unique', () => import(/*webpackChunkName: "validation-chunk"*/ '@cocreate/validation'));
 
 // Collabortion Components
@@ -65,8 +65,8 @@ lazyLoad('randomColor', '[background-color]', () => import(/*webpackChunkName: "
 lazyLoad('signupAnimation', '[actions*="animateSignup"]', () => import(/*webpackChunkName: "signup-animation-chunk"*/ '@cocreate/signup-animation'));
 lazyLoad('socialShare', '[share-network]', () => import(/*webpackChunkName: "social-share-chunk"*/ '@cocreate/social-share'));
 lazyLoad('select', 'cocreate-select', () => import(/*webpackChunkName: "select-chunk"*/ '@cocreate/select'));
-lazyLoad('toolbar', '[toolbar-target]', () => import(/*webpackChunkName: "toolbar-chunk"*/ '@cocreate/toolbar'));
-lazyLoad('vdom', '[vdom-target], [vdom-id]', () => import(/*webpackChunkName: "vdom-chunk"*/ '@cocreate/vdom'));
+lazyLoad('toolbar', '[toolbar-selector]', () => import(/*webpackChunkName: "toolbar-chunk"*/ '@cocreate/toolbar'));
+lazyLoad('vdom', '[vdom-selector], [vdom-id]', () => import(/*webpackChunkName: "vdom-chunk"*/ '@cocreate/vdom'));
 
 // Plugins
 // lazyLoad('charts', '[chart="chartjs"]', ()=> import (/*webpackChunkName: "charts-chunk"*/ '@cocreate/charts'));
