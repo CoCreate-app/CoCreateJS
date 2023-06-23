@@ -26,7 +26,7 @@ lazyLoad('actions', '[actions]', () => import(/*webpackChunkName: "actions-chunk
 lazyLoad('form', 'form', () => import(/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
 lazyLoad('elements', '[collection]', () => import(/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
 lazyLoad('fetch', '[fetch-db], [fetch-database], [fetch-collection], [fetch-index], [fetch-document], [fetch-name]', () => import(/*webpackChunkName: "fetch-chunk"*/ '@cocreate/fetch'));
-lazyLoad('render', '[template_id]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
+lazyLoad('render', '[template_id], [render]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
 lazyLoad('file', '[type="file"]', () => import(/*webpackChunkName: "file-chunk"*/ '@cocreate/file'));
 lazyLoad('api', '[actions], [template_id]', () => import(/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 lazyLoad('resizeObserver', '[resize-selector]', () => import(/*webpackChunkName: "resizeObserver-chunk"*/ '@cocreate/resize-observer'));
