@@ -154,10 +154,6 @@ module.exports = {
             "repo": "github.com/CoCreate-app/CoCreate-events.git"
         },
         {
-            "path": "../CoCreate-components/CoCreate-fetch",
-            "repo": "github.com/CoCreate-app/CoCreate-fetch.git"
-        },
-        {
             "path": "../CoCreate-components/CoCreate-file",
             "repo": "github.com/CoCreate-app/CoCreate-file.git"
         },

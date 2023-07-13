@@ -14,7 +14,6 @@ dependency('crdt', import(/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
 dependency('message', import(/*webpackChunkName: "message-chunk"*/ '@cocreate/message-client'));
 dependency('element-prototype', import(/*webpackChunkName: "element-prototype-chunk"*/ '@cocreate/element-prototype'));
 dependency('pass', import(/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'));
-dependency('filter', import(/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 dependency('link', import(/*webpackChunkName: "link-chunk"*/ '@cocreate/link'));
 dependency('pwa', import(/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));
 
@@ -24,9 +23,9 @@ lazyLoad('cssParser', 'link[collection][document_id][name], link[parse="true"]',
 lazyLoad('renderJson', '[fetch-for]', () => import(/*webpackChunkName: "render-json-chunk"*/ '@cocreate/render-json'));
 lazyLoad('actions', '[actions]', () => import(/*webpackChunkName: "actions-chunk"*/ '@cocreate/actions'));
 lazyLoad('form', 'form', () => import(/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
-lazyLoad('elements', '[collection]', () => import(/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
-lazyLoad('fetch', '[fetch-db], [fetch-database], [fetch-collection], [fetch-index], [fetch-document], [fetch-name]', () => import(/*webpackChunkName: "fetch-chunk"*/ '@cocreate/fetch'));
-lazyLoad('render', '[template_id], [render]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
+lazyLoad('filter', '[filter-selector]', () => import(/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
+lazyLoad('render', '[render-selector]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
+lazyLoad('elements', '[storage], [database], [collection]', () => import(/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
 lazyLoad('file', '[type="file"]', () => import(/*webpackChunkName: "file-chunk"*/ '@cocreate/file'));
 lazyLoad('api', '[actions], [template_id]', () => import(/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 lazyLoad('resizeObserver', '[resize-selector]', () => import(/*webpackChunkName: "resizeObserver-chunk"*/ '@cocreate/resize-observer'));
@@ -70,7 +69,6 @@ lazyLoad('vdom', '[vdom-selector], [vdom-id]', () => import(/*webpackChunkName: 
 
 // Plugins
 // lazyLoad('charts', '[chart="chartjs"]', ()=> import (/*webpackChunkName: "charts-chunk"*/ '@cocreate/charts'));
-// lazyLoad('croppie', '[editor="croppie"]', ()=> import (/*webpackChunkName: "croppie-chunk"*/ '@cocreate/croppie'));
 // lazyLoad('domain', '[domain]', ()=> import (/*webpackChunkName: "domain-chunk"*/ '@cocreate/domain'));
 // lazyLoad('facebook', '[facebook]', ()=> import (/*webpackChunkName: "facebook-chunk"*/ '@cocreate/facebook'));
 // lazyLoad('fullcalendar', '.cal-container', ()=> import (/*webpackChunkName: "fullcalendar-chunk"*/ '@cocreate/fullcalendar'));

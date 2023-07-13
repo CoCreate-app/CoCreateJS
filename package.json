@@ -85,7 +85,6 @@
     "@cocreate/element-prototype": "^1.8.30",
     "@cocreate/elements": "^1.17.33",
     "@cocreate/events": "^1.10.20",
-    "@cocreate/fetch": "^1.23.29",
     "@cocreate/file": "^1.3.10",
     "@cocreate/filter": "^1.19.30",
     "@cocreate/floating-label": "^1.7.21",
