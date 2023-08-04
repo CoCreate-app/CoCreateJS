@@ -8,8 +8,8 @@ module.exports = {
             "exclude": [
                 "demo"
             ],
-            "collection": "files",
-            "document": {
+            "array": "files",
+            "object": {
                 "name": "{{name}}",
                 "src": "{{source}}",
                 "host": [
@@ -26,8 +26,8 @@ module.exports = {
     ],
     "sources": [
         {
-            "collection": "demos",
-            "document": {
+            "array": "demos",
+            "object": {
                 "_id": "619aa8e8a8b6b4001a9dc24e",
                 "input-demo": "{{./demo/elements/input.html}}",
                 "textarea-demo": "{{./demo/elements/textarea.html}}",
