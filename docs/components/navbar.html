@@ -118,9 +118,9 @@
         <div class="avatar-wrapper margin-right:10px">
             <a class="avatar round" href="/admin/signin.html">
                 <span
-                    collection="users"
-                    document_id="{{userId}}"
-                    name="name"
+                    array="users"
+                    object="{{userId}}"
+                    key="name"
                     class="avatar-name">
                     <i
                         class="height:20px fill:#505050"
@@ -128,17 +128,17 @@
                 </span>
                 <span class="avatar-image">
                     <img
-                        collection="users"
-                        document_id="{{userId}}"
-                        name="avatar"
+                        array="users"
+                        object="{{userId}}"
+                        key="avatar"
                         onerror="this.style.display='none'"
                         width="40px" />
                 </span>
             </a>
             <div
                 class="avatar-status"
-                collection="users"
-                document_id="{{userId}}"
+                array="users"
+                object="{{userId}}"
                 user-status="{'name':'status'}"></div>
         </div>
     </div>

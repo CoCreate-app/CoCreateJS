@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>CoCreateJS - Collaborative Html elements</title>
         <meta
-            name="description"
+            key="description"
             content="A codeless Javascript framework for building collaborative no code platforms, apps and UI" />
         <link
             rel="icon"
@@ -19,9 +19,9 @@
         <link
             rel="stylesheet"
             href="/docs/index.css"
-            collection="files"
-            document_id="60888216117c640e7596303f"
-            name="src"
+            array="files"
+            object="60888216117c640e7596303f"
+            key="src"
             type="text/css" />
 
         <!-- Google tag (gtag.js) -->
@@ -53,9 +53,9 @@
             scroll="sticky-nav,hide-nav"
             scroll-up="10"
             scroll-down="10"
-            collection="files"
-            document_id="60395ef42b3ac232657040fd"
-            name="src"></nav>
+            array="files"
+            object="60395ef42b3ac232657040fd"
+            key="src"></nav>
         <sidenav
             id="menuL"
             class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl"
@@ -64,9 +64,9 @@
             resize-property="margin-left"
             resize-value="width">
             <menu
-                collection="files"
-                document_id="603717b07de7fb350ae9fec8"
-                name="src"></menu>
+                array="files"
+                object="603717b07de7fb350ae9fec8"
+                key="src"></menu>
             <div resize="right"></div>
         </sidenav>
 
@@ -160,26 +160,25 @@
                             Collaborative Elements
                         </h2>
                         <p class="padding:10px_0px line-height:1.5">
-                            Simply define a collection, document_id and name. If
-                            the collection contains the document and the
-                            document contains the field name. Viola! The value
-                            is fetched in the input. Like wise, typing in the
-                            input will save the value. If the collection did not
-                            exist previously it will be created. If the
-                            document_id is left empty, typing in the input will
-                            create a new document_id.
+                            Simply define a array, object and name. If the array
+                            contains the document and the document contains the
+                            field name. Viola! The value is fetched in the
+                            input. Like wise, typing in the input will save the
+                            value. If the array did not exist previously it will
+                            be created. If the object is left empty, typing in
+                            the input will create a new object.
                         </p>
-                        <pre><code class="language-html">&lt;input collection="contacts" document_id="" name="name"&gt;</code></pre>
+                        <pre><code class="language-html">&lt;input array="contacts" object="" key="name"&gt;</code></pre>
                         <p class="padding:10px_0px line-height:1.5">
-                            The attributes collection, document_id and name are
-                            at the center of the CoCreate universe, we take a
-                            data first aproach. By defining these 3 attributes
-                            you can save and fetch data from any input,
-                            textarea, select and thier various types. All other
-                            elements like h1, h2, span, etc will only fetch if
-                            the contenteditable attribute is applied.
+                            The attributes array, object and name are at the
+                            center of the CoCreate universe, we take a data
+                            first aproach. By defining these 3 attributes you
+                            can save and fetch data from any input, textarea,
+                            select and thier various types. All other elements
+                            like h1, h2, span, etc will only fetch if the
+                            contenteditable attribute is applied.
                         </p>
-                        <pre><code class="language-html">&lt;h1 collection="contacts" document_id="" name="name" contenteditable&gt;&lt;/h1&gt;</code></pre>
+                        <pre><code class="language-html">&lt;h1 array="contacts" object="" key="name" contenteditable&gt;&lt;/h1&gt;</code></pre>
                         <p class="padding:10px_0px line-height:1.5">
                             CoCreateJS by default is collaborative. To turn
                             collaboration off for an element, apply attribute
@@ -195,7 +194,7 @@
                         scroll-selector="#input-item">
                         <h3 class="padding-top:20px">Input</h3>
                         <!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-                        <!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
+                        <!--<pre><code class="language-html">&lt;textarea array="" object="" key="name"&gt;&lt;/textarea&gt;</code></pre>-->
 
                         <!-- SandBox -->
                         <div
@@ -208,9 +207,9 @@
                                 <textarea
                                     type="code"
                                     lang="html"
-                                    collection="demos"
-                                    document_id="619aa8e8a8b6b4001a9dc24e"
-                                    name="input-demo"
+                                    array="demos"
+                                    object="619aa8e8a8b6b4001a9dc24e"
+                                    key="input-demo"
                                     save="false"
                                     id="input-demo"
                                     input-selector=".input-demo"
@@ -288,7 +287,7 @@
                         scroll-selector="#textarea-item">
                         <h3 class="padding-top:20px">Textarea</h3>
                         <!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-                        <!--<pre><code class="language-html">&lt;textarea collection="" document_id="" name="name"&gt;&lt;/textarea&gt;</code></pre>-->
+                        <!--<pre><code class="language-html">&lt;textarea array="" object="" key="name"&gt;&lt;/textarea&gt;</code></pre>-->
                         <!-- SandBox -->
                         <div
                             class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
@@ -300,9 +299,9 @@
                                 <textarea
                                     type="code"
                                     lang="html"
-                                    collection="demos"
-                                    document_id="619aa8e8a8b6b4001a9dc24e"
-                                    name="textarea-demo"
+                                    array="demos"
+                                    object="619aa8e8a8b6b4001a9dc24e"
+                                    key="textarea-demo"
                                     save="false"
                                     id="textarea-demo"
                                     input-selector=".textarea-demo"
@@ -385,7 +384,7 @@
                             converts contenteditable elements to collaborative
                             rich text editors or a website builder.
                         </p>
-                        <pre><code class="language-html">&lt;h1 type="text" collection="contacts" document_id="" name="name"&gt;&lt;/h1&gt;</code></pre>
+                        <pre><code class="language-html">&lt;h1 type="text" array="contacts" object="" key="name"&gt;&lt;/h1&gt;</code></pre>
 
                         <!-- SandBox -->
                         <div
@@ -398,9 +397,9 @@
                                 <textarea
                                     type="code"
                                     lang="html"
-                                    collection="demos"
-                                    document_id="619aa8e8a8b6b4001a9dc24e"
-                                    name="contenteditable-demo"
+                                    array="demos"
+                                    object="619aa8e8a8b6b4001a9dc24e"
+                                    key="contenteditable-demo"
                                     save="false"
                                     id="contenteditable-demo"
                                     input-selector=".contenteditable-demo"
@@ -480,7 +479,7 @@
                         scroll-selector="#radio-item">
                         <h3 class="padding-top:20px">Radio</h3>
                         <!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-                        <!--<pre><code class="language-html">&lt;input type="text" collection="contacts" document_id="" name="name"&gt;</code></pre>-->
+                        <!--<pre><code class="language-html">&lt;input type="text" array="contacts" object="" key="name"&gt;</code></pre>-->
 
                         <!-- SandBox -->
                         <div
@@ -493,9 +492,9 @@
                                 <textarea
                                     type="code"
                                     lang="html"
-                                    collection="demos"
-                                    document_id="619aa8e8a8b6b4001a9dc24e"
-                                    name="radio-demo"
+                                    array="demos"
+                                    object="619aa8e8a8b6b4001a9dc24e"
+                                    key="radio-demo"
                                     save="false"
                                     id="radio-demo"
                                     input-selector=".radio-demo"
@@ -573,7 +572,7 @@
                         scroll-selector="#checkbox-item">
                         <h3 class="padding-top:20px">Checkbox</h3>
                         <!--<p class="padding:10px_0px line-height:1.5">Now that you have the form tag in place lets add some new inputs or update your current inputs connecting them to the CoCreateJS.</p>-->
-                        <!--<pre><code class="language-html">&lt;input type="checkbox" collection="contacts" document_id="" name="name"&gt;</code></pre>-->
+                        <!--<pre><code class="language-html">&lt;input type="checkbox" array="contacts" object="" key="name"&gt;</code></pre>-->
 
                         <!-- SandBox -->
                         <div
@@ -586,9 +585,9 @@
                                 <textarea
                                     type="code"
                                     lang="html"
-                                    collection="demos"
-                                    document_id="619aa8e8a8b6b4001a9dc24e"
-                                    name="checkbox-demo"
+                                    array="demos"
+                                    object="619aa8e8a8b6b4001a9dc24e"
+                                    key="checkbox-demo"
                                     save="false"
                                     id="checkbox-demo"
                                     input-selector=".checkbox-demo"
@@ -678,9 +677,9 @@
                                 <textarea
                                     type="code"
                                     lang="html"
-                                    collection="demos"
-                                    document_id="619aa8e8a8b6b4001a9dc24e"
-                                    name="select-demo"
+                                    array="demos"
+                                    object="619aa8e8a8b6b4001a9dc24e"
+                                    key="select-demo"
                                     save="false"
                                     id="select-demo"
                                     input-selector=".select-demo"
@@ -776,9 +775,9 @@
                                 <textarea
                                     type="code"
                                     lang="html"
-                                    collection="demos"
-                                    document_id="619aa8e8a8b6b4001a9dc24e"
-                                    name="form-demo"
+                                    array="demos"
+                                    object="619aa8e8a8b6b4001a9dc24e"
+                                    key="form-demo"
                                     save="false"
                                     id="form-demo"
                                     input-selector=".form-demo"
@@ -873,12 +872,11 @@
                         <p class="padding:10px_0px line-height:1.5">
                             Applying and clicking this action will save the
                             value of the elements in a form to their respective
-                            collection, document_id and name. If a element does
-                            not have a document_id defined a document_id will be
-                            generated and applied to all other elements with the
-                            same collection defined and do not have a
-                            document_id. Existing document_id are never
-                            overwriten.
+                            array, object and name. If a element does not have a
+                            object defined a object will be generated and
+                            applied to all other elements with the same array
+                            defined and do not have a object. Existing object
+                            are never overwriten.
                         </p>
 
                         <!-- SandBox -->
@@ -892,9 +890,9 @@
                                 <textarea
                                     type="code"
                                     lang="html"
-                                    collection="demos"
-                                    document_id="619aa8e8a8b6b4001a9dc24e"
-                                    name="actions-demo"
+                                    array="demos"
+                                    object="619aa8e8a8b6b4001a9dc24e"
+                                    key="actions-demo"
                                     save="false"
                                     id="actions-demo"
                                     input-selector=".actions-demo"
@@ -978,7 +976,7 @@
                         <li
                             class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                             <h4>
-                                <span>collection</span>
+                                <span>array</span>
                                 <span class="cocreate-badge success"
                                     >string</span
                                 >
@@ -987,14 +985,14 @@
                                 >
                             </h4>
                             <p>
-                                Defines a collection name where your documents
-                                will be stored. sql equivalent is a table.
+                                Defines a array name where your documents will
+                                be stored. sql equivalent is a table.
                             </p>
                         </li>
                         <li
                             class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                             <h4>
-                                <span>document_id</span>
+                                <span>object</span>
                                 <span class="cocreate-badge success"
                                     >string</span
                                 >

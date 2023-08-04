@@ -1,35 +1,36 @@
-
+<!DOCTYPE html>
 <form realtime="false">
-	<input type="email"
-		collection="users" 
-		document_id 
-		name='email' 
-		placeholder="Email" 
-		class="floating-label"
-		unique 
-		required>
+    <input
+        type="email"
+        array="users"
+        object
+        key="email"
+        placeholder="Email"
+        class="floating-label"
+        unique
+        required />
 
-	<input type="password" id="password"
-		collection="users"
-		document_id=""
-		name="password" 
-		placeholder="Password" 
-		class="floating-label">
+    <input
+        type="password"
+        id="password"
+        array="users"
+        object=""
+        key="password"
+        placeholder="Password"
+        class="floating-label" />
 
-	<input type="password"
-		matches="#password" 
-		placeholder="Confirm Password" 
-		class="floating-label">
-		
-	<button type="button" actions="validate, signUp" href="">
-		Sign Up
-	</button>
-				
+    <input
+        type="password"
+        matches="#password"
+        placeholder="Confirm Password"
+        class="floating-label" />
+
+    <button type="button" actions="validate, signUp" href="">Sign Up</button>
 </form>
 
-<div template="signUp" class="card margin:5px padding:10px {{status}}">
-	<span class="{{type}}">{{message}}</span><a actions="remove"> X</a>
+<div template>
+    <span class="{{type}}">{{message}}</span><a actions="remove"> X</a>
 </div>
-<div template="notification" class="card margin:5px padding:10px {{status}}">
-	<span class="{{type}}">{{message}}</span><a actions="remove"> X</a>
+<div template>
+    <span class="{{type}}">{{message}}</span><a actions="remove"> X</a>
 </div>

@@ -1,14 +1,20 @@
+<!DOCTYPE html>
+<form array="users" realtime="false">
+    <input
+        type="email"
+        key="email"
+        placeholder="Email"
+        class="floating-label" />
 
-<form collection="users" realtime="false">
+    <input
+        type="password"
+        key="password"
+        placeholder="Password"
+        class="floating-label" />
 
-	<input type="email" name='email' placeholder="Email" class="floating-label">
-
-	<input type="password" name='password' placeholder="Password" class="floating-label">
-		
-	<button actions="signIn" href="">Sign In</button>
-	
+    <button actions="signIn" href="">Sign In</button>
 </form>
 
-<div template="signIn" class="card margin:5px padding:10px {{status}}">
-	<span class="{{type}}">{{message}}</span><a actions="remove"> X</a>
+<div template>
+    <span class="{{type}}">{{message}}</span><a actions="remove"> X</a>
 </div>

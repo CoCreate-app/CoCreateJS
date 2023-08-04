@@ -1,7 +1,7 @@
-
-<div fetch-collection="contacts" template_id="temp1">
-	<div template="temp1" class="card">
-		<h4>{{document.name}}</h4>
-		<h4>{{document._id}}</h4>
-	</div>
+<!DOCTYPE html>
+<div array="contacts" render-selector="[template]">
+    <div template>
+        <h4>{{object.name}}</h4>
+        <h4>{{object._id}}</h4>
+    </div>
 </div>

@@ -11,10 +11,10 @@
             sizes="32x32"
             href="https://cocreate.app/images/favicon.ico" />
         <meta
-            name="description"
+            key="description"
             content="Utility first css framework, design faster and improve on your css by using native inline styles as classes. No learning curve, use what you already know" />
         <meta
-            name="keywords"
+            key="keywords"
             content="helper classes, utility classes, css framework, css library, inline style classes" />
         <meta name="robots" content="index,follow" />
         <meta
@@ -26,9 +26,9 @@
         <link
             rel="stylesheet"
             href="/docs/index.css"
-            collection="files"
-            document_id="60888216117c640e7596303f"
-            name="src"
+            array="files"
+            object="60888216117c640e7596303f"
+            key="src"
             type="text/css"
             save="true" />
         <link rel="manifest" href="/manifest.webmanifest" />
@@ -41,9 +41,9 @@
             scroll="sticky-nav,hide-nav"
             scroll-up="10"
             scroll-down="10"
-            collection="files"
-            document_id="60395ef42b3ac232657040fd"
-            name="src"></nav>
+            array="files"
+            object="60395ef42b3ac232657040fd"
+            key="src"></nav>
         <sidenav
             id="menuL"
             class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl"
@@ -52,9 +52,9 @@
             resize-property="margin-left"
             resize-value="width">
             <menu
-                collection="files"
-                document_id="603717b07de7fb350ae9fec8"
-                name="src"></menu>
+                array="files"
+                object="603717b07de7fb350ae9fec8"
+                key="src"></menu>
             <div resize="right"></div>
         </sidenav>
         <main
@@ -128,9 +128,9 @@
                 application.
             </p>
             <div
-                collection=""
-                document_id=""
-                name=""
+                array=""
+                object=""
+                key=""
                 id="crud_objects"
                 class="padding:35px_0px">
                 <h1>CRUD Objects</h1>
@@ -205,7 +205,7 @@
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>collection</span>
+                                    <span>array</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -213,7 +213,7 @@
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -259,7 +259,7 @@
                         <pre>
   <code class="language-js">
   crud.createDocument({
-    collection: "string",
+    array: "string",
     document: {
       name1: "hello"
       name2: "hello1"
@@ -299,7 +299,7 @@
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>collection</span>
+                                    <span>array</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -307,12 +307,12 @@
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>document_id</span>
+                                    <span>object</span>
                                     <span class="cocreate-badge success"
                                         >_id</span
                                     >
@@ -320,7 +320,7 @@
                                         >required</span
                                     >
                                 </h4>
-                                <p>document_id to read from</p>
+                                <p>object to read from</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -365,7 +365,7 @@
                         <pre>
   <code class="language-js">
   crud.readDocument({
-    collection: "module",
+    array: "module",
     document : {
 		_id: "",
 		name: ''
@@ -445,7 +445,7 @@
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>collection</span>
+                                    <span>array</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -453,12 +453,12 @@
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>document_id</span>
+                                    <span>object</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -510,9 +510,9 @@
                         <pre>
   <code class="language-js">
   crud.updateDocument({
-    collection: "test123",
+    array: "test123",
     document: {
-	  _id: "document_id",
+	  _id: "object",
       name1: "hello",
       name2:  "hello1"
     },
@@ -593,7 +593,7 @@
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>collection</span>
+                                    <span>array</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -601,12 +601,12 @@
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>document_id</span>
+                                    <span>object</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -614,7 +614,7 @@
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -657,7 +657,7 @@
                         <pre>
   <code class="language-js">
   crud.deleteDocument({
-    collection: "module",
+    array: "module",
     document: {
 		_id: ""
 	}
@@ -696,7 +696,7 @@
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>collection</span>
+                                    <span>array</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -704,7 +704,7 @@
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -986,8 +986,8 @@
                                 </div>
                             </li>
                             <!-- <li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>is_collection</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>If is_collection is true, all collection get (this case, operator is ignored). default value is false </p>
+				        		<h4><span>is_array</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">optional</span></h4>
+			        			<p>If is_array is true, all array get (this case, operator is ignored). default value is false </p>
 							</li> -->
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -1011,7 +1011,7 @@
                         <pre>
   <code class="language-js"> 
   crud.readDcoumentList {
-    collection: "modules",    
+    array: "modules",    
     filter: {
 	    query: [{
 				name: 'field1',
@@ -1045,7 +1045,7 @@
 crud.readDocument({
   "key": "2061acef-0451-4545-f754-60cf8160",
   "organization_id": "5ff747727005da1c272740ab",
-  "collection": "module_activity",
+  "array": "module_activity",
   "metadata": "",
   // TODO: update to new filters
   "filter": {
@@ -1076,9 +1076,9 @@ crud.readDocument({
                 </div>
             </div>
             <div
-                collection=""
-                document_id=""
-                name=""
+                array=""
+                object=""
+                key=""
                 id="crdt-objects"
                 class="padding:35px_0px">
                 <h1>CRDT Objects</h1>
@@ -1153,7 +1153,7 @@ crud.readDocument({
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>collection</span>
+                                    <span>array</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -1161,7 +1161,7 @@ crud.readDocument({
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -1204,8 +1204,8 @@ crud.readDocument({
                         <pre>
   <code class="language-js">
   crdt.init({
-    collection: "module",
-    document_id: "",
+    array: "module",
+    object: "",
     name: ""
   })
   </code>
@@ -1242,7 +1242,7 @@ crud.readDocument({
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>collection</span>
+                                    <span>array</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -1250,7 +1250,7 @@ crud.readDocument({
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -1309,8 +1309,8 @@ crud.readDocument({
                         <pre>
 	<code class="language-js">
   crdt.getText({
-  	collection: 'module_activities',
-  	document_id: '5e4802ce3ed96d38e71fc7e5',
+  	array: 'module_activities',
+  	object: '5e4802ce3ed96d38e71fc7e5',
   	name: 'name'
   })
     </code>
@@ -1347,7 +1347,7 @@ crud.readDocument({
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>collection</span>
+                                    <span>array</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -1355,12 +1355,12 @@ crud.readDocument({
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>document_id</span>
+                                    <span>object</span>
                                     <span class="cocreate-badge success"
                                         >_id</span
                                     >
@@ -1368,7 +1368,7 @@ crud.readDocument({
                                         >required</span
                                     >
                                 </h4>
-                                <p>document_id to insert-crdt from</p>
+                                <p>object to insert-crdt from</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -1465,8 +1465,8 @@ crud.readDocument({
                         <pre>
   <code class="language-js">
   crdt.updateText({
-	collection: 'module_activities',
-	document_id: '5e4802ce3ed96d38e71fc7e5',
+	array: 'module_activities',
+	object: '5e4802ce3ed96d38e71fc7e5',
 	name: 'name',
 	value: 'T',
 	start: 8,
@@ -1518,7 +1518,7 @@ crud.readDocument({
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>collection</span>
+                                    <span>array</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -1526,12 +1526,12 @@ crud.readDocument({
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>document_id</span>
+                                    <span>object</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -1539,7 +1539,7 @@ crud.readDocument({
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -1611,8 +1611,8 @@ crud.readDocument({
                         <pre>
   <code class="language-js">
   crdt.replaceText({
-    collection: "module",
-    document_id: "",
+    array: "module",
+    object: "",
     name: "",
     value: "",
   })
@@ -1621,7 +1621,7 @@ crud.readDocument({
                     </div>
                 </div>
             </div>
-            <!-- <div collection="" document_id="" name="" id="cursor_objects" class="padding:35px_0px">
+            <!-- <div array="" object="" key="" id="cursor_objects" class="padding:35px_0px">
 				<h1>Cursor Objects</h1>
 				<p class="max-width:500px margin-bottom:20px">Send and receive cursor positions</p>
 
@@ -1638,11 +1638,11 @@ crud.readDocument({
 				    <div class="flex-grow:1 width:300px padding:0px_10px">
 			            <ul class="list-style-type:none padding-right:15px">
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>collection</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-			        			<p>collection to save to</p>
+				        		<h4><span>array</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
+			        			<p>array to save to</p>
 							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>document_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
+				        		<h4><span>object</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
 			        			<p>Document _id to save to</p>
 							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -1664,8 +1664,8 @@ crud.readDocument({
 		            	<pre>
   <code class="language-js">
   crdt.sendPosition({
-	collection:"module_activities",
-	document_id:"5e4802ce3ed96d38e71fc7e5",
+	array:"module_activities",
+	object:"5e4802ce3ed96d38e71fc7e5",
 	name:"name",
 	start: 2,
 	end: 2,
@@ -1688,11 +1688,11 @@ crud.readDocument({
 			            <ul class="list-style-type:none padding-right:15px">
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				        		<h4><span>data</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
-			        			<p>collection to save to</p>
+			        			<p>array to save to</p>
 							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>document_id</span> <span class="cocreate-badge success">_id</span> <span class="cocreate-badge danger">required</span></h4>
-			        			<p>document_id to get-cursor from</p>
+				        		<h4><span>object</span> <span class="cocreate-badge success">_id</span> <span class="cocreate-badge danger">required</span></h4>
+			        			<p>object to get-cursor from</p>
 							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				        		<h4><span>data</span> <span class="cocreate-badge success">object</span> <span class="cocreate-badge warning">optional</span></h4>
@@ -1710,7 +1710,7 @@ crud.readDocument({
 				</div>
 
 			</div> -->
-            <!--		<div collection="" document_id="" name="" id="cursor_objects" class="padding:35px_0px">-->
+            <!--		<div array="" object="" key="" id="cursor_objects" class="padding:35px_0px">-->
             <!--			<h1>Component register</h1>-->
             <!--			<p class="max-width:500px margin-bottom:20px">Register your components save function to run with form Btn</p>-->
 
@@ -1726,11 +1726,11 @@ crud.readDocument({
             <!--			    <div class="flex-grow:1 width:300px padding:0px_10px">-->
             <!--		            <ul class="list-style-type:none padding-right:15px">-->
             <!--						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">-->
-            <!--			        		<h4><span>collection</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>-->
-            <!--		        			<p>collection to save to</p>-->
+            <!--			        		<h4><span>array</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>-->
+            <!--		        			<p>array to save to</p>-->
             <!--						</li>-->
             <!--						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">-->
-            <!--			        		<h4><span>document_id</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>-->
+            <!--			        		<h4><span>object</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>-->
             <!--		        			<p>Document _id to save to</p>-->
             <!--						</li>-->
             <!--						<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">-->
@@ -1752,8 +1752,8 @@ crud.readDocument({
             <!--	            	<pre>-->
             <!-- <code class="language-js">-->
             <!-- CoCreate.registerModule({-->
-            <!--collection:"module_activities",-->
-            <!--document_id:"5e4802ce3ed96d38e71fc7e5",-->
+            <!--array:"module_activities",-->
+            <!--object:"5e4802ce3ed96d38e71fc7e5",-->
             <!--name:"name",-->
             <!--startPosition: 2,-->
             <!--endPositon: 2,-->
@@ -1765,9 +1765,9 @@ crud.readDocument({
 
             <!--		</div>-->
             <div
-                collection=""
-                document_id=""
-                name=""
+                array=""
+                object=""
+                key=""
                 id="websocket_objects"
                 class="padding:35px_0px">
                 <h1>WebSocket Objects</h1>
@@ -1803,7 +1803,7 @@ crud.readDocument({
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>collection</span>
+                                    <span>array</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -1811,12 +1811,12 @@ crud.readDocument({
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>document_id</span>
+                                    <span>object</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -1922,7 +1922,7 @@ crud.readDocument({
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>collection</span>
+                                    <span>array</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -1930,12 +1930,12 @@ crud.readDocument({
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>document_id</span>
+                                    <span>object</span>
                                     <span class="cocreate-badge success"
                                         >string</span
                                     >
@@ -2056,12 +2056,12 @@ crud.readDocument({
                                         >required</span
                                     >
                                 </h4>
-                                <p>collection to save to</p>
+                                <p>array to save to</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>document_id</span>
+                                    <span>object</span>
                                     <span class="cocreate-badge success"
                                         >_id</span
                                     >
@@ -2069,7 +2069,7 @@ crud.readDocument({
                                         >required</span
                                     >
                                 </h4>
-                                <p>document_id to get-cursor from</p>
+                                <p>object to get-cursor from</p>
                             </li>
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
