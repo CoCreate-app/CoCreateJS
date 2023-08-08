@@ -218,7 +218,7 @@
                             <li
                                 class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                                 <h4>
-                                    <span>document</span>
+                                    <span>object</span>
                                     <span class="cocreate-badge success"
                                         >array</span
                                     >
@@ -260,7 +260,7 @@
   <code class="language-js">
   crud.createDocument({
     array: "string",
-    document: {
+    object: {
       name1: "hello"
       name2: "hello1"
     }
@@ -335,7 +335,7 @@
                                 </h4>
                                 <p>
                                     names of values to from CMS. If not used
-                                    whole document will be fetched
+                                    whole object will be fetched
                                 </p>
                             </li>
                             <li class="padding:15px_0px">
@@ -366,7 +366,7 @@
   <code class="language-js">
   crud.readDocument({
     array: "module",
-    document : {
+    object : {
 		_id: "",
 		name: ''
 		...
@@ -511,7 +511,7 @@
   <code class="language-js">
   crud.updateDocument({
     array: "test123",
-    document: {
+    object: {
 	  _id: "object",
       name1: "hello",
       name2:  "hello1"
@@ -658,7 +658,7 @@
   <code class="language-js">
   crud.deleteDocument({
     array: "module",
-    document: {
+    object: {
 		_id: ""
 	}
   })
@@ -787,8 +787,7 @@
                                         >
                                     </h4>
                                     <p>
-                                        The operator object for read document
-                                        list
+                                        The operator object for read object list
                                     </p>
                                 </a>
 
@@ -1037,7 +1036,7 @@
     }
 
     -------- response data -----------
-    document: [] // array
+    object: [] // array
     </code>
     
     Example:
