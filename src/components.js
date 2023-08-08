@@ -20,12 +20,10 @@ dependency('pwa', import(/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));
 // Components
 // lazyLoad('css', 'cocreatecss', ()=> import (/*webpackChunkName: "CoCreateCSS"*/ '@cocreate/cocreatecss'));
 lazyLoad('cssParser', 'link[array][object][key], link[parse="true"]', () => import(/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
-lazyLoad('renderJson', '[fetch-for]', () => import(/*webpackChunkName: "render-json-chunk"*/ '@cocreate/render-json'));
 lazyLoad('actions', '[actions]', () => import(/*webpackChunkName: "actions-chunk"*/ '@cocreate/actions'));
-lazyLoad('form', 'form', () => import(/*webpackChunkName: "form-chunk"*/ '@cocreate/form'));
 lazyLoad('filter', '[filter-selector]', () => import(/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 lazyLoad('render', '[render-selector]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
-lazyLoad('elements', '[storage], [database], [array]', () => import(/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
+lazyLoad('elements', 'form,[storage], [database], [array]', () => import(/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
 lazyLoad('file', '[type="file"]', () => import(/*webpackChunkName: "file-chunk"*/ '@cocreate/file'));
 lazyLoad('api', '[actions], [template_id]', () => import(/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 lazyLoad('resizeObserver', '[resize-selector]', () => import(/*webpackChunkName: "resizeObserver-chunk"*/ '@cocreate/resize-observer'));
