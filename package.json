@@ -69,6 +69,7 @@
     "@cocreate/attributes": "^1.8.0",
     "@cocreate/calculation": "^1.8.0",
     "@cocreate/charts": "^1.7.0",
+    "@cocreate/cli": "^1.37.0",
     "@cocreate/clone": "^1.5.0",
     "@cocreate/cocreatecss": "^1.13.0",
     "@cocreate/codearea": "^1.5.0",
