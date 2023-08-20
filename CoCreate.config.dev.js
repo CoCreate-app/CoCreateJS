@@ -13,7 +13,7 @@ module.exports = {
                     "*",
                     "general.cocreate.app"
                 ],
-                "directory": "/latest/{{directory}}",
+                "directory": "/dist/{{directory}}",
                 "path": "{{path}}",
                 "content-type": "{{content-type}}",
                 "public": "true"
