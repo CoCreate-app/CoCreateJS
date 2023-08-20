@@ -35,8 +35,6 @@ module.exports = async (env, argv) => {
             libraryExport: 'default',
             library: 'CoCreate',
             globalObject: "this",
-            ...(isProduction ? { /*publicPath: 'https://cdn.cocreate.app/',*/ } : {}),
-
         },
 
         plugins: [
@@ -63,20 +61,20 @@ module.exports = async (env, argv) => {
         // add source map
         ...(isProduction ? {} : { devtool: 'eval-source-map' }),
 
-        // TODO: this will produce a large chunk file
-        // ...isProduction && {devtool: 'eval-source-map' },
-
         module: {
             rules: [{
                 test: /\.js$/,
-                exclude: /(node_modules)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        plugins: ["@babel/plugin-transform-modules-commonjs"]
-
+                use: [
+                    {
+                        loader: path.resolve(__dirname, 'node_modules/@cocreate/cli/src/loaders/replace-unicode.js')
+                    },
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            plugins: ["@babel/plugin-transform-modules-commonjs"]
+                        }
                     }
-                }
+                ]
             },
             {
                 test: /.css$/i,
