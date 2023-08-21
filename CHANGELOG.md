@@ -1,3 +1,29 @@
+# [1.58.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.57.17...v1.58.0) (2023-08-21)
+
+
+### Bug Fixes
+
+* /dist/CoCreate.js updated to https://CoCreate.app/dist/CoCreate.js ([e1b68ce](https://github.com/CoCreate-app/CoCreateJS/commit/e1b68ceb404e6a3b6dfb3d3399026b5168bd88a4))
+* Add "[@cocrearte-cli](https://github.com/cocrearte-cli)" ([6521a50](https://github.com/CoCreate-app/CoCreateJS/commit/6521a50b2c9c74b31123c040c0d90872d90d64bf))
+* moved "@cocreate/cli" to devDependencies ([31fdd31](https://github.com/CoCreate-app/CoCreateJS/commit/31fdd31c5095ed51679bc324f7bbf129bb19e1f2))
+* Refactored *-target to *-selector ([f381431](https://github.com/CoCreate-app/CoCreateJS/commit/f3814310153d319db9057adb5758fc4528d883e7))
+* render-array and render-object attributes renamed to render ([db20485](https://github.com/CoCreate-app/CoCreateJS/commit/db20485b600ef4b3ef7877abaa3b2beb098daf2f))
+* replace cdn with /dist ([64846a6](https://github.com/CoCreate-app/CoCreateJS/commit/64846a6057474135bd6c622cb3ec2b3debb45d8d))
+* Update cssParser and elements lazy load selectors ([7f07a73](https://github.com/CoCreate-app/CoCreateJS/commit/7f07a73fb2609c57a507f16daa70f23428f8dc17))
+* update file uploader ([0dcfdff](https://github.com/CoCreate-app/CoCreateJS/commit/0dcfdffb9a2501936d462ca2597951de67fde5ed))
+
+
+### Features
+
+* @cocreate/file to handle files. ([8b6ed2f](https://github.com/CoCreate-app/CoCreateJS/commit/8b6ed2f27e3348536ce13cba5b972d8b774491c0))
+* Refactor CoCreate.config.js, remove CoCreate-fetch dependency as it has been replaced with element, filter and render ([f7f8b5d](https://github.com/CoCreate-app/CoCreateJS/commit/f7f8b5dff0f7f0b0afbe1d2cba2ff98b8c36f84a))
+* Remove unnecessary CoCreate-form and CoCreate-render-json dependencies and update lazyLoad calls in components.js. The functions were relocated to @cocreate/element and @cocreate/render. ([c778508](https://github.com/CoCreate-app/CoCreateJS/commit/c7785087748c143ddcc94a34f20cf053038653dc))
+* renamed CRUD attributes and params ([e65b88e](https://github.com/CoCreate-app/CoCreateJS/commit/e65b88ec577e2c7d3bb326bd200e6bb58d392e29))
+* replace attributes "collection", "document" and "name" with "array", "object" and "key". ([4d79ed9](https://github.com/CoCreate-app/CoCreateJS/commit/4d79ed99eaff3bce73fb9947d2ffd64013998169))
+* Update cocreate dependencies for the latest features and bug fixes ([0cc95e7](https://github.com/CoCreate-app/CoCreateJS/commit/0cc95e727c2aa1ea2045c08b9e19b9527d091e74))
+* Update CoCreate.config.js with new array and object field names ([368d18c](https://github.com/CoCreate-app/CoCreateJS/commit/368d18c9aa6a59409a7634880563531b9abe25d6))
+* Upgrade "[@cocreate](https://github.com/cocreate)" package dependencies to their latest versions. ([fb1286f](https://github.com/CoCreate-app/CoCreateJS/commit/fb1286fd01e60e24d7db0c6c1734370b95692eb5))
+
 ## [1.57.17](https://github.com/CoCreate-app/CoCreateJS/compare/v1.57.16...v1.57.17) (2023-06-16)
 
 
