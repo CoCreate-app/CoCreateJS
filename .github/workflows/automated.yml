@@ -1,126 +1,70 @@
-name: Automated Deployment
-"on":
-    push:
-        branches:
-            - master
+name: Automated Workflow
+on:
+  push:
+    branches:
+      - master
 jobs:
-    about:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v3
-            - name: setup nodejs
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 16
-            - name: Jaid/action-sync-node-meta
-              uses: jaid/action-sync-node-meta@v1.4.0
-              with:
-                  direction: overwrite-github
-                  githubToken: "${{ secrets.GITHUB }}"
-    release:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v3
-            - name: setup nodejs
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 14
-            - name: Semantic Release
-              uses: cycjimmy/semantic-release-action@v3
-              id: semantic
-              with:
-                  extra_plugins: |
-                      @semantic-release/changelog
-                      @semantic-release/git
-                      @semantic-release/github
-              env:
-                  GITHUB_TOKEN: "${{ secrets.GITHUB }}"
-                  NPM_TOKEN: "${{ secrets.NPM_TOKEN }}"
-        outputs:
-            new_release_published: "${{ steps.semantic.outputs.new_release_published }}"
-            new_release_version: "${{ steps.semantic.outputs.new_release_version }}"
-    cdn:
-        runs-on: ubuntu-latest
-        needs: release
-        if: needs.release.outputs.new_release_published == 'true'
+  about:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Jaid/action-sync-node-meta
+        uses: jaid/action-sync-node-meta@v1.4.0
+        with:
+          direction: overwrite-github
+          githubToken: "${{ secrets.GITHUB }}"
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v3
+        id: semantic
+        with:
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git
+            @semantic-release/github
         env:
-            VERSION: "${{ needs.release.outputs.new_release_version }}"
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v3
-            - name: setup nodejs
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 16
-            - name: yarn install
-              run: >
-                  echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >
-                  .npmrc
+          GITHUB_TOKEN: "${{ secrets.GITHUB }}"
+          NPM_TOKEN: "${{ secrets.NPM_TOKEN }}"
+    outputs:
+      new_release_published: "${{ steps.semantic.outputs.new_release_published }}"
+      new_release_version: "${{ steps.semantic.outputs.new_release_version }}"
+  upload:
+    runs-on: ubuntu-latest
+    needs: release
+    if: needs.release.outputs.new_release_published == 'true'
+    env:
+      VERSION: "${{ needs.release.outputs.new_release_version }}"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Set npm registry auth
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      - name: Install dependencies
+        run: yarn install
+      - name: Build
+        run: yarn build
+      - name: Set Environment Variables
+        run: |
+          echo "organization_id=${{ secrets.COCREATE_ORGANIZATION_ID }}" >> $GITHUB_ENV
+          echo "key=${{ secrets.COCREATE_KEY }}" >> $GITHUB_ENV
+          echo "host=${{ secrets.COCREATE_HOST }}" >> $GITHUB_ENV
+      - name: CoCreate Upload
+        run: coc upload
 
-                  yarn install --no-lockfile
-            # - name: yarn add
-            #   run: yarn add webpack-cli
-            - name: yarn build
-              run: yarn build
-            - name: upload bundle as version
-              uses: CoCreate-app/CoCreate-s3@master
-              with:
-                  aws-key-id: "${{ secrets.AWSACCESSKEYID }}"
-                  aws-access-key: "${{ secrets.AWSSECERTACCESSKEY }}"
-                  bucket: testcrudbucket
-                  source: ./dist
-                  destination: "/${{env.VERSION}}"
-                  acl: public-read
-            - name: upload bundle as latest
-              uses: CoCreate-app/CoCreate-s3@master
-              with:
-                  aws-key-id: "${{ secrets.AWSACCESSKEYID }}"
-                  aws-access-key: "${{ secrets.AWSSECERTACCESSKEY }}"
-                  distributionId: "${{ secrets.DISTRIBUTION_ID }}"
-                  bucket: testcrudbucket
-                  source: ./dist
-                  destination: /latest
-                  acl: public-read
-                  invalidations: true
-
-    upload:
-      runs-on: ubuntu-latest
-
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v3
-
-        - name: Setup Node.js
-          uses: actions/setup-node@v3
-          with:
-            node-version: 16
-
-        - name: Get Environment Variables
-          run: |
-            echo "organization_id=${{ secrets.COCREATE_ORGANIZATION_ID }}" >> $GITHUB_ENV
-            echo "key=${{ secrets.COCREATE_KEY }}" >> $GITHUB_ENV
-            echo "host=${{ secrets.COCREATE_HOST }}" >> $GITHUB_ENV
-
-        - name: Install @cocreate/cli
-          run: npm install -g @cocreate/cli
-
-        - name: CoCreate CLI Upload
-          run: coc upload
-
-    # docs:
-    #     runs-on: ubuntu-latest
-    #     steps:
-    #         - name: Checkout
-    #           uses: actions/checkout@v3
-    #         - name: setup nodejs
-    #           uses: actions/setup-node@v3
-    #           with:
-    #               node-version: 16
-    #         - name: update documentation
-    #           uses: CoCreate-app/CoCreate-docs@master
-    #           env:
-    #             organization_id: ${{ secrets.COCREATE_ORGANIZATION_ID }}
-    #             key: ${{ secrets.COCREATE_KEY }}
-    #             host: ${{ secrets.COCREATE_HOST }}
