@@ -1,4 +1,5 @@
 # CoCreateJS
+
 Transform static HTML into a dynamic web application, no Javascript required!
 
 A low code headless CMS and Javascript framework for building collaborative, SaaS Apps, No Code platforms, Website Builders, rich text editors, eCommerce, Blogs, websites, landing pages, CRM’s, Admins and anything else you dream up. Build powerful online and offline applications using HTML5 attributes or Javascript api. [CoCreateJS](https://CoCreate.app) https://CoCreate.app
@@ -7,9 +8,9 @@ A low code headless CMS and Javascript framework for building collaborative, Saa
 
 <br/>
 
-![minified](https://img.badgesize.io/https://cdn.cocreate.app/latest/CoCreate.min.js?style=flat-square&label=minified&color=orange)
-![gzip](https://img.badgesize.io/https://cdn.cocreate.app/latest/CoCreate.min.js?compression=gzip&style=flat-square&label=gzip&color=yellow)
-![brotli](https://img.badgesize.io/https://cdn.cocreate.app/latest/CoCreate.min.js?compression=brotli&style=flat-square&label=brotli)
+![minified](https://img.badgesize.io/https://CoCreate.app/dist/CoCreate.js?style=flat-square&label=minified&color=orange)
+![gzip](https://img.badgesize.io/https://CoCreate.app/dist/CoCreate.js?compression=gzip&style=flat-square&label=gzip&color=yellow)
+![brotli](https://img.badgesize.io/https://CoCreate.app/dist/CoCreate.js?compression=brotli&style=flat-square&label=brotli)
 ![GitHub latest release](https://img.shields.io/github/v/release/CoCreate-app/CoCreateJS?style=flat-square)
 ![License](https://img.shields.io/github/license/CoCreate-app/CoCreateJS?style=flat-square)
 ![Hiring](https://img.shields.io/static/v1?style=flat-square&label=&message=Hiring&color=blueviolet)
@@ -24,25 +25,26 @@ For a complete guide and working demo refer to the [doumentation](https://cocrea
 
 # Table of Contents
 
-- [Table of Contents](#table-of-contents)
-- [Installation](#installation)
-- [Announcements](#announcements)
-- [Roadmap](#roadmap)
-- [How to Contribute](#how-to-contribute)
-- [About](#about)
-- [License](#license)
+-   [Table of Contents](#table-of-contents)
+-   [Installation](#installation)
+-   [Announcements](#announcements)
+-   [Roadmap](#roadmap)
+-   [How to Contribute](#how-to-contribute)
+-   [About](#about)
+-   [License](#license)
 
 <br/>
 
 <a name="installation"></a>
 
 # Installation
+
 <!-- Note: Requires [CoCreateWS](https://github.com/CoCreate-app/CoCreateWS) websocket server if you intend on using CRUD and collabrative features. You can connect to our cloud servers using the subdomain and APIKEY provided on [SignUp](https://cocreate.app/admin/signup.html) or do a self hosted install.   -->
 
 ## CDN
 
 ```html
-<script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+<script src="/dist/CoCreate.js"></script>
 ```
 
 ## NPM
@@ -51,14 +53,17 @@ For a complete guide and working demo refer to the [doumentation](https://cocrea
 $ npm i @cocreate/cocreatejs
 
 ```
+
 ```shell
 $ npm install
 ```
+
 ## yarn
 
 ```shell
 $ yarn install @cocreate/cocreatejs
 ```
+
 ```shell
 $ yarn install
 ```
@@ -97,8 +102,8 @@ We want this library to be community-driven, and CoCreate led. We need your help
 
 We appreciate your continued support, thank you!
 
-
 <a name="license"></a>
+
 # License
 
 [The MIT License (MIT)](https://github.com/CoCreate-app/CoCreateJS/blob/master/LICENSE)
