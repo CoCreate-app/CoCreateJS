@@ -134,14 +134,14 @@ module.exports = async (env, argv) => {
     };
 
     // Check if pwa service-worker is available
-    try {
-        const serviceWorkerPath = './node_modules/@cocreate/pwa/src/service-worker.js';
-        const access = util.promisify(fs.access);
-        await access(serviceWorkerPath, fs.constants.F_OK);
-        config.entry['service-worker'] = serviceWorkerPath
-    } catch (error) {
-        console.error('PWA service-worker.js does not exist');
-    }
+    // try {
+    //     const serviceWorkerPath = './node_modules/@cocreate/pwa/src/service-worker.js';
+    //     const access = util.promisify(fs.access);
+    //     await access(serviceWorkerPath, fs.constants.F_OK);
+    //     config.entry['service-worker'] = serviceWorkerPath
+    // } catch (error) {
+    //     console.error('PWA service-worker.js does not exist');
+    // }
 
     return config;
 
