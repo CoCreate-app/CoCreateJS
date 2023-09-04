@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-
+const file = require('@cocreate/file')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -126,15 +126,38 @@ module.exports = async (env, argv) => {
     if (!isProduction) {
         config.plugins.push({
             apply: (compiler) => {
-                compiler.hooks.done.tap('BuildCompletePlugin', () => {
-                    console.log('Webpack build is complete in development mode!');
-                    symlink('./dist', '../dist', 'dir')
-                    symlink('./node_modules/@cocreate/pwa/src/service-worker.js', '../service-worker.js', 'file')
-                    symlink('./node_modules/@cocreate/pwa/src/manifest.webmanifest', '../manifest.webmanifest', 'file')
-                });
+                // console.log('Webpack build is complete in development mode!');
+                symlink('./dist', '../dist', 'dir')
+                symlink('./node_modules/@cocreate/pwa/src/service-worker.js', '../service-worker.js', 'file')
+                symlink('./node_modules/@cocreate/pwa/src/manifest.webmanifest', '../manifest.webmanifest', 'file')
+                symlink('./node_modules/@cocreate/pwa/src/offline.html', '../offline.html', 'file')
             },
         });
     }
+
+    const parentDirectory = path.join(__dirname, '..');
+    console.log('Watching: ', parentDirectory)
+
+    fs.watch(parentDirectory, { recursive: true }, async (eventType, filename) => {
+        if (!filename.includes('CoCreate.config.js')) {
+            const filePath = path.resolve(parentDirectory, filename);
+            if (!filePath.includes('node_modules')) {
+
+                const configPath = findClosestConfig(filePath);
+                if (configPath) {
+                    const config = require(configPath);
+
+                    if (config) {
+                        await file(config, configPath, filePath)
+                    } else {
+                        console.log('Failed to read or parse CoCreate.config.js.');
+                    }
+                } else {
+                    console.log('No CoCreate.config file found in parent directories.');
+                }
+            }
+        }
+    });
 
     return config;
 
@@ -157,3 +180,19 @@ function symlink(target, destination, option) {
         }
     }
 }
+
+function findClosestConfig(filePath) {
+    let currentDir = path.dirname(filePath);
+
+    while (currentDir !== '/' && currentDir !== '.') {
+        let configFile = path.join(currentDir, 'CoCreate.config.js');
+        if (fs.existsSync(configFile)) {
+            return configFile;
+        }
+
+        currentDir = path.dirname(currentDir);
+    }
+
+    return null;
+}
+
