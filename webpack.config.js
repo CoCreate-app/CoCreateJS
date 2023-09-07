@@ -1,15 +1,15 @@
 const fs = require('fs');
 const path = require('path');
-const file = require('@cocreate/file')
+const upload = require('@cocreate/cli/src/commands/upload.js')
+
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = async (env, argv) => {
-    let isProduction = false
-    if (argv.mode === 'production')
-        isProduction = true
+    const isProduction = argv.mode === 'production'
+    const isWatch = argv.watch === true;
 
     const config = {
         // Path to your entry point. From this file Webpack will begin his work
@@ -135,29 +135,9 @@ module.exports = async (env, argv) => {
         });
     }
 
-    const parentDirectory = path.join(__dirname, '..');
-    console.log('Watching: ', parentDirectory)
-
-    fs.watch(parentDirectory, { recursive: true }, async (eventType, filename) => {
-        if (!filename.includes('CoCreate.config.js')) {
-            const filePath = path.resolve(parentDirectory, filename);
-            if (!filePath.includes('node_modules')) {
-
-                const configPath = findClosestConfig(filePath);
-                if (configPath) {
-                    const config = require(configPath);
-
-                    if (config) {
-                        await file(config, configPath, filePath)
-                    } else {
-                        console.log('Failed to read or parse CoCreate.config.js.');
-                    }
-                } else {
-                    console.log('No CoCreate.config file found in parent directories.');
-                }
-            }
-        }
-    });
+    if (isWatch) {
+        upload(__dirname, ['../', '-w'])
+    }
 
     return config;
 
@@ -180,19 +160,3 @@ function symlink(target, destination, option) {
         }
     }
 }
-
-function findClosestConfig(filePath) {
-    let currentDir = path.dirname(filePath);
-
-    while (currentDir !== '/' && currentDir !== '.') {
-        let configFile = path.join(currentDir, 'CoCreate.config.js');
-        if (fs.existsSync(configFile)) {
-            return configFile;
-        }
-
-        currentDir = path.dirname(currentDir);
-    }
-
-    return null;
-}
-
