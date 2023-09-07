@@ -391,6 +391,10 @@ module.exports = {
             "repo": "github.com/CoCreate-app/CoCreate-linkedin.git"
         },
         {
+            "path": "../CoCreate-plugins/CoCreate-openai",
+            "repo": "github.com/CoCreate-app/CoCreate-openai.git"
+        },
+        {
             "path": "../CoCreate-plugins/CoCreate-pickr",
             "repo": "github.com/CoCreate-app/CoCreate-pickr.git"
         },
