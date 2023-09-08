@@ -13,8 +13,7 @@ module.exports = {
                 "name": "{{name}}",
                 "src": "{{source}}",
                 "host": [
-                    "*",
-                    "general.cocreate.app"
+                    "*"
                 ],
                 "directory": "/dist/{{directory}}",
                 "path": "{{path}}",
@@ -32,8 +31,7 @@ module.exports = {
                 "name": "{{name}}",
                 "src": "{{source}}",
                 "host": [
-                    "*",
-                    "general.cocreate.app"
+                    "*"
                 ],
                 "directory": "/docs/{{directory}}",
                 "path": "{{path}}",
@@ -391,6 +389,10 @@ module.exports = {
         {
             "path": "../CoCreate-plugins/CoCreate-linkedin",
             "repo": "github.com/CoCreate-app/CoCreate-linkedin.git"
+        },
+        {
+            "path": "../CoCreate-plugins/CoCreate-openai",
+            "repo": "github.com/CoCreate-app/CoCreate-openai.git"
         },
         {
             "path": "../CoCreate-plugins/CoCreate-pickr",
