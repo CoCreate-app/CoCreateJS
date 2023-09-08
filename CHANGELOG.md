@@ -1,3 +1,16 @@
+# [1.59.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.58.0...v1.59.0) (2023-09-08)
+
+
+### Bug Fixes
+
+* CoCreate.config.js ([a80d82c](https://github.com/CoCreate-app/CoCreateJS/commit/a80d82c26232c5339ad31d1d65a5e96b7985ddac))
+
+
+### Features
+
+* add openai plugin ([9e917a9](https://github.com/CoCreate-app/CoCreateJS/commit/9e917a90a799e59b384f2101ab282cde4216d7b8))
+* added @cocreate/openai plugin ([8a1a369](https://github.com/CoCreate-app/CoCreateJS/commit/8a1a369fb9860c578ef7a1e5e28a214af16e8ebc))
+
 # [1.58.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.57.17...v1.58.0) (2023-08-21)
 
 
