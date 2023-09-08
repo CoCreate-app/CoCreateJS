@@ -10,6 +10,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 module.exports = async (env, argv) => {
     const isProduction = argv.mode === 'production'
     const isWatch = argv.watch === true;
+    let isWatching = false
 
     const config = {
         // Path to your entry point. From this file Webpack will begin his work
@@ -126,7 +127,6 @@ module.exports = async (env, argv) => {
     if (!isProduction) {
         config.plugins.push({
             apply: (compiler) => {
-                // console.log('Webpack build is complete in development mode!');
                 symlink('./dist', '../dist', 'dir')
                 symlink('./node_modules/@cocreate/pwa/src/service-worker.js', '../service-worker.js', 'file')
                 symlink('./node_modules/@cocreate/pwa/src/manifest.webmanifest', '../manifest.webmanifest', 'file')
@@ -136,7 +136,20 @@ module.exports = async (env, argv) => {
     }
 
     if (isWatch) {
-        upload(__dirname, ['../', '-w'])
+        config.plugins.push({
+            apply: (compiler) => {
+                // Hook into the "emit" event, which occurs after the compilation is complete
+                compiler.hooks.emit.tapAsync('watchFiles', (compilation, callback) => {
+                    if (!isWatching) {
+                        isWatching = true
+                        upload(__dirname, ['../', '-w'])
+                    }
+                    // Don't forget to call the callback function to signal completion
+                    callback();
+                });
+            }
+        })
+        // upload(__dirname, ['../', '-w'])
     }
 
     return config;
