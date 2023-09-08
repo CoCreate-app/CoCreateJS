@@ -1,23 +1,15 @@
-// Webpack uses this to work with directories
 const fs = require('fs');
 const path = require('path');
-const util = require('util');
+const upload = require('@cocreate/cli/src/commands/upload.js')
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
-
-// const getLogger = require('webpack-log');
-// const log = getLogger({ name: 'webpack-batman' });
-// log.info(__filename);
-// let version = require('./package.json').version;
-// log.info(version);
 module.exports = async (env, argv) => {
-    let isProduction = false
-    if (argv.mode === 'production')
-        isProduction = true
+    const isProduction = argv.mode === 'production'
+    const isWatch = argv.watch === true;
 
     const config = {
         // Path to your entry point. From this file Webpack will begin his work
@@ -40,8 +32,6 @@ module.exports = async (env, argv) => {
         plugins: [
             new CleanWebpackPlugin(),
             new MiniCssExtractPlugin({
-                // Options similar to the same options in webpackOptions.output
-
                 filename: isProduction ? '[name].min.css' : '[name].css',
                 // chunkFilename: isProduction ? '[name].min.css' : '[name].css',
                 chunkFilename: (path) => {
@@ -54,7 +44,7 @@ module.exports = async (env, argv) => {
         ],
 
         devServer: {
-            hot: true,
+            hot: true
         },
 
         mode: isProduction ? 'production' : 'development',
@@ -99,7 +89,6 @@ module.exports = async (env, argv) => {
             ]
         },
 
-
         optimization: {
             minimize: true,
             minimizer: [
@@ -133,17 +122,41 @@ module.exports = async (env, argv) => {
 
     };
 
-    // Check if pwa service-worker is available
-    try {
-        const serviceWorkerPath = './node_modules/@cocreate/pwa/src/service-worker.js';
-        const access = util.promisify(fs.access);
-        await access(serviceWorkerPath, fs.constants.F_OK);
-        config.entry['service-worker'] = serviceWorkerPath
-    } catch (error) {
-        console.error('PWA service-worker.js does not exist');
+    // Hook into the 'done' event of the compiler to execute code when the build is complete.
+    if (!isProduction) {
+        config.plugins.push({
+            apply: (compiler) => {
+                // console.log('Webpack build is complete in development mode!');
+                symlink('./dist', '../dist', 'dir')
+                symlink('./node_modules/@cocreate/pwa/src/service-worker.js', '../service-worker.js', 'file')
+                symlink('./node_modules/@cocreate/pwa/src/manifest.webmanifest', '../manifest.webmanifest', 'file')
+                symlink('./node_modules/@cocreate/pwa/src/offline.html', '../offline.html', 'file')
+            },
+        });
+    }
+
+    if (isWatch) {
+        upload(__dirname, ['../', '-w'])
     }
 
     return config;
 
 }
 
+function symlink(target, destination, option) {
+    if (fs.existsSync(target)) {
+        target = path.resolve(target)
+
+        if (!fs.existsSync(destination)) {
+            destination = path.resolve(destination)
+
+            fs.symlink(target, destination, option, (err) => {
+                if (err)
+                    console.log(err);
+                else
+                    console.log("symlink added: ", target);
+            })
+
+        }
+    }
+}

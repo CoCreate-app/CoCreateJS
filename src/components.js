@@ -66,7 +66,7 @@ lazyLoad('toolbar', '[toolbar-selector]', () => import(/*webpackChunkName: "tool
 lazyLoad('vdom', '[vdom-selector], [vdom-id]', () => import(/*webpackChunkName: "vdom-chunk"*/ '@cocreate/vdom'));
 
 // Plugins
-// lazyLoad('charts', '[chart="chartjs"]', ()=> import (/*webpackChunkName: "charts-chunk"*/ '@cocreate/charts'));
+// lazyLoad('charts', '[chart="chartjs"]', ()=> import(/*webpackChunkName: "charts-chunk"*/ '@cocreate/charts'));
 // lazyLoad('domain', '[domain]', ()=> import (/*webpackChunkName: "domain-chunk"*/ '@cocreate/domain'));
 // lazyLoad('facebook', '[facebook]', ()=> import (/*webpackChunkName: "facebook-chunk"*/ '@cocreate/facebook'));
 // lazyLoad('fullcalendar', '.cal-container', ()=> import (/*webpackChunkName: "fullcalendar-chunk"*/ '@cocreate/fullcalendar'));
@@ -75,6 +75,7 @@ lazyLoad('vdom', '[vdom-selector], [vdom-id]', () => import(/*webpackChunkName: 
 // lazyLoad('instagram', '[instagram]', ()=> import (/*webpackChunkName: "instagram-chunk"*/ '@cocreate/instagram'));
 // lazyLoad('lighthouse', '[lighthouse]', ()=> import (/*webpackChunkName: "lighthouse-chunk"*/ '@cocreate/lighthouse'));
 // lazyLoad('linkedin', '[linkedin]', ()=> import (/*webpackChunkName: "linkedin-chunk"*/ '@cocreate/linkedin'));
+lazyLoad('openai', '[openai]', () => import(/*webpackChunkName: "openai-chunk"*/ '@cocreate/openai'));
 lazyLoad('pickr', '.color-picker', () => import(/*webpackChunkName: "pickr-chunk"*/ '@cocreate/pickr'));
 // lazyLoad('pinterest', '[pinterest]', ()=> import (/*webpackChunkName: "pinterest-chunk"*/ '@cocreate/pinterest'));
 // lazyLoad('plaid', '[plaid]', ()=> import (/*webpackChunkName: "plaid-chunk"*/ '@cocreate/plaid'));
