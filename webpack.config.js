@@ -136,20 +136,23 @@ module.exports = async (env, argv) => {
     }
 
     if (isWatch) {
-        config.plugins.push({
-            apply: (compiler) => {
-                // Hook into the "emit" event, which occurs after the compilation is complete
-                compiler.hooks.emit.tapAsync('watchFiles', (compilation, callback) => {
-                    if (!isWatching) {
-                        isWatching = true
-                        upload(__dirname, ['../', '-w'])
-                    }
-                    // Don't forget to call the callback function to signal completion
-                    callback();
-                });
-            }
-        })
-        // upload(__dirname, ['../', '-w'])
+        if (env.beforeCompilation)
+            upload(__dirname, ['../', '-w'])
+        else if (env.afterCompilation) {
+            config.plugins.push({
+                apply: (compiler) => {
+                    // Hook into the "emit" event, which occurs after the compilation is complete
+                    compiler.hooks.emit.tapAsync('watchFiles', (compilation, callback) => {
+                        if (!isWatching) {
+                            isWatching = true
+                            upload(__dirname, ['../', '-w'])
+                        }
+                        // Don't forget to call the callback function to signal completion
+                        callback();
+                    });
+                }
+            })
+        }
     }
 
     return config;
