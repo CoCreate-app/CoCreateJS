@@ -8,9 +8,9 @@ A low code headless CMS and Javascript framework for building collaborative, Saa
 
 <br/>
 
-![minified](https://img.badgesize.io/https://CoCreate.app/dist/CoCreate.js?style=flat-square&label=minified&color=orange)
-![gzip](https://img.badgesize.io/https://CoCreate.app/dist/CoCreate.js?compression=gzip&style=flat-square&label=gzip&color=yellow)
-![brotli](https://img.badgesize.io/https://CoCreate.app/dist/CoCreate.js?compression=brotli&style=flat-square&label=brotli)
+![minified](https://img.badgesize.io/https://CoCreate.app/dist/CoCreate.min.js?style=flat-square&label=minified&color=orange)
+![gzip](https://img.badgesize.io/https://CoCreate.app/dist/CoCreate.min.js?compression=gzip&style=flat-square&label=gzip&color=yellow)
+![brotli](https://img.badgesize.io/https://CoCreate.app/dist/CoCreate.min.js?compression=brotli&style=flat-square&label=brotli)
 ![GitHub latest release](https://img.shields.io/github/v/release/CoCreate-app/CoCreateJS?style=flat-square)
 ![License](https://img.shields.io/github/license/CoCreate-app/CoCreateJS?style=flat-square)
 ![Hiring](https://img.shields.io/static/v1?style=flat-square&label=&message=Hiring&color=blueviolet)
