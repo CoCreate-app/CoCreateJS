@@ -1,3 +1,11 @@
+# [1.60.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.59.0...v1.60.0) (2023-09-17)
+
+
+### Features
+
+* HTML5 attribute key can now accept the following values: ([b8075b5](https://github.com/CoCreate-app/CoCreateJS/commit/b8075b59d4b5a8fb4c692b16d09dd8631209e830))
+* if isWatch and compilation complete watch file for changes and upload ([47c7bf6](https://github.com/CoCreate-app/CoCreateJS/commit/47c7bf60b345758e1b69ca820272058adae9c2f4))
+
 # [1.59.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.58.0...v1.59.0) (2023-09-08)
 
 
