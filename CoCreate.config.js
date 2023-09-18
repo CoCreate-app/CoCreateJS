@@ -15,8 +15,9 @@ module.exports = {
                 "host": [
                     "*"
                 ],
-                "directory": "/dist/{{directory}}",
+                "directory": "{{directory}}",
                 "path": "{{path}}",
+                "pathname": "{{pathname}}",
                 "content-type": "{{content-type}}",
                 "public": "true"
             }
@@ -33,11 +34,11 @@ module.exports = {
                 "host": [
                     "*"
                 ],
-                "directory": "/docs/{{directory}}",
+                "directory": "{{directory}}",
                 "path": "{{path}}",
+                "pathname": "{{pathname}}",
                 "content-type": "{{content-type}}",
-                "public": "true",
-                "website_id": "61381ed8829b690010a4f2b2"
+                "public": "true"
             }
         }
     ],
