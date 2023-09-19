@@ -1,3 +1,10 @@
+## [1.60.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.60.0...v1.60.1) (2023-09-19)
+
+
+### Bug Fixes
+
+* add pathname ([6f82c77](https://github.com/CoCreate-app/CoCreateJS/commit/6f82c779d528b1d31763b4add2708d41dbd3e83a))
+
 # [1.60.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.59.0...v1.60.0) (2023-09-17)
 
 
