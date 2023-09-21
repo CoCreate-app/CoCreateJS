@@ -59,7 +59,6 @@ lazyLoad('parallax', '[parallax-src]', () => import(/*webpackChunkName: "paralla
 lazyLoad('calculation', '[calculate]', () => import(/*webpackChunkName: "calculation-chunk"*/ '@cocreate/calculation'));
 lazyLoad('progress', '[data-progress]', () => import(/*webpackChunkName: "progress-chunk"*/ '@cocreate/progress'));
 lazyLoad('randomColor', '[background-color]', () => import(/*webpackChunkName: "color-chunk"*/ '@cocreate/random-color'));
-lazyLoad('signupAnimation', '[actions*="animateSignup"]', () => import(/*webpackChunkName: "signup-animation-chunk"*/ '@cocreate/signup-animation'));
 lazyLoad('socialShare', '[share-network]', () => import(/*webpackChunkName: "social-share-chunk"*/ '@cocreate/social-share'));
 lazyLoad('select', 'cocreate-select', () => import(/*webpackChunkName: "select-chunk"*/ '@cocreate/select'));
 lazyLoad('toolbar', '[toolbar-selector]', () => import(/*webpackChunkName: "toolbar-chunk"*/ '@cocreate/toolbar'));

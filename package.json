@@ -120,7 +120,6 @@
     "@cocreate/search": "^1.6.2",
     "@cocreate/select": "^1.13.2",
     "@cocreate/selection": "^1.9.2",
-    "@cocreate/signup-animation": "^1.5.2",
     "@cocreate/social-share": "^1.6.2",
     "@cocreate/socket-client": "^1.28.0",
     "@cocreate/text": "^1.23.2",
