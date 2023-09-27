@@ -63,6 +63,7 @@ lazyLoad('socialShare', '[share-network]', () => import(/*webpackChunkName: "soc
 lazyLoad('select', 'cocreate-select', () => import(/*webpackChunkName: "select-chunk"*/ '@cocreate/select'));
 lazyLoad('toolbar', '[toolbar-selector]', () => import(/*webpackChunkName: "toolbar-chunk"*/ '@cocreate/toolbar'));
 lazyLoad('vdom', '[vdom-selector], [vdom-id]', () => import(/*webpackChunkName: "vdom-chunk"*/ '@cocreate/vdom'));
+lazyLoad('notification', '[actions*="notification"]', () => import(/*webpackChunkName: "notification-chunk"*/ '@cocreate/notification'));
 
 // Plugins
 // lazyLoad('charts', '[chart="chartjs"]', ()=> import(/*webpackChunkName: "charts-chunk"*/ '@cocreate/charts'));

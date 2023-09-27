@@ -100,6 +100,7 @@
     "@cocreate/local-storage": "^1.10.2",
     "@cocreate/message-client": "^1.8.0",
     "@cocreate/modal": "^1.14.0",
+    "@cocreate/notification": "^1.0.1",
     "@cocreate/observer": "^1.11.2",
     "@cocreate/openai": "^1.0.6",
     "@cocreate/organizations": "^1.21.0",

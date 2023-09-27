@@ -216,6 +216,10 @@ module.exports = {
             "repo": "github.com/CoCreate-app/CoCreate-modal.git"
         },
         {
+            "path": "../CoCreate-components/CoCreate-notification",
+            "repo": "github.com/CoCreate-app/CoCreate-notification.git"
+        },
+        {
             "path": "../CoCreate-components/CoCreate-observer",
             "repo": "github.com/CoCreate-app/CoCreate-observer.git"
         },
