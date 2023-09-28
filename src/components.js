@@ -15,6 +15,7 @@ dependency('message', import(/*webpackChunkName: "message-chunk"*/ '@cocreate/me
 dependency('element-prototype', import(/*webpackChunkName: "element-prototype-chunk"*/ '@cocreate/element-prototype'));
 dependency('pass', import(/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'));
 dependency('link', import(/*webpackChunkName: "link-chunk"*/ '@cocreate/link'));
+dependency('cache', import(/*webpackChunkName: "cache-chunk"*/ '@cocreate/cache'));
 dependency('pwa', import(/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));
 
 // Components
