@@ -7,6 +7,7 @@ dependency('observer', import(/*webpackChunkName: "observer-chunk"*/ '@cocreate/
 dependency('utils', import(/*webpackChunkName: "utils-chunk"*/ '@cocreate/utils'));
 dependency('indexeddb', import(/*webpackChunkName: "indexeddb-chunk"*/ '@cocreate/indexeddb'));
 dependency('localstorage', import(/*webpackChunkName: "localstorage-chunk"*/ '@cocreate/local-storage'));
+dependency('config', import(/*webpackChunkName: "config-chunk"*/ '@cocreate/config'));
 dependency('socket', import(/*webpackChunkName: "socket-chunk"*/ '@cocreate/socket-client'));
 dependency('events', import(/*webpackChunkName: "events-chunk"*/ '@cocreate/events'));
 dependency('crud', import(/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud-client'));
