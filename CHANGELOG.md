@@ -1,3 +1,13 @@
+# [1.62.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.61.0...v1.62.0) (2023-10-09)
+
+
+### Features
+
+* add CoCreate-cache to access cache api and dynamically handle caching files ([7d3401b](https://github.com/CoCreate-app/CoCreateJS/commit/7d3401b8cbd906d68fc39f41a39e9e8379ab00a4))
+* add CoCreate-notification component ([6b6818a](https://github.com/CoCreate-app/CoCreateJS/commit/6b6818ab1efe1f41f182ab92a6af196bd272093c))
+* Added '@cocreate/config' ([23ae34e](https://github.com/CoCreate-app/CoCreateJS/commit/23ae34e58ca5f11f0905381992a7035987df5cce))
+* Update CoCreate dependencies to their latest versions ([2ec4908](https://github.com/CoCreate-app/CoCreateJS/commit/2ec490827359066d214d3b78d44e9f289e11d46d))
+
 # [1.61.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.60.1...v1.61.0) (2023-09-19)
 
 
