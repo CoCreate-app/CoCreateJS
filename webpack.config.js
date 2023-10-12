@@ -50,8 +50,8 @@ module.exports = async (env, argv) => {
 
         mode: isProduction ? 'production' : 'development',
         // add source map
-        ...(isProduction ? {} : { devtool: 'eval-source-map' }),
-
+        // ...(isProduction ? {} : { devtool: 'eval-source-map' }),
+        // devtool: 'eval-source-map',
         module: {
             rules: [{
                 test: /\.js$/,
@@ -62,7 +62,8 @@ module.exports = async (env, argv) => {
                     {
                         loader: 'babel-loader',
                         options: {
-                            plugins: ["@babel/plugin-transform-modules-commonjs"]
+                            plugins: ["@babel/plugin-transform-modules-commonjs"],
+                            retainLines: true, // Add this option
                         }
                     }
                 ]
