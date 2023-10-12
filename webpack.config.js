@@ -50,7 +50,7 @@ module.exports = async (env, argv) => {
 
         mode: isProduction ? 'production' : 'development',
         // add source map
-        // ...(isProduction ? {} : { devtool: 'eval-source-map' }),
+        ...(isProduction ? {} : { devtool: 'eval-source-map' }),
         // devtool: 'eval-source-map',
         module: {
             rules: [{
