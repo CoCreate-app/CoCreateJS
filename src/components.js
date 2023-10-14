@@ -26,7 +26,7 @@ lazyLoad('actions', '[actions]', () => import(/*webpackChunkName: "actions-chunk
 lazyLoad('filter', '[filter-selector]', () => import(/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 lazyLoad('render', '[render-selector]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
 lazyLoad('elements', 'form, [src], [storage], [database], [array]', () => import(/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
-lazyLoad('file', '[type="file"]', () => import(/*webpackChunkName: "file-chunk"*/ '@cocreate/file'));
+lazyLoad('file', '[type="file"], [actions*="upload"], [actions*="download"], [actions*="saveLocally"], [actions*="import"], [actions*="export"], [actions*="createFile"], [actions*="deleteFile"], [actions*="createDirectory"], [actions*="deleteDirectory"]', () => import(/*webpackChunkName: "file-chunk"*/ '@cocreate/file'));
 lazyLoad('api', '[actions], [template_id]', () => import(/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
 lazyLoad('resizeObserver', '[resize-selector]', () => import(/*webpackChunkName: "resizeObserver-chunk"*/ '@cocreate/resize-observer'));
 lazyLoad('dnd', '[sortable], [cloneables], [draggable], [droppable], [cloneable]', () => import(/*webpackChunkName: "dnd-chunk"*/ '@cocreate/dnd'));
@@ -45,6 +45,7 @@ lazyLoad('uuid', '[uuid]', () => import(/*webpackChunkName: "uuid-chunk"*/ '@coc
 lazyLoad('search', '[search_id]', () => import(/*webpackChunkName: "search-chunk"*/ '@cocreate/search'));
 lazyLoad('elementConfig', '[config-selector]', () => import(/*webpackChunkName: "elementConfig-chunk"*/ '@cocreate/element-config'));
 lazyLoad('validation', '[actions*="validate"], required, unique', () => import(/*webpackChunkName: "validation-chunk"*/ '@cocreate/validation'));
+lazyLoad('calculation', '[calculate]', () => import(/*webpackChunkName: "calculation-chunk"*/ '@cocreate/calculation'));
 
 // Collabortion Components
 lazyLoad('selection', 'input, textarea, [contenteditable]', () => import(/*webpackChunkName: "selection-chunk"*/ '@cocreate/selection'));
@@ -58,7 +59,6 @@ lazyLoad('floatingLabel', 'floating-label, .floating-label', () => import(/*webp
 lazyLoad('fullscreen', '[fullscreen]', () => import(/*webpackChunkName: "fullscreen-chunk"*/ '@cocreate/fullscreen'));
 lazyLoad('modal', '[actions*="Modal"]', () => import(/*webpackChunkName: "modal-chunk"*/ '@cocreate/modal'));
 lazyLoad('parallax', '[parallax-src]', () => import(/*webpackChunkName: "parallax-chunk"*/ '@cocreate/parallax'));
-lazyLoad('calculation', '[calculate]', () => import(/*webpackChunkName: "calculation-chunk"*/ '@cocreate/calculation'));
 lazyLoad('progress', '[data-progress]', () => import(/*webpackChunkName: "progress-chunk"*/ '@cocreate/progress'));
 lazyLoad('randomColor', '[background-color]', () => import(/*webpackChunkName: "color-chunk"*/ '@cocreate/random-color'));
 lazyLoad('socialShare', '[share-network]', () => import(/*webpackChunkName: "social-share-chunk"*/ '@cocreate/social-share'));

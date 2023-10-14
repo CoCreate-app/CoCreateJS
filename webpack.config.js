@@ -44,14 +44,15 @@ module.exports = async (env, argv) => {
             }),
         ],
 
-        devServer: {
-            hot: true
-        },
+        // devServer: {
+        //     hot: true
+        // },
 
         mode: isProduction ? 'production' : 'development',
+
         // add source map
-        ...(isProduction ? {} : { devtool: 'eval-source-map' }),
-        // devtool: 'eval-source-map',
+        ...(isProduction ? { devtool: 'eval-source-map' } : { devtool: 'eval-source-map' }),
+
         module: {
             rules: [{
                 test: /\.js$/,
@@ -97,9 +98,7 @@ module.exports = async (env, argv) => {
                 new CssMinimizerPlugin(),
                 new TerserPlugin({
                     extractComments: true,
-                    // cache: true,
                     parallel: true,
-                    // sourceMap: true, // Must be set to true if using source-maps in production
                     terserOptions: {
                         compress: {
                             drop_console: true,
