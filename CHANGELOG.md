@@ -1,3 +1,12 @@
+## [1.62.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.62.1...v1.62.2) (2023-10-14)
+
+
+### Bug Fixes
+
+* elements component selectors ([0715a52](https://github.com/CoCreate-app/CoCreateJS/commit/0715a52e6688ef56f7182a1f0abb87440c7fe920))
+* source map ([05924b5](https://github.com/CoCreate-app/CoCreateJS/commit/05924b5253c9af9d6b9d34b56991ccfcdaa69ac2))
+* update pass-refresh to pass-overwrite ([2542f63](https://github.com/CoCreate-app/CoCreateJS/commit/2542f6335a6b900e6a3932e0aa3847fc4f971ac6))
+
 ## [1.62.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.62.0...v1.62.1) (2023-10-09)
 
 
