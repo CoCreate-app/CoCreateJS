@@ -21,7 +21,7 @@ dependency('pwa', import(/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));
 
 // Components
 // lazyLoad('css', 'cocreatecss', ()=> import (/*webpackChunkName: "CoCreateCSS"*/ '@cocreate/cocreatecss'));
-lazyLoad('cssParser', 'link[array][object][key], link[parse="true"]', () => import(/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
+lazyLoad('cssParser', 'link[array][object][key], link[parse]', () => import(/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
 lazyLoad('actions', '[actions]', () => import(/*webpackChunkName: "actions-chunk"*/ '@cocreate/actions'));
 lazyLoad('filter', '[filter-selector]', () => import(/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
 lazyLoad('render', '[render-selector]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
