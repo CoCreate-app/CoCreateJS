@@ -37,7 +37,7 @@ lazyLoad('resize', '[resize]', () => import(/*webpackChunkName: "resize-chunk"*/
 lazyLoad('clone', '[actions*="clone"]', () => import(/*webpackChunkName: "clone-chunk"*/ '@cocreate/clone'));
 lazyLoad('remove', '[actions*="remove"]', () => import(/*webpackChunkName: "remove-chunk"*/ '@cocreate/remove'));
 lazyLoad('attributes', '[attribute]', () => import(/*webpackChunkName: "attributes-chunk"*/ '@cocreate/attributes'));
-lazyLoad('users', '[actions*="signUp"], [actions*="signIn"], [actions*="signOut"], [user-status]', () => import(/*webpackChunkName: "users-chunk"*/ '@cocreate/users'));
+lazyLoad('users', '[session], [actions*="signUp"], [actions*="signIn"], [actions*="signOut"], [user-status]', () => import(/*webpackChunkName: "users-chunk"*/ '@cocreate/users'));
 lazyLoad('unique', '[unique]', () => import(/*webpackChunkName: "unique-chunk"*/ '@cocreate/unique'));
 lazyLoad('organizations', '[actions*="createOrganization"]', () => import(/*webpackChunkName: "organizations-chunk"*/ '@cocreate/organizations'));
 lazyLoad('industry', '[actions*="createIndustry"], [actions*="runIndustry"], [actions*="deleteIndustry"], [actions*="deleteIndustries"]', () => import(/*webpackChunkName: "industry-chunk"*/ '@cocreate/industry'));
