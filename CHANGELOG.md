@@ -1,3 +1,13 @@
+## [1.62.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.62.2...v1.62.3) (2023-10-16)
+
+
+### Bug Fixes
+
+* add @cocreate/cache to repositories ([5e99b45](https://github.com/CoCreate-app/CoCreateJS/commit/5e99b45beb3349c7ab1c5902b2c8371d6e960ac7))
+* add cache to repositories ([a244cde](https://github.com/CoCreate-app/CoCreateJS/commit/a244cdee30f9ff4e582f002f787273b54d530f12))
+* update css-parser lazyload selector ([0119925](https://github.com/CoCreate-app/CoCreateJS/commit/0119925d1b1f0de265c5c9a88f81c73cfe13e721))
+* webpack.config production build ([633f3b6](https://github.com/CoCreate-app/CoCreateJS/commit/633f3b60005c8b23e462471b61dd05ae5032318b))
+
 ## [1.62.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.62.1...v1.62.2) (2023-10-14)
 
 
