@@ -1,3 +1,10 @@
+## [1.62.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.62.3...v1.62.4) (2023-10-19)
+
+
+### Bug Fixes
+
+* removed '@cocreate/message-client' ([747fbc4](https://github.com/CoCreate-app/CoCreateJS/commit/747fbc489ae3b70252fd105081c4f00377470d68))
+
 ## [1.62.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.62.2...v1.62.3) (2023-10-16)
 
 
