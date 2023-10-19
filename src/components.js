@@ -12,7 +12,6 @@ dependency('socket', import(/*webpackChunkName: "socket-chunk"*/ '@cocreate/sock
 dependency('events', import(/*webpackChunkName: "events-chunk"*/ '@cocreate/events'));
 dependency('crud', import(/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud-client'));
 dependency('crdt', import(/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
-dependency('message', import(/*webpackChunkName: "message-chunk"*/ '@cocreate/message-client'));
 dependency('element-prototype', import(/*webpackChunkName: "element-prototype-chunk"*/ '@cocreate/element-prototype'));
 dependency('pass', import(/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'));
 dependency('link', import(/*webpackChunkName: "link-chunk"*/ '@cocreate/link'));
@@ -23,8 +22,8 @@ dependency('pwa', import(/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));
 // lazyLoad('css', 'cocreatecss', ()=> import (/*webpackChunkName: "CoCreateCSS"*/ '@cocreate/cocreatecss'));
 lazyLoad('cssParser', 'link[array][object][key], link[parse]', () => import(/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
 lazyLoad('actions', '[actions]', () => import(/*webpackChunkName: "actions-chunk"*/ '@cocreate/actions'));
-lazyLoad('filter', '[filter-selector]', () => import(/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
-lazyLoad('render', '[render-selector]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
+lazyLoad('filter', '[filter-selector], [filter-closest], [filter-parent], [filter-next], [filter-previous]', () => import(/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
+lazyLoad('render', '[render-selector], [render-closest], [render-parent], [render-next], [render-previous]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
 lazyLoad('elements', 'form, [src], [storage], [database], [array]', () => import(/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
 lazyLoad('file', '[type="file"], [actions*="upload"], [actions*="download"], [actions*="saveLocally"], [actions*="import"], [actions*="export"], [actions*="createFile"], [actions*="deleteFile"], [actions*="createDirectory"], [actions*="deleteDirectory"]', () => import(/*webpackChunkName: "file-chunk"*/ '@cocreate/file'));
 lazyLoad('api', '[actions], [template_id]', () => import(/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));

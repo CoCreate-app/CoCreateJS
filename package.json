@@ -99,7 +99,6 @@
     "@cocreate/lazy-loader": "^1.6.4",
     "@cocreate/link": "^1.8.3",
     "@cocreate/local-storage": "^1.10.5",
-    "@cocreate/message-client": "^1.8.3",
     "@cocreate/modal": "^1.14.3",
     "@cocreate/notification": "^1.1.4",
     "@cocreate/observer": "^1.11.5",
