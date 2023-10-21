@@ -23,7 +23,7 @@ dependency('pwa', import(/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));
 lazyLoad('cssParser', 'link[array][object][key], link[parse]', () => import(/*webpackChunkName: "css-parser-chunk"*/ '@cocreate/css-parser'));
 lazyLoad('actions', '[actions]', () => import(/*webpackChunkName: "actions-chunk"*/ '@cocreate/actions'));
 lazyLoad('filter', '[filter-selector], [filter-closest], [filter-parent], [filter-next], [filter-previous]', () => import(/*webpackChunkName: "filter-chunk"*/ '@cocreate/filter'));
-lazyLoad('render', '[render-selector], [render-closest], [render-parent], [render-next], [render-previous]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
+lazyLoad('render', '[template], [render-selector], [render-closest], [render-parent], [render-next], [render-previous]', () => import(/*webpackChunkName: "render-chunk"*/ '@cocreate/render'));
 lazyLoad('elements', 'form, [src], [storage], [database], [array]', () => import(/*webpackChunkName: "elements-chunk"*/ '@cocreate/elements'));
 lazyLoad('file', '[type="file"], [actions*="upload"], [actions*="download"], [actions*="saveLocally"], [actions*="import"], [actions*="export"], [actions*="createFile"], [actions*="deleteFile"], [actions*="createDirectory"], [actions*="deleteDirectory"]', () => import(/*webpackChunkName: "file-chunk"*/ '@cocreate/file'));
 lazyLoad('api', '[actions], [template_id]', () => import(/*webpackChunkName: "api-chunk"*/ '@cocreate/api'));
