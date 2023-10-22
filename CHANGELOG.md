@@ -1,3 +1,11 @@
+## [1.62.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.62.4...v1.62.5) (2023-10-22)
+
+
+### Bug Fixes
+
+* add template as a selector ([6f0f638](https://github.com/CoCreate-app/CoCreateJS/commit/6f0f638771c7bb8c1f4ea2cc42fa4d8025baf0bb))
+* update render lazyload selectors ([dd01f05](https://github.com/CoCreate-app/CoCreateJS/commit/dd01f05661b1b0602f9d825d101f6f344b81fdc0))
+
 ## [1.62.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.62.3...v1.62.4) (2023-10-19)
 
 
