@@ -1,3 +1,16 @@
+# [1.63.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.62.5...v1.63.0) (2023-11-04)
+
+
+### Bug Fixes
+
+* added CoCreate-cache ([b2dcb22](https://github.com/CoCreate-app/CoCreateJS/commit/b2dcb22ff6604485ab1871990bc3f23bd8377a18))
+* bumped dependencies ([fa6fbce](https://github.com/CoCreate-app/CoCreateJS/commit/fa6fbcee50b302aa5d616d0abda225e110696d28))
+
+
+### Features
+
+* update dependencies to the latest versions ([ff0f15c](https://github.com/CoCreate-app/CoCreateJS/commit/ff0f15cc038b0dfc6069e7c76e145e2ba6fd4885))
+
 ## [1.62.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.62.4...v1.62.5) (2023-10-22)
 
 
