@@ -1,3 +1,15 @@
+# [1.64.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.63.0...v1.64.0) (2023-11-12)
+
+
+### Bug Fixes
+
+* meta name typo ([9f37013](https://github.com/CoCreate-app/CoCreateJS/commit/9f370135a8c819584aae32e9cf5d99df3286122a))
+
+
+### Features
+
+* update "[@cocreate](https://github.com/cocreate)" dependencies ([437c378](https://github.com/CoCreate-app/CoCreateJS/commit/437c378c4e51c4435626272bf71cd50d24f663f1))
+
 # [1.63.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.62.5...v1.63.0) (2023-11-04)
 
 
