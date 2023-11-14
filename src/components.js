@@ -76,7 +76,7 @@ lazyLoad('notification', '[actions*="notification"]', () => import(/*webpackChun
 // lazyLoad('instagram', '[instagram]', ()=> import (/*webpackChunkName: "instagram-chunk"*/ '@cocreate/instagram'));
 // lazyLoad('lighthouse', '[lighthouse]', ()=> import (/*webpackChunkName: "lighthouse-chunk"*/ '@cocreate/lighthouse'));
 // lazyLoad('linkedin', '[linkedin]', ()=> import (/*webpackChunkName: "linkedin-chunk"*/ '@cocreate/linkedin'));
-lazyLoad('openai', '[openai]', () => import(/*webpackChunkName: "openai-chunk"*/ '@cocreate/openai'));
+lazyLoad('openai', '[openai], [actions*="openAi"]', () => import(/*webpackChunkName: "openai-chunk"*/ '@cocreate/openai'));
 lazyLoad('pickr', '.color-picker', () => import(/*webpackChunkName: "pickr-chunk"*/ '@cocreate/pickr'));
 // lazyLoad('pinterest', '[pinterest]', ()=> import (/*webpackChunkName: "pinterest-chunk"*/ '@cocreate/pinterest'));
 // lazyLoad('plaid', '[plaid]', ()=> import (/*webpackChunkName: "plaid-chunk"*/ '@cocreate/plaid'));
