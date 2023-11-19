@@ -1,3 +1,17 @@
+# [1.65.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.64.0...v1.65.0) (2023-11-19)
+
+
+### Bug Fixes
+
+* add actions=openai selector ([d06a22f](https://github.com/CoCreate-app/CoCreateJS/commit/d06a22f8ac6358331b98c400bdcb3c3be8d250be))
+* filter-name renamed to filter-key ([40e3765](https://github.com/CoCreate-app/CoCreateJS/commit/40e376539bd0253add23657e8faa178dbd2df218))
+* update openai plugin ([ac2f9f6](https://github.com/CoCreate-app/CoCreateJS/commit/ac2f9f6101368d841b4ceac9a454cc66bb06f298))
+
+
+### Features
+
+* update cocreate dependencies for the latest features ([6b75cd2](https://github.com/CoCreate-app/CoCreateJS/commit/6b75cd2aa65e2ff765984130f730ae29b26ad5b6))
+
 # [1.64.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.63.0...v1.64.0) (2023-11-12)
 
 
