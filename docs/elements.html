@@ -18,7 +18,7 @@
             href="https://cdn.cocreate.app/latest/CoCreate.min.css" />
         <link
             rel="stylesheet"
-            href="/docs/index.css"
+            href="../index.css"
             array="files"
             object="60888216117c640e7596303f"
             key="src"
@@ -48,14 +48,13 @@
 
     <body>
         <nav
-            class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px"
+            class="width:100% display:flex align-items:center background:transparent padding-top:10px padding-bottom:10px"
             content_id="content"
-            scroll="sticky-nav,hide-nav"
-            scroll-up="10"
-            scroll-down="10"
-            array="files"
-            object="60395ef42b3ac232657040fd"
-            key="src"></nav>
+            scroll="sticky-nav,"
+            scroll-up="5"
+            scroll-down="5"
+            path="../"
+            src="../components/navbar.html"></nav>
         <sidenav
             id="menuL"
             class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl"
@@ -160,17 +159,17 @@
                             Collaborative Elements
                         </h2>
                         <p class="padding:10px_0px line-height:1.5">
-                            Simply define a array, object and name. If the array
-                            contains the object and the object contains the
-                            field name. Viola! The value is fetched in the
-                            input. Like wise, typing in the input will save the
-                            value. If the array did not exist previously it will
-                            be created. If the object is left empty, typing in
-                            the input will create a new object.
+                            Simply define a array, object and key. If the array
+                            contains the object and the object contains the key.
+                            Viola! The value is fetched in the input. Like wise,
+                            typing in the input will save the value. If the
+                            array did not exist previously it will be created.
+                            If the object is left empty, typing in the input
+                            will create a new object.
                         </p>
                         <pre><code class="language-html">&lt;input array="contacts" object="" key="name"&gt;</code></pre>
                         <p class="padding:10px_0px line-height:1.5">
-                            The attributes array, object and name are at the
+                            The attributes array, object and key are at the
                             center of the CoCreate universe, we take a data
                             first aproach. By defining these 3 attributes you
                             can save and fetch data from any input, textarea,
@@ -872,7 +871,7 @@
                         <p class="padding:10px_0px line-height:1.5">
                             Applying and clicking this action will save the
                             value of the elements in a form to their respective
-                            array, object and name. If a element does not have a
+                            array, object and key. If a element does not have a
                             object defined a object will be generated and
                             applied to all other elements with the same array
                             defined and do not have a object. Existing object
@@ -1009,7 +1008,7 @@
                         <li
                             class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                             <h4>
-                                <span>name</span>
+                                <span>key</span>
                                 <span class="cocreate-badge success"
                                     >string</span
                                 >
@@ -1018,7 +1017,7 @@
                                 >
                             </h4>
                             <p>
-                                Defines the name in the object containing the
+                                Defines the key in the object containing the
                                 value. sql equvalient is a column
                             </p>
                         </li>
@@ -1318,10 +1317,8 @@
             <button
                 href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/elements.html?message=docs%3A%20describe%20your%20change..."
                 target="_blank"
-                class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
-                <i
-                    class="height:20px fill:#505050"
-                    src="/assets/svg/pencil-alt.svg"></i>
+                class="display:flex justify-content:center align-items:center position:fixed bottom:15px right:15px height:50px width:50px border-radius:50% box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
+                <i class="height:20px" src="../assets/svg/pencil-alt.svg"></i>
             </button>
         </main>
 

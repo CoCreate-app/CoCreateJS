@@ -18,7 +18,7 @@
             href="https://cdn.cocreate.app/latest/CoCreate.min.css" />
         <link
             rel="stylesheet"
-            href="/docs/index.css"
+            href="../index.css"
             array="files"
             object="60888216117c640e7596303f"
             key="src"
@@ -43,14 +43,13 @@
 
     <body>
         <nav
-            class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px"
+            class="width:100% display:flex align-items:center background:transparent padding-top:10px padding-bottom:10px"
             content_id="content"
-            scroll="sticky-nav,hide-nav"
-            scroll-up="10"
-            scroll-down="10"
-            array="files"
-            object="60395ef42b3ac232657040fd"
-            key="src"></nav>
+            scroll="sticky-nav,"
+            scroll-up="5"
+            scroll-down="5"
+            path="../"
+            src="../components/navbar.html"></nav>
         <sidenav
             id="menuL"
             class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl"
@@ -373,14 +372,12 @@
                                     >required</span
                                 >
                             </h4>
-                            <p>
-                                Collection name to fetch data. It is required.
-                            </p>
+                            <p>Array name to fetch data. It is required.</p>
                         </li>
                         <li
                             class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                             <h4>
-                                <span>name</span>
+                                <span>key</span>
                                 <span class="cocreate-badge success"
                                     >string</span
                                 >
@@ -435,7 +432,7 @@
                                     >optional</span
                                 >
                             </h4>
-                            <p>Collections's field name for filter.</p>
+                            <p>Array's object key to filter.</p>
                         </li>
                         <li
                             class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -449,9 +446,8 @@
                                 >
                             </h4>
                             <p>
-                                Collection's field value for filter. If
-                                filter-key defined, this attribute should
-                                defined too
+                                Array's object value to filter. If filter-key
+                                defined, this attribute should be defined too
                             </p>
                         </li>
                         <li
@@ -528,13 +524,13 @@
                             </h4>
                             <p>
                                 define on input elemens. Will perform a search
-                                for the value across all names in the array
+                                for the value across all keys in the array
                             </p>
                         </li>
                         <li
                             class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                             <h4>
-                                <span>filter-sort-name</span>
+                                <span>filter-sort-key</span>
                                 <span class="cocreate-badge success"
                                     >string</span
                                 >
@@ -542,7 +538,7 @@
                                     >optional</span
                                 >
                             </h4>
-                            <p>Field name to sorting.</p>
+                            <p>Field key to sorting.</p>
                         </li>
                         <li
                             class="padding:15px_0px border-bottom:1px_solid_lightgrey">
@@ -612,10 +608,8 @@
             <button
                 href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/elements.html?message=docs%3A%20describe%20your%20change..."
                 target="_blank"
-                class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
-                <i
-                    class="height:20px fill:#505050"
-                    src="/assets/svg/pencil-alt.svg"></i>
+                class="display:flex justify-content:center align-items:center position:fixed bottom:15px right:15px height:50px width:50px border-radius:50% box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
+                <i class="height:20px" src="../assets/svg/pencil-alt.svg"></i>
             </button>
         </main>
 

@@ -12,7 +12,7 @@
             href="https://cocreate.app/images/favicon.ico" />
         <meta
             name="description"
-            content="Utility first css framework, design faster and improve on your css by using native inline styles as classes. No learning curve, use what you already know" />
+            content="Full-Featured Web Apps in a Fraction of the Time, With Zero Lock-In directly from the design phase. Not a designer or a developer, AI has you covered." />
         <meta
             name="keywords"
             content="helper classes, utility classes, css framework, css library, inline style classes" />
@@ -20,12 +20,10 @@
         <meta
             property="og:image"
             content="https://cdn.cocreate.app/docs/action.png" />
+        <link rel="stylesheet" href="../dist/CoCreate.css" />
         <link
             rel="stylesheet"
-            href="https://cdn.cocreate.app/latest/CoCreate.min.css" />
-        <link
-            rel="stylesheet"
-            href="/docs/index.css"
+            href="../index.css"
             array="files"
             object="60888216117c640e7596303f"
             key="src"
@@ -50,15 +48,15 @@
     </head>
 
     <body>
+        <!-- Navbar  -->
         <nav
-            class="nav display:flex align-items:center left:0px background:whitesmoke padding-top:10px padding-bottom:10px"
+            class="width:100% display:flex align-items:center background:transparent padding-top:10px padding-bottom:10px"
             content_id="content"
-            scroll="sticky-nav,hide-nav"
-            scroll-up="10"
-            scroll-down="10"
-            array="files"
-            object="60395ef42b3ac232657040fd"
-            key="src"></nav>
+            scroll="sticky-nav,"
+            scroll-up="5"
+            scroll-down="5"
+            path="../"
+            src="../components/navbar.html"></nav>
         <sidenav
             id="menuL"
             class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl"
@@ -66,10 +64,7 @@
             resize-selector="[content_id='content']"
             resize-property="margin-left"
             resize-value="width">
-            <menu
-                array="files"
-                object="603717b07de7fb350ae9fec8"
-                key="src"></menu>
+            <menu path="../" src="../components/navbar.html"></menu>
             <div resize="right"></div>
         </sidenav>
 
@@ -186,11 +181,16 @@
             <button
                 href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/index.html?message=docs%3A%20describe%20your%20change..."
                 target="_blank"
-                class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
-                <i
-                    class="height:20px fill:#505050"
-                    src="/assets/svg/pencil-alt.svg"></i>
+                class="display:flex justify-content:center align-items:center position:fixed bottom:15px right:15px height:50px width:50px border-radius:50% box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
+                <i class="height:20px" src="../assets/svg/pencil-alt.svg"></i>
             </button>
+
+            <!-- <button
+                href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/index.html?message=docs%3A%20describe%20your%20change..."
+                target="_blank"
+                class="display:flex justify-content:center align-items:center position:fixed bottom:15px right:15px height:50px width:50px border-radius:50% box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
+                <i class="height:20px" src="../assets/svg/pencil-alt.svg"></i>
+            </button> -->
         </main>
 
         <script src="https://CoCreate.app/dist/CoCreate.js"></script>
