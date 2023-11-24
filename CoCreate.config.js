@@ -57,8 +57,8 @@ module.exports = {
                 "actions-demo": "{{./demo/elements/actions.html}}",
                 "fetch-demo": "{{./demo/templating/fetch.html}}",
                 "filter-demo": "{{./demo/templating/filter.html}}",
-                "pass-attributes-demo": "{{./demo/logic/pass-attributes.html}}",
-                "pass-values-demo": "{{./demo/logic/pass-values.html}}",
+                "state-attributes-demo": "{{./demo/logic/state-attributes.html}}",
+                "state-values-demo": "{{./demo/logic/state-values.html}}",
                 "conditional-logic-demo": "{{./demo/logic/conditional-logic.html}}",
                 "signup-demo": "{{./demo/user-management/signup.html}}",
                 "signin-demo": "{{./demo/user-management/signin.html}}",
@@ -236,8 +236,8 @@ module.exports = {
             "repo": "github.com/CoCreate-app/CoCreate-parallax.git"
         },
         {
-            "path": "../CoCreate-components/CoCreate-pass",
-            "repo": "github.com/CoCreate-app/CoCreate-pass.git"
+            "path": "../CoCreate-components/CoCreate-state",
+            "repo": "github.com/CoCreate-app/CoCreate-state.git"
         },
         {
             "path": "../CoCreate-components/CoCreate-position",

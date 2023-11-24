@@ -13,7 +13,7 @@ dependency('events', import(/*webpackChunkName: "events-chunk"*/ '@cocreate/even
 dependency('crud', import(/*webpackChunkName: "crud-chunk"*/ '@cocreate/crud-client'));
 dependency('crdt', import(/*webpackChunkName: "crdt-chunk"*/ '@cocreate/crdt'));
 dependency('element-prototype', import(/*webpackChunkName: "element-prototype-chunk"*/ '@cocreate/element-prototype'));
-dependency('pass', import(/*webpackChunkName: "pass-chunk"*/ '@cocreate/pass'));
+dependency('state', import(/*webpackChunkName: "state-chunk"*/ '@cocreate/state'));
 dependency('link', import(/*webpackChunkName: "link-chunk"*/ '@cocreate/link'));
 dependency('cache', import(/*webpackChunkName: "cache-chunk"*/ '@cocreate/cache'));
 dependency('pwa', import(/*webpackChunkName: "pwa-chunk"*/ '@cocreate/pwa'));

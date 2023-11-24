@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<input pass_id="test" array="contacts" object key="name" pass-overwrite />
+<input state_id="test" array="contacts" object key="name" state-overwrite />
 
 <div array="contacts" render-selector="[template]">
     <div template>
-        <a actions="pass" pass-object="{{object._id}}" pass_to="test">
+        <a actions="state" state-object="{{object._id}}" state_to="test">
             <h4>{{object.name}}</h4>
             <h4>{{object._id}}</h4>
         </a>

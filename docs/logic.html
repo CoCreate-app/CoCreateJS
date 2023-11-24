@@ -7,7 +7,7 @@
         <title>CoCreateJS - Logic</title>
         <meta
             name="description"
-            content="Update element attributes, pass values between elements, show and hide elements." />
+            content="Update element attributes, state values between elements, show and hide elements." />
         <link
             rel="icon"
             type="image/png"
@@ -131,7 +131,7 @@
                 </div>
                 <h1
                     class="max-width:500px margin:20px_10px line-height:1.5 font-size:16px font-weight:100">
-                    Update element attributes, pass values between elements,
+                    Update element attributes, state values between elements,
                     show and hide elements.
                 </h1>
             </section>
@@ -144,24 +144,24 @@
                     <section
                         scroll
                         scroll-intersect="color:dodgerblue"
-                        scroll-selector="#pass-attributes-item">
+                        scroll-selector="#state-attributes-item">
                         <h2
-                            id="pass-attributes"
+                            id="state-attributes"
                             class="border-bottom:1px_solid_lightgrey padding:5px_0px">
-                            Pass Attributes
+                            State Attributes
                         </h2>
                         <p class="padding:10px_0px line-height:1.5">
-                            Pass attributes from elements to elements within
+                            State attributes from elements to elements within
                             same page or across multiple tabs and windows.
                         </p>
-                        <pre><code class="language-html">&lt;a actions="pass" pass-object="test" pass_to="A unique id"&gt;&lt;/a&gt;</code></pre>
+                        <pre><code class="language-html">&lt;a actions="state" state-object="test" state_to="A unique id"&gt;&lt;/a&gt;</code></pre>
 
                         <!-- SandBox -->
                         <div
                             class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="pass-attributes-playground">
+                            id="state-attributes-playground">
                             <div
-                                id="pass-attributes-demo-code"
+                                id="state-attributes-demo-code"
                                 resizable
                                 class="position:relative height:50%">
                                 <textarea
@@ -169,10 +169,10 @@
                                     lang="html"
                                     array="demos"
                                     object="619aa8e8a8b6b4001a9dc24e"
-                                    key="pass-attributes-demo"
+                                    key="state-attributes-demo"
                                     save="false"
-                                    id="pass-attributes-demo"
-                                    input-selector=".pass-attributes"
+                                    id="state-attributes-demo"
+                                    input-selector=".state-attributes"
                                     input-attribute="value"
                                     input-events="input, onload"
                                     class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
@@ -182,20 +182,21 @@
                             </div>
 
                             <div
-                                id="pass-attributes-demo-preview"
+                                id="state-attributes-demo-preview"
                                 class="position:relative overflow:auto background-color:white">
-                                <div class="pass-attributes padding:20px"></div>
+                                <div
+                                    class="state-attributes padding:20px"></div>
                             </div>
 
                             <div
                                 class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
                                 <a
                                     class="margin-right:10px"
-                                    id="pass-attributes-eye"
-                                    show="#pass-attributes-eye-slash"
-                                    hide="#pass-attributes-eye, #pass-attributes-demo-preview"
+                                    id="state-attributes-eye"
+                                    show="#state-attributes-eye-slash"
+                                    hide="#state-attributes-eye, #state-attributes-demo-preview"
                                     toggle="code-height"
-                                    toggle-selector="#pass-attributes-demo-code"
+                                    toggle-selector="#state-attributes-demo-code"
                                     ><i
                                         class="height:18px fill:#505050"
                                         src="/assets/svg/eye.svg"></i
@@ -203,20 +204,20 @@
                                 <a
                                     class="margin-right:10px"
                                     hidden
-                                    id="pass-attributes-eye-slash"
-                                    show="#pass-attributes-eye, #pass-attributes-demo-preview"
-                                    hide="#pass-attributes-eye-slash"
+                                    id="state-attributes-eye-slash"
+                                    show="#state-attributes-eye, #state-attributes-demo-preview"
+                                    hide="#state-attributes-eye-slash"
                                     toggle="code-height"
-                                    toggle-selector="#pass-attributes-demo-code"
+                                    toggle-selector="#state-attributes-demo-code"
                                     ><i
                                         class="height:20px fill:#505050"
                                         src="/assets/svg/eye-slash.svg"></i
                                 ></a>
                                 <a
                                     class="margin-right:10px"
-                                    id="pass-attributes-code"
-                                    show="#pass-attributes-code-slash"
-                                    hide="#pass-attributes-code, #pass-attributes-demo-code"
+                                    id="state-attributes-code"
+                                    show="#state-attributes-code-slash"
+                                    hide="#state-attributes-code, #state-attributes-demo-code"
                                     ><i
                                         class="height:20px fill:#505050"
                                         src="/assets/svg/code.svg"></i
@@ -224,9 +225,9 @@
                                 <a
                                     class="margin-right:10px"
                                     hidden
-                                    id="pass-attributes-code-slash"
-                                    show="#pass-attributes-code, #pass-attributes-demo-code"
-                                    hide="#pass-attributes-code-slash"
+                                    id="state-attributes-code-slash"
+                                    show="#state-attributes-code, #state-attributes-demo-code"
+                                    hide="#state-attributes-code-slash"
                                     ><i
                                         class="display:flex height:18px fill:#505050"
                                         src="/assets/svg/code.svg"></i
@@ -234,7 +235,7 @@
                                 <a
                                     class="margin-right:5px"
                                     fullscreen
-                                    fullscreen-selector="#pass-attributes-playground"></a>
+                                    fullscreen-selector="#state-attributes-playground"></a>
                             </div>
                         </div>
                         <!-- End SandBox -->
@@ -243,21 +244,21 @@
                         class="padding:35px_0px"
                         scroll
                         scroll-intersect="color:dodgerblue"
-                        scroll-selector="#pass-values-item">
-                        <h3 id="pass-values" class="padding-top:20px">
-                            Pass Values
+                        scroll-selector="#state-values-item">
+                        <h3 id="state-values" class="padding-top:20px">
+                            State Values
                         </h3>
                         <p class="padding:10px_0px line-height:1.5">
-                            Pass a value from an input to any element
+                            State a value from an input to any element
                         </p>
                         <!-- <pre><code class="language-html">&lt;h1 type="text" array="contacts" object="" key="name"&gt;&lt;/h1&gt;</code></pre> -->
 
                         <!-- SandBox -->
                         <div
                             class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="pass-values-playground">
+                            id="state-values-playground">
                             <div
-                                id="pass-values-demo-code"
+                                id="state-values-demo-code"
                                 resizable
                                 class="position:relative height:50%">
                                 <textarea
@@ -265,10 +266,10 @@
                                     lang="html"
                                     array="demos"
                                     object="619aa8e8a8b6b4001a9dc24e"
-                                    key="pass-values-demo"
+                                    key="state-values-demo"
                                     save="false"
-                                    id="pass-values-demo"
-                                    input-selector=".pass-values"
+                                    id="state-values-demo"
+                                    input-selector=".state-values"
                                     input-attribute="value"
                                     input-events="input, onload"
                                     class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
@@ -278,20 +279,20 @@
                             </div>
 
                             <div
-                                id="pass-values-demo-preview"
+                                id="state-values-demo-preview"
                                 class="position:relative overflow:auto background-color:white">
-                                <div class="pass-values padding:20px"></div>
+                                <div class="state-values padding:20px"></div>
                             </div>
 
                             <div
                                 class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
                                 <a
                                     class="margin-right:10px"
-                                    id="pass-values-eye"
-                                    show="#pass-values-eye-slash"
-                                    hide="#pass-values-eye, #pass-values-demo-preview"
+                                    id="state-values-eye"
+                                    show="#state-values-eye-slash"
+                                    hide="#state-values-eye, #state-values-demo-preview"
                                     toggle="code-height"
-                                    toggle-selector="#pass-values-demo-code"
+                                    toggle-selector="#state-values-demo-code"
                                     ><i
                                         class="height:18px fill:#505050"
                                         src="/assets/svg/eye.svg"></i
@@ -299,20 +300,20 @@
                                 <a
                                     class="margin-right:10px"
                                     hidden
-                                    id="pass-values-eye-slash"
-                                    show="#pass-values-eye, #pass-values-demo-preview"
-                                    hide="#pass-values-eye-slash"
+                                    id="state-values-eye-slash"
+                                    show="#state-values-eye, #state-values-demo-preview"
+                                    hide="#state-values-eye-slash"
                                     toggle="code-height"
-                                    toggle-selector="#pass-values-demo-code"
+                                    toggle-selector="#state-values-demo-code"
                                     ><i
                                         class="height:20px fill:#505050"
                                         src="/assets/svg/eye-slash.svg"></i
                                 ></a>
                                 <a
                                     class="margin-right:10px"
-                                    id="pass-values-code"
-                                    show="#pass-values-code-slash"
-                                    hide="#pass-values-code, #pass-values-demo-code"
+                                    id="state-values-code"
+                                    show="#state-values-code-slash"
+                                    hide="#state-values-code, #state-values-demo-code"
                                     ><i
                                         class="height:20px fill:#505050"
                                         src="/assets/svg/code.svg"></i
@@ -320,9 +321,9 @@
                                 <a
                                     class="margin-right:10px"
                                     hidden
-                                    id="pass-values-code-slash"
-                                    show="#pass-values-code, #pass-values-demo-code"
-                                    hide="#pass-values-code-slash"
+                                    id="state-values-code-slash"
+                                    show="#state-values-code, #state-values-demo-code"
+                                    hide="#state-values-code-slash"
                                     ><i
                                         class="display:flex height:18px fill:#505050"
                                         src="/assets/svg/code.svg"></i
@@ -330,7 +331,7 @@
                                 <a
                                     class="margin-right:5px"
                                     fullscreen
-                                    fullscreen-selector="#pass-values-playground"></a>
+                                    fullscreen-selector="#state-values-playground"></a>
                             </div>
                         </div>
                         <!-- End SandBox -->
@@ -449,7 +450,7 @@
                         <li
                             class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                             <h4>
-                                <span>pass_id</span>
+                                <span>state_id</span>
                                 <span class="cocreate-badge success"
                                     >string</span
                                 >
@@ -457,12 +458,12 @@
                                     >required</span
                                 >
                             </h4>
-                            <p>A uinque id to receive pass attribute.</p>
+                            <p>A uinque id to receive state attribute.</p>
                         </li>
                         <li
                             class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                             <h4>
-                                <span>pass_to</span>
+                                <span>state_to</span>
                                 <span class="cocreate-badge success"
                                     >string</span
                                 >
@@ -470,12 +471,12 @@
                                     >required</span
                                 >
                             </h4>
-                            <p>id where the attributes will be passed to.</p>
+                            <p>id where the attributes will be stated to.</p>
                         </li>
                         <li
                             class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                             <h4>
-                                <span>pass-*</span>
+                                <span>state-*</span>
                                 <span class="cocreate-badge success"
                                     >string</span
                                 >
@@ -483,12 +484,12 @@
                                     >required</span
                                 >
                             </h4>
-                            <p>Pass any attribute defined</p>
+                            <p>State any attribute defined</p>
                         </li>
                         <li
                             class="padding:15px_0px border-bottom:1px_solid_lightgrey">
                             <h4>
-                                <span>pass-overwrite</span>
+                                <span>state-overwrite</span>
                                 <span class="cocreate-badge success"
                                     >string</span
                                 >

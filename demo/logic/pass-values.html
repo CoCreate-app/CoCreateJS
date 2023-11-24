@@ -1,19 +1,17 @@
-
-<input pass_id="test1">
-<button actions="pass" pass-value="hello" pass_to="test1">Click to pass: hello</button>
-<button actions="pass" pass-value="goodbye" pass_to="test1">Click to pass: goodbye</button>
-
+<input state_id="test1" />
+<button actions="state" state-value="hello" state_to="test1">
+    Click to state: hello
+</button>
+<button actions="state" state-value="goodbye" state_to="test1">
+    Click to state: goodbye
+</button>
 
 <form>
+    <input state_to="test2" placeholder="Value 1" class="floating-label" />
+    <input state_to="test3" placeholder="Value 2" class="floating-label" />
 
-    <input pass_to="test2" placeholder="Value 1" class="floating-label"/>
-    <input pass_to="test3" placeholder="Value 2"  class="floating-label"/>
-
-    <button actions="pass">
-        Pass Values
-    </button>
-
+    <button actions="state">State Values</button>
 </form>
 
-<h1 pass_id="test2"></h1>
-<h1 pass_id="test3"></h1>
+<h1 state_id="test2"></h1>
+<h1 state_id="test3"></h1>
