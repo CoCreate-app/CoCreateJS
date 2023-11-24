@@ -105,8 +105,8 @@ module.exports = {
             "repo": "github.com/CoCreate-app/CoCreate-attributes.git"
         },
         {
-            "path": "../CoCreate-components/CoCreate-calculation",
-            "repo": "github.com/CoCreate-app/CoCreate-calculation.git"
+            "path": "../CoCreate-components/CoCreate-calculate",
+            "repo": "github.com/CoCreate-app/CoCreate-calculate.git"
         },
         {
             "path": "../CoCreate-components/CoCreate-cache",

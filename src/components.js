@@ -44,7 +44,7 @@ lazyLoad('uuid', '[uuid]', () => import(/*webpackChunkName: "uuid-chunk"*/ '@coc
 lazyLoad('search', '[search_id]', () => import(/*webpackChunkName: "search-chunk"*/ '@cocreate/search'));
 lazyLoad('elementConfig', '[config-selector]', () => import(/*webpackChunkName: "elementConfig-chunk"*/ '@cocreate/element-config'));
 lazyLoad('validation', '[actions*="validate"], required, unique', () => import(/*webpackChunkName: "validation-chunk"*/ '@cocreate/validation'));
-lazyLoad('calculation', '[calculate]', () => import(/*webpackChunkName: "calculation-chunk"*/ '@cocreate/calculation'));
+lazyLoad('calculate', '[calculate]', () => import(/*webpackChunkName: "calculate-chunk"*/ '@cocreate/calculate'));
 
 // Collabortion Components
 lazyLoad('selection', 'input, textarea, [contenteditable]', () => import(/*webpackChunkName: "selection-chunk"*/ '@cocreate/selection'));
