@@ -1,3 +1,19 @@
+# [1.66.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.65.0...v1.66.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* renamed pass to state ([a63bc04](https://github.com/CoCreate-app/CoCreateJS/commit/a63bc04c43d25aa375dfc0a0d9e0a827d8fee151))
+* update licensing details ([5837da1](https://github.com/CoCreate-app/CoCreateJS/commit/5837da1b40850a37d8c9ea6c2f385cfc8ee268db))
+* update nav, edit button and css path ([c242203](https://github.com/CoCreate-app/CoCreateJS/commit/c24220367915c2f59c1bd308d7d187dffe434610))
+* upgraded "@cocreate/state" to its latest version ([6e466dc](https://github.com/CoCreate-app/CoCreateJS/commit/6e466dc743e91891ec0c11688e0c6d3e682aa738))
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([cfa5b4a](https://github.com/CoCreate-app/CoCreateJS/commit/cfa5b4a23c7de417a6d0b76a7825b17f5dc42731))
+* upgrade dependencies for latest features and fixes ([14c518b](https://github.com/CoCreate-app/CoCreateJS/commit/14c518b629dda79db73f5581c0484fe7278725aa))
+
 # [1.65.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.64.0...v1.65.0) (2023-11-19)
 
 
