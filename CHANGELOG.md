@@ -1,3 +1,10 @@
+## [1.66.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.66.0...v1.66.1) (2023-11-26)
+
+
+### Bug Fixes
+
+* license path ([3c88f5b](https://github.com/CoCreate-app/CoCreateJS/commit/3c88f5ba08a4266bb38e0e8510d47cac59d87d79))
+
 # [1.66.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.65.0...v1.66.0) (2023-11-25)
 
 
