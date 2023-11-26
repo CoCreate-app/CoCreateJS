@@ -1,3 +1,10 @@
+## [1.66.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.66.1...v1.66.2) (2023-11-26)
+
+
+### Bug Fixes
+
+* renamed calculation to calculate ([29b283d](https://github.com/CoCreate-app/CoCreateJS/commit/29b283da05d0839bac5900e27f67ffbc50f9a355))
+
 ## [1.66.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.66.0...v1.66.1) (2023-11-26)
 
 
