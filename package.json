@@ -123,6 +123,7 @@
     "@cocreate/social-share": "^1.8.0",
     "@cocreate/socket-client": "^1.35.0",
     "@cocreate/state": "^1.19.0",
+    "@cocreate/stripe": "^1.15.1",
     "@cocreate/text": "^1.25.0",
     "@cocreate/toolbar": "^1.16.0",
     "@cocreate/unique": "^1.17.0",

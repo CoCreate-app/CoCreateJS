@@ -83,7 +83,7 @@ lazyLoad('pickr', '.color-picker', () => import(/*webpackChunkName: "pickr-chunk
 lazyLoad('prism', '.language-html, .language-css, .language-js, .language-shell, .language-json', () => import(/*webpackChunkName: "prism-chunk"*/ '@cocreate/prism'));
 // lazyLoad('sendgrid', '[sendgrid]', ()=> import (/*webpackChunkName: "sendgrid-chunk"*/ '@cocreate/sendgrid'));
 // lazyLoad('shipengine', '[shipengine]', ()=> import (/*webpackChunkName: "shipengine-chunk"*/ '@cocreate/shipengine'));
-// lazyLoad('stripe', '[stripe]', ()=> import (/*webpackChunkName: "stripe-chunk"*/ '@cocreate/stripe'));
+// lazyLoad('stripe', '[stripe]', () => import(/*webpackChunkName: "stripe-chunk"*/ '@cocreate/stripe'));
 // // lazyLoad('twilio', '[twilio]', ()=> import (/*webpackChunkName: "twilio-chunk"*/ '@cocreate/twilio'));
 // lazyLoad('twitter', '[twitter]', ()=> import (/*webpackChunkName: "twitter-chunk"*/ '@cocreate/twitter'));
 
