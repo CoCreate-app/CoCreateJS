@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const upload = require('@cocreate/cli/src/commands/upload.js')
 
+
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -31,6 +32,49 @@ module.exports = async (env, argv) => {
         },
 
         plugins: [
+            {
+                apply: (compiler) => {
+                    const CoCreateConfig = require('./CoCreate.config.js') || {};
+                    if (!CoCreateConfig.modules) {
+                        CoCreateConfig.modules = {}
+                    }
+
+                    let modulesGenerated = false
+
+                    compiler.hooks.beforeCompile.tapAsync('CoCreateLazyloader', (params, callback) => {
+                        if (modulesGenerated)
+                            callback();
+                        else {
+                            let outputPath = CoCreateConfig.modules.outputPath || './modules.js'; // Default path for generated module.js
+
+                            // Generate module content based on CoCreateConfig
+                            let moduleContent = `import { dependency, lazyLoad } from '@cocreate/lazy-loader';\n\n`;
+                            Object.entries(CoCreateConfig.modules).forEach(([moduleName, moduleInfo]) => {
+                                if (moduleName === 'outputPath' || typeof moduleInfo !== 'object') return;
+                                if (moduleInfo.selector) {
+                                    // Generate lazyLoad statements for modules with selectors
+                                    moduleContent += `lazyLoad('${moduleName}', '${moduleInfo.selector}', () => import(/*webpackChunkName: "${moduleName}-chunk"*/ '${moduleInfo.import}'));\n`;
+                                } else {
+                                    // Generate dependency statements for other modules
+                                    moduleContent += `dependency('${moduleName}', import(/*webpackChunkName: "${moduleName}-chunk"*/ '${moduleInfo.import}'));\n`;
+                                }
+                            });
+
+                            // Write the module content to the specified outputPath
+                            fs.writeFile(outputPath, moduleContent, (err) => {
+                                if (err) {
+                                    console.error(`Error writing ${outputPath}:`, err);
+                                    callback(err); // Handle errors in async hook
+                                } else {
+                                    modulesGenerated = true
+                                    console.log(`${outputPath} generated successfully.`);
+                                    callback(); // Proceed with compilation
+                                }
+                            });
+                        }
+                    });
+                },
+            },
             new CleanWebpackPlugin(),
             new MiniCssExtractPlugin({
                 filename: isProduction ? '[name].min.css' : '[name].css',
@@ -41,8 +85,9 @@ module.exports = async (env, argv) => {
                     else
                         return isProduction ? '[name].min.css' : '[name].css';
                 },
-            }),
+            })
         ],
+
 
         // devServer: {
         //     hot: true

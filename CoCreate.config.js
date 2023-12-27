@@ -66,6 +66,227 @@ module.exports = {
             }
         }
     ],
+    "modules": {
+        "outputPath": "./modules.js",
+        "observer": {
+            "import": "@cocreate/observer"
+        },
+        "utils": {
+            "import": "@cocreate/utils"
+        },
+        "indexeddb": {
+            "import": "@cocreate/indexeddb"
+        },
+        "localstorage": {
+            "import": "@cocreate/local-storage"
+        },
+        "config": {
+            "import": "@cocreate/config"
+        },
+        "socket": {
+            "import": "@cocreate/socket-client"
+        },
+        "events": {
+            "import": "@cocreate/events"
+        },
+        "crud": {
+            "import": "@cocreate/crud-client"
+        },
+        "crdt": {
+            "import": "@cocreate/crdt"
+        },
+        "element-prototype": {
+            "import": "@cocreate/element-prototype"
+        },
+        "state": {
+            "import": "@cocreate/state"
+        },
+        "link": {
+            "import": "@cocreate/link"
+        },
+        "cache": {
+            "import": "@cocreate/cache"
+        },
+        "pwa": {
+            "import": "@cocreate/pwa"
+        },
+        "cssParser": {
+            "import": "@cocreate/css-parser",
+            "selector": "link[array][object][key], link[parse]"
+        },
+        "actions": {
+            "import": "@cocreate/actions",
+            "selector": "[actions]"
+        },
+        "filter": {
+            "import": "@cocreate/filter",
+            "selector": "[filter-selector], [filter-closest], [filter-parent], [filter-next], [filter-previous]"
+        },
+        "render": {
+            "import": "@cocreate/render",
+            "selector": "[render], [render-selector], [render-closest], [render-parent], [render-next], [render-previous], [template], template"
+        },
+        "elements": {
+            "import": "@cocreate/elements",
+            "selector": "form, [src], [storage], [database], [array]"
+        },
+        "file": {
+            "import": "@cocreate/file",
+            "selector": "[type=\"file\"], [actions*=\"upload\"], [actions*=\"download\"], [actions*=\"saveLocally\"], [actions*=\"import\"], [actions*=\"export\"], [actions*=\"createFile\"], [actions*=\"deleteFile\"], [actions*=\"createDirectory\"], [actions*=\"deleteDirectory\"]"
+        },
+        "api": {
+            "import": "@cocreate/api",
+            "selector": "[actions], [template_id]"
+        },
+        "resizeObserver": {
+            "import": "@cocreate/resize-observer",
+            "selector": "[resize-selector]"
+        },
+        "dnd": {
+            "import": "@cocreate/dnd",
+            "selector": "[sortable], [cloneables], [draggable], [droppable], [cloneable]"
+        },
+        "position": {
+            "import": "@cocreate/position",
+            "selector": "[positionable], [moveable]"
+        },
+        "conditionalLogic": {
+            "import": "@cocreate/conditional-logic",
+            "selector": "[show], [hide]"
+        },
+        "scroll": {
+            "import": "@cocreate/scroll",
+            "selector": "[scroll]"
+        },
+        "resize": {
+            "import": "@cocreate/resize",
+            "selector": "[resize]"
+        },
+        "clone": {
+            "import": "@cocreate/clone",
+            "selector": "[actions*=\"clone\"]"
+        },
+        "remove": {
+            "import": "@cocreate/remove",
+            "selector": "[actions*=\"remove\"]"
+        },
+        "attributes": {
+            "import": "@cocreate/attributes",
+            "selector": "[attribute]"
+        },
+        "users": {
+            "import": "@cocreate/users",
+            "selector": "[session], [actions*=\"signUp\"], [actions*=\"signIn\"], [actions*=\"signOut\"], [user-status]"
+        },
+        "unique": {
+            "import": "@cocreate/unique",
+            "selector": "[unique]"
+        },
+        "organizations": {
+            "import": "@cocreate/organizations",
+            "selector": "[actions*=\"createOrganization\"]"
+        },
+        "industry": {
+            "import": "@cocreate/industry",
+            "selector": "[actions*=\"createIndustry\"], [actions*=\"runIndustry\"], [actions*=\"deleteIndustry\"], [actions*=\"deleteIndustries\"]"
+        },
+        "uuid": {
+            "import": "@cocreate/uuid",
+            "selector": "[uuid]"
+        },
+        "search": {
+            "import": "@cocreate/search",
+            "selector": "[search_id]"
+        },
+        "elementConfig": {
+            "import": "@cocreate/element-config",
+            "selector": "[config-selector]"
+        },
+        "validation": {
+            "import": "@cocreate/validation",
+            "selector": "[actions*=\"validate\"], required, unique"
+        },
+        "calculate": {
+            "import": "@cocreate/calculate",
+            "selector": "[calculate]"
+        },
+        "selection": {
+            "import": "@cocreate/selection",
+            "selector": "input, textarea, [contenteditable]"
+        },
+        "cursors": {
+            "import": "@cocreate/cursors",
+            "selector": "input, textarea, [contenteditable]"
+        },
+        "text": {
+            "import": "@cocreate/text",
+            "selector": "input, textarea, [contenteditable]"
+        },
+        "rich-text": {
+            "import": "@cocreate/rich-text",
+            "selector": "[actions*=\"nodeName\"], [actions*=\"cloneElement\"], [actions*=\"deleteElement\"]"
+        },
+        "codearea": {
+            "import": "@cocreate/codearea",
+            "selector": "[type=\"code\"]"
+        },
+        "floatingLabel": {
+            "import": "@cocreate/floating-label",
+            "selector": "floating-label, .floating-label"
+        },
+        "fullscreen": {
+            "import": "@cocreate/fullscreen",
+            "selector": "[fullscreen]"
+        },
+        "modal": {
+            "import": "@cocreate/modal",
+            "selector": "[actions*=\"Modal\"]"
+        },
+        "parallax": {
+            "import": "@cocreate/parallax",
+            "selector": "[parallax-src]"
+        },
+        "progress": {
+            "import": "@cocreate/progress",
+            "selector": "[data-progress]"
+        },
+        "randomColor": {
+            "import": "@cocreate/random-color",
+            "selector": "[background-color]"
+        },
+        "socialShare": {
+            "import": "@cocreate/social-share",
+            "selector": "[share-network]"
+        },
+        "select": {
+            "import": "@cocreate/select",
+            "selector": "cocreate-select"
+        },
+        "toolbar": {
+            "import": "@cocreate/toolbar",
+            "selector": "[toolbar-selector]"
+        },
+        "vdom": {
+            "import": "@cocreate/vdom",
+            "selector": "[vdom-selector], [vdom-id]"
+        },
+        "notification": {
+            "import": "@cocreate/notification",
+            "selector": "[actions*=\"notification\"]"
+        },
+        "openai": {
+            "import": "@cocreate/openai",
+            "selector": "[openai], [actions*=\"openAi\"]"
+        },
+        "pickr": {
+            "import": "@cocreate/pickr",
+            "selector": ".color-picker"
+        },
+        "prism": {
+            "import": "@cocreate/prism",
+            "selector": ".language-html, .language-css, .language-js, .language-shell, .language-json"
+        }
+    },
     "repositories": [
         {
             "path": "../CoCreateJS",
