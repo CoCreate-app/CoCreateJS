@@ -1,3 +1,19 @@
+# [1.67.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.66.2...v1.67.0) (2023-12-28)
+
+
+### Bug Fixes
+
+* added webpack and rollup to repositories ([7a63835](https://github.com/CoCreate-app/CoCreateJS/commit/7a63835a4324b87e9a14f4d54897b33e1cac9dfa))
+* menu path ([0a96fdf](https://github.com/CoCreate-app/CoCreateJS/commit/0a96fdf420c2a2abff3e43bcbae1f20b21d62700))
+
+
+### Features
+
+* add "@cocreate/stripe" ([522b26a](https://github.com/CoCreate-app/CoCreateJS/commit/522b26aad2ebaf836b62b4a204cc49d9b86738ec))
+* added @cocreate/webpack to access plugins ([85817ac](https://github.com/CoCreate-app/CoCreateJS/commit/85817acea96c80efebcbd6299ffb926df7459518))
+* generate modules.js file using CoCreate.config ([d67566f](https://github.com/CoCreate-app/CoCreateJS/commit/d67566f3bfa13970045a5188f3e66f817e731f6f))
+* plugins loaded from @cocreate/webpack ([ef53407](https://github.com/CoCreate-app/CoCreateJS/commit/ef53407c9e9402cceade713798b1271b80b0a45f))
+
 ## [1.66.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.66.1...v1.66.2) (2023-11-26)
 
 
