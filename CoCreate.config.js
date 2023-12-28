@@ -633,6 +633,10 @@ module.exports = {
             "repo": "github.com/CoCreate-app/CoCreate-prism.git"
         },
         {
+            "path": "../CoCreate-plugins/CoCreate-rollup",
+            "repo": "github.com/CoCreate-app/CoCreate-rollup.git"
+        },
+        {
             "path": "../CoCreate-plugins/CoCreate-sendgrid",
             "repo": "github.com/CoCreate-app/CoCreate-sendgrid.git"
         },
@@ -655,6 +659,10 @@ module.exports = {
         {
             "path": "../CoCreate-plugins/CoCreate-twitter",
             "repo": "github.com/CoCreate-app/CoCreate-twitter.git"
+        },
+        {
+            "path": "../CoCreate-plugins/CoCreate-webpack",
+            "repo": "github.com/CoCreate-app/CoCreate-webpack.git"
         }
     ]
 };
