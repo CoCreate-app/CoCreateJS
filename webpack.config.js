@@ -1,6 +1,6 @@
 const path = require('path');
 const CoCreateConfig = require('./CoCreate.config')
-const { ModuleGenerator, fileUploader, SymlinkCreator, escapeCharacters } = require('@cocreate/webpack')
+const { ModuleGenerator, FileUploader, SymlinkCreator } = require('@cocreate/webpack')
 
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -28,7 +28,7 @@ module.exports = async (env, argv) => {
 
         plugins: [
             new ModuleGenerator(CoCreateConfig.modules),
-            new fileUploader(env, argv),
+            new FileUploader(env, argv),
             new SymlinkCreator(),
             new CleanWebpackPlugin(),
             new MiniCssExtractPlugin({
