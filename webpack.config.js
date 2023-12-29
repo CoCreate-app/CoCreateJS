@@ -1,7 +1,6 @@
-// const fs = require('fs');
 const path = require('path');
 const CoCreateConfig = require('./CoCreate.config')
-const { ModuleGenerator, fileUploader, SymlinkCreator } = require('@cocreate/webpack')
+const { ModuleGenerator, fileUploader, SymlinkCreator, escapeCharacters } = require('@cocreate/webpack')
 
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -11,9 +10,6 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = async (env, argv) => {
     const isProduction = argv.mode === 'production'
-    const isWatch = argv.watch === true;
-    let isWatching = false
-
     const config = {
         // Path to your entry point. From this file Webpack will begin his work
         entry: {
@@ -34,7 +30,7 @@ module.exports = async (env, argv) => {
 
         plugins: [
             new ModuleGenerator(CoCreateConfig.modules),
-            new fileUploader(env),
+            new fileUploader(env, argv),
             new SymlinkCreator(),
             new CleanWebpackPlugin(),
             new MiniCssExtractPlugin({
@@ -64,7 +60,7 @@ module.exports = async (env, argv) => {
                 test: /\.js$/,
                 use: [
                     {
-                        loader: path.resolve(__dirname, 'node_modules/@cocreate/cli/src/loaders/replace-unicode.js')
+                        loader: path.resolve(__dirname, 'node_modules/@cocreate/webpack/src/replace-unicode.js')
                     },
                     {
                         loader: 'babel-loader',
@@ -93,9 +89,7 @@ module.exports = async (env, argv) => {
                         }
                     }
                 ]
-            }
-
-            ]
+            }]
         },
 
         optimization: {
