@@ -11,13 +11,11 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 module.exports = async (env, argv) => {
     const isProduction = argv.mode === 'production'
     const config = {
-        // Path to your entry point. From this file Webpack will begin his work
+        // Path to your entry point. From this file Webpack will begin it's work
         entry: {
             'CoCreate': './src/index.js'
         },
 
-        // Path and filename of your result bundle.
-        // Webpack will bundle all JavaScript into this file
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: isProduction ? '[name].min.js' : '[name].js',
@@ -44,7 +42,6 @@ module.exports = async (env, argv) => {
                 },
             })
         ],
-
 
         // devServer: {
         //     hot: true
@@ -116,7 +113,6 @@ module.exports = async (env, argv) => {
                 enforceSizeThreshold: 50000,
                 cacheGroups: {
                     defaultVendors: false,
-
                 },
             },
         },
