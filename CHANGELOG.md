@@ -1,3 +1,12 @@
+## [1.67.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.67.0...v1.67.1) (2024-01-17)
+
+
+### Bug Fixes
+
+* removed dead code ([d5abbe2](https://github.com/CoCreate-app/CoCreateJS/commit/d5abbe2f9c789698dd9ef37cd89fa2b5b06a4b03))
+* removed dead code ([a950f5d](https://github.com/CoCreate-app/CoCreateJS/commit/a950f5dde281c5fb0a1ab0228f819ec076827bf9))
+* update fileUploader to pascalCase FileUploader ([762f2b9](https://github.com/CoCreate-app/CoCreateJS/commit/762f2b934ae13b98b7b43300f4fc4a5a1e85dc99))
+
 # [1.67.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.66.2...v1.67.0) (2023-12-28)
 
 
