@@ -138,10 +138,6 @@ module.exports = {
             "import": "@cocreate/api",
             "selector": "[actions], [template_id]"
         },
-        "resizeObserver": {
-            "import": "@cocreate/resize-observer",
-            "selector": "[resize-selector]"
-        },
         "dnd": {
             "import": "@cocreate/dnd",
             "selector": "[sortable], [cloneables], [draggable], [droppable], [cloneable]"

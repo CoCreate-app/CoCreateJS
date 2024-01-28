@@ -115,7 +115,6 @@
     "@cocreate/remove": "^1.10.0",
     "@cocreate/render": "^1.35.0",
     "@cocreate/resize": "^1.10.0",
-    "@cocreate/resize-observer": "^1.8.0",
     "@cocreate/rich-text": "^1.9.0",
     "@cocreate/scroll": "^1.10.0",
     "@cocreate/search": "^1.8.0",
