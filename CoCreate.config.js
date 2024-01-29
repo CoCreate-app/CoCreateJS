@@ -485,10 +485,6 @@ module.exports = {
             "repo": "github.com/CoCreate-app/CoCreate-resize.git"
         },
         {
-            "path": "../CoCreate-components/CoCreate-resize-observer",
-            "repo": "github.com/CoCreate-app/CoCreate-resize-observer.git"
-        },
-        {
             "path": "../CoCreate-components/CoCreate-rich-text",
             "repo": "github.com/CoCreate-app/CoCreate-rich-text.git"
         },
