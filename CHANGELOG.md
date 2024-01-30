@@ -1,3 +1,11 @@
+## [1.67.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.67.2...v1.67.3) (2024-01-30)
+
+
+### Bug Fixes
+
+* removed resize-observer from repositories ([6d454d2](https://github.com/CoCreate-app/CoCreateJS/commit/6d454d209a31ea8ddd6c6693aafb0514fca2df6e))
+* resize-observer removed as its logic is now handled by CoCreate-events ([0a10e83](https://github.com/CoCreate-app/CoCreateJS/commit/0a10e83ebb4e5cc532e9c03c8b75d6aaceb23eef))
+
 ## [1.67.2](https://github.com/CoCreate-app/CoCreateJS/compare/v1.67.1...v1.67.2) (2024-01-28)
 
 
