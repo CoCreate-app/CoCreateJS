@@ -281,6 +281,10 @@ module.exports = {
         "prism": {
             "import": "@cocreate/prism",
             "selector": ".language-html, .language-css, .language-js, .language-shell, .language-json"
+        },
+        "stripe": {
+            "import": "@cocreate/stripe",
+            "selector": "[stripe]"
         }
     },
     "repositories": [
