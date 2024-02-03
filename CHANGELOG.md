@@ -1,3 +1,10 @@
+## [1.67.4](https://github.com/CoCreate-app/CoCreateJS/compare/v1.67.3...v1.67.4) (2024-02-03)
+
+
+### Bug Fixes
+
+* add stripe module ([6c62c8e](https://github.com/CoCreate-app/CoCreateJS/commit/6c62c8e32b48be3df5934b377e8018ea1fc0dfb0))
+
 ## [1.67.3](https://github.com/CoCreate-app/CoCreateJS/compare/v1.67.2...v1.67.3) (2024-01-30)
 
 
