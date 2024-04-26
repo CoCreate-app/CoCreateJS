@@ -1,3 +1,16 @@
+# [1.68.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.67.5...v1.68.0) (2024-04-26)
+
+
+### Bug Fixes
+
+* syntax ([6d133dd](https://github.com/CoCreate-app/CoCreateJS/commit/6d133ddc2c834489e0daa9500576b1e6a4a618d8))
+* to support lazy loading ffmpeg as module ([f2138c5](https://github.com/CoCreate-app/CoCreateJS/commit/f2138c594afb9056e233310f7f8ad043e96b2baf))
+
+
+### Features
+
+* add ffmpeg for clientside video processing ([0085fe1](https://github.com/CoCreate-app/CoCreateJS/commit/0085fe18b64d583e061c5f1ddf1acaee839b8a84))
+
 ## [1.67.5](https://github.com/CoCreate-app/CoCreateJS/compare/v1.67.4...v1.67.5) (2024-02-05)
 
 
