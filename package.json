@@ -90,6 +90,7 @@
     "@cocreate/element-prototype": "^1.15.0",
     "@cocreate/elements": "^1.28.0",
     "@cocreate/events": "^1.16.0",
+    "@cocreate/ffmpeg": "^1.0.3",
     "@cocreate/file": "^1.13.0",
     "@cocreate/filter": "^1.27.0",
     "@cocreate/floating-label": "^1.12.0",
