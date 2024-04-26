@@ -132,7 +132,7 @@ module.exports = {
         },
         "file": {
             "import": "@cocreate/file",
-            "selector": "[type=\"file\"], [actions*=\"upload\"], [actions*=\"download\"], [actions*=\"saveLocally\"], [actions*=\"import\"], [actions*=\"export\"], [actions*=\"createFile\"], [actions*=\"deleteFile\"], [actions*=\"createDirectory\"], [actions*=\"deleteDirectory\"]"
+            "selector": "[type='file'], [actions*='upload'], [actions*='download'], [actions*='saveLocally'], [actions*='import'], [actions*='export'], [actions*='createFile'], [actions*='deleteFile'], [actions*='createDirectory'], [actions*='deleteDirectory']"
         },
         "api": {
             "import": "@cocreate/api",
@@ -160,11 +160,11 @@ module.exports = {
         },
         "clone": {
             "import": "@cocreate/clone",
-            "selector": "[actions*=\"clone\"]"
+            "selector": "[actions*='clone']"
         },
         "remove": {
             "import": "@cocreate/remove",
-            "selector": "[actions*=\"remove\"]"
+            "selector": "[actions*='remove']"
         },
         "attributes": {
             "import": "@cocreate/attributes",
@@ -172,7 +172,7 @@ module.exports = {
         },
         "users": {
             "import": "@cocreate/users",
-            "selector": "[session], [actions*=\"signUp\"], [actions*=\"signIn\"], [actions*=\"signOut\"], [user-status]"
+            "selector": "[session], [actions*='signUp'], [actions*='signIn'], [actions*='signOut'], [user-status]"
         },
         "unique": {
             "import": "@cocreate/unique",
@@ -180,11 +180,11 @@ module.exports = {
         },
         "organizations": {
             "import": "@cocreate/organizations",
-            "selector": "[actions*=\"createOrganization\"]"
+            "selector": "[actions*='createOrganization']"
         },
         "industry": {
             "import": "@cocreate/industry",
-            "selector": "[actions*=\"createIndustry\"], [actions*=\"runIndustry\"], [actions*=\"deleteIndustry\"], [actions*=\"deleteIndustries\"]"
+            "selector": "[actions*='createIndustry'], [actions*='runIndustry'], [actions*='deleteIndustry'], [actions*='deleteIndustries']"
         },
         "uuid": {
             "import": "@cocreate/uuid",
@@ -200,7 +200,7 @@ module.exports = {
         },
         "validation": {
             "import": "@cocreate/validation",
-            "selector": "[actions*=\"validate\"], required, unique"
+            "selector": "[actions*='validate'], required, unique"
         },
         "calculate": {
             "import": "@cocreate/calculate",
@@ -220,11 +220,11 @@ module.exports = {
         },
         "rich-text": {
             "import": "@cocreate/rich-text",
-            "selector": "[actions*=\"nodeName\"], [actions*=\"cloneElement\"], [actions*=\"deleteElement\"]"
+            "selector": "[actions*='nodeName'], [actions*='cloneElement'], [actions*='deleteElement']"
         },
         "codearea": {
             "import": "@cocreate/codearea",
-            "selector": "[type=\"code\"]"
+            "selector": "[type='code']"
         },
         "floatingLabel": {
             "import": "@cocreate/floating-label",
@@ -236,7 +236,7 @@ module.exports = {
         },
         "modal": {
             "import": "@cocreate/modal",
-            "selector": "[actions*=\"Modal\"]"
+            "selector": "[actions*='Modal']"
         },
         "parallax": {
             "import": "@cocreate/parallax",
@@ -268,11 +268,15 @@ module.exports = {
         },
         "notification": {
             "import": "@cocreate/notification",
-            "selector": "[actions*=\"notification\"]"
+            "selector": "[actions*='notification']"
+        },
+        "ffmpeg": {
+            "import": "@cocreate/ffmpeg",
+            "selector": "[processor='ffmpeg']"
         },
         "openai": {
             "import": "@cocreate/openai",
-            "selector": "[openai], [actions*=\"openAi\"]"
+            "selector": "[openai], [actions*='openAi']"
         },
         "pickr": {
             "import": "@cocreate/pickr",
@@ -581,12 +585,16 @@ module.exports = {
             "repo": "github.com/CoCreate-app/CoCreate-domain.git"
         },
         {
-            "path": "../CoCreate-plugins/CoCreate-fullcalendar",
-            "repo": "github.com/CoCreate-app/CoCreate-fullcalendar.git"
-        },
-        {
             "path": "../CoCreate-plugins/CoCreate-facebook",
             "repo": "github.com/CoCreate-app/CoCreate-facebook.git"
+        },
+        {
+            "path": "../CoCreate-plugins/CoCreate-ffmpeg",
+            "repo": "github.com/CoCreate-app/CoCreate-ffmpeg.git"
+        },
+        {
+            "path": "../CoCreate-plugins/CoCreate-fullcalendar",
+            "repo": "github.com/CoCreate-app/CoCreate-fullcalendar.git"
         },
         {
             "path": "../CoCreate-plugins/CoCreate-google-maps",
