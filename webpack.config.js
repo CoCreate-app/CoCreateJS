@@ -20,10 +20,17 @@ module.exports = async (env, argv) => {
             path: path.resolve(__dirname, 'dist'),
             filename: isProduction ? '[name].min.js' : '[name].js',
             chunkFilename: isProduction ? '[name].min.js' : '[name].js',
+            // filename: isProduction ? '[name].js' : '[name].js',
+            // chunkFilename: isProduction ? '[name].js' : '[name].js',
             libraryTarget: 'umd',
             libraryExport: 'default',
             library: 'CoCreate',
             globalObject: "this",
+        },
+
+        experiments: {
+            asyncWebAssembly: true,
+            topLevelAwait: true,
         },
 
         plugins: [
@@ -50,43 +57,59 @@ module.exports = async (env, argv) => {
         mode: isProduction ? 'production' : 'development',
 
         // add source map
-        ...(isProduction ? { devtool: 'eval-source-map' } : { devtool: 'eval-source-map' }),
+        ...(isProduction ? {} : { devtool: 'eval-source-map' }),
 
         module: {
-            rules: [{
-                test: /\.js$/,
-                use: [
-                    {
-                        loader: path.resolve(__dirname, 'node_modules/@cocreate/webpack/src/replace-unicode.js')
+            rules: [
+                {
+                    test: /\.js$/,
+                    exclude: (modulePath) => {
+                        // Additionally, exclude `CoCreate-ffmpeg.js` file
+                        if (/ffmpeg/.test(modulePath)) {
+                            return true;
+                        }
+                        // Include all other .js files
+                        return false;
                     },
-                    {
-                        loader: 'babel-loader',
-                        options: {
-                            plugins: ["@babel/plugin-transform-modules-commonjs"],
-                            retainLines: true, // Add this option
+                    use: [
+                        {
+                            loader: path.resolve(__dirname, 'node_modules/@cocreate/webpack/src/replace-unicode.js')
+                        },
+                        {
+                            loader: 'babel-loader',
+                            options: {
+                                plugins: ["@babel/plugin-transform-modules-commonjs"],
+                                retainLines: true, // Add this option
+                            }
                         }
-                    }
-                ]
-            },
-            {
-                test: /.css$/i,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader'
-                ]
-            },
-            {
-                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: 'fonts/'
+                    ]
+                },
+                {
+                    test: /\.js$/,
+                    generator: {
+                        filename: '[name].js', // Customize this pattern
+                    },
+                },
+                {
+                    test: /.css$/i,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        'css-loader'
+                    ]
+                },
+                {
+                    test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                    use: [
+                        {
+                            loader: 'file-loader',
+                            options: {
+                                name: '[name].[ext]',
+                                outputPath: 'fonts/'
+                            }
                         }
-                    }
-                ]
-            }]
+                    ]
+                }
+            ]
         },
 
         optimization: {
