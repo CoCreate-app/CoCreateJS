@@ -68,6 +68,9 @@ module.exports = {
     ],
     "modules": {
         "outputPath": "./modules.js",
+        "element-prototype": {
+            "import": "@cocreate/element-prototype"
+        },
         "observer": {
             "import": "@cocreate/observer"
         },
@@ -94,9 +97,6 @@ module.exports = {
         },
         "crdt": {
             "import": "@cocreate/crdt"
-        },
-        "element-prototype": {
-            "import": "@cocreate/element-prototype"
         },
         "state": {
             "import": "@cocreate/state"
