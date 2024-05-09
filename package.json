@@ -124,7 +124,6 @@
     "@cocreate/social-share": "^1.9.1",
     "@cocreate/socket-client": "^1.39.0",
     "@cocreate/state": "^1.22.0",
-    "@cocreate/stripe": "^1.23.4",
     "@cocreate/text": "^1.26.3",
     "@cocreate/toolbar": "^1.17.1",
     "@cocreate/unique": "^1.19.3",
