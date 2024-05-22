@@ -200,7 +200,7 @@ module.exports = {
         },
         "validation": {
             "import": "@cocreate/validation",
-            "selector": "[actions*='validate'], required, unique"
+            "selector": "[actions*='validate'], [required]"
         },
         "calculate": {
             "import": "@cocreate/calculate",
