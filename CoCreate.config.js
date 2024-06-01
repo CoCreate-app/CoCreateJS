@@ -220,7 +220,7 @@ module.exports = {
         },
         "rich-text": {
             "import": "@cocreate/rich-text",
-            "selector": "[actions*='nodeName'], [actions*='cloneElement'], [actions*='deleteElement']"
+            "selector": "[actions*='nodeName'], [actions*='cloneElement'], [actions*='deleteElement'], [node-name]"
         },
         "codearea": {
             "import": "@cocreate/codearea",
