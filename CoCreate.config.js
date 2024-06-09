@@ -289,6 +289,10 @@ module.exports = {
         "stripe": {
             "import": "@cocreate/stripe",
             "selector": "[stripe]"
+        },
+        "fbabric": {
+            "import": "@cocreate/fabric",
+            "selector": "[fabric]"
         }
     },
     "repositories": [
@@ -583,6 +587,10 @@ module.exports = {
         {
             "path": "../CoCreate-plugins/CoCreate-domain",
             "repo": "github.com/CoCreate-app/CoCreate-domain.git"
+        },
+        {
+            "path": "../CoCreate-plugins/CoCreate-fabric",
+            "repo": "github.com/CoCreate-app/CoCreate-fabric.git"
         },
         {
             "path": "../CoCreate-plugins/CoCreate-facebook",

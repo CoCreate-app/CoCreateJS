@@ -90,6 +90,7 @@
     "@cocreate/element-prototype": "^1.22.2",
     "@cocreate/elements": "^1.35.1",
     "@cocreate/events": "^1.19.4",
+    "@cocreate/fabric": "^1.0.0",
     "@cocreate/ffmpeg": "^1.1.0",
     "@cocreate/file": "^1.17.1",
     "@cocreate/filter": "^1.28.6",
