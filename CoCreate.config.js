@@ -290,7 +290,7 @@ module.exports = {
             "import": "@cocreate/stripe",
             "selector": "[stripe]"
         },
-        "fbabric": {
+        "fabric": {
             "import": "@cocreate/fabric",
             "selector": "[fabric]"
         }
