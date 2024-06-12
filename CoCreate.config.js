@@ -1,7 +1,13 @@
 module.exports = {
     "organization_id": "",
     "key": "",
-    "host": "",
+    "host": {
+        "$branch": {
+            "master": "wss://cocreate.app",
+            "dev": "wss://dev.cocreate.app",
+            "test": "wss://test.cocreate.app"
+        }
+    },
     "directories": [
         {
             "entry": "./dist",
