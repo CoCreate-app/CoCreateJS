@@ -667,10 +667,6 @@ module.exports = {
             "repo": "github.com/CoCreate-app/CoCreate-stripe.git"
         },
         {
-            "path": "../CoCreate-plugins/CoCreate-tui-image-editor",
-            "repo": "github.com/CoCreate-app/CoCreate-tui-image-editor.git"
-        },
-        {
             "path": "../CoCreate-plugins/CoCreate-twilio",
             "repo": "github.com/CoCreate-app/CoCreate-twilio.git"
         },
