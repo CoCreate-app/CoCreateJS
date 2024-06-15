@@ -132,13 +132,13 @@ module.exports = {
             "import": "@cocreate/render",
             "selector": "[render], [render-selector], [render-closest], [render-parent], [render-next], [render-previous], [template], template"
         },
-        "elements": {
-            "import": "@cocreate/elements",
-            "selector": "form, [src], [storage], [database], [array]"
-        },
         "file": {
             "import": "@cocreate/file",
             "selector": "[type='file'], [actions*='upload'], [actions*='download'], [actions*='saveLocally'], [actions*='import'], [actions*='export'], [actions*='createFile'], [actions*='deleteFile'], [actions*='createDirectory'], [actions*='deleteDirectory']"
+        },
+        "elements": {
+            "import": "@cocreate/elements",
+            "selector": "form, [src], [storage], [database], [array]"
         },
         "api": {
             "import": "@cocreate/api",
