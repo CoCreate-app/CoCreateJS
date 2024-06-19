@@ -102,6 +102,7 @@
     "@cocreate/lazy-loader": "^1.20.0",
     "@cocreate/link": "^1.11.6",
     "@cocreate/local-storage": "^1.15.0",
+    "@cocreate/marked": "^1.1.0",
     "@cocreate/modal": "^1.17.1",
     "@cocreate/notification": "^1.6.2",
     "@cocreate/observer": "^1.16.1",

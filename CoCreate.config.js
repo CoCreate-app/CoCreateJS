@@ -288,6 +288,10 @@ module.exports = {
             "import": "@cocreate/pickr",
             "selector": ".color-picker"
         },
+        "marked": {
+            "import": "@cocreate/marked",
+            "selector": "[marked], [actions*='marked'], .markdown-body"
+        },
         "prism": {
             "import": "@cocreate/prism",
             "selector": ".language-html, .language-css, .language-js, .language-shell, .language-json"
