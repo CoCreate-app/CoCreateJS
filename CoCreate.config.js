@@ -280,10 +280,6 @@ module.exports = {
             "import": "@cocreate/ffmpeg",
             "selector": "[processor='ffmpeg']"
         },
-        "openai": {
-            "import": "@cocreate/openai",
-            "selector": "[openai], [actions*='openAi']"
-        },
         "pickr": {
             "import": "@cocreate/pickr",
             "selector": ".color-picker"
