@@ -1,3 +1,30 @@
+# [1.69.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.68.0...v1.69.0) (2024-07-05)
+
+
+### Bug Fixes
+
+* add [node-name] selector ([2330d42](https://github.com/CoCreate-app/CoCreateJS/commit/2330d42187532f4194f806e001320251b37e2d33))
+* Add host for development lifecycle management ([052a7f7](https://github.com/CoCreate-app/CoCreateJS/commit/052a7f72fdd964e28a2dbb0378de628f86a01001))
+* add marked to repositories ([7d4b0e1](https://github.com/CoCreate-app/CoCreateJS/commit/7d4b0e1b38865e66c01eec860440eba2fb08ef14))
+* bump cocreate dependencies ([da54935](https://github.com/CoCreate-app/CoCreateJS/commit/da549350118b77ba667e899574089dfc62390820))
+* bumped cocreate dependencies ([1af03cb](https://github.com/CoCreate-app/CoCreateJS/commit/1af03cb7c6bc0ead67415f1a930ee03e24113549))
+* fabric typo ([3bab112](https://github.com/CoCreate-app/CoCreateJS/commit/3bab112ff0523a5769c509d598aeb6c6973e99f7))
+* load file before elements ([85ef755](https://github.com/CoCreate-app/CoCreateJS/commit/85ef7550262ecf7927a9c352dfd3319aabd5dbbc))
+* localstorage-key replaced with operatopr $user_id ([8aadd39](https://github.com/CoCreate-app/CoCreateJS/commit/8aadd39586c8abd27d6b2e2166239e7064a1df00))
+* moved element-prototype to the top of dependency loads ([bb5f3ca](https://github.com/CoCreate-app/CoCreateJS/commit/bb5f3ca9990ca9e38a0b65e4c0fb3755d10067da))
+* removed @cocreate/stripe handled dynamically by CoCreateApi ([87643e9](https://github.com/CoCreate-app/CoCreateJS/commit/87643e995599f986824c30650adb277e45f4aabb))
+* removed openai form module build. now handeled dynamically ([638b835](https://github.com/CoCreate-app/CoCreateJS/commit/638b8356074cfeab9af48d93048b4162f254c234))
+* removed stripe client handled dynamically ([3110c76](https://github.com/CoCreate-app/CoCreateJS/commit/3110c76704684f751c633225ce8366ca1ffd1065))
+* removed tui editor plugin ([57293db](https://github.com/CoCreate-app/CoCreateJS/commit/57293db132b9fb9d329672602c78cd9c1f5ffcc2))
+* svg icon class ([d2ec1b5](https://github.com/CoCreate-app/CoCreateJS/commit/d2ec1b5d02cceac7b62c0b987fcb08e1cfbd388d))
+* validate selector ([7b13f70](https://github.com/CoCreate-app/CoCreateJS/commit/7b13f70911935159e865f984e2514ff7e98aecca))
+
+
+### Features
+
+* added "@cocreate/markdown" ([c7b9ced](https://github.com/CoCreate-app/CoCreateJS/commit/c7b9ced649cb4678fcedf925d3603e0a0ec543d4))
+* Added Component "@cocreate/fabric" ([4a36cc8](https://github.com/CoCreate-app/CoCreateJS/commit/4a36cc8ddae781646b9077555038778f2599e1d0))
+
 # [1.68.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.67.5...v1.68.0) (2024-04-26)
 
 
