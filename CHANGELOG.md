@@ -1,3 +1,16 @@
+# [1.70.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.69.0...v1.70.0) (2024-08-01)
+
+
+### Bug Fixes
+
+* update docs ([4647d0b](https://github.com/CoCreate-app/CoCreateJS/commit/4647d0bd451c11c5a0ed379525605cf4333a08a5))
+* use same name for production and dev ([169295b](https://github.com/CoCreate-app/CoCreateJS/commit/169295bd1c4aad9d85fec2edcaa344cc41687b73))
+
+
+### Features
+
+* add @cocreate/aos ([8495586](https://github.com/CoCreate-app/CoCreateJS/commit/84955865023853587fee2e7d1be25f0a9d04c7b0))
+
 # [1.69.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.68.0...v1.69.0) (2024-07-05)
 
 
