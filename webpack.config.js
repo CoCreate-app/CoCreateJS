@@ -18,10 +18,10 @@ module.exports = async (env, argv) => {
 
         output: {
             path: path.resolve(__dirname, 'dist'),
-            filename: isProduction ? '[name].min.js' : '[name].js',
-            chunkFilename: isProduction ? '[name].min.js' : '[name].js',
-            // filename: isProduction ? '[name].js' : '[name].js',
-            // chunkFilename: isProduction ? '[name].js' : '[name].js',
+            // filename: isProduction ? '[name].min.js' : '[name].js',
+            // chunkFilename: isProduction ? '[name].min.js' : '[name].js',
+            filename: isProduction ? '[name].js' : '[name].js',
+            chunkFilename: isProduction ? '[name].js' : '[name].js',
             libraryTarget: 'umd',
             libraryExport: 'default',
             library: 'CoCreate',
