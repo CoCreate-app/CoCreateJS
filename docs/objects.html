@@ -28,13 +28,13 @@
             object="60888216117c640e7596303f"
             key="src"
             type="text/css"
-            save="true" />
+            save="true"
+            parse="true" />
         <link rel="manifest" href="/manifest.webmanifest" />
     </head>
 
     <body>
         <nav
-            class="width:100% display:flex align-items:center background:transparent padding-top:10px padding-bottom:10px"
             content_id="content"
             scroll="sticky-nav,"
             scroll-up="5"
@@ -43,15 +43,12 @@
             src="../components/navbar.html"></nav>
         <sidenav
             id="menuL"
-            class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl"
+            class="top:0px left:0px width:0px width:300px@xl"
             resizable
-            resize-selector="[content_id='content']"
-            resize-property="margin-left"
-            resize-value="width">
-            <menu
-                array="files"
-                object="603717b07de7fb350ae9fec8"
-                key="src"></menu>
+            resize-selector="document; main, document; nav, document; footer"
+            resize-attribute="style"
+            resize-property="margin-left">
+            <menu path="../" src="./components/menu.html"></menu>
             <div resize="right"></div>
         </sidenav>
         <main
@@ -64,7 +61,7 @@
                     <h2>CoCreateJS</h2>
                 </div>
                 <div
-                    class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px background:white">
+                    class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px">
                     <div
                         class="display:flex align-items:center transition:0.3s padding-left:10px"
                         share-network="true"
@@ -2086,11 +2083,11 @@ crud.readDocument({
             <button
                 href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/objects.html?message=docs%3A%20describe%20your%20change..."
                 target="_blank"
-                class="display:flex justify-content:center align-items:center position:fixed bottom:15px right:15px height:50px width:50px border-radius:50% box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
-                <i class="height:20px" src="../assets/svg/pencil-alt.svg"></i>
+                class="button-round">
+                <i src="../assets/svg/pencil-alt.svg"></i>
             </button>
         </main>
 
-        <script src="https://CoCreate.app/dist/CoCreate.js"></script>
+        <script src="../dist/CoCreate.js"></script>
     </body>
 </html>

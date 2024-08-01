@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <title>CoCreateJS - Templating</title>
         <meta
             name="description"
             content="Fetch, filter and render a list of data using HTML." />
+
+        <meta name="keywords" content="web apps, AI, design, development" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="CoCreate" />
+        <meta name="generator" content="CoCreateJS" />
+
+        <!-- Canonical Tag -->
+        <link rel="canonical" href="https://cocreate.app" />
+
         <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="https://cocreate.app/images/favicon.ico" />
+            href="../assets/favicon.ico" />
 
         <link
             rel="stylesheet"
@@ -20,7 +30,8 @@
             array="files"
             object="60888216117c640e7596303f"
             key="src"
-            type="text/css" />
+            type="text/css"
+            parse="true" />
 
         <!-- Google tag (gtag.js) -->
         <script
@@ -41,29 +52,15 @@
 
     <body>
         <nav
-            class="width:100% display:flex align-items:center background:transparent padding-top:10px padding-bottom:10px"
             content_id="content"
             scroll="sticky-nav,"
             scroll-up="5"
             scroll-down="5"
             path="../"
             src="../components/navbar.html"></nav>
-        <sidenav
-            id="menuL"
-            class="position:fixed top:0px left:0px overflow:hidden background:whitesmoke height:100vh width:0px width:300px@xl"
-            resizable
-            resize-selector="[content_id='content']"
-            resize-property="margin-left"
-            resize-value="width">
-            <menu
-                array="files"
-                object="603717b07de7fb350ae9fec8"
-                key="src"></menu>
-            <div resize="right"></div>
-        </sidenav>
 
         <!-- Main Content -->
-        <main class="padding-top:15px padding:15px@lg@xl" content_id="content">
+        <main class="padding:15px padding:25px@lg@xl" content_id="content">
             <section>
                 <div
                     class="display:flex flex-wrap:wrap justify-content:space-between position:relative margin:10px">
@@ -71,7 +68,7 @@
                         <h2>Templating</h2>
                     </div>
                     <div
-                        class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px background:white">
+                        class="display:flex align-items:center font-size:20px position:absolute right:0 padding:5px">
                         <div
                             class="display:flex align-items:center transition:0.3s padding-left:10px"
                             share-network="true"
@@ -160,7 +157,7 @@
                                     key="fetch-demo"
                                     save="false"
                                     id="fetch-demo"
-                                    input-selector=".fetch-demo"
+                                    input-selector="document; .fetch-demo"
                                     input-attribute="value"
                                     input-events="input, onload"
                                     class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
@@ -171,14 +168,13 @@
 
                             <div
                                 id="fetch-demo-preview"
-                                class="position:relative overflow:auto background-color:white">
+                                class="position:relative overflow:auto">
                                 <div class="fetch-demo padding:20px"></div>
                             </div>
 
                             <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                class="display:flex gap:10px font-size:20px position:absolute top:10px right:10px opacity:0.6">
                                 <a
-                                    class="margin-right:10px"
                                     id="fetch-eye"
                                     show="#fetch-eye-slash"
                                     hide="#fetch-eye, #fetch-demo-preview"
@@ -189,7 +185,6 @@
                                         src="/assets/svg/eye.svg"></i
                                 ></a>
                                 <a
-                                    class="margin-right:10px"
                                     hidden
                                     id="fetch-eye-slash"
                                     show="#fetch-eye, #fetch-demo-preview"
@@ -199,14 +194,12 @@
                                     ><i src="/assets/svg/eye-slash.svg"></i
                                 ></a>
                                 <a
-                                    class="margin-right:10px"
                                     id="fetch-code"
                                     show="#fetch-code-slash"
                                     hide="#fetch-code, #fetch-demo-code"
                                     ><i src="/assets/svg/code.svg"></i
                                 ></a>
                                 <a
-                                    class="margin-right:10px"
                                     hidden
                                     id="fetch-code-slash"
                                     show="#fetch-code, #fetch-demo-code"
@@ -216,9 +209,11 @@
                                         src="/assets/svg/code.svg"></i
                                 ></a>
                                 <a
-                                    class="margin-right:5px"
                                     fullscreen
-                                    fullscreen-selector="#fetch-playground"></a>
+                                    fullscreen-selector="document; #fetch-playground">
+                                    <i src="../assets/svg/expand.svg"></i>
+                                    <i src="../assets/svg/compress.svg"></i>
+                                </a>
                             </div>
                         </div>
                         <!-- End SandBox -->
@@ -251,7 +246,7 @@
                                     key="filter-demo"
                                     save="false"
                                     id="filter-demo"
-                                    input-selector=".filter-demo"
+                                    input-selector="document; .filter-demo"
                                     input-attribute="value"
                                     input-events="input, onload"
                                     class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
@@ -262,14 +257,13 @@
 
                             <div
                                 id="filter-demo-preview"
-                                class="position:relative overflow:auto background-color:white">
+                                class="position:relative overflow:auto">
                                 <div class="filter-demo padding:20px"></div>
                             </div>
 
                             <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
+                                class="display:flex gap:10px font-size:20px position:absolute top:10px right:10px opacity:0.6">
                                 <a
-                                    class="margin-right:10px"
                                     id="filter-eye"
                                     show="#filter-eye-slash"
                                     hide="#filter-eye, #filter-demo-preview"
@@ -280,7 +274,6 @@
                                         src="/assets/svg/eye.svg"></i
                                 ></a>
                                 <a
-                                    class="margin-right:10px"
                                     hidden
                                     id="filter-eye-slash"
                                     show="#filter-eye, #filter-demo-preview"
@@ -290,14 +283,12 @@
                                     ><i src="/assets/svg/eye-slash.svg"></i
                                 ></a>
                                 <a
-                                    class="margin-right:10px"
                                     id="filter-code"
                                     show="#filter-code-slash"
                                     hide="#filter-code, #filter-demo-code"
                                     ><i src="/assets/svg/code.svg"></i
                                 ></a>
                                 <a
-                                    class="margin-right:10px"
                                     hidden
                                     id="filter-code-slash"
                                     show="#filter-code, #filter-demo-code"
@@ -307,9 +298,11 @@
                                         src="/assets/svg/code.svg"></i
                                 ></a>
                                 <a
-                                    class="margin-right:5px"
                                     fullscreen
-                                    fullscreen-selector="#filter-playground"></a>
+                                    fullscreen-selector="#filter-playground">
+                                    <i src="../assets/svg/expand.svg"></i>
+                                    <i src="../assets/svg/compress.svg"></i>
+                                </a>
                             </div>
                         </div>
                         <!-- End SandBox -->
@@ -560,40 +553,58 @@
                 </section>
             </div>
 
-            <!--  Previous &amp; Next  -->
-            <div
-                class="padding:10px width:100% margin-top:20px display:flex flex-wrap:wrap justify-content:flex-start">
+            <!-- Previous & Next -->
+            <section
+                class="width:100% margin-top:20px display:flex flex-wrap:wrap">
                 <div
                     class="padding:30px_15px border:1px_solid_#ddd flex-basis:50%">
-                    <p class="color:#888">Previous Topic</p>
-                    <p
-                        class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px">
-                        <a class="color:#1877F2:hover" href="./elements.html"
+                    <p>Previous Topic</p>
+                    <p class="font-size:20px font-size:12px@xs">
+                        <a href="./elements.html"
                             >Using CoCreateJS attributes on html elements</a
                         >
                     </p>
                 </div>
                 <div
                     class="padding:30px_15px border:1px_solid_#ddd flex-basis:50% text-align:right">
-                    <p class="color:#888">Next Topic</p>
-                    <p
-                        class="color:#000 margin-top:10px font-size:20px font-size:12px@xs line-height:27px">
-                        <a class="color:#1877F2:hover" href="./logic.html"
+                    <p>Next Topic</p>
+                    <p class="font-size:20px font-size:12px@xs">
+                        <a href="./logic.html"
                             >Applying logic and sharing data between pages</a
                         >
                     </p>
                 </div>
-            </div>
+            </section>
 
             <button
                 href="https://github.com/CoCreate-app/CoCreateJS/tree/master/docs/elements.html?message=docs%3A%20describe%20your%20change..."
                 target="_blank"
-                class="display:flex justify-content:center align-items:center position:fixed bottom:15px right:15px height:50px width:50px border-radius:50% box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4)">
-                <i class="height:20px" src="../assets/svg/pencil-alt.svg"></i>
+                class="button-round">
+                <i src="../assets/svg/pencil-alt.svg"></i>
             </button>
         </main>
 
-        <script src="https://CoCreate.app/dist/CoCreate.js"></script>
+        <!-- Footer -->
+        <footer
+            id="spreadtheword"
+            content_id="content"
+            path="../"
+            src="../components/footer.html"
+            class="margin-left:0px!important@xs@sm@md"></footer>
+
+        <!-- Sidenav -->
+        <sidenav
+            id="menuL"
+            class="top:0px left:0px width:0px width:300px@xl"
+            resizable
+            resize-selector="document; main, document; nav, document; footer"
+            resize-attribute="style"
+            resize-property="margin-left">
+            <menu path="../" src="./components/menu.html"></menu>
+            <div resize="right"></div>
+        </sidenav>
+
+        <script src="../dist/CoCreate.js"></script>
         <!-- <script src="../dist/CoCreate.js"></script> -->
     </body>
 </html>
