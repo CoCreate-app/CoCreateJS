@@ -69,6 +69,7 @@
   },
   "dependencies": {
     "@cocreate/actions": "^1.18.2",
+    "@cocreate/aos": "^1.0.2",
     "@cocreate/api": "^1.21.0",
     "@cocreate/attributes": "^1.14.2",
     "@cocreate/cache": "^1.5.1",

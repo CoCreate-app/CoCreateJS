@@ -276,6 +276,10 @@ module.exports = {
             "import": "@cocreate/notification",
             "selector": "[actions*='notification']"
         },
+        "aos": {
+            "import": "@cocreate/aos",
+            "selector": "[data-aos]"
+        },
         "ffmpeg": {
             "import": "@cocreate/ffmpeg",
             "selector": "[processor='ffmpeg']"
@@ -577,6 +581,10 @@ module.exports = {
         {
             "path": "../CoCreate-apps/CoCreate-sandbox",
             "repo": "github.com/CoCreate-app/CoCreate-sandbox.git"
+        },
+        {
+            "path": "../CoCreate-plugins/CoCreate-aos",
+            "repo": "github.com/CoCreate-app/CoCreate-aos.git"
         },
         {
             "path": "../CoCreate-plugins/CoCreate-charts",
