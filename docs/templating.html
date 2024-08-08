@@ -143,80 +143,10 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="fetch-playground">
-                            <div
-                                id="fetch-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="fetch-demo"
-                                    save="false"
-                                    id="fetch-demo"
-                                    input-selector="document; .fetch-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="fetch-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div class="fetch-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="display:flex gap:10px font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    id="fetch-eye"
-                                    show="#fetch-eye-slash"
-                                    hide="#fetch-eye, #fetch-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#fetch-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    hidden
-                                    id="fetch-eye-slash"
-                                    show="#fetch-eye, #fetch-demo-preview"
-                                    hide="#fetch-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#fetch-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    id="fetch-code"
-                                    show="#fetch-code-slash"
-                                    hide="#fetch-code, #fetch-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    hidden
-                                    id="fetch-code-slash"
-                                    show="#fetch-code, #fetch-demo-code"
-                                    hide="#fetch-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    fullscreen
-                                    fullscreen-selector="document; #fetch-playground">
-                                    <i src="../assets/svg/expand.svg"></i>
-                                    <i src="../assets/svg/compress.svg"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="fetch-demo"></div>
                     </section>
                     <section
                         class="padding:35px_0px"
@@ -232,80 +162,10 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="filter-playground">
-                            <div
-                                id="filter-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="filter-demo"
-                                    save="false"
-                                    id="filter-demo"
-                                    input-selector="document; .filter-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="filter-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div class="filter-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="display:flex gap:10px font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    id="filter-eye"
-                                    show="#filter-eye-slash"
-                                    hide="#filter-eye, #filter-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#filter-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    hidden
-                                    id="filter-eye-slash"
-                                    show="#filter-eye, #filter-demo-preview"
-                                    hide="#filter-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#filter-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    id="filter-code"
-                                    show="#filter-code-slash"
-                                    hide="#filter-code, #filter-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    hidden
-                                    id="filter-code-slash"
-                                    show="#filter-code, #filter-demo-code"
-                                    hide="#filter-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    fullscreen
-                                    fullscreen-selector="#filter-playground">
-                                    <i src="../assets/svg/expand.svg"></i>
-                                    <i src="../assets/svg/compress.svg"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="filter-demo"></div>
                     </section>
                 </div>
                 <!-- end column -->

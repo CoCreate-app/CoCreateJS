@@ -236,82 +236,10 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="state-values-playground">
-                            <div
-                                id="state-values-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="state-values-demo"
-                                    save="false"
-                                    id="state-values-demo"
-                                    input-selector="document; .state-values"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="state-values-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div class="state-values padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="state-values-eye"
-                                    show="#state-values-eye-slash"
-                                    hide="#state-values-eye, #state-values-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#state-values-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="state-values-eye-slash"
-                                    show="#state-values-eye, #state-values-demo-preview"
-                                    hide="#state-values-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#state-values-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="state-values-code"
-                                    show="#state-values-code-slash"
-                                    hide="#state-values-code, #state-values-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="state-values-code-slash"
-                                    show="#state-values-code, #state-values-demo-code"
-                                    hide="#state-values-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#state-values-playground"></a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="state-values-demo"></div>
                     </section>
                     <section
                         class="padding-top:35px"
@@ -331,83 +259,10 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="conditional-logic-playground">
-                            <div
-                                id="conditional-logic-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="conditional-logic-demo"
-                                    save="false"
-                                    id="conditional-logic-demo"
-                                    input-selector="document; .conditional-logic"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="conditional-logic-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div
-                                    class="conditional-logic padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="conditional-logic-eye"
-                                    show="#conditional-logic-eye-slash"
-                                    hide="#conditional-logic-eye, #conditional-logic-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#conditional-logic-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="conditional-logic-eye-slash"
-                                    show="#conditional-logic-eye, #conditional-logic-demo-preview"
-                                    hide="#conditional-logic-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#conditional-logic-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="conditional-logic-code"
-                                    show="#conditional-logic-code-slash"
-                                    hide="#conditional-logic-code, #conditional-logic-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="conditional-logic-code-slash"
-                                    show="#conditional-logic-code, #conditional-logic-demo-code"
-                                    hide="#conditional-logic-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#conditional-logic-playground"></a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="conditional-logic-demo"></div>
                     </section>
                 </div>
                 <!-- end column -->

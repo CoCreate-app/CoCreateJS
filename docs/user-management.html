@@ -141,82 +141,10 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="signup-playground">
-                            <div
-                                id="signup-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="signup-demo"
-                                    save="false"
-                                    id="signup-demo"
-                                    input-selector="document; .signup-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="signup-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div class="signup-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="signup-eye"
-                                    show="#signup-eye-slash"
-                                    hide="#signup-eye, #signup-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#signup-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="signup-eye-slash"
-                                    show="#signup-eye, #signup-demo-preview"
-                                    hide="#signup-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#signup-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="signup-code"
-                                    show="#signup-code-slash"
-                                    hide="#signup-code, #signup-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="signup-code-slash"
-                                    show="#signup-code, #signup-demo-code"
-                                    hide="#signup-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#signup-playground"></a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="signup-demo"></div>
                     </section>
                     <section
                         class="padding:35px_0px"
@@ -234,83 +162,12 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="signin-playground">
-                            <div
-                                id="signin-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="signin-demo"
-                                    save="false"
-                                    id="signin-demo"
-                                    input-selector="document; .signin-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="signin-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div class="signin-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="signin-eye"
-                                    show="#signin-eye-slash"
-                                    hide="#signin-eye, #signin-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#signin-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="signin-eye-slash"
-                                    show="#signin-eye, #signin-demo-preview"
-                                    hide="#signin-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#signin-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="signin-code"
-                                    show="#signin-code-slash"
-                                    hide="#signin-code, #signin-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="signin-code-slash"
-                                    show="#signin-code, #signin-demo-code"
-                                    hide="#signin-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#signin-playground"></a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="signin-demo"></div>
                     </section>
+
                     <section
                         class="padding:35px_0px"
                         scroll
@@ -327,82 +184,10 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="signout-playground">
-                            <div
-                                id="signout-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="signout-demo"
-                                    save="false"
-                                    id="signout-demo"
-                                    input-selector="document; .signout-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="signout-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div class="signout-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="signout-eye"
-                                    show="#signout-eye-slash"
-                                    hide="#signout-eye, #signout-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#signout-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="signout-eye-slash"
-                                    show="#signout-eye, #signout-demo-preview"
-                                    hide="#signout-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#signout-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="signout-code"
-                                    show="#signout-code-slash"
-                                    hide="#signout-code, #signout-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="signout-code-slash"
-                                    show="#signout-code, #signout-demo-code"
-                                    hide="#signout-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#signout-playground"></a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="signout-demo"></div>
                     </section>
                     <section
                         class="padding-top:35px"
@@ -422,83 +207,10 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="permissions-playground">
-                            <div
-                                id="permissions-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object=""
-                                    key="permissions-demo"
-                                    save="false"
-                                    id="permissions-demo"
-                                    input-selector="document; .permissions-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="permissions-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div
-                                    class="permissions-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="permissions-eye"
-                                    show="#permissions-eye-slash"
-                                    hide="#permissions-eye, #permissions-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#permissions-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="permissions-eye-slash"
-                                    show="#permissions-eye, #permissions-demo-preview"
-                                    hide="#permissions-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#permissions-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="permissions-code"
-                                    show="#permissions-code-slash"
-                                    hide="#permissions-code, #permissions-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="permissions-code-slash"
-                                    show="#permissions-code, #permissions-demo-code"
-                                    hide="#permissions-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#permissions-playground"></a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="permissions-demo"></div>
                     </section>
                 </div>
                 <!-- end column -->

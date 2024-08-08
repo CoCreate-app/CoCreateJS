@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<div
+    class="playground display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px">
+    <div resizable class="playground-code position:relative height:50%">
+        <textarea
+            type="code"
+            lang="html"
+            array="demos"
+            object="619aa8e8a8b6b4001a9dc24e"
+            key=""
+            save="false"
+            input-closest=".playground .preview"
+            input-attribute="value"
+            input-events="input, onload"
+            class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
+        <div resize="bottom" class="background:lightgrey"></div>
+    </div>
+
+    <div class="playground-preview position:relative overflow:auto">
+        <div class="preview padding:20px"></div>
+    </div>
+
+    <div
+        class="display:flex gap:15px font-size:20px position:absolute top:10px right:10px opacity:0.6">
+        <a
+            click-closest=".playground"
+            click-value="hide-preview"
+            click-attribute="class">
+            <i
+                toggle-attribute="src"
+                toggle-value="/assets/svg/eye-slash.svg, /assets/svg/eye.svg"
+                src="/assets/svg/eye.svg"></i>
+        </a>
+        <a
+            click-closest=".playground"
+            click-value="hide-code"
+            click-attribute="class">
+            <i
+                toggle-attribute="src"
+                toggle-value="/assets/svg/code.svg, /assets/svg/code.svg"
+                src="/assets/svg/code.svg"></i>
+        </a>
+        <a class="margin-right:5px" fullscreen fullscreen-closest=".playground">
+            <i src="../assets/svg/expand.svg"></i>
+            <i src="../assets/svg/compress.svg"></i>
+        </a>
+    </div>
+</div>

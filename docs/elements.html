@@ -49,11 +49,6 @@
 
         <link rel="manifest" href="/manifest.webmanifest" />
     </head>
-    <style>
-        .code-height {
-            height: 100% !important;
-        }
-    </style>
 
     <body>
         <nav
@@ -182,83 +177,12 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="input-playground">
-                            <div
-                                id="input-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="input-demo"
-                                    save="false"
-                                    id="input-demo"
-                                    input-selector="document; .input-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="input-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div class="input-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="input-eye"
-                                    show="#input-eye-slash"
-                                    hide="#input-eye, #input-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#input-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="input-eye-slash"
-                                    show="#input-eye, #input-demo-preview"
-                                    hide="#input-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#input-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="input-code"
-                                    show="#input-code-slash"
-                                    hide="#input-code, #input-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="input-code-slash"
-                                    show="#input-code, #input-demo-code"
-                                    hide="#input-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#input-playground"></a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="input-demo"></div>
                     </section>
+
                     <section
                         id="textarea"
                         class="padding:35px_0px"
@@ -270,83 +194,12 @@
                         <!--<pre><code class="language-html">&lt;textarea array="" object="" key="name"&gt;&lt;/textarea&gt;</code></pre>-->
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="textarea-playground">
-                            <div
-                                id="textarea-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="textarea-demo"
-                                    save="false"
-                                    id="textarea-demo"
-                                    input-selector="document; .textarea-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="textarea-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div class="textarea-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="textarea-eye"
-                                    show="#textarea-eye-slash"
-                                    hide="#textarea-eye, #textarea-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#textarea-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="textarea-eye-slash"
-                                    show="#textarea-eye, #textarea-demo-preview"
-                                    hide="#textarea-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#textarea-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="textarea-code"
-                                    show="#textarea-code-slash"
-                                    hide="#textarea-code, #textarea-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="textarea-code-slash"
-                                    show="#textarea-code, #textarea-demo-code"
-                                    hide="#textarea-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#textarea-playground"></a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="textarea-demo"></div>
                     </section>
+
                     <section
                         id="contenteditable"
                         class="padding:35px_0px"
@@ -363,83 +216,12 @@
                         <pre><code class="language-html">&lt;h1 type="text" array="contacts" object="" key="name"&gt;&lt;/h1&gt;</code></pre>
 
                         <!-- SandBox -->
+
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="contenteditable-playground">
-                            <div
-                                id="contenteditable-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="contenteditable-demo"
-                                    save="false"
-                                    id="contenteditable-demo"
-                                    input-selector="document; .contenteditable-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="contenteditable-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div
-                                    class="contenteditable-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="contenteditable-eye"
-                                    show="#contenteditable-eye-slash"
-                                    hide="#contenteditable-eye, #contenteditable-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#contenteditable-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="contenteditable-eye-slash"
-                                    show="#contenteditable-eye, #contenteditable-demo-preview"
-                                    hide="#contenteditable-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#contenteditable-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="contenteditable-code"
-                                    show="#contenteditable-code-slash"
-                                    hide="#contenteditable-code, #contenteditable-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="contenteditable-code-slash"
-                                    show="#contenteditable-code, #contenteditable-demo-code"
-                                    hide="#contenteditable-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#contenteditable-playground"></a>
-                            </div>
-                        </div>
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="contenteditable-demo"></div>
                         <!-- End SandBox -->
                     </section>
 
@@ -455,83 +237,12 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="radio-playground">
-                            <div
-                                id="radio-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="radio-demo"
-                                    save="false"
-                                    id="radio-demo"
-                                    input-selector="document; .radio-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="radio-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div class="radio-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="radio-eye"
-                                    show="#radio-eye-slash"
-                                    hide="#radio-eye, #radio-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#radio-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="radio-eye-slash"
-                                    show="#radio-eye, #radio-demo-preview"
-                                    hide="#radio-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#radio-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="radio-code"
-                                    show="#radio-code-slash"
-                                    hide="#radio-code, #radio-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="radio-code-slash"
-                                    show="#radio-code, #radio-demo-code"
-                                    hide="#radio-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#radio-playground"></a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="radio-demo"></div>
                     </section>
+
                     <section
                         id="checkbox"
                         class="padding:35px_0px"
@@ -544,83 +255,12 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="checkbox-playground">
-                            <div
-                                id="checkbox-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="checkbox-demo"
-                                    save="false"
-                                    id="checkbox-demo"
-                                    input-selector="document; .checkbox-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="checkbox-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div class="checkbox-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="checkbox-eye"
-                                    show="#checkbox-eye-slash"
-                                    hide="#checkbox-eye, #checkbox-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#checkbox-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="checkbox-eye-slash"
-                                    show="#checkbox-eye, #checkbox-demo-preview"
-                                    hide="#checkbox-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#checkbox-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="checkbox-code"
-                                    show="#checkbox-code-slash"
-                                    hide="#checkbox-code, #checkbox-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="checkbox-code-slash"
-                                    show="#checkbox-code, #checkbox-demo-code"
-                                    hide="#checkbox-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#checkbox-playground"></a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="checkbox-demo"></div>
                     </section>
+
                     <section
                         id="select"
                         class="padding:35px_0px"
@@ -632,83 +272,12 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="select-playground">
-                            <div
-                                id="select-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="select-demo"
-                                    save="false"
-                                    id="select-demo"
-                                    input-selector="document; .select-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="select-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div class="select-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="select-eye"
-                                    show="#select-eye-slash"
-                                    hide="#select-eye, #select-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#select-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="select-eye-slash"
-                                    show="#select-eye, #select-demo-preview"
-                                    hide="#select-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#select-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="select-code"
-                                    show="#select-code-slash"
-                                    hide="#select-code, #select-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="select-code-slash"
-                                    show="#select-code, #select-demo-code"
-                                    hide="#select-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#select-playground"></a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="select-demo"></div>
                     </section>
+
                     <section
                         id="form"
                         class="padding-top:35px"
@@ -726,82 +295,10 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="form-playground">
-                            <div
-                                id="form-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="form-demo"
-                                    save="false"
-                                    id="form-demo"
-                                    input-selector="document; .form-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="form-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div class="form-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="form-eye"
-                                    show="#form-eye-slash"
-                                    hide="#form-eye, #form-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#form-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="form-eye-slash"
-                                    show="#form-eye, #form-demo-preview"
-                                    hide="#form-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#form-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="form-code"
-                                    show="#form-code-slash"
-                                    hide="#form-code, #form-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="form-code-slash"
-                                    show="#form-code, #form-demo-code"
-                                    hide="#form-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#form-playground"></a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="form-demo"></div>
                     </section>
 
                     <section
@@ -837,82 +334,10 @@
 
                         <!-- SandBox -->
                         <div
-                            class="display:flex flex-direction:column position:relative overflow:hidden card border-radius:2px width:auto height:600px margin-top:20px"
-                            id="actions-playground">
-                            <div
-                                id="actions-demo-code"
-                                resizable
-                                class="position:relative height:50%">
-                                <textarea
-                                    type="code"
-                                    lang="html"
-                                    array="demos"
-                                    object="619aa8e8a8b6b4001a9dc24e"
-                                    key="actions-demo"
-                                    save="false"
-                                    id="actions-demo"
-                                    input-selector="document; .actions-demo"
-                                    input-attribute="value"
-                                    input-events="input, onload"
-                                    class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
-                                <div
-                                    resize="bottom"
-                                    class="background:lightgrey"></div>
-                            </div>
-
-                            <div
-                                id="actions-demo-preview"
-                                class="position:relative overflow:auto">
-                                <div class="actions-demo padding:20px"></div>
-                            </div>
-
-                            <div
-                                class="font-size:20px position:absolute top:10px right:10px opacity:0.6">
-                                <a
-                                    class="margin-right:10px"
-                                    id="actions-eye"
-                                    show="#actions-eye-slash"
-                                    hide="#actions-eye, #actions-demo-preview"
-                                    toggle="code-height"
-                                    toggle-selector="#actions-demo-code"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/eye.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="actions-eye-slash"
-                                    show="#actions-eye, #actions-demo-preview"
-                                    hide="#actions-eye-slash"
-                                    toggle="code-height"
-                                    toggle-selector="#actions-demo-code"
-                                    ><i src="/assets/svg/eye-slash.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    id="actions-code"
-                                    show="#actions-code-slash"
-                                    hide="#actions-code, #actions-demo-code"
-                                    ><i src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:10px"
-                                    hidden
-                                    id="actions-code-slash"
-                                    show="#actions-code, #actions-demo-code"
-                                    hide="#actions-code-slash"
-                                    ><i
-                                        class="height:18px"
-                                        src="/assets/svg/code.svg"></i
-                                ></a>
-                                <a
-                                    class="margin-right:5px"
-                                    fullscreen
-                                    fullscreen-selector="#actions-playground"></a>
-                            </div>
-                        </div>
-                        <!-- End SandBox -->
+                            src="./components/playground.html"
+                            input-selector=".playground-code textarea"
+                            input-attribute="key"
+                            input-value="actions-demo"></div>
                     </section>
                 </div>
                 <!-- end column -->
