@@ -1,3 +1,10 @@
+# [1.71.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.70.0...v1.71.0) (2024-08-08)
+
+
+### Features
+
+* palyground component ([a7bb2ea](https://github.com/CoCreate-app/CoCreateJS/commit/a7bb2ea64b22c53ad761e6c9279e2d3a970d17c6))
+
 # [1.70.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.69.0...v1.70.0) (2024-08-01)
 
 
