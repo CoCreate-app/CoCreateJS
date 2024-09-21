@@ -158,7 +158,7 @@ module.exports = {
         },
         "scroll": {
             "import": "@cocreate/scroll",
-            "selector": "[scroll]"
+            "selector": "[scroll], [scroll-to]"
         },
         "resize": {
             "import": "@cocreate/resize",
@@ -294,7 +294,7 @@ module.exports = {
         },
         "prism": {
             "import": "@cocreate/prism",
-            "selector": ".language-html, .language-css, .language-js, .language-shell, .language-json"
+            "selector": "[class*='language-']"
         },
         "fabric": {
             "import": "@cocreate/fabric",
