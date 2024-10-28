@@ -158,7 +158,7 @@ module.exports = {
         },
         "scroll": {
             "import": "@cocreate/scroll",
-            "selector": "[scroll], [scroll-to]"
+            "selector": "[scroll], [scroll-to], [scrollable-x], [scrollable-y]"
         },
         "resize": {
             "import": "@cocreate/resize",
