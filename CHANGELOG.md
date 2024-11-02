@@ -1,3 +1,15 @@
+# [1.72.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.71.0...v1.72.0) (2024-11-02)
+
+
+### Bug Fixes
+
+* scroll selectors ([47471b3](https://github.com/CoCreate-app/CoCreateJS/commit/47471b3602ac77832d3c6b13741f2e40081054df))
+
+
+### Features
+
+* scroll-to attribute to set scroll to top, bottom, left, right ([dc7ec8b](https://github.com/CoCreate-app/CoCreateJS/commit/dc7ec8bf3127ee08b57a9d604717c960bc60b5fc))
+
 # [1.71.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.70.0...v1.71.0) (2024-08-08)
 
 
