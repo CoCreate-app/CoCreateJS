@@ -238,6 +238,11 @@ module.exports = {
 			import: "@cocreate/floating-label",
 			selector: "floating-label, .floating-label"
 		},
+		clipboard: {
+			import: "@cocreate/clipboard",
+			selector:
+				"[actions*='clipboard'], [clipboard-selector], [clipboard-closest], [clipboard-parent], [clipboard-next], [clipboard-previous]"
+		},
 		print: {
 			import: "@cocreate/print",
 			selector:

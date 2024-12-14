@@ -75,6 +75,7 @@
     "@cocreate/cache": "^1.5.1",
     "@cocreate/calculate": "^1.14.6",
     "@cocreate/charts": "^1.12.2",
+    "@cocreate/clipboard": "^1.0.0",
     "@cocreate/clone": "^1.10.2",
     "@cocreate/cocreatecss": "^1.20.3",
     "@cocreate/codearea": "^1.12.2",
