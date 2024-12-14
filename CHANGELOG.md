@@ -1,3 +1,19 @@
+# [1.74.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.73.0...v1.74.0) (2024-12-14)
+
+
+### Bug Fixes
+
+* add prettier config file ([6233307](https://github.com/CoCreate-app/CoCreateJS/commit/623330720e96163062934f5f55c6c9b89bc704ad))
+* auto resize selector height="auto" ([319f309](https://github.com/CoCreate-app/CoCreateJS/commit/319f3097dd2f81981cc4adbdc0f190ac19b55071))
+* formating ([34ce4a2](https://github.com/CoCreate-app/CoCreateJS/commit/34ce4a278530543a4449abf80711f367c996cf4b))
+* instagram url ([01cf4cb](https://github.com/CoCreate-app/CoCreateJS/commit/01cf4cb35ced5b4534498def5e1b71b647e81d95))
+
+
+### Features
+
+* Added @cocreate/clipboard ([0161d2e](https://github.com/CoCreate-app/CoCreateJS/commit/0161d2e777e8b35a37a2fefd752dcbf4f4b18012))
+* Added CoCreate-print ([32e66e9](https://github.com/CoCreate-app/CoCreateJS/commit/32e66e924624a5e036decf08a64493b31331c2c7))
+
 # [1.73.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.72.0...v1.73.0) (2024-11-03)
 
 
