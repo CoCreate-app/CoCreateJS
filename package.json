@@ -112,6 +112,7 @@
     "@cocreate/parallax": "^1.9.2",
     "@cocreate/pickr": "^1.12.2",
     "@cocreate/position": "^1.9.1",
+    "@cocreate/print": "^1.0.0",
     "@cocreate/prism": "^1.11.2",
     "@cocreate/progress": "^1.10.2",
     "@cocreate/pwa": "^1.19.3",
