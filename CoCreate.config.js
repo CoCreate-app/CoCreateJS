@@ -311,6 +311,10 @@ module.exports = {
 		fabric: {
 			import: "@cocreate/fabric",
 			selector: "[fabric]"
+		},
+		"google-maps": {
+			import: "@cocreate/google-maps",
+			selector: "[google-maps]"
 		}
 	},
 	repositories: [
