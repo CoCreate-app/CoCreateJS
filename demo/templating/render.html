@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <form>
-    <input render-key="name" />
-    <div template>
-        <div>This is <b>{{render-key.name}}</b></div>
-        <p>This {{render-key.name}}</p>
-        <input value="{{render-key.name}}" />
-    </div>
+	<input render-key="name" />
+	<div template>
+		<div>This is <b>{{render-key.name}}</b></div>
+		<p>This {{render-key.name}}</p>
+		<input value="{{render-key.name}}" />
+	</div>
 
-    <button actions="renderKey" render-previous>Render</button>
+	<button actions="renderKey" render-query="$previous">Render</button>
 </form>

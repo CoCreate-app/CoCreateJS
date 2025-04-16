@@ -78,7 +78,7 @@
 							share-width="700"
 							share-media="https://cdn.cocreate.app/docs/action.png"
 							hover="display:block!important"
-							hover-selector=".social-networks">
+							hover-query=".social-networks">
 							<div class="display:none social-networks">
 								<a
 									class="margin-right:15px"
@@ -129,7 +129,7 @@
 					<section
 						scroll
 						scroll-intersect="color:dodgerblue"
-						scroll-selector="#fetch-item">
+						scroll-query="#fetch-item">
 						<h2
 							id="fetch"
 							class="border-bottom:1px_solid_lightgrey padding:5px_0px">
@@ -139,12 +139,12 @@
 							Fetching and rendering a list is done by applying
 							array to an element and nesting a template within
 						</p>
-						<!-- <pre><code class="language-html">&lt;div array="contacts" render-selector="[template]"&gt;&lt;/div&gt;</code></pre> -->
+						<!-- <pre><code class="language-html">&lt;div array="contacts" render-query="[template]"&gt;&lt;/div&gt;</code></pre> -->
 
 						<!-- SandBox -->
 						<div
 							src="./components/playground.html"
-							input-selector=".playground-code textarea"
+							input-query=".playground-code textarea"
 							input-attribute="key"
 							input-value="fetch-demo"></div>
 					</section>
@@ -152,7 +152,7 @@
 						class="padding:35px_0px"
 						scroll
 						scroll-intersect="color:dodgerblue"
-						scroll-selector="#filter-item">
+						scroll-query="#filter-item">
 						<h3 id="filter" class="padding-top:20px">Filter</h3>
 						<p class="padding:10px_0px line-height:1.5">
 							Add attribute filter-selector and filter-query-key
@@ -163,7 +163,7 @@
 						<!-- SandBox -->
 						<div
 							src="./components/playground.html"
-							input-selector=".playground-code textarea"
+							input-query=".playground-code textarea"
 							input-attribute="key"
 							input-value="filter-demo"></div>
 					</section>
@@ -458,7 +458,7 @@
 			id="menuL"
 			class="top:0px left:0px width:0px width:300px@xl"
 			resizable
-			resize-document="main, nav, footer"
+			resize-query="$document main, nav, footer"
 			resize-attribute="style"
 			resize-property="margin-left">
 			<menu path="../" src="./components/menu.html"></menu>

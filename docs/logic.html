@@ -78,7 +78,7 @@
 							share-width="700"
 							share-media="https://cdn.cocreate.app/docs/action.png"
 							hover="display:block!important"
-							hover-selector=".social-networks">
+							hover-query=".social-networks">
 							<div class="display:none social-networks">
 								<a
 									class="margin-right:15px"
@@ -129,7 +129,7 @@
 					<section
 						scroll
 						scroll-intersect="color:dodgerblue"
-						scroll-selector="#state-attributes-item">
+						scroll-query="#state-attributes-item">
 						<h2
 							id="state-attributes"
 							class="border-bottom:1px_solid_lightgrey padding:5px_0px">
@@ -157,7 +157,7 @@
 									key="state-attributes-demo"
 									save="false"
 									id="state-attributes-demo"
-									input-document=".state-attributes"
+									input-query="$document .state-attributes"
 									input-attribute="value"
 									input-events="input, onload"
 									class="height:100% width:100% outline:none border:none resize:none padding:5px"></textarea>
@@ -181,7 +181,7 @@
 									show="#state-attributes-eye-slash"
 									hide="#state-attributes-eye, #state-attributes-demo-preview"
 									toggle="code-height"
-									toggle-selector="#state-attributes-demo-code"
+									toggle-query="#state-attributes-demo-code"
 									><i
 										class="height:18px"
 										src="/assets/svg/eye.svg"></i
@@ -193,7 +193,7 @@
 									show="#state-attributes-eye, #state-attributes-demo-preview"
 									hide="#state-attributes-eye-slash"
 									toggle="code-height"
-									toggle-selector="#state-attributes-demo-code"
+									toggle-query="#state-attributes-demo-code"
 									><i src="/assets/svg/eye-slash.svg"></i
 								></a>
 								<a
@@ -216,7 +216,7 @@
 								<a
 									class="margin-right:5px"
 									fullscreen
-									fullscreen-selector="#state-attributes-playground"></a>
+									fullscreen-query="#state-attributes-playground"></a>
 							</div>
 						</div>
 						<!-- End SandBox -->
@@ -225,7 +225,7 @@
 						class="padding:35px_0px"
 						scroll
 						scroll-intersect="color:dodgerblue"
-						scroll-selector="#state-values-item">
+						scroll-query="#state-values-item">
 						<h3 id="state-values" class="padding-top:20px">
 							State Values
 						</h3>
@@ -237,7 +237,7 @@
 						<!-- SandBox -->
 						<div
 							src="./components/playground.html"
-							input-selector=".playground-code textarea"
+							input-query=".playground-code textarea"
 							input-attribute="key"
 							input-value="state-values-demo"></div>
 					</section>
@@ -245,7 +245,7 @@
 						class="padding-top:35px"
 						scroll
 						scroll-intersect="color:dodgerblue"
-						scroll-selector="#conditional-logic-item">
+						scroll-query="#conditional-logic-item">
 						<h3 id="conditional-logic" class="padding-top:20px">
 							Conditional Logic
 						</h3>
@@ -260,7 +260,7 @@
 						<!-- SandBox -->
 						<div
 							src="./components/playground.html"
-							input-selector=".playground-code textarea"
+							input-query=".playground-code textarea"
 							input-attribute="key"
 							input-value="conditional-logic-demo"></div>
 					</section>
@@ -374,7 +374,7 @@
 			id="menuL"
 			class="top:0px left:0px width:0px width:300px@xl"
 			resizable
-			resize-document="main, nav, footer"
+			resize-query="$document main, nav, footer"
 			resize-attribute="style"
 			resize-property="margin-left">
 			<menu path="../" src="./components/menu.html"></menu>

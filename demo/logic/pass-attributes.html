@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <input state_id="test" array="contacts" object key="name" state-overwrite />
 
-<div array="contacts" render-selector="[template]">
-    <div template>
-        <a actions="state" state-object="{{object._id}}" state_to="test">
-            <h4>{{object.name}}</h4>
-            <h4>{{object._id}}</h4>
-        </a>
-    </div>
+<div array="contacts" render-query="[template]">
+	<div template>
+		<a actions="state" state-object="{{object._id}}" state_to="test">
+			<h4>{{object.name}}</h4>
+			<h4>{{object._id}}</h4>
+		</a>
+	</div>
 </div>

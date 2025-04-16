@@ -121,13 +121,11 @@ module.exports = {
 		},
 		filter: {
 			import: "@cocreate/filter",
-			selector:
-				"[filter-selector], [filter-closest], [filter-parent], [filter-next], [filter-previous]"
+			selector: "[filter-query]"
 		},
 		render: {
 			import: "@cocreate/render",
-			selector:
-				"[render], [render-selector], [render-closest], [render-parent], [render-next], [render-previous], [template], template"
+			selector: "[render], [render-query], [template], template"
 		},
 		file: {
 			import: "@cocreate/file",
@@ -203,7 +201,7 @@ module.exports = {
 		},
 		elementConfig: {
 			import: "@cocreate/element-config",
-			selector: "[config-selector]"
+			selector: "[config-query]"
 		},
 		validation: {
 			import: "@cocreate/validation",
@@ -240,13 +238,11 @@ module.exports = {
 		},
 		clipboard: {
 			import: "@cocreate/clipboard",
-			selector:
-				"[actions*='clipboard'], [clipboard-selector], [clipboard-closest], [clipboard-parent], [clipboard-next], [clipboard-previous]"
+			selector: "[actions*='clipboard'], [clipboard-query]"
 		},
 		print: {
 			import: "@cocreate/print",
-			selector:
-				"[actions*='print'], [print-selector], [print-closest], [print-parent], [print-next], [print-previous]"
+			selector: "[actions*='print'], [print-query]"
 		},
 		fullscreen: {
 			import: "@cocreate/fullscreen",
@@ -278,11 +274,11 @@ module.exports = {
 		},
 		toolbar: {
 			import: "@cocreate/toolbar",
-			selector: "[toolbar-selector]"
+			selector: "[toolbar-query]"
 		},
 		vdom: {
 			import: "@cocreate/vdom",
-			selector: "[vdom-selector], [vdom-id]"
+			selector: "[vdom-query], [vdom-id]"
 		},
 		notification: {
 			import: "@cocreate/notification",
