@@ -122,6 +122,11 @@ module.exports = async (env, argv) => {
 					defaultVendors: false
 				}
 			}
+		},
+		performance: {
+			hints: process.env.NODE_ENV === "production" ? "warning" : false,
+			maxEntrypointSize: 512000,
+			maxAssetSize: 512000
 		}
 	};
 
