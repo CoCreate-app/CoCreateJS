@@ -334,244 +334,244 @@ module.exports = {
 			exclude: ["git"]
 		},
 		{
-			path: "../CoCreate-components/CoCreate-actions",
+			path: "../CoCreate-modules/CoCreate-actions",
 			repo: "github.com/CoCreate-app/CoCreate-actions.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-api",
+			path: "../CoCreate-modules/CoCreate-api",
 			repo: "github.com/CoCreate-app/CoCreate-api.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-attributes",
+			path: "../CoCreate-modules/CoCreate-attributes",
 			repo: "github.com/CoCreate-app/CoCreate-attributes.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-calculate",
+			path: "../CoCreate-modules/CoCreate-calculate",
 			repo: "github.com/CoCreate-app/CoCreate-calculate.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-cache",
+			path: "../CoCreate-modules/CoCreate-cache",
 			repo: "github.com/CoCreate-app/CoCreate-cache.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-cli",
+			path: "../CoCreate-modules/CoCreate-cli",
 			repo: "github.com/CoCreate-app/CoCreate-cli.git",
 			exclude: ["git"]
 		},
 		{
-			path: "../CoCreate-components/CoCreate-clipboard",
+			path: "../CoCreate-modules/CoCreate-clipboard",
 			repo: "github.com/CoCreate-app/CoCreate-clipboard.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-clone",
+			path: "../CoCreate-modules/CoCreate-clone",
 			repo: "github.com/CoCreate-app/CoCreate-clone.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-codearea",
+			path: "../CoCreate-modules/CoCreate-codearea",
 			repo: "github.com/CoCreate-app/CoCreate-codearea.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-conditional-logic",
+			path: "../CoCreate-modules/CoCreate-conditional-logic",
 			repo: "github.com/CoCreate-app/CoCreate-conditional-logic.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-config",
+			path: "../CoCreate-modules/CoCreate-config",
 			repo: "github.com/CoCreate-app/CoCreate-config.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-crdt",
+			path: "../CoCreate-modules/CoCreate-crdt",
 			repo: "github.com/CoCreate-app/CoCreate-crdt.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-crud-client",
+			path: "../CoCreate-modules/CoCreate-crud-client",
 			repo: "github.com/CoCreate-app/CoCreate-crud-client.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-css-parser",
+			path: "../CoCreate-modules/CoCreate-css-parser",
 			repo: "github.com/CoCreate-app/CoCreate-css-parser.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-cursors",
+			path: "../CoCreate-modules/CoCreate-cursors",
 			repo: "github.com/CoCreate-app/CoCreate-cursors.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-dnd",
+			path: "../CoCreate-modules/CoCreate-dnd",
 			repo: "github.com/CoCreate-app/CoCreate-dnd.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-docs",
+			path: "../CoCreate-modules/CoCreate-docs",
 			repo: "github.com/CoCreate-app/CoCreate-docs.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-element-config",
+			path: "../CoCreate-modules/CoCreate-element-config",
 			repo: "github.com/CoCreate-app/CoCreate-element-config.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-element-prototype",
+			path: "../CoCreate-modules/CoCreate-element-prototype",
 			repo: "github.com/CoCreate-app/CoCreate-element-prototype.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-elements",
+			path: "../CoCreate-modules/CoCreate-elements",
 			repo: "github.com/CoCreate-app/CoCreate-elements.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-events",
+			path: "../CoCreate-modules/CoCreate-events",
 			repo: "github.com/CoCreate-app/CoCreate-events.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-file",
+			path: "../CoCreate-modules/CoCreate-file",
 			repo: "github.com/CoCreate-app/CoCreate-file.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-filter",
+			path: "../CoCreate-modules/CoCreate-filter",
 			repo: "github.com/CoCreate-app/CoCreate-filter.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-floating-label",
+			path: "../CoCreate-modules/CoCreate-floating-label",
 			repo: "github.com/CoCreate-app/CoCreate-floating-label.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-fullscreen",
+			path: "../CoCreate-modules/CoCreate-fullscreen",
 			repo: "github.com/CoCreate-app/CoCreate-fullscreen.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-indexeddb",
+			path: "../CoCreate-modules/CoCreate-indexeddb",
 			repo: "github.com/CoCreate-app/CoCreate-indexeddb.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-industry",
+			path: "../CoCreate-modules/CoCreate-industry",
 			repo: "github.com/CoCreate-app/CoCreate-industry.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-lazy-loader",
+			path: "../CoCreate-modules/CoCreate-lazy-loader",
 			repo: "github.com/CoCreate-app/CoCreate-lazy-loader.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-local-storage",
+			path: "../CoCreate-modules/CoCreate-local-storage",
 			repo: "github.com/CoCreate-app/CoCreate-local-storage.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-link",
+			path: "../CoCreate-modules/CoCreate-link",
 			repo: "github.com/CoCreate-app/CoCreate-link.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-modal",
+			path: "../CoCreate-modules/CoCreate-modal",
 			repo: "github.com/CoCreate-app/CoCreate-modal.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-notification",
+			path: "../CoCreate-modules/CoCreate-notification",
 			repo: "github.com/CoCreate-app/CoCreate-notification.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-observer",
+			path: "../CoCreate-modules/CoCreate-observer",
 			repo: "github.com/CoCreate-app/CoCreate-observer.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-organizations",
+			path: "../CoCreate-modules/CoCreate-organizations",
 			repo: "github.com/CoCreate-app/CoCreate-organizations.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-overlay-scroll",
+			path: "../CoCreate-modules/CoCreate-overlay-scroll",
 			repo: "github.com/CoCreate-app/CoCreate-overlay-scroll.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-parallax",
+			path: "../CoCreate-modules/CoCreate-parallax",
 			repo: "github.com/CoCreate-app/CoCreate-parallax.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-state",
+			path: "../CoCreate-modules/CoCreate-state",
 			repo: "github.com/CoCreate-app/CoCreate-state.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-position",
+			path: "../CoCreate-modules/CoCreate-position",
 			repo: "github.com/CoCreate-app/CoCreate-position.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-print",
+			path: "../CoCreate-modules/CoCreate-print",
 			repo: "github.com/CoCreate-app/CoCreate-print.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-progress",
+			path: "../CoCreate-modules/CoCreate-progress",
 			repo: "github.com/CoCreate-app/CoCreate-progress.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-pwa",
+			path: "../CoCreate-modules/CoCreate-pwa",
 			repo: "github.com/CoCreate-app/CoCreate-pwa.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-random-color",
+			path: "../CoCreate-modules/CoCreate-random-color",
 			repo: "github.com/CoCreate-app/CoCreate-random-color.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-remove",
+			path: "../CoCreate-modules/CoCreate-remove",
 			repo: "github.com/CoCreate-app/CoCreate-remove.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-render",
+			path: "../CoCreate-modules/CoCreate-render",
 			repo: "github.com/CoCreate-app/CoCreate-render.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-resize",
+			path: "../CoCreate-modules/CoCreate-resize",
 			repo: "github.com/CoCreate-app/CoCreate-resize.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-rich-text",
+			path: "../CoCreate-modules/CoCreate-rich-text",
 			repo: "github.com/CoCreate-app/CoCreate-rich-text.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-scroll",
+			path: "../CoCreate-modules/CoCreate-scroll",
 			repo: "github.com/CoCreate-app/CoCreate-scroll.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-search",
+			path: "../CoCreate-modules/CoCreate-search",
 			repo: "github.com/CoCreate-app/CoCreate-search.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-select",
+			path: "../CoCreate-modules/CoCreate-select",
 			repo: "github.com/CoCreate-app/CoCreate-select.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-selection",
+			path: "../CoCreate-modules/CoCreate-selection",
 			repo: "github.com/CoCreate-app/CoCreate-selection.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-socket-client",
+			path: "../CoCreate-modules/CoCreate-socket-client",
 			repo: "github.com/CoCreate-app/CoCreate-socket-client.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-social-share",
+			path: "../CoCreate-modules/CoCreate-social-share",
 			repo: "github.com/CoCreate-app/CoCreate-social-share.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-text",
+			path: "../CoCreate-modules/CoCreate-text",
 			repo: "github.com/CoCreate-app/CoCreate-text.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-toolbar",
+			path: "../CoCreate-modules/CoCreate-toolbar",
 			repo: "github.com/CoCreate-app/CoCreate-toolbar.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-unique",
+			path: "../CoCreate-modules/CoCreate-unique",
 			repo: "github.com/CoCreate-app/CoCreate-unique.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-users",
+			path: "../CoCreate-modules/CoCreate-users",
 			repo: "github.com/CoCreate-app/CoCreate-users.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-utils",
+			path: "../CoCreate-modules/CoCreate-utils",
 			repo: "github.com/CoCreate-app/CoCreate-utils.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-uuid",
+			path: "../CoCreate-modules/CoCreate-uuid",
 			repo: "github.com/CoCreate-app/CoCreate-uuid.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-validation",
+			path: "../CoCreate-modules/CoCreate-validation",
 			repo: "github.com/CoCreate-app/CoCreate-validation.git"
 		},
 		{
-			path: "../CoCreate-components/CoCreate-vdom",
+			path: "../CoCreate-modules/CoCreate-vdom",
 			repo: "github.com/CoCreate-app/CoCreate-vdom.git"
 		},
 		{
