@@ -54,9 +54,6 @@
   "devDependencies": {
     "@cocreate/cli": "^1.49.0",
     "@cocreate/webpack": "^1.4.0",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^5.2.6",
-    "css-minimizer-webpack-plugin": "^3.0.0",
     "esbuild": "^0.25.2",
     "esbuild-loader": "^4.3.0",
     "mini-css-extract-plugin": "^1.4.0",

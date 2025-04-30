@@ -359,12 +359,16 @@ module.exports = {
 			exclude: ["git"]
 		},
 		{
-			path: "../CoCreate-components/CoCreate-codearea",
-			repo: "github.com/CoCreate-app/CoCreate-codearea.git"
+			path: "../CoCreate-components/CoCreate-clipboard",
+			repo: "github.com/CoCreate-app/CoCreate-clipboard.git"
 		},
 		{
 			path: "../CoCreate-components/CoCreate-clone",
 			repo: "github.com/CoCreate-app/CoCreate-clone.git"
+		},
+		{
+			path: "../CoCreate-components/CoCreate-codearea",
+			repo: "github.com/CoCreate-app/CoCreate-codearea.git"
 		},
 		{
 			path: "../CoCreate-components/CoCreate-conditional-logic",
@@ -481,6 +485,10 @@ module.exports = {
 		{
 			path: "../CoCreate-components/CoCreate-position",
 			repo: "github.com/CoCreate-app/CoCreate-position.git"
+		},
+		{
+			path: "../CoCreate-components/CoCreate-print",
+			repo: "github.com/CoCreate-app/CoCreate-print.git"
 		},
 		{
 			path: "../CoCreate-components/CoCreate-progress",
@@ -612,7 +620,8 @@ module.exports = {
 		},
 		{
 			path: "../CoCreate-plugins/CoCreate-ffmpeg",
-			repo: "github.com/CoCreate-app/CoCreate-ffmpeg.git"
+			repo: "github.com/CoCreate-app/CoCreate-ffmpeg.git",
+			exclude: ["fs/webpack"]
 		},
 		{
 			path: "../CoCreate-plugins/CoCreate-fullcalendar",

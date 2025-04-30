@@ -6,9 +6,8 @@ const {
 	SymlinkCreator
 } = require("@cocreate/webpack");
 
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+
 const { EsbuildPlugin } = require("esbuild-loader");
 
 module.exports = async (env, argv) => {
@@ -23,9 +22,8 @@ module.exports = async (env, argv) => {
 			filename: isProduction ? "[name].js" : "[name].js",
 			chunkFilename: isProduction ? "[name].js" : "[name].js",
 			library: "CoCreate", // The name of your library globally
-			libraryExport: "default" // Exports the default export of your entry point
-			// libraryTarget: "umd",
-			// globalObject: "this" // Important for UMD compatibility
+			libraryExport: "default", // Exports the default export of your entry point
+			clean: true
 		},
 
 		experiments: {
@@ -39,7 +37,6 @@ module.exports = async (env, argv) => {
 			new ModuleGenerator(CoCreateConfig.modules),
 			new FileUploader(env, argv),
 			new SymlinkCreator(),
-			new CleanWebpackPlugin(),
 			new MiniCssExtractPlugin({
 				filename: isProduction ? "[name].min.css" : "[name].css",
 				chunkFilename: (pathData) => {
@@ -105,10 +102,9 @@ module.exports = async (env, argv) => {
 			minimize: isProduction,
 			minimizer: [
 				new EsbuildPlugin({
-					target: "es2017" // Match the loader target
-					// css: true // Optional: uncomment to let esbuild try minifying CSS
-				}),
-				new CssMinimizerPlugin()
+					target: "es2017", // Match the loader target
+					css: true
+				})
 			],
 
 			splitChunks: {
