@@ -1,3 +1,26 @@
+# [1.75.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.74.0...v1.75.0) (2025-04-30)
+
+
+### Bug Fixes
+
+* {{path}} replaced with $relativePath ([41c202a](https://github.com/CoCreate-app/CoCreateJS/commit/41c202a79e8fb5ae8b3fd1a7d01982feb677c402))
+* added browserslist to config ([05ec143](https://github.com/CoCreate-app/CoCreateJS/commit/05ec143dd14086762c4399ba5d8e350c30e92418))
+* added css-loader ([826fe9f](https://github.com/CoCreate-app/CoCreateJS/commit/826fe9f5f20b6c861ec1677803988ba319ad257a))
+* added performance to config ([5844a9e](https://github.com/CoCreate-app/CoCreateJS/commit/5844a9e2a6d6820cf325ea18a6e200d4dd014f83))
+* demos ([3c29a5e](https://github.com/CoCreate-app/CoCreateJS/commit/3c29a5e230d2bdd4d62f99eca11d7dd892e2f113))
+* renamed CoCreate-components to CoCreate-modules ([dc325a8](https://github.com/CoCreate-app/CoCreateJS/commit/dc325a8704783841a5f0a96f3b46179cdfd86b9a))
+* update filter-query-key ([454351c](https://github.com/CoCreate-app/CoCreateJS/commit/454351c109b02c7e78381cd1f54a56a6fe4c1d23))
+* update query selector attributes to *-query ([8c59c14](https://github.com/CoCreate-app/CoCreateJS/commit/8c59c14d8e51c3118af19ffd86b9b43e56e31f42))
+* update selector operators ([69ef5df](https://github.com/CoCreate-app/CoCreateJS/commit/69ef5dfe5d189aee266b08612c9749797112a92f))
+* updated cocreate module versions ([7e0780a](https://github.com/CoCreate-app/CoCreateJS/commit/7e0780a041baf063f358575560a20062fa6b74f7))
+* webpack and dev packages ([b4703dd](https://github.com/CoCreate-app/CoCreateJS/commit/b4703dd8e65a6042ddb1f431faf304ff0767dc4a))
+* webpack.config and devdependencies ([6b4cfa6](https://github.com/CoCreate-app/CoCreateJS/commit/6b4cfa6a32413f52c7caf19c42910c2899d1fdea))
+
+
+### Features
+
+* added google-maps ([b128cb1](https://github.com/CoCreate-app/CoCreateJS/commit/b128cb132d393f5157185a7f81f58454457a29aa))
+
 # [1.74.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.73.0...v1.74.0) (2024-12-14)
 
 
