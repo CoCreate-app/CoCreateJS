@@ -87,6 +87,7 @@
     "@cocreate/floating-label": "^1.16.1",
     "@cocreate/fullcalendar": "^1.12.3",
     "@cocreate/fullscreen": "^1.12.3",
+    "@cocreate/google-maps": "^1.12.3",
     "@cocreate/indexeddb": "^1.23.2",
     "@cocreate/industry": "^1.22.2",
     "@cocreate/lazy-loader": "^1.23.4",
