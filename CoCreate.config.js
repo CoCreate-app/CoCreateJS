@@ -79,34 +79,42 @@ module.exports = {
 			import: "@cocreate/utils"
 		},
 		indexeddb: {
-			import: "@cocreate/indexeddb"
+			import: "@cocreate/indexeddb",
+			selector: "[storage*='indexeddb']"
 		},
 		localstorage: {
-			import: "@cocreate/local-storage"
+			import: "@cocreate/local-storage",
+			selector:
+				"[storage*='localstorage'], [localstorage-set], [localstorage-get]"
 		},
 		config: {
 			import: "@cocreate/config"
 		},
 		socket: {
-			import: "@cocreate/socket-client"
+			import: "@cocreate/socket-client",
+			selector: "[socket='true']"
 		},
 		events: {
 			import: "@cocreate/events"
 		},
 		crud: {
-			import: "@cocreate/crud-client"
+			import: "@cocreate/crud-client",
+			selector: "[crud='true'], [database], [array]"
 		},
 		crdt: {
-			import: "@cocreate/crdt"
+			import: "@cocreate/crdt",
+			selector: "[crdt='true']"
 		},
 		state: {
-			import: "@cocreate/state"
+			import: "@cocreate/state",
+			selector: "link[state_to][state_id][key], link[parse]"
 		},
 		link: {
 			import: "@cocreate/link"
 		},
 		cache: {
-			import: "@cocreate/cache"
+			import: "@cocreate/cache",
+			selector: "[cache='true']"
 		},
 		pwa: {
 			import: "@cocreate/pwa"
@@ -139,6 +147,10 @@ module.exports = {
 		api: {
 			import: "@cocreate/api",
 			selector: "[actions], [template_id]"
+		},
+		aria: {
+			import: "@cocreate/aria",
+			selector: "[aria-controls], [aria-selected]"
 		},
 		dnd: {
 			import: "@cocreate/dnd",
