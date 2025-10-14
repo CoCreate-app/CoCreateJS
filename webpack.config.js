@@ -55,6 +55,7 @@ module.exports = async (env, argv) => {
 		// Use 'source-map' for production (better for debugging) if needed, otherwise false or hidden.
 		// 'eval-source-map' is good for development.
 		devtool: isProduction ? "source-map" : "eval-source-map",
+		// devtool: isProduction ? "source-map" : "eval-source-map",
 
 		module: {
 			rules: [

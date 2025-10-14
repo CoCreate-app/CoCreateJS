@@ -112,6 +112,10 @@ module.exports = {
 		link: {
 			import: "@cocreate/link"
 		},
+		aria: {
+			import: "@cocreate/aria",
+			selector: "[aria-controls]"
+		},
 		cache: {
 			import: "@cocreate/cache",
 			selector: "[cache='true']"
@@ -300,10 +304,10 @@ module.exports = {
 			import: "@cocreate/aos",
 			selector: "[data-aos]"
 		},
-		ffmpeg: {
-			import: "@cocreate/ffmpeg",
-			selector: "[processor='ffmpeg']"
-		},
+		// ffmpeg: {
+		// 	import: "@cocreate/ffmpeg",
+		// 	selector: "[processor='ffmpeg']"
+		// },
 		pickr: {
 			import: "@cocreate/pickr",
 			selector: ".color-picker"
@@ -316,10 +320,10 @@ module.exports = {
 			import: "@cocreate/prism",
 			selector: "[class*='language-']"
 		},
-		fabric: {
-			import: "@cocreate/fabric",
-			selector: "[fabric]"
-		},
+		// fabric: {
+		// 	import: "@cocreate/fabric",
+		// 	selector: "[fabric]"
+		// },
 		"google-maps": {
 			import: "@cocreate/google-maps",
 			selector: "[google-maps]"
@@ -352,6 +356,10 @@ module.exports = {
 		{
 			path: "../CoCreate-modules/CoCreate-api",
 			repo: "github.com/CoCreate-app/CoCreate-api.git"
+		},
+		{
+			path: "../CoCreate-modules/CoCreate-aria",
+			repo: "github.com/CoCreate-app/CoCreate-aria.git"
 		},
 		{
 			path: "../CoCreate-modules/CoCreate-attributes",

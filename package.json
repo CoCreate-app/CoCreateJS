@@ -125,6 +125,9 @@
     "@cocreate/utils": "^1.39.0",
     "@cocreate/uuid": "^1.12.1",
     "@cocreate/validation": "^1.16.2",
-    "@cocreate/vdom": "^1.13.2"
+    "@cocreate/vdom": "^1.13.2",
+    "@google/generative-ai": "^0.24.1",
+    "css": "^3.0.0",
+    "node-html-parser": "^7.0.1"
   }
 }
