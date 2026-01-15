@@ -123,6 +123,9 @@ module.exports = {
 		pwa: {
 			import: "@cocreate/pwa"
 		},
+		organizations: {
+			import: "@cocreate/organizations"
+		},
 		cssParser: {
 			import: "@cocreate/css-parser",
 			selector: "link[array][object][key], link[parse]"
@@ -151,6 +154,10 @@ module.exports = {
 		api: {
 			import: "@cocreate/api",
 			selector: "[actions], [template_id]"
+		},
+		plugins: {
+			import: "@cocreate/plugins",
+			selector: "[plugin]"
 		},
 		aria: {
 			import: "@cocreate/aria",
@@ -197,10 +204,6 @@ module.exports = {
 		unique: {
 			import: "@cocreate/unique",
 			selector: "[unique]"
-		},
-		organizations: {
-			import: "@cocreate/organizations",
-			selector: "[organization], [actions*='createOrganization']"
 		},
 		industry: {
 			import: "@cocreate/industry",
@@ -356,6 +359,10 @@ module.exports = {
 		{
 			path: "../CoCreate-modules/CoCreate-api",
 			repo: "github.com/CoCreate-app/CoCreate-api.git"
+		},
+		{
+			path: "../CoCreate-modules/CoCreate-plugins",
+			repo: "github.com/CoCreate-app/CoCreate-plugins.git"
 		},
 		{
 			path: "../CoCreate-modules/CoCreate-aria",

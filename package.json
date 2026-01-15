@@ -101,6 +101,7 @@
     "@cocreate/organizations": "^1.28.3",
     "@cocreate/parallax": "^1.10.1",
     "@cocreate/pickr": "^1.13.2",
+    "@cocreate/plugins": "^1.0.2",
     "@cocreate/position": "^1.10.2",
     "@cocreate/print": "^1.0.2",
     "@cocreate/prism": "^1.15.2",
