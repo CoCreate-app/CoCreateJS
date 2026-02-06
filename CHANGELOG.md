@@ -1,3 +1,18 @@
+# [1.76.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.75.1...v1.76.0) (2026-02-06)
+
+
+### Bug Fixes
+
+* add @cocreate/aria ([9b76f49](https://github.com/CoCreate-app/CoCreateJS/commit/9b76f49d951e91dbc2f9fcfe4a22528c5492f6ca))
+* add google-maps ([1468e15](https://github.com/CoCreate-app/CoCreateJS/commit/1468e1516a6afa52dd6ad8ecb680b023e0c6cde8))
+* add selectors for storage and state modules in CoCreate.config.js ([485c4f6](https://github.com/CoCreate-app/CoCreateJS/commit/485c4f6ad4091bf3ba93af38221c017c64df3baa))
+* correct asset paths in menu.html ([d9e3108](https://github.com/CoCreate-app/CoCreateJS/commit/d9e31089bc8492fea2e7894e23390de45641b215))
+
+
+### Features
+
+* add plugins module ([cebe84d](https://github.com/CoCreate-app/CoCreateJS/commit/cebe84d8e753e96eb89bb1d567d86c04ba5240ae))
+
 ## [1.75.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.75.0...v1.75.1) (2025-05-01)
 
 
