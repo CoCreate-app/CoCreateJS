@@ -113,8 +113,7 @@ module.exports = {
 			import: "@cocreate/link"
 		},
 		aria: {
-			import: "@cocreate/aria",
-			selector: "[aria-controls]"
+			import: "@cocreate/aria"
 		},
 		cache: {
 			import: "@cocreate/cache",

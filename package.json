@@ -59,6 +59,7 @@
     "@cocreate/actions": "^1.21.1",
     "@cocreate/aos": "^1.1.1",
     "@cocreate/api": "^1.22.3",
+    "@cocreate/aria": "^1.1.1",
     "@cocreate/attributes": "^1.15.2",
     "@cocreate/cache": "^1.6.1",
     "@cocreate/calculate": "^1.16.1",
