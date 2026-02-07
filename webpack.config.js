@@ -14,7 +14,7 @@ module.exports = async (env, argv) => {
 	const isProduction = argv.mode === "production";
 	const config = {
 		entry: {
-			CoCreate: "./src/index.js"
+			CoCreate: "./CoCreate.modules.js"
 		},
 
 		output: {
