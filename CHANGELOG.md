@@ -1,3 +1,10 @@
+# [1.77.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.76.0...v1.77.0) (2026-02-07)
+
+
+### Features
+
+* build use config ([6e6b218](https://github.com/CoCreate-app/CoCreateJS/commit/6e6b218ef7110fac93aa4c326320eeb12b5545cd))
+
 # [1.76.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.75.1...v1.76.0) (2026-02-06)
 
 
