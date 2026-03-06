@@ -1,3 +1,10 @@
+## [1.77.1](https://github.com/CoCreate-app/CoCreateJS/compare/v1.77.0...v1.77.1) (2026-03-06)
+
+
+### Bug Fixes
+
+* CoCreate.modules.js refrencing ([f2f2b18](https://github.com/CoCreate-app/CoCreateJS/commit/f2f2b1816d9ad2867a342d9e3370badb6b74f141))
+
 # [1.77.0](https://github.com/CoCreate-app/CoCreateJS/compare/v1.76.0...v1.77.0) (2026-02-07)
 
 
