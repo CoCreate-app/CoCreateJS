@@ -68,7 +68,7 @@ module.exports = {
 		}
 	],
 	modules: {
-		outputPath: "./modules.js",
+		outputPath: "./CoCreate.modules.js",
 		"element-prototype": {
 			import: "@cocreate/element-prototype"
 		},

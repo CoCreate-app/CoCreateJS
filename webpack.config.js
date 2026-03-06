@@ -1,9 +1,11 @@
 const path = require("path");
+const webpack = require("webpack"); // <-- ADDED: Required for the Replacement Plugin
 const CoCreateConfig = require("./CoCreate.config");
 const {
 	ModuleGenerator,
 	FileUploader,
-	SymlinkCreator
+	SymlinkCreator,
+	UnicodeLoader
 } = require("@cocreate/webpack");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -18,7 +20,7 @@ module.exports = async (env, argv) => {
 		},
 
 		output: {
-			path: path.resolve(__dirname, "dist"),
+			path: path.resolve(__dirname, "./src/dist"),
 			filename: isProduction ? "[name].js" : "[name].js",
 			chunkFilename: isProduction ? "[name].js" : "[name].js",
 			library: "CoCreate", // The name of your library globally
@@ -32,11 +34,22 @@ module.exports = async (env, argv) => {
 			// Ensure your target environments support it or esbuild can transpile it adequately for your target.
 			topLevelAwait: true
 		},
-
+		
 		plugins: [
 			new ModuleGenerator(CoCreateConfig.modules),
 			new FileUploader(env, argv),
 			new SymlinkCreator(),
+			
+			// <-- ADDED: The Surgical Fix for npm link -->
+			// Forcefully redirects any dynamic import of "CoCreate.config.js" 
+			// to the physical file in your project root, bypassing symlinks.
+			new webpack.NormalModuleReplacementPlugin(
+				/CoCreate\.config\.js$/,
+				function (resource) {
+					resource.request = path.resolve(__dirname, "./CoCreate.config.js");
+				}
+			),
+
 			new MiniCssExtractPlugin({
 				filename: isProduction ? "[name].min.css" : "[name].css",
 				chunkFilename: (pathData) => {
