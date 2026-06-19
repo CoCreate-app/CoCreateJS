@@ -68,7 +68,6 @@
     "@cocreate/charts": "^1.13.2",
     "@cocreate/clipboard": "^1.0.0",
     "@cocreate/clone": "^1.11.2",
-    "@cocreate/cocreatecss": "^1.21.1",
     "@cocreate/codearea": "^1.13.3",
     "@cocreate/conditional-logic": "^1.12.2",
     "@cocreate/config": "^1.13.1",
