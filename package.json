@@ -40,8 +40,7 @@
     "build": "npx webpack --mode=production --config webpack.config.js",
     "dev": "npx webpack --config webpack.config.js --watch",
     "watch": "npx webpack --config webpack.config.js --watch --env afterCompilation",
-    "upload": "coc upload",
-    "postinstall": "node -e \"const { execSync } = require('child_process'); try { execSync('coc --version', { stdio: 'ignore' }); } catch (error) { try { execSync('npm install -g @cocreate/cli', { stdio: 'inherit' }); console.log('Installed \"@cocreate/cli\" globally.'); } catch (error) { console.error('Failed to install \"@cocreate/cli\" globally:', error); } }\""
+    "upload": "coc upload"
   },
   "devDependencies": {
     "@cocreate/cli": "^1.51.0",
