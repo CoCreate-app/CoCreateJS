@@ -36,14 +36,13 @@
     "access": "public"
   },
   "scripts": {
-    "start": "npx webpack --config webpack.config.js",
-    "build": "npx webpack --mode=production --config webpack.config.js",
-    "dev": "npx webpack --config webpack.config.js --watch",
-    "watch": "npx webpack --config webpack.config.js --watch --env afterCompilation",
+    "start": "webpack --config webpack.config.js",
+    "build": "webpack --mode=production --config webpack.config.js",
+    "dev": "webpack --config webpack.config.js --watch",
+    "watch": "webpack --config webpack.config.js --watch --env afterCompilation",
     "upload": "coc upload"
   },
   "devDependencies": {
-    "@cocreate/cli": "^1.54.2",
     "@cocreate/webpack": "^1.4.3"
   },
   "dependencies": {
@@ -55,7 +54,7 @@
     "@cocreate/cache": "^1.6.3",
     "@cocreate/calculate": "^1.17.0",
     "@cocreate/charts": "^1.13.4",
-    "@cocreate/cli": "^1.51.0",
+    "@cocreate/cli": "^1.54.2",
     "@cocreate/clipboard": "^1.1.1",
     "@cocreate/clone": "^1.11.4",
     "@cocreate/codearea": "^1.13.5",
@@ -194,6 +193,9 @@
     "@cocreate/validation@1.16.4": true,
     "@cocreate/vdom@1.13.4": true,
     "@cocreate/webpack@1.4.3": true,
-    "core-js@3.37.0": true
+    "core-js@3.37.0": true,
+    "@parcel/watcher@2.5.6": true,
+    "esbuild@0.25.12": true,
+    "esbuild@0.28.1": true
   }
 }
