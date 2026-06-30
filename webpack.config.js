@@ -38,7 +38,7 @@ module.exports = async (env, argv) => {
 		plugins: [
 			new ModuleGenerator(CoCreateConfig.modules),
 			new FileUploader(env, argv),
-			new SymlinkCreator(),
+			// new SymlinkCreator(),
 			
 			// <-- ADDED: The Surgical Fix for npm link -->
 			// Forcefully redirects any dynamic import of "CoCreate.config.js" 
